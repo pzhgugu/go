@@ -1,0 +1,31 @@
+INPUT {
+	FONT-SIZE: 12px
+}
+TD {
+	FONT-SIZE: 12px
+}
+.p2 {
+	FONT-SIZE: 12px
+}
+.p6 {
+	FONT-SIZE: 12px; COLOR: #1b6ad8
+}
+A {
+	COLOR: #1b6ad8; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: red
+}
+.imgError{
+	height:211px;
+    width:329px;
+	background-image:url(error.gif?__inline);
+	background-repeat:no-repeat;
+}
+.imgEmessage{
+	height:13px;
+    width:12px;
+	background-image:url(emessage.gif?__inline);
+	background-repeat:no-repeat;
+}
+

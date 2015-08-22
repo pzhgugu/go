@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/main/resources/go.properties=UTF-8
+encoding//src/main/resources/languages/messages_zh_CN.properties=UTF-8
+encoding//src/main/webapp/editTest.jsp=UTF-8
+encoding//src/test/java=UTF-8
+encoding//target/test/template/default/admin/error.html.jsp=UTF-8
+encoding//target/test/template/default/admin/login.html.jsp=UTF-8
+encoding/<project>=UTF-8

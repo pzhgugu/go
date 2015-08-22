@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.ansteel.modules.dynamicmodel.domain">
+	<class entity-name="${TableName}" table="${TableName}" >
+		<id name="id" type="string"  column="id">
+			<generator class="uuid"/>
+		</id>
+		<version column="VERSION" name="VERSION" />  
+		<property name="CREATOR" column="CREATOR"  length="4000" type="string"/>
+		<property name="LASTUPDATER" column="LASTUPDATER" type="string"/>
+		<property name="CREATED" column="CREATED" type="java.util.Date" />
+		<property name="UPDATED" column="UPDATED" type="java.util.Date" />
+		
+		<% for(f in Fields){
+			var length;
+			if(f.fieldType=="string"){
+				 length=f.fieldLength;
+			}
+			if(f.fieldType=="integer"){
+				 length=f.fieldLength;
+			}
+			%>
+				<%if(!isEmpty(f.fieldType)){%>
+				<property name="${f.name}" column="${f.name}" type="${f.fieldType}" <%if(!isEmpty(length)){%>length="${length}"<%}%>/>
+				<%}%>
+			<%
+		}%>
+	</class>
+
+</hibernate-mapping>

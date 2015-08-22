@@ -1,0 +1,436 @@
+{
+    "res": {
+        "common:scripts/global.js": {
+            "uri": "/show/static/common/scripts/global.js",
+            "type": "js"
+        },
+        "common:scripts/mod.js": {
+            "uri": "/show/static/common/scripts/mod.js",
+            "type": "js"
+        },
+        "common:styles/bootstrap.css": {
+            "uri": "/show/static/common/styles/bootstrap.css",
+            "type": "css"
+        },
+        "common:widget/ajaxfileupload/ajaxfileupload.js": {
+            "uri": "/show/static/common/widget/ajaxfileupload/ajaxfileupload.js",
+            "type": "js"
+        },
+        "common:widget/dhtmlxSuite/dhtmlx_deprecated.js": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlx_deprecated.js",
+            "type": "js"
+        },
+        "common:widget/dhtmlxSuite/dhtmlx.css": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlx.css",
+            "type": "css"
+        },
+        "common:widget/dhtmlxSuite/dhtmlx.js": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlx.js",
+            "type": "js",
+            "deps": [
+                "common:widget/dhtmlxSuite/dhtmlx.css"
+            ]
+        },
+        "common:widget/dhtmlxSuite/dhtmlxEx.css": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlxEx.css",
+            "type": "css"
+        },
+        "common:widget/dhtmlxSuite/dhtmlxEx.js": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlxEx.js",
+            "type": "js",
+            "deps": [
+                "common:widget/dhtmlxSuite/dhtmlxEx.css",
+                "common:widget/dhtmlxSuite/dhtmlx.js",
+                "common:widget/dhtmlxSuite/ext/dhtmlXToolbar_selectEx.js",
+                "common:widget/dhtmlxSuite/ext/dhtmlxgrid_errormessage.js",
+                "common:widget/utils/spin.js",
+                "common:widget/dhtmlxSuite/dhtmlxGlobal.js"
+            ]
+        },
+        "common:widget/dhtmlxSuite/dhtmlxGlobal.js": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlxGlobal.js",
+            "type": "js",
+            "deps": [
+                "common:widget/utils/underscore.js",
+                "common:widget/dhtmlxSuite/dhtmlxEx.js"
+            ]
+        },
+        "common:widget/dhtmlxSuite/ext/dhtmlxform_item_editArea.js": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxform_item_editArea.js",
+            "type": "js"
+        },
+        "common:widget/dhtmlxSuite/ext/dhtmlxform_item_kindeditor.js": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxform_item_kindeditor.js",
+            "type": "js",
+            "deps": [
+                "common:widget/dhtmlxSuite/dhtmlx.js",
+                "common:widget/kindeditor/kindeditor.js"
+            ]
+        },
+        "common:widget/dhtmlxSuite/ext/dhtmlxform_item_tree.js": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxform_item_tree.js",
+            "type": "js"
+        },
+        "common:widget/dhtmlxSuite/ext/dhtmlxgrid_errormessage.js": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxgrid_errormessage.js",
+            "type": "js",
+            "deps": [
+                "common:widget/dhtmlxSuite/dhtmlx.js"
+            ]
+        },
+        "common:widget/dhtmlxSuite/ext/dhtmlxgrid_excell_clistEx.js": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxgrid_excell_clistEx.js",
+            "type": "js",
+            "deps": [
+                "common:widget/dhtmlxSuite/dhtmlx.js"
+            ]
+        },
+        "common:widget/dhtmlxSuite/ext/dhtmlxgrid_pgn.js": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxgrid_pgn.js",
+            "type": "js"
+        },
+        "common:widget/dhtmlxSuite/ext/dhtmlXToolbar_selectEx.js": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlXToolbar_selectEx.js",
+            "type": "js",
+            "deps": [
+                "common:widget/utils/underscore.js",
+                "common:widget/dhtmlxSuite/dhtmlx.js"
+            ]
+        },
+        "common:widget/dhtmlxSuite/ext/swfobject.js": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/swfobject.js",
+            "type": "js"
+        },
+        "common:widget/dhtmlxSuite/thirdparty/excanvas/excanvas.js": {
+            "uri": "/show/static/common/widget/dhtmlxSuite/thirdparty/excanvas/excanvas.js",
+            "type": "js"
+        },
+        "common:widget/exception/error.css": {
+            "uri": "/show/static/common/widget/exception/error.css",
+            "type": "css"
+        },
+        "common:widget/fileupload/jquery.fileupload-ui.css": {
+            "uri": "/show/static/common/widget/fileupload/jquery.fileupload-ui.css",
+            "type": "css"
+        },
+        "common:widget/fileupload/jquery.fileupload-ui.js": {
+            "uri": "/show/static/common/widget/fileupload/jquery.fileupload-ui.js",
+            "type": "js"
+        },
+        "common:widget/fileupload/jquery.fileupload.js": {
+            "uri": "/show/static/common/widget/fileupload/jquery.fileupload.js",
+            "type": "js"
+        },
+        "common:widget/fileupload/jquery.iframe-transport.js": {
+            "uri": "/show/static/common/widget/fileupload/jquery.iframe-transport.js",
+            "type": "js"
+        },
+        "common:widget/fileupload/jquery.ui.widget.js": {
+            "uri": "/show/static/common/widget/fileupload/jquery.ui.widget.js",
+            "type": "js"
+        },
+        "common:widget/font-awesome/css/font-awesome-ie7.css": {
+            "uri": "/show/static/common/widget/font-awesome/css/font-awesome-ie7.css",
+            "type": "css"
+        },
+        "common:widget/font-awesome/css/font-awesome-ie7.min.css": {
+            "uri": "/show/static/common/widget/font-awesome/css/font-awesome-ie7.min.css",
+            "type": "css"
+        },
+        "common:widget/font-awesome/css/font-awesome.css": {
+            "uri": "/show/static/common/widget/font-awesome/css/font-awesome.css",
+            "type": "css"
+        },
+        "common:widget/font-awesome/css/font-awesome.min.css": {
+            "uri": "/show/static/common/widget/font-awesome/css/font-awesome.min.css",
+            "type": "css"
+        },
+        "common:widget/jquery-ui/i18n/zh-CN.js": {
+            "uri": "/show/static/common/widget/jquery-ui/i18n/zh-CN.js",
+            "type": "js",
+            "deps": [
+                "common:widget/jquery-ui/themes/ui-lightness/jquery.ui.css"
+            ]
+        },
+        "common:widget/jquery-ui/i18n/zh-TW.js": {
+            "uri": "/show/static/common/widget/jquery-ui/i18n/zh-TW.js",
+            "type": "js",
+            "deps": [
+                "common:widget/jquery-ui/themes/ui-lightness/jquery.ui.css"
+            ]
+        },
+        "common:widget/jquery-ui/jquery.ui.js": {
+            "uri": "/show/static/common/widget/jquery-ui/jquery.ui.js",
+            "type": "js",
+            "deps": [
+                "common:widget/jquery-ui/themes/ui-lightness/jquery.ui.css"
+            ]
+        },
+        "common:widget/jquery-ui/themes/smoothness/jquery.ui.css": {
+            "uri": "/show/static/common/widget/jquery-ui/themes/smoothness/jquery.ui.css",
+            "type": "css"
+        },
+        "common:widget/jquery-ui/themes/ui-lightness/jquery.ui.css": {
+            "uri": "/show/static/common/widget/jquery-ui/themes/ui-lightness/jquery.ui.css",
+            "type": "css"
+        },
+        "common:widget/jquery/jquery.ajaxContent.pack.js": {
+            "uri": "/show/static/common/widget/jquery/jquery.ajaxContent.pack.js",
+            "type": "js"
+        },
+        "common:widget/jquery/jquery.form.js": {
+            "uri": "/show/static/common/widget/jquery/jquery.form.js",
+            "type": "js",
+            "deps": [
+                "common:widget/jquery/jquery.js"
+            ]
+        },
+        "common:widget/jquery/jquery.Jcrop.css": {
+            "uri": "/show/static/common/widget/jquery/jquery.Jcrop.css",
+            "type": "css"
+        },
+        "common:widget/jquery/jquery.Jcrop.js": {
+            "uri": "/show/static/common/widget/jquery/jquery.Jcrop.js",
+            "type": "js",
+            "deps": [
+                "common:widget/jquery/jquery.js",
+                "common:widget/jquery/jquery.Jcrop.css"
+            ]
+        },
+        "common:widget/jquery/jquery.js": {
+            "uri": "/show/static/common/widget/jquery/jquery.js",
+            "type": "js"
+        },
+        "common:widget/jquery/jquery.mousewheel.js": {
+            "uri": "/show/static/common/widget/jquery/jquery.mousewheel.js",
+            "type": "js"
+        },
+        "common:widget/jquery/jquery.validation.js": {
+            "uri": "/show/static/common/widget/jquery/jquery.validation.js",
+            "type": "js"
+        },
+        "common:widget/jquery/jqueryEx.js": {
+            "uri": "/show/static/common/widget/jquery/jqueryEx.js",
+            "type": "js",
+            "deps": [
+                "common:widget/jquery/jquery.js"
+            ]
+        },
+        "common:widget/jquery/perfect-scrollbar.js": {
+            "uri": "/show/static/common/widget/jquery/perfect-scrollbar.js",
+            "type": "js"
+        },
+        "common:widget/jquery/waypoints.js": {
+            "uri": "/show/static/common/widget/jquery/waypoints.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/kindeditor-all-min.js": {
+            "uri": "/show/static/common/widget/kindeditor/kindeditor-all-min.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/kindeditor-all.js": {
+            "uri": "/show/static/common/widget/kindeditor/kindeditor-all.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/kindeditor-min.js": {
+            "uri": "/show/static/common/widget/kindeditor/kindeditor-min.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/kindeditor.js": {
+            "uri": "/show/static/common/widget/kindeditor/kindeditor.js",
+            "type": "js",
+            "deps": [
+                "common:widget/kindeditor/themes/default/default.css"
+            ]
+        },
+        "common:widget/kindeditor/lang/ar.js": {
+            "uri": "/show/static/common/widget/kindeditor/lang/ar.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/lang/en.js": {
+            "uri": "/show/static/common/widget/kindeditor/lang/en.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/lang/ko.js": {
+            "uri": "/show/static/common/widget/kindeditor/lang/ko.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/lang/zh_CN.js": {
+            "uri": "/show/static/common/widget/kindeditor/lang/zh_CN.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/lang/zh_TW.js": {
+            "uri": "/show/static/common/widget/kindeditor/lang/zh_TW.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/anchor/anchor.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/anchor/anchor.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/autoheight/autoheight.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/autoheight/autoheight.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/baidumap/baidumap.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/baidumap/baidumap.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/clearhtml/clearhtml.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/clearhtml/clearhtml.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/code/code.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/code/code.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/code/prettify.css": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/code/prettify.css",
+            "type": "css"
+        },
+        "common:widget/kindeditor/plugins/code/prettify.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/code/prettify.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/emoticons/emoticons.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/emoticons/emoticons.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/filemanager/filemanager.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/filemanager/filemanager.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/flash/flash.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/flash/flash.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/image/image.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/image/image.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/insertfile/insertfile.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/insertfile/insertfile.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/lineheight/lineheight.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/lineheight/lineheight.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/link/link.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/link/link.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/map/map.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/map/map.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/media/media.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/media/media.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/multiimage/multiimage.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/multiimage/multiimage.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/pagebreak/pagebreak.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/pagebreak/pagebreak.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/plainpaste/plainpaste.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/plainpaste/plainpaste.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/preview/preview.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/preview/preview.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/quickformat/quickformat.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/quickformat/quickformat.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/table/table.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/table/table.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/template/template.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/template/template.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/plugins/wordpaste/wordpaste.js": {
+            "uri": "/show/static/common/widget/kindeditor/plugins/wordpaste/wordpaste.js",
+            "type": "js"
+        },
+        "common:widget/kindeditor/themes/default/default.css": {
+            "uri": "/show/static/common/widget/kindeditor/themes/default/default.css",
+            "type": "css"
+        },
+        "common:widget/kindeditor/themes/qq/qq.css": {
+            "uri": "/show/static/common/widget/kindeditor/themes/qq/qq.css",
+            "type": "css"
+        },
+        "common:widget/kindeditor/themes/simple/simple.css": {
+            "uri": "/show/static/common/widget/kindeditor/themes/simple/simple.css",
+            "type": "css"
+        },
+        "common:widget/poshytip/jquery.poshytip.js": {
+            "uri": "/show/static/common/widget/poshytip/jquery.poshytip.js",
+            "type": "js"
+        },
+        "common:widget/poshytip/jquery.poshytip.min.js": {
+            "uri": "/show/static/common/widget/poshytip/jquery.poshytip.min.js",
+            "type": "js"
+        },
+        "common:widget/poshytip/tip-darkgray/tip-darkgray.css": {
+            "uri": "/show/static/common/widget/poshytip/tip-darkgray/tip-darkgray.css",
+            "type": "css"
+        },
+        "common:widget/poshytip/tip-green/tip-green.css": {
+            "uri": "/show/static/common/widget/poshytip/tip-green/tip-green.css",
+            "type": "css"
+        },
+        "common:widget/poshytip/tip-skyblue/tip-skyblue.css": {
+            "uri": "/show/static/common/widget/poshytip/tip-skyblue/tip-skyblue.css",
+            "type": "css"
+        },
+        "common:widget/poshytip/tip-twitter/tip-twitter.css": {
+            "uri": "/show/static/common/widget/poshytip/tip-twitter/tip-twitter.css",
+            "type": "css"
+        },
+        "common:widget/poshytip/tip-violet/tip-violet.css": {
+            "uri": "/show/static/common/widget/poshytip/tip-violet/tip-violet.css",
+            "type": "css"
+        },
+        "common:widget/poshytip/tip-yellow/tip-yellow.css": {
+            "uri": "/show/static/common/widget/poshytip/tip-yellow/tip-yellow.css",
+            "type": "css"
+        },
+        "common:widget/poshytip/tip-yellowsimple/tip-yellowsimple.css": {
+            "uri": "/show/static/common/widget/poshytip/tip-yellowsimple/tip-yellowsimple.css",
+            "type": "css"
+        },
+        "common:widget/utils/html5shiv.js": {
+            "uri": "/show/static/common/widget/utils/html5shiv.js",
+            "type": "js"
+        },
+        "common:widget/utils/IE6_MAXMIX.js": {
+            "uri": "/show/static/common/widget/utils/IE6_MAXMIX.js",
+            "type": "js"
+        },
+        "common:widget/utils/IE6_PNG.js": {
+            "uri": "/show/static/common/widget/utils/IE6_PNG.js",
+            "type": "js"
+        },
+        "common:widget/utils/respond.js": {
+            "uri": "/show/static/common/widget/utils/respond.js",
+            "type": "js"
+        },
+        "common:widget/utils/spin.js": {
+            "uri": "/show/static/common/widget/utils/spin.js",
+            "type": "js"
+        },
+        "common:widget/utils/underscore.js": {
+            "uri": "/show/static/common/widget/utils/underscore.js",
+            "type": "js"
+        }
+    },
+    "pkg": {}
+}

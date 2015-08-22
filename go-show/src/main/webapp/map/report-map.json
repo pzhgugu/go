@@ -1,0 +1,50 @@
+{
+    "res": {
+        "report:scripts/excelReport.js": {
+            "uri": "/show/static/report/scripts/excelReport_14d6a92.js",
+            "type": "js",
+            "deps": [
+                "common:widget/jquery/jqueryEx.js",
+                "common:widget/utils/underscore.js",
+                "common:widget/dhtmlxSuite/dhtmlxEx.js",
+                "common:widget/jquery/jquery.form.js"
+            ]
+        },
+        "report:scripts/jasperReport.js": {
+            "uri": "/show/static/report/scripts/jasperReport_d5005c3.js",
+            "type": "js",
+            "deps": [
+                "common:widget/jquery/jqueryEx.js",
+                "common:widget/utils/underscore.js",
+                "common:widget/dhtmlxSuite/dhtmlxEx.js",
+                "common:widget/jquery/jquery.form.js"
+            ]
+        },
+        "report:scripts/jscharts.js": {
+            "uri": "/show/static/report/scripts/jscharts_c3a4b87.js",
+            "type": "js"
+        },
+        "report:scripts/reportlist.js": {
+            "uri": "/show/static/report/scripts/reportlist_755c0d6.js",
+            "type": "js",
+            "deps": [
+                "common:widget/jquery/jqueryEx.js",
+                "common:widget/utils/underscore.js",
+                "common:widget/dhtmlxSuite/dhtmlxEx.js"
+            ]
+        },
+        "report:widget/OnlineBrowsen/flexpaper_flash.js": {
+            "uri": "/show/static/report/widget/OnlineBrowsen/flexpaper_flash_63dede4.js",
+            "type": "js"
+        },
+        "report:widget/OnlineBrowsen/OnlineBrowsen.js": {
+            "uri": "/show/static/report/widget/OnlineBrowsen/OnlineBrowsen_96c9bee.js",
+            "type": "js",
+            "deps": [
+                "common:widget/jquery/jquery.js",
+                "report:widget/OnlineBrowsen/flexpaper_flash.js"
+            ]
+        }
+    },
+    "pkg": {}
+}

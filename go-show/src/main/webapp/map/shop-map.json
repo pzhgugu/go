@@ -1,0 +1,72 @@
+{
+    "res": {
+        "shop:scripts/album.js": {
+            "uri": "/show/static/shop/scripts/album.js",
+            "type": "js"
+        },
+        "shop:scripts/area_array.js": {
+            "uri": "/show/static/shop/scripts/area_array.js",
+            "type": "js"
+        },
+        "shop:scripts/common_select.js": {
+            "uri": "/show/static/shop/scripts/common_select.js",
+            "type": "js"
+        },
+        "shop:scripts/common.js": {
+            "uri": "/show/static/shop/scripts/common.js",
+            "type": "js"
+        },
+        "shop:scripts/dialog/dialog.css": {
+            "uri": "/show/static/shop/scripts/dialog/dialog.css",
+            "type": "css"
+        },
+        "shop:scripts/dialog/dialog.js": {
+            "uri": "/show/static/shop/scripts/dialog/dialog.js",
+            "type": "js",
+            "deps": [
+                "shop:scripts/dialog/dialog.css"
+            ]
+        },
+        "shop:scripts/member.js": {
+            "uri": "/show/static/shop/scripts/member.js",
+            "type": "js"
+        },
+        "shop:scripts/page.step2.js": {
+            "uri": "/show/static/shop/scripts/page.step2.js",
+            "type": "js"
+        },
+        "shop:scripts/page.step3.js": {
+            "uri": "/show/static/shop/scripts/page.step3.js",
+            "type": "js"
+        },
+        "shop:scripts/piclist.js": {
+            "uri": "/show/static/shop/scripts/piclist.js",
+            "type": "js"
+        },
+        "shop:scripts/seller.js": {
+            "uri": "/show/static/shop/scripts/seller.js",
+            "type": "js"
+        },
+        "shop:scripts/store_goods_add.step1.js": {
+            "uri": "/show/static/shop/scripts/store_goods_add.step1.js",
+            "type": "js"
+        },
+        "shop:scripts/store_goods_add.step2.js": {
+            "uri": "/show/static/shop/scripts/store_goods_add.step2.js",
+            "type": "js"
+        },
+        "shop:scripts/store_goods_add.step3.js": {
+            "uri": "/show/static/shop/scripts/store_goods_add.step3.js",
+            "type": "js"
+        },
+        "shop:styles/base.css": {
+            "uri": "/show/static/shop/styles/base.css",
+            "type": "css"
+        },
+        "shop:styles/seller_center.css": {
+            "uri": "/show/static/shop/styles/seller_center.css",
+            "type": "css"
+        }
+    },
+    "pkg": {}
+}

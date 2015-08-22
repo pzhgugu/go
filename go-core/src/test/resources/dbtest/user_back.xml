@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <go_users id="402897814c026b8d014c027d3acb0000" created="2015-03-10 15:01:44.0" updated="2015-03-12 09:47:40.0" version="10" alias="&#31649;&#29702;&#21592;" displayOrder="0" name="administrator" enable="0" password="1111" type="2"/>
+  <go_users id="402897814c028d46014c02904b760000" created="2015-03-10 15:22:33.0" updated="2015-03-12 09:47:20.0" version="9" alias="&#21476;&#21476;" displayOrder="1" name="0333377" enable="0" password="1111" type="2"/>
+</dataset>

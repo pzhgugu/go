@@ -1,0 +1,99 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+div#layoutObj {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.dhxlayout_base_dhx_skyblue div.dhx_cell_layout div.dhx_cell_hdr {
+	border: 0px;
+}
+div.gridbox_dhx_skyblue.gridbox table.obj.row20px tr td {
+	height: 20px;
+}
+.holder a {
+	font-size: 12px;
+	cursor: pointer;
+	margin: 0 5px;
+	color: #333;
+}
+
+.holder a:hover {
+	background-color: #222;
+	color: #fff;
+}
+
+.holder a.jp-previous {
+	margin-right: 15px;
+}
+.holder a.jp-next {
+	margin-left: 15px;
+}
+
+.holder a.jp-current, a.jp-current:hover {
+	color: #FF4242;
+	font-weight: bold;
+}
+
+.holder a.jp-disabled, a.jp-disabled:hover {
+	color: #bbb;
+}
+
+.holder a.jp-current, a.jp-current:hover, .holder a.jp-disabled, a.jp-disabled:hover {
+	cursor: default;
+	background: none;
+}
+
+.holder span {
+	margin: 0 5px;
+}
+
+form {
+	/*float: right;*/
+	margin-right: 10px;
+}
+
+form label {
+	margin-right: 5px;
+}
+
+div.gridbox .xhdr {
+	height: 26px;
+}
+
+div.gridbox_dhx_skyblue.gridbox table.hdr td {
+	font-family: 宋体;
+}
+
+div.gridbox table.hdr td {
+	padding: 5px 0;
+}
+.dhxform_obj_dhx_skyblue input.dhxform_textarea {
+	padding: 3px 3px !important;
+}
+.dhtmlxGrid_selection {
+	-moz-opacity: 0.5;
+	filter: alpha(opacity = 50);
+	background-color: #83abeb;
+	opacity: 0.5;
+}
+div.dhxform_item_label_left.button_save div.dhxform_btn_txt {
+	background-image: url(data:image/gif;base64,R0lGODlhEgASANU0AH19ff///+Tx//j8/+72/2ZmZt3u/8PDw2lpaXd3d21tbbS0tN3d3dPT0zs7O6qqqoiIiDU1NYGBgczm/3JycklJSZKSklRUVFhYWEFBQcTi/11dXY2NjYOHiIKCgpmZmWhoaDk5OUVFRUdHR09PT1tbW7/M2WBgYLnc/0pKSqzW/2RkZKHQ/zw8PFdXV5aWljY2Nl1hYrG7v7G8wNvp7gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADQALAAAAAASABIAAAakQJpwSCwaj0hhB8FSoTSTiQalYiE6xNUnwO16Pyvi6TUom8+vE3FjIbjfcMuGiOEI7vg8B0O8QEwGgYKBJhAXRCQeCgWMjYwKHiREKQCVlpeVKUQiCQkHDKChB50iRBkUIA0ODg2trSAUGUQtCi4HFRUHurouCi1EIQgjCyUlC8fHIwghRDMRDg8ICA/U1A4FEUUyDgoJEhAQEgkKDjAxSejpSEEAOw==);
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+	padding-left: 22px;
+	margin: 0px 15px 0px 12px;
+}
+div.dhxform_item_label_left.button_cancel div.dhxform_btn_txt {
+	background-image: url(data:image/gif;base64,R0lGODlhEgASANUtAP+qiNm6tf+EYv+Xdf9xT/FUMs4lA/1jQfZaOOLFwNIpB/+fff+ObP9gPvlfPf9oRv9aONo0EtUuDOTHw/+Tcdu8t/+lg+NBH/9mRN2/ute3suhHJdm5tN7AvO2nmd46GNi4s+PGwuTIw9y9uMwiAODCveyml/9VM+1OLNOFd+HEv/97WdSHeNvp7gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAC0ALAAAAAASABIAAAabwJZwSCwaj8ihByMyijCeoukAOEyIE+rBRHQALABHSBjygh3EBGKxACASagD7XVQVBgNAoQDAF1RHJSgMDAAAhCglSR0bAo4CGx1JLRkXFCsrFBcZSSMfAAShBAAfI0cVEQAPDxERqwARFUUBEgANDRIBtLcAuUQKABAQChxCHArCAApELAYnBiBEIM4GLEUpJBpGGiQpk9/gRkEAOw==);
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+	padding-left: 22px;
+	margin: 0px 15px 0px 12px;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/go.iml" filepath="$PROJECT_DIR$/go.iml" />
+      <module fileurl="file://$PROJECT_DIR$/go-cms/go-cms.iml" filepath="$PROJECT_DIR$/go-cms/go-cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/go-core/go-core.iml" filepath="$PROJECT_DIR$/go-core/go-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/go-report/go-report.iml" filepath="$PROJECT_DIR$/go-report/go-report.iml" />
+      <module fileurl="file://$PROJECT_DIR$/go-shop/go-shop.iml" filepath="$PROJECT_DIR$/go-shop/go-shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/go-show/go-show.iml" filepath="$PROJECT_DIR$/go-show/go-show.iml" />
+    </modules>
+  </component>
+</project>
+

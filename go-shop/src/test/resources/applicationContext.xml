@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xsi:schemaLocation="  
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd  
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd  
+        http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd  
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd  
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd  
+        http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd"
+	default-lazy-init="true">
+
+	<!-- 注入applicationContext，它先与监听执行 
+	<bean class="com.ansteel.core.context.ContextHolder" />-->
+	<bean class="com.ansteel.core.context.InstantiationTracingBeanPostProcessor" />
+
+	<context:property-placeholder
+		ignore-resource-not-found="true" location="classpath*:/go.properties" />
+
+
+	<bean id="validator"
+		class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+		<property name="providerClass" value="org.hibernate.validator.HibernateValidator" />
+		<property name="validationMessageSource" ref="messageSource" />
+	</bean>
+
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>languages/messages</value>
+				<value>ValidationMessages</value>
+			</list>
+		</property>
+		<property name="useCodeAsDefaultMessage" value="false" />
+		<property name="defaultEncoding" value="UTF-8" />
+		<property name="cacheSeconds" value="60" />
+	</bean>
+
+	<!-- 使用annotation 自动注册bean,并检查@Required,@Autowired的属性已被注入 -->
+	<context:component-scan base-package="com.ansteel">
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Controller" />
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.web.bind.annotation.ControllerAdvice" />
+	</context:component-scan>
+
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="10000000" />
+		<!-- 文件大小不能超过10M -->
+	</bean>
+	
+	<!-- 单点登录-->
+	<bean id="singleSignOnServic" class="com.ansteel.common.springsecurity.service.TePlatSingleSignOn">
+		<property name="sessionIdName" value="sessionId" />
+		<property name="userId" value="USER_SN" />
+		<property name="userName" value="USER_NAME" />
+		<property name="password" value="PASSWORD" />
+		<property name="defaultRole" value="ROLE_ADMIN" />
+		<property name="sessionIdSql" value="select u.USER_SN as USER_SN,u.USER_NAME as USER_NAME,u.PASSWORD as PASSWORD from g_user u ,g_user_sessions s where s.USER_ID=u.id and s.SESSION_ID=:sessionId " />
+	</bean>
+
+	<!-- beetl加载方法 -->
+	<bean id="beetlServiceBean" class="com.ansteel.common.beetl.service.BeetlServiceBean">
+		<property name="registerFunction">
+			<map>
+				<entry key="fun" value="com.ansteel.core.utils.ELFunctionTag" />
+			</map>
+		</property>
+		<property name="registerTag"> 
+			<map> 
+				<entry key="sec" value="com.ansteel.common.springsecurity.tool.SpringSecurityTag" /> 
+			</map> 
+		</property>
+	</bean>
+
+	<!-- 发布配置 -->
+	<bean id="dataXmlEport" class="com.ansteel.common.backup.core.DataXmlEport">
+		<property name="register">
+			<list>
+                <value>com.ansteel.common.backup.fun.MenuExecute</value>
+                <value>com.ansteel.common.backup.fun.ResourcesExecute</value>
+                <value>com.ansteel.common.backup.fun.PermissionExecute</value>
+                <value>com.ansteel.common.backup.fun.PermissionURLExecute</value>
+                <value>com.ansteel.common.backup.fun.ModelsExecute</value>
+                <value>com.ansteel.common.backup.fun.EntityFieldsExecute</value>
+                <value>com.ansteel.common.backup.fun.EntityFieldsCategoryExecute</value>
+                <value>com.ansteel.common.backup.fun.EntityFieldsFormExecute</value>
+                <value>com.ansteel.common.backup.fun.EntityFieldsGridExecute</value>
+                <value>com.ansteel.common.backup.fun.EntityFieldsQueryExecute</value>
+                <value>com.ansteel.common.backup.fun.SqlModelsExecute</value>
+                <value>com.ansteel.common.backup.fun.SqlFieldsExecute</value>
+                <value>com.ansteel.common.backup.fun.SqlFieldsCategoryExecute</value>
+                <value>com.ansteel.common.backup.fun.SqlFieldsFormExecute</value>
+                <value>com.ansteel.common.backup.fun.SqlFieldsGridExecute</value>
+                <value>com.ansteel.common.backup.fun.SqlFieldsQueryExecute</value>                
+                <value>com.ansteel.common.backup.fun.DynamicModelsExecute</value>
+                <value>com.ansteel.common.backup.fun.DynamicFieldsExecute</value>
+                <value>com.ansteel.common.backup.fun.DynamicFieldsCategoryExecute</value>
+                <value>com.ansteel.common.backup.fun.DynamicFieldsFormExecute</value>
+                <value>com.ansteel.common.backup.fun.DynamicFieldsGridExecute</value>
+                <value>com.ansteel.common.backup.fun.DynamicFieldsQueryExecute</value>  
+                <value>com.ansteel.common.backup.fun.TplExecute</value>
+                <value>com.ansteel.common.backup.fun.ViewTreeExecute</value>
+                <value>com.ansteel.common.backup.fun.ViewExecute</value>
+                <value>com.ansteel.common.backup.fun.TplSecurityExecute</value> 
+                <value>com.ansteel.common.backup.fun.TplCssExecute</value> 
+                <value>com.ansteel.common.backup.fun.TplJavascriptExecute</value> 
+                <value>com.ansteel.common.backup.fun.TplUrlExecute</value> 
+                <value>com.ansteel.common.backup.fun.TplVariableExecute</value>    
+			</list>
+		</property>
+	</bean>
+
+	<!--第二步 -->
+	<!--定义实体的工厂bean -->
+	  <!-- 数据源配置 -->  
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"  
+        init-method="init" destroy-method="close">  
+        <!-- 驱动名称 -->  
+        <property name="DriverClassName" value="${jdbc.driverClassName}" />  
+        <!-- JDBC连接串 -->  
+        <property name="url" value="${jdbc.url}" />  
+        <!-- 数据库用户名称 -->  
+        <property name="username" value="${jdbc.username}" />  
+        <!-- 数据库密码 -->  
+        <property name="password" value="${jdbc.password}" />  
+        <!-- 连接池最大使用连接数量 -->  
+        <property name="maxActive" value="${jdbc.pool.maxActive}" />  
+        <!-- 初始化大小 -->  
+        <property name="initialSize" value="${jdbc.initial.size}" />  
+        <!-- 获取连接最大等待时间 -->  
+        <property name="maxWait" value="60000" />  
+        <!-- 连接池最小空闲 -->  
+        <property name="minIdle" value="${jdbc.pool.minIdle}" />  
+        <!-- 逐出连接的检测时间间隔 -->  
+        <property name="timeBetweenEvictionRunsMillis" value="3000" />  
+        <!-- 最小逐出时间 -->  
+        <property name="minEvictableIdleTimeMillis" value="300000" />  
+        <!-- 测试有效用的SQL Query -->  
+        <property name="validationQuery" value="SELECT 'x'" />  
+        <!-- 连接空闲时测试是否有效 -->  
+        <property name="testWhileIdle" value="true" />  
+        <!-- 获取连接时测试是否有效 -->  
+        <property name="testOnBorrow" value="false" />  
+        <!-- 归还连接时是否测试有效 -->  
+        <property name="testOnReturn" value="false" />  
+    </bean>  
+  
+  
+    <!-- JPA实体工厂配置 -->  
+    <bean id="entityManagerFactory"  
+        class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">  
+        <property name="dataSource" ref="dataSource" />  
+        <!-- 扫描实体路径 -->  
+        <property name="packagesToScan" value="com.ansteel.**.domain" />  
+        <property name="jpaVendorAdapter">  
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">  
+                <property name="showSql" value="true" />  
+                <property name="generateDdl" value="false" />  
+            </bean>  
+        </property>  
+        <property name="jpaProperties">  
+            <props>  
+                <!--设置外连接抓取树的最大深度 -->  
+                <prop key="hibernate.max_fetch_depth">3</prop>  
+                <prop key="hibernate.jdbc.fetch_size">18</prop>  
+                <prop key="hibernate.jdbc.batch_size">10</prop>  
+                <!-- 自动建表类型 validate|create|create-drop|update -->  
+                <prop key="hibernate.hbm2ddl.auto">update</prop>  
+                <!-- 是否显示SQL -->  
+                <prop key="hibernate.show_sql">false</prop>  
+                <!-- 显示SQL是否格式化 -->  
+                <prop key="hibernate.format_sql">false</prop>  
+                <!-- 关闭二级缓存 -->  
+                <prop key="hibernate.cache.provider_class">org.hibernate.cache.NoCacheProvider</prop>  
+                <!-- 关闭实体字段映射校验 -->  
+                <prop key="javax.persistence.validation.mode">none</prop>  
+            </props>  
+        </property>  
+    </bean>  
+  
+    <!-- 配置事务管理器 -->  
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">  
+        <property name="dataSource" ref="dataSource" />  
+        <property name="entityManagerFactory" ref="entityManagerFactory" />  
+    </bean> 
+
+	<!--第四步 -->
+	<!--定义repository接口的存放目录 -->
+	<!--定义接口实现的后缀，通常用Impl -->
+	<!--定义实体工厂的引用 -->
+	<!--定义事务管理器的引用 -->
+	<jpa:repositories base-package="com.ansteel.**.repository"
+		repository-impl-postfix="Impl" entity-manager-factory-ref="entityManagerFactory"
+		factory-class="com.ansteel.core.repository.ProjectRepositoryFactoryBean"
+		transaction-manager-ref="transactionManager" />
+
+
+	<!--第五步 -->
+	<!--声明采用注解的方式申明事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+
+</beans>

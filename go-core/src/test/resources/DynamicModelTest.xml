@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ansteel.modules.dynamicmodel.domain">
+	<class entity-name="GOSHOW_DYNAMIC_TEST" table="GOSHOW_DYNAMIC_TEST" >
+		<id name="id" type="long"  column="ID">
+			<generator class="identity"/>
+		</id>
+		<version column="version" name="version" />  
+		<property name="creator" column="creator"  length="4000" type="string"/>
+		<property name="lastUpdater" column="lastUpdater" type="string"/>
+		<property name="created" column="created" type="java.util.Date" />
+		<property name="updated" column="updated" type="java.util.Date" />
+
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,69 @@
+.jc-demo-box {
+	background: white none repeat scroll 0 0;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+	margin: 2em auto;
+	text-align: left;
+}
+
+#preview-pane {
+	display: block;
+	z-index: 2000;
+	top: 10px;
+	padding: 6px;
+	border: 1px rgba(0,0,0,.4) solid;
+	background-color: white;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* The Javascript code will set the aspect ratio of the crop
+ area based on the size of the thumbnail preview,
+ specified here */
+#preview-pane .preview-container {
+	width: 185px;
+	height: 180px;
+	overflow: hidden;
+}
+
+#btnImage {
+	width: 145px;
+	height: 32px;
+	color: #666;
+	background: url("../images/btnImage.png") no-repeat left top;
+	padding-left: 18px;
+	position: relative;
+}
+
+#btnImage input, button {
+	font-family: "Arial", "Tahoma", "微软雅黑", "雅黑";
+	border: 0px;
+	vertical-align: middle;
+	margin: 8px;
+	line-height: 18px;
+	font-size: 18px;
+}
+
+#btnProgress {
+	color: #EBEBEB;
+	width: 0px;
+	height: 31px;
+	background: #EBEBEB;
+	position: absolute;
+	margin-left: -17px;
+}
+
+#btnContent {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	left: 60px;
+	margin-top: 8px;
+	width: 50px;
+}
+
