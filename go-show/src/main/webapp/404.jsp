@@ -4,7 +4,7 @@
 <HTML>
 <HEAD>
  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>十分抱歉，页面未找到！</title>1
+<title>十分抱歉，页面未找到！</title>
 <META http-equiv=Content-Type content="text/html; charset=gb2312">
 <STYLE type=text/css>INPUT {
 	FONT-SIZE: 12px
