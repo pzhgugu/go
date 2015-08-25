@@ -74,7 +74,7 @@ var swfobject = function() {
 	}(),
 	
 	/* Cross-browser onDomLoad
-		- Will fire an event as soon as the DOM of a web page is loaded
+		- Will fire an event as soon as the DOM of a controller page is loaded
 		- Internet Explorer workaround based on Diego Perini's solution: http://javascript.nwbox.com/IEContentLoaded/
 		- Regular onload serves as fallback
 	*/ 
@@ -147,7 +147,7 @@ var swfobject = function() {
 	
 	/* Cross-browser onload
 		- Based on James Edwards' solution: http://brothercake.com/site/resources/scripts/onload/
-		- Will fire an event as soon as a web page including all of its assets are loaded 
+		- Will fire an event as soon as a controller page including all of its assets are loaded
 	 */
 	function addLoadEvent(fn) {
 		if (typeof win.addEventListener != UNDEF) {
@@ -240,7 +240,7 @@ var swfobject = function() {
 								cb(cbObj);
 							}
 						}
-						else if (regObjArr[i].expressInstall && canExpressInstall()) { // show the Adobe Express Install dialog if set by the web page author and if supported
+						else if (regObjArr[i].expressInstall && canExpressInstall()) { // show the Adobe Express Install dialog if set by the controller page author and if supported
 							var att = {};
 							att.data = regObjArr[i].expressInstall;
 							att.width = obj.getAttribute("width") || "0";
@@ -653,7 +653,7 @@ var swfobject = function() {
 					heightStr += "";
 					var att = {};
 					if (attObj && typeof attObj === OBJECT) {
-						for (var i in attObj) { // copy object to avoid the use of references, because web authors often reuse attObj for multiple SWFs
+						for (var i in attObj) { // copy object to avoid the use of references, because controller authors often reuse attObj for multiple SWFs
 							att[i] = attObj[i];
 						}
 					}
@@ -662,12 +662,12 @@ var swfobject = function() {
 					att.height = heightStr;
 					var par = {}; 
 					if (parObj && typeof parObj === OBJECT) {
-						for (var j in parObj) { // copy object to avoid the use of references, because web authors often reuse parObj for multiple SWFs
+						for (var j in parObj) { // copy object to avoid the use of references, because controller authors often reuse parObj for multiple SWFs
 							par[j] = parObj[j];
 						}
 					}
 					if (flashvarsObj && typeof flashvarsObj === OBJECT) {
-						for (var k in flashvarsObj) { // copy object to avoid the use of references, because web authors often reuse flashvarsObj for multiple SWFs
+						for (var k in flashvarsObj) { // copy object to avoid the use of references, because controller authors often reuse flashvarsObj for multiple SWFs
 							if (typeof par.flashvars != UNDEF) {
 								par.flashvars += "&" + k + "=" + flashvarsObj[k];
 							}

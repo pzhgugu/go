@@ -66,7 +66,7 @@ public class Constants {
 	/**
 	 * spring模板变量
 	 */
-	public static final String URI_T_V="org.springframework.web.servlet.HandlerMapping.uriTemplateVariables";
+	public static final String URI_T_V="org.springframework.controller.servlet.HandlerMapping.uriTemplateVariables";
 	/**
 	 * 主键名称
 	 */

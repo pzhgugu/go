@@ -12248,7 +12248,7 @@ function dhtmlXMenuObject(l, m) {
     var h = this;
     this.conf = {
         skin: (m || window.dhx4.skin || (typeof(dhtmlx) != "undefined" ? dhtmlx.skin: null) || window.dhx4.skinDetect("dhxmenu") || "dhx_skyblue"),
-        mode: "web",
+        mode: "controller",
         align: "left",
         is_touched: false,
         selected: -1,
@@ -12503,7 +12503,7 @@ function dhtmlXMenuObject(l, m) {
         }
         var J = "polygon_" + I;
         if ((this.idPull[J] != null) && (this.idPull[I] != null)) {
-            if (this.conf.top_mode && this.conf.mode == "web" && !this.conf.context) {
+            if (this.conf.top_mode && this.conf.mode == "controller" && !this.conf.context) {
                 if (!this.idPull[I]._mouseOver && o == this.conf.dir_toplv) {
                     return
                 }
@@ -13378,7 +13378,7 @@ dhtmlXMenuObject.prototype._renderToplevelItem = function(o, n) {
         this._addSubMenuPolygon(this.itemPull[o]["id"], this.itemPull[o]["id"])
     }
     a.onmouseover = function() {
-        if (l.conf.mode == "web") {
+        if (l.conf.mode == "controller") {
             window.clearTimeout(l.conf.tm_handler)
         }
         var m = l._getSubItemToDeselectByPolygon("parent");
@@ -13419,13 +13419,13 @@ dhtmlXMenuObject.prototype._renderToplevelItem = function(o, n) {
                     };
                     l.loadStruct(l.conf.dload_url)
                 }
-                if (l.conf.top_mode && l.conf.mode == "web" && !l.conf.context) {
+                if (l.conf.top_mode && l.conf.mode == "controller" && !l.conf.context) {
                     this._mouseOver = true
                 }
             }
             if ((!l.conf.dload) || (l.conf.dload && (!l.itemPull[this.id]["loaded"] || l.itemPull[this.id]["loaded"] == "yes"))) {
                 if ((l.itemPull[this.id]["complex"]) && (l.conf.selected != -1)) {
-                    if (l.conf.top_mode && l.conf.mode == "web" && !l.conf.context) {
+                    if (l.conf.top_mode && l.conf.mode == "controller" && !l.conf.context) {
                         this._mouseOver = true;
                         var r = this.id;
                         this._menuOpenTM = window.setTimeout(function() {
@@ -13448,23 +13448,23 @@ dhtmlXMenuObject.prototype._renderToplevelItem = function(o, n) {
                 a.className = "dhtmlxMenu_" + l.conf.skin + "_TopLevel_Item_Normal"
             }
         }
-        if (l.conf.mode == "web") {
+        if (l.conf.mode == "controller") {
             window.clearTimeout(l.conf.tm_handler);
             l.conf.tm_handler = window.setTimeout(function() {
                 l._clearAndHide()
             },
             l.conf.tm_sec, "JavaScript")
         }
-        if (l.conf.top_mode && l.conf.mode == "web" && !l.conf.context) {
+        if (l.conf.top_mode && l.conf.mode == "controller" && !l.conf.context) {
             this._mouseOver = false;
             window.clearTimeout(this._menuOpenTM)
         }
     };
     a.onclick = function(u) {
-        if (l.conf.mode == "web") {
+        if (l.conf.mode == "controller") {
             window.clearTimeout(l.conf.tm_handler)
         }
-        if (l.conf.mode != "web" && l.itemPull[this.id]["state"] == "disabled") {
+        if (l.conf.mode != "controller" && l.itemPull[this.id]["state"] == "disabled") {
             return
         }
         u = u || event;
@@ -13643,7 +13643,7 @@ dhtmlXMenuObject.prototype._renderSublevelItem = function(a, r) {
         if (o.conf.hide_tm[this.id]) {
             window.clearTimeout(o.conf.hide_tm[this.id])
         }
-        if (o.conf.mode == "web") {
+        if (o.conf.mode == "controller") {
             window.clearTimeout(o.conf.tm_handler)
         }
         if (!this._visible) {
@@ -13652,7 +13652,7 @@ dhtmlXMenuObject.prototype._renderSublevelItem = function(a, r) {
         this._visible = true
     };
     q.onmouseout = function() {
-        if (o.conf.mode == "web") {
+        if (o.conf.mode == "controller") {
             if (o.conf.tm_handler) {
                 window.clearTimeout(o.conf.tm_handler)
             }
@@ -13896,7 +13896,7 @@ dhtmlXMenuObject.prototype._initObj = function(u, v, n) {
                     var s = (this.itemPull[n].parent == this.idPrefix + this.topId);
                     var c = (s && !this.conf.context ? this.conf.dir_toplv: this.conf.dir_sublv);
                     var l = false;
-                    if (s && this.conf.top_mode && this.conf.mode == "web" && !this.conf.context) {
+                    if (s && this.conf.top_mode && this.conf.mode == "controller" && !this.conf.context) {
                         var x = this.idPull[n];
                         if (x._mouseOver == true) {
                             var m = this.conf.top_tmtime - (new Date().getTime() - x._dynLoadTM);
@@ -14544,7 +14544,7 @@ dhtmlXMenuObject.prototype.getUserData = function(c, a) {
     return (this.userData[this.idPrefix + c + "_" + a] != null ? this.userData[this.idPrefix + c + "_" + a] : null)
 };
 dhtmlXMenuObject.prototype.setOpenMode = function(a) {
-    this.conf.mode = (a == "win" ? "win": "web")
+    this.conf.mode = (a == "win" ? "win": "controller")
 };
 dhtmlXMenuObject.prototype.setWebModeTimeout = function(a) {
     this.conf.tm_sec = (!isNaN(a) ? a: 400)
@@ -14819,7 +14819,7 @@ dhtmlXMenuObject.prototype._addUpArrow = function(h) {
         return false
     };
     g.onmouseover = function() {
-        if (c.conf.mode == "web") {
+        if (c.conf.mode == "controller") {
             window.clearTimeout(c.conf.tm_handler)
         }
         c._clearAllSelectedSubItemsInPolygon(this.pId);
@@ -14832,7 +14832,7 @@ dhtmlXMenuObject.prototype._addUpArrow = function(h) {
         c._doScrollUp(this.pId, true)
     };
     g.onmouseout = function() {
-        if (c.conf.mode == "web") {
+        if (c.conf.mode == "controller") {
             window.clearTimeout(c.conf.tm_handler);
             c.conf.tm_handler = window.setTimeout(function() {
                 c._clearAndHide()
@@ -14888,7 +14888,7 @@ dhtmlXMenuObject.prototype._addDownArrow = function(h) {
         return false
     };
     g.onmouseover = function() {
-        if (c.conf.mode == "web") {
+        if (c.conf.mode == "controller") {
             window.clearTimeout(c.conf.tm_handler)
         }
         c._clearAllSelectedSubItemsInPolygon(this.pId);
@@ -14901,7 +14901,7 @@ dhtmlXMenuObject.prototype._addDownArrow = function(h) {
         c._doScrollDown(this.pId, true)
     };
     g.onmouseout = function() {
-        if (c.conf.mode == "web") {
+        if (c.conf.mode == "controller") {
             window.clearTimeout(c.conf.tm_handler);
             c.conf.tm_handler = window.setTimeout(function() {
                 c._clearAndHide()
