@@ -13,7 +13,7 @@ public class FisUtils {
 				return id;
 			}
 			StringBuffer sb=new StringBuffer();
-			sb.append("dev/");
+			sb.append("WEB-INF/");
 			sb.append(iArray[0]);
 			sb.append("/");
 			sb.append(iArray[1]);
@@ -31,7 +31,7 @@ public class FisUtils {
 				return id;
 			}
 			StringBuffer sb=new StringBuffer("/");
-			sb.append("dev/");
+			sb.append("WEB-INF/");
 			sb.append(iArray[0]);
 			sb.append("/");
 			sb.append(iArray[1]);

@@ -1,1 +1,0 @@
-$(function(){GPW.grid.mainGrid.attachEvent("onCellChanged",function(n,l,t){0==l&&null==t&&(t="创建",this.cells(n,l).setValue(t))})});

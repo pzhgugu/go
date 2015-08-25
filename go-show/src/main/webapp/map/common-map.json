@@ -205,6 +205,10 @@
             "uri": "/show/static/common/widget/jquery/jquery.mousewheel.js",
             "type": "js"
         },
+        "common:widget/jquery/jquery.poshytip.js": {
+            "uri": "/show/static/common/widget/jquery/jquery.poshytip.js",
+            "type": "js"
+        },
         "common:widget/jquery/jquery.validation.js": {
             "uri": "/show/static/common/widget/jquery/jquery.validation.js",
             "type": "js"

@@ -1,1 +1,0 @@
-var ajax=$.ajax;$.ajax=function(s){var c={success:function(){}};s.success&&(c.success=s.success);var e=$.extend(s,{success:function(s,e,n){GLOBAL.errorMessage(s)||c.success(s,e,n)}}),n=ajax.call($,e);if("done"in n){var a=n.done;n.done=function(s){function c(c){GLOBAL.errorMessage(c)||s(c)}return a.call(n,c),n}}return n};

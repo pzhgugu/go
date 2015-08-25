@@ -59,6 +59,10 @@
             "uri": "/show/static/shop/scripts/store_goods_add.step3.js",
             "type": "js"
         },
+        "shop:scripts/store_goods_list.js": {
+            "uri": "/show/static/shop/scripts/store_goods_list.js",
+            "type": "js"
+        },
         "shop:styles/base.css": {
             "uri": "/show/static/shop/styles/base.css",
             "type": "css"

@@ -1,7 +1,7 @@
 {
     "res": {
         "report:scripts/excelReport.js": {
-            "uri": "/show/static/report/scripts/excelReport_14d6a92.js",
+            "uri": "/show/static/report/scripts/excelReport.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jqueryEx.js",
@@ -11,7 +11,7 @@
             ]
         },
         "report:scripts/jasperReport.js": {
-            "uri": "/show/static/report/scripts/jasperReport_d5005c3.js",
+            "uri": "/show/static/report/scripts/jasperReport.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jqueryEx.js",
@@ -21,11 +21,11 @@
             ]
         },
         "report:scripts/jscharts.js": {
-            "uri": "/show/static/report/scripts/jscharts_c3a4b87.js",
+            "uri": "/show/static/report/scripts/jscharts.js",
             "type": "js"
         },
         "report:scripts/reportlist.js": {
-            "uri": "/show/static/report/scripts/reportlist_755c0d6.js",
+            "uri": "/show/static/report/scripts/reportlist.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jqueryEx.js",
@@ -34,11 +34,11 @@
             ]
         },
         "report:widget/OnlineBrowsen/flexpaper_flash.js": {
-            "uri": "/show/static/report/widget/OnlineBrowsen/flexpaper_flash_63dede4.js",
+            "uri": "/show/static/report/widget/OnlineBrowsen/flexpaper_flash.js",
             "type": "js"
         },
         "report:widget/OnlineBrowsen/OnlineBrowsen.js": {
-            "uri": "/show/static/report/widget/OnlineBrowsen/OnlineBrowsen_96c9bee.js",
+            "uri": "/show/static/report/widget/OnlineBrowsen/OnlineBrowsen.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jquery.js",

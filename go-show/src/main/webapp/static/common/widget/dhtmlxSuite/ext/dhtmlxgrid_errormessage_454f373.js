@@ -1,1 +1,0 @@
-dhtmlXGridObject.prototype.errorMessage=function(e){var r=e.xmlLoader,t=r.xmlDoc,s=t.responseText,o=jQuery.parseJSON(s);-1==o.code&&(window.parent==window?dhtmlx.message({type:"error",text:o.message,expire:-1}):parent.dhtmlx.message({type:"error",text:o.message,expire:-1}))};
