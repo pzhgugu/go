@@ -50,6 +50,7 @@ public class Excel {
 
 	private static final String XLSX = "xlsx";
 
+
 	public String getType() {
 		return type;
 	}
@@ -263,8 +264,8 @@ public class Excel {
 
 	/**
 	 * 获得行、列队数值
-	 * 比如：A2 [0]行为1 [1]列为0
-	 * @param cell
+	 * 比如：A2 [0]行为1 [1]列为0cell
+	 * @param
 	 * @return
 	 */
 	public static String getCellFigure(int iRow ,int iCell) {
@@ -298,6 +299,8 @@ public class Excel {
 		//此处修改效率大幅提升，还解决了2003以前的bug（跨行不停增加，最后越界）
 		//此处不能放在循环体内
 		Row sourceRow = sheet.getRow(sourceRowNum);
+
+        boolean isFormula=checkIsFormula(sourceRow);
 		
 		for (int i = 0; i < rows; i++) {
 			Row targetRow = sheet.createRow(startRow);
@@ -311,27 +314,74 @@ public class Excel {
                 }
                 targetCell.setCellStyle(sourceCell.getCellStyle());  
                 targetCell.setCellType(sourceCell.getCellType()); 
-                if(targetCell.getCellType()==Cell.CELL_TYPE_FORMULA){                	
-                	String formula = sourceCell.getCellFormula();
-                	//以后验证其他方法
-                	/*String c=Excel.getCellFigure(sourceCell.getRowIndex(), sourceCell.getColumnIndex());
-                	if(formula.indexOf(c)>-1){
-                		String c1=Excel.getCellFigure(targetCell.getRowIndex(), targetCell.getColumnIndex());
-                		formula=formula.replaceAll(c, c1);
-                		
-                	}*/              	
-                	targetCell.setCellFormula(formula);
+                //替换公式
+                if(isFormula) {
+                    String sourceCellValue = sourceCell.getStringCellValue();
+                    if(sourceCell==null) {
+                        continue;
+                    }
+                    if(sourceCell.getCellType()!=Cell.CELL_TYPE_STRING) {
+                        continue;
+                    }
+                    if (sourceCellValue.indexOf("${ROW}") > -1) {
+                        targetCell.setCellType(Cell.CELL_TYPE_FORMULA);
+                        String formula = sourceCellValue.replaceAll("\\$\\{ROW\\}", String.valueOf(targetCell.getRowIndex() + 1));
+                        formula = formula.replace("=", "");
+                        targetCell.setCellFormula(formula);
+                    }
                 }
-            } 
+            }
+
 			for (CellRangeAddress ca : rowCellRangeList) {
 				CellRangeAddress range = new CellRangeAddress(startRow,startRow,ca.getFirstColumn(),ca.getLastColumn());
 				sheet.addMergedRegion(range); 
 			}
 			startRow++;
 		}
+
+        //替换源公式，就是替换第一行公式
+        if(isFormula) {
+            for (int m = 0; m <= sourceRow.getPhysicalNumberOfCells(); m++) {
+                Cell sourceCell = sourceRow.getCell(m);
+                if(sourceCell==null) {
+                    continue;
+                }
+                if(sourceCell.getCellType()!=Cell.CELL_TYPE_STRING) {
+                    continue;
+                }
+                String sourceCellValue = sourceCell.getStringCellValue();
+                if (sourceCellValue.indexOf("${ROW}") > -1) {
+                    sourceCell.setCellType(Cell.CELL_TYPE_FORMULA);
+                    String formula = sourceCellValue.replaceAll("\\$\\{ROW\\}", String.valueOf(sourceCell.getRowIndex() + 1));
+                    formula = formula.replace("=", "");
+                    sourceCell.setCellFormula(formula);
+                }
+            }
+        }
 	}
-	
-	public static List<CellRangeAddress> getCombineCell(Sheet sheet) {
+
+    /**
+     * 检查是否有公式
+     * @param sourceRow
+     * @return
+     */
+    private static boolean checkIsFormula(Row sourceRow) {
+        for (int m = 0; m <= sourceRow.getPhysicalNumberOfCells(); m++) {
+            Cell sourceCell = sourceRow.getCell(m);
+            if(sourceCell==null) {
+                continue;
+            }
+            if(sourceCell.getCellType()!=Cell.CELL_TYPE_STRING) {
+                continue;
+            }
+            if (sourceCell.getStringCellValue().indexOf("${ROW}") > -1) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static List<CellRangeAddress> getCombineCell(Sheet sheet) {
 		List<CellRangeAddress> list = new ArrayList<CellRangeAddress>();
 		// 获得一个 sheet 中合并单元格的数量
 		int sheetmergerCount = sheet.getNumMergedRegions();
