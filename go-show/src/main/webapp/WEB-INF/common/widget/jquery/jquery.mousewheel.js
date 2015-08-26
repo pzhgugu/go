@@ -1,4 +1,5 @@
-/*! Copyright (c) 2011 Brandon Aaron (http://brandonaaron.net)
+/*@require common:widget/jquery/jquery.js
+ *Copyright (c) 2011 Brandon Aaron (http://brandonaaron.net)
  * Licensed under the MIT License (LICENSE.txt).
  *
  * Thanks to: http://adomas.org/javascript-mouse-wheel/ for some pointers.

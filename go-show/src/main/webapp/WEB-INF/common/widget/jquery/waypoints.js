@@ -1,3 +1,6 @@
+/**
+ * @require common:widget/jquery/jquery.js
+ */
 (function($, wp, wps, window, undefined) {
 	'$:nomunge';
 	var $w = $(window),

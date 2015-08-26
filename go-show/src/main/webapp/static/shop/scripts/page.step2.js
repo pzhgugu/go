@@ -7,7 +7,7 @@ var KE;
             'superscript', '|', 'selectall', 'clearhtml','quickformat','|',
             'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
             'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image', 'flash', 'media', 'table', 'hr', 'emoticons', 'link', 'unlink', '|', 'about'],
-						cssPath : "http://localhost/shopnc/data/resource/kindeditor/themes/default/default.css",
+						cssPath : "../../common/widget/kindeditor/themes/default/default.css",
 						allowImageUpload : false,
 						allowFlashUpload : false,
 						allowMediaUpload : false,

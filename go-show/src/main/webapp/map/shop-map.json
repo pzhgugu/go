@@ -43,6 +43,10 @@
             "uri": "/show/static/shop/scripts/piclist.js",
             "type": "js"
         },
+        "shop:scripts/plateAdd.js": {
+            "uri": "/show/static/shop/scripts/plateAdd.js",
+            "type": "js"
+        },
         "shop:scripts/seller.js": {
             "uri": "/show/static/shop/scripts/seller.js",
             "type": "js"

@@ -1,4 +1,6 @@
 /**
+ * @require common:widget/jquery/jquery.js
+ *
  *ajaxContent - jQuery plugin for accessible, unobtrusive and easy ajax behaviour.
  * @Version 2.0
  * 

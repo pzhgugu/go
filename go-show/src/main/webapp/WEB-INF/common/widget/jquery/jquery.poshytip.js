@@ -1,4 +1,4 @@
-/*
+/*@require common:widget/jquery/jquery.js
  * Poshy Tip jQuery plugin v1.1
  * http://vadikom.com/tools/poshy-tip-jquery-plugin-for-stylish-tooltips/
  * Copyright 2010-2011, Vasil Dinkov, http://vadikom.com/

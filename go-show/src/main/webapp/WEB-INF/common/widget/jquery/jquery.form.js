@@ -1,4 +1,5 @@
-/*!
+/*
+ *@require common:widget/jquery/jquery.js
  * jQuery Form Plugin
  * version: 3.51.0-2014.06.20
  * Requires jQuery v1.5 or later

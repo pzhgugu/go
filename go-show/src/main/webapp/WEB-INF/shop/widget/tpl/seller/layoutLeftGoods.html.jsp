@@ -34,8 +34,8 @@
                         库存警报
                     </a>
                 </li>
-                <li class="">
-                    <a href="#">
+                <li <c:if test='${P_CURRENT_OP=="plate"}'>class="current"</c:if>>
+                    <a href="${S_URL}/se/plate/list">
                         关联板式
                     </a>
                 </li>
