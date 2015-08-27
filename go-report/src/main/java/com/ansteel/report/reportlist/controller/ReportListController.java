@@ -202,7 +202,7 @@ public class ReportListController extends SimpleController{
 		if(view!=null){
 			model.addAllAttributes(viewService.getViewVariable(view));
 		}
-		return FisUtils.page("report:widget/reportlist/reportlist.html");
+		return FisUtils.page("report:page/reportlist/reportlist.html");
 		
 	}
 	

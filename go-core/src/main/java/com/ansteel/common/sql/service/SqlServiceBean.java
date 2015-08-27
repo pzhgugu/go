@@ -45,6 +45,7 @@ public class SqlServiceBean implements SqlService {
 	public List querySql(String sqlContent, HttpServletRequest request,
 			Map<String, Object> operMap) {
 		String sql = beetlService.outContent(sqlContent, request,operMap);
+        sql=sql.toUpperCase();
 		return sqlBaseService.findSqlMap(sql, operMap);
 	}
 	
@@ -52,7 +53,7 @@ public class SqlServiceBean implements SqlService {
 	public Page querySqlPage(String sqlContent, HttpServletRequest request,
 			Map<String, Object> operMap,Pageable pageable) {
 		String sql = beetlService.outContent(sqlContent, request,operMap);
-		
+        sql=sql.toUpperCase();
 		String countSql = getCountQuerySyntax(sql);		
 		int totalCount = findByCount(countSql,operMap);		
 		List resultList = find(sql, operMap,  pageable);
@@ -86,6 +87,7 @@ public class SqlServiceBean implements SqlService {
 	public List querySql(String sqlContent, HttpServletRequest request) {
 		String sql = beetlService.outContent(sqlContent, request);		
 		Map<String,Object> operMap =RequestUtils.getRequestMap(request);
+        sql=sql.toUpperCase();
 		return sqlBaseService.findSqlMap(sql, operMap);
 	}
 
@@ -93,6 +95,7 @@ public class SqlServiceBean implements SqlService {
 	public List querySqlArray(String sqlContent, HttpServletRequest request) {
 		String sql = beetlService.outContent(sqlContent, request);
 		Map<String,Object> operMap =RequestUtils.getRequestMap(request);
+        sql=sql.toUpperCase();
 		return sqlBaseService.findSql(sql,operMap);
 	}
 }

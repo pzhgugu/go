@@ -251,7 +251,8 @@ public class GlobalBaseController extends TreeController {
 		
 		if (result.hasErrors()) {  
 			ExceprionUtils.BindingResultError(result);
-	    }  
+	    }
+        this.saveBefore(entity);
 		baseService.save(entity);
 	}
 	

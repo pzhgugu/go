@@ -17,19 +17,23 @@
 
             <div class="tabmenu">
                 <ul class="tab pngFix">
-                    <li class="normal"><a href="${S_URL}/se/plate/list">版式列表</a></li><li class="active"><a href="${S_URL}/se/plate/add/page">添加版式</a></li></ul>
+                    <li class="normal"><a href="${S_URL}/se/plate/list">版式列表</a></li>
+                    <li <c:if test="${!empty P_STORE_PLATE}">class="normal"</c:if><c:if test="${empty P_STORE_PLATE}">class="active"</c:if>><a href="${S_URL}/se/plate/edit/page">添加版式</a></li>
+                    <c:if test="${!empty P_STORE_PLATE}">
+                        <li class="active"><a href="#">编辑版式</a></li>
+                    </c:if>
+                </ul>
             </div>
 
-<!--表单开始-->
+            <!--表单开始-->
             <div class="ncsc-form-default">
-                <form id="plate_form" action="#" method="post">
-                    <input type="hidden" value="ok" name="form_submit">
-                    <input type="hidden" value="" name="p_id">
+                <form id="plate_form" action="se/plate/save?for=form" method="post">
+                    <input type="hidden" value='<c:if test="${!empty P_STORE_PLATE}">${P_STORE_PLATE.id}</c:if>' name="id">
 
                     <dl>
                         <dt><i class="required">*</i>版式名称：</dt>
                         <dd>
-                            <input type="text" id="p_name" value="" name="p_name" class="text w200">
+                            <input type="text" id="plateName" value='<c:if test="${!empty P_STORE_PLATE}">${P_STORE_PLATE.plateName}</c:if>' name="plateName" class="text w200">
                             <p class="hint">请输入10个字符内的名称，方便商品发布 / 编辑时选择使用。</p>
                         </dd>
                     </dl>
@@ -37,8 +41,8 @@
                         <dt><i class="required">*</i>版式位置：</dt>
                         <dd id="gcategory">
                             <ul class="ncsc-form-radio-list">
-                                <li><label><input type="radio" checked="checked" class="radio" value="1" id="p_position" name="p_position">顶部</label></li>
-                                <li><label><input type="radio" class="radio" value="0" id="p_position" name="p_position">底部</label></li>
+                                <li><label><input type="radio" <c:if test="${empty P_STORE_PLATE||P_STORE_PLATE.platePosition==1}">checked="checked" </c:if> class="radio" value="1" name="platePosition">顶部</label></li>
+                                <li><label><input type="radio" <c:if test="${!empty P_STORE_PLATE&&P_STORE_PLATE.platePosition==0}">checked="checked" </c:if>  class="radio" value="0" name="platePosition">底部</label></li>
                             </ul>
                             <p class="hint">选择广联版式插入到页面中的位置，选择“顶部”为商品详情上方内容，“底部”为商品详情下方内容。</p>
                         </dd>
@@ -47,7 +51,7 @@
                         <dt><i class="required">*</i>版式内容：</dt>
                         <dd>
 <textarea style="width: 100%; height: 480px; visibility: hidden; display: none;"
-          name="p_content" id="g_body">
+          name="plateContent" id="g_body"><c:if test="${!empty P_STORE_PLATE}">${P_STORE_PLATE.plateContent}</c:if>
                 </textarea>
                             <div class="hr8">
                                 <a href="${S_URL}/se/goods/addstep/two/imagesdesc" nctype="show_desc"
@@ -73,7 +77,7 @@
                     </div>
                 </form>
             </div>
-<!--表单结束-->
+            <!--表单结束-->
 
         </div>
 

@@ -1,7 +1,7 @@
 {
     "res": {
         "cms:scripts/news.js": {
-            "uri": "/show/static/cms/scripts/news.js",
+            "uri": "/show/static/cms/scripts/news_0b9d9a7.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jqueryEx.js",
@@ -11,7 +11,7 @@
             ]
         },
         "cms:scripts/newsCategory.js": {
-            "uri": "/show/static/cms/scripts/newsCategory.js",
+            "uri": "/show/static/cms/scripts/newsCategory_e005c35.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jqueryEx.js",
@@ -23,7 +23,7 @@
             ]
         },
         "cms:scripts/newscontainer.js": {
-            "uri": "/show/static/cms/scripts/newscontainer.js",
+            "uri": "/show/static/cms/scripts/newscontainer_8ece1fc.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jqueryEx.js",
@@ -32,7 +32,7 @@
             ]
         },
         "cms:scripts/publishInfo.js": {
-            "uri": "/show/static/cms/scripts/publishInfo.js",
+            "uri": "/show/static/cms/scripts/publishInfo_c04a465.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jqueryEx.js",
@@ -43,19 +43,19 @@
             ]
         },
         "cms:styles/base.css": {
-            "uri": "/show/static/cms/styles/base.css",
+            "uri": "/show/static/cms/styles/base_2eb1bf6.css",
             "type": "css"
         },
         "cms:styles/home_header.css": {
-            "uri": "/show/static/cms/styles/home_header.css",
+            "uri": "/show/static/cms/styles/home_header_24f7137.css",
             "type": "css"
         },
         "cms:styles/layout.css": {
-            "uri": "/show/static/cms/styles/layout.css",
+            "uri": "/show/static/cms/styles/layout_efa095e.css",
             "type": "css"
         },
         "cms:styles/newsCategory.css": {
-            "uri": "/show/static/cms/styles/newsCategory.css",
+            "uri": "/show/static/cms/styles/newsCategory_f9d910e.css",
             "type": "css"
         }
     },

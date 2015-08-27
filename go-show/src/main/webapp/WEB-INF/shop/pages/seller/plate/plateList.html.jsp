@@ -15,7 +15,7 @@
             <div class="tabmenu">
                 <ul class="tab pngFix">
                     <li class="active"><a href="${S_URL}/se/plate/list">版式列表</a></li></ul>
-                <a title="添加关联版式" class="ncsc-btn ncsc-btn-green" href="${S_URL}/se/plate/add/page">添加关联版式</a>
+                <a title="添加关联版式" class="ncsc-btn ncsc-btn-green" href="${S_URL}/se/plate/edit/page">添加关联版式</a>
             </div>
 
 <!--帮助开始-->
@@ -49,6 +49,17 @@
 <!--搜索结束-->
 
 <!--列表开始-->
+            <c:if test="${fn:length(P_PLATE_LIST)==0}">
+                <div class="warning-option">
+                    <i class="icon-warning-sign">
+                        &nbsp;
+                    </i>
+        <span>
+          暂无符合条件的数据记录
+        </span>
+                </div>
+            </c:if>
+<c:if test="${fn:length(P_PLATE_LIST)>0}">
             <table class="ncsc-table-style">
                 <thead>
                 <tr>
@@ -60,35 +71,28 @@
                 <tr>
                     <td class="tc"><input type="checkbox" class="checkall" id="all"></td>
                     <td colspan="10"><label for="all">全选</label>
-                        <a class="ncsc-btn-mini" confirm="您确定要删除吗?" name="p_id" uri="http://localhost/shopnc/shop/index.php?act=store_plate&amp;op=drop_plate" nc_type="batchbutton" href="javascript:void(0);"><i class="icon-trash"></i>删除</a>
+                        <a class="ncsc-btn-mini" confirm="您确定要删除吗?" name="p_id" uri="se/plate/del?for=a" nc_type="batchbutton" href="javascript:void(0);"><i class="icon-trash"></i>删除</a>
                     </td>
                 </tr>
                 </thead>
                 <tbody>
+                <c:forEach items="${P_PLATE_LIST}" var="plate">
                 <tr class="bd-line">
-                    <td class="tc"><input type="checkbox" value="1" class="checkitem tc"></td>
-                    <td class="tl">测试一个</td>
-                    <td>顶部</td>
+                    <td class="tc"><input type="checkbox" value="${plate.id}" class="checkitem tc"></td>
+                    <td class="tl">${plate.plateName}</td>
+                    <td><c:if test="${plate.platePosition==1}">顶部</c:if><c:if test="${plate.platePosition==0}">底部</c:if></td>
                     <td class="nscs-table-handle">
-                        <span><a class="btn-blue" href="http://localhost/shopnc/shop/index.php?act=store_plate&amp;op=plate_edit&amp;p_id=1"><i class="icon-edit"></i><p>编辑</p></a></span>
-                        <span><a class="btn-red" onclick="ajax_get_confirm('您确定要删除吗?', 'http://localhost/shopnc/shop/index.php?act=store_plate&amp;op=drop_plate&amp;p_id=1');" href="javascript:void(0)"><i class="icon-trash"></i><p>删除</p></a></span>
+                        <span><a class="btn-blue" href="${S_URL}/se/plate/edit/page?id=${plate.id}"><i class="icon-edit"></i><p>编辑</p></a></span>
+                        <span><a class="btn-red" onclick="ajax_get_confirm('您确定要删除吗?', 'se/plate/del?p_id=${plate.id}');" href="javascript:void(0)"><i class="icon-trash"></i><p>删除</p></a></span>
                     </td>
                 </tr>
-                <tr class="bd-line">
-                    <td class="tc"><input type="checkbox" value="2" class="checkitem tc"></td>
-                    <td class="tl">测试底部</td>
-                    <td>底部</td>
-                    <td class="nscs-table-handle">
-                        <span><a class="btn-blue" href="http://localhost/shopnc/shop/index.php?act=store_plate&amp;op=plate_edit&amp;p_id=2"><i class="icon-edit"></i><p>编辑</p></a></span>
-                        <span><a class="btn-red" onclick="ajax_get_confirm('您确定要删除吗?', 'http://localhost/shopnc/shop/index.php?act=store_plate&amp;op=drop_plate&amp;p_id=2');" href="javascript:void(0)"><i class="icon-trash"></i><p>删除</p></a></span>
-                    </td>
-                </tr>
+                </c:forEach>
                 </tbody>
                 <tfoot>
                 <tr>
                     <th class="tc"><input type="checkbox" class="checkall" id="all"></th>
                     <th colspan="10"><label for="all">全选</label>
-                        <a class="ncsc-btn-mini" confirm="您确定要删除吗?" name="p_id" uri="http://localhost/shopnc/shop/index.php?act=store_plate&amp;op=drop_plate" nc_type="batchbutton" href="javascript:void(0);"><i class="icon-trash"></i>删除</a>
+                        <a class="ncsc-btn-mini" confirm="您确定要删除吗?" name="p_id" uri="se/plate/del?for=a"  nc_type="batchbutton"  href="javascript:void(0);"><i class="icon-trash"></i>删除</a>
                     </th>
                 </tr>
                 <tr>
@@ -96,6 +100,7 @@
                 </tr>
                 </tfoot>
             </table>
+</c:if>
 <!--列表结束-->
         </div>
 

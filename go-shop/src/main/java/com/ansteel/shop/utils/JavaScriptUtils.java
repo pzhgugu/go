@@ -32,7 +32,7 @@ public class JavaScriptUtils{
 	public static String returnShowDialog(String name, String url) {
 		StringBuffer sb = new StringBuffer();
 		sb.append(name);		
-		sb.append(JavaScriptUtils.script(showDialog(name,url)));
+		sb.append(script(showDialog(name,url)));
 		return sb.toString();
 	}
 

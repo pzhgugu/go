@@ -1,78 +1,78 @@
 {
     "res": {
         "shop:scripts/album.js": {
-            "uri": "/show/static/shop/scripts/album.js",
+            "uri": "/show/static/shop/scripts/album_162edf2.js",
             "type": "js"
         },
         "shop:scripts/area_array.js": {
-            "uri": "/show/static/shop/scripts/area_array.js",
+            "uri": "/show/static/shop/scripts/area_array_b9090df.js",
             "type": "js"
         },
         "shop:scripts/common_select.js": {
-            "uri": "/show/static/shop/scripts/common_select.js",
+            "uri": "/show/static/shop/scripts/common_select_4f9d5f2.js",
             "type": "js"
         },
         "shop:scripts/common.js": {
-            "uri": "/show/static/shop/scripts/common.js",
+            "uri": "/show/static/shop/scripts/common_4f36c1e.js",
             "type": "js"
         },
         "shop:scripts/dialog/dialog.css": {
-            "uri": "/show/static/shop/scripts/dialog/dialog.css",
+            "uri": "/show/static/shop/scripts/dialog/dialog_79b5675.css",
             "type": "css"
         },
         "shop:scripts/dialog/dialog.js": {
-            "uri": "/show/static/shop/scripts/dialog/dialog.js",
+            "uri": "/show/static/shop/scripts/dialog/dialog_3e00172.js",
             "type": "js",
             "deps": [
                 "shop:scripts/dialog/dialog.css"
             ]
         },
         "shop:scripts/member.js": {
-            "uri": "/show/static/shop/scripts/member.js",
+            "uri": "/show/static/shop/scripts/member_9104645.js",
             "type": "js"
         },
         "shop:scripts/page.step2.js": {
-            "uri": "/show/static/shop/scripts/page.step2.js",
+            "uri": "/show/static/shop/scripts/page.step2_5ccea10.js",
             "type": "js"
         },
         "shop:scripts/page.step3.js": {
-            "uri": "/show/static/shop/scripts/page.step3.js",
+            "uri": "/show/static/shop/scripts/page.step3_6c9bcb5.js",
             "type": "js"
         },
         "shop:scripts/piclist.js": {
-            "uri": "/show/static/shop/scripts/piclist.js",
+            "uri": "/show/static/shop/scripts/piclist_5aa5e6e.js",
             "type": "js"
         },
         "shop:scripts/plateAdd.js": {
-            "uri": "/show/static/shop/scripts/plateAdd.js",
+            "uri": "/show/static/shop/scripts/plateAdd_abc2d46.js",
             "type": "js"
         },
         "shop:scripts/seller.js": {
-            "uri": "/show/static/shop/scripts/seller.js",
+            "uri": "/show/static/shop/scripts/seller_cfdf2ff.js",
             "type": "js"
         },
         "shop:scripts/store_goods_add.step1.js": {
-            "uri": "/show/static/shop/scripts/store_goods_add.step1.js",
+            "uri": "/show/static/shop/scripts/store_goods_add.step1_5a12f67.js",
             "type": "js"
         },
         "shop:scripts/store_goods_add.step2.js": {
-            "uri": "/show/static/shop/scripts/store_goods_add.step2.js",
+            "uri": "/show/static/shop/scripts/store_goods_add.step2_86ff95a.js",
             "type": "js"
         },
         "shop:scripts/store_goods_add.step3.js": {
-            "uri": "/show/static/shop/scripts/store_goods_add.step3.js",
+            "uri": "/show/static/shop/scripts/store_goods_add.step3_6c8dacd.js",
             "type": "js"
         },
         "shop:scripts/store_goods_list.js": {
-            "uri": "/show/static/shop/scripts/store_goods_list.js",
+            "uri": "/show/static/shop/scripts/store_goods_list_a895091.js",
             "type": "js"
         },
         "shop:styles/base.css": {
-            "uri": "/show/static/shop/styles/base.css",
+            "uri": "/show/static/shop/styles/base_bec0d03.css",
             "type": "css"
         },
         "shop:styles/seller_center.css": {
-            "uri": "/show/static/shop/styles/seller_center.css",
+            "uri": "/show/static/shop/styles/seller_center_2c7c3e3.css",
             "type": "css"
         }
     },

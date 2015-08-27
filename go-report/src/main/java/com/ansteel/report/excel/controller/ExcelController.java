@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import com.ansteel.core.controller.SaveBefore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
@@ -44,7 +45,7 @@ import com.ansteel.report.excel.service.ExcelService;
  */
 @Controller
 @RequestMapping(value = "/excel")
-public class ExcelController extends BaseController {
+public class ExcelController extends BaseController  implements SaveBefore  {
 	
 	@Autowired
 	ExcelService excelService;
@@ -190,5 +191,14 @@ public class ExcelController extends BaseController {
 			return excelService.setTestPath(dataSet,request);
 		}
 		return dataSet;
+	}
+
+	@Override
+	public <T extends BaseEntity> void SaveCheck(T entity) {
+		if(entity.getClass()==ExcelReportSQL.class){
+			ExcelReportSQL sqlEntty= (ExcelReportSQL) entity;
+			sqlEntty.setRecode(sqlEntty.getRecode().toUpperCase());
+			sqlEntty.setFixedRecode(sqlEntty.getFixedRecode().toUpperCase());
+		}
 	}
 }

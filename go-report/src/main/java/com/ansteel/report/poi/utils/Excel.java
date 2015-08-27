@@ -87,7 +87,11 @@ public class Excel {
 	public Sheet getSheet(String sheetName) {
 		Sheet sheet = wb.getSheet(sheetName);
 		if (sheet == null) {
-			sheet=wb.createSheet(sheetName);
+			try {
+				sheet = wb.createSheet(sheetName);
+			}catch (Exception e){
+				throw new PageException(sheetName+",名称不能创建！原因："+e.getMessage());
+			}
 		}
 		return sheet;
 	}
@@ -285,6 +289,7 @@ public class Excel {
 	
 	public static void insertRow(Sheet sheet, int startRow, int rows) {
 		int sourceRowNum = startRow-1;
+		Row sourceRow = sheet.getRow(sourceRowNum);
 		List<CellRangeAddress> cellRangeList = getCombineCell(sheet);
 		List<CellRangeAddress> rowCellRangeList = new ArrayList<CellRangeAddress>();
 		for (CellRangeAddress ca : cellRangeList) {
@@ -298,8 +303,6 @@ public class Excel {
 		sheet.shiftRows(startRow, sheet.getLastRowNum(), rows, true, false);
 		//此处修改效率大幅提升，还解决了2003以前的bug（跨行不停增加，最后越界）
 		//此处不能放在循环体内
-		Row sourceRow = sheet.getRow(sourceRowNum);
-
         boolean isFormula=checkIsFormula(sourceRow);
 		
 		for (int i = 0; i < rows; i++) {
@@ -312,8 +315,9 @@ public class Excel {
                 if (sourceCell == null) {
                     continue;
                 }
-                targetCell.setCellStyle(sourceCell.getCellStyle());  
-                targetCell.setCellType(sourceCell.getCellType()); 
+                targetCell.setCellStyle(sourceCell.getCellStyle());
+				int ct = sourceCell.getCellType();
+                targetCell.setCellType(ct);
                 //替换公式
                 if(isFormula) {
                     String sourceCellValue = sourceCell.getStringCellValue();
