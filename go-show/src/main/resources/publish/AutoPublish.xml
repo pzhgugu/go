@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Root VERSION="550ef67c-af80-4193-86cc-5a6d4e6e3de3">
+<Root VERSION="b3b343b2-e21c-4eb7-8b6e-5dd2f986f0f8">
   <Message Class="com.ansteel.common.menu.domain.Menu" Execute="com.ansteel.common.backup.fun.MenuExecute">
     <DataRow>
       <url></url>
@@ -97111,20 +97111,115 @@ select * from go_users where 1=1 &lt;% if(!isEmpty(name)){%&gt;and name like '${
     </DataRow>
     <DataRow>
       <isStart>1</isStart>
-      <attachmentId>402897814f69dd23014f6a9e1633002d</attachmentId>
-      <attachmentPath>/ExcelTpl/3a47936d539b4178a6a5d85bf71f78d2.xlsx</attachmentPath>
+      <attachmentId>402897814f6e27a2014f6e35591d0000</attachmentId>
+      <attachmentPath>/ExcelTpl/04b53f1efd50430aa0178f40a1ce168c.xls</attachmentPath>
       <attPath></attPath>
       <type>day</type>
       <typePath></typePath>
       <versionPublish></versionPublish>
       <excelReportTree>402897814f69dd23014f69f6f88c0006</excelReportTree>
-      <name>20150826_4</name>
+      <name>20150827_4</name>
       <alias>合并单元格</alias>
       <displayOrder>4</displayOrder>
-      <id>402897814f69dd23014f6a9e1639002e</id>
+      <id>402897814f6e27a2014f6e3559430001</id>
       <version>1</version>
-      <created>2015-08-26 23:26:29.0</created>
-      <updated>2015-08-26 23:26:34.0</updated>
+      <created>2015-08-27 16:10:34.0</created>
+      <updated>2015-08-27 16:10:38.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <isStart>1</isStart>
+      <attachmentId>402897814f6e27a2014f6e4608850004</attachmentId>
+      <attachmentPath>/ExcelTpl/376ca1cfb2564db9811199d1bb3c092a.xlsx</attachmentPath>
+      <attPath></attPath>
+      <type>day</type>
+      <typePath></typePath>
+      <versionPublish></versionPublish>
+      <excelReportTree>402897814f69dd23014f69f6f88c0006</excelReportTree>
+      <name>20150827_5</name>
+      <alias>打印区域页脚页眉</alias>
+      <displayOrder>5</displayOrder>
+      <id>402897814f6e27a2014f6e46088b0005</id>
+      <version>0</version>
+      <created>2015-08-27 16:28:47.0</created>
+      <updated>2015-08-27 16:28:47.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <isStart>1</isStart>
+      <attachmentId>402897814f6f1667014f6f1eafce0000</attachmentId>
+      <attachmentPath>/ExcelTpl/4f5493244b144615b8beabc134707bc4.xlsx</attachmentPath>
+      <attPath></attPath>
+      <type>day</type>
+      <typePath></typePath>
+      <versionPublish></versionPublish>
+      <excelReportTree>402897814f69dd23014f69f6f88c0006</excelReportTree>
+      <name>20150827_6</name>
+      <alias>连续打印</alias>
+      <displayOrder>6</displayOrder>
+      <id>402897814f6f1667014f6f1eafe20001</id>
+      <version>1</version>
+      <created>2015-08-27 20:25:26.0</created>
+      <updated>2015-08-27 20:25:31.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <isStart>1</isStart>
+      <attachmentId>402897814f72ccd8014f72f76e220000</attachmentId>
+      <attachmentPath>/ExcelTpl/26baedd1d58942d887a3a54a2f97082c.xlsx</attachmentPath>
+      <attPath></attPath>
+      <type>day</type>
+      <typePath></typePath>
+      <versionPublish></versionPublish>
+      <excelReportTree>402897814f69dd23014f69f6f88c0006</excelReportTree>
+      <name>20150828</name>
+      <alias>传参_全局变量</alias>
+      <displayOrder>7</displayOrder>
+      <id>402897814f72ccd8014f72f76e4f0001</id>
+      <version>0</version>
+      <created>2015-08-28 14:21:02.0</created>
+      <updated>2015-08-28 14:21:02.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <isStart>1</isStart>
+      <attachmentId>402897814f72ccd8014f7303ead60004</attachmentId>
+      <attachmentPath>/ExcelTpl/0a42a9df0713425db7866b5bb0922cd3.xlsx</attachmentPath>
+      <attPath></attPath>
+      <type>day</type>
+      <typePath></typePath>
+      <versionPublish></versionPublish>
+      <excelReportTree>402897814f69dd23014f69f6f88c0006</excelReportTree>
+      <name>20150828_8_1</name>
+      <alias>模板语法_1</alias>
+      <displayOrder>8</displayOrder>
+      <id>402897814f72ccd8014f7303eadc0005</id>
+      <version>0</version>
+      <created>2015-08-28 14:34:40.0</created>
+      <updated>2015-08-28 14:34:40.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <isStart>1</isStart>
+      <attachmentId>402897814f72ccd8014f73092a440008</attachmentId>
+      <attachmentPath>/ExcelTpl/00bbd0fce8474ea3be3ec9c34a3b6f3a.xlsx</attachmentPath>
+      <attPath></attPath>
+      <type>day</type>
+      <typePath></typePath>
+      <versionPublish></versionPublish>
+      <excelReportTree>402897814f69dd23014f69f6f88c0006</excelReportTree>
+      <name>20150828_8_2</name>
+      <alias>模板语法_2</alias>
+      <displayOrder>9</displayOrder>
+      <id>402897814f72ccd8014f73092a490009</id>
+      <version>0</version>
+      <created>2015-08-28 14:40:24.0</created>
+      <updated>2015-08-28 14:40:24.0</updated>
       <creator>administrator</creator>
       <lastUpdater>administrator</lastUpdater>
     </DataRow>
@@ -97483,14 +97578,144 @@ select * from go_users where 1=1 &lt;% if(!isEmpty(name)){%&gt;and name like '${
       <seriesSheetRecode></seriesSheetRecode>
       <mergerRegionRecode>MID;</mergerRegionRecode>
       <versionPublish></versionPublish>
-      <excelReport>402897814f69dd23014f6a9e1639002e</excelReport>
+      <excelReport>402897814f6e27a2014f6e3559430001</excelReport>
       <name>1</name>
       <alias>1</alias>
       <displayOrder>1</displayOrder>
-      <id>402897814f69dd23014f6a9f54f2002f</id>
-      <version>4</version>
-      <created>2015-08-26 23:27:51.0</created>
-      <updated>2015-08-27 00:17:46.0</updated>
+      <id>402897814f6e27a2014f6e38a1fb0002</id>
+      <version>1</version>
+      <created>2015-08-27 16:14:09.0</created>
+      <updated>2015-08-27 16:15:10.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <sqlContent>SELECT '管理员' AS USER, T.ID AS ROWNUM,T.NAME AS NAME,T.ALIAS AS ALIAS, T.FIELDTYPE AS FIELDTYPE,T.VERSION AS VERSION , T.MID AS MID FROM GO_FIELDS T</sqlContent>
+      <isLoop>1</isLoop>
+      <loopMaxNumber>10000</loopMaxNumber>
+      <recode>ROWNUM=A3;NAME=B3;ALIAS=C3;FIELDTYPE=D3;VERSION=E3;MID=F3;</recode>
+      <fixedRecode></fixedRecode>
+      <sheetName>Sheet1</sheetName>
+      <cellEnd>3</cellEnd>
+      <cellStart>3</cellStart>
+      <headerRecode></headerRecode>
+      <footerRecode>USER;</footerRecode>
+      <isSeries>0</isSeries>
+      <seriesSheetRecode></seriesSheetRecode>
+      <mergerRegionRecode></mergerRegionRecode>
+      <versionPublish></versionPublish>
+      <excelReport>402897814f6e27a2014f6e46088b0005</excelReport>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder>1</displayOrder>
+      <id>402897814f6e27a2014f6e4704960006</id>
+      <version>1</version>
+      <created>2015-08-27 16:29:52.0</created>
+      <updated>2015-08-27 16:30:58.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <sqlContent>select '管理员' as USER, t.id as ID,t.name as NAME,t.alias as ALIAS,t.fieldType as FIELDTYPE,t.version as VERSION,t.mid as MID from go_fields t</sqlContent>
+      <isLoop>1</isLoop>
+      <loopMaxNumber>100</loopMaxNumber>
+      <recode>ID=B2;NAME=B3;ALIAS=D2;FIELDTYPE=D3;VERSION=B4;</recode>
+      <fixedRecode></fixedRecode>
+      <sheetName>Sheet1</sheetName>
+      <cellEnd></cellEnd>
+      <cellStart></cellStart>
+      <headerRecode></headerRecode>
+      <footerRecode></footerRecode>
+      <isSeries>1</isSeries>
+      <seriesSheetRecode>ID</seriesSheetRecode>
+      <mergerRegionRecode></mergerRegionRecode>
+      <versionPublish></versionPublish>
+      <excelReport>402897814f6f1667014f6f1eafe20001</excelReport>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder>1</displayOrder>
+      <id>402897814f6f1667014f6f2006900002</id>
+      <version>2</version>
+      <created>2015-08-27 20:26:53.0</created>
+      <updated>2015-08-27 20:28:28.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <sqlContent>select name as name from go_users where 1=1 &lt;% if(!isEmpty(name)){%&gt;and name like '%${name}%'&lt;%}%&gt;</sqlContent>
+      <isLoop>1</isLoop>
+      <loopMaxNumber>100</loopMaxNumber>
+      <recode>NAME=A3;</recode>
+      <fixedRecode></fixedRecode>
+      <sheetName>Sheet1</sheetName>
+      <cellEnd>3</cellEnd>
+      <cellStart>3</cellStart>
+      <headerRecode></headerRecode>
+      <footerRecode></footerRecode>
+      <isSeries>0</isSeries>
+      <seriesSheetRecode></seriesSheetRecode>
+      <mergerRegionRecode></mergerRegionRecode>
+      <versionPublish></versionPublish>
+      <excelReport>402897814f72ccd8014f7303eadc0005</excelReport>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder>1</displayOrder>
+      <id>402897814f72ccd8014f730624cd0006</id>
+      <version>1</version>
+      <created>2015-08-28 14:37:06.0</created>
+      <updated>2015-08-28 14:37:38.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <sqlContent>select '${date(),dateFormat="yyyy-MM"}' as loginTime,'${date( "2011-1-1" , "yyyy-MM-dd" )}' as date2,'${ strutil.subStringTo ("2015-08-25",0,4)}'  as date3</sqlContent>
+      <isLoop>0</isLoop>
+      <loopMaxNumber></loopMaxNumber>
+      <recode>LOGINTIME=A3;DATE2=B3;DATE3=D3;</recode>
+      <fixedRecode></fixedRecode>
+      <sheetName>Sheet1</sheetName>
+      <cellEnd></cellEnd>
+      <cellStart></cellStart>
+      <headerRecode></headerRecode>
+      <footerRecode></footerRecode>
+      <isSeries>0</isSeries>
+      <seriesSheetRecode></seriesSheetRecode>
+      <mergerRegionRecode></mergerRegionRecode>
+      <versionPublish></versionPublish>
+      <excelReport>402897814f72ccd8014f73092a490009</excelReport>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder>1</displayOrder>
+      <id>402897814f72ccd8014f730a404c000a</id>
+      <version>8</version>
+      <created>2015-08-28 14:41:35.0</created>
+      <updated>2015-08-28 14:55:44.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <sqlContent>select '${user}' as par1,'${user1}' as par2,'&lt;#sec attr="principal" property="username" /&gt;' as username,'&lt;#sec attr="principal" property="alias" /&gt;' as alias,'&lt;#sec attr="principal" property="enabled" /&gt;' as enabled,&lt;#sec attr="principal" property="accountNonLocked" /&gt; as accountNonLocked,'&lt;#sec attr="guest" &gt; 我是游客 &lt;/#sec&gt;&lt;#sec attr="user" &gt; 我是注册用户 &lt;/#sec&gt;' as guest</sqlContent>
+      <isLoop>0</isLoop>
+      <loopMaxNumber></loopMaxNumber>
+      <recode></recode>
+      <fixedRecode>PAR1=A3;PAR2=B3;USERNAME=C3;ALIAS=D3;ENABLED=B5;ACCOUNTNONLOCKED=C5;GUEST=D5;</fixedRecode>
+      <sheetName>Sheet1</sheetName>
+      <cellEnd></cellEnd>
+      <cellStart></cellStart>
+      <headerRecode></headerRecode>
+      <footerRecode></footerRecode>
+      <isSeries>0</isSeries>
+      <seriesSheetRecode></seriesSheetRecode>
+      <mergerRegionRecode></mergerRegionRecode>
+      <versionPublish></versionPublish>
+      <excelReport>402897814f72ccd8014f72f76e4f0001</excelReport>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder>1</displayOrder>
+      <id>402897814f72ccd8014f72f8d7ee0002</id>
+      <version>8</version>
+      <created>2015-08-28 14:22:34.0</created>
+      <updated>2015-08-28 14:31:07.0</updated>
       <creator>administrator</creator>
       <lastUpdater>administrator</lastUpdater>
     </DataRow>
@@ -97740,14 +97965,99 @@ select * from go_users where 1=1 &lt;% if(!isEmpty(name)){%&gt;and name like '${
       <type>1</type>
       <openType>1</openType>
       <versionPublish></versionPublish>
-      <excelReport>402897814f69dd23014f6a9e1639002e</excelReport>
+      <excelReport>402897814f6e27a2014f6e3559430001</excelReport>
       <name>1</name>
       <alias>1</alias>
-      <displayOrder>1</displayOrder>
-      <id>402897814f69dd23014f6a9f77680030</id>
+      <displayOrder></displayOrder>
+      <id>402897814f6e27a2014f6e38bbb30003</id>
       <version>0</version>
-      <created>2015-08-26 23:27:59.0</created>
-      <updated>2015-08-26 23:27:59.0</updated>
+      <created>2015-08-27 16:14:15.0</created>
+      <updated>2015-08-27 16:14:15.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <testParam></testParam>
+      <testLink></testLink>
+      <type>2</type>
+      <openType>1</openType>
+      <versionPublish></versionPublish>
+      <excelReport>402897814f6e27a2014f6e46088b0005</excelReport>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder></displayOrder>
+      <id>402897814f6e27a2014f6e47206b0007</id>
+      <version>1</version>
+      <created>2015-08-27 16:29:59.0</created>
+      <updated>2015-08-27 16:31:29.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <testParam></testParam>
+      <testLink></testLink>
+      <type>1</type>
+      <openType>1</openType>
+      <versionPublish></versionPublish>
+      <excelReport>402897814f6f1667014f6f1eafe20001</excelReport>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder></displayOrder>
+      <id>402897814f6f1667014f6f2023400003</id>
+      <version>0</version>
+      <created>2015-08-27 20:27:01.0</created>
+      <updated>2015-08-27 20:27:01.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <testParam>user=admin&amp;user1=中国</testParam>
+      <testLink></testLink>
+      <type>1</type>
+      <openType>1</openType>
+      <versionPublish></versionPublish>
+      <excelReport>402897814f72ccd8014f72f76e4f0001</excelReport>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder></displayOrder>
+      <id>402897814f72ccd8014f72f91e7c0003</id>
+      <version>1</version>
+      <created>2015-08-28 14:22:53.0</created>
+      <updated>2015-08-28 14:23:53.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <testParam>name=administrator</testParam>
+      <testLink></testLink>
+      <type>1</type>
+      <openType>1</openType>
+      <versionPublish></versionPublish>
+      <excelReport>402897814f72ccd8014f7303eadc0005</excelReport>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder></displayOrder>
+      <id>402897814f72ccd8014f73063fda0007</id>
+      <version>2</version>
+      <created>2015-08-28 14:37:13.0</created>
+      <updated>2015-08-28 14:39:04.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <testParam></testParam>
+      <testLink></testLink>
+      <type>1</type>
+      <openType>1</openType>
+      <versionPublish></versionPublish>
+      <excelReport>402897814f72ccd8014f73092a490009</excelReport>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder></displayOrder>
+      <id>402897814f72ccd8014f730a5c4a000b</id>
+      <version>2</version>
+      <created>2015-08-28 14:41:42.0</created>
+      <updated>2015-08-28 14:55:48.0</updated>
       <creator>administrator</creator>
       <lastUpdater>administrator</lastUpdater>
     </DataRow>

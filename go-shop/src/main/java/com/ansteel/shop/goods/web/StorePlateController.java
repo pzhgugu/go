@@ -18,6 +18,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -120,4 +123,5 @@ public class StorePlateController {
         String name="删除成功";
         ResponseUtils.xmlCDataOut(response, JavaScriptUtils.returnShowDialog(name, url));
     }
+
 }

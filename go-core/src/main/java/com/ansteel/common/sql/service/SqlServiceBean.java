@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -45,7 +47,7 @@ public class SqlServiceBean implements SqlService {
 	public List querySql(String sqlContent, HttpServletRequest request,
 			Map<String, Object> operMap) {
 		String sql = beetlService.outContent(sqlContent, request,operMap);
-        sql=sql.toUpperCase();
+        sql=asToUpperCase(sql);
 		return sqlBaseService.findSqlMap(sql, operMap);
 	}
 	
@@ -53,10 +55,10 @@ public class SqlServiceBean implements SqlService {
 	public Page querySqlPage(String sqlContent, HttpServletRequest request,
 			Map<String, Object> operMap,Pageable pageable) {
 		String sql = beetlService.outContent(sqlContent, request,operMap);
-        sql=sql.toUpperCase();
+        sql=asToUpperCase(sql);
 		String countSql = getCountQuerySyntax(sql);		
 		int totalCount = findByCount(countSql,operMap);		
-		List resultList = find(sql, operMap,  pageable);
+		List resultList = find(sql, operMap, pageable);
 		return new PageImpl(resultList, pageable, totalCount);	
 	}
 	
@@ -87,7 +89,7 @@ public class SqlServiceBean implements SqlService {
 	public List querySql(String sqlContent, HttpServletRequest request) {
 		String sql = beetlService.outContent(sqlContent, request);		
 		Map<String,Object> operMap =RequestUtils.getRequestMap(request);
-        sql=sql.toUpperCase();
+        sql=asToUpperCase(sql);
 		return sqlBaseService.findSqlMap(sql, operMap);
 	}
 
@@ -95,7 +97,25 @@ public class SqlServiceBean implements SqlService {
 	public List querySqlArray(String sqlContent, HttpServletRequest request) {
 		String sql = beetlService.outContent(sqlContent, request);
 		Map<String,Object> operMap =RequestUtils.getRequestMap(request);
-        sql=sql.toUpperCase();
-		return sqlBaseService.findSql(sql,operMap);
+        sql=asToUpperCase(sql);
+		return sqlBaseService.findSql(sql, operMap);
+	}
+
+	/**
+	 * 别名转大写，用于兼容oracle查询sql字段名都为大写
+	 * @param sql
+	 * @return
+	 */
+	public String asToUpperCase(String sql){
+		String reg = "(\\s+AS\\s+)(\\w+)((\\s*,)|(\\s+)|$)";
+		Pattern pc = Pattern.compile(reg,Pattern.CASE_INSENSITIVE);
+		Matcher mc = pc.matcher(sql);
+		StringBuffer sb=new StringBuffer();
+		while (mc.find()) {
+			String replacement=mc.group().toUpperCase();
+			mc.appendReplacement(sb, replacement);
+		}
+		mc.appendTail(sb);
+		return sb.toString();
 	}
 }

@@ -5,843 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23d20e94-640b-4f14-9abe-d205c42b79fd" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\.settings\org.eclipse.core.resources.prefs" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\.settings\org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\.settings\org.eclipse.m2e.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\.settings\org.eclipse.wst.common.component" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\.settings\org.eclipse.wst.common.project.facet.core.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\annotation\EntityType.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\annotation\PathClass.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\annotation\PathDatabaseEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\annotation\PathEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\annotation\PathGridData.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\annotation\PathManyToOneClass.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\annotation\PathManyToOneName.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\annotation\QueryJson.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\argument\PathClassMethodArgumentResolver$PathVariableNamedValueInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\argument\PathClassMethodArgumentResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\argument\PathDatabaseEntityMethodArgumentResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\argument\PathEntityMethodArgumentResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\argument\PathGridbaseMethodArgumentResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\argument\PathManyToOneClassMethodArgumentResolver$PathVariableNamedValueInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\argument\PathManyToOneClassMethodArgumentResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\argument\PathManyToOneNameMethodArgumentResolver$PathVariableNamedValueInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\argument\PathManyToOneNameMethodArgumentResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\argument\QueryJsonHandlerMethodArgumentResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\cache\CacheFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\cache\ICache.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\cache\ICacheCallback.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\cache\MapCache.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\cache\RedisCache.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\cache\TemplateCache.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\cache\ViewCache.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\constant\Constants.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\constant\DHtmlxConstants.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\constant\ExceptionConstant.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\constant\Public.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\constant\ServiceConstants.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\constant\TplViewConstant.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\constant\ViewModelConstant.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\constant\Widget.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\context\ContextHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\context\CustomTimestampEditor.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\context\DefaultEditors.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\context\MappingJacksonHttp3MessageConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\context\PropertiesConfigurationLoader.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\context\SiteInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\context\StartContextListener.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\context\SystemVariable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\context\UIReturnValueHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\controller\BaseController.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\controller\GlobalBaseController.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\controller\MainSubController.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\controller\TreeController.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\domain\BaseEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\domain\EntityInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\domain\EntityTemplate.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\domain\MainSubInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\domain\Node.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\domain\OperEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\domain\PagingEntityTemplate.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\domain\PropertyInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\domain\QuerySettingsTemplate.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\domain\SqlOperate.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\domain\SqlTemplate.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\domain\Template.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\domain\TreeEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\domain\TreeInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\exception\AdminException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\exception\BaseException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\exception\ErrorMessage.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\exception\ExceptionHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\exception\PageException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\Criterions.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\HqlQueryBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\IQueryBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\Operator.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\OrderSetting.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\Page.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\PageUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\QueryCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\QueryOperator.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\QueryOrWhere.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\QuerySettings.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\Result.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\AndCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\BetweenCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\BetweenExCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\ContainsTextCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\EndWithTextCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\EqCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\EqPropCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\GeCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\GePropCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\GtCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\GtPropCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\InCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\IsEmptyCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\IsNullCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\LeCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\LePropCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\LtCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\LtPropCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\NotCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\NotEmptyCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\NotEqCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\NotEqPropCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\NotInCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\NotNullCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\OrCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\SizeEqCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\SizeGeCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\SizeGtCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\SizeLeCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\SizeLtCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\SizeNotEqCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\query\criterion\StartsWithTextCriterion.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\service\GlobalBaseService.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\service\GlobalBaseServiceBean.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\service\IVariable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\service\PropertiesVariable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\service\Variable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\tag\ELFunctionTag.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\utils\AnalyzeTplSyntax.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\utils\ClassUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\utils\JsonUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\utils\MapWapper.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\utils\QueryMapping.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\utils\RequestUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\utils\ResponseUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\core\utils\StringUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\jsonclass\Data.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\jsonclass\DataUiStrategy.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\jsonclass\DhtmlxContext.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\jsonclass\ObjectUiStrategy.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\jsonclass\Rows.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\jsonclass\RowsUiStrategy.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\jsonclass\Tree.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\jsonclass\TreeArray.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\jsonclass\TreeUiStrategy.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\jsonclass\UDataSet.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\jsonclass\UiStrategy.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Block.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Btn2state.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Button.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Calendar.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Checkbox.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Colorpicker.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Combo.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Constant.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Container.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Editor.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Fieldset.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\File.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Form.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\FormFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Hidden.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Input.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Label.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Multiselect.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Newcolumn.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Note.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Options.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Password.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Radio.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Select.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Settings.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Template.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Textarea.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\form\Upload.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\formoption\IFormOption.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\formoption\OperatorOption.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\formoption\SqlOption.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\formoption\StringOption.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\widget\formoption\ValueListOption.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\xml\Data.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\dhtmlx\xml\GridXml.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\admin\service\AdminController.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\adminhome\service\AdminHomeController.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\entityinfo\service\EntityInfoService.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\entityinfo\service\EntityInfoServiceBean.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\model\domain\Fields.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\model\domain\FieldsCategory.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\model\domain\FieldsForm.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\model\domain\FieldsGrid.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\model\domain\FieldsPrint.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\model\domain\FieldsQuery.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\model\domain\FieldsReport.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\model\domain\FieldsShow.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\model\domain\Models.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\model\service\ModelController.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\model\service\ModelService.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\model\service\ModelServiceBean.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\modelscan\service\ModelScanService.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\modelscan\service\ModelScanServiceBean.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\pageglobal\service\PageGlobalAttribute.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\pageglobal\service\PageGlobalAttributeBean.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\templatepath\service\TemplatePath.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\templatepath\service\TemplatePathBean.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\core\AbstractTpl.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\core\DetailQueryTpl.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\core\DhtmlxDetailQuery$QueryType.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\core\DhtmlxDetailQuery.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\core\DhtmlxForm.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\core\DhtmlxGrid.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\core\DhtmlxQuery.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\core\DhtmlxSimpleQuery.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\core\DhtmlxToolbar.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\core\IDhtmlxWidget.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\core\ITpl.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\core\QueryInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\core\SingleGridTpl.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\core\TplServiceInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\domain\Tpl.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\domain\TplCss.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\domain\TplElement.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\domain\TplJavascript.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\domain\TplUrl.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\domain\TplVariable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\service\TplService.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\tpl\service\TplServiceBean.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\view\domain\View.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\view\domain\ViewTree.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\view\service\ViewService.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\src\main\java\com\ansteel\modules\view\service\ViewServiceBean.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\target\classes\META-INF\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\target\classes\META-INF\maven\com.ansteel.go\go-core\pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-core\bin\target\classes\META-INF\maven\com.ansteel.go\go-core\pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\cms\images\delect.ico" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\scripts\global.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\scripts\mod.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\styles\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\styles\csshover.htc" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\ajaxfileupload\ajaxfileupload.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\dhtmlx.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\dhtmlx.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\dhtmlxEx.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\dhtmlxEx.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\dhtmlxGlobal.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\dhtmlx_deprecated.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\ext\contentDrop.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\ext\dhtmlXToolbar_selectEx.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\ext\dhtmlxform_item_editArea.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\ext\dhtmlxform_item_kindeditor.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\ext\dhtmlxform_item_tree.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\ext\dhtmlxgrid_errormessage.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\ext\dhtmlxgrid_excell_clistEx.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\ext\dhtmlxgrid_pgn.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\ext\dhxupload.xap" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\ext\swfobject.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\ext\uploader.swf" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\JasperReport.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\addons.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\calendar.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\cancel.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\cancel.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\chart.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\close.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\close_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\cut.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\cut_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\database.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\delect.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxacc_skyblue\dhxacc_btns.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxacc_skyblue\dhxacc_cell_progress.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxcalendar_skyblue\dhxcalendar_arrow_left.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxcalendar_skyblue\dhxcalendar_arrow_right.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxcalendar_skyblue\dhxcalendar_clock.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxcalendar_skyblue\dhxcalendar_mark.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxcalendar_skyblue\dhxcalendar_selector_bottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxcalendar_skyblue\dhxcalendar_selector_top.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxcombo_skyblue\dhxcombo_arrow_down.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxcombo_skyblue\dhxcombo_arrow_down_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxcombo_skyblue\dhxcombo_chbx.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxcp_skyblue\dhxcp_colors.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxcp_skyblue\dhxcp_icon_save.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxdataview_skyblue\dnd_selector.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxdataview_skyblue\dnd_selector_cells.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxdataview_skyblue\dnd_selector_lines.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxdataview_skyblue\marker.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\align_center.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\align_justify.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\align_left.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\align_right.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\bold.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\buttons.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\clear.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\h1.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\h2.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\h3.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\h4.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\indent_dec.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\indent_inc.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\italic.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\list_bullet.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\list_number.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\script_sub.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\script_super.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\strike.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxeditor_skyblue\underline.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxform_skyblue\dhxform_chbxrd.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxform_skyblue\dhxform_upload_buttons.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxform_skyblue\dhxform_upload_uploading.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\ar_left.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\ar_left_abs.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\ar_left_abs_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\ar_left_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\ar_right.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\ar_right_abs.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\ar_right_abs_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\ar_right_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\combo_select_dhx_skyblue.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\dyn_.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\dyn_down.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\dyn_up.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\imageloaderror.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\item_chk0.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\item_chk0_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\item_chk1.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\item_chk1_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\paging_page.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\paging_pages.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\paging_rows.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\radio_chk0.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\radio_chk0_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\radio_chk1.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\radio_chk1_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\sort_asc.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\sort_desc.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\folder.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\leaf.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\line.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\line1.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\line2.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\line3.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\line4.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\minus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\minus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\minus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\minus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\minus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\plus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\plus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\plus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\plus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxgrid_skyblue\tree\plus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxlayout_skyblue\dhxlayout_cell_btns.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxlayout_skyblue\dhxlayout_cell_progress.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxlayout_skyblue\dhxlayout_sep_h.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxlayout_skyblue\dhxlayout_sep_v.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxmenu_skyblue\dhxmenu_arrow_down.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxmenu_skyblue\dhxmenu_arrow_down_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxmenu_skyblue\dhxmenu_arrow_up.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxmenu_skyblue\dhxmenu_arrow_up_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxmenu_skyblue\dhxmenu_chrd.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxmenu_skyblue\dhxmenu_loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxmenu_skyblue\dhxmenu_subar.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxpopup_skyblue\dhxpopup_arrow_bottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxpopup_skyblue\dhxpopup_arrow_left.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxpopup_skyblue\dhxpopup_arrow_right.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxpopup_skyblue\dhxpopup_arrow_top.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxribbon_skyblue\dhxribbon_arrow.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxribbon_skyblue\dhxribbon_checked.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxribbon_skyblue\dhxribbon_checked_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtabbar_skyblue\dhxtabbar_arrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtabbar_skyblue\dhxtabbar_button_close.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtabbar_skyblue\dhxtabbar_cell_progress.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtoolbar_skyblue\dhxtoolbar_arrow.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtoolbar_skyblue\dhxtoolbar_arrow_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\but_cut.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\folderClosed.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\folderOpen.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\iconCheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\iconCheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\iconCheckGray.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\iconUncheckAll.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\iconUncheckDis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\leaf.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\line.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\line1.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\line1_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\line2.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\line2_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\line3.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\line3_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\line4.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\line4_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\lock.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\minus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\minus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\minus2_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\minus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\minus3_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\minus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\minus4_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\minus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\minus5_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\plus1.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\plus2.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\plus2_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\plus3.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\plus3_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\plus4.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\plus4_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\plus5.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\plus5_rtl.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\radio_off.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxtree_skyblue\radio_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxwins_skyblue\dhxwins_buttons.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxwins_skyblue\dhxwins_icon.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\dhxwins_skyblue\dhxwins_progress.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\edit.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\fullscreen_mode.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\germany.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\ico_xls_18.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\icon_grid.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\icon_layout.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\leaf.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\new.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\new_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\paste.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\paste_dis.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\presentation.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\reload.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\save.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\search.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\search.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\select_all.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\selection.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\imgs\stylesheet.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\dhtmlxSuite\thirdparty\excanvas\excanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\exception\emessage.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\exception\error.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\exception\error.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\fileupload\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\fileupload\jquery.fileupload-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\fileupload\jquery.fileupload-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\fileupload\jquery.fileupload.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\fileupload\jquery.iframe-transport.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\fileupload\jquery.ui.widget.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\font-awesome\css\font-awesome-ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\font-awesome\css\font-awesome-ie7.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\font-awesome\css\font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\font-awesome\css\font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\font-awesome\font\FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\font-awesome\font\fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\font-awesome\font\fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\font-awesome\font\fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\font-awesome\font\fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\i18n\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\i18n\zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\i18n\zh-TW.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\jquery.ui.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\images\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\images\ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\images\ui-icons_2e83ff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\images\ui-icons_454545_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\images\ui-icons_888888_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\smoothness\jquery.ui.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\ui-icons_228ef1_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\ui-icons_ef8c08_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\ui-icons_ffd27a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\images\ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery-ui\themes\ui-lightness\jquery.ui.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery\jquery.Jcrop.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery\jquery.Jcrop.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery\jquery.ajaxContent.pack.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery\jquery.form.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery\jquery.mousewheel.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery\jquery.validation.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery\jqueryEx.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery\perfect-scrollbar.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\jquery\waypoints.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\kindeditor-all-min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\kindeditor-all.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\kindeditor-min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\kindeditor.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\lang\ar.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\lang\en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\lang\ko.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\lang\zh_CN.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\lang\zh_TW.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\license.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\anchor\anchor.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\autoheight\autoheight.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\baidumap\baidumap.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\baidumap\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\baidumap\map.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\clearhtml\clearhtml.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\code\code.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\code\prettify.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\code\prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\emoticons.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\0.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\1.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\10.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\100.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\101.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\102.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\103.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\104.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\105.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\106.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\107.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\108.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\109.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\11.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\110.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\111.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\112.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\113.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\114.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\115.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\116.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\117.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\118.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\119.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\12.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\120.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\121.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\122.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\123.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\124.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\125.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\126.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\127.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\128.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\129.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\13.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\130.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\131.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\132.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\133.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\134.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\14.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\15.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\16.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\17.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\18.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\19.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\2.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\20.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\21.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\22.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\23.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\24.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\25.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\26.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\27.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\28.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\29.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\3.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\30.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\31.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\32.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\33.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\34.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\35.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\36.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\37.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\38.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\39.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\4.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\40.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\41.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\42.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\43.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\44.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\45.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\46.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\47.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\48.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\49.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\5.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\50.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\51.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\52.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\53.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\54.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\55.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\56.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\57.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\58.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\59.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\6.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\60.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\61.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\62.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\63.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\64.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\65.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\66.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\67.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\68.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\69.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\7.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\70.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\71.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\72.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\73.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\74.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\75.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\76.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\77.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\78.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\79.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\8.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\80.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\81.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\82.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\83.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\84.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\85.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\86.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\87.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\88.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\89.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\9.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\90.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\91.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\92.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\93.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\94.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\95.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\96.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\97.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\98.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\99.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\emoticons\images\static.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\filemanager\filemanager.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\filemanager\images\file-16.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\filemanager\images\file-64.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\filemanager\images\folder-16.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\filemanager\images\folder-64.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\filemanager\images\go-up.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\flash\flash.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\image\image.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\image\images\align_left.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\image\images\align_right.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\image\images\align_top.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\image\images\refresh.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\insertfile\insertfile.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\lineheight\lineheight.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\link\link.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\map\map.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\map\map.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\media\media.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\multiimage\images\image.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\multiimage\images\select-files-en.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\multiimage\images\select-files-zh_CN.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\multiimage\images\swfupload.swf" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\multiimage\multiimage.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\pagebreak\pagebreak.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\plainpaste\plainpaste.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\preview\preview.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\quickformat\quickformat.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\table\table.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\template\html\1.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\template\html\2.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\template\html\3.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\template\template.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\plugins\wordpaste\wordpaste.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\themes\common\anchor.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\themes\common\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\themes\common\flash.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\themes\common\loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\themes\common\media.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\themes\common\rm.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\themes\default\background.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\themes\default\default.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\themes\default\default.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\themes\qq\editor.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\themes\qq\qq.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\kindeditor\themes\simple\simple.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\jquery.poshytip.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\jquery.poshytip.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-darkgray\tip-darkgray.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-darkgray\tip-darkgray.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-darkgray\tip-darkgray_arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-green\tip-green.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-green\tip-green_arrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-skyblue\tip-skyblue.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-skyblue\tip-skyblue.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-skyblue\tip-skyblue_arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-twitter\tip-twitter.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-twitter\tip-twitter_arrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-violet\tip-violet.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-violet\tip-violet.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-violet\tip-violet_arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-yellow\tip-yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-yellow\tip-yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-yellow\tip-yellow_arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-yellowsimple\tip-yellowsimple.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\poshytip\tip-yellowsimple\tip-yellowsimple_arrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\utils\IE6_MAXMIX.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\utils\IE6_PNG.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\utils\html5shiv.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\utils\respond.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\utils\spin.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\common\widget\utils\underscore.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\report\widget\OnlineBrowsen\FlexPaperViewer.swf" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\2014grate.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\default_admin_avatar.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\delect.ico" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\login\login.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\login\login_bg_01.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\login\login_bg_01_pic.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\login\login_bg_02.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\login\login_bg_02_pic.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\login\login_code.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member-card\mail-send.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member-card\sex.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\ad_next.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\ad_prev.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\ad_scroll.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\ajax-edit.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\album_bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\bg_repeat_x.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\btn.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\bundling_goods_thumb.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\buyer_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\buyer_header.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\close.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\cut_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\default_image.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\del.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\gray_th.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\ico.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\menu_dotted.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\mubg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\ncus_body.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\ncus_public.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\ncus_repeat_x.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\oldbtn.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\opa75.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\open.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\repeat_x.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\right.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\shareicon\shareicon_qqweibo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\shareicon\shareicon_qqzone.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\shareicon\shareicon_renren.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\shareicon\shareicon_sinaweibo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\shareicon\shareicons.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\sns_bg_repeat_x.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\sort_asc.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\sort_desc.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\ssns_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\ssns_pics.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\success.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\upload_loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\member\warning_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\ncsc_bg_img.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\sex.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\tip-yellowsimple_arrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\top_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\images\update.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\album.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\area_array.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\common.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\common_select.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\dialog\dialog.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\dialog\dialog.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\dialog\images\error.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\dialog\images\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\dialog\images\info.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\dialog\images\loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\dialog\images\right.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\dialog\images\tab.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\dialog\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\member.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\page.step2.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\page.step3.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\piclist.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\seller.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\store_goods_add.step1.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\store_goods_add.step2.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\scripts\store_goods_add.step3.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\styles\base.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\static\shop\styles\seller_center.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/404.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/404.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/test/java/com/ansteel/common/sql/service/SqlServiceBeanTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/resources/publish/AutoPublish.xml" afterPath="$PROJECT_DIR$/go-show/src/main/resources/publish/AutoPublish.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/poi/utils/Excel.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/poi/utils/Excel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/controller/ExcelController.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/controller/ExcelController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/controller/GlobalBaseController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/controller/GlobalBaseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/utils/JavaScriptUtils.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/utils/JavaScriptUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/reportlist/controller/ReportListController.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/reportlist/controller/ReportListController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/RequestUtils.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/RequestUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/service/SqlBaseServiceBean.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/service/SqlBaseServiceBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/sql/service/SqlServiceBean.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/sql/service/SqlServiceBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/StorePlateController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/StorePlateController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StorePlateService.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StorePlateService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StorePlateServiceBean.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StorePlateServiceBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/map/cms-map.json" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/map/cms-map.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/map/common-map.json" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/map/common-map.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/map/core-map.json" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/map/core-map.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/common/widget/exception/error.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/common/widget/exception/error.html.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/go-core.iml" afterPath="$PROJECT_DIR$/go-core/go-core.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/resources/go.properties" afterPath="$PROJECT_DIR$/go-show/src/main/resources/go.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/plate/plateAdd.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/plate/plateAdd.html.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/scripts/plateAdd.js" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/scripts/plateAdd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/plate/plateList.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/plate/plateList.html.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/map/report-map.json" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/map/report-map.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/map/shop-map.json" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/map/shop-map.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="go.iws" />
@@ -923,102 +92,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MakeReportImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/impl/service/MakeReportImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MakeReportController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/controller/MakeReportController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="42" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MakeReportServiceBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/service/MakeReportServiceBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="83" column="78" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExcelServiceBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ExcelServiceBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="200" column="41" selection-start-line="200" selection-start-column="33" selection-end-line="200" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SqlServiceBean.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/sql/service/SqlServiceBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="88" column="44" selection-start-line="88" selection-start-column="44" selection-end-line="88" selection-end-column="44" />
+            <state vertical-scroll-proportion="-8.603448">
+              <caret line="115" column="50" selection-start-line="115" selection-start-column="50" selection-end-line="115" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DynamicModelsTplController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/controller/DynamicModelsTplController.java">
+      <file leaf-file-name="ChartController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/ChartController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="241" column="54" selection-start-line="241" selection-start-column="54" selection-end-line="241" selection-end-column="54" />
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageGlobalAttributeBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/pageglobal/service/PageGlobalAttributeBean.java">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="76" selection-start-line="55" selection-start-column="76" selection-end-line="55" selection-end-column="76" />
+            <state vertical-scroll-proportion="-5.928571">
+              <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeetlServiceBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/beetl/service/BeetlServiceBean.java">
+      <file leaf-file-name="go.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/go.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="56" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.73031026">
+              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomLoginUrlAuthenticationEntryPoint.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomLoginUrlAuthenticationEntryPoint.java">
+      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/spring-mvc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+            <state vertical-scroll-proportion="27.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestUtils.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/RequestUtils.java">
+      <file leaf-file-name="SqlServiceBeanTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-core/src/test/java/com/ansteel/common/sql/service/SqlServiceBeanTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.307927">
-              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="90" selection-start-line="14" selection-start-column="90" selection-end-line="14" selection-end-column="90" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1030,6 +161,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -1085,11 +217,9 @@
         <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/utils/JavaScriptUtils.java" />
         <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/plate/plateAdd.html.jsp" />
         <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StorePlateService.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/StorePlateController.java" />
         <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StorePlateServiceBean.java" />
         <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/plate/plateList.html.jsp" />
         <option value="$PROJECT_DIR$/go-show/src/main/resources/publish/AutoPublish.xml" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/sql/service/SqlServiceBean.java" />
         <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/controller/GlobalBaseController.java" />
         <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/controller/ExcelController.java" />
         <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/reportlist/controller/ReportListController.java" />
@@ -1097,9 +227,12 @@
         <option value="$PROJECT_DIR$/go-show/src/main/webapp/404.jsp" />
         <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/common/widget/exception/error.html.jsp" />
         <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/poi/utils/Excel.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/resources/go.properties" />
         <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/RequestUtils.java" />
         <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/beetl/service/BeetlServiceBean.java" />
+        <option value="$PROJECT_DIR$/go-core/src/test/java/com/ansteel/common/sql/service/SqlServiceBeanTest.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/sql/service/SqlServiceBean.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/StorePlateController.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/resources/go.properties" />
       </list>
     </option>
   </component>
@@ -1185,8 +318,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1208,6 +339,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1230,11 +363,15 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/git/go/go-report/src/main/java/com/ansteel/report/excel/controller/ExcelController.java" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/go-core/src/test/java/com/ansteel" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1246,8 +383,66 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ansteel.common.sql.service" />
+    </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.GoShow">
+    <configuration default="false" name="SqlServiceBeanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ansteel.common.sql.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="go-core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ansteel.common.sql.service" />
+      <option name="MAIN_CLASS_NAME" value="com.ansteel.common.sql.service.SqlServiceBeanTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SqlServiceBeanTest.asToUpperCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ansteel.common.sql.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="go-core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ansteel.common.sql.service" />
+      <option name="MAIN_CLASS_NAME" value="com.ansteel.common.sql.service.SqlServiceBeanTest" />
+      <option name="METHOD_NAME" value="asToUpperCaseTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -1520,9 +715,17 @@
         </option>
       </method>
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.GoShow" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SqlServiceBeanTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SqlServiceBeanTest.asToUpperCaseTest" />
     </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SqlServiceBeanTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SqlServiceBeanTest.asToUpperCaseTest" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -1558,7 +761,8 @@
       <workItem from="1440589066039" duration="6764000" />
       <workItem from="1440642080903" duration="1218000" />
       <workItem from="1440644258461" duration="7167000" />
-      <workItem from="1440677444095" duration="3395000" />
+      <workItem from="1440677444095" duration="4035000" />
+      <workItem from="1440721118926" duration="11731000" />
     </task>
     <task id="LOCAL-00001" summary="测试一下">
       <created>1440299520520</created>
@@ -1608,11 +812,17 @@
       <option name="project" value="LOCAL" />
       <updated>1440549936305</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="开发(报表修改)">
+      <created>1440683046148</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1440683046148</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94652000" />
+    <option name="totallyTimeSpent" value="107023000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1628,25 +838,25 @@
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44197953" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23549488" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39078498" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09304085" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35627836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19062027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28156996" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27133107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39078498" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23549488" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1673,28 +883,15 @@
     <MESSAGE value="开发" />
     <MESSAGE value="开发(修改目录结构)" />
     <MESSAGE value="开发(电商关联版式)" />
-    <option name="LAST_COMMIT_MESSAGE" value="开发(电商关联版式)" />
+    <MESSAGE value="开发(报表修改)" />
+    <option name="LAST_COMMIT_MESSAGE" value="开发(报表修改)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/StorePlateController.java</url>
-          <line>116</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/StorePlateController.java</url>
-          <line>118</line>
-          <properties />
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="50" />
+      <option name="time" value="57" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1703,100 +900,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/plate/plateAdd.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.333334">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.7.0.M1/spring-data-commons-1.7.0.M1-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="9" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StorePlateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StorePlateServiceBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/StorePlateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsOnlineList.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="198.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/album/piclist.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-52.666668">
-          <caret line="199" column="9" selection-start-line="197" selection-start-column="0" selection-end-line="206" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/plate/plateList.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.383721">
-          <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excelin/controller/ExcelInController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/repository/SqlBaseRepositoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.0.0.RELEASE/spring-tx-4.0.0.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="261" column="0" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.0.0.RELEASE/spring-tx-4.0.0.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.0.0.RELEASE/spring-aop-4.0.0.RELEASE-sources.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="206" column="0" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.0.0.RELEASE/spring-aop-4.0.0.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
@@ -1856,14 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.428571">
-          <caret line="59" column="50" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/reportlist/controller/ReportListController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1884,7 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.9112272">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1892,9 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1916,7 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1938,7 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="92" column="7" selection-start-line="4" selection-start-column="0" selection-end-line="92" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1991,22 +1080,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/go.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/poi/utils/Excel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="217" column="23" selection-start-line="217" selection-start-column="23" selection-end-line="217" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/ExcelMakeUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2019,7 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="71" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2027,7 +1099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="200" column="75" selection-start-line="200" selection-start-column="75" selection-end-line="200" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2035,7 +1106,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2043,7 +1116,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="42" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2051,7 +1126,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="83" column="78" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="78" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2059,7 +1136,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="200" column="41" selection-start-line="200" selection-start-column="33" selection-end-line="200" selection-end-column="41" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#5759#5760#0" expanded="false" />
+            <element signature="e#5814#5815#0" expanded="false" />
+            <element signature="e#7078#7079#0" expanded="false" />
+            <element signature="e#7139#7140#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2067,29 +1150,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="241" column="54" selection-start-line="241" selection-start-column="54" selection-end-line="241" selection-end-column="54" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/pageglobal/service/PageGlobalAttributeBean.java">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/RequestUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="76" selection-start-line="55" selection-start-column="76" selection-end-line="55" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/sql/service/SqlServiceBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="44" selection-start-line="88" selection-start-column="44" selection-end-line="88" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.16157989">
+          <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomLoginUrlAuthenticationEntryPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.32315978">
           <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
           <folding />
         </state>
@@ -2103,10 +1180,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/RequestUtils.java">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/pageglobal/service/PageGlobalAttributeBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.307927">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3859964">
+          <caret line="55" column="76" selection-start-line="55" selection-start-column="76" selection-end-line="55" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/SecurityMetadata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="11" selection-start-line="90" selection-start-column="11" selection-end-line="90" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/AnalyzeTplSyntax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/test/java/com/ansteel/dhtmlx/widget/formoption/SqlOptionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/poi/utils/Excel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="227" column="16" selection-start-line="224" selection-start-column="8" selection-end-line="229" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/test/java/com/ansteel/dymodel/test/GroovyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="274" column="0" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39634147">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/test/java/com/ansteel/common/sql/service/SqlServiceBeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="90" selection-start-line="14" selection-start-column="90" selection-end-line="14" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="27.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/sql/service/SqlServiceBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.603448">
+          <caret line="115" column="50" selection-start-line="115" selection-start-column="50" selection-end-line="115" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/StorePlateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0376885">
+          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/controller/GoodsBrandController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63316584">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/model/controller/ModelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25879398">
+          <caret line="122" column="40" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/LittleChartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2713568">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/ChartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.928571">
+          <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/go.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73031026">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
           <folding />
         </state>
       </provider>
