@@ -15,6 +15,7 @@ import com.ansteel.shop.goods.domain.Goods;
 import com.ansteel.shop.goods.repository.GoodsRepository;
 import com.ansteel.shop.store.domain.Store;
 import com.ansteel.shop.store.service.StoreService;
+import org.springframework.util.Assert;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -107,6 +108,24 @@ public class GoodsServiceBean implements GoodsService {
     public void adEdit(String[] goodsIdArray, String adWord) {
         for(String goodsId:goodsIdArray){
             goodsRepository.updateAdWord(goodsId,adWord);
+        }
+    }
+
+    @Override
+    @Transactional
+    public Goods savePosition(String commonid, String plateTop, String plateBottom) {
+        Goods goods = this.findOneByStoreIdAndId(commonid);
+        Assert.notNull(goods,commonid+",此商品id无效！");
+        goods.setPlateidTop(plateTop);
+        goods.setPlateidBottom(plateBottom);
+        return this.save(goods);
+    }
+
+    @Override
+    @Transactional
+    public void savePosition(String[] ids, String plateTop, String plateBottom) {
+        for(String id:ids){
+            this.savePosition(id,plateTop,plateBottom);
         }
     }
 

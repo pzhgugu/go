@@ -126,7 +126,7 @@
                             </i>
                             设置广告词
                         </a>
-                        <a data-param="{url:'http://localhost/shopnc/shop/index.php?act=store_goods_online&amp;op=edit_plate', sign:'plate'}"
+                        <a data-param="{url:'${S_URL}/se/goodsonline/edit/position?for=tpl', sign:'plate'}"
                            nctype="batch" class="ncsc-btn-mini" href="javascript:void(0);">
                             <i>
                             </i>
@@ -250,7 +250,7 @@
                             </i>
                             设置广告词
                         </a>
-                        <a data-param="{url:'http://localhost/shopnc/shop/index.php?act=store_goods_online&amp;op=edit_plate', sign:'plate'}"
+                        <a data-param="{url:'${S_URL}/se/goodsonline/edit/position?for=tpl', sign:'plate'}"
                            nctype="batch" class="ncsc-btn-mini" href="javascript:void(0);">
                             <i>
                             </i>
@@ -260,35 +260,12 @@
                 </tr>
                 <tr>
                     <td colspan="20">
-                        <div class="pagination">
-                            <ul>
-                                <li>
-              <span>
-                首页
-              </span>
-                                </li>
-                                <li>
-              <span>
-                上一页
-              </span>
-                                </li>
-                                <li>
-              <span class="currentpage">
-                1
-              </span>
-                                </li>
-                                <li>
-              <span>
-                下一页
-              </span>
-                                </li>
-                                <li>
-              <span>
-                末页
-              </span>
-                                </li>
-                            </ul>
-                        </div>
+                        <fis:block url="shop:widget/tpl/pagination.html.jsp" >
+                            <fis:param name="page" value="P_PAGE_SHOW"/>
+                            <fis:param name="paginationSize" value="9"/>
+                            <fis:param name="reqName" value="curpage"/>
+                            <fis:param name="url" value="${S_URL}/se/goodsonline/list"/>
+                        </fis:block>
                     </td>
                 </tr>
                 </tfoot>

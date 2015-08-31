@@ -13,6 +13,8 @@ import com.ansteel.core.utils.StringUtils;
 import com.ansteel.shop.goods.domain.Goods;
 import com.ansteel.shop.goods.domain.JsonGoodsClass;
 import com.ansteel.shop.goods.service.GoodsService;
+import com.ansteel.shop.store.domain.StorePlate;
+import com.ansteel.shop.store.service.StorePlateService;
 import com.ansteel.shop.utils.JavaScriptUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -32,6 +34,9 @@ public class SellerGoodsOnlineController {
     GoodsService goodsService;
 
     public static int PAGE_SIZE=20;
+
+    @Autowired
+    StorePlateService storePlateService;
 
 
     @RequestMapping("/list")
@@ -107,4 +112,35 @@ public class SellerGoodsOnlineController {
         ResponseUtils.xmlCDataOut(response, JavaScriptUtils.returnShowDialog(name, url));
     }
 
+
+    @RequestMapping("/edit/position")
+    public String editPosition(Model model,
+                               @RequestParam(value = "commonid") String commonid,
+                               HttpServletRequest request,
+                               HttpServletResponse response) {
+
+        List<StorePlate> storePlateList=storePlateService.findByStoreId();
+        model.addAttribute("P_COMMONID",commonid);
+        model.addAttribute("P_STOREPLATE_LIST", storePlateList);
+        return FisUtils.page("shop:pages/seller/goodsOnline/plateEditPosition.html");
+    }
+
+    @RequestMapping("/save/position")
+    @ResponseBody
+    public void savePosition(Model model,
+                             @RequestParam(value = "commonid") String commonid,
+                             @RequestParam(value = "plate_top") String plateTop,
+                             @RequestParam(value = "plate_bottom") String plateBottom,
+                               HttpServletRequest request,
+                               HttpServletResponse response) {
+
+        if(StringUtils.hasText(commonid)) {
+            String[] ids=commonid.split(",");
+            goodsService.savePosition(ids, plateTop, plateBottom);
+        }
+
+        String url=request.getContextPath()+"/se/goodsonline/list";
+        String name="操作成功";
+        ResponseUtils.xmlCDataOut(response, JavaScriptUtils.returnShowDialog(name, url));
+    }
 }

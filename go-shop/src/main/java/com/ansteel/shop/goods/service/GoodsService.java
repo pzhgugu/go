@@ -50,4 +50,15 @@ public interface GoodsService {
 	 * @param adWord
 	 */
 	void adEdit(String[] goodsIdArray, String adWord);
+
+	/**
+	 * 修改关联版式
+	 * @param commonid
+	 * @param plateTop
+	 * @param plateBottom
+	 * @return
+	 */
+	Goods savePosition(String commonid, String plateTop, String plateBottom);
+
+	void savePosition(String[] ids, String plateTop, String plateBottom);
 }

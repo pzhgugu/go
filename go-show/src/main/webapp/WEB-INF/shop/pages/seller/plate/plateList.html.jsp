@@ -27,8 +27,7 @@
 <!--帮助结束-->
 
 <!--搜索开始-->
-            <form method="get">
-                <input type="hidden" value="store_plate" name="act">
+            <form method="get" >
                 <table class="search-form">
                     <tbody><tr>
                         <td>&nbsp;</td>
@@ -36,7 +35,7 @@
                         <th>版式位置</th>
                         <td class="w80">
                             <select name="p_position">
-                                <option>请选择</option>
+                                <option value="">请选择</option>
                                 <option value="0">底部</option>
                                 <option value="1">顶部</option>
                             </select>
@@ -96,7 +95,14 @@
                     </th>
                 </tr>
                 <tr>
-                    <td colspan="20"><div class="pagination"><ul><li><span>首页</span></li><li><span>上一页</span></li><li><span class="currentpage">1</span></li><li><span>下一页</span></li><li><span>末页</span></li></ul></div></td>
+                    <td colspan="20">
+                        <fis:block url="shop:widget/tpl/pagination.html.jsp" >
+                            <fis:param name="page" value="P_PAGE_SHOW"/>
+                            <fis:param name="paginationSize" value="9"/>
+                            <fis:param name="reqName" value="curpage"/>
+                            <fis:param name="url" value="${S_URL}/se/plate/list"/>
+                        </fis:block>
+                    </td>
                 </tr>
                 </tfoot>
             </table>

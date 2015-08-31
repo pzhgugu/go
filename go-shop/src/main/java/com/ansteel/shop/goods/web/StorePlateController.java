@@ -37,13 +37,15 @@ public class StorePlateController {
     public static int PAGE_SIZE=20;
 
     @RequestMapping("/list")
-    public String list(Model model,
+    public String query(Model model,
+                        @RequestParam(value = "p_position", required = false) String position,
+                        @RequestParam(value = "p_name", required = false) String name,
                        @RequestParam(value = "sort", required = false) String sortType,
                        @RequestParam(value = "curpage", required = false) Integer curPage,
                        HttpServletRequest request,
                        HttpServletResponse response) {
 
-        Page<StorePlate> page=storePlateService.findAll(sortType,curPage,PAGE_SIZE);
+        Page<StorePlate> page=storePlateService.findByStoreId(position, name, sortType, curPage, PAGE_SIZE);
 
         model.addAttribute("P_PAGE_SHOW", page);
         model.addAttribute("P_PLATE_LIST", page.getContent());
@@ -117,11 +119,12 @@ public class StorePlateController {
               HttpServletResponse response) {
         if(StringUtils.hasText(ids)){
             String[] idArray = ids.split(",");
-            storePlateService.delete(idArray);
+            storePlateService.deleteCurrent(idArray);
         }
         String url=request.getContextPath()+"/se/plate/list";
         String name="删除成功";
         ResponseUtils.xmlCDataOut(response, JavaScriptUtils.returnShowDialog(name, url));
     }
+
 
 }
