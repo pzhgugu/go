@@ -1,11 +1,14 @@
 package com.ansteel.shop.goods.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import com.ansteel.core.constant.Constants;
 import com.ansteel.core.domain.TreeEntity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
+import java.util.Collection;
 
 /**
  * 创 建 人：gugu
@@ -26,7 +29,11 @@ public class GoodsClass extends  TreeEntity<GoodsClass>{
 	/**
 	 * 类型id
 	 */
-	private String typeId;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "goodsClass",fetch=FetchType.EAGER)
+    @Fetch(FetchMode.SUBSELECT)
+    @OrderBy("typeSort")
+    @JsonIgnore
+	private Collection<GoodsType> goodsTypeList;
 	/**
 	 * 店铺ID，0为系统后台发布
 	 */
@@ -48,12 +55,6 @@ public class GoodsClass extends  TreeEntity<GoodsClass>{
 	 */
 	@Column(length=4000)
 	private String description;
-	public String getTypeId() {
-		return typeId;
-	}
-	public void setTypeId(String typeId) {
-		this.typeId = typeId;
-	}
 	public String getStoreId() {
 		return storeId;
 	}
@@ -85,7 +86,12 @@ public class GoodsClass extends  TreeEntity<GoodsClass>{
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
-	
 
+    public Collection<GoodsType> getGoodsTypeList() {
+        return goodsTypeList;
+    }
+
+    public void setGoodsTypeList(Collection<GoodsType> goodsTypeList) {
+        this.goodsTypeList = goodsTypeList;
+    }
 }

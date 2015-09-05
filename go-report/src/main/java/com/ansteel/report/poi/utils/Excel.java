@@ -8,20 +8,19 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.PushbackInputStream;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.poi.POIXMLDocument;
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.opc.OPCPackage;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.util.Assert;
@@ -417,5 +416,109 @@ public class Excel {
 		}
 
 	}
+	public static void removeRow(Sheet sheet,int rowIndex){
+		int lastRowNum=sheet.getLastRowNum();
+		if(rowIndex>=0&&rowIndex<lastRowNum)
+			sheet.shiftRows(rowIndex+1,lastRowNum,-1);//将行号为rowIndex+1一直到行号为lastRowNum的单元格全部上移一行，以便删除rowIndex行
+		if(rowIndex==lastRowNum){
+			Row removingRow=sheet.getRow(rowIndex);
+			if(removingRow!=null)
+				sheet.removeRow(removingRow);
+		}
+	}
+
+	public static void copyInsertRow(Sheet sheet,int fromRow,int toRow,int mergerFirstRow,int mergerLastRow){
+		//创建一行
+		sheet.shiftRows(toRow, sheet.getLastRowNum(), 1, true, false);
+		Row targetRow=sheet.createRow(toRow);
+		Row sourceRow=sheet.getRow(fromRow + 1);
+
+		//复制高度
+		short height=sourceRow.getHeight();
+		targetRow.setHeight(height);
+
+
+		//合并单元格
+		int sheetMergeCount = sheet.getNumMergedRegions();
+		for (int i = 0; i < sheetMergeCount; i++) {
+			CellRangeAddress range = sheet.getMergedRegion(i);
+			int firstColumn = range.getFirstColumn();
+			int lastColumn = range.getLastColumn();
+			int firstRow = range.getFirstRow();
+			int lastRow = range.getLastRow();
+
+			if(firstRow==sourceRow.getRowNum()&&lastColumn>firstColumn){
+				sheet.addMergedRegion(new CellRangeAddress(
+						targetRow.getRowNum(), //first row (0-based)
+						targetRow.getRowNum(), //last row  (0-based)
+						firstColumn, //first column (0-based)
+						lastColumn  //last column  (0-based)
+				));
+			}
+		}
+
+			Cell targetCell ,sourceCell;
+		int nc=sourceRow.getPhysicalNumberOfCells();
+		for (int m = 0/*sourceRow.getFirstCellNum()*/; m <= nc; m++) {
+			sourceCell = sourceRow.getCell(m);
+			targetCell = targetRow.createCell(m);
+			if (sourceCell == null) {
+				continue;
+			}
+			//复制样式
+			targetCell.setCellStyle(sourceCell.getCellStyle());
+
+			//评论
+			if (sourceCell.getCellComment() != null) {
+				targetCell.setCellComment(sourceCell.getCellComment());
+			}
+
+			//复制类型
+			int ct = sourceCell.getCellType();
+			targetCell.setCellType(ct);
+
+			switch (ct) {
+				case Cell.CELL_TYPE_BLANK:// 空白
+					break;
+				case Cell.CELL_TYPE_BOOLEAN:// 布尔
+					targetCell.setCellValue(sourceCell.getBooleanCellValue());
+					break;
+				case Cell.CELL_TYPE_FORMULA:// 公式
+					targetCell.setCellFormula(sourceCell.getCellFormula());
+					break;
+				case Cell.CELL_TYPE_NUMERIC:// 数字格式
+					if (DateUtil.isCellDateFormatted(sourceCell)) {
+						targetCell.setCellValue(sourceCell.getDateCellValue());
+					} else {
+						targetCell.setCellValue(sourceCell.getNumericCellValue());
+					}
+					break;
+				case Cell.CELL_TYPE_STRING:// 字符串
+					setCellString(sourceCell,targetCell,mergerFirstRow,mergerLastRow);
+					break;
+				case Cell.CELL_TYPE_ERROR:
+					targetCell.setCellErrorValue(sourceCell.getErrorCellValue());
+					break;
+			}
+		}
+
+	}
+
+	private static void setCellString(Cell sourceCell, Cell targetCell, int mergerFirstRow, int mergerLastRow) {
+
+		RichTextString text=sourceCell.getRichStringCellValue();
+		String formula=text.getString();
+		if(formula.indexOf("${BEGIN}")>-1||formula.indexOf("${END}")>-1){
+			formula = formula.replaceAll("\\$\\{BEGIN\\}", String.valueOf(mergerFirstRow+1));
+			formula = formula.replaceAll("\\$\\{END\\}", String.valueOf(mergerLastRow+1));
+			formula = formula.replace("=", "");
+			targetCell.setCellFormula(formula);
+			targetCell.setCellType(Cell.CELL_TYPE_FORMULA);
+
+		}else {
+			targetCell.setCellValue(sourceCell.getRichStringCellValue());
+		}
+	}
+
 
 }

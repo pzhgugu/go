@@ -3,10 +3,13 @@
  * @require common:widget/utils/underscore.js
  * @require common:widget/dhtmlxSuite/dhtmlxEx.js
  */
+
+//重新布局
 $(window).resize(function() { 
 	GPW.layout.mainLayout.setSizes();
 });
 
+//url集合
 var GPC = {
 	url:{
 		treeQueryUrl:GLOBAL.S.URL+GLOBAL.P.MODULES+"/a/queryIdToTree/"+GLOBAL.P.TREECLASS,
@@ -19,6 +22,7 @@ var GPC = {
 				update:"update",detailQuery:"detailQuery",between:"between"}
 }
 
+//组件声明
 var GPW = {
 	layout : {},
 	toolbar : {},
@@ -30,10 +34,12 @@ var GPW = {
 	cache : {}
 };
 
+//缓存
 GPW.cache = {
 	grid:{}	
 }
 
+//布局组件
 GPW.layout = {
 	mainLayout : {},
 	mainGridLayout:{},
@@ -50,7 +56,7 @@ GPW.layout = {
 	}
 }
 
-
+//树组件
 GPW.tree = {
 	mainTree:{},
 	init:function(){
@@ -145,7 +151,7 @@ GPW.tree = {
 }//end GPW.tree
 
 
-
+//工具条组件
 GPW.toolbar = {
 	treeToolbar : {},
 	initTreeToolbar:function(){
@@ -182,6 +188,7 @@ GPW.toolbar = {
 	}
 }//end GPW.toolbar
 
+//表单组件
 GPW.form = {
 	mainForm:{},
 	getTreeFormData:function(){
@@ -217,7 +224,7 @@ GPW.form = {
 	}
 }//GPW.form 
 
-		
+//初始化组件
 $(function() {
 	GPW.layout.init();
 	GPW.tree.init();

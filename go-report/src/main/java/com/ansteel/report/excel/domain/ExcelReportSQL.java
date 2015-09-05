@@ -87,8 +87,34 @@ public class ExcelReportSQL extends OperEntity {
 	 * 合并单元格编码
 	 */
 	private String mergerRegionRecode;
-	
-	@Column(name = "VERSION_PUBLISH", columnDefinition="INT default 0")
+
+    /**
+     * 合并单元格固定编码
+     */
+    private String mergerRegionFixed;
+
+    /**
+     * 合并单元格跟随编码
+     */
+    private String mergerRegionFollow;
+
+    public String getMergerRegionFixed() {
+        return mergerRegionFixed;
+    }
+
+    public void setMergerRegionFixed(String mergerRegionFixed) {
+        this.mergerRegionFixed = mergerRegionFixed;
+    }
+
+    public String getMergerRegionFollow() {
+        return mergerRegionFollow;
+    }
+
+    public void setMergerRegionFollow(String mergerRegionFollow) {
+        this.mergerRegionFollow = mergerRegionFollow;
+    }
+
+    @Column(name = "VERSION_PUBLISH", columnDefinition="INT default 0")
 	private Long versionPublish;
 		
 	public Long getVersionPublish() {

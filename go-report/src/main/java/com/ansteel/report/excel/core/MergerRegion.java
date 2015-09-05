@@ -17,7 +17,30 @@ public class MergerRegion {
 	
 	private int lastRow;
 
-	public int getFirstRow() {
+    private int column;
+
+	/**
+	 * 字段名称
+	 */
+	private String key;
+
+	public String getKey() {
+		return key;
+	}
+
+	public void setKey(String key) {
+		this.key = key;
+	}
+
+	public int getColumn() {
+        return column;
+    }
+
+    public void setColumn(int column) {
+        this.column = column;
+    }
+
+    public int getFirstRow() {
 		return firstRow;
 	}
 
