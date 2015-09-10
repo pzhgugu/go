@@ -482,7 +482,9 @@ public class ExcelMakeUtils {
     }
 
     private static  void addMergedRegion(int firstRow, int lastRow, int firstCol, int lastCol,Sheet sheet,List<int[]> mergerFollowList){
-
+        if(firstRow>lastRow){
+            return ;
+        }
         sheet.addMergedRegion(new CellRangeAddress(
                 firstRow, //first row (0-based)
                 lastRow, //last row  (0-based)

@@ -1,13 +1,10 @@
 package com.ansteel.report.excel.service;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.ansteel.core.utils.DateTimeUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -77,6 +74,15 @@ public class ExcelServiceBean implements ExcelService{
 				AttachmentTree attachmentTree = this.getAttachmentTree();
 				attachment = attachmentService.saveAttachment(attachmentTree, file,excelReport.getName(),excelReport.getAlias());
 			}else{
+                String fileName=attachment.getFileName();
+                if(StringUtils.hasText(fileName)){
+                    String[] nameArray = fileName.split("\\.");
+                    String type=FileUtils.getFileType(file.getOriginalFilename()).toLowerCase();
+                    String newFileName=nameArray[0]+"."+type;
+                    attachment.setFileName(newFileName);
+                    newFileName=attachmentService.getPath(attachment.getAttachmentTree(),newFileName,type);
+                    attachment.setPath(newFileName);
+                }
 				attachment = attachmentService.saveAttachment(attachment, file);
 			}
 			excelReport.setAttachmentId(attachment.getId());

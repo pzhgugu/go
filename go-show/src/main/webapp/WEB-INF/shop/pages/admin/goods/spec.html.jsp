@@ -67,11 +67,11 @@
       init : function() {
         this.mainGrid = GPW.layout.mainGridLayout.attachGrid();
         this.mainGrid.setImagePath(GLOBAL.IconsPath);
-        this.mainGrid.setHeader("名称,关联");
-        this.mainGrid.setInitWidths("*,100");
-        this.mainGrid.setColAlign("left,center");
-        this.mainGrid.setColTypes("ed,dhxCalendar");
-        this.mainGrid.setColSorting("str,date");
+        this.mainGrid.setHeader("排序,名称");
+        this.mainGrid.setInitWidths("50,*");
+        this.mainGrid.setColAlign("left,left");
+        this.mainGrid.setColTypes("ed,ed");
+        this.mainGrid.setColSorting("str,str");
         this.mainGrid.init();
       }
     }
@@ -83,4 +83,5 @@
 
   </script>
   </body>
+
 </fis:html>

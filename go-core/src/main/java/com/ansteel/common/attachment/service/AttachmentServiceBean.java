@@ -109,10 +109,12 @@ public class AttachmentServiceBean implements AttachmentService {
 		}
 	}
 
-	private String getPath(String path) {
+    @Override
+	public String getPath(String path) {
 		return  attPath+path;
 	}
 
+	@Override
 	public String getPath(AttachmentTree attachmentTree, String fileName,String type) {
 		if(attachmentTree==null||!StringUtils.hasText(attachmentTree.getCatalogue())){
 			return this.getDefaultPath(type,fileName);
@@ -145,8 +147,8 @@ public class AttachmentServiceBean implements AttachmentService {
 	}
 
 
-
-	private void setFileInfo(MultipartFile file, Attachment entity) {
+    @Override
+	public void setFileInfo(MultipartFile file, Attachment entity) {
 		String fileName = file.getOriginalFilename();
 		entity.setLoadFileName(fileName);
 		entity.setFileSize(file.getSize());

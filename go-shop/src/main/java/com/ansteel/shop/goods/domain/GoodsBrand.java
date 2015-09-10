@@ -1,11 +1,14 @@
 package com.ansteel.shop.goods.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import com.ansteel.core.constant.Constants;
 import com.ansteel.core.domain.BaseEntity;
 import com.ansteel.core.domain.OperEntity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * 创 建 人：gugu
@@ -16,12 +19,17 @@ import com.ansteel.core.domain.OperEntity;
  */
 @Entity
 @Table(name = Constants.G_TABLE_PREFIX + "goods_brand")
-public class GoodsBrand extends OperEntity{
+public class GoodsBrand extends BaseEntity{
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 4640970260992318311L;
+
+    /**
+     * 品牌名称
+     */
+    private String brandName;
 	/**
 	 * 类别名称
 	 */
@@ -38,11 +46,32 @@ public class GoodsBrand extends OperEntity{
 	 * 店铺ID
 	 */
 	private String storeId;
+    /**
+     * 排序
+     */
+    private Integer brandSort;
 	/**
 	 * 品牌申请，0为申请中，1为通过，默认为1，申请功能是会员使用，系统后台默认为1
 	 */
 	private Integer brandApply;
-	public String getClassName() {
+
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE},
+            fetch= FetchType.LAZY)
+    @JoinTable(name = Constants.G_TABLE_PREFIX + "type_brand",
+            joinColumns = {@JoinColumn(name="type_id")},
+            inverseJoinColumns = { @JoinColumn(name = "brand_id") })
+    @JsonIgnore
+    private Collection<GoodsType> goodsTypes=new ArrayList<GoodsType>();
+
+    public Collection<GoodsType> getGoodsTypes() {
+        return goodsTypes;
+    }
+
+    public void setGoodsTypes(Collection<GoodsType> goodsTypes) {
+        this.goodsTypes = goodsTypes;
+    }
+
+    public String getClassName() {
 		return className;
 	}
 	public void setClassName(String className) {
@@ -72,6 +101,20 @@ public class GoodsBrand extends OperEntity{
 	public void setBrandApply(Integer brandApply) {
 		this.brandApply = brandApply;
 	}
-	
-	
+
+    public String getBrandName() {
+        return brandName;
+    }
+
+    public void setBrandName(String brandName) {
+        this.brandName = brandName;
+    }
+
+    public Integer getBrandSort() {
+        return brandSort;
+    }
+
+    public void setBrandSort(Integer brandSort) {
+        this.brandSort = brandSort;
+    }
 }

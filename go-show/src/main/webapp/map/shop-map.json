@@ -1,5 +1,15 @@
 {
     "res": {
+        "shop:scripts/admin/goodsBrand.js": {
+            "uri": "/show/static/shop/scripts/admin/goodsBrand.js",
+            "type": "js",
+            "deps": [
+                "common:widget/jquery/jqueryEx.js",
+                "common:widget/utils/underscore.js",
+                "common:widget/dhtmlxSuite/dhtmlxEx.js",
+                "common:widget/jquery/jquery.form.js"
+            ]
+        },
         "shop:scripts/admin/goodsType.js": {
             "uri": "/show/static/shop/scripts/admin/goodsType.js",
             "type": "js"

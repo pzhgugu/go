@@ -29,6 +29,12 @@ public class GoodsSpec extends BaseEntity{
      */
     private Integer spSort;
 
+    /**
+     * 当前类型是否关联规格
+     */
+    @Transient
+    private Integer isSelect;
+
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE},
             fetch=FetchType.LAZY)
     @JoinTable(name = Constants.G_TABLE_PREFIX + "type_spec",
@@ -60,5 +66,13 @@ public class GoodsSpec extends BaseEntity{
 
     public void setSpSort(Integer spSort) {
         this.spSort = spSort;
+    }
+
+    public Integer getIsSelect() {
+        return isSelect;
+    }
+
+    public void setIsSelect(Integer isSelect) {
+        this.isSelect = isSelect;
     }
 }

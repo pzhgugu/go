@@ -66,8 +66,7 @@ public class JasperReportsServiceBean implements JasperReportsService {
 		if (StringUtils.hasText(report.getId())) {
 			String aId = report.getAttachmentId();
 			if (StringUtils.hasText(aId)) {
-				attachment = attachmentService.getAttachmentById(report
-						.getAttachmentId());
+				attachment = attachmentService.getAttachmentById(aId);
 			}
 		}
 		String fileType = FileUtils.getFileType(file.getOriginalFilename());

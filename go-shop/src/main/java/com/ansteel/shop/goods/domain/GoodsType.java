@@ -52,6 +52,19 @@ public class GoodsType extends BaseEntity{
     @JsonIgnore
     private Collection<GoodsSpec> goodsSpecs=new ArrayList<GoodsSpec>();
 
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, mappedBy = "goodsTypes",
+            fetch=FetchType.LAZY)
+    @JsonIgnore
+    private Collection<GoodsBrand> goodsBrands=new ArrayList<GoodsBrand>();
+
+    public Collection<GoodsBrand> getGoodsBrands() {
+        return goodsBrands;
+    }
+
+    public void setGoodsBrands(Collection<GoodsBrand> goodsBrands) {
+        this.goodsBrands = goodsBrands;
+    }
+
     public String getTypeName() {
         return typeName;
     }

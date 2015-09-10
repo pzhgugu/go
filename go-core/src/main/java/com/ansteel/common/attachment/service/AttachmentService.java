@@ -134,4 +134,8 @@ public interface AttachmentService {
 	 * @return
 	 */
 	String getPath(AttachmentTree attachmentTree, String fileName,String type) ;
+
+    void setFileInfo(MultipartFile file, Attachment entity);
+
+	String getPath(String path);
 }

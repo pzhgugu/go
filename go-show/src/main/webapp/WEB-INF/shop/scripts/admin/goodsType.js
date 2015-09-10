@@ -21,7 +21,7 @@ GPW.tabbar={
     attachURL:function(actvId,id){
         var url="";
         if(actvId=="spec"){
-            url=GLOBAL.S.URL+"/goodstype/spec?id="+id;
+            url=GLOBAL.S.URL+"/goodsscpec/tpl/SingleGrid/GoodsSpec/d?_value="+id;
         }else if(actvId=="brand"){
             url=GLOBAL.S.URL+"/goodstype/brand?id="+id;
         }else if(actvId=="attribute"){

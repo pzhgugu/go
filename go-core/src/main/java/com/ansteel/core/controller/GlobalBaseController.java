@@ -80,7 +80,6 @@ public class GlobalBaseController extends TreeController {
 	 * ajax调用
 	 * 通过实体class、id查询数据
 	 * @param clazz
-	 * @param id
 	 * @return
 	 */
 	@RequestMapping("/a/loadPage/{className}")
@@ -104,7 +103,6 @@ public class GlobalBaseController extends TreeController {
 	 * ajax调用
 	 * 详细查询、带分页
 	 * @param clazz
-	 * @param id
 	 * @return
 	 */
 	@RequestMapping("/a/queryDetailPage/{className}")
@@ -129,7 +127,6 @@ public class GlobalBaseController extends TreeController {
 	 * ajax调用
 	 * 单条件查询、带分页
 	 * @param clazz
-	 * @param id
 	 * @return
 	 */
 	@RequestMapping("/a/queryPage/{className}")
@@ -213,7 +210,6 @@ public class GlobalBaseController extends TreeController {
 	 * ajax调用
 	 * 通过实体class、id查询数据
 	 * @param clazz
-	 * @param id
 	 * @return
 	 */
 	@RequestMapping("/a/load/{className}")
@@ -232,7 +228,6 @@ public class GlobalBaseController extends TreeController {
 	 * 删除数据，有回调则返回此页面,没有回调刷新当前页
 	 * @param clazz
 	 * @param id
-	 * @param callback
 	 * @return
 	 */
 	@RequestMapping("/a/delect/{className}")
@@ -247,6 +242,8 @@ public class GlobalBaseController extends TreeController {
 	@RequestMapping("/a/update/{className}")
 	@ResponseBody
 	public void updateAjax(@Valid @PathDatabaseEntity("className")BaseEntity entity
+			,@RequestParam(value="_key",required=false)String key
+			,@RequestParam(value="_value",required=false)String value
 			,BindingResult result,HttpServletRequest request){
 		
 		if (result.hasErrors()) {  
