@@ -6,14 +6,11 @@ import java.util.Map.Entry;
 import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.ansteel.core.exception.PageException;
 import com.ansteel.core.utils.StringUtils;
 import com.ansteel.report.poi.utils.Excel;
 import com.ansteel.report.excel.domain.ExcelReportSQL;
-import org.springframework.util.Assert;
 
 /**
  * 创 建 人：gugu
@@ -45,7 +42,7 @@ public class BaseExcelReport {
     /**
      * 数据填充
      *
-     * @param excel
+     * @param
      * @param excelReportSQL
      * @param list
      */
@@ -90,19 +87,51 @@ public class BaseExcelReport {
                 if (currentNum > num) {
                     insertRow = currentNum - num;
                     Excel.insertRow(sheet, cellStatr, insertRow);
+                }else{
+                    //解决没有插入行的公式替换
+                    int sourceRowNum = cellStatr-1;
+                    Row sourceRow = sheet.getRow(sourceRowNum);
+                    boolean isFormula=Excel.checkIsFormula(sourceRow);
+                    if(isFormula) {
+                        Excel.replaceFormula(sourceRow);
+                    }
                 }
             }
         }
 
         //获取跟随合并
         String mergerRegionFollow=excelReportSQL.getMergerRegionFollow();
-        List<int[]> mergerFollowList=this.getMergerRegionFollow(mergerRegionFollow,mapping);
+        List<int[]> mergerFollowList=this.getMergerRegionFollow(mergerRegionFollow, mapping);
 
         //获取合并单元格固定插入值编码
         String mergerRegionFixed = excelReportSQL.getMergerRegionFixed();
         Map<String, Integer> mergerFixedMap = this.getMergerFixedMap(mergerRegionFixed, mapping, sheet, insertRow);
 
-        MergerInfo mergerInfo = new MergerInfo();
+
+        if(mergerFixedMap.size()>0) {
+            InsertFixedMerger insertFixed = new InsertFixedMerger();
+            insertFixed.run(list, mapping,currentNum, mergerMap, mergerFixedMap, sheet, mergerFollowList);
+        }else{
+            for (int i = 0;i < currentNum; i++) {
+                Map dataMap = (Map) list.get(i);
+                //加入记录
+                ExcelMakeUtils.mappingCellValue(i, mapping, dataMap, sheet);
+                ExcelMakeUtils.mergerRegion(i, currentNum - 1, dataMap, mergerMap, sheet, mergerFollowList);
+            }
+        }
+
+        /*for (int i = 0, iData = 0; i < currentNum; i++, iData++) {
+            Map dataMap = (Map) list.get(iData);
+            //加入记录
+            ExcelMakeUtils.mappingCellValue(i, mapping, dataMap, sheet);
+
+            if (mergerFixedMap.size() > 0) {
+                int addNum=insertFixed.run(i,currentNum, dataMap, mergerMap, mergerFixedMap, sheet);
+            }
+        }*/
+
+
+       /* MergerInfo mergerInfo = new MergerInfo();
         for (int i = 0, iData = 0; i < currentNum; i++, iData++) {
             Map dataMap = (Map) list.get(iData);
             ExcelMakeUtils.mappingCellValue(i, mapping, dataMap, sheet);
@@ -129,7 +158,7 @@ public class BaseExcelReport {
                 Excel.removeRow(sheet,entry.getValue());
             }
             remove++;
-        }
+        }*/
         sheet.setForceFormulaRecalculation(true);
 
     }

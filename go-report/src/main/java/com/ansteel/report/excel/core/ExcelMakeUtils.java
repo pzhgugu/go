@@ -291,22 +291,7 @@ public class ExcelMakeUtils {
         }
     }
 
-    /**
-     * 合并单元格
-     *
-     * @param dataMap
-     * @param mergerMap
-     * @param sheet
-     */
-    public static MergerInfo mergerRegion(int currnRowNum, int lastRowNum, Map dataMap,
-                                          Map<String, MergerRegion> mergerMap, Map<String, Integer> mergerFixedMap, Sheet sheet, MergerInfo mergerInfo,List<int[]> mergerFollowList) {
-        if(mergerFixedMap!=null&&mergerFixedMap.size()>0){
-            return mergerFixedRegion(currnRowNum,lastRowNum,dataMap,mergerMap,mergerFixedMap,sheet,mergerInfo,mergerFollowList);
-        }else{
-            mergerRegion(currnRowNum, lastRowNum, dataMap,mergerMap,sheet,mergerFollowList);
-            return null;
-        }
-    }
+
 
     /**
      * 合并单元格
@@ -364,15 +349,113 @@ public class ExcelMakeUtils {
             }
         }
     }
-        /**
-         * 合并单元格
-         *
-         * @param dataMap
-         * @param mergerMap
-         * @param sheet
-         */
+
+
+    private static MergerRegion[] getMergerRegionArray(MergerRegion mergerRegion) {
+        MergerRegion[] mergerRegionArray = new MergerRegion[2];
+        MergerRegion dest = new MergerRegion();
+        try {
+            BeanUtils.applyIf(dest, mergerRegion);
+        } catch (Exception e) {
+            throw new PageException(e.getMessage());
+        }
+        mergerRegionArray[0] = dest;
+        mergerRegionArray[1] = mergerRegion;
+        return mergerRegionArray;
+    }
+
+    public static  void addMergedRegion(int firstRow, int lastRow, int firstCol, int lastCol,Sheet sheet,List<int[]> mergerFollowList){
+        if(firstRow>lastRow){
+            return ;
+        }
+        sheet.addMergedRegion(new CellRangeAddress(
+                firstRow, //first row (0-based)
+                lastRow, //last row  (0-based)
+                firstCol, //first column (0-based)
+                lastCol  //last column  (0-based)
+        ));
+
+        for(int[] iArray:mergerFollowList){
+            if(firstCol==lastCol&&iArray[0]==firstCol){
+                sheet.addMergedRegion(new CellRangeAddress(
+                        firstRow, //first row (0-based)
+                        lastRow, //last row  (0-based)
+                        iArray[1], //first column (0-based)
+                        iArray[1]  //last column  (0-based)
+                ));
+            }
+        }
+    }
+    /**
+     * 插入行
+     * @param mergerMap
+     * @param mergerInfo
+     * @return
+     *//*
+    private static MergerInfo insert(InsertInfo insertInfo,Sheet sheet,Map<String, MergerRegion> mergerMap, MergerInfo mergerInfo,List<int[]> mergerFollowList){
+
+        Map<String, Integer> insertAlterMap = insertInfo.getInsertAlterMap();
+        List<MergerRegion[]> mergerList = insertInfo.getMergerList();
+        int curreniRow = insertInfo.getCurreniRow();
+        int addRow = insertInfo.getAddRow();
+        //开始行加插入行
+        MergerRegion prev =null;
+        int num=0;
+        for(Entry<String,Integer> entry:insertAlterMap.entrySet()){
+            Integer mergerFirstRow =curreniRow-1,mergerLastRow=curreniRow-1;
+            if(mergerList.size()>0){
+                for (int i = 0; i < mergerList.size(); i++) {
+                    MergerRegion mergerRegion = mergerList.get(i)[0];
+                    if (entry.getKey().equals(mergerRegion.getKey())) {
+                        mergerFirstRow = mergerRegion.getFirstRow();
+                        mergerLastRow = mergerRegion.getLastRow();
+                        break;
+                    }
+                }
+            }
+
+            Assert.notNull(mergerFirstRow,"合并行异常！");
+            Excel.copyInsertRow(sheet, entry.getValue()+num, curreniRow+num, mergerFirstRow,mergerLastRow+num);
+            addRow++;
+            MergerRegion mr = mergerMap.get(entry.getKey());
+            if(prev!=null){
+                prev.setFirstRow(prev.getFirstRow()+1);
+            }
+            prev=mr;
+            mr.setFirstRow(mr.getFirstRow() + 1);
+            num++;
+        }
+        //合并
+        for (int i = 0; i < mergerList.size(); i++) {
+            MergerRegion mergerRegion = mergerList.get(i)[0];
+            MergerRegion mergerRegionY = mergerList.get(i)[1];
+            if (mergerRegion.getMapping().equals(mergerInfo.getOneInsertRowName())) {
+                addMergedRegion(mergerRegion.getFirstRow(),mergerRegion.getLastRow(),mergerRegion.getColumn(),mergerRegion.getColumn(),sheet,mergerFollowList);
+            } else {
+                int lastRow=mergerRegion.getLastRow();
+                if(mergerRegionY.getFirstRow()!=mergerRegion.getFirstRow()){
+                    lastRow=mergerRegionY.getFirstRow();
+                }
+                addMergedRegion(mergerRegion.getFirstRow(), //first row (0-based)
+                        lastRow, //last row  (0-based)
+                        mergerRegion.getColumn(), //first column (0-based)
+                        mergerRegion.getColumn(), sheet,mergerFollowList);
+                mergerRegionY.setFirstRow(mergerRegionY.getFirstRow() + 1);
+            }
+        }
+        mergerInfo.setAddRowNumber(addRow);
+        return mergerInfo;
+    }*/
+
+   /* *//**
+     * 合并单元格
+     *
+     * @param dataMap
+     * @param mergerMap
+     * @param sheet
+     *//*
     public static MergerInfo mergerFixedRegion(int currnRowNum, int lastRowNum, Map dataMap,
-                                          Map<String, MergerRegion> mergerMap, Map<String, Integer> mergerFixedMap, Sheet sheet, MergerInfo mergerInfo,List<int[]> mergerFollowList) {
+                                               Map<String, MergerRegion> mergerMap, Map<String, Integer> mergerFixedMap, Sheet sheet, MergerInfo mergerInfo,List<int[]> mergerFollowList) {
 
 
         InsertInfo insertInfo=getInsertInfo(mergerMap, currnRowNum, dataMap, lastRowNum, mergerFixedMap, mergerInfo, sheet, mergerFollowList);
@@ -466,101 +549,22 @@ public class ExcelMakeUtils {
         insertInfo.setInsertAlterMap(insertAlterMap);
         insertInfo.setMergerList(mergerList);
         return insertInfo;
-    }
+    }*/
 
-    private static MergerRegion[] getMergerRegionArray(MergerRegion mergerRegion) {
-        MergerRegion[] mergerRegionArray = new MergerRegion[2];
-        MergerRegion dest = new MergerRegion();
-        try {
-            BeanUtils.applyIf(dest, mergerRegion);
-        } catch (Exception e) {
-            throw new PageException(e.getMessage());
-        }
-        mergerRegionArray[0] = dest;
-        mergerRegionArray[1] = mergerRegion;
-        return mergerRegionArray;
-    }
-
-    private static  void addMergedRegion(int firstRow, int lastRow, int firstCol, int lastCol,Sheet sheet,List<int[]> mergerFollowList){
-        if(firstRow>lastRow){
-            return ;
-        }
-        sheet.addMergedRegion(new CellRangeAddress(
-                firstRow, //first row (0-based)
-                lastRow, //last row  (0-based)
-                firstCol, //first column (0-based)
-                lastCol  //last column  (0-based)
-        ));
-
-        for(int[] iArray:mergerFollowList){
-            if(firstCol==lastCol&&iArray[0]==firstCol){
-                sheet.addMergedRegion(new CellRangeAddress(
-                        firstRow, //first row (0-based)
-                        lastRow, //last row  (0-based)
-                        iArray[1], //first column (0-based)
-                        iArray[1]  //last column  (0-based)
-                ));
-            }
-        }
-    }
-    /**
-     * 插入行
+/*    *//**
+     * 合并单元格
+     *
+     * @param dataMap
      * @param mergerMap
-     * @param mergerInfo
-     * @return
-     */
-    private static MergerInfo insert(InsertInfo insertInfo,Sheet sheet,Map<String, MergerRegion> mergerMap, MergerInfo mergerInfo,List<int[]> mergerFollowList){
-
-        Map<String, Integer> insertAlterMap = insertInfo.getInsertAlterMap();
-        List<MergerRegion[]> mergerList = insertInfo.getMergerList();
-        int curreniRow = insertInfo.getCurreniRow();
-        int addRow = insertInfo.getAddRow();
-        //开始行加插入行
-        MergerRegion prev =null;
-        int num=0;
-        for(Entry<String,Integer> entry:insertAlterMap.entrySet()){
-            Integer mergerFirstRow =curreniRow-1,mergerLastRow=curreniRow-1;
-            if(mergerList.size()>0){
-                for (int i = 0; i < mergerList.size(); i++) {
-                    MergerRegion mergerRegion = mergerList.get(i)[0];
-                    if (entry.getKey().equals(mergerRegion.getKey())) {
-                        mergerFirstRow = mergerRegion.getFirstRow();
-                        mergerLastRow = mergerRegion.getLastRow();
-                        break;
-                    }
-                }
-            }
-
-            Assert.notNull(mergerFirstRow,"合并行异常！");
-            Excel.copyInsertRow(sheet, entry.getValue()+num, curreniRow+num, mergerFirstRow,mergerLastRow+num);
-            addRow++;
-            MergerRegion mr = mergerMap.get(entry.getKey());
-            if(prev!=null){
-                prev.setFirstRow(prev.getFirstRow()+1);
-            }
-            prev=mr;
-            mr.setFirstRow(mr.getFirstRow() + 1);
-            num++;
+     * @param sheet
+     *//*
+    public static MergerInfo mergerRegion(int currnRowNum, int lastRowNum, Map dataMap,
+                                          Map<String, MergerRegion> mergerMap, Map<String, Integer> mergerFixedMap, Sheet sheet, MergerInfo mergerInfo,List<int[]> mergerFollowList) {
+        if(mergerFixedMap!=null&&mergerFixedMap.size()>0){
+            return mergerFixedRegion(currnRowNum,lastRowNum,dataMap,mergerMap,mergerFixedMap,sheet,mergerInfo,mergerFollowList);
+        }else{
+            mergerRegion(currnRowNum, lastRowNum, dataMap,mergerMap,sheet,mergerFollowList);
+            return null;
         }
-        //合并
-        for (int i = 0; i < mergerList.size(); i++) {
-            MergerRegion mergerRegion = mergerList.get(i)[0];
-            MergerRegion mergerRegionY = mergerList.get(i)[1];
-            if (mergerRegion.getMapping().equals(mergerInfo.getOneInsertRowName())) {
-                addMergedRegion(mergerRegion.getFirstRow(),mergerRegion.getLastRow(),mergerRegion.getColumn(),mergerRegion.getColumn(),sheet,mergerFollowList);
-            } else {
-                int lastRow=mergerRegion.getLastRow();
-                if(mergerRegionY.getFirstRow()!=mergerRegion.getFirstRow()){
-                    lastRow=mergerRegionY.getFirstRow();
-                }
-                addMergedRegion(mergerRegion.getFirstRow(), //first row (0-based)
-                        lastRow, //last row  (0-based)
-                        mergerRegion.getColumn(), //first column (0-based)
-                        mergerRegion.getColumn(), sheet,mergerFollowList);
-                mergerRegionY.setFirstRow(mergerRegionY.getFirstRow() + 1);
-            }
-        }
-        mergerInfo.setAddRowNumber(addRow);
-        return mergerInfo;
-    }
+    }*/
 }

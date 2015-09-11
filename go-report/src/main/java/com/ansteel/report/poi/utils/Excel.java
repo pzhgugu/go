@@ -344,23 +344,31 @@ public class Excel {
 
         //替换源公式，就是替换第一行公式
         if(isFormula) {
-            for (int m = 0; m <= sourceRow.getPhysicalNumberOfCells(); m++) {
-                Cell sourceCell = sourceRow.getCell(m);
-                if(sourceCell==null) {
-                    continue;
-                }
-                if(sourceCell.getCellType()!=Cell.CELL_TYPE_STRING) {
-                    continue;
-                }
-                String sourceCellValue = sourceCell.getStringCellValue();
-                if (sourceCellValue.indexOf("${ROW}") > -1) {
-                    sourceCell.setCellType(Cell.CELL_TYPE_FORMULA);
-                    String formula = sourceCellValue.replaceAll("\\$\\{ROW\\}", String.valueOf(sourceCell.getRowIndex() + 1));
-                    formula = formula.replace("=", "");
-                    sourceCell.setCellFormula(formula);
-                }
-            }
+			replaceFormula(sourceRow);
         }
+	}
+
+	/**
+	 * 替换合计公式
+	 * @param sourceRow
+	 */
+	public static void replaceFormula(Row sourceRow){
+		for (int m = 0; m <= sourceRow.getPhysicalNumberOfCells(); m++) {
+			Cell sourceCell = sourceRow.getCell(m);
+			if(sourceCell==null) {
+				continue;
+			}
+			if(sourceCell.getCellType()!=Cell.CELL_TYPE_STRING) {
+				continue;
+			}
+			String sourceCellValue = sourceCell.getStringCellValue();
+			if (sourceCellValue.indexOf("${ROW}") > -1) {
+				//sourceCell.setCellType(Cell.CELL_TYPE_FORMULA);
+				String formula = sourceCellValue.replaceAll("\\$\\{ROW\\}", String.valueOf(sourceCell.getRowIndex() + 1));
+				formula = formula.replace("=", "");
+				sourceCell.setCellFormula(formula);
+			}
+		}
 	}
 
     /**
@@ -368,7 +376,7 @@ public class Excel {
      * @param sourceRow
      * @return
      */
-    private static boolean checkIsFormula(Row sourceRow) {
+    public static boolean checkIsFormula(Row sourceRow) {
         for (int m = 0; m <= sourceRow.getPhysicalNumberOfCells(); m++) {
             Cell sourceCell = sourceRow.getCell(m);
             if(sourceCell==null) {
@@ -431,7 +439,7 @@ public class Excel {
 		//创建一行
 		sheet.shiftRows(toRow, sheet.getLastRowNum(), 1, true, false);
 		Row targetRow=sheet.createRow(toRow);
-		Row sourceRow=sheet.getRow(fromRow + 1);
+		Row sourceRow=sheet.getRow(fromRow);
 
 		//复制高度
 		short height=sourceRow.getHeight();
