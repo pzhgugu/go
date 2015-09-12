@@ -81,17 +81,5 @@ public interface ViewElementService {
 	ViewElement getDynamicViewElement(HttpServletRequest request,
 			HttpServletResponse response, String modelType,
 			String fieldsCategory, String tplName, String viewName);
-	/**
-	 * 获取模板视图元素,SQL模型方式
-	 * @param request
-	 * @param response
-	 * @param modelType
-	 * @param fieldsCategory
-	 * @param tplName
-	 * @param viewName
-	 * @return
-	 */
-	ViewElement getSQLViewElement(HttpServletRequest request,
-			HttpServletResponse response, String modelType,
-			String fieldsCategory, String tplName, String viewName);
+
 }

@@ -18,12 +18,6 @@ import com.ansteel.common.model.domain.EntityFieldsForm;
 import com.ansteel.common.model.domain.EntityFieldsGrid;
 import com.ansteel.common.model.domain.EntityFieldsQuery;
 import com.ansteel.common.model.domain.Models;
-import com.ansteel.common.sqlmodel.domain.SqlFields;
-import com.ansteel.common.sqlmodel.domain.SqlFieldsCategory;
-import com.ansteel.common.sqlmodel.domain.SqlFieldsForm;
-import com.ansteel.common.sqlmodel.domain.SqlFieldsGrid;
-import com.ansteel.common.sqlmodel.domain.SqlFieldsQuery;
-import com.ansteel.common.sqlmodel.domain.SqlModels;
 import com.ansteel.core.constant.Public;
 import com.ansteel.core.constant.TplViewConstant;
 import com.ansteel.core.exception.PageException;
@@ -32,7 +26,6 @@ import com.ansteel.common.prentmodel.domain.Fields;
 import com.ansteel.common.prentmodel.domain.FieldsForm;
 import com.ansteel.common.prentmodel.domain.FieldsGrid;
 import com.ansteel.common.prentmodel.domain.FieldsQuery;
-import com.ansteel.common.sqlmodel.service.SqlModelsService;
 import com.ansteel.common.viewelement.service.ViewElement;
 
 /**
@@ -221,7 +214,7 @@ public class ViewElementUtils {
 				+ ":模型字段分类不存在！");
 	}
 
-	public static void setViewElement(ViewElement viewElement, SqlModels model,
+	/*public static void setViewElement(ViewElement viewElement, SqlModels model,
 			String categoryName) {
 		viewElement.setModel(model);
 		SqlFieldsCategory dfc = getFieldsCategory(model, categoryName);
@@ -290,5 +283,5 @@ public class ViewElementUtils {
 		}
 		throw new PageException(model.getAlias() + "-" + categoryName
 				+ ":模型字段分类不存在！");
-	}
+	}*/
 }

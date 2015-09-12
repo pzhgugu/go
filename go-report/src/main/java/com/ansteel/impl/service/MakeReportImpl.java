@@ -43,20 +43,20 @@ public class MakeReportImpl implements MakeReport {
 	 * 报表展示
 	 */
 	@Override
-	public void show(List listMap, Map<String, String> hashMap,
+	public String show(List listMap, Map<String, String> hashMap,
 			String rType, String inline, HttpServletRequest request,
 			HttpServletResponse response) {
-		makeReportService.show(listMap, hashMap, rType, inline, request, response);
+		return makeReportService.show(listMap, hashMap, rType, inline, request, response);
 	}
 
 	/**
 	 * 报表展示
 	 */
 	@Override
-	public void show(String modelName, List listMap, String type,
+	public String show(String modelName, List listMap, String type,
 			Object inline, HttpServletRequest request,
 			HttpServletResponse response) {
-		makeReportService.show(modelName,listMap, type, null, request, response);
+		return makeReportService.show(modelName,listMap, type, null, request, response);
 	}
 
 	/**

@@ -1,4 +1,14 @@
-package com.ansteel.common.backup.fun;
+package com.ansteel.report.backup.fun;
+
+import com.ansteel.common.backup.core.AbstractExecuteXml;
+import com.ansteel.common.backup.core.IExecuteXml;
+import com.ansteel.core.utils.BeanUtils;
+import com.ansteel.core.utils.StringUtils;
+import com.ansteel.report.sqlmodel.domain.SqlFieldsCategory;
+import com.ansteel.report.sqlmodel.domain.SqlModels;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Collection;
@@ -6,31 +16,20 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
-
-import com.ansteel.common.backup.core.AbstractExecuteXml;
-import com.ansteel.common.backup.core.IExecuteXml;
-import com.ansteel.common.sqlmodel.domain.SqlFields;
-import com.ansteel.common.sqlmodel.domain.SqlModels;
-import com.ansteel.core.utils.BeanUtils;
-import com.ansteel.core.utils.StringUtils;
-
 /**
  * 创 建 人：gugu
  * 创建日期：2015-05-22
  * 修 改 人：
  * 修改日 期：
- * 描   述：sql模型字段备份实现。  
+ * 描   述：sql模型分类备份实现。  
  */
 @Service
 @Transactional(propagation=Propagation.REQUIRES_NEW)
-public class SqlFieldsExecute  extends AbstractExecuteXml implements IExecuteXml{
+public class SqlFieldsCategoryExecute extends AbstractExecuteXml implements IExecuteXml{
 
 	@Override
 	public Class getClazz() {
-		return SqlFields.class;
+		return SqlFieldsCategory.class;
 	}
 
 
@@ -56,10 +55,10 @@ public class SqlFieldsExecute  extends AbstractExecuteXml implements IExecuteXml
 		//父节点
 		
 
-		List<SqlFields> xmlEntityList = (List<SqlFields>) o;
-		Collection<SqlFields> dataBaseList = baseService.findAll(SqlFields.class);
-		for (SqlFields entity : xmlEntityList) {
-			SqlFields xmlEntity =new SqlFields();
+		List<SqlFieldsCategory> xmlEntityList = (List<SqlFieldsCategory>) o;
+		Collection<SqlFieldsCategory> dataBaseList = baseService.findAll(SqlFieldsCategory.class);
+		for (SqlFieldsCategory entity : xmlEntityList) {
+			SqlFieldsCategory xmlEntity =new SqlFieldsCategory();
 			try {
 				BeanUtils.copyProperties(xmlEntity, entity);
 			} catch (IllegalAccessException e) {
@@ -86,7 +85,7 @@ public class SqlFieldsExecute  extends AbstractExecuteXml implements IExecuteXml
 		
 			//确认xml中是否有数据库中的实体
 			boolean isSave = true;
-			for (SqlFields dataBaseEntity : dataBaseList) {
+			for (SqlFieldsCategory dataBaseEntity : dataBaseList) {
 				//数据库节点名称
 				String dataBaseName = dataBaseEntity.getName();
 				if(dataBaseName.equals(xmlName)){
@@ -96,7 +95,8 @@ public class SqlFieldsExecute  extends AbstractExecuteXml implements IExecuteXml
 					if(dataBaseParentName.equals(parentXmlName)){
 					
 						if (dataBaseEntity.getVersionPublish() != xmlEntity.getVersion()) {
-							baseService.save(getUpdateEntity(dataBaseEntity, xmlEntity));
+							SqlFieldsCategory parent = getUpdateEntity(dataBaseEntity, xmlEntity);
+							baseService.save(parent);
 						}
 						isSave=false;
 						break;
@@ -114,9 +114,7 @@ public class SqlFieldsExecute  extends AbstractExecuteXml implements IExecuteXml
 		
 	}
 	
-	
-	
-	private SqlFields getUpdateEntity(SqlFields databaseEntity, SqlFields entity) {
+	private SqlFieldsCategory getUpdateEntity(SqlFieldsCategory databaseEntity, SqlFieldsCategory entity) {
 		String oldId = databaseEntity.getId();
 		Long version = databaseEntity.getVersion();
 		try {

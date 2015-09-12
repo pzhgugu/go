@@ -95,7 +95,7 @@ public class GlobalBaseController extends TreeController {
 		if(StringUtils.hasText(posStart)){
 			pageable=new PageRequest(PageUtils.getTotalPages(posStart),PageUtils.getMaxResults());
 		}
-		Page page = baseService.find(clazz,key,value,order,pageable);		
+		Page page = baseService.find(clazz, key, value, order, pageable);
 		return new UDataSet(request,DHtmlxConstants.UI_ROWS,page);
 	}
 		
@@ -184,26 +184,25 @@ public class GlobalBaseController extends TreeController {
 		}
 	}
 	
-	public  void to(String reportName,Class clazz,String order,
+	public  String to(String reportName,Class clazz,String order,
 			@QueryJson List<QueryMapping> queryList,
 			String type,
 			HttpServletRequest request,
 			HttpServletResponse response){		
 		List listMap =baseService.findMap(clazz,null,null,order,queryList);
-		
+		String path="";
 		if(StringUtils.hasText(reportName)){
-			makeReport.show(reportName,listMap, type, null, request, response);
+			path=makeReport.show(reportName,listMap, type, null, request, response);
 		}else{
 			Map<String,String> nameMap = new HashMap<String,String>();
 			Models model=modelService.findOneByClazz(clazz.getName());
 			for(EntityFields field:model.getFields()){
 				nameMap.put(field.getName(), field.getAlias());
 			}
-			makeReport.show(listMap, nameMap, type,
+			path=makeReport.show(listMap, nameMap, type,
 					null, request,response);
 		}
-		
-		
+		return path;
 	}
 
 	/**

@@ -1,50 +1,48 @@
-package com.ansteel.common.backup.fun;
+package com.ansteel.report.backup.fun;
+
+import com.ansteel.common.backup.core.AbstractExecuteXml;
+import com.ansteel.common.backup.core.IExecuteXml;
+import com.ansteel.core.exception.PageException;
+import com.ansteel.core.utils.BeanUtils;
+import com.ansteel.report.sqlmodel.domain.SqlFieldsCategory;
+import com.ansteel.report.sqlmodel.domain.SqlFieldsGrid;
+import com.ansteel.report.sqlmodel.domain.SqlModels;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
-
-import com.ansteel.common.backup.core.AbstractExecuteXml;
-import com.ansteel.common.backup.core.IExecuteXml;
-import com.ansteel.common.sqlmodel.domain.SqlFieldsCategory;
-import com.ansteel.common.sqlmodel.domain.SqlFieldsQuery;
-import com.ansteel.common.sqlmodel.domain.SqlModels;
-import com.ansteel.core.exception.PageException;
-import com.ansteel.core.utils.BeanUtils;
 /**
  * 创 建 人：gugu
  * 创建日期：2015-05-22
  * 修 改 人：
  * 修改日 期：
- * 描   述：sql模型字段查询备份实现。  
+ * 描   述：sql模型字段表格备份实现。  
  */
 @Service
 @Transactional(propagation=Propagation.REQUIRES_NEW)
-public class SqlFieldsQueryExecute  extends AbstractExecuteXml implements IExecuteXml{
+public class SqlFieldsGridExecute  extends AbstractExecuteXml implements IExecuteXml{
 
 	@Override
 	public Class getClazz() {
-		return SqlFieldsQuery.class;
+		return SqlFieldsGrid.class;
 	}
 
 	@Override
 	public void importSave(Map<Class, Object> xmlMap, Object o, int type) {
 		
-		List<SqlFieldsQuery> xmlEntityList = (List<SqlFieldsQuery>) o;
+		List<SqlFieldsGrid> xmlEntityList = (List<SqlFieldsGrid>) o;
 		
 		Map<String, SqlFieldsCategory> parentDataBase=this.getParentDataBase(xmlMap);
 		
 		this.save(parentDataBase,xmlEntityList);
 	}
-	
 	
 
 
@@ -102,10 +100,10 @@ public class SqlFieldsQueryExecute  extends AbstractExecuteXml implements IExecu
 		return parentDataBase;
 	}
 
-	private void save(Map<String, SqlFieldsCategory> parentDataBase, List<SqlFieldsQuery> xmlEntityList) {
+	private void save(Map<String, SqlFieldsCategory> parentDataBase, List<SqlFieldsGrid> xmlEntityList) {
 
-		for (SqlFieldsQuery entity : xmlEntityList) {
-			SqlFieldsQuery xmlEntity =new SqlFieldsQuery();
+		for (SqlFieldsGrid entity : xmlEntityList) {
+			SqlFieldsGrid xmlEntity =new SqlFieldsGrid();
 			try {
 				BeanUtils.copyProperties(xmlEntity, entity);
 			} catch (IllegalAccessException e) {
@@ -122,10 +120,10 @@ public class SqlFieldsQueryExecute  extends AbstractExecuteXml implements IExecu
 				//确认xml中是否有数据库中的实体
 				boolean isSave = true;
 
-				Collection<SqlFieldsQuery> dataBaseEntityList = parentDataBaseEntity.getFieldsQuery();
+				Collection<SqlFieldsGrid> dataBaseEntityList = parentDataBaseEntity.getFieldsGrid();
 				String xmlName = xmlEntity.getName();
 				
-				for (SqlFieldsQuery dataBaseEntity : dataBaseEntityList) {						
+				for (SqlFieldsGrid dataBaseEntity : dataBaseEntityList) {						
 					String dataBaseName = dataBaseEntity.getName();
 					if(xmlName.equals(dataBaseName)){
 						if (dataBaseEntity.getVersionPublish() != xmlEntity.getVersion()) {
@@ -146,8 +144,7 @@ public class SqlFieldsQueryExecute  extends AbstractExecuteXml implements IExecu
 		}	
 	}
 	
-	
-	private SqlFieldsQuery getUpdateEntity(SqlFieldsQuery databaseEntity, SqlFieldsQuery entity) {
+	private SqlFieldsGrid getUpdateEntity(SqlFieldsGrid databaseEntity, SqlFieldsGrid entity) {
 		String oldId = databaseEntity.getId();
 		Long version = databaseEntity.getVersion();
 		try {
@@ -163,5 +160,4 @@ public class SqlFieldsQueryExecute  extends AbstractExecuteXml implements IExecu
 		return databaseEntity;
 	}
 	
-
 }

@@ -92,12 +92,6 @@
                 <value>com.ansteel.common.backup.fun.EntityFieldsFormExecute</value>
                 <value>com.ansteel.common.backup.fun.EntityFieldsGridExecute</value>
                 <value>com.ansteel.common.backup.fun.EntityFieldsQueryExecute</value>
-                <value>com.ansteel.common.backup.fun.SqlModelsExecute</value>
-                <value>com.ansteel.common.backup.fun.SqlFieldsExecute</value>
-                <value>com.ansteel.common.backup.fun.SqlFieldsCategoryExecute</value>
-                <value>com.ansteel.common.backup.fun.SqlFieldsFormExecute</value>
-                <value>com.ansteel.common.backup.fun.SqlFieldsGridExecute</value>
-                <value>com.ansteel.common.backup.fun.SqlFieldsQueryExecute</value>                
                 <value>com.ansteel.common.backup.fun.DynamicModelsExecute</value>
                 <value>com.ansteel.common.backup.fun.DynamicFieldsExecute</value>
                 <value>com.ansteel.common.backup.fun.DynamicFieldsCategoryExecute</value>
@@ -117,8 +111,14 @@
                 <value>com.ansteel.report.backup.fun.ExcelReportSQLExecute</value> 
                 <value>com.ansteel.report.backup.fun.ExcelReportTestExecute</value> 
                 <value>com.ansteel.report.backup.fun.ExcelInExecute</value>                
-                <value>com.ansteel.report.backup.fun.ChartExecute</value> 
-			</list>
+                <value>com.ansteel.report.backup.fun.ChartExecute</value>
+                <value>com.ansteel.report.backup.fun.SqlModelsExecute</value>
+                <value>com.ansteel.report.backup.fun.SqlFieldsExecute</value>
+                <value>com.ansteel.report.backup.fun.SqlFieldsCategoryExecute</value>
+                <value>com.ansteel.report.backup.fun.SqlFieldsFormExecute</value>
+                <value>com.ansteel.report.backup.fun.SqlFieldsGridExecute</value>
+                <value>com.ansteel.report.backup.fun.SqlFieldsQueryExecute</value>
+            </list>
 		</property>
 	</bean>
 

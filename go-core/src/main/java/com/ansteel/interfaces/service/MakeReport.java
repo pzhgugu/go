@@ -17,11 +17,11 @@ import org.springframework.web.multipart.MultipartFile;
  */
 public interface MakeReport {
 
-	void show(List listMap, Map<String, String> hashMap,  String rType, 
+	String show(List listMap, Map<String, String> hashMap,  String rType,
 			String inline, HttpServletRequest request,
 			HttpServletResponse response);
 
-	void show(String modelName, List listMap, String type, Object inline,
+	String show(String modelName, List listMap, String type, Object inline,
 			HttpServletRequest request, HttpServletResponse response);
 
 	List inExcel(String modelName, String inName, MultipartFile file);

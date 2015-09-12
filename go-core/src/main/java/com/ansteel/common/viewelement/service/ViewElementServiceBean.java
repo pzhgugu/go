@@ -20,7 +20,6 @@ import com.ansteel.common.model.domain.EntityFieldsForm;
 import com.ansteel.common.model.domain.EntityFieldsGrid;
 import com.ansteel.common.model.domain.EntityFieldsQuery;
 import com.ansteel.common.model.domain.Models;
-import com.ansteel.common.sqlmodel.domain.SqlModels;
 import com.ansteel.common.tpl.domain.Tpl;
 import com.ansteel.common.view.domain.View;
 import com.ansteel.common.viewelement.core.ViewElementUtils;
@@ -42,7 +41,6 @@ import com.ansteel.common.prentmodel.domain.FieldsCategory;
 import com.ansteel.common.prentmodel.domain.FieldsForm;
 import com.ansteel.common.prentmodel.domain.FieldsGrid;
 import com.ansteel.common.prentmodel.domain.FieldsQuery;
-import com.ansteel.common.sqlmodel.service.SqlModelsService;
 import com.ansteel.common.tpl.service.TplService;
 import com.ansteel.common.view.service.ViewService;
 
@@ -71,9 +69,6 @@ public class ViewElementServiceBean implements ViewElementService {
 
 	@Autowired
 	DynamicModelsService dynamicModelsService;
-	
-	@Autowired
-	SqlModelsService sqlModelsService;
 
 	@Override
 	public ViewElement getViewElement(HttpServletRequest request,
@@ -192,32 +187,6 @@ public class ViewElementServiceBean implements ViewElementService {
 		DynamicModels dynamicModels = dynamicModelsService
 				.getDynamicModels(modelType);
 		ViewElementUtils.setViewElement(viewElement, dynamicModels,
-				categoryName);
-
-		// 3、得到tpl信息
-		Tpl template = tplService.getCacheTemplate(tplName);
-		Assert.notNull(template, "没有找到[" + tplName + "]模板");
-		viewElement.setTpl(template);
-
-		// 4、得到视图信息
-		viewElement.setView(viewService.getCacheView(viewName,
-				request.getServletPath()));
-		return viewElement;
-	}
-
-	@Override
-	public ViewElement getSQLViewElement(HttpServletRequest request,
-			HttpServletResponse response, String modelType,
-			String categoryName, String tplName, String viewName) {
-		ViewElement viewElement = new ViewElement();
-		viewElement.setRequest(request);
-		viewElement.setResponse(response);
-		viewElement.setCurrentName(modelType);
-		viewElement.setCurrentSimpleName(modelType);
-
-		SqlModels sqlModels = sqlModelsService
-				.getSqlModels(modelType);
-		ViewElementUtils.setViewElement(viewElement, sqlModels,
 				categoryName);
 
 		// 3、得到tpl信息
