@@ -7,7 +7,11 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
+import com.ansteel.interfaces.service.MakeReport;
+import com.ansteel.report.excel.service.ExcelService;
+import com.ansteel.report.makereport.service.MakeReportService;
 import com.ansteel.report.sqlmodel.domain.*;
 import com.ansteel.report.sqlmodel.repository.SqlModelsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +23,7 @@ import com.ansteel.core.constant.DHtmlxConstants;
 import com.ansteel.core.constant.Public;
 import com.ansteel.core.exception.PageException;
 import com.ansteel.common.sql.service.SqlService;
+import org.springframework.util.StringUtils;
 
 /**
  * 创 建 人：gugu
@@ -37,6 +42,13 @@ public class SqlModelsServiceBean implements SqlModelsService {
 
     @Autowired
     SqlModelsRepository sqlModelsRepository;
+
+    @Autowired
+    ExcelService excelService;
+
+
+    @Autowired
+    MakeReportService makeReportService;
 
 
     private static final String DEFAULT_FORM = DHtmlxConstants.INPUT;
@@ -70,19 +82,58 @@ public class SqlModelsServiceBean implements SqlModelsService {
         return sqlModels;
     }
 
-    private String getSql(SqlModels sqlModels) {
+    @Override
+    @Transactional(readOnly = false)
+    public String getSql(SqlModels sqlModels) {
 
         String sqlContent = sqlModels.getSqlContent();
         //增加报表sql读取
-        if (sqlModels.getSqlMode() == 1) {
+        if (sqlModels.getSqlMode() != null && sqlModels.getSqlMode() == 1) {
             sqlContent = getReportSql(sqlContent);
         }
         return sqlContent;
     }
 
+    @Override
+    public String findByNameToSql(String modelName) {
+        SqlModels sqlModels = this.getSqlModels(modelName);
+        Assert.notNull(sqlModels, modelName + ",SQL模型中没有找到，请检查！");
+        String sqlContent = this.getSql(sqlModels);
+        return sqlContent;
+    }
+
+    @Override
+    public String showReport(String reportName, SqlModels sqlModels, Map<String, Object> operMap, String type, HttpServletRequest request, HttpServletResponse response) {
+        String path = "";
+        if (sqlModels.getSqlMode() != null && sqlModels.getSqlMode() == 1) {
+            String reportContent = sqlModels.getSqlContent();
+            Assert.notNull(reportContent, "报表sql配置不能为空！");
+            String[] reportParameterArray = reportContent.split(Public.SPLIT_POINT);
+            Assert.isTrue(reportParameterArray.length == 2, reportContent + "，报表模式SQL的格式为：报表编码.SQL编码");
+
+            path = makeReportService.show(reportParameterArray[0], type, null, null, operMap, request, response);
+        } else {
+            String sqlContent = sqlModels.getSqlContent();
+            List listMap = sqlService.querySql(sqlContent, request, operMap);
+
+            if (StringUtils.hasText(reportName)) {
+                path = makeReportService.show(reportName, listMap, type, null, request, response);
+            } else {
+                Map<String, String> nameMap = new HashMap<String, String>();
+                for (SqlFields field : sqlModels.getFields()) {
+                    nameMap.put(field.getName(), field.getAlias());
+                }
+                path = makeReportService.show(listMap, nameMap, type,
+                        null, request, response);
+            }
+        }
+        return path;
+    }
+
     private String getReportSql(String reportParameter) {
         String[] reportParameterArray = reportParameter.split(Public.SPLIT_POINT);
-        return null;
+        Assert.isTrue(reportParameterArray.length == 2, reportParameter + "，报表模式SQL的格式为：报表编码.SQL编码");
+        return excelService.findByReportAndSql(reportParameterArray[0], reportParameterArray[1]);
     }
 
     private SqlModels getSqlModelsById(String id) {

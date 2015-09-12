@@ -174,8 +174,10 @@ public class BeetlServiceBean implements BeetlService {
 			for (Entry<String,Object> entry:rMap.entrySet()) {
 				template.binding(entry.getKey(), entry.getValue());
 			}
-			for (Entry<String,Object> entry:sMap.entrySet()) {
-				template.binding(entry.getKey(), entry.getValue());
+			if (sMap != null) {
+				for (Entry<String, Object> entry : sMap.entrySet()) {
+					template.binding(entry.getKey(), entry.getValue());
+				}
 			}
 			return this.getOutPut(template);
 		}

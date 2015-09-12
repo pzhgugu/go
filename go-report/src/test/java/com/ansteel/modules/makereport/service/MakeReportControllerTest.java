@@ -55,8 +55,8 @@ public class MakeReportControllerTest  extends SpringBaseTest{
 		String name="Field";
 		ExcelReport excelReport=excelService.getExcelReportToName(name);
 		Assert.notNull(excelReport,name+"，报表没有找到！");
-		Map<ExcelReportSQL,List> mapExcel = excelService.getExcelReportSqlData(excelReport,request);
-		System.out.println(mapExcel.size());
+        Map<ExcelReportSQL, List> mapExcel = excelService.getExcelReportSqlData(excelReport, request, null);
+        System.out.println(mapExcel.size());
 		//2、得到数据
 		//3、生成excel
 		

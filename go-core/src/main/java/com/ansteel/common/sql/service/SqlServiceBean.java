@@ -25,7 +25,6 @@ import com.ansteel.core.service.BaseService;
 import com.ansteel.core.service.SqlBaseService;
 import com.ansteel.core.utils.RequestUtils;
 import com.ansteel.common.beetl.service.BeetlService;
-import com.ansteel.common.sqlmodel.service.SqlModelsService;
 /**
  * 创 建 人：gugu
  * 创建日期：2015-05-15

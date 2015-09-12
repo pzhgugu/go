@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * 创 建 人：gugu
@@ -27,4 +28,15 @@ public interface SqlModelsService {
 
     SqlModels getSqlModels(String modelName);
 
+    /**
+     * 获取sql语句
+     *
+     * @param sqlModels
+     * @return
+     */
+    String getSql(SqlModels sqlModels);
+
+    String findByNameToSql(String modelName);
+
+    String showReport(String reportName, SqlModels sqlModels, Map<String, Object> operMap, String type, HttpServletRequest request, HttpServletResponse response);
 }

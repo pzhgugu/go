@@ -25,7 +25,7 @@ public interface MakeReportService {
 	 * @param request
 	 * @return
 	 */
-	Excel getExcel(String name,HttpServletRequest request);
+	Excel getExcel(String name, HttpServletRequest request, Map<String, Object> parameterMap);
 	
 	/**
 	 * 获取Excel
@@ -47,6 +47,20 @@ public interface MakeReportService {
 	 */
 	String show(String name, String rType, String inline, String outPath,
 			HttpServletRequest request, HttpServletResponse response);
+
+	/**
+	 * 报表展示
+	 *
+	 * @param name
+	 * @param rType
+	 * @param inline
+	 * @param outPath
+	 * @param request
+	 * @param response
+	 * @return
+	 */
+	String show(String name, String rType, String inline, String outPath, Map<String, Object> parameterMap,
+				HttpServletRequest request, HttpServletResponse response);
 
 	/**
 	 * 保存报表

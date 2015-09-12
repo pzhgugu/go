@@ -57,8 +57,6 @@ public class SqlModelsTplController {
     @Autowired
     SqlService sqlService;
 
-    @Autowired
-    MakeReport makeReport;
 
     @Autowired
     TplService tplService;
@@ -115,10 +113,6 @@ public class SqlModelsTplController {
                      String type,
                      HttpServletRequest request,
                      HttpServletResponse response) {
-
-        SqlModels sqlModels = sqlModelsService.getSqlModels(modelName);
-        Assert.notNull(sqlModels, modelName + ",SQL模型中没有找到，请检查！");
-        String sqlContent = sqlModels.getSqlContent();
         Map<String, Object> operMap = new HashMap<String, Object>();
         for (QueryMapping qm : queryList) {
             if (Public.QUERY_BETWEEN.endsWith(qm.getOperator())) {
@@ -129,19 +123,11 @@ public class SqlModelsTplController {
             }
         }
 
-        List listMap = sqlService.querySql(sqlContent, request, operMap);
+        SqlModels sqlModels = sqlModelsService.getSqlModels(modelName);
+        Assert.notNull(sqlModels, modelName + ",SQL模型中没有找到，请检查！");
 
-        String path = "";
-        if (StringUtils.hasText(reportName)) {
-            path = makeReport.show(reportName, listMap, type, null, request, response);
-        } else {
-            Map<String, String> nameMap = new HashMap<String, String>();
-            for (SqlFields field : sqlModels.getFields()) {
-                nameMap.put(field.getName(), field.getAlias());
-            }
-            path = makeReport.show(listMap, nameMap, type,
-                    null, request, response);
-        }
+
+        String path = sqlModelsService.showReport(reportName, sqlModels, operMap, type, request, response);
         return path;
 
     }
@@ -149,9 +135,8 @@ public class SqlModelsTplController {
     private Page getResult(String modelName,
                            String posStart, String count,
                            List<QueryMapping> queryList, HttpServletRequest request) {
-        SqlModels sqlModels = sqlModelsService.getSqlModels(modelName);
-        Assert.notNull(sqlModels, modelName + ",SQL模型中没有找到，请检查！");
-        String sqlContent = sqlModels.getSqlContent();
+
+        String sqlContent = sqlModelsService.findByNameToSql(modelName);
         Map<String, Object> operMap = new HashMap<String, Object>();
         for (QueryMapping qm : queryList) {
             if (Public.QUERY_BETWEEN.endsWith(qm.getOperator())) {

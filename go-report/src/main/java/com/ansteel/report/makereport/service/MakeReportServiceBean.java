@@ -77,11 +77,11 @@ public class MakeReportServiceBean implements MakeReportService {
 	private String attTempWeb;
 	
 	@Override
-	public Excel getExcel(String name,HttpServletRequest request) {
+	public Excel getExcel(String name, HttpServletRequest request, Map<String, Object> parameterMap) {
 		ExcelReport excelReport=excelService.getExcelReportToName(name);
 		Assert.notNull(excelReport,name+"，报表没有找到！");
 		//2、得到数据
-		Map<ExcelReportSQL,List> mapExcel = excelService.getExcelReportSqlData(excelReport,request);
+		Map<ExcelReportSQL, List> mapExcel = excelService.getExcelReportSqlData(excelReport, request, parameterMap);
 				
 		//String tplPath = excelService.getFilePathById(excelReport.getAttachmentId());
 		//由于自动发布，不发布附件表，所有模板直接读路径
@@ -149,8 +149,14 @@ public class MakeReportServiceBean implements MakeReportService {
 	public String show(String name, String rType, String inline,
 			String outPath, HttpServletRequest request,
 			HttpServletResponse response) {
-		Excel excel = this.getExcel(name, request);
+		Excel excel = this.getExcel(name, request, null);
 		return excelShowFactory.show(excel,rType,inline,null,response);
+	}
+
+	@Override
+	public String show(String name, String rType, String inline, String outPath, Map<String, Object> parameterMap, HttpServletRequest request, HttpServletResponse response) {
+		Excel excel = this.getExcel(name, request, parameterMap);
+		return excelShowFactory.show(excel, rType, inline, null, response);
 	}
 
 	@Override
@@ -161,7 +167,7 @@ public class MakeReportServiceBean implements MakeReportService {
 		if (attachmentTree == null) {
 			attachmentTree=attachmentService.saveAttachmentTree(AttachmentConstant.getReportFileAttachmentTree());
 		}
-		Excel excel = this.getExcel(type, request);
+		Excel excel = this.getExcel(type, request, null);
 		String catalogue=attachmentService.getAttachmentCatalogue(attachmentTree,rType);
 		String uuid = StringUtils.getUuid();
 		String path="";

@@ -22,7 +22,6 @@ public interface ExcelService {
 	/**
 	 * 保存附件,返回附件id
 	 * @param file
-	 * @param entity
 	 * @return
 	 */
 	String saveAttachment(MultipartFile file,ExcelReport excelReport);
@@ -53,10 +52,9 @@ public interface ExcelService {
 	ExcelReport getExcelReportToName(String name);
 	/**
 	 * 获取报表数据，及报表ExcelReportSQL对象
-	 * @param name
 	 * @return
 	 */
-	Map<ExcelReportSQL, List> getExcelReportSqlData(ExcelReport excelReport,HttpServletRequest request );
+	Map<ExcelReportSQL, List> getExcelReportSqlData(ExcelReport excelReport, HttpServletRequest request, Map<String, Object> parameterMap);
 	/**
 	 * 获取附件路径
 	 * @param attachmentId
@@ -64,4 +62,12 @@ public interface ExcelService {
 	 */
 	String getFilePathById(String attachmentId);
 
+	/**
+	 * 查询报表下的sql语句
+	 *
+	 * @param reportName 报表编码
+	 * @param sqlName    sql编码
+	 * @return
+	 */
+	String findByReportAndSql(String reportName, String sqlName);
 }

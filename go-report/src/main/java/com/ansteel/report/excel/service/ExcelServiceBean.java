@@ -5,6 +5,7 @@ import java.util.*;
 import javax.servlet.http.HttpServletRequest;
 
 import com.ansteel.core.utils.DateTimeUtils;
+import com.ansteel.report.excel.repository.ExcelReportSQLRepository;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -50,6 +51,9 @@ public class ExcelServiceBean implements ExcelService{
 	
 	@Autowired
 	ExcelReportRepository excelReportRepository;
+
+	@Autowired
+	ExcelReportSQLRepository excelReportSQLRepository;
 	
 	@Autowired
 	SqlService sqlService;
@@ -197,14 +201,14 @@ public class ExcelServiceBean implements ExcelService{
 	}
 
 	@Override
-	public Map<ExcelReportSQL, List> getExcelReportSqlData(ExcelReport excelReport,HttpServletRequest request) {
+	public Map<ExcelReportSQL, List> getExcelReportSqlData(ExcelReport excelReport, HttpServletRequest request, Map<String, Object> parameterMap) {
 		Map<ExcelReportSQL, List> map = new LinkedHashMap<ExcelReportSQL, List>();
 		Collection<ExcelReportSQL> excelReportSQLList = excelReport.getExcelReportSQLList();
 		for(ExcelReportSQL excelReportSQL:excelReportSQLList){
 			String sql = excelReportSQL.getSqlContent();
 			Assert.hasText(sql, excelReportSQL.getName()+":SQL不能为空！");
 			//List lsit=this.getSqlData(excelReportSQL.getSqlContent(),request);
-			List lsit=sqlService.querySql(excelReportSQL.getSqlContent(), request);
+			List lsit = sqlService.querySql(sql, request, parameterMap);
 			map.put(excelReportSQL, lsit);
 		}
 		return map;
@@ -212,8 +216,6 @@ public class ExcelServiceBean implements ExcelService{
 
 	/**
 	 * 获取SQL数据
-	 * @param sqlContent
-	 * @param request
 	 * @return
 	 *//*
 	private List getSqlData(String sqlContent,HttpServletRequest request) {
@@ -229,13 +231,22 @@ public class ExcelServiceBean implements ExcelService{
 		} catch (Exception e) {
 			throw new PageException("SQL语句错误:"+sql+",错误日志："+e.getMessage());
 		}
-		
+
 		return list;
 	}*/
 
 	@Override
 	public String getFilePathById(String attachmentId) {
 		return attachmentService.getFilePathById(attachmentId);
+	}
+
+	@Override
+	public String findByReportAndSql(String reportName, String sqlName) {
+		ExcelReport excelReport = excelReportRepository.findOneByName(reportName);
+		Assert.notNull(excelReport, reportName + ",报表没有找到！");
+		ExcelReportSQL excelReportSQL = excelReportSQLRepository.findOneByExcelReportAndName(excelReport, sqlName);
+		Assert.notNull(excelReportSQL, sqlName + "，sql没有找到！");
+		return excelReportSQL.getSqlContent();
 	}
 
 }
