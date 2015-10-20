@@ -319,20 +319,23 @@ public class Excel {
                 targetCell.setCellType(ct);
                 //替换公式
                 if(isFormula) {
-                    String sourceCellValue = sourceCell.getStringCellValue();
-                    if(sourceCell==null) {
-                        continue;
-                    }
-                    if(sourceCell.getCellType()!=Cell.CELL_TYPE_STRING) {
-                        continue;
-                    }
-                    if (sourceCellValue.indexOf("${ROW}") > -1) {
-                        targetCell.setCellType(Cell.CELL_TYPE_FORMULA);
-                        String formula = sourceCellValue.replaceAll("\\$\\{ROW\\}", String.valueOf(targetCell.getRowIndex() + 1));
-                        formula = formula.replace("=", "");
-                        targetCell.setCellFormula(formula);
-                    }
-                }
+					int cellType = sourceCell.getCellType();
+					if (Cell.CELL_TYPE_STRING == cellType) {
+						String sourceCellValue = sourceCell.getStringCellValue();
+						if (sourceCell == null) {
+							continue;
+						}
+						if (sourceCell.getCellType() != Cell.CELL_TYPE_STRING) {
+							continue;
+						}
+						if (sourceCellValue.indexOf("${ROW}") > -1) {
+							//targetCell.setCellType(Cell.CELL_TYPE_FORMULA);
+							String formula = sourceCellValue.replaceAll("\\$\\{ROW\\}", String.valueOf(targetCell.getRowIndex() + 1));
+							formula = formula.replace("=", "");
+							targetCell.setCellFormula(formula);
+						}
+					}
+				}
             }
 
 			for (CellRangeAddress ca : rowCellRangeList) {

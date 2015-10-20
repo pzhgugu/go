@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Root VERSION="2e5b27be-7b57-4c05-9436-c2d4c930a0f6">
+<Root VERSION="56306830-e4d7-4112-862d-3f0b599b0cec">
   <Message Class="com.ansteel.common.menu.domain.Menu" Execute="com.ansteel.common.backup.fun.MenuExecute">
     <DataRow>
       <url></url>
@@ -696,7 +696,7 @@
       <lastUpdater></lastUpdater>
     </DataRow>
     <DataRow>
-      <url>${S_URL}/sqltpl/tpl/ReportQuery/test2/d</url>
+      <url>${S_URL}/sqltpl/tpl/ReportShowQuery/testReport/d</url>
       <isPopup>0</isPopup>
       <image>database.gif</image>
       <scription></scription>
@@ -707,14 +707,14 @@
       <parent>402897814ec9c34e014ec9c3c8820018</parent>
       <layer>1</layer>
       <name>test2</name>
-      <alias>SQL模型测试2</alias>
+      <alias>SQL模型报表测试</alias>
       <displayOrder></displayOrder>
       <id>402897814ec9c34e014ec9c3c8960021</id>
-      <version>5</version>
-      <created>2015-07-26 17:48:48.0</created>
-      <updated>2015-09-06 09:30:11.0</updated>
+      <version>6</version>
+      <created>2015-07-26 00:00:00.0</created>
+      <updated>2015-09-13 07:30:54.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
       <url>${S_URL}/dmtpl/tpl/SingleGridQuery/testTel/d</url>
@@ -97100,6 +97100,24 @@ select * from go_users where 1=1 &lt;% if(!isEmpty(name)){%&gt;and name like '${
       <creator></creator>
       <lastUpdater></lastUpdater>
     </DataRow>
+    <DataRow>
+      <scription></scription>
+      <modelType>3</modelType>
+      <sqlContent>20150826_1.1</sqlContent>
+      <sqlMode>1</sqlMode>
+      <versionPublish></versionPublish>
+      <parent>402897814ec9c34e014ec9c457a70d2d</parent>
+      <layer>2</layer>
+      <name>testReport</name>
+      <alias>测试报表</alias>
+      <displayOrder>3</displayOrder>
+      <id>402897814fc39ed2014fc3a2f5640000</id>
+      <version>1</version>
+      <created>2015-09-13 06:18:00.0</created>
+      <updated>2015-09-13 06:18:06.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
   </Message>
   <Message Class="com.ansteel.report.sqlmodel.domain.SqlFields" Execute="com.ansteel.report.backup.fun.SqlFieldsExecute">
     <DataRow>
@@ -97886,6 +97904,118 @@ select * from go_users where 1=1 &lt;% if(!isEmpty(name)){%&gt;and name like '${
       <creator></creator>
       <lastUpdater></lastUpdater>
     </DataRow>
+    <DataRow>
+      <models>402897814fc39ed2014fc3a2f5640000</models>
+      <scription></scription>
+      <fieldType>String</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented></isInvented>
+      <versionPublish></versionPublish>
+      <name>NAME</name>
+      <alias>NAME</alias>
+      <displayOrder>0</displayOrder>
+      <id>402897814fc39ed2014fc3a431880001</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>402897814fc39ed2014fc3a2f5640000</models>
+      <scription></scription>
+      <fieldType>String</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented></isInvented>
+      <versionPublish></versionPublish>
+      <name>ID</name>
+      <alias>ID</alias>
+      <displayOrder>5</displayOrder>
+      <id>402897814fc39ed2014fc3a431890002</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>402897814fc39ed2014fc3a2f5640000</models>
+      <scription></scription>
+      <fieldType>String</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented></isInvented>
+      <versionPublish></versionPublish>
+      <name>PASSWORD</name>
+      <alias>PASSWORD</alias>
+      <displayOrder>10</displayOrder>
+      <id>402897814fc39ed2014fc3a431890003</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>402897814fc39ed2014fc3a2f5640000</models>
+      <scription></scription>
+      <fieldType>String</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented></isInvented>
+      <versionPublish></versionPublish>
+      <name>ALIAS</name>
+      <alias>ALIAS</alias>
+      <displayOrder>15</displayOrder>
+      <id>402897814fc39ed2014fc3a4318a0004</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
   </Message>
   <Message Class="com.ansteel.report.sqlmodel.domain.SqlFieldsCategory" Execute="com.ansteel.report.backup.fun.SqlFieldsCategoryExecute">
     <DataRow>
@@ -97913,6 +98043,19 @@ select * from go_users where 1=1 &lt;% if(!isEmpty(name)){%&gt;and name like '${
       <updated>2015-07-26 17:49:25.0</updated>
       <creator></creator>
       <lastUpdater></lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>402897814fc39ed2014fc3a2f5640000</models>
+      <versionPublish></versionPublish>
+      <name>defaule</name>
+      <alias>defaule</alias>
+      <displayOrder></displayOrder>
+      <id>402897814fc39ed2014fc3a4318a0005</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
   </Message>
   <Message Class="com.ansteel.report.sqlmodel.domain.SqlFieldsForm" Execute="com.ansteel.report.backup.fun.SqlFieldsFormExecute">
@@ -98700,6 +98843,118 @@ select * from go_users where 1=1 &lt;% if(!isEmpty(name)){%&gt;and name like '${
       <creator></creator>
       <lastUpdater></lastUpdater>
     </DataRow>
+    <DataRow>
+      <fieldsCategory>402897814fc39ed2014fc3a4318a0005</fieldsCategory>
+      <name>NAME</name>
+      <displayOrder>0</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>402897814fc39ed2014fc3a4318b0006</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>402897814fc39ed2014fc3a4318a0005</fieldsCategory>
+      <name>ID</name>
+      <displayOrder>5</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>402897814fc39ed2014fc3a4318b0007</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>402897814fc39ed2014fc3a4318a0005</fieldsCategory>
+      <name>PASSWORD</name>
+      <displayOrder>10</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>402897814fc39ed2014fc3a4318c0008</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>402897814fc39ed2014fc3a4318a0005</fieldsCategory>
+      <name>ALIAS</name>
+      <displayOrder>15</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>402897814fc39ed2014fc3a4318c0009</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
   </Message>
   <Message Class="com.ansteel.report.sqlmodel.domain.SqlFieldsGrid" Execute="com.ansteel.report.backup.fun.SqlFieldsGridExecute">
     <DataRow>
@@ -99177,6 +99432,74 @@ select * from go_users where 1=1 &lt;% if(!isEmpty(name)){%&gt;and name like '${
       <updated>2015-07-26 17:49:25.0</updated>
       <creator></creator>
       <lastUpdater></lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>402897814fc39ed2014fc3a4318a0005</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>NAME</name>
+      <displayOrder>0</displayOrder>
+      <versionPublish></versionPublish>
+      <id>402897814fc39ed2014fc3a4318c000a</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>402897814fc39ed2014fc3a4318a0005</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>ID</name>
+      <displayOrder>5</displayOrder>
+      <versionPublish></versionPublish>
+      <id>402897814fc39ed2014fc3a4318d000b</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>402897814fc39ed2014fc3a4318a0005</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>PASSWORD</name>
+      <displayOrder>10</displayOrder>
+      <versionPublish></versionPublish>
+      <id>402897814fc39ed2014fc3a4318d000c</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>402897814fc39ed2014fc3a4318a0005</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>ALIAS</name>
+      <displayOrder>15</displayOrder>
+      <versionPublish></versionPublish>
+      <id>402897814fc39ed2014fc3a4318d000d</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
   </Message>
   <Message Class="com.ansteel.report.sqlmodel.domain.SqlFieldsQuery" Execute="com.ansteel.report.backup.fun.SqlFieldsQueryExecute">
@@ -99711,6 +100034,82 @@ select * from go_users where 1=1 &lt;% if(!isEmpty(name)){%&gt;and name like '${
       <updated>2015-07-26 17:49:26.0</updated>
       <creator></creator>
       <lastUpdater></lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>402897814fc39ed2014fc3a4318a0005</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>NAME</name>
+      <displayOrder>0</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>402897814fc39ed2014fc3a4318d000e</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>402897814fc39ed2014fc3a4318a0005</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>ID</name>
+      <displayOrder>5</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>402897814fc39ed2014fc3a4318e000f</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>402897814fc39ed2014fc3a4318a0005</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>PASSWORD</name>
+      <displayOrder>10</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>402897814fc39ed2014fc3a4318f0010</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>402897814fc39ed2014fc3a4318a0005</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>ALIAS</name>
+      <displayOrder>15</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>402897814fc39ed2014fc3a4318f0011</id>
+      <version>0</version>
+      <created>2015-09-13 06:19:21.0</created>
+      <updated>2015-09-13 06:19:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
   </Message>
 </Root>

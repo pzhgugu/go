@@ -55,9 +55,9 @@ public class PdfShow implements IExcelShow {
 				pdfFile.delete();
 			if(!openOfficeService.convert2PDF(excelFile, pdfFile)){
 				throw new PageException("pdf文档转换失败！");
-			}	
+			}
 
-			DownloadUtils.download(response, pdfFile, "application/pdf", inline);
+			DownloadUtils.download(response, pdfFile, inline);
 		}
 		return pdfPath;
 	}

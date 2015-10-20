@@ -2,6 +2,8 @@ package com.ansteel.modules.backup.fun;
 
 import static org.junit.Assert.*;
 
+import com.ansteel.common.viewelement.service.ViewElementService;
+import com.ansteel.core.context.ContextHolder;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -5,38 +5,38 @@
             "type": "js"
         },
         "common:scripts/mod.js": {
-            "uri": "/show/static/common/scripts/mod_2b1d325.js",
+            "uri": "/show/static/common/scripts/mod.js",
             "type": "js"
         },
         "common:styles/bootstrap.css": {
-            "uri": "/show/static/common/styles/bootstrap_d678660.css",
+            "uri": "/show/static/common/styles/bootstrap.css",
             "type": "css"
         },
         "common:widget/ajaxfileupload/ajaxfileupload.js": {
-            "uri": "/show/static/common/widget/ajaxfileupload/ajaxfileupload_1718aba.js",
+            "uri": "/show/static/common/widget/ajaxfileupload/ajaxfileupload.js",
             "type": "js"
         },
         "common:widget/dhtmlxSuite/dhtmlx_deprecated.js": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlx_deprecated_8e4c616.js",
+            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlx_deprecated.js",
             "type": "js"
         },
         "common:widget/dhtmlxSuite/dhtmlx.css": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlx_3918e35.css",
+            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlx.css",
             "type": "css"
         },
         "common:widget/dhtmlxSuite/dhtmlx.js": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlx_aa926da.js",
+            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlx.js",
             "type": "js",
             "deps": [
                 "common:widget/dhtmlxSuite/dhtmlx.css"
             ]
         },
         "common:widget/dhtmlxSuite/dhtmlxEx.css": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlxEx_2f58bfe.css",
+            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlxEx.css",
             "type": "css"
         },
         "common:widget/dhtmlxSuite/dhtmlxEx.js": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlxEx_c89ac1b.js",
+            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlxEx.js",
             "type": "js",
             "deps": [
                 "common:widget/dhtmlxSuite/dhtmlxEx.css",
@@ -48,7 +48,7 @@
             ]
         },
         "common:widget/dhtmlxSuite/dhtmlxGlobal.js": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlxGlobal_9822473.js",
+            "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlxGlobal.js",
             "type": "js",
             "deps": [
                 "common:widget/utils/underscore.js",
@@ -56,11 +56,11 @@
             ]
         },
         "common:widget/dhtmlxSuite/ext/dhtmlxform_item_editArea.js": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxform_item_editArea_4ab68de.js",
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxform_item_editArea.js",
             "type": "js"
         },
         "common:widget/dhtmlxSuite/ext/dhtmlxform_item_kindeditor.js": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxform_item_kindeditor_fa16a5f.js",
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxform_item_kindeditor.js",
             "type": "js",
             "deps": [
                 "common:widget/dhtmlxSuite/dhtmlx.js",
@@ -68,29 +68,29 @@
             ]
         },
         "common:widget/dhtmlxSuite/ext/dhtmlxform_item_tree.js": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxform_item_tree_10223ac.js",
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxform_item_tree.js",
             "type": "js"
         },
         "common:widget/dhtmlxSuite/ext/dhtmlxgrid_errormessage.js": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxgrid_errormessage_454f373.js",
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxgrid_errormessage.js",
             "type": "js",
             "deps": [
                 "common:widget/dhtmlxSuite/dhtmlx.js"
             ]
         },
         "common:widget/dhtmlxSuite/ext/dhtmlxgrid_excell_clistEx.js": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxgrid_excell_clistEx_7d65531.js",
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxgrid_excell_clistEx.js",
             "type": "js",
             "deps": [
                 "common:widget/dhtmlxSuite/dhtmlx.js"
             ]
         },
         "common:widget/dhtmlxSuite/ext/dhtmlxgrid_pgn.js": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxgrid_pgn_34804da.js",
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlxgrid_pgn.js",
             "type": "js"
         },
         "common:widget/dhtmlxSuite/ext/dhtmlXToolbar_selectEx.js": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlXToolbar_selectEx_74314dd.js",
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/dhtmlXToolbar_selectEx.js",
             "type": "js",
             "deps": [
                 "common:widget/utils/underscore.js",
@@ -98,102 +98,102 @@
             ]
         },
         "common:widget/dhtmlxSuite/ext/swfobject.js": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/ext/swfobject_af39c09.js",
+            "uri": "/show/static/common/widget/dhtmlxSuite/ext/swfobject.js",
             "type": "js"
         },
         "common:widget/dhtmlxSuite/thirdparty/excanvas/excanvas.js": {
-            "uri": "/show/static/common/widget/dhtmlxSuite/thirdparty/excanvas/excanvas_abd24f9.js",
+            "uri": "/show/static/common/widget/dhtmlxSuite/thirdparty/excanvas/excanvas.js",
             "type": "js"
         },
         "common:widget/exception/error.css": {
-            "uri": "/show/static/common/widget/exception/error_67eda42.css",
+            "uri": "/show/static/common/widget/exception/error.css",
             "type": "css"
         },
         "common:widget/fileupload/jquery.fileupload-ui.css": {
-            "uri": "/show/static/common/widget/fileupload/jquery.fileupload-ui_a2a1e74.css",
+            "uri": "/show/static/common/widget/fileupload/jquery.fileupload-ui.css",
             "type": "css"
         },
         "common:widget/fileupload/jquery.fileupload-ui.js": {
-            "uri": "/show/static/common/widget/fileupload/jquery.fileupload-ui_beaab8c.js",
+            "uri": "/show/static/common/widget/fileupload/jquery.fileupload-ui.js",
             "type": "js"
         },
         "common:widget/fileupload/jquery.fileupload.js": {
-            "uri": "/show/static/common/widget/fileupload/jquery.fileupload_fafab08.js",
+            "uri": "/show/static/common/widget/fileupload/jquery.fileupload.js",
             "type": "js"
         },
         "common:widget/fileupload/jquery.iframe-transport.js": {
-            "uri": "/show/static/common/widget/fileupload/jquery.iframe-transport_59ad6bd.js",
+            "uri": "/show/static/common/widget/fileupload/jquery.iframe-transport.js",
             "type": "js"
         },
         "common:widget/fileupload/jquery.ui.widget.js": {
-            "uri": "/show/static/common/widget/fileupload/jquery.ui.widget_e28e571.js",
+            "uri": "/show/static/common/widget/fileupload/jquery.ui.widget.js",
             "type": "js"
         },
         "common:widget/font-awesome/css/font-awesome-ie7.css": {
-            "uri": "/show/static/common/widget/font-awesome/css/font-awesome-ie7_3403cad.css",
+            "uri": "/show/static/common/widget/font-awesome/css/font-awesome-ie7.css",
             "type": "css"
         },
         "common:widget/font-awesome/css/font-awesome-ie7.min.css": {
-            "uri": "/show/static/common/widget/font-awesome/css/font-awesome-ie7.min_d7783ee.css",
+            "uri": "/show/static/common/widget/font-awesome/css/font-awesome-ie7.min.css",
             "type": "css"
         },
         "common:widget/font-awesome/css/font-awesome.css": {
-            "uri": "/show/static/common/widget/font-awesome/css/font-awesome_b361afe.css",
+            "uri": "/show/static/common/widget/font-awesome/css/font-awesome.css",
             "type": "css"
         },
         "common:widget/font-awesome/css/font-awesome.min.css": {
-            "uri": "/show/static/common/widget/font-awesome/css/font-awesome.min_2752c25.css",
+            "uri": "/show/static/common/widget/font-awesome/css/font-awesome.min.css",
             "type": "css"
         },
         "common:widget/jquery-ui/i18n/zh-CN.js": {
-            "uri": "/show/static/common/widget/jquery-ui/i18n/zh-CN_29b8cb3.js",
+            "uri": "/show/static/common/widget/jquery-ui/i18n/zh-CN.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery-ui/themes/ui-lightness/jquery.ui.css"
             ]
         },
         "common:widget/jquery-ui/i18n/zh-TW.js": {
-            "uri": "/show/static/common/widget/jquery-ui/i18n/zh-TW_07fbf4c.js",
+            "uri": "/show/static/common/widget/jquery-ui/i18n/zh-TW.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery-ui/themes/ui-lightness/jquery.ui.css"
             ]
         },
         "common:widget/jquery-ui/jquery.ui.js": {
-            "uri": "/show/static/common/widget/jquery-ui/jquery.ui_362fdc1.js",
+            "uri": "/show/static/common/widget/jquery-ui/jquery.ui.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery-ui/themes/ui-lightness/jquery.ui.css"
             ]
         },
         "common:widget/jquery-ui/themes/smoothness/jquery.ui.css": {
-            "uri": "/show/static/common/widget/jquery-ui/themes/smoothness/jquery.ui_469a1d8.css",
+            "uri": "/show/static/common/widget/jquery-ui/themes/smoothness/jquery.ui.css",
             "type": "css"
         },
         "common:widget/jquery-ui/themes/ui-lightness/jquery.ui.css": {
-            "uri": "/show/static/common/widget/jquery-ui/themes/ui-lightness/jquery.ui_653c79d.css",
+            "uri": "/show/static/common/widget/jquery-ui/themes/ui-lightness/jquery.ui.css",
             "type": "css"
         },
         "common:widget/jquery/jquery.ajaxContent.pack.js": {
-            "uri": "/show/static/common/widget/jquery/jquery.ajaxContent.pack_063da70.js",
+            "uri": "/show/static/common/widget/jquery/jquery.ajaxContent.pack.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jquery.js"
             ]
         },
         "common:widget/jquery/jquery.form.js": {
-            "uri": "/show/static/common/widget/jquery/jquery.form_45504ea.js",
+            "uri": "/show/static/common/widget/jquery/jquery.form.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jquery.js"
             ]
         },
         "common:widget/jquery/jquery.Jcrop.css": {
-            "uri": "/show/static/common/widget/jquery/jquery.Jcrop_98f5f47.css",
+            "uri": "/show/static/common/widget/jquery/jquery.Jcrop.css",
             "type": "css"
         },
         "common:widget/jquery/jquery.Jcrop.js": {
-            "uri": "/show/static/common/widget/jquery/jquery.Jcrop_e1a48fc.js",
+            "uri": "/show/static/common/widget/jquery/jquery.Jcrop.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jquery.js",
@@ -201,65 +201,65 @@
             ]
         },
         "common:widget/jquery/jquery.js": {
-            "uri": "/show/static/common/widget/jquery/jquery_f7ee939.js",
+            "uri": "/show/static/common/widget/jquery/jquery.js",
             "type": "js"
         },
         "common:widget/jquery/jquery.mousewheel.js": {
-            "uri": "/show/static/common/widget/jquery/jquery.mousewheel_41ebd2e.js",
+            "uri": "/show/static/common/widget/jquery/jquery.mousewheel.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jquery.js"
             ]
         },
         "common:widget/jquery/jquery.poshytip.js": {
-            "uri": "/show/static/common/widget/jquery/jquery.poshytip_59cad7b.js",
+            "uri": "/show/static/common/widget/jquery/jquery.poshytip.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jquery.js"
             ]
         },
         "common:widget/jquery/jquery.validation.js": {
-            "uri": "/show/static/common/widget/jquery/jquery.validation_34ddfff.js",
+            "uri": "/show/static/common/widget/jquery/jquery.validation.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jquery.js"
             ]
         },
         "common:widget/jquery/jqueryEx.js": {
-            "uri": "/show/static/common/widget/jquery/jqueryEx_3280aeb.js",
+            "uri": "/show/static/common/widget/jquery/jqueryEx.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jquery.js"
             ]
         },
         "common:widget/jquery/perfect-scrollbar.js": {
-            "uri": "/show/static/common/widget/jquery/perfect-scrollbar_1c99cbf.js",
+            "uri": "/show/static/common/widget/jquery/perfect-scrollbar.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jquery.js"
             ]
         },
         "common:widget/jquery/waypoints.js": {
-            "uri": "/show/static/common/widget/jquery/waypoints_de8ee77.js",
+            "uri": "/show/static/common/widget/jquery/waypoints.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jquery.js"
             ]
         },
         "common:widget/kindeditor/kindeditor-all-min.js": {
-            "uri": "/show/static/common/widget/kindeditor/kindeditor-all-min_91029c4.js",
+            "uri": "/show/static/common/widget/kindeditor/kindeditor-all-min.js",
             "type": "js"
         },
         "common:widget/kindeditor/kindeditor-all.js": {
-            "uri": "/show/static/common/widget/kindeditor/kindeditor-all_19d0bd6.js",
+            "uri": "/show/static/common/widget/kindeditor/kindeditor-all.js",
             "type": "js"
         },
         "common:widget/kindeditor/kindeditor-min.js": {
-            "uri": "/show/static/common/widget/kindeditor/kindeditor-min_8a4baf7.js",
+            "uri": "/show/static/common/widget/kindeditor/kindeditor-min.js",
             "type": "js"
         },
         "common:widget/kindeditor/kindeditor.js": {
-            "uri": "/show/static/common/widget/kindeditor/kindeditor_eca9524.js",
+            "uri": "/show/static/common/widget/kindeditor/kindeditor.js",
             "type": "js",
             "deps": [
                 "common:widget/kindeditor/themes/default/default.css"
@@ -286,99 +286,99 @@
             "type": "js"
         },
         "common:widget/kindeditor/plugins/anchor/anchor.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/anchor/anchor_cee3f3f.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/anchor/anchor.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/autoheight/autoheight.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/autoheight/autoheight_ad543b9.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/autoheight/autoheight.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/baidumap/baidumap.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/baidumap/baidumap_8dbd00b.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/baidumap/baidumap.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/clearhtml/clearhtml.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/clearhtml/clearhtml_1f2e799.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/clearhtml/clearhtml.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/code/code.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/code/code_45ef65c.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/code/code.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/code/prettify.css": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/code/prettify_2c48dc0.css",
+            "uri": "/show/static/common/widget/kindeditor/plugins/code/prettify.css",
             "type": "css"
         },
         "common:widget/kindeditor/plugins/code/prettify.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/code/prettify_c723a70.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/code/prettify.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/emoticons/emoticons.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/emoticons/emoticons_e0db917.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/emoticons/emoticons.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/filemanager/filemanager.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/filemanager/filemanager_da607b4.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/filemanager/filemanager.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/flash/flash.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/flash/flash_f7c26d7.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/flash/flash.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/image/image.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/image/image_a74ebf3.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/image/image.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/insertfile/insertfile.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/insertfile/insertfile_6a4b8c8.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/insertfile/insertfile.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/lineheight/lineheight.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/lineheight/lineheight_1c949ac.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/lineheight/lineheight.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/link/link.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/link/link_115b679.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/link/link.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/map/map.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/map/map_99addbb.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/map/map.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/media/media.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/media/media_7d100a2.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/media/media.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/multiimage/multiimage.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/multiimage/multiimage_ff7a6d1.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/multiimage/multiimage.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/pagebreak/pagebreak.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/pagebreak/pagebreak_4739d53.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/pagebreak/pagebreak.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/plainpaste/plainpaste.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/plainpaste/plainpaste_bf2baf3.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/plainpaste/plainpaste.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/preview/preview.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/preview/preview_1da8bc4.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/preview/preview.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/quickformat/quickformat.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/quickformat/quickformat_a11fcd5.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/quickformat/quickformat.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/table/table.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/table/table_4273120.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/table/table.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/template/template.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/template/template_3a02f08.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/template/template.js",
             "type": "js"
         },
         "common:widget/kindeditor/plugins/wordpaste/wordpaste.js": {
-            "uri": "/show/static/common/widget/kindeditor/plugins/wordpaste/wordpaste_b79b790.js",
+            "uri": "/show/static/common/widget/kindeditor/plugins/wordpaste/wordpaste.js",
             "type": "js"
         },
         "common:widget/kindeditor/themes/default/default.css": {
@@ -394,63 +394,63 @@
             "type": "css"
         },
         "common:widget/poshytip/jquery.poshytip.js": {
-            "uri": "/show/static/common/widget/poshytip/jquery.poshytip_5c76efc.js",
+            "uri": "/show/static/common/widget/poshytip/jquery.poshytip.js",
             "type": "js"
         },
         "common:widget/poshytip/jquery.poshytip.min.js": {
-            "uri": "/show/static/common/widget/poshytip/jquery.poshytip.min_5c76efc.js",
+            "uri": "/show/static/common/widget/poshytip/jquery.poshytip.min.js",
             "type": "js"
         },
         "common:widget/poshytip/tip-darkgray/tip-darkgray.css": {
-            "uri": "/show/static/common/widget/poshytip/tip-darkgray/tip-darkgray_ae29910.css",
+            "uri": "/show/static/common/widget/poshytip/tip-darkgray/tip-darkgray.css",
             "type": "css"
         },
         "common:widget/poshytip/tip-green/tip-green.css": {
-            "uri": "/show/static/common/widget/poshytip/tip-green/tip-green_d585679.css",
+            "uri": "/show/static/common/widget/poshytip/tip-green/tip-green.css",
             "type": "css"
         },
         "common:widget/poshytip/tip-skyblue/tip-skyblue.css": {
-            "uri": "/show/static/common/widget/poshytip/tip-skyblue/tip-skyblue_cb8692b.css",
+            "uri": "/show/static/common/widget/poshytip/tip-skyblue/tip-skyblue.css",
             "type": "css"
         },
         "common:widget/poshytip/tip-twitter/tip-twitter.css": {
-            "uri": "/show/static/common/widget/poshytip/tip-twitter/tip-twitter_8109101.css",
+            "uri": "/show/static/common/widget/poshytip/tip-twitter/tip-twitter.css",
             "type": "css"
         },
         "common:widget/poshytip/tip-violet/tip-violet.css": {
-            "uri": "/show/static/common/widget/poshytip/tip-violet/tip-violet_27197f4.css",
+            "uri": "/show/static/common/widget/poshytip/tip-violet/tip-violet.css",
             "type": "css"
         },
         "common:widget/poshytip/tip-yellow/tip-yellow.css": {
-            "uri": "/show/static/common/widget/poshytip/tip-yellow/tip-yellow_59a344f.css",
+            "uri": "/show/static/common/widget/poshytip/tip-yellow/tip-yellow.css",
             "type": "css"
         },
         "common:widget/poshytip/tip-yellowsimple/tip-yellowsimple.css": {
-            "uri": "/show/static/common/widget/poshytip/tip-yellowsimple/tip-yellowsimple_bc2cc0a.css",
+            "uri": "/show/static/common/widget/poshytip/tip-yellowsimple/tip-yellowsimple.css",
             "type": "css"
         },
         "common:widget/utils/html5shiv.js": {
-            "uri": "/show/static/common/widget/utils/html5shiv_447735d.js",
+            "uri": "/show/static/common/widget/utils/html5shiv.js",
             "type": "js"
         },
         "common:widget/utils/IE6_MAXMIX.js": {
-            "uri": "/show/static/common/widget/utils/IE6_MAXMIX_cc62ded.js",
+            "uri": "/show/static/common/widget/utils/IE6_MAXMIX.js",
             "type": "js"
         },
         "common:widget/utils/IE6_PNG.js": {
-            "uri": "/show/static/common/widget/utils/IE6_PNG_39d26a5.js",
+            "uri": "/show/static/common/widget/utils/IE6_PNG.js",
             "type": "js"
         },
         "common:widget/utils/respond.js": {
-            "uri": "/show/static/common/widget/utils/respond_c798fc9.js",
+            "uri": "/show/static/common/widget/utils/respond.js",
             "type": "js"
         },
         "common:widget/utils/spin.js": {
-            "uri": "/show/static/common/widget/utils/spin_4e0266b.js",
+            "uri": "/show/static/common/widget/utils/spin.js",
             "type": "js"
         },
         "common:widget/utils/underscore.js": {
-            "uri": "/show/static/common/widget/utils/underscore_34feed1.js",
+            "uri": "/show/static/common/widget/utils/underscore.js",
             "type": "js"
         }
     },

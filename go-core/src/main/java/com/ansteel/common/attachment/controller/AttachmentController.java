@@ -112,7 +112,7 @@ public class AttachmentController extends BaseController {
 			HttpServletRequest request, HttpServletResponse response)
 			throws Exception {
 		Attachment attachment = attachmentService.getAttachmentByIdToPath(id);
-		DownloadUtils.download(response, attachment.getPath(),attachment.getContentType(),inline);
+		DownloadUtils.download(response, attachment.getPath(), inline);
 	}
 	
 	@RequestMapping("/downloadPath")
@@ -120,7 +120,7 @@ public class AttachmentController extends BaseController {
 			@RequestParam(value = "_inline", required = false) String inline,
 			HttpServletRequest request, HttpServletResponse response)
 			throws Exception {
-		DownloadUtils.download(response,path,null,inline);
+		DownloadUtils.download(response, path, inline);
 	}
 	
 	public  @ResponseBody UDataSet queryDetailPageAjax(@PathClass("className")Class clazz,

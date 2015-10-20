@@ -82,9 +82,15 @@ public class AlbumController {
 			JavaScriptUtils.BindingResultError(result,url,response);
 			return ;
 		}
-		albumClassService.saveUse(albumClass);
-		
-		String name="相册创建成功";
+		String name = "";
+		try {
+			albumClassService.saveUse(albumClass);
+		} catch (Exception e) {
+			name = "数据库异常！";
+		}
+
+
+		name = "相册创建成功";
 		
 		ResponseUtils.xmlCDataOut(response,JavaScriptUtils.returnShowDialog(name,url));
 	}

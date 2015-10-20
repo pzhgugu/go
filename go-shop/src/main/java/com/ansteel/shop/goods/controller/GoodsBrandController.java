@@ -6,9 +6,11 @@ import java.util.List;
 
 import com.ansteel.core.annotation.PathClass;
 import com.ansteel.core.annotation.PathDatabaseEntity;
+import com.ansteel.core.annotation.QueryJson;
 import com.ansteel.core.constant.DHtmlxConstants;
 import com.ansteel.core.domain.BaseEntity;
 import com.ansteel.core.query.PageUtils;
+import com.ansteel.core.utils.QueryMapping;
 import com.ansteel.core.utils.ResponseUtils;
 import com.ansteel.dhtmlx.jsonclass.UDataSet;
 import com.ansteel.report.jasperReports.domain.JasperReport;
@@ -83,8 +85,27 @@ public class GoodsBrandController  extends BaseController{
 		UDataSet dataSet=super.loadPageAjax(clazz, key, value, posStart, count, order, request, response);
 		Page page= (Page) dataSet.getResult();
 		List<GoodsBrand> goodsBrandList=page.getContent();
-		this.setLogoImage(goodsBrandList,request);
+		this.setLogoImage(goodsBrandList, request);
 		return new UDataSet(request, DHtmlxConstants.UI_ROWS,page);
+	}
+
+	public
+	@ResponseBody
+	UDataSet queryPageAjax(@PathClass("className") Class clazz,
+						   @RequestParam(value = "_key", required = false) String key,//过滤字段名（一般用于主从表）
+						   @RequestParam(value = "_value", required = false) String value,//过滤字段值（一般用于主从表）
+						   @RequestParam(value = "posStart", required = false) String posStart,//分页当前记录行
+						   @RequestParam(value = "count", required = false) String count,//分页记录行
+						   @RequestParam(value = "_order", required = false) String order,//排序字段名
+						   @QueryJson List<QueryMapping> queryList,
+						   HttpServletRequest request,
+						   HttpServletResponse response) {
+
+		UDataSet dataSet = super.queryPageAjax(clazz, key, value, posStart, count, order, queryList, request, response);
+		Page page = (Page) dataSet.getResult();
+		List<GoodsBrand> goodsBrandList = page.getContent();
+		this.setLogoImage(goodsBrandList, request);
+		return new UDataSet(request, DHtmlxConstants.UI_ROWS, page);
 	}
 
 

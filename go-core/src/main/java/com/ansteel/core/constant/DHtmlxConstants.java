@@ -58,4 +58,5 @@ public class DHtmlxConstants {
 	public static final Integer BLOCK_WIDTH_DEFAULT = 680;
 	public static final String EDITAREA = "editArea";
 	public static final String KINDEDITOR = "kindeditor";
+	public static final String INPUTTREE = "inputTree";
 }

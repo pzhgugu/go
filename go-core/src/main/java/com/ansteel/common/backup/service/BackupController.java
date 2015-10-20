@@ -36,7 +36,7 @@ public class BackupController {
     public void backupAutoPublish(HttpServletResponse response) {
         String path = dataXmlEport.getPath();
         dataXmlEport.backupAll(path);
-        DownloadUtils.download(response, path, null, null);
+        DownloadUtils.download(response, path);
 
     }
 }

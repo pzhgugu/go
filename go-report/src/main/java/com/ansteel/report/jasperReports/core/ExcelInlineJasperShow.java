@@ -35,7 +35,7 @@ public class ExcelInlineJasperShow extends ExelBaseJasper implements IJasperShow
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		DownloadUtils.download(response, outPath, "application/vnd.ms-excel", "1");
+		DownloadUtils.download(response, outPath, "1");
 		return outPath;
 	}
 

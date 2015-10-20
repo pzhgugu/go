@@ -8,6 +8,8 @@
 
 dhtmlXForm.prototype.items.inputTree = {
 	data:{},
+	selectVar: {},
+	selectUrl: {},
 	render : function(item, data) {
 		this.data=data;
 		item._type = "inputTree";
@@ -35,7 +37,24 @@ dhtmlXForm.prototype.items.inputTree = {
 		}
 	},
 	setValue: function(item, value) {
+		if (!!selectVar) {
+			var dValue;
+			_.each(selectVar, function (val) {
+				if (value == val.value) {
+					dValue = val.text;
+				}
+			});
+			this.setInputValue(item, dValue, value);
+		}
+		if (!!selectUrl) {
+			var url = selectUrl.replace("${id}", value);
+			var htmlobj = $.ajax({url: url, async: false});
+			if (!!htmlobj && !!htmlobj.responseText) {
+				this.setInputValue(item, htmlobj.responseText, value);
+			}
+		}
     	item._value = value;// it's basic code. You can add there any custom code as well.
+
 	},
 	getValue: function(item) {
 	    return item._value;//it's basic code. You can add there any custom code as well.
@@ -48,6 +67,11 @@ dhtmlXForm.prototype.items.inputTree = {
 		item._value = value;
 	},
 	_doAddInput : function(item, data, el, type, pos, dim, css) {
+		var userdata = data.userdata;
+		if (!userdata.url) {
+			alert("请在用户自定义中配置树选择的url链接。");
+			return;
+		}
 		var p = document.createElement("DIV");
 		p.className = "dhxform_control";
 
@@ -59,21 +83,20 @@ dhtmlXForm.prototype.items.inputTree = {
 
 		var t = document.createElement(el);
 		t.className = css;
-		t.name = item._idd+"_Show";
-		t._idd = item._idd+"_Show";
-		t.id = data.uid+"_Show";
-		
-		
+		t.name = item._idd + "_Show";
+		t._idd = item._idd + "_Show";
+		t.id = data.uid + "_Show";
 
-		if ( typeof (type) == "string")
+
+		if (typeof (type) == "string")
 			t.type = type;
 
 		if (el == "INPUT" || el == "TEXTAREA") {
-			t.onkeyup = function(e) {
+			t.onkeyup = function (e) {
 				e = e || event;
 				item.callEvent("onKeyUp", [this, e, this._idd]);
 			};
-			t.onkeydown = function(e) {
+			t.onkeydown = function (e) {
 				e = e || event;
 				item.callEvent("onKeyDown", [this, e, this._idd]);
 			};
@@ -87,8 +110,9 @@ dhtmlXForm.prototype.items.inputTree = {
 		hidden.id = data.uid;
 		p.appendChild(hidden);
 
-		if (data.readonly)
-			this.setReadonly(item, true);
+		//设置树选择为只读
+		this.setReadonly(item, true);
+
 		if (data.hidden == true)
 			this.hide(item);
 		if (data.disabled == true)
@@ -106,14 +130,14 @@ dhtmlXForm.prototype.items.inputTree = {
 		var dimFix = false;
 		if (dim) {
 			if (!isNaN(data.inputWidth)) {
-				u += "width:" + (parseInt(data.inputWidth)-25) + "px;";
+				u += "width:" + (parseInt(data.inputWidth) - 25) + "px;";
 				dimFix = true;
 			}
 			if (!isNaN(data.inputHeight))
 				u += "height:" + parseInt(data.inputHeight) + "px;";
 
 		}
-		if ( typeof (data.style) == "string")
+		if (typeof (data.style) == "string")
 			u += data.style;
 		t.style.cssText = u;
 
@@ -122,7 +146,7 @@ dhtmlXForm.prototype.items.inputTree = {
 		if (data.connector)
 			t.setAttribute("connector", data.connector);
 
-		if (dimFix && {input:1, password:1, select:1, calendar:1, colorpicker:1}[this.t]) {
+		if (dimFix && {input: 1, password: 1, select: 1, calendar: 1, colorpicker: 1}[this.t]) {
 			if (dhtmlXForm.prototype.items[this.t]._dim == null) {
 				var w = parseInt(t.style.width);
 				var w2 = (dhx4.isFF || dhx4.isIE ? t.offsetWidth : t.clientWidth);
@@ -131,7 +155,7 @@ dhtmlXForm.prototype.items.inputTree = {
 			t.style.width = parseInt(t.style.width) - dhtmlXForm.prototype.items[this.t]._dim + "px";
 		}
 
-		if ( typeof (data.note) == "object") {
+		if (typeof (data.note) == "object") {
 			var note = document.createElement("DIV");
 			note.className = "dhxform_note";
 			note.style.width = (isNaN(data.note.width) ? t.offsetWidth : parseInt(data.note.width)) + "px";
@@ -141,44 +165,56 @@ dhtmlXForm.prototype.items.inputTree = {
 			note = null;
 		}
 
-		
-		var treeId=data.name+"_UL_inputTree";
-		var contentTree=data.name+"_ContentTree";
+
+		var treeId = data.name + "_UL_inputTree";
+		var contentTree = data.name + "_ContentTree";
 
 		var treeContent = document.createElement("DIV");
 		treeContent.setAttribute("id", contentTree);
 		treeContent.setAttribute("style", "display:none; position: absolute;z-index:999;");
-		var treeDiv= document.createElement("DIV");
+		var treeDiv = document.createElement("DIV");
 		treeDiv.setAttribute("style", "background: none repeat scroll 0 0 #fff;  border: 1px solid #a4bed4; height: 120px; overflow-x: auto; overflow-y: scroll;width: 230px;");
 		treeDiv.setAttribute("id", treeId);
 		treeContent.appendChild(treeDiv);
 		var first = document.body.firstChild;
 		//得到页面的第一个元素
 		document.body.insertBefore(treeContent, first);
-		
-		var tree=new dhtmlXTreeObject(treeId,"100%","100%",0);
-		tree.setImagePath(data.iconPath+"/js/dhtmlxSuite/imgs/dhxtree_skyblue/");
-		tree.enableTreeImages("false");
-		tree.setXMLAutoLoading(data.url); 
-		tree.setDataMode("json");
-		tree.loadJSON(data.url); 
-		tree.attachEvent("onClick", function(id){
-			dhtmlXForm.prototype.items.inputTree.setInputValue(item, tree.getItemText(id),id);
-			dhtmlXForm.prototype.items.inputTree.hideMenu(data.name,data.uid,data.name,contentTree,menuBtn);
-			//send方法需要的值
-			item._value=id;
-		});
-		
-		if (typeof (data.form) == "string"){
-			
-			var menuBtn=data.name+"_TreeBtn";
-			var fName="\""+data.form+".showMenu('"+data.name+"','"+data.uid+"','"+data.name+"','"+contentTree+"','"+menuBtn+"');return false;\""
 
-			var images = document.createElement("DIV");
-			images.className = "dhxform_note";
-			images.setAttribute("style", "width:20px; float:right;");		
-			images.innerHTML = "&nbsp;<a id='"+menuBtn+"' href='#' onclick="+fName+"><img src='"+data.iconPath+"/images/contentDrop.gif'  style='margin-top: 3px;'/></a>";
-			p.appendChild(images);
+		var tree = new dhtmlXTreeObject(treeId, "100%", "100%", 0);
+		var contentDrop = __uri('contentDrop.gif');
+		var img = contentDrop.substr(0, contentDrop.indexOf("/ext/"));
+		tree.setImagePath(img + "/imgs/dhxtree_skyblue/");
+		tree.enableTreeImages("false");
+		tree.setXMLAutoLoading(userdata.url);
+		tree.setDataMode("json");
+		tree.loadJSON(userdata.url);
+		tree.attachEvent("onClick", function (id) {
+			dhtmlXForm.prototype.items.inputTree.setInputValue(item, tree.getItemText(id), id);
+			dhtmlXForm.prototype.items.inputTree.hideMenu(data.name, data.uid, data.name, contentTree, menuBtn);
+			//send方法需要的值
+			item._value = id;
+		});
+
+		//if (typeof (data.form) == "string"){
+		//注册一个全局的点击变量名
+		var treeThat = "INPUTTREE_THAT_" + data.name;
+		eval(treeThat + "=this;");
+
+		var menuBtn = data.name + "_TreeBtn";
+		var fName = treeThat + ".showMenu('" + data.name + "','" + data.uid + "','" + data.name + "','" + contentTree + "','" + menuBtn + "');return false;"
+
+		var images = document.createElement("DIV");
+		images.className = "dhxform_note";
+		images.setAttribute("style", "width:20px; float:right;");
+		images.innerHTML = "&nbsp;<a id='" + menuBtn + "' href='#' onclick=" + fName + "><img src='" + contentDrop + "'  style='margin-top: 3px;'/></a>";
+		p.appendChild(images);
+		//}
+
+		if (!!userdata.selectVar) {
+			eval("selectVar=" + userdata.selectVar);
+		}
+		if (!!userdata.selectUrl) {
+			selectUrl = userdata.selectUrl;
 		}
 	},
 	enable : function(item) {
@@ -198,12 +234,7 @@ dhtmlXForm.prototype.items.inputTree = {
 	}
 };
 
-dhtmlXForm.prototype.showMenu = function(name,id,inputName,contentTree,menuBtn) {
-	return this.doWithItem(name, "showMenu",id,inputName,contentTree,menuBtn)
-};
-dhtmlXForm.prototype.hideMenu = function(name,id,inputName,contentTree,menuBtn) {
-	return this.doWithItem(name, "hideMenu",id,inputName,contentTree,menuBtn)
-};
+
 dhtmlXForm.prototype.getFormData_inputTree = function(name){
 	return this.doWithItem(name, "getValue")
 };

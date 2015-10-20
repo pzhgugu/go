@@ -37,13 +37,13 @@ GPW.form.init = function(window, type) {
 				error : function(request) {
 					alert(request.responseText);
 				},
-				success : processJson
+				success: function (response) {
+					GPW.window.handle.unload();
+					GLOBAL.errorMessage(response);
+					GPW.grid.refreshMainGrid();
+				}
 			});
-			function processJson(response) {
-				GPW.window.handle.unload();
-				GLOBAL.errorMessage(response);
-				GPW.grid.refreshMainGrid();
-			}
+
 			$("#realForm").submit();
 		}
 	});

@@ -29,7 +29,7 @@ public class ExcelJasperShow extends ExelBaseJasper implements IJasperShow {
 			e.printStackTrace();
 		}
 		if(response!=null){
-			DownloadUtils.download(response, outPath, "application/vnd.ms-excel", "2");
+			DownloadUtils.download(response, outPath, "2");
 		}
 		return outPath;
 	}

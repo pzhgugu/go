@@ -8,6 +8,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.ansteel.core.utils.RequestUtils;
 import org.springframework.util.ReflectionUtils;
 
 import com.ansteel.common.model.domain.EntityFieldsForm;
@@ -35,7 +36,9 @@ public class FormFactory {
 	private static final String OPTIONS = "options";
 	
 	private static Map<String,Class> formMap = null;
-	
+
+	private static Map<String, Object> optionTypeMap = null;
+
 	
 	public Form fieldsFormToForm(FieldsForm fieldsForm, Map<String, String> nameMap,HttpServletRequest request) {
 		String type = fieldsForm.getType();
@@ -85,6 +88,8 @@ public class FormFactory {
 					}else if(field.getName().equals("userdata")){
 						String json=(String) value;
 						if(StringUtils.hasText(json)){
+							String contextPath = request.getContextPath();
+							json = json.replaceAll("\\$\\{S_URL\\}", contextPath);
 							value=JsonUtils.objectFromJson(json, Map.class);
 						}else{
 							continue;
@@ -99,7 +104,11 @@ public class FormFactory {
 
 	public List<Options> getOptions(FieldsForm fieldsForm,HttpServletRequest request) {
 		String type = fieldsForm.getType();
-		if(type.equals(new Combo().getType())||type.equals(new Multiselect().getType())||type.equals(new Select().getType())||type.equals(new Checkbox().getType())){
+		if (optionTypeMap == null) {
+			this.initOptionType();
+		}
+		//if(type.equals(new Combo().getType())||type.equals(new Multiselect().getType())||type.equals(new Select().getType())||type.equals(new Checkbox().getType())){
+		if (optionTypeMap.containsKey(type)) {
 			Integer optionType = fieldsForm.getOptionType();
 			if(optionType==null){
 				optionType=0;
@@ -122,6 +131,7 @@ public class FormFactory {
 	}
 
 
+
 	private Form getForm(String name){
 		if(formMap==null){
 			this.initForm();
@@ -140,6 +150,14 @@ public class FormFactory {
 		return null;
 	}
 
+	private void initOptionType() {
+		optionTypeMap = new HashMap<>();
+		optionTypeMap.put(new Combo().getType(), new Combo());
+		optionTypeMap.put(new Multiselect().getType(), new Multiselect());
+		optionTypeMap.put(new Select().getType(), new Select());
+		optionTypeMap.put(new Checkbox().getType(), new Checkbox());
+		optionTypeMap.put(new InputTree().getType(), new InputTree());
+	}
 
 	private void initForm() {
 		formMap = new HashMap<>();
@@ -168,6 +186,7 @@ public class FormFactory {
 		formMap.put(new Upload().getType(), Upload.class);
 		formMap.put(new EditArea().getType(), EditArea.class);
 		formMap.put(new KindEditor().getType(), KindEditor.class);
+		formMap.put(new InputTree().getType(), InputTree.class);
 	}
 
 

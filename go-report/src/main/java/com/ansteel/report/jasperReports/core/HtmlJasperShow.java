@@ -48,7 +48,7 @@ public class HtmlJasperShow implements IJasperShow {
 				e.printStackTrace();
 			}
 			if(response!=null){
-				DownloadUtils.download(response, outPath, "TEXT/HTML", "1");
+				DownloadUtils.download(response, outPath, "1");
 			}
 	
 		return outPath;

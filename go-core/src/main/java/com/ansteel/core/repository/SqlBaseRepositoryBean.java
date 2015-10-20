@@ -43,6 +43,9 @@ public class SqlBaseRepositoryBean implements SqlBaseRepository{
 	private SQLQuery getSQLQuery(String queryString, Map<String, Object> whereMap){
 		Query query = em.createNativeQuery(queryString);		
 		SQLQuery sqlQuery = query.unwrap(SQLQuery.class);
+		if (whereMap == null) {
+			return sqlQuery;
+		}
 		for (Entry<String, Object> entry : whereMap
 				.entrySet()) {
 			if(queryString.indexOf(":"+entry.getKey())>-1){

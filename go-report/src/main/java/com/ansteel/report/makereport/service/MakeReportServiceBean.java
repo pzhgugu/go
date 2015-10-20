@@ -320,7 +320,7 @@ public class MakeReportServiceBean implements MakeReportService {
 		case ReportConstant.PDF:	
 			outPath = attTempPath+"/"+StringUtils.getUuid()+".pdf";
 			this.excelToPdf(path,outPath);
-			DownloadUtils.download(response, outPath, null, "1");
+			DownloadUtils.download(response, outPath, "1");
 			return null;
 		case ReportConstant.HTML:
 			outPath = attTempPath+"/"+StringUtils.getUuid()+".html";

@@ -37,7 +37,7 @@ public class PdfJasperShow implements IJasperShow {
 			e.printStackTrace();
 		}
 		if(response!=null){
-			DownloadUtils.download(response, outPath, "application/pdf", "2");
+			DownloadUtils.download(response, outPath, "2");
 		}
 		return outPath;
 	}

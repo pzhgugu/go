@@ -140,6 +140,12 @@ public class InsertFixedMerger {
             }else {
                 String oldValue = (String) dataMap.get(key);
                 String newValue = (String) nextDataMap.get(key);
+                if (oldValue == null) {
+                    continue;
+                }
+                if (newValue == null) {
+                    continue;
+                }
                 if (!oldValue.equals(newValue)) {
                     currentInsertInfo.setEndRow(currenRow);
                     newLineMap.put(key, mergerFixedMap.get(key));
