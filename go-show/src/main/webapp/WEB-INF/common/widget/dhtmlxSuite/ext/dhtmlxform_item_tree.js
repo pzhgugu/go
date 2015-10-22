@@ -8,8 +8,11 @@
 
 dhtmlXForm.prototype.items.inputTree = {
 	data:{},
+	tree: {},
 	selectVar: {},
 	selectUrl: {},
+	selectIsRoot: {},
+	selectLevel: -1,
 	render : function(item, data) {
 		this.data=data;
 		item._type = "inputTree";
@@ -37,17 +40,17 @@ dhtmlXForm.prototype.items.inputTree = {
 		}
 	},
 	setValue: function(item, value) {
-		if (!!selectVar) {
+		if (!!this.selectVar) {
 			var dValue;
-			_.each(selectVar, function (val) {
+			_.each(this.selectVar, function (val) {
 				if (value == val.value) {
 					dValue = val.text;
 				}
 			});
 			this.setInputValue(item, dValue, value);
 		}
-		if (!!selectUrl) {
-			var url = selectUrl.replace("${id}", value);
+		if (!!this.selectUrl) {
+			var url = this.selectUrl.replace("${id}", value);
 			var htmlobj = $.ajax({url: url, async: false});
 			if (!!htmlobj && !!htmlobj.responseText) {
 				this.setInputValue(item, htmlobj.responseText, value);
@@ -60,6 +63,17 @@ dhtmlXForm.prototype.items.inputTree = {
 	    return item._value;//it's basic code. You can add there any custom code as well.
 	},
 	setInputValue:function(item, showValue,value){
+		var id = tree.getSelectedItemId();
+		if (!!id) {
+			if (this.selectIsRoot == true && tree.hasChildren(id) != 0) {
+				alert("请选择树的根节点！");
+				return;
+			}
+			if (this.selectLevel > -1 && tree.getLevel(id) != this.selectLevel) {
+				alert("请选择树的第" + this.selectLevel + "层节点！");
+				return;
+			}
+		}
 		var vs = $("input:text[name='"+this.data.name+"_Show']");
 		vs.attr("value", showValue);
 		var v = $("input:hidden[name='"+this.data.name+"']");
@@ -180,7 +194,7 @@ dhtmlXForm.prototype.items.inputTree = {
 		//得到页面的第一个元素
 		document.body.insertBefore(treeContent, first);
 
-		var tree = new dhtmlXTreeObject(treeId, "100%", "100%", 0);
+		tree = new dhtmlXTreeObject(treeId, "100%", "100%", 0);
 		var contentDrop = __uri('contentDrop.gif');
 		var img = contentDrop.substr(0, contentDrop.indexOf("/ext/"));
 		tree.setImagePath(img + "/imgs/dhxtree_skyblue/");
@@ -211,10 +225,16 @@ dhtmlXForm.prototype.items.inputTree = {
 		//}
 
 		if (!!userdata.selectVar) {
-			eval("selectVar=" + userdata.selectVar);
+			eval("this.selectVar=" + userdata.selectVar);
 		}
 		if (!!userdata.selectUrl) {
-			selectUrl = userdata.selectUrl;
+			this.selectUrl = userdata.selectUrl;
+		}
+		if (!!userdata.selectIsRoot) {
+			this.selectIsRoot = userdata.selectIsRoot;
+		}
+		if (!!userdata.selectLevel) {
+			this.selectLevel = userdata.selectLevel;
 		}
 	},
 	enable : function(item) {

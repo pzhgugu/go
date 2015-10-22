@@ -3,6 +3,7 @@
  * @require common:widget/dhtmlxSuite/dhtmlx.js
  * @require common:widget/dhtmlxSuite/ext/dhtmlXToolbar_selectEx.js
  * @require common:widget/dhtmlxSuite/ext/dhtmlxgrid_errormessage.js
+ * @require common:widget/dhtmlxSuite/ext/dhtmlxform_item_tree.js
  * @require common:widget/utils/spin.js
  * @require common:widget/dhtmlxSuite/dhtmlxGlobal.js
  */

@@ -246,6 +246,7 @@ GPW.toolbar = {
 
 GPW.form = {
 	mainForm:{},
+	formButtonQueryLaterCallback: {},
 	getMainFormData:function(){
 		return GLOBAL.P.P_FORM;
 	},
@@ -431,6 +432,7 @@ GPW.form = {
 					grid.clearAll();
 					SpinnerCtl.show();
 					grid.load(GPC.url.queryUrl+"?_json="+encodeURI(strJson),"js");
+					GPW.form.formButtonQueryLaterCallback();
 					break;
 				default:					
 			}			

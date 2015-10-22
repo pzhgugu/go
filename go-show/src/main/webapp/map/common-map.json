@@ -43,6 +43,7 @@
                 "common:widget/dhtmlxSuite/dhtmlx.js",
                 "common:widget/dhtmlxSuite/ext/dhtmlXToolbar_selectEx.js",
                 "common:widget/dhtmlxSuite/ext/dhtmlxgrid_errormessage.js",
+                "common:widget/dhtmlxSuite/ext/dhtmlxform_item_tree.js",
                 "common:widget/utils/spin.js",
                 "common:widget/dhtmlxSuite/dhtmlxGlobal.js"
             ]

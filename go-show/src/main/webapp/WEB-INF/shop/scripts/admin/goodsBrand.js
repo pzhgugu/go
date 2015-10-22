@@ -49,3 +49,32 @@ GPW.form.init = function(window, type) {
 	});
 }
 
+
+GPW.form.formButtonQueryLaterCallback = function () {
+	GPW.groupBy();
+}
+GPW.grid.refreshMainGrid = function (url) {
+	if (!url) {
+		url = GPC.url.refreshGridUrl;
+	}
+	GPW.grid.mainGrid.clearAll();
+	SpinnerCtl.show();
+	GPW.grid.mainGrid.load(url, "js");
+
+	GPW.groupBy();
+
+}
+
+GPW.groupBy = function () {
+	GPW.grid.mainGrid.customGroupFormat = function (text, count) {
+		var dValue;
+		_.each(GLOBAL.P.P_GRID_FORMGRIDASSEMBLE.className, function (val) {
+			if (text == val.value) {
+				dValue = val.text;
+			}
+		});
+		return dValue + " (" + count + ")";
+	};
+	GPW.grid.mainGrid.groupBy(2);
+}
+
