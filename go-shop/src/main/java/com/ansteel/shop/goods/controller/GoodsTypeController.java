@@ -2,10 +2,13 @@ package com.ansteel.shop.goods.controller;
 
 import java.util.*;
 
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.domain.TreeInfo;
 import com.ansteel.core.utils.FisUtils;
 import com.ansteel.shop.album.domain.AlbumClass;
 import com.ansteel.shop.goods.domain.GoodsClass;
+import com.ansteel.shop.goods.service.GoodsClassService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,8 +22,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Controller
-@RequestMapping(value = "/goodstype")
+@RequestMapping(value = Public.ADMIN + "/goodstype")
 public class GoodsTypeController  extends BaseController{
+
+	@Autowired
+	GoodsClassService goodsClassService;
 
 	@Override
 	public Collection<EntityInfo> getEntityInfos() {
@@ -48,15 +54,7 @@ public class GoodsTypeController  extends BaseController{
 		return entityInfos;
 	}
 
-	@RequestMapping("/spec")
-	public String spec(Model model,
-					   @RequestParam("id") String typeId,
-					   HttpServletRequest request,
-					   HttpServletResponse response) {
 
-
-		return FisUtils.page("shop:pages/admin/goods/spec.html");
-	}
 
 	@RequestMapping("/brand")
 	public String brand(Model model,
@@ -64,7 +62,8 @@ public class GoodsTypeController  extends BaseController{
 					   HttpServletRequest request,
 					   HttpServletResponse response) {
 
-
+		List<GoodsClass> goodsClassList = goodsClassService.findAll();
+		model.addAttribute("GoodsClassByLayeList", goodsClassList);
 		return FisUtils.page("shop:pages/admin/goods/brand.html");
 	}
 

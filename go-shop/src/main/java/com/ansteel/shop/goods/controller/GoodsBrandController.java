@@ -6,13 +6,18 @@ import java.util.List;
 
 import com.ansteel.core.annotation.PathClass;
 import com.ansteel.core.annotation.PathDatabaseEntity;
+import com.ansteel.core.annotation.PathGridData;
 import com.ansteel.core.annotation.QueryJson;
 import com.ansteel.core.constant.DHtmlxConstants;
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.domain.BaseEntity;
+import com.ansteel.core.exception.PageException;
 import com.ansteel.core.query.PageUtils;
 import com.ansteel.core.utils.QueryMapping;
 import com.ansteel.core.utils.ResponseUtils;
 import com.ansteel.dhtmlx.jsonclass.UDataSet;
+import com.ansteel.dhtmlx.xml.Data;
+import com.ansteel.dhtmlx.xml.GridXml;
 import com.ansteel.report.jasperReports.domain.JasperReport;
 import com.ansteel.shop.goods.service.GoodsBrandService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +42,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 @Controller
-@RequestMapping(value = "/goodsbrand")
+@RequestMapping(value = Public.ADMIN + "/goodsbrand")
 public class GoodsBrandController  extends BaseController{
 
 	@Override
@@ -112,8 +117,62 @@ public class GoodsBrandController  extends BaseController{
 	public void setLogoImage(List<GoodsBrand> goodsBrandList,HttpServletRequest request) {
 		for(GoodsBrand goodsBrand:goodsBrandList){
 			String logoImage=goodsBrand.getLogoImage();
-			String url=request.getContextPath()+"/att/download/"+logoImage;
-			goodsBrand.setLogoImage(url);
+			if (StringUtils.hasText(logoImage)) {
+				String url = request.getContextPath() + "/att/download/" + logoImage;
+				goodsBrand.setLogoImage(url);
+			}
 		}
 	}
+
+	//--------------------------关联--------------------------------------
+
+	@RequestMapping("/load/relation")
+	public
+	@ResponseBody
+	UDataSet loadRelationBrand(
+			@RequestParam(value = "id", required = false) String typeId,
+			HttpServletRequest request,
+			HttpServletResponse response) {
+		List<GoodsBrand> result = goodsBrandService.loadRelationBrand(request.getContextPath(), typeId);
+		return new UDataSet(request, DHtmlxConstants.UI_ROWS, result);
+	}
+
+	@RequestMapping("/query/relation")
+	public
+	@ResponseBody
+	UDataSet queryRelationBrand(
+			@RequestParam(value = "id", required = false) String typeId,
+			@QueryJson List<QueryMapping> queryList,
+			HttpServletRequest request,
+			HttpServletResponse response) {
+		List<GoodsBrand> result = goodsBrandService.queryRelationBrand(request.getContextPath(), typeId, queryList);
+		return new UDataSet(request, DHtmlxConstants.UI_ROWS, result);
+	}
+
+	@RequestMapping("/relation/update")
+	@ResponseBody
+	public Data updateAllAjax(@RequestParam(value = "id", required = false) String typeId,
+							  @RequestParam(value = "ids") String ids,
+							  HttpServletRequest request) {
+		Data data = new Data();
+		if (StringUtils.hasText(ids)) {
+			String[] idArray = ids.split(",");
+			for (String id : idArray) {
+				String valueName = id + "_isSelect";
+				if (request.getParameterMap().containsKey(valueName)) {
+					goodsBrandService.updateBrandRelation(typeId, id, request.getParameter(valueName));
+				} else {
+					throw new PageException("更新异常！");
+				}
+				GridXml gridXml = new GridXml();
+				gridXml.setType("update");
+				gridXml.setTid(id);
+				gridXml.setSid(id);
+				data.addAction(gridXml);
+			}
+		}
+
+		return data;
+	}
+
 }

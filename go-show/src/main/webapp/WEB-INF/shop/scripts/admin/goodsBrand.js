@@ -68,7 +68,7 @@ GPW.grid.refreshMainGrid = function (url) {
 GPW.groupBy = function () {
 	GPW.grid.mainGrid.customGroupFormat = function (text, count) {
 		var dValue;
-		_.each(GLOBAL.P.P_GRID_FORMGRIDASSEMBLE.className, function (val) {
+		_.each(GLOBAL.P.P_GRID_FORMGRIDASSEMBLE.classId, function (val) {
 			if (text == val.value) {
 				dValue = val.text;
 			}

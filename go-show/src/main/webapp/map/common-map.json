@@ -16,6 +16,17 @@
             "uri": "/show/static/common/widget/ajaxfileupload/ajaxfileupload.js",
             "type": "js"
         },
+        "common:widget/colorpicker/evol.colorpicker.css": {
+            "uri": "/show/static/common/widget/colorpicker/evol.colorpicker.css",
+            "type": "css"
+        },
+        "common:widget/colorpicker/evol.colorpicker.min.js": {
+            "uri": "/show/static/common/widget/colorpicker/evol.colorpicker.min.js",
+            "type": "js",
+            "deps": [
+                "common:widget/colorpicker/evol.colorpicker.css"
+            ]
+        },
         "common:widget/dhtmlxSuite/dhtmlx_deprecated.js": {
             "uri": "/show/static/common/widget/dhtmlxSuite/dhtmlx_deprecated.js",
             "type": "js"
@@ -175,12 +186,36 @@
             "uri": "/show/static/common/widget/jquery-ui/themes/ui-lightness/jquery.ui.css",
             "type": "css"
         },
+        "common:widget/jquery.nyroModal/custom.min.js": {
+            "uri": "/show/static/common/widget/jquery.nyroModal/custom.min.js",
+            "type": "js",
+            "deps": [
+                "common:widget/jquery/jquery.js",
+                "common:widget/jquery.nyroModal/styles/nyroModal.css"
+            ]
+        },
+        "common:widget/jquery.nyroModal/ie6.min.js": {
+            "uri": "/show/static/common/widget/jquery.nyroModal/ie6.min.js",
+            "type": "js"
+        },
+        "common:widget/jquery.nyroModal/styles/nyroModal.css": {
+            "uri": "/show/static/common/widget/jquery.nyroModal/styles/nyroModal.css",
+            "type": "css"
+        },
+        "common:widget/jquery/jquery-browser.js": {
+            "uri": "/show/static/common/widget/jquery/jquery-browser.js",
+            "type": "js"
+        },
         "common:widget/jquery/jquery.ajaxContent.pack.js": {
             "uri": "/show/static/common/widget/jquery/jquery.ajaxContent.pack.js",
             "type": "js",
             "deps": [
                 "common:widget/jquery/jquery.js"
             ]
+        },
+        "common:widget/jquery/jquery.flexslider-min.js": {
+            "uri": "/show/static/common/widget/jquery/jquery.flexslider-min.js",
+            "type": "js"
         },
         "common:widget/jquery/jquery.form.js": {
             "uri": "/show/static/common/widget/jquery/jquery.form.js",
@@ -216,7 +251,8 @@
             "uri": "/show/static/common/widget/jquery/jquery.poshytip.js",
             "type": "js",
             "deps": [
-                "common:widget/jquery/jquery.js"
+                "common:widget/jquery/jquery.js",
+                "common:widget/jquery/jquery-browser.js"
             ]
         },
         "common:widget/jquery/jquery.validation.js": {

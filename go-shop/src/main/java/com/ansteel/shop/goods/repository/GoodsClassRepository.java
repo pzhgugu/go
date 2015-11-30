@@ -11,4 +11,5 @@ public interface GoodsClassRepository extends ProjectRepository<GoodsClass,Strin
 
 	List<GoodsClass> findByParent_Id(String id);
 
+	List<GoodsClass> findByLayer(int layer);
 }

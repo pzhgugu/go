@@ -200,7 +200,10 @@ public class ExcelMakeUtils {
                     System.out.println(1);
                 }
                 Assert.isTrue(dataMap.containsKey(fieldName), fieldName + "数据映射没有这个字段！");
-                setCellValue(cell, dataMap.get(fieldName) + "");
+                Object vo = dataMap.get(fieldName);
+                if (vo != null) {
+                    setCellValue(cell, dataMap.get(fieldName) + "");
+                }
             }
         }
     }

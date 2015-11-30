@@ -4,6 +4,7 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 
 import org.hibernate.validator.constraints.NotEmpty;
@@ -28,9 +29,13 @@ public class Store extends BaseEntity{
 	/**
 	 * 机器名（英文）
 	 */
-	
-	@NotEmpty
+
 	private String name;
+
+	/**
+	 * 店主卖家用户名
+	 */
+	private String sellerName;
 	/**
 	 *  排序
 	 */
@@ -46,7 +51,11 @@ public class Store extends BaseEntity{
 	/**
 	 * 店铺等级
 	 */
-	private Integer gradeId;
+	private String gradeId;
+	/**
+	 * 店铺名称
+	 */
+	private String gradeName;
 	/**
 	 * 会员id
 	 */
@@ -196,6 +205,40 @@ public class Store extends BaseEntity{
 	 * 卖家中心的常用操作快捷链接
 	 */
 	private String storeCenterQuicklink;
+	/**
+	 * 店铺公司名称
+	 */
+	private String storeCompanyName;
+	/**
+	 * 主营商品
+	 */
+	@Lob
+	private String storeZy;
+
+	public String getStoreZy() {
+		return storeZy;
+	}
+
+	public void setStoreZy(String storeZy) {
+		this.storeZy = storeZy;
+	}
+
+	public String getGradeName() {
+		return gradeName;
+	}
+
+	public void setGradeName(String gradeName) {
+		this.gradeName = gradeName;
+	}
+
+	public String getStoreCompanyName() {
+		return storeCompanyName;
+	}
+
+	public void setStoreCompanyName(String storeCompanyName) {
+		this.storeCompanyName = storeCompanyName;
+	}
+
 	public Integer getStoreAuth() {
 		return storeAuth;
 	}
@@ -208,10 +251,12 @@ public class Store extends BaseEntity{
 	public void setNameAuth(Integer nameAuth) {
 		this.nameAuth = nameAuth;
 	}
-	public Integer getGradeId() {
+
+	public String getGradeId() {
 		return gradeId;
 	}
-	public void setGradeId(Integer gradeId) {
+
+	public void setGradeId(String gradeId) {
 		this.gradeId = gradeId;
 	}
 	public String getMemberId() {
@@ -447,5 +492,13 @@ public class Store extends BaseEntity{
 	}
 	public void setDisplayOrder(Integer displayOrder) {
 		this.displayOrder = displayOrder;
+	}
+
+	public String getSellerName() {
+		return sellerName;
+	}
+
+	public void setSellerName(String sellerName) {
+		this.sellerName = sellerName;
 	}
 }

@@ -1,15 +1,14 @@
 package com.ansteel.shop.goods.web;
 
 import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import com.ansteel.shop.goods.domain.*;
+import com.ansteel.shop.goods.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -30,15 +29,6 @@ import com.ansteel.shop.album.domain.AlbumPic;
 import com.ansteel.shop.album.service.AlbumClassService;
 import com.ansteel.shop.album.service.AlbumPicService;
 import com.ansteel.shop.constant.ShopConstant;
-import com.ansteel.shop.goods.domain.Goods;
-import com.ansteel.shop.goods.domain.GoodsClass;
-import com.ansteel.shop.goods.domain.GoodsClassStaple;
-import com.ansteel.shop.goods.domain.GoodsImages;
-import com.ansteel.shop.goods.domain.JsonGoodsClass;
-import com.ansteel.shop.goods.service.GoodsClassService;
-import com.ansteel.shop.goods.service.GoodsClassStapleService;
-import com.ansteel.shop.goods.service.GoodsImagesService;
-import com.ansteel.shop.goods.service.GoodsService;
 import com.ansteel.shop.store.domain.Store;
 import com.ansteel.shop.store.service.StoreService;
 import com.ansteel.shop.utils.JavaScriptUtils;
@@ -66,6 +56,12 @@ public class SellerGoodsController {
     @Autowired
     GoodsImagesService goodsImagesService;
 
+    @Autowired
+    StoreService storeService;
+
+    @Autowired
+    GoodsSpecValueService goodsSpecValueService;
+
     @RequestMapping("/addstep/one")
     public String one(Model model,
                       HttpServletRequest request,
@@ -79,6 +75,7 @@ public class SellerGoodsController {
 
         model.addAttribute("P_STEP", 1);
         model.addAttribute("P_CURRENT_OP", "GoodsAdd");
+        model.addAttribute("P_CURRENT_TOP", "goods");
         Map<String, String> nav = new HashMap<>();
         nav.put("n1", "商家管理中心");
         nav.put("n2", "商品");
@@ -151,6 +148,33 @@ public class SellerGoodsController {
         //检查并保存常用分类
         goodsClassStapleService.checkSaveStaple(goodsClass);
 
+
+        //得到商品类型
+        Store store = storeService.getCurrentStore();
+        GoodsType goodsType = goodsClass.getGoodsType();
+        if (goodsType != null) {
+            //关联规格
+            Collection<GoodsSpec> goodsSpecs = goodsType.getGoodsSpecs();
+            model.addAttribute("P_GOODSSPECS", goodsSpecs);
+            if (goodsSpecs.size() > 0) {
+                List<GoodsSpecValue> goodsSpecValueList = goodsSpecValueService.findByStoreIdOrderByStoreIdAsc(store.getId());
+                model.addAttribute("P_GOODSSPECVALUE_LIST", goodsSpecValueList);
+            }
+            //关联品牌
+            Collection<GoodsBrand> goodsBrands = goodsType.getGoodsBrands();
+            model.addAttribute("P_GOODSBRADNS", goodsBrands);
+            //关联属性
+            Collection<GoodsAttribute> goodsAttributes = goodsType.getGoodsAttribute();
+            Map<String, String[]> attributesMap = new HashMap<>();
+            for (GoodsAttribute ga : goodsAttributes) {
+                String values = ga.getAttrValue();
+                String[] vArray = values.split(",");
+                attributesMap.put(ga.getAttrName(), vArray);
+            }
+            model.addAttribute("P_GOODSATTRIBUTE", attributesMap);
+        }
+        model.addAttribute("P_GOODSTYPE", goodsType);
+
         model.addAttribute("P_GOODSCLASS_LISTNAME", this.getGoodsClassListName(goodsClass));
         model.addAttribute("P_GOODSCLASS", goodsClass);
 
@@ -161,6 +185,7 @@ public class SellerGoodsController {
         model.addAttribute("P_NAV", nav);
         model.addAttribute("P_STEP", 2);
         model.addAttribute("P_CURRENT_OP", "GoodsAdd");
+        model.addAttribute("P_CURRENT_TOP", "goods");
         model.addAttribute("P_VIEW", "shop:pages/seller/GoodsAdd/goodsAddStep2.html.jsp");
         return FisUtils.page("shop:widget/tpl/seller/framework.html");
     }
@@ -269,6 +294,7 @@ public class SellerGoodsController {
         nav.put("n3", "商品发布");
         model.addAttribute("P_STEP", 3);
         model.addAttribute("P_NAV", nav);
+        model.addAttribute("P_CURRENT_TOP", "goods");
         model.addAttribute("P_VIEW", "shop:pages/seller/GoodsAdd/goodsAddStep3.html.jsp");
         return FisUtils.page("shop:widget/tpl/seller/framework.html");
     }
@@ -350,6 +376,7 @@ public class SellerGoodsController {
         model.addAttribute("P_NAV", nav);
         model.addAttribute("P_STEP", 4);
         model.addAttribute("P_CURRENT_OP", "GoodsAdd");
+        model.addAttribute("P_CURRENT_TOP", "goods");
         model.addAttribute("P_VIEW", "shop:pages/seller/GoodsAdd/goodsAddStep4.html.jsp");
         return FisUtils.page("shop:widget/tpl/seller/framework.html");
     }

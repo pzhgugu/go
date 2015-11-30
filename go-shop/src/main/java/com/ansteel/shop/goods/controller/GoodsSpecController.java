@@ -5,6 +5,7 @@ import com.ansteel.core.annotation.PathDatabaseEntity;
 import com.ansteel.core.annotation.PathGridData;
 import com.ansteel.core.annotation.QueryJson;
 import com.ansteel.core.constant.DHtmlxConstants;
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.controller.BaseController;
 import com.ansteel.core.controller.SaveBefore;
 import com.ansteel.core.domain.BaseEntity;
@@ -15,9 +16,7 @@ import com.ansteel.core.utils.QueryMapping;
 import com.ansteel.dhtmlx.jsonclass.UDataSet;
 import com.ansteel.dhtmlx.xml.Data;
 import com.ansteel.shop.goods.domain.GoodsSpec;
-import com.ansteel.shop.goods.domain.GoodsType;
-import com.ansteel.shop.goods.service.GoodsSpecServiceBean;
-import com.ansteel.shop.goods.service.GoodsTypeService;
+import com.ansteel.shop.goods.service.GoodsSpecService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -41,11 +40,11 @@ import java.util.List;
  * Created by Administrator on 2015/9/1.
  */
 @Controller
-@RequestMapping(value = "/goodsscpec")
+@RequestMapping(value = Public.ADMIN + "/goodsscpec")
 public class GoodsSpecController extends BaseController implements SaveBefore {
 
     @Autowired
-    GoodsSpecServiceBean goodsSpecServiceBean;
+    GoodsSpecService goodsSpecService;
 
     @Override
     public Collection<EntityInfo> getEntityInfos() {
@@ -70,7 +69,7 @@ public class GoodsSpecController extends BaseController implements SaveBefore {
         if (StringUtils.hasText(posStart)) {
             pageable = new PageRequest(PageUtils.getTotalPages(posStart), PageUtils.getMaxResults());
         }
-        Page page = goodsSpecServiceBean.findSelectGoodsTypes(value, pageable);
+        Page page = goodsSpecService.findSelectGoodsTypes(value, pageable);
         return new UDataSet(request, DHtmlxConstants.UI_ROWS, page);
     }
 
@@ -88,7 +87,7 @@ public class GoodsSpecController extends BaseController implements SaveBefore {
         UDataSet dataSet = super.queryPageAjax(clazz, key, value, posStart, count, order, queryList, request, response);
 
         Page page = (Page) dataSet.getResult();
-        goodsSpecServiceBean.querySelect(page, value);
+        goodsSpecService.querySelect(page, value);
         return new UDataSet(request, DHtmlxConstants.UI_ROWS, page);
     }
 
@@ -97,7 +96,7 @@ public class GoodsSpecController extends BaseController implements SaveBefore {
         if (entity.getClass() == GoodsSpec.class) {
             GoodsSpec goodsSpec = (GoodsSpec) entity;
 
-            List<GoodsSpec> list = goodsSpecServiceBean.findBySpName(goodsSpec.getSpName());
+            List<GoodsSpec> list = goodsSpecService.findBySpName(goodsSpec.getSpName());
             int size = list.size();
             if (StringUtils.hasText(entity.getId())) {
                 if (size == 1) {
@@ -128,7 +127,7 @@ public class GoodsSpecController extends BaseController implements SaveBefore {
         if (entity.getClass() == GoodsSpec.class) {
             GoodsSpec goodsSpec = (GoodsSpec) entity;
             Assert.notNull(value, "类型id不能为空！");
-            goodsSpecServiceBean.save(goodsSpec, value);
+            goodsSpecService.save(goodsSpec, value);
         } else {
             super.saveAjax(entity, result, key, value, request, response);
         }
@@ -141,7 +140,7 @@ public class GoodsSpecController extends BaseController implements SaveBefore {
                               @RequestParam(value = "_value", required = false) String value,
                               HttpServletRequest request) {
 
-        goodsSpecServiceBean.select(baseEntityLsit, value);
+        goodsSpecService.select(baseEntityLsit, value);
         return super.updateAllAjax(baseEntityLsit, key, value, request);
     }
 }

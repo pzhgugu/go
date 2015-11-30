@@ -94,10 +94,10 @@ function gcategoryChange()
     $(this).parent().find(".mls_names").val(names.join("\t"));
 
     // ajax请求下级分类
-    if (this.value > 0)
+	if (!!this.value)
     {
         var _self = this;
-        var url = SITEURL + '/index.php?act=index&op=josn_class&callback=?';
+		var url = SITEURL + '/cl/goodsclass/jsonclass?callback=?';
         $.getJSON(url, {'gc_id':this.value}, function(data){
             if (data)
             {

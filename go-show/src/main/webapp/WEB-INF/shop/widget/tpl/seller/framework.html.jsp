@@ -28,6 +28,7 @@
 <fis:require id="shop:scripts/common.js"/>
 <fis:require id="shop:scripts/seller.js"/>
 
+    <fis:scripts/>
 <script>
 var COOKIE_PRE = '5BF5_';
 var _CHARSET = 'utf-8';
@@ -69,7 +70,6 @@ div.tip-yellowsimple div.tip-inner{background-position:-10px -10px;}
 div.tip-yellowsimple div.tip-arrow{
 visibility:hidden;position:absolute;overflow:hidden;font:1px/1px sans-serif;}
 </style>
-
 </head>
 <body>
 
@@ -85,9 +85,6 @@ visibility:hidden;position:absolute;overflow:hidden;font:1px/1px sans-serif;}
 <fis:block url="shop:widget/tpl/seller/footer.html.jsp" />
 
 
-
-
-<fis:scripts/>
 <fis:out id="shop:scripts/dialog/dialog.js" iid="dialog_js" />
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>

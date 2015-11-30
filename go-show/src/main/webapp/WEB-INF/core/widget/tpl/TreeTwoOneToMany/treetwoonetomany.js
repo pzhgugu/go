@@ -807,8 +807,8 @@ GPW.form = {
 		return window.attachForm(formData);
 	},
 	init:function(window,type){
-		var formData = this.getMainFormData();		
-		this.mainForm =this.getForm(window,formData);
+		var formData = this.getMainFormData();
+		this.mainForm = this.getForm(window, formData, type);
 		
 		if(type==GPC.constant.edit)
 			this.updateMainFromData();

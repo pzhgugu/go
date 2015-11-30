@@ -36,4 +36,6 @@ public interface GoodsSpecService {
     void select(List<BaseEntity> baseEntityLsit, String goodsTypesId);
 
     void querySelect(Page page, String goodsTypesId);
+
+    GoodsSpec findOne(String id);
 }

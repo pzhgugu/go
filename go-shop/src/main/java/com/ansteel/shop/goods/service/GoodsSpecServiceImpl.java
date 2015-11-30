@@ -17,7 +17,7 @@ import java.util.List;
  * Created by Administrator on 2015/9/7.
  */
 @Service
-public class GoodsSpecServiceBean implements GoodsSpecService {
+public class GoodsSpecServiceImpl implements GoodsSpecService {
 
     @Autowired
     GoodsSpecRepository goodsSpecRepository;
@@ -87,10 +87,16 @@ public class GoodsSpecServiceBean implements GoodsSpecService {
                 for (GoodsSpec select : goodsSpecsList) {
                     if(goodsSpec.getId()==select.getId()){
                         isSelect=1;
+                        break;
                     }
                 }
                 goodsSpec.setIsSelect(isSelect);
             }
         }
+    }
+
+    @Override
+    public GoodsSpec findOne(String id) {
+        return goodsSpecRepository.findOne(id);
     }
 }

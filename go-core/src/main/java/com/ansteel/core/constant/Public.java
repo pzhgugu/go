@@ -167,5 +167,13 @@ public class Public {
 	 * 客户端标示
 	 */
 	public static final String CLIENT="/cl";
+	/**
+	 * 卖家中心
+	 */
+	public static final String SELLER = "/se";
+	/**
+	 * 管理界面
+	 */
+	public static final String ADMIN = "/admin";
 	
 }

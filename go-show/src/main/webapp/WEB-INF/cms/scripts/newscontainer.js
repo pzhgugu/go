@@ -90,9 +90,14 @@ GPW.grid = {
 			SpinnerCtl.close();
 			grid_obj.forEachRow(function(id){
 				var dImg=__uri("../images/delect.ico");
-				var uImg=__uri("../images/update.gif");
+				var uImg = __uri("../images/modify1.png");
 				this.cells(id,this.getColIndexById("delect")).setValue(dImg);
 				this.cells(id,this.getColIndexById("update")).setValue(uImg);
+				$("td img").hover(function () {
+					$(this).css({cursor: "pointer"})
+				}, function () {
+					$(this).css({cursor: ""})
+				})
 				
 			});
 		});

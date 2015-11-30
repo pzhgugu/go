@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 import com.ansteel.core.controller.SaveBefore;
+import com.ansteel.core.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
@@ -198,7 +199,10 @@ public class ExcelController extends BaseController  implements SaveBefore  {
 		if(entity.getClass()==ExcelReportSQL.class){
 			ExcelReportSQL sqlEntty= (ExcelReportSQL) entity;
 			sqlEntty.setRecode(sqlEntty.getRecode().toUpperCase());
-			sqlEntty.setFixedRecode(sqlEntty.getFixedRecode().toUpperCase());
+			String fixedRecode = sqlEntty.getFixedRecode();
+			if (StringUtils.hasText(fixedRecode)) {
+				sqlEntty.setFixedRecode(fixedRecode.toUpperCase());
+			}
 		}
 	}
 }

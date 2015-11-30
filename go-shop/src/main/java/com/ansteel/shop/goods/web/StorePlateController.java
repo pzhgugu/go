@@ -50,6 +50,7 @@ public class StorePlateController {
         model.addAttribute("P_PAGE_SHOW", page);
         model.addAttribute("P_PLATE_LIST", page.getContent());
 
+        model.addAttribute("P_CURRENT_TOP", "goods");
         model.addAttribute("P_CURRENT_OP", "plate");
         Map<String, String> nav = new HashMap<>();
         nav.put("n1", "商家管理中心");
