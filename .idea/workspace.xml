@@ -4,7 +4,7 @@
     <option name="ANALYSIS_IN_BACKGROUND" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23d20e94-640b-4f14-9abe-d205c42b79fd" name="Default" comment="">
+    <list default="true" id="23d20e94-640b-4f14-9abe-d205c42b79fd" name="Default" comment="开发(电商修改)">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/emoticons/images/0.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/emoticons/images/1.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/emoticons/images/10.gif" />
@@ -453,7 +453,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/wordpaste/wordpaste.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery-ui/i18n/zh-CN.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery-ui/i18n/zh-TW.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/pom.xml" afterPath="$PROJECT_DIR$/go-report/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/resources/publish/AutoPublish.xml" afterPath="$PROJECT_DIR$/go-show/src/main/resources/publish/AutoPublish.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="go.iws" />
@@ -836,6 +836,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1281,7 +1303,7 @@
       <workItem from="1441285567541" duration="5301000" />
       <workItem from="1441323529552" duration="25929000" />
       <workItem from="1441408859488" duration="686000" />
-      <workItem from="1449301998863" duration="6525000" />
+      <workItem from="1449301998863" duration="6738000" />
     </task>
     <task id="LOCAL-00001" summary="测试一下">
       <created>1440299520520</created>
@@ -1379,11 +1401,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449308308510</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="开发(电商修改)">
+      <created>1449308607525</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1449308607525</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241755000" />
+    <option name="totallyTimeSpent" value="241968000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

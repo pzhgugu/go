@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Root VERSION="fbebc9c9-152d-4459-8aa5-ee56d2aa3368">
+<Root VERSION="42f6a04a-3d3f-4b69-9f85-6b183ce4b915">
   <Message Class="com.ansteel.common.menu.domain.Menu" Execute="com.ansteel.common.backup.fun.MenuExecute">
     <DataRow>
       <url></url>
@@ -103135,7 +103135,7 @@ LIMIT 0,50
     <DataRow>
       <testParam></testParam>
       <testLink></testLink>
-      <type>1</type>
+      <type>2</type>
       <openType>1</openType>
       <versionPublish>1</versionPublish>
       <excelReport>402897814f69dd23014f69f852aa0008</excelReport>
@@ -103143,9 +103143,9 @@ LIMIT 0,50
       <alias>1</alias>
       <displayOrder>1</displayOrder>
       <id>402897814f69dd23014f69fbe11c000a</id>
-      <version>4</version>
+      <version>9</version>
       <created>2015-08-26 20:29:19.0</created>
-      <updated>2015-09-13 09:22:33.0</updated>
+      <updated>2015-12-04 11:25:26.0</updated>
       <creator>administrator</creator>
       <lastUpdater>administrator</lastUpdater>
     </DataRow>
