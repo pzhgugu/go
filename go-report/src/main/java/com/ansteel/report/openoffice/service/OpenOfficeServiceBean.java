@@ -1,6 +1,6 @@
 package com.ansteel.report.openoffice.service;
 
-import java.io.File;
+/*import java.io.File;
 import java.util.Date;
 import java.util.Map;
 
@@ -12,7 +12,7 @@ import org.artofsolving.jodconverter.OfficeDocumentConverter;
 import org.artofsolving.jodconverter.office.DefaultOfficeManagerConfiguration;
 import org.artofsolving.jodconverter.office.OfficeManager;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Component;*/
 import org.springframework.stereotype.Service;
 
 /**
@@ -25,7 +25,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class OpenOfficeServiceBean implements OpenOfficeService {
 
-	static Logger logger = Logger.getLogger(OpenOfficeServiceBean.class);
+	/*static Logger logger = Logger.getLogger(OpenOfficeServiceBean.class);
 	
 	private static OfficeManager officeManager;
 	
@@ -94,6 +94,6 @@ public class OpenOfficeServiceBean implements OpenOfficeService {
 			}
 			logger.info("关闭office转换成功!");
 		}
-	}
+	}*/
 
 }

@@ -17,7 +17,7 @@ import com.ansteel.shop.store.service.StoreService;
 
 @Service
 @Transactional(readOnly=true)
-public class GoodsClassStapleServiceBean implements GoodsClassStapleService {
+public class GoodsClassStapleServiceImpl implements GoodsClassStapleService {
 	
 	@Autowired
 	StoreService storeService;

@@ -17,7 +17,7 @@ public class OpenOfficeServiceBeanTest extends SpringBaseTest{
 	OpenOfficeService openOfficeService;
 	@Test
 	public void testPdf() {
-		File excelFile = new File("d:/test/poi/Book1.xlsx");
+		/*File excelFile = new File("d:/test/poi/Book1.xlsx");
 		if(excelFile.exists()){
 			File pdfFile = new File("d:/test/poi/Book1.pdf");
 			if(pdfFile.exists())//pdf文件存在则删除
@@ -25,7 +25,7 @@ public class OpenOfficeServiceBeanTest extends SpringBaseTest{
 			if(!openOfficeService.convert2PDF(excelFile, pdfFile)){
 				throw new PageException("pdf文档转换失败！");
 			}			
-		}
+		}*/
 	}
 
 }

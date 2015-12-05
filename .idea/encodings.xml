@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/go-cms" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/go-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/go-report" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/go-shop" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/go-show" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/go-show/src/main/resources/Aspose.Total.Java.lic" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/common/widget/jquery.nyroModal" charset="GBK" />
     <file url="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/common/widget/jquery/jquery.poshytip.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/images/sky" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/images/store_joinin" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/scripts/jqtreetable.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/scripts/store_goods_list.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/scripts/store_slide.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/styles/skin_0.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/styles/store_joinin.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/go-show/src/main/webapp/res/img/store/slides/f01.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/go-show/src/main/webapp/res/img/store/slides/f02.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/go-show/src/main/webapp/res/img/store/slides/f03.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/go-show/src/main/webapp/res/img/store/slides/f04.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/go-show/src/main/webapp/res/img/treetable" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

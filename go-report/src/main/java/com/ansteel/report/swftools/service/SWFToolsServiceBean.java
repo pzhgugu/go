@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.text.MessageFormat;
 
+import com.ansteel.core.utils.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -26,11 +27,17 @@ public class SWFToolsServiceBean implements SWFToolsService {
 	
 	@Value("${go_pro.pdf2swf}")
 	private String pdf2swfPath;
+	@Value("${go_pro.pdf2swf.languagedir}")
+	private String languagedir;
 
-	private static String cmd = "{0} \"{1}\" -o \"{2}\" -T 9 -f";
+	//private static String cmd = "{0} \"{1}\" -o \"{2}\" -T 9 -f";
+	private static String cmd = "{0} -T 9 -s poly2bitmap -s zoom=150 -s flashversion=9  {1} -o {2} ";
 
-	private static String getCmdStr(String pdf2swfPath, String sourcePath,
+	private static String getCmdStr(String languageDir, String pdf2swfPath, String sourcePath,
 			String destPath) {
+		if (StringUtils.hasText(languageDir)) {
+			pdf2swfPath += " languagedir=" + languageDir;
+		}
 		return MessageFormat.format(cmd, pdf2swfPath, sourcePath, destPath);
 	}
 
@@ -49,12 +56,14 @@ public class SWFToolsServiceBean implements SWFToolsService {
 			return true;
 		}
 		// 请注意swf软件安装路径
-		String command = this.getCmdStr(getPdf2swfPath(),
+		String command = this.getCmdStr(languagedir, getPdf2swfPath(),
 				pdfFile.getAbsolutePath(), swfFile.getAbsolutePath());
 
 		try {
 			logger.info("开始转换文档: " + pdfFile.getName());
+			System.out.print(command);
 			Process pro = Runtime.getRuntime().exec(command);
+
 			logger.info(loadStream(pro.getInputStream()));
 			logger.info(loadStream(pro.getErrorStream()));
 			logger.info(loadStream(pro.getInputStream()));

@@ -1,19 +1,18 @@
 package com.ansteel.core.domain;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.Column;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.ansteel.core.constant.Constants;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 /**
  * 创 建 人：gugu
  * 创建日期：2015-04-10
@@ -33,11 +32,12 @@ public class TreeEntity<T extends TreeEntity> extends OperEntity{
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name = "PARENT_ID")
+	@OrderBy("displayOrder")
 	@JsonIgnore
 	private T parent;
 	
 	@OneToMany(mappedBy="parent",fetch=FetchType.LAZY)
-	private Set<T> children=new HashSet<T>();
+	private Collection<T> children = new ArrayList<T>();
 	
 	@Column(name="LAYER" ,nullable=false,columnDefinition="INT default 0")
 	private Integer layer;
@@ -56,7 +56,7 @@ public class TreeEntity<T extends TreeEntity> extends OperEntity{
 		this.layer = layer;
 	}
 
-	public void setChildren(Set<T> children) {
+	public void setChildren(Collection<T> children) {
 		this.children = children;
 	}
 

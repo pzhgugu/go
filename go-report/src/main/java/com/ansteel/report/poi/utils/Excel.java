@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.ansteel.core.utils.StringUtils;
 import org.apache.poi.POIXMLDocument;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
@@ -183,7 +184,19 @@ public class Excel {
 	public static void setCellValue(Cell c, String o) {
 		switch (c.getCellType()) {
 		case Cell.CELL_TYPE_BLANK:// 空白
-			c.setCellValue(String.valueOf(o));
+			if (StringUtils.hasText(o)) {
+				try {
+					if (NumberValidationUtils.isWholeNumber(o)) {
+						c.setCellValue(Integer.valueOf(o));
+					} else if (NumberValidationUtils.isDecimal(o)) {
+						c.setCellValue(Double.valueOf(o));
+					} else {
+						c.setCellValue(String.valueOf(o));
+					}
+				} catch (Exception e) {
+					c.setCellValue(String.valueOf(o));
+				}
+			}
 			break;
 		case Cell.CELL_TYPE_BOOLEAN:// 布尔
 			c.setCellValue(Boolean.valueOf(o));
@@ -192,16 +205,18 @@ public class Excel {
 			c.setCellValue(String.valueOf(o));
 			break;
 		case Cell.CELL_TYPE_NUMERIC:// 数字格式
-			try {
-				if (NumberValidationUtils.isWholeNumber(o)) {
-					c.setCellValue(Integer.valueOf(o));
-				} else if (NumberValidationUtils.isDecimal(o)) {
-					c.setCellValue(Double.valueOf(o));
-				} else {
+			if (StringUtils.hasText(o)) {
+				try {
+					if (NumberValidationUtils.isWholeNumber(o)) {
+						c.setCellValue(Integer.valueOf(o));
+					} else if (NumberValidationUtils.isDecimal(o)) {
+						c.setCellValue(Double.valueOf(o));
+					} else {
+						c.setCellValue(String.valueOf(o));
+					}
+				} catch (Exception e) {
 					c.setCellValue(String.valueOf(o));
 				}
-			} catch (Exception e) {
-				c.setCellValue(String.valueOf(o));
 			}
 			break;
 		case Cell.CELL_TYPE_STRING:// 字符串

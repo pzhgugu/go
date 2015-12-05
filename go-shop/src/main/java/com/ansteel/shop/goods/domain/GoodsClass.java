@@ -19,21 +19,19 @@ import java.util.Collection;
  */
 @Entity
 @Table(name = Constants.G_TABLE_PREFIX + "goods_class")
-public class GoodsClass extends  TreeEntity<GoodsClass>{
+public class GoodsClass extends TreeEntity<GoodsClass> {
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = -665742313428797578L;
-	
+
 	/**
 	 * 类型id
 	 */
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "goodsClass",fetch=FetchType.EAGER)
-    @Fetch(FetchMode.SUBSELECT)
-    @OrderBy("typeSort")
-    @JsonIgnore
-	private Collection<GoodsType> goodsTypeList;
+	@OneToOne(cascade = CascadeType.ALL, mappedBy = "goodsClass")
+	@JsonIgnore
+	private GoodsType goodsType;
 	/**
 	 * 店铺ID，0为系统后台发布
 	 */
@@ -53,45 +51,54 @@ public class GoodsClass extends  TreeEntity<GoodsClass>{
 	/**
 	 * 描述
 	 */
-	@Column(length=4000)
+	@Column(length = 4000)
 	private String description;
+
 	public String getStoreId() {
 		return storeId;
 	}
+
 	public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}
-	
+
 	public Integer getIsShow() {
 		return isShow;
 	}
+
 	public void setIsShow(Integer isShow) {
 		this.isShow = isShow;
 	}
+
 	public Integer getIndexShow() {
 		return indexShow;
 	}
+
 	public void setIndexShow(Integer indexShow) {
 		this.indexShow = indexShow;
 	}
+
 	public String getKeywords() {
 		return keywords;
 	}
+
 	public void setKeywords(String keywords) {
 		this.keywords = keywords;
 	}
+
 	public String getDescription() {
 		return description;
 	}
+
 	public void setDescription(String description) {
 		this.description = description;
 	}
 
-    public Collection<GoodsType> getGoodsTypeList() {
-        return goodsTypeList;
-    }
+	public GoodsType getGoodsType() {
+		return goodsType;
+	}
 
-    public void setGoodsTypeList(Collection<GoodsType> goodsTypeList) {
-        this.goodsTypeList = goodsTypeList;
-    }
+	public void setGoodsType(GoodsType goodsType) {
+		this.goodsType = goodsType;
+	}
 }

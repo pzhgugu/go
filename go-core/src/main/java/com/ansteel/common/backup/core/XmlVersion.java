@@ -1,5 +1,6 @@
 package com.ansteel.common.backup.core;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -44,7 +45,7 @@ public class XmlVersion implements IXmlVersion {
 	private String getPath() {
 		String path="";
 		if(StringUtils.hasText(attPath)){
-			path=attPath+"\\"+VERSION_FILENAME;
+			path = attPath + File.separator + VERSION_FILENAME;
 		}else{
 			path=System.getProperty("java.io.tmpdir")+VERSION_FILENAME;
 		}

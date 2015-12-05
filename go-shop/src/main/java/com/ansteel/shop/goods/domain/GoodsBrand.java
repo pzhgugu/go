@@ -6,6 +6,7 @@ import com.ansteel.core.constant.Constants;
 import com.ansteel.core.domain.BaseEntity;
 import com.ansteel.core.domain.OperEntity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.Formula;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -30,9 +31,15 @@ public class GoodsBrand extends BaseEntity{
      * 品牌名称
      */
     private String brandName;
+
+	/**
+	 * 类别ID
+	 */
+	private String classId;
 	/**
 	 * 类别名称
 	 */
+	@Formula("(select s.name from go_goods_class s where s.ID =CLASSID)")
 	private String className;
 	/**
 	 * logo
@@ -54,6 +61,12 @@ public class GoodsBrand extends BaseEntity{
 	 * 品牌申请，0为申请中，1为通过，默认为1，申请功能是会员使用，系统后台默认为1
 	 */
 	private Integer brandApply;
+
+	/**
+	 * 当前类型是否关联品牌
+	 */
+	@Transient
+	private Integer isSelect;
 
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE},
             fetch= FetchType.LAZY)
@@ -116,5 +129,21 @@ public class GoodsBrand extends BaseEntity{
 
     public void setBrandSort(Integer brandSort) {
         this.brandSort = brandSort;
-    }
+	}
+
+	public Integer getIsSelect() {
+		return isSelect;
+	}
+
+	public void setIsSelect(Integer isSelect) {
+		this.isSelect = isSelect;
+	}
+
+	public String getClassId() {
+		return classId;
+	}
+
+	public void setClassId(String classId) {
+		this.classId = classId;
+	}
 }

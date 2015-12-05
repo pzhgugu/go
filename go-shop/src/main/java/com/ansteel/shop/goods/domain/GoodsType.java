@@ -3,6 +3,8 @@ package com.ansteel.shop.goods.domain;
 import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import com.ansteel.core.constant.Constants;
@@ -41,14 +43,14 @@ public class GoodsType extends BaseEntity{
     /**
      * 分类id
      */
-    @ManyToOne(cascade={CascadeType.REFRESH, CascadeType.MERGE}, optional=true,
-            fetch= FetchType.LAZY)
+    @OneToOne(cascade = {CascadeType.REFRESH, CascadeType.MERGE}, optional = true)
     @JoinColumn(name = "classId", nullable = false)
     @JsonIgnore
     private GoodsClass goodsClass;
 
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, mappedBy = "goodsTypes",
             fetch=FetchType.LAZY)
+    @OrderBy("spSort")
     @JsonIgnore
     private Collection<GoodsSpec> goodsSpecs=new ArrayList<GoodsSpec>();
 
@@ -56,6 +58,20 @@ public class GoodsType extends BaseEntity{
             fetch=FetchType.LAZY)
     @JsonIgnore
     private Collection<GoodsBrand> goodsBrands=new ArrayList<GoodsBrand>();
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "goodsType", fetch = FetchType.LAZY)
+    @Fetch(FetchMode.SUBSELECT)
+    @OrderBy("attrSort")
+    @JsonIgnore
+    private Collection<GoodsAttribute> goodsAttribute;
+
+    public Collection<GoodsAttribute> getGoodsAttribute() {
+        return goodsAttribute;
+    }
+
+    public void setGoodsAttribute(Collection<GoodsAttribute> goodsAttribute) {
+        this.goodsAttribute = goodsAttribute;
+    }
 
     public Collection<GoodsBrand> getGoodsBrands() {
         return goodsBrands;

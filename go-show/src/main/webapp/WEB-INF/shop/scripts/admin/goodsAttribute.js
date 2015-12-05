@@ -11,7 +11,7 @@ GPW.formGrid = {
         attrListGrid.setImagePath(GLOBAL.IconsPath);
         attrListGrid.setHeader("排序,名称");
         attrListGrid.setColumnIds("sort,name");
-        attrListGrid.setInitWidths("50,445");
+        attrListGrid.setInitWidths("50,428");
         attrListGrid.setColAlign("left,left");
         attrListGrid.setColTypes("dyn,edtxt");
         attrListGrid.setColSorting("str,str");
@@ -44,7 +44,7 @@ GPW.formGrid = {
             {"type": "newcolumn", "offset": 10},
             {"type": "button", "value": "更新属性", "name": "updateAtt"},
             {"type": "newcolumn", "offset": 10},
-            {"type": "button", "value": "删除属性", "name": "delAtt"},], "width": 680
+            {"type": "button", "value": "删除属性", "name": "delAtt"},], "width": 300
         };
         mainForm.addItem("id", itemData, 1);
 
@@ -120,22 +120,11 @@ $(function () {
     GPW.form.getForm = function (window, formData, type) {
         var mainForm = window.attachForm(formData);
         GPW.formGrid.init(mainForm, type);
-        return mainForm;
-    }
-
-    GPW.window.createWindow = function () {
-        if (!parent.GPW) {
-            this.initHandle();
-            this.handle.attachViewportTo("layoutObj");
-            this.mainWindow = this.handle.createWindow("w1", $("#layoutObj").width() / 2 - (GLOBAL.V.MainWindowWidth / 2), 30, GLOBAL.V.MainWindowWidth, GLOBAL.V.MainWindowHeight);
-        } else {
-            this.mainWindow = parent.GPW.window.initSubWindow(GLOBAL.V.MainWindowWidth, GLOBAL.V.MainWindowHeight);
-            parent.GPW.cache.grid = GPW.grid.mainGrid;
-        }
-        this.mainWindow.attachEvent("onClose", function (win) {
+        GPW.window.mainWindow.attachEvent("onClose", function (win) {
             GPW.grid.refreshMainGrid();
             return true;
         });
+        return mainForm;
     }
 
 });

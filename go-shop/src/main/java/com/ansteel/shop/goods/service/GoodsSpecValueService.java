@@ -21,4 +21,5 @@ public interface GoodsSpecValueService {
 
     List<GoodsSpecValue> findByStoreIdOrderByStoreIdAsc(String storeId);
 
+    GoodsSpecValue save(String gcId, String spId, String name);
 }

@@ -20,7 +20,7 @@ import com.ansteel.shop.store.service.StoreService;
 
 @Service
 @Transactional(readOnly=true)
-public class AlbumClassServiceBean implements AlbumClassService {
+public class AlbumClassServiceImpl implements AlbumClassService {
 	
 	@Autowired
 	AlbumClassRepository albumClassRepository;

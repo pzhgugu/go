@@ -1,3 +1,4 @@
+
 var KE;
   KindEditor.ready(function(K) {
         KE = K.create("textarea[name='g_body']", {
@@ -7,7 +8,7 @@ var KE;
             'superscript', '|', 'selectall', 'clearhtml','quickformat','|',
             'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
             'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image', 'flash', 'media', 'table', 'hr', 'emoticons', 'link', 'unlink', '|', 'about'],
-						cssPath : "../../common/widget/kindeditor/themes/default/default.css",
+			//	cssPath : "../../common/widget/kindeditor/themes/default/default.css",
 						allowImageUpload : false,
 						allowFlashUpload : false,
 						allowMediaUpload : false,
@@ -150,80 +151,3 @@ var KE;
 	        }
 	    });
 	    });
-	// 按规格存储规格值数据
-	var spec_group_checked = [];
-	var str = '';
-	var V = new Array();
-
-
-	$(function(){
-		$('dl[nctype="spec_group_dl"]').on('click', 'span[nctype="input_checkbox"] > input[type="checkbox"]',function(){
-			into_array();
-			goods_stock_set();
-		});
-
-		// 提交后不没有填写的价格或库存的库存配置设为默认价格和0
-		// 库存配置隐藏式 里面的input加上disable属性
-		$('input[type="submit"]').click(function(){
-			$('input[data_type="price"]').each(function(){
-				if($(this).val() == ''){
-					$(this).val($('input[name="goodsStorePrice"]').val());
-				}
-			});
-			$('input[data_type="stock"]').each(function(){
-				if($(this).val() == ''){
-					$(this).val('0');
-				}
-			});
-			if($('dl[nc_type="spec_dl"]').css('display') == 'none'){
-				$('dl[nc_type="spec_dl"]').find('input').attr('disabled','disabled');
-			}
-		});
-		
-	});
-
-	// 将选中的规格放入数组
-	function into_array(){
-	}
-
-	// 生成库存配置
-	function goods_stock_set(){
-	    // 店铺价格 商品库存改为只读
-	    $('input[name="goodsStorePrice"]').attr('readonly','readonly').css('background','#E7E7E7 none');
-	    $('input[name="goodsStorage"]').attr('readonly','readonly').css('background','#E7E7E7 none');
-
-	    $('dl[nc_type="spec_dl"]').show();
-	    str = '<tr>';
-	    var tmp_spec_td = new Array();
-	tmp_spec_td.sort(function(a,b){return a-b});
-	var spec_bunch = 'i_';
-	str += '<input type="hidden" name="spec['+spec_bunch+'][goods_id]" nc_type="'+spec_bunch+'|id" value="" />';str +='<td><input class="text price" type="text" name="spec['+spec_bunch+'][price]" data_type="price" nc_type="'+spec_bunch+'|price" value="" /><em class="add-on"><i class="icon-renminbi"></i></em></td><td><input class="text stock" type="text" name="spec['+spec_bunch+'][stock]" data_type="stock" nc_type="'+spec_bunch+'|stock" value="" /></td><td><input class="text sku" type="text" name="spec['+spec_bunch+'][sku]" nc_type="'+spec_bunch+'|sku" value="" /></td></tr>';
-	    if(str == '<tr>'){
-	        // 店铺价格 商品库存取消只读
-	        $('input[name="goodsStorePrice"]').removeAttr('readonly').css('background','');
-	        $('input[name="goodsStorage"]').removeAttr('readonly').css('background','');
-	        $('dl[nc_type="spec_dl"]').hide();
-	    }else{
-	        $('tbody[nc_type="spec_table"]').empty().html(str)
-	            .find('input[nc_type]').each(function(){
-	                s = $(this).attr('nc_type');
-	                try{$(this).val(V[s]);}catch(ex){$(this).val('');};
-	                if($(this).attr('data_type') == 'price' && $(this).val() == ''){
-	                    $(this).val($('input[name="goodsStorePrice"]').val());
-	                }
-	                if($(this).attr('data_type') == 'stock' && $(this).val() == ''){
-	                    $(this).val('0');
-	                }
-	            }).end()
-	            .find('input[data_type="stock"]').change(function(){
-	                computeStock();    // 库存计算
-	            }).end()
-	            .find('input[data_type="price"]').change(function(){
-	                computePrice();     // 价格计算
-	            }).end()
-	            .find('input[nc_type]').change(function(){
-	                s = $(this).attr('nc_type');
-	                V[s] = $(this).val();
-	            });
-	    }
-	}

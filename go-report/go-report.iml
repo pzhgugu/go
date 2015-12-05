@@ -12,6 +12,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.aspose:aspose-cells:8.5.0" level="project" />
+    <orderEntry type="library" name="Maven: com.aspose:aspose-words:jdk16:15.6.0" level="project" />
+    <orderEntry type="library" name="Maven: com.aspose:aspose-slides:jdk16:15.5.1" level="project" />
+    <orderEntry type="library" name="Maven: com.aspose:aspose-pdf:10.4.1" level="project" />
     <orderEntry type="module" module-name="go-core" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml:3.10.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml-schemas:3.10.1" level="project" />

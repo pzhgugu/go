@@ -1,10 +1,11 @@
 package com.ansteel.shop.store.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import com.ansteel.core.constant.Constants;
 import com.ansteel.core.domain.TreeEntity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /**
  * 创 建 人：gugu
  * 创建日期：2015-06-11

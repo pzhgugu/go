@@ -56,7 +56,7 @@ $(function(){
     $('a[nctype="show_desc"]').unbind().ajaxContent({
         event:'click', //mouseover
         loaderType:"img",
-        loadingMsg:SITEURL+"/res/images/loading.gif",
+        loadingMsg: SITEURL + "/res/img/loading.gif",
         target:'#des_demo'
     }).click(function(){
         $(this).hide();
@@ -214,7 +214,7 @@ function computeStock(){
             _stock += parseInt($(this).val());
         }
     });
-    $('input[name="g_storage"]').val(_stock);
+    $('input[name="goodsStorage"]').val(_stock);
 }
 
 // 计算价格

@@ -610,8 +610,8 @@ GPW.form = {
 		});
 	},
 	initTreeForm:function(window,type){
-		var formData = this.getTreeFormData();			
-		this.treeForm=this.getForm(window,formData,"tree");
+		var formData = this.getTreeFormData();
+		this.treeForm = this.getForm(window, formData, "tree", type);
 		
 		var tree=GPW.tree.mainTree;
 		//var selectId=tree.getSelectedItemId();

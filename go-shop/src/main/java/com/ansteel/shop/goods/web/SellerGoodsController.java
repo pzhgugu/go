@@ -165,13 +165,7 @@ public class SellerGoodsController {
             model.addAttribute("P_GOODSBRADNS", goodsBrands);
             //关联属性
             Collection<GoodsAttribute> goodsAttributes = goodsType.getGoodsAttribute();
-            Map<String, String[]> attributesMap = new HashMap<>();
-            for (GoodsAttribute ga : goodsAttributes) {
-                String values = ga.getAttrValue();
-                String[] vArray = values.split(",");
-                attributesMap.put(ga.getAttrName(), vArray);
-            }
-            model.addAttribute("P_GOODSATTRIBUTE", attributesMap);
+            model.addAttribute("P_GOODSATTRIBUTE", goodsAttributes);
         }
         model.addAttribute("P_GOODSTYPE", goodsType);
 
@@ -264,15 +258,23 @@ public class SellerGoodsController {
 
     @RequestMapping(value = "/addstep/savegoods", method = RequestMethod.POST)
     public String saveGoods(@Valid Goods goods, BindingResult result, Model model,
+                            GoodsSpecModel goodsSpecModel,
                             HttpServletRequest request,
                             HttpServletResponse response) {
         if (result.hasErrors()) {
             ExceprionUtils.BindingResultError(result);
         }
-
-        Goods newGoods = goodsService.save(goods);
-        return "redirect:/se/goods/addstep/editimages?goodsid=" + newGoods.getId();
-
+       /* Enumeration e = request.getParameterNames();
+        while (e.hasMoreElements()) {
+            String name = (String) e.nextElement();
+            if(name.indexOf("sp_val")==0){
+                String vale = request.getParameter(name);
+                System.out.println(name + "=" + vale);
+            }
+        }*/
+        // Goods newGoods = goodsService.save(goods);
+        // return "redirect:/se/goods/addstep/editimages?goodsid=" + newGoods.getId();
+        return "redirect:/se/goods/addstep/editimages?goodsid=" + goods.getId();
     }
 
     @RequestMapping(value = "/addstep/editimages")

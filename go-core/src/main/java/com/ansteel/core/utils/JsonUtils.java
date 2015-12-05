@@ -106,4 +106,9 @@ public class JsonUtils {
 		} 
 		return null;
 	}
+
+	public static String jsonCallback(String callback, Object o) {
+		String jsonObject = JsonUtils.jsonFromObject(o);
+		return callback + "(" + jsonObject + ")";
+	}
 }

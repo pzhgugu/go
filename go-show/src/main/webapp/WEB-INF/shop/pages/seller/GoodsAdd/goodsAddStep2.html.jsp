@@ -138,6 +138,42 @@
                 </p>
               </dd>
             </dl>
+            <c:if test="${!empty P_GOODSSPECS}">
+              <c:forEach items="${P_GOODSSPECS}" var="goodsSpec" varStatus="status">
+                <dl spec_img="t" class="spec-bg" nctype="spec_group_dl" nc_type="spec_group_dl_${status.index}">
+                  <dt>
+                    <input type="text" data-param="{id:'${goodsSpec.id}',name:'${goodsSpec.spName}'}" nctype="spec_name"
+                           maxlength="4" value="${goodsSpec.spName}" title="自定义规格类型名称，规格值名称最多不超过4个字"
+                           class="text w60 tip2 tr" name="gsvslList[${status.index}].spName">
+                    <input type="hidden" name="gsvslList[${status.index}].spId" value="${goodsSpec.id}">
+                    ：
+                  </dt>
+                  <dd nctype="sp_group_val">
+                    <ul class="spec">
+                      <c:forEach items="${P_GOODSSPECVALUE_LIST}" var="goodsSpecValue" varStatus="vs">
+                      <c:if test="${goodsSpec.id==goodsSpecValue.spId}">
+                      <li><span nctype="input_checkbox">
+              <input type="checkbox" name="gsvslList[${status.index}].spvId" class="sp_val"
+                     nc_type="${goodsSpecValue.name}"
+                     value="${goodsSpecValue.id}">
+                        </c:if>
+                      </c:forEach>
+                      <li data-param="{gc_id:'${P_GOODSCLASS.id}',sp_id:'${goodsSpec.id}',url:'${S_URL}/se/spec/addspec'}">
+                        <div nctype="specAdd1"><a nctype="specAdd" class="ncsc-btn" href="javascript:void(0);"><i
+                                class="icon-plus"></i>添加${goodsSpec.spName}值</a></div>
+                        <div style="display:none;" nctype="specAdd2">
+                          <input type="text" maxlength="20" placeholder="${goodsSpec.spName}值名称" class="text w60">
+                          <a class="ncsc-btn ncsc-btn-acidblue ml5 mr5" nctype="specAddSubmit"
+                             href="javascript:void(0);">确认</a><a class="ncsc-btn ncsc-btn-orange"
+                                                                 nctype="specAddCancel"
+                                                                 href="javascript:void(0);">取消</a></div>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </c:forEach>
+            </c:if>
+
             <dl style="display:none" class="spec-bg" nc_type="spec_dl">
               <dt>
                 库存配置：
@@ -146,6 +182,9 @@
                 <table cellspacing="0" cellpadding="0" border="0" class="spec_table">
                   <thead>
                     <tr>
+                      <c:forEach items="${P_GOODSSPECS}" var="specList">
+                        <th nctype="spec_name_${specList.id}">${specList.spName}</th>
+                      </c:forEach>
                       <th class="w100">
                         <span class="red">
                           *
@@ -259,19 +298,44 @@
             <h3>
               商品详情描述
             </h3>
+            <c:if test="${!empty P_GOODSBRADNS}">
             <dl>
               <dt>
                 商品品牌：
               </dt>
               <dd>
                 <select name="brandId">
-                  <option value="0">
-                    请选择...
-                  </option>
+                  <option value="">请选择...</option>
+                  <c:forEach items="${P_GOODSBRADNS}" var="goodsBradns">
+                    <option value="${goodsBradns.id}">${goodsBradns.brandName}</option>
+                  </c:forEach>
                 </select>
                 <input type="hidden" value="" name="brandName">
               </dd>
             </dl>
+            </c:if>
+
+            <c:if test="${fn:length(P_GOODSATTRIBUTE)>0}">
+              <dl>
+                <dt>商品属性：</dt>
+                <dd>
+                  <c:forEach items="${P_GOODSATTRIBUTE}" var="goodsAttribute">
+                    <span class="mr30">
+          <label class="mr5">${goodsAttribute.attrName}</label>
+          <input type="hidden" value="${goodsAttribute.attrName}" name="attr[${goodsAttribute.id}][name]">
+                    <select nc_type="attr_select" attr="attr[${goodsAttribute.id}][__NC__]"
+                            name="attr[${goodsAttribute.id}][0]">
+                      <option nc_type="0" value="不限">不限</option>
+                      <c:forEach items="${goodsAttribute.goodsAttributeValueList}" var="v">
+                        <option nc_type="3050" value="${v.id}">${v.name}</option>
+                      </c:forEach>
+                    </select>
+                    </span>
+                  </c:forEach>
+                </dd>
+              </dl>
+            </c:if>
+
             <dl>
               <dt>
                 商品描述：
@@ -640,3 +704,140 @@
 <fis:require id="common:widget/kindeditor/kindeditor.js" />
 <fis:require id="shop:scripts/page.step2.js" />
 <fis:require id="shop:scripts/store_goods_add.step2.js" />
+
+<script>
+
+  // 按规格存储规格值数据
+  var spec_group_checked = [<c:forEach items="${P_GOODSSPECS}" var="goodsSpec" varStatus="status"><c:if test="${status.last}">''</c:if><c:if test="${!status.last}">'', </c:if> </c:forEach>];
+  var str = '';
+  var V = new Array();
+
+  <c:forEach items="${P_GOODSSPECS}" var="goodsSpec" varStatus="status">
+  var spec_group_checked_${status.index} = new Array();
+  </c:forEach>
+
+  $(function () {
+    $('dl[nctype="spec_group_dl"]').on('click', 'span[nctype="input_checkbox"] > input[type="checkbox"]', function () {
+      into_array();
+      goods_stock_set();
+    });
+
+    // 提交后不没有填写的价格或库存的库存配置设为默认价格和0
+    // 库存配置隐藏式 里面的input加上disable属性
+    $('input[type="submit"]').click(function () {
+      $('input[data_type="price"]').each(function () {
+        if ($(this).val() == '') {
+          $(this).val($('input[name="g_price"]').val());
+        }
+      });
+      $('input[data_type="stock"]').each(function () {
+        if ($(this).val() == '') {
+          $(this).val('0');
+        }
+      });
+      if ($('dl[nc_type="spec_dl"]').css('display') == 'none') {
+        $('dl[nc_type="spec_dl"]').find('input').attr('disabled', 'disabled');
+      }
+    });
+
+  });
+
+  // 将选中的规格放入数组
+  function into_array() {
+    <c:forEach items="${P_GOODSSPECS}" var="goodsSpec" varStatus="status">
+
+    spec_group_checked_${status.index} = new Array();
+    $('dl[nc_type="spec_group_dl_${status.index}"]').find('input[type="checkbox"]:checked').each(function () {
+      i = $(this).attr('nc_type');
+      v = $(this).val();
+      c = null;
+      if ($(this).parents('dl:first').attr('spec_img') == 't') {
+        c = 1;
+      }
+      spec_group_checked_${status.index}[spec_group_checked_${status.index}.length] = [v, i, c];
+    });
+
+    spec_group_checked[${status.index}] = spec_group_checked_${status.index};
+
+    </c:forEach>
+  }
+
+  // 生成库存配置
+  function goods_stock_set() {
+    //  店铺价格 商品库存改为只读
+    $('input[name="goodsStorePrice"]').attr('readonly', 'readonly').css('background', '#E7E7E7 none');
+    $('input[name="goodsStorage"]').attr('readonly', 'readonly').css('background', '#E7E7E7 none');
+    $('dl[nc_type="spec_dl"]').show();
+    str = '<tr>';
+
+    <c:forEach items="${P_GOODSSPECS}" var="goodsSpec" varStatus="status">
+    for (var i_${status.index} = 0; i_${status.index} < spec_group_checked[${status.index}].length; i_${status.index}++) {
+      td_${status.index+1} = spec_group_checked[${status.index}][i_${status.index}];
+      <c:if test="${status.last}" >
+      var tmp_spec_td = new Array();
+      <c:forEach items="${P_GOODSSPECS}" var="gs" varStatus="vs">
+      tmp_spec_td[${vs.index}] = td_${vs.index+1}[1];
+      </c:forEach>
+      tmp_spec_td.sort(function (a, b) {
+        return a - b
+      });
+      var spec_bunch = 'i_';
+      <c:forEach items="${P_GOODSSPECS}" var="gs" varStatus="vs">
+      spec_bunch += tmp_spec_td[${vs.index}];
+      </c:forEach>
+
+      str += '<input type="hidden" name="spec[' + spec_bunch + '][goods_id]" nc_type="' + spec_bunch + '|id" value="" />';
+      <c:forEach items="${P_GOODSSPECS}" var="gs" varStatus="vs">
+      if (td_${vs.index+1}[2] != null) {
+        str += "<input type='hidden' name='spec[" + spec_bunch + "][color]' value='" + td_${vs.index+1}[1] + "' />";
+      }
+      str += "<td><input type='hidden' name='spec[" + spec_bunch + "][sp_value][" + td_${vs.index+1}[1] + "] value='" + td_${vs.index+1}[0] + "' />" + td_${vs.index+1}[1] + "</td>";
+      </c:forEach>
+
+      str += '<td><input class="text price" type="text" name="spec[' + spec_bunch + '][price]" data_type="price" nc_type="' + spec_bunch + '|price" value="" /><em class="add-on"><i class="icon-renminbi"></i></em></td><td><input class="text stock" type="text" name="spec[' + spec_bunch + '][stock]" data_type="stock" nc_type="' + spec_bunch + '|stock" value="" /></td><td><input class="text sku" type="text" name="spec[' + spec_bunch + '][sku]" nc_type="' + spec_bunch + '|sku" value="" /></td></tr>';
+
+
+      </c:if>
+      </c:forEach>
+
+      <c:forEach items="${P_GOODSSPECS}" var="goodsSpec" varStatus="status">
+    }
+    </c:forEach>
+
+
+    if (str == '<tr>') {
+      //  店铺价格 商品库存取消只读
+      $('input[name="goodsStorePrice"]').removeAttr('readonly').css('background', '');
+      $('input[name="goodsStorage"]').removeAttr('readonly').css('background', '');
+      $('dl[nc_type="spec_dl"]').hide();
+    } else {
+      $('tbody[nc_type="spec_table"]').empty().html(str)
+              .find('input[nc_type]').each(function () {
+                s = $(this).attr('nc_type');
+                try {
+                  $(this).val(V[s]);
+                } catch (ex) {
+                  $(this).val('');
+                }
+                ;
+                if ($(this).attr('data_type') == 'price' && $(this).val() == '') {
+                  $(this).val($('input[name="goodsStorePrice"]').val());
+                }
+                if ($(this).attr('data_type') == 'stock' && $(this).val() == '') {
+                  $(this).val('0');
+                }
+              }).end()
+              .find('input[data_type="stock"]').change(function () {
+                computeStock();    // 库存计算
+              }).end()
+              .find('input[data_type="price"]').change(function () {
+                computePrice();     // 价格计算
+              }).end()
+              .find('input[nc_type]').change(function () {
+                s = $(this).attr('nc_type');
+                V[s] = $(this).val();
+              });
+    }
+  }
+
+</script>

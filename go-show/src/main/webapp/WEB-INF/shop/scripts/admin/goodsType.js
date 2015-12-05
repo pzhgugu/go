@@ -21,11 +21,11 @@ GPW.tabbar={
     attachURL:function(actvId,id){
         var url="";
         if(actvId=="spec"){
-            url=GLOBAL.S.URL+"/goodsscpec/tpl/SingleGrid/GoodsSpec/d?_value="+id;
+            url = GLOBAL.S.URL + "/admin/goodsscpec/tpl/SingleGrid/GoodsSpec/d?_value=" + id;
         }else if(actvId=="brand"){
-            url=GLOBAL.S.URL+"/goodstype/brand?id="+id;
+            url = GLOBAL.S.URL + "/admin/goodstype/brand?id=" + id;
         }else if(actvId=="attribute"){
-            url=GLOBAL.S.URL+"/goodstype/attribute?id="+id;
+            url = GLOBAL.S.URL + "/admin/goodsattribute/tpl/SingleGrid/GoodsAttribute/d?_key=goodsType.id&_value=" + id;
         }else{
             return ;
         }

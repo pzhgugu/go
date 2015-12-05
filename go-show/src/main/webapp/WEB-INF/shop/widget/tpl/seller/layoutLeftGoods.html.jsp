@@ -39,8 +39,8 @@
                         关联板式
                     </a>
                 </li>
-                <li class="">
-                    <a href="#">
+                <li <c:if test='${P_CURRENT_OP=="spec"}'>class="current"</c:if>>
+                    <a href="${S_URL}/se/spec/list">
                         商品规格
                     </a>
                 </li>

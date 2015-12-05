@@ -20,6 +20,26 @@ public class JsonGoodsClass {
 	
 	private boolean done;
 
+	private String gc_parent_id;
+
+	private Integer gc_sor;
+
+	public String getGc_parent_id() {
+		return gc_parent_id;
+	}
+
+	public void setGc_parent_id(String gc_parent_id) {
+		this.gc_parent_id = gc_parent_id;
+	}
+
+	public Integer getGc_sor() {
+		return gc_sor;
+	}
+
+	public void setGc_sor(Integer gc_sor) {
+		this.gc_sor = gc_sor;
+	}
+
 	public String getTwo() {
 		return two;
 	}

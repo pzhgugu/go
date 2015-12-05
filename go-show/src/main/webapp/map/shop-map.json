@@ -1,5 +1,13 @@
 {
     "res": {
+        "shop:scripts/admin/appleStoreJoinin.js": {
+            "uri": "/show/static/shop/scripts/admin/appleStoreJoinin.js",
+            "type": "js"
+        },
+        "shop:scripts/admin/goodsAttribute.js": {
+            "uri": "/show/static/shop/scripts/admin/goodsAttribute.js",
+            "type": "js"
+        },
         "shop:scripts/admin/goodsBrand.js": {
             "uri": "/show/static/shop/scripts/admin/goodsBrand.js",
             "type": "js",
@@ -41,6 +49,10 @@
                 "shop:scripts/dialog/dialog.css"
             ]
         },
+        "shop:scripts/jqtreetable.js": {
+            "uri": "/show/static/shop/scripts/jqtreetable.js",
+            "type": "js"
+        },
         "shop:scripts/member.js": {
             "uri": "/show/static/shop/scripts/member.js",
             "type": "js"
@@ -51,6 +63,10 @@
         },
         "shop:scripts/page.step3.js": {
             "uri": "/show/static/shop/scripts/page.step3.js",
+            "type": "js"
+        },
+        "shop:scripts/perfect-scrollbar.min.js": {
+            "uri": "/show/static/shop/scripts/perfect-scrollbar.min.js",
             "type": "js"
         },
         "shop:scripts/piclist.js": {
@@ -81,12 +97,24 @@
             "uri": "/show/static/shop/scripts/store_goods_list.js",
             "type": "js"
         },
+        "shop:scripts/store_slide.js": {
+            "uri": "/show/static/shop/scripts/store_slide.js",
+            "type": "js"
+        },
         "shop:styles/base.css": {
             "uri": "/show/static/shop/styles/base.css",
             "type": "css"
         },
         "shop:styles/seller_center.css": {
             "uri": "/show/static/shop/styles/seller_center.css",
+            "type": "css"
+        },
+        "shop:styles/skin_0.css": {
+            "uri": "/show/static/shop/styles/skin_0.css",
+            "type": "css"
+        },
+        "shop:styles/store_joinin.css": {
+            "uri": "/show/static/shop/styles/store_joinin.css",
             "type": "css"
         }
     },

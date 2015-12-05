@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import com.ansteel.core.annotation.PathClass;
+import com.ansteel.core.constant.Public;
 import com.ansteel.dhtmlx.jsonclass.UDataSet;
 import com.ansteel.shop.goods.service.GoodsClassService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Controller
-@RequestMapping(value = "/goodsclass")
+@RequestMapping(value = Public.ADMIN + "/goodsclass")
 public class GoodsClassController  extends BaseController{
 
 	@Autowired

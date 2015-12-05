@@ -55,6 +55,7 @@ public class SellerGoodsOnlineController {
         model.addAttribute("P_PAGE_SHOW", page);
         model.addAttribute("P_GOODS_LIST", page.getContent());
         model.addAttribute("P_CURRENT_OP", "Online");
+        model.addAttribute("P_CURRENT_TOP", "goods");
         Map<String, String> nav = new HashMap<>();
         nav.put("n1", "商家管理中心");
         nav.put("n2", "商品");

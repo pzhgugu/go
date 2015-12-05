@@ -15,6 +15,7 @@ import java.util.Map.Entry;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ansteel.report.aspose.service.AsposeExcelToPdfService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -37,7 +38,6 @@ import com.ansteel.report.excel.core.ExcelReportFactory;
 import com.ansteel.report.excel.core.IExcelShowFactory;
 import com.ansteel.report.excel.domain.ExcelReport;
 import com.ansteel.report.excel.domain.ExcelReportSQL;
-import com.ansteel.report.openoffice.service.OpenOfficeService;
 import com.ansteel.report.reportlist.domain.ReportMapped;
 import com.ansteel.report.swftools.service.SWFToolsService;
 
@@ -60,9 +60,9 @@ public class MakeReportServiceBean implements MakeReportService {
 	
 	@Autowired
 	AttachmentService attachmentService;
-	
+
 	@Autowired
-	OpenOfficeService openOfficeService;
+	AsposeExcelToPdfService asposeExcelToPdfService;
 	
 	@Autowired
 	SWFToolsService swfToolsService;
@@ -210,7 +210,7 @@ public class MakeReportServiceBean implements MakeReportService {
 			File pdfFile = new File(pdfPath);
 			if(pdfFile.exists())//pdf文件存在则删除
 				pdfFile.delete();
-			if(!openOfficeService.convert2PDF(excelFile, pdfFile)){
+			if (!asposeExcelToPdfService.convert2PDF(excelFile, pdfFile)) {
 				throw new PageException("pdf文档转换失败！");
 			}	
 			File swfFile = new File(path);
@@ -236,7 +236,7 @@ public class MakeReportServiceBean implements MakeReportService {
 			File pdfFile = new File(path);
 			if(pdfFile.exists())//pdf文件存在则删除
 				pdfFile.delete();
-			if(!openOfficeService.convert2PDF(excelFile, pdfFile)){
+			if (!asposeExcelToPdfService.convert2PDF(excelFile, pdfFile)) {
 				throw new PageException("pdf文档转换失败！");
 			}	
 		}

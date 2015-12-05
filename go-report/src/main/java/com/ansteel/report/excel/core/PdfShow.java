@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import javax.servlet.http.HttpServletResponse;
 
+import com.ansteel.report.aspose.service.AsposeExcelToPdfService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -13,7 +14,6 @@ import com.ansteel.core.exception.PageException;
 import com.ansteel.core.utils.DownloadUtils;
 import com.ansteel.core.utils.StringUtils;
 import com.ansteel.report.poi.utils.Excel;
-import com.ansteel.report.openoffice.service.OpenOfficeService;
 import com.ansteel.report.swftools.service.SWFToolsService;
 
 /**
@@ -31,7 +31,7 @@ public class PdfShow implements IExcelShow {
 	private String attTempPath;
 	
 	@Autowired
-	OpenOfficeService openOfficeService;
+	AsposeExcelToPdfService asposeExcelToPdfService;
 
 	@Override
 	public String show(Excel excel, String rType, String inline,
@@ -53,7 +53,7 @@ public class PdfShow implements IExcelShow {
 			File pdfFile = new File(pdfPath);
 			if(pdfFile.exists())//pdf文件存在则删除
 				pdfFile.delete();
-			if(!openOfficeService.convert2PDF(excelFile, pdfFile)){
+			if (!asposeExcelToPdfService.convert2PDF(excelFile, pdfFile)) {
 				throw new PageException("pdf文档转换失败！");
 			}
 

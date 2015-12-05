@@ -14,7 +14,7 @@ public interface OpenOfficeService {
 	 * 转换pdf
 	 * @return
 	 */
-	boolean convert2PDF(File inputFile, File pdfFile);
+	//boolean convert2PDF(File inputFile, File pdfFile);
 	
 
 }
