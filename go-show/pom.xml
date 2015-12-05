@@ -19,11 +19,7 @@
 			<artifactId>go-core</artifactId>
 			<version>${go.version}</version>
 		</dependency>
-  <dependency>
-                <groupId>com.ansteel.teplat3</groupId>
-                <artifactId>teplat-fis</artifactId>
-                <version>3.1.0-SNAPSHOT</version>
-            </dependency>
+
 		<dependency>
 			<groupId>com.ansteel.go</groupId>
 			<artifactId>go-report</artifactId>

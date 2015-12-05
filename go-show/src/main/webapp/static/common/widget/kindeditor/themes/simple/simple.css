@@ -29,8 +29,7 @@
 	border: 1px solid #5690D2;
 	background-color: #E9EFF6;
 }
-
-.ke-container-simple .ke-toolbar .ke-disabled {
+.ke-container-simple .ke-toolbar  .ke-disabled {
 	cursor: default;
 }
 /* statusbar */
@@ -51,7 +50,7 @@
 	background-color: #FFF;
 	color: #222222;
 	padding: 2px;
-	font-family: "sans serif", tahoma, verdana, helvetica;
+	font-family: "sans serif",tahoma,verdana,helvetica;
 	font-size: 12px;
 	text-align: left;
 	overflow: hidden;
@@ -80,17 +79,17 @@
 	line-height: 0;
 	border: 1px solid #FEFEFE;
 	cursor: pointer;
-	margin: 3px;
-	padding: 0;
+	margin:3px;
+	padding:0;
 }
 .ke-colorpicker-simple .ke-colorpicker-cell-top {
-	font-family: "sans serif", tahoma, verdana, helvetica;
+	font-family: "sans serif",tahoma,verdana,helvetica;
 	font-size: 12px;
 	line-height: 24px;
 	border: 1px solid #FEFEFE;
 	cursor: pointer;
-	margin: 0;
-	padding: 0;
+	margin:0;
+	padding:0;
 	text-align: center;
 }
 .ke-colorpicker-simple .ke-colorpicker-cell-on {

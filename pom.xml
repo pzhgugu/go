@@ -41,12 +41,12 @@
         <go.version>0.0.1-SNAPSHOT</go.version>
     </properties>
 
+
     <repositories>
-        <!--<repository>-->
-        <!--<id>AsposeJavaAPI</id>-->
-        <!--<name>Aspose Java API</name>-->
-        <!--<url>http://maven.aspose.com/artifactory/simple/ext-release-local/</url>-->
-        <!--</repository>-->
+        <repository>
+            <id>spring-milestones</id>
+            <url>http://repo.spring.io/libs-milestone</url>
+        </repository>
         <repository>
             <id>nexus</id>
             <url>http://192.2.71.97:8081/nexus/content/groups/public</url>
@@ -66,6 +66,7 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
 
     <dependencies>
 
@@ -274,6 +275,5 @@
             </plugins>
         </pluginManagement>
     </build>
-
 
 </project>

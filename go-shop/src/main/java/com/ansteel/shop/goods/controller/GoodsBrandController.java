@@ -18,7 +18,6 @@ import com.ansteel.core.utils.ResponseUtils;
 import com.ansteel.dhtmlx.jsonclass.UDataSet;
 import com.ansteel.dhtmlx.xml.Data;
 import com.ansteel.dhtmlx.xml.GridXml;
-import com.ansteel.report.jasperReports.domain.JasperReport;
 import com.ansteel.shop.goods.service.GoodsBrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
