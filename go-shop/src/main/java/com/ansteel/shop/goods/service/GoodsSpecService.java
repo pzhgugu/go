@@ -38,4 +38,6 @@ public interface GoodsSpecService {
     void querySelect(Page page, String goodsTypesId);
 
     GoodsSpec findOne(String id);
+
+    String getColorId();
 }

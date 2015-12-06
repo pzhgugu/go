@@ -15,6 +15,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -100,6 +101,15 @@ public class GoodsSpecValueServiceImpl implements GoodsSpecValueService {
         goodsSpecValue.setName(name);
         goodsSpecValue.setSort(255);
         return goodsSpecValueRepository.save(goodsSpecValue);
+    }
+
+    @Override
+    public List<GoodsSpecValue> findById(String[] spvIdArray) {
+        List<GoodsSpecValue> list = new ArrayList<>();
+        for(String id :spvIdArray){
+            list.add(goodsSpecValueRepository.findOne(id));
+        }
+        return list;
     }
 
 

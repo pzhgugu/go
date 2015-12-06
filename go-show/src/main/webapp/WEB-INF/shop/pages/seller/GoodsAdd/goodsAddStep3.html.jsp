@@ -14,43 +14,46 @@
   <input type="hidden" name="form_submit" value="ok">
   <input type="hidden" name="goodsid" value="${S_PARAM.goodsid}">
   <input type="hidden" name="ref_url" value="${S_URL}/se/goods/addstep/one"/>
+
+
+
+
+
     <div class="ncsc-form-goods-pic">
+ <c:forEach items="${P_COLOR_LIST}" var="color">
       <div class="container">
           <div class="ncsc-goodspic-list">
             <div class="title">
               <h3>
-                颜色：无颜色
+                颜色：${color.name}
               </h3>
             </div>
             
  <!--列表开始 -->           
 <ul nctype="ul0">
-
-
-
-
-
 <c:forEach begin="0" end="4" step="1" varStatus="i">
   <li class="ncsc-goodspic-upload">
     <div class="upload-thumb">
       <img nctype="file_0${i.index}" src='<c:choose>
-<c:when test="${empty P_GOODSIMAGES_LIST[i.index].goodsImage}">
-${S_URL}/res/img/default_goods_image_240.gif
+<c:when test="${i.index==0}">${S_URL}/att/download/${P_GOODSCOMMON.goodsImage}' />
+      <input type="hidden" nctype="file_0${i.index}" value="${P_GOODSCOMMON.goodsImage}"
+      name="img[0][${i.index}][name]">
 </c:when>
 <c:otherwise>
-${S_URL}/att/download/${P_GOODSIMAGES_LIST[i.index].goodsImage}
-</c:otherwise>
-</c:choose>'>
-      <input type="hidden" nctype="file_0${i.index}" value="${P_GOODSIMAGES_LIST[i.index].goodsImage}"
+${S_URL}/res/img/default_goods_image_240.gif' />
+      <input type="hidden" nctype="file_0${i.index}" value=""
       name="img[0][${i.index}][name]">
+</c:otherwise>
+</c:choose>
+
     </div>
-    <div nctype="file_0${i.index}" class="show-default <c:if test="${P_GOODSIMAGES_LIST[i.index].isDefault==1}">selected</c:if>">
+    <div nctype="file_0${i.index}" class="show-default <c:if test="${i.index==0}">selected</c:if>">
       <p>
         <i class="icon-ok-circle">
         </i>
         默认主图
         <input type="hidden" value="<c:choose>
-<c:when test="${P_GOODSIMAGES_LIST[i.index].isDefault==1}">1</c:when>
+<c:when test="${i.index==0}">1</c:when>
 <c:otherwise>0</c:otherwise></c:choose>" name="img[0][${i.index}][default]">
       </p>
       <a title="移除" class="del" nctype="del" href="javascript:void(0)">
@@ -59,7 +62,7 @@ ${S_URL}/att/download/${P_GOODSIMAGES_LIST[i.index].goodsImage}
     </div>
     <div class="show-sort">
       排序：
-      <input type="text" maxlength="1" size="1" value="${P_GOODSIMAGES_LIST[i.index].goodsImageSort}" class="text" name="img[0][${i.index}][sort]">
+      <input type="text" maxlength="1" size="1" value="${i.index}" class="text" name="img[0][${i.index}][sort]">
     </div>
     <div class="ncsc-upload-btn">
       <a href="javascript:void(0);">
@@ -98,6 +101,8 @@ ${S_URL}/att/download/${P_GOODSIMAGES_LIST[i.index].goodsImage}
             </div>
           </div>
       </div>
+ </c:forEach>
+
       <div class="sidebar">
         <div class="alert alert-info alert-block" id="uploadHelp">
           <div class="faq-img">

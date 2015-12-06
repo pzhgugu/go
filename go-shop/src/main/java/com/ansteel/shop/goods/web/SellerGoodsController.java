@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import com.ansteel.core.utils.JsonUtils;
 import com.ansteel.shop.goods.domain.*;
 import com.ansteel.shop.goods.service.*;
 import com.ansteel.shop.store.domain.StoreGoodsClass;
@@ -39,6 +40,9 @@ import com.ansteel.shop.store.service.StoreService;
 @Controller
 @RequestMapping(value = ShopConstant.SELLER + "/goods")
 public class SellerGoodsController {
+
+    @Autowired
+    GoodsSpecService goodsSpecService;
 
     @Autowired
     GoodsClassService goodsClassService;
@@ -290,12 +294,27 @@ public class SellerGoodsController {
                              @RequestParam(value = "goodsid") String goodsId,
                              HttpServletRequest request,
                              HttpServletResponse response) {
+        //获取颜色id
+        String colorId=goodsSpecService.getColorId();
+        GoodsCommon goodsCommon = goodsCommonService.findOneByStoreIdAndId(goodsId);
+        Assert.notNull(goodsCommon,goodsId+"，无效商品id！");
+        String specName=goodsCommon.getSpecName();
+        List<GoodsSpecValueSelectListModel> gsvslList = JsonUtils.readValue(specName, GoodsSpecValueSelectListModel.class);
+        String[] spvIdArray=null;
+        for(GoodsSpecValueSelectListModel gsvslm:gsvslList){
+            if(gsvslm.getSpId().equals(colorId)){
+                spvIdArray=gsvslm.getSpvId();
+            }
+        }
+        if(spvIdArray==null||spvIdArray.length<1){
+            return "redirect:/se/goods//addstep/four";
+        }
 
-        List<GoodsImages> goodsImagesList = goodsImagesService.findByGoodsIdAndStoreId(goodsId);
-        //GoodsImages defaultGoodsImages= goodsImagesService.getDefautlGoodsImages(goodsImagesList);
-        model.addAttribute("P_GOODSIMAGES_LIST", goodsImagesList);
-        //model.addAttribute("P_GOODSIMAGES_DEFAULT", defaultGoodsImages);
+        List<GoodsSpecValue> goodsSpecValueList=goodsSpecValueService.findById(spvIdArray);
 
+        //List<GoodsImages> goodsImagesList = goodsImagesService.findByGoodsIdAndStoreId(goodsId);
+        model.addAttribute("P_COLOR_LIST", goodsSpecValueList);
+        model.addAttribute("P_GOODSCOMMON", goodsCommon);
 
         model.addAttribute("P_CURRENT_OP", "GoodsAdd");
         Map<String, String> nav = new HashMap<>();

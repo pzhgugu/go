@@ -25,6 +25,8 @@ public class GoodsSpecServiceImpl implements GoodsSpecService {
     @Autowired
     GoodsTypeService goodsTypeService;
 
+    private static String COLOR_NAME="颜色";
+
     @Override
     public Page findSelectGoodsTypes(String goodsTypesId, Pageable pageable) {
         Page page = goodsSpecRepository.findAll(pageable);
@@ -98,5 +100,12 @@ public class GoodsSpecServiceImpl implements GoodsSpecService {
     @Override
     public GoodsSpec findOne(String id) {
         return goodsSpecRepository.findOne(id);
+    }
+
+    @Override
+    public String getColorId() {
+        List<GoodsSpec> list= goodsSpecRepository.findBySpName(COLOR_NAME);
+        Assert.notEmpty(list,"颜色规格没有设置，请联系管理员！");
+        return list.get(0).getId();
     }
 }

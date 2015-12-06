@@ -185,7 +185,7 @@
                         </td>
                         <td>
         <span style="color:red;">
-      ${goods.goodsStorage}件
+      ${goods}件
         </span>
                         </td>
                         <td class="goods-time">
