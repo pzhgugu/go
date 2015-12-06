@@ -9,6 +9,10 @@ import javax.validation.Valid;
 
 import com.ansteel.shop.goods.domain.*;
 import com.ansteel.shop.goods.service.*;
+import com.ansteel.shop.store.domain.StoreGoodsClass;
+import com.ansteel.shop.store.domain.StorePlate;
+import com.ansteel.shop.store.service.StoreGoodsClassService;
+import com.ansteel.shop.store.service.StorePlateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -61,6 +65,12 @@ public class SellerGoodsController {
 
     @Autowired
     GoodsSpecValueService goodsSpecValueService;
+
+    @Autowired
+    StorePlateService storePlateService;
+
+    @Autowired
+    StoreGoodsClassService storeGoodsClassService;
 
     @RequestMapping("/addstep/one")
     public String one(Model model,
@@ -168,6 +178,15 @@ public class SellerGoodsController {
             model.addAttribute("P_GOODSATTRIBUTE", goodsAttributes);
         }
         model.addAttribute("P_GOODSTYPE", goodsType);
+
+        //关联版式
+        List<StorePlate> storePlateList= storePlateService.findAllCurrentStore();
+        model.addAttribute("P_STOREPLATE_LIST", storePlateList);
+
+        //店铺分类
+        List<StoreGoodsClass> storeGoodsClassList=storeGoodsClassService.findCurrentByIsParentNull();
+        model.addAttribute("P_STOREGOODSCLASS_PARENT_LIST", storeGoodsClassList);
+
 
         model.addAttribute("P_GOODSCLASS_LISTNAME", this.getGoodsClassListName(goodsClass));
         model.addAttribute("P_GOODSCLASS", goodsClass);

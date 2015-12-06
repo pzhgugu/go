@@ -57,5 +57,5 @@ public interface StorePlateService {
      * 查询当前店铺关联的版式
      * @return
      */
-    List<StorePlate> findByStoreId();
+    List<StorePlate> findAllCurrentStore();
 }

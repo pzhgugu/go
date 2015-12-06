@@ -107,7 +107,7 @@ public class StorePlateServiceImpl implements StorePlateService {
     }
 
     @Override
-    public List<StorePlate> findByStoreId() {
+    public List<StorePlate> findAllCurrentStore() {
         Store store = storeService.getCurrentStore();
         return storePlateRepository.findByStoreId(store.getId());
     }

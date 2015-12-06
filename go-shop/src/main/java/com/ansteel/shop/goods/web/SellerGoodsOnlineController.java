@@ -120,7 +120,7 @@ public class SellerGoodsOnlineController {
                                HttpServletRequest request,
                                HttpServletResponse response) {
 
-        List<StorePlate> storePlateList=storePlateService.findByStoreId();
+        List<StorePlate> storePlateList=storePlateService.findAllCurrentStore();
         model.addAttribute("P_COMMONID",commonid);
         model.addAttribute("P_STOREPLATE_LIST", storePlateList);
         return FisUtils.page("shop:pages/seller/goodsOnline/plateEditPosition.html");

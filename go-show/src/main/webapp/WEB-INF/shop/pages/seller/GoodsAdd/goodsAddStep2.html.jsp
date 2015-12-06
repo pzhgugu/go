@@ -319,15 +319,14 @@
               <dl>
                 <dt>商品属性：</dt>
                 <dd>
-                  <c:forEach items="${P_GOODSATTRIBUTE}" var="goodsAttribute">
+                  <c:forEach items="${P_GOODSATTRIBUTE}" var="goodsAttribute" varStatus="status">
                     <span class="mr30">
           <label class="mr5">${goodsAttribute.attrName}</label>
-          <input type="hidden" value="${goodsAttribute.attrName}" name="attr[${goodsAttribute.id}][name]">
-                    <select nc_type="attr_select" attr="attr[${goodsAttribute.id}][__NC__]"
-                            name="attr[${goodsAttribute.id}][0]">
+          <input type="hidden" value="${goodsAttribute.id}" name="attrList[${status.index}].id">
+                    <select nc_type="attr_select" name="attrList[${status.index}].value"  >
                       <option nc_type="0" value="不限">不限</option>
                       <c:forEach items="${goodsAttribute.goodsAttributeValueList}" var="v">
-                        <option nc_type="3050" value="${v.id}">${v.name}</option>
+                        <option value="${v.id}">${v.name}</option>
                       </c:forEach>
                     </select>
                     </span>
@@ -386,9 +385,12 @@
                     顶部版式
                   </label>
                   <select name="plateidTop">
-                    <option value="">
-                      请选择
-                    </option>
+                    <option value="">请选择</option>
+                    <c:forEach items="${P_STOREPLATE_LIST}" var="storePlate">
+                      <c:if test="${storePlate.platePosition=='1'}">
+                        <option value="${storePlate.id}">${storePlate.plateName}</option>
+                      </c:if>
+                    </c:forEach>
                   </select>
                 </span>
                 <span class="mr50">
@@ -396,9 +398,12 @@
                     底部版式
                   </label>
                   <select name="plateidBottom">
-                    <option value="">
-                      请选择
-                    </option>
+                    <option value="">请选择</option>
+                    <c:forEach items="${P_STOREPLATE_LIST}" var="storePlate">
+                      <c:if test="${storePlate.platePosition!='1'}">
+                        <option value="${storePlate.id}">${storePlate.plateName}</option>
+                      </c:if>
+                    </c:forEach>
                   </select>
                 </span>
               </dd>
@@ -504,10 +509,18 @@
                     新增分类
                   </a>
                 </span>
-                <select class="sgcategory" name="sgcate_id[]">
-                  <option value="0">
-                    请选择...
-                  </option>
+                <select class="sgcategory" name="sgcateIdist">
+                  <option value="0">请选择...</option>
+                  <c:forEach items="${P_STOREGOODSCLASS_PARENT_LIST}" var="storeGoodsClass">
+                    <c:if test="${storeGoodsClass.stcState=='1'}">
+                      <option value="${storeGoodsClass.id}">${storeGoodsClass.name}</option>
+                      <c:forEach items="${storeGoodsClass.children}" var="children">
+                        <c:if test="${children.stcState=='1'}">
+                        <option value="${children.id}">&nbsp;&nbsp;${children.name}</option>
+                        </c:if>
+                      </c:forEach>
+                    </c:if>
+                  </c:forEach>
                 </select>
                 <p class="hint">
                   商品可以从属于店铺的多个分类之下,
@@ -769,7 +782,7 @@
     $('input[name="goodsStorage"]').attr('readonly', 'readonly').css('background', '#E7E7E7 none');
     $('dl[nc_type="spec_dl"]').show();
     str = '<tr>';
-
+    var spvIndex=0;
     <c:forEach items="${P_GOODSSPECS}" var="goodsSpec" varStatus="status">
     for (var i_${status.index} = 0; i_${status.index} < spec_group_checked[${status.index}].length; i_${status.index}++) {
       td_${status.index+1} = spec_group_checked[${status.index}][i_${status.index}];
@@ -789,20 +802,20 @@
       str += '<input type="hidden" name="spec[' + spec_bunch + '][goods_id]" nc_type="' + spec_bunch + '|id" value="" />';
       <c:forEach items="${P_GOODSSPECS}" var="gs" varStatus="vs">
       if (td_${vs.index+1}[2] != null) {
-        str += "<input type='hidden' name='spec[" + spec_bunch + "][color]' value='" + td_${vs.index+1}[1] + "' />";
+        str += "<input type='hidden' name='stockList["+spvIndex+"].specName' value='" + td_${vs.index+1}[1] + "' />";
       }
-      str += "<td><input type='hidden' name='spec[" + spec_bunch + "][sp_value][" + td_${vs.index+1}[1] + "] value='" + td_${vs.index+1}[0] + "' />" + td_${vs.index+1}[1] + "</td>";
+      str += "<td><input type='hidden' name='stockList["+spvIndex+"].specId' value='" + td_${vs.index+1}[0] + "' />" + td_${vs.index+1}[1] + "</td>";
       </c:forEach>
 
-      str += '<td><input class="text price" type="text" name="spec[' + spec_bunch + '][price]" data_type="price" nc_type="' + spec_bunch + '|price" value="" /><em class="add-on"><i class="icon-renminbi"></i></em></td><td><input class="text stock" type="text" name="spec[' + spec_bunch + '][stock]" data_type="stock" nc_type="' + spec_bunch + '|stock" value="" /></td><td><input class="text sku" type="text" name="spec[' + spec_bunch + '][sku]" nc_type="' + spec_bunch + '|sku" value="" /></td></tr>';
+      str += "<td><input class='text price' type='text' name='stockList["+spvIndex+"].price' data_type='price' nc_type='" + spec_bunch + "|price' value='' /><em class='add-on'><i class='icon-renminbi'></i></em></td><td><input class='text stock' type='text' name='stockList["+spvIndex+"].stock' data_type='stock' nc_type='" + spec_bunch + "|stock' value='' /></td><td><input class='text sku' type='text' name='stockList["+spvIndex+"].sku' nc_type='" + spec_bunch + "|sku' value='' /></td></tr>";
 
 
       </c:if>
       </c:forEach>
-
+      spvIndex++;
       <c:forEach items="${P_GOODSSPECS}" var="goodsSpec" varStatus="status">
-    }
-    </c:forEach>
+      }
+      </c:forEach>
 
 
     if (str == '<tr>') {

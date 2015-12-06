@@ -1,5 +1,6 @@
 package com.ansteel.shop.store.domain;
 
+import com.ansteel.core.constant.Constants;
 import com.ansteel.core.domain.BaseEntity;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
@@ -12,7 +13,7 @@ import javax.persistence.Table;
  * 店铺导航
  */
 @Entity
-@Table(name = "STORE_NAV")
+@Table(name =  Constants.G_TABLE_PREFIX + "STORE_NAV")
 public class StoreNavigation extends BaseEntity {
 
     /**

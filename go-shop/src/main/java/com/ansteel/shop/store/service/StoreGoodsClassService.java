@@ -22,4 +22,5 @@ public interface StoreGoodsClassService {
     StoreGoodsClass save(StoreGoodsClass storeGoodsClass);
 
     StoreGoodsClass saveCurrent(StoreGoodsClass storeGoodsClass, String parentId);
+
 }

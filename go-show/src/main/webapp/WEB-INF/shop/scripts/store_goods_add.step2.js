@@ -88,12 +88,12 @@ $(function(){
     /* ajax打开图片空间 end */
     
     // 商品属性
-    attr_selected();
+   /* attr_selected();
     $('select[nc_type="attr_select"]').change(function(){
         id = $(this).find('option:selected').attr('nc_type');
         name = $(this).attr('attr').replace(/__NC__/g,id);
         $(this).attr('name',name);
-    });
+    });*/
     
     // 修改规格名称
     $('dl[nctype="spec_group_dl"]').on('click', 'input[type="checkbox"]', function(){
@@ -260,13 +260,13 @@ function change_img_name(Obj){
      V.find('input[type="file"]').attr('name', Obj.val());
 }
 // 商品属性
-function attr_selected(){
+/*function attr_selected(){
     $('select[nc_type="attr_select"] option:selected').each(function(){
         id = $(this).attr('nc_type');
         name = $(this).parents('select').attr('attr').replace(/__NC__/g,id);
         $(this).parents('select').attr('name',name);
     });
-}
+}*/
 // 验证店铺分类是否重复
 function checkSGC($val) {
     var _return = true;

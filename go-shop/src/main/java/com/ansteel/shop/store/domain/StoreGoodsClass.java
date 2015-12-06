@@ -1,5 +1,6 @@
 package com.ansteel.shop.store.domain;
 
+import com.ansteel.core.constant.Constants;
 import com.ansteel.core.domain.BaseEntity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.apache.commons.lang3.builder.EqualsBuilder;
@@ -14,7 +15,7 @@ import java.util.Collection;
  * Created by Administrator on 2015/11/10.
  */
 @Entity
-@Table(name = "store_goods_class")
+@Table(name =  Constants.G_TABLE_PREFIX + "store_goods_class")
 public class StoreGoodsClass extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.EAGER)
