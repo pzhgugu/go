@@ -1,7 +1,7 @@
 
 var KE;
   KindEditor.ready(function(K) {
-        KE = K.create("textarea[name='g_body']", {
+        KE = K.create("textarea[name='goodsBody']", {
 						items : ['source', '|', 'fullscreen', 'undo', 'redo', 'print', 'cut', 'copy', 'paste',
             'plainpaste', 'wordpaste', '|', 'justifyleft', 'justifycenter', 'justifyright',
             'justifyfull', 'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent', 'subscript',

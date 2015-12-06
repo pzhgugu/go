@@ -6,6 +6,12 @@ import org.springframework.data.domain.Page;
 import java.util.List;
 
 public interface GoodsService {
+	/**
+	 * 保存商品
+	 * @param goods
+	 * @return
+	 */
+	Goods save(Goods goods);
 
 	/**
 	 * 保存商品

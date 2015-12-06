@@ -8,13 +8,13 @@ import java.util.List;
  * Created by Administrator on 2015/12/5.
  */
 public class GoodsSpecValueSelectListModel {
-
-
     /**
      * 规格Id
      */
     private String spId;
-
+    /**
+     * 规格名称
+     */
     private String spName;
 
     public String getSpName() {
@@ -25,6 +25,9 @@ public class GoodsSpecValueSelectListModel {
         this.spName = spName;
     }
 
+    /**
+     * 规格值集合
+     */
     private String[] spvId;
 
     public String getSpId() {

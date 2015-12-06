@@ -140,7 +140,7 @@
             </dl>
             <c:if test="${!empty P_GOODSSPECS}">
               <c:forEach items="${P_GOODSSPECS}" var="goodsSpec" varStatus="status">
-                <dl spec_img="t" class="spec-bg" nctype="spec_group_dl" nc_type="spec_group_dl_${status.index}">
+                <dl <c:if test="${goodsSpec.spName=='颜色'}" > spec_img="t"</c:if> class="spec-bg" nctype="spec_group_dl" nc_type="spec_group_dl_${status.index}">
                   <dt>
                     <input type="text" data-param="{id:'${goodsSpec.id}',name:'${goodsSpec.spName}'}" nctype="spec_name"
                            maxlength="4" value="${goodsSpec.spName}" title="自定义规格类型名称，规格值名称最多不超过4个字"
@@ -156,6 +156,9 @@
               <input type="checkbox" name="gsvslList[${status.index}].spvId" class="sp_val"
                      nc_type="${goodsSpecValue.name}"
                      value="${goodsSpecValue.id}">
+                     </span>
+                        <span nctype="pv_name">${goodsSpecValue.name}</span>
+                        </li>
                         </c:if>
                       </c:forEach>
                       <li data-param="{gc_id:'${P_GOODSCLASS.id}',sp_id:'${goodsSpec.id}',url:'${S_URL}/se/spec/addspec'}">
@@ -324,7 +327,7 @@
           <label class="mr5">${goodsAttribute.attrName}</label>
           <input type="hidden" value="${goodsAttribute.id}" name="attrList[${status.index}].id">
                     <select nc_type="attr_select" name="attrList[${status.index}].value"  >
-                      <option nc_type="0" value="不限">不限</option>
+                      <option nc_type="0" value="">不限</option>
                       <c:forEach items="${goodsAttribute.goodsAttributeValueList}" var="v">
                         <option value="${v.id}">${v.name}</option>
                       </c:forEach>
@@ -341,7 +344,7 @@
               </dt>
               <dd>
                 <textarea style="width: 100%; height: 480px; visibility: hidden; display: none;"
-                name="g_body" id="g_body">
+                name="goodsBody" id="goodsBody">
                 </textarea>
                 <div class="hr8">
                   <div class="ncsc-upload-btn">
@@ -430,14 +433,14 @@
               <dd>
                 <ul class="ncsc-form-radio-list">
                   <li>
-                    <input type="radio" value="0" checked="checked" class="radio" name="goodsFreight"
+                    <input type="radio" value="0" checked="checked" class="radio" name="freight"
                     nctype="freight" id="freight_0">
                     <label for="freight_0">
                       固定运费
                     </label>
                     <div nctype="div_freight">
-                      <input type="text" name="g_freight" value="0.00" nc_type="transport" class="w50 text"
-                      id="g_freight">
+                      <input type="text" name="goodsFreight" value="0.00" nc_type="transport" class="w50 text"
+                      id="goodsFreight">
                       <em class="add-on">
                         <i class="icon-renminbi">
                         </i>
@@ -509,7 +512,7 @@
                     新增分类
                   </a>
                 </span>
-                <select class="sgcategory" name="sgcateIdist">
+                <select class="sgcategory" name="sgcateIdList">
                   <option value="0">请选择...</option>
                   <c:forEach items="${P_STOREGOODSCLASS_PARENT_LIST}" var="storeGoodsClass">
                     <c:if test="${storeGoodsClass.stcState=='1'}">
@@ -799,11 +802,12 @@
       spec_bunch += tmp_spec_td[${vs.index}];
       </c:forEach>
 
-      str += '<input type="hidden" name="spec[' + spec_bunch + '][goods_id]" nc_type="' + spec_bunch + '|id" value="" />';
+      //str += '<input type="hidden" name="spec[' + spec_bunch + '][goods_id]" nc_type="' + spec_bunch + '|id" value="" />';
       <c:forEach items="${P_GOODSSPECS}" var="gs" varStatus="vs">
       if (td_${vs.index+1}[2] != null) {
-        str += "<input type='hidden' name='stockList["+spvIndex+"].specName' value='" + td_${vs.index+1}[1] + "' />";
+        str += "<input type='hidden' name='stockList["+spvIndex+"].colorId' value='" + td_${vs.index+1}[0] + "' />";
       }
+      str += "<input type='hidden' name='stockList["+spvIndex+"].specName' value='" + td_${vs.index+1}[1] + "' />";
       str += "<td><input type='hidden' name='stockList["+spvIndex+"].specId' value='" + td_${vs.index+1}[0] + "' />" + td_${vs.index+1}[1] + "</td>";
       </c:forEach>
 

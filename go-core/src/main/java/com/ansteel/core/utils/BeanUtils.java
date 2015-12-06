@@ -1,10 +1,12 @@
 package com.ansteel.core.utils;
 
-import java.util.Iterator;  
+import java.lang.reflect.Field;
+import java.util.Iterator;
 import java.util.Map;  
   
-import org.apache.commons.beanutils.PropertyUtils;  
-  
+import org.apache.commons.beanutils.PropertyUtils;
+import org.springframework.util.ReflectionUtils;
+
 /**
  * 创 建 人：Wesley
  * 创建日期：2015-05-25
@@ -19,8 +21,7 @@ public class BeanUtils extends org.apache.commons.beanutils.BeanUtils {
      * @param dest 
      *            目标对象，标准的JavaBean 
      * @param orig 
-     *            源对象，可为Map、标准的JavaBean 
-     * @throws BusinessException 
+     *            源对象，可为Map、标准的JavaBean
      */  
     @SuppressWarnings("rawtypes")  
     public static void applyIf(Object dest, Object orig) throws Exception {  
@@ -37,9 +38,13 @@ public class BeanUtils extends org.apache.commons.beanutils.BeanUtils {
                     }  
                 }  
             } else {  
-                java.lang.reflect.Field[] fields = orig.getClass().getDeclaredFields();  
+                Field[] fields = orig.getClass().getDeclaredFields();
                 for (int i = 0; i < fields.length; i++) {  
-                    String name = fields[i].getName();  
+                    String name = fields[i].getName();
+                    Field destField=ReflectionUtils.findField(dest.getClass(), name);
+                    if(destField==null){
+                        continue;
+                    }
                     if (PropertyUtils.isReadable(orig, name) && PropertyUtils.isWriteable(dest, name)) {  
                         Object value = PropertyUtils.getSimpleProperty(orig, name);  
                         if (value != null) {  
@@ -53,17 +58,7 @@ public class BeanUtils extends org.apache.commons.beanutils.BeanUtils {
         }  
     }  
   
-    /** 
-     * 将源对象中的值覆盖到目标对象中，仅覆盖源对象中不为NULL值的属性 
-     *  
-     * @param orig 
-     *            源对象，标准的JavaBean 
-     * @param dest 
-     *            排除检查的属性，Map 
-     *  
-     * @throws BusinessException 
-     */  
-    @SuppressWarnings("rawtypes")  
+
     public static boolean checkObjProperty(Object orig, Map dest) throws Exception {  
         try {  
             java.lang.reflect.Field[] fields = orig.getClass().getDeclaredFields();  

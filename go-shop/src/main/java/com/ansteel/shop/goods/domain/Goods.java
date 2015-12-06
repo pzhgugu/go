@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -95,6 +96,7 @@ public class Goods extends BaseEntity {
 	/**
 	 * 商品规格序列化
 	 */
+	@Lob
 	private String goodsSpec;
 
 	/**

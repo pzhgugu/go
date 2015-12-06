@@ -28,6 +28,15 @@ import java.util.List;
 @Transactional(readOnly = true)
 public class GoodsServiceImpl implements GoodsService {
 
+    @Autowired
+    GoodsRepository goodsRepository;
+
+    @Override
+    @Transactional
+    public Goods save(Goods goods) {
+        return goodsRepository.save(goods);
+    }
+
    /* @Autowired
     StoreService storeService;
 

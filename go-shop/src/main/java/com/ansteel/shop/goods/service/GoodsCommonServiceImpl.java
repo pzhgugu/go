@@ -1,8 +1,15 @@
 package com.ansteel.shop.goods.service;
 
+import com.ansteel.core.utils.BeanUtils;
+import com.ansteel.core.utils.JsonUtils;
 import com.ansteel.core.utils.StringUtils;
+import com.ansteel.shop.goods.domain.Goods;
 import com.ansteel.shop.goods.domain.GoodsCommon;
 import com.ansteel.shop.goods.repository.GoodsCommonRepository;
+import com.ansteel.shop.goods.web.GoodsAttrModel;
+import com.ansteel.shop.goods.web.GoodsModel;
+import com.ansteel.shop.goods.web.GoodsSpecValueSelectListModel;
+import com.ansteel.shop.goods.web.GoodsSpecValueStockModel;
 import com.ansteel.shop.store.domain.Store;
 import com.ansteel.shop.store.service.StoreService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +25,9 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -33,6 +42,8 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
     StoreService storeService;
     @Autowired
     GoodsImagesService goodsImagesService;
+    @Autowired
+    GoodsService goodsService;
 
     @Override
     @Transactional
@@ -88,6 +99,7 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
     }
 
     @Override
+    @Transactional
     public void unShow(String[] goodsIdArray) {
         for (String goodsId : goodsIdArray) {
             this.unShow(goodsId);
@@ -95,11 +107,13 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
     }
 
     @Override
+    @Transactional
     public void unShow(String goodsId) {
         goodsCommonRepository.updateGoodsState(goodsId, 0);
     }
 
     @Override
+    @Transactional
     public void adEdit(String[] goodsIdArray, String adWord) {
         for (String goodsId : goodsIdArray) {
             goodsCommonRepository.updateAdWord(goodsId, adWord);
@@ -107,6 +121,7 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
     }
 
     @Override
+    @Transactional
     public GoodsCommon savePosition(String commonid, String plateTop, String plateBottom) {
         GoodsCommon goods = this.findOneByStoreIdAndId(commonid);
         Assert.notNull(goods, commonid + ",此商品id无效！");
@@ -116,9 +131,126 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
     }
 
     @Override
+    @Transactional
     public void savePosition(String[] ids, String plateTop, String plateBottom) {
         for (String id : ids) {
             this.savePosition(id, plateTop, plateBottom);
         }
+    }
+
+    @Override
+    @Transactional
+    public GoodsCommon saveGoodsCommonAndGodds(GoodsCommon goodsCommon, GoodsModel goodsModel) {
+        //设置店铺
+        Store store = storeService.getCurrentStore();
+        goodsCommon.setStoreId(store.getId());
+        goodsCommon.setStoreName(store.getName());
+
+        //设置属性列表
+        List<GoodsAttrModel> attrList=goodsModel.getAttrList();
+        if(attrList!=null&&attrList.size()>0) {
+            goodsCommon.setGoodsAttr(JsonUtils.jsonFromObject(attrList));
+        }
+
+        //店铺分类
+        String sgcateIdList = goodsModel.getSgcateIdList();
+        goodsCommon.setGoodsStcids(sgcateIdList);
+
+        //发布时间
+        if(goodsCommon.getGoodsState()!=null&&goodsCommon.getGoodsState()==1){
+            //上架时间
+            goodsCommon.setGoodsSelltime(new Date());
+        }else{
+            //上架时间设置
+        }
+
+        //规格选择-规格名称
+        List<GoodsSpecValueSelectListModel> gsvslList = goodsModel.getGsvslList();
+        if(gsvslList!=null&&gsvslList.size()>0){
+            goodsCommon.setSpecName(JsonUtils.jsonFromObject(gsvslList));
+        }
+
+
+        GoodsCommon dataBaseGoodsCommon =null;
+                //判断规格是否每个品种都选择，是否有库存配置列表
+        Boolean isAllSelect=this.specIsAllSelect(gsvslList);
+        if(isAllSelect){
+            //保存库存列表
+            List<GoodsSpecValueStockModel> stockList = goodsModel.getStockList();
+            goodsCommon.setSpecValue(JsonUtils.jsonFromObject(stockList));
+
+            dataBaseGoodsCommon = goodsCommonRepository.save(goodsCommon);
+            //保存Goods表，商品表
+            this.save(dataBaseGoodsCommon,stockList);
+        }else{
+            dataBaseGoodsCommon = goodsCommonRepository.save(goodsCommon);
+            this.saveGoods(dataBaseGoodsCommon);
+        }
+        return dataBaseGoodsCommon;
+    }
+
+    private void save(GoodsCommon goodsCommon, List<GoodsSpecValueStockModel> stockList) {
+        Goods goods = this.setGoods(goodsCommon);
+        goods.setGoodsCommonId(goodsCommon.getId());
+        for(GoodsSpecValueStockModel gsvsm:stockList){
+            //库存
+            Integer stock = gsvsm.getStock();
+            if(stock!=null&&stock>0) {
+                Goods goodsNew = null;
+                try {
+                    goodsNew = (Goods) BeanUtils.cloneBean(goods);
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                } catch (InstantiationException e) {
+                    e.printStackTrace();
+                } catch (InvocationTargetException e) {
+                    e.printStackTrace();
+                } catch (NoSuchMethodException e) {
+                    e.printStackTrace();
+                }
+                String[] specNameArray = gsvsm.getSpecName();
+                StringBuffer nameSB = new StringBuffer(goodsNew.getName());
+                for (String name : specNameArray) {
+                    nameSB.append(" " + name);
+                }
+                goodsNew.setName(nameSB.toString());
+                //商品价格
+                goodsNew.setGoodsStorePrice(gsvsm.getPrice());
+                goodsNew.setGoodsSpec(JsonUtils.jsonFromObject(gsvsm));
+                //库存
+                goodsNew.setGoodsStorage(stock);
+                //商家货号
+                goodsNew.setGoodsSerial(gsvsm.getSku());
+                //是否添加颜色ID？？？
+                goodsNew.setColorId(gsvsm.getColorId());
+                goodsService.save(goodsNew);
+            }
+        }
+    }
+
+    private void saveGoods(GoodsCommon goodsCommon) {
+        Goods goods = this.setGoods(goodsCommon);
+        goodsService.save(goods);
+    }
+
+    private Goods setGoods(GoodsCommon goodsCommon) {
+        Goods goods = new Goods();
+        try {
+            BeanUtils.applyIf(goods,goodsCommon);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        goods.setId(null);
+        return goods;
+    }
+
+    private Boolean specIsAllSelect(List<GoodsSpecValueSelectListModel> gsvslList) {
+        for(GoodsSpecValueSelectListModel gsslm:gsvslList){
+            String[] spvIds = gsslm.getSpvId();
+            if(spvIds==null||spvIds.length<1){
+                return false;
+            }
+        }
+        return true;
     }
 }

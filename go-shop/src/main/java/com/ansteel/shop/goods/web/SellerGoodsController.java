@@ -35,8 +35,6 @@ import com.ansteel.shop.album.service.AlbumPicService;
 import com.ansteel.shop.constant.ShopConstant;
 import com.ansteel.shop.store.domain.Store;
 import com.ansteel.shop.store.service.StoreService;
-import com.ansteel.shop.utils.JavaScriptUtils;
-import com.ansteel.shop.utils.JsonImage;
 
 @Controller
 @RequestMapping(value = ShopConstant.SELLER + "/goods")
@@ -277,23 +275,14 @@ public class SellerGoodsController {
 
     @RequestMapping(value = "/addstep/savegoods", method = RequestMethod.POST)
     public String saveGoods(@Valid GoodsCommon goodsCommon, BindingResult result, Model model,
-                            GoodsSpecModel goodsSpecModel,
+                            GoodsModel goodsModel,
                             HttpServletRequest request,
                             HttpServletResponse response) {
         if (result.hasErrors()) {
             ExceprionUtils.BindingResultError(result);
         }
-       /* Enumeration e = request.getParameterNames();
-        while (e.hasMoreElements()) {
-            String name = (String) e.nextElement();
-            if(name.indexOf("sp_val")==0){
-                String vale = request.getParameter(name);
-                System.out.println(name + "=" + vale);
-            }
-        }*/
-        // Goods newGoods = goodsService.save(goods);
-        // return "redirect:/se/goods/addstep/editimages?goodsid=" + newGoods.getId();
-        return "redirect:/se/goods/addstep/editimages?goodsid=" + goodsCommon.getId();
+        GoodsCommon newGoods = goodsCommonService.saveGoodsCommonAndGodds(goodsCommon,goodsModel);
+        return "redirect:/se/goods/addstep/editimages?goodsid=" + newGoods.getId();
     }
 
     @RequestMapping(value = "/addstep/editimages")

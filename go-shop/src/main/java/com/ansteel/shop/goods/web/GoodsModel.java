@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2015/12/4.
  */
-public class GoodsSpecModel {
+public class GoodsModel {
 
     /**
      * 规格值列表
@@ -18,21 +18,22 @@ public class GoodsSpecModel {
     List<GoodsSpecValueStockModel> stockList;
 
     /**
-     * 库存配置列表
+     * 属性列表
      */
     List<GoodsAttrModel> attrList;
 
     /**
      * 店铺分类列表
+     * 使用逗号分隔
      */
-    String[] sgcateIdist;
+    String sgcateIdList;
 
-    public String[] getSgcateIdist() {
-        return sgcateIdist;
+    public String getSgcateIdList() {
+        return sgcateIdList;
     }
 
-    public void setSgcateIdist(String[] sgcateIdist) {
-        this.sgcateIdist = sgcateIdist;
+    public void setSgcateIdList(String sgcateIdList) {
+        this.sgcateIdList = sgcateIdList;
     }
 
     public List<GoodsAttrModel> getAttrList() {

@@ -6,6 +6,11 @@ import java.math.BigDecimal;
  * Created by Administrator on 2015/12/5.
  */
 public class GoodsSpecValueStockModel {
+
+    /**
+     * 颜色id
+     */
+    private String colorId;
     /**
      * 规格名称集合
      */
@@ -69,5 +74,13 @@ public class GoodsSpecValueStockModel {
 
     public void setSku(String sku) {
         this.sku = sku;
+    }
+
+    public String getColorId() {
+        return colorId;
+    }
+
+    public void setColorId(String colorId) {
+        this.colorId = colorId;
     }
 }

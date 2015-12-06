@@ -2,6 +2,7 @@ package com.ansteel.shop.goods.service;
 
 
 import com.ansteel.shop.goods.domain.GoodsCommon;
+import com.ansteel.shop.goods.web.GoodsModel;
 import org.springframework.data.domain.Page;
 
 /**
@@ -62,4 +63,6 @@ public interface GoodsCommonService {
     GoodsCommon savePosition(String commonid, String plateTop, String plateBottom);
 
     void savePosition(String[] ids, String plateTop, String plateBottom);
+
+    GoodsCommon saveGoodsCommonAndGodds(GoodsCommon goodsCommon, GoodsModel goodsModel);
 }

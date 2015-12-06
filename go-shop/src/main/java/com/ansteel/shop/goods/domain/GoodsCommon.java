@@ -56,10 +56,12 @@ public class GoodsCommon extends BaseEntity {
     /**
      * 规格名称
      */
+    @Lob
     private String specName;
     /**
      * 规格值
      */
+    @Lob
     private String specValue;
     /**
      * 商品品牌id
@@ -84,6 +86,7 @@ public class GoodsCommon extends BaseEntity {
     /**
      * 商品详细内容
      */
+    @Lob
     private String goodsBody;
     /**
      * 商品状态 0下架，1正常，10违规（禁售）
