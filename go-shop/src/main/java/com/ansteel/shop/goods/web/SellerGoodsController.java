@@ -55,7 +55,7 @@ public class SellerGoodsController {
     AlbumPicService albumPicService;
 
     @Autowired
-    GoodsService goodsService;
+    GoodsCommonService goodsCommonService;
 
     @Autowired
     GoodsImagesService goodsImagesService;
@@ -276,7 +276,7 @@ public class SellerGoodsController {
     }
 
     @RequestMapping(value = "/addstep/savegoods", method = RequestMethod.POST)
-    public String saveGoods(@Valid Goods goods, BindingResult result, Model model,
+    public String saveGoods(@Valid GoodsCommon goodsCommon, BindingResult result, Model model,
                             GoodsSpecModel goodsSpecModel,
                             HttpServletRequest request,
                             HttpServletResponse response) {
@@ -293,7 +293,7 @@ public class SellerGoodsController {
         }*/
         // Goods newGoods = goodsService.save(goods);
         // return "redirect:/se/goods/addstep/editimages?goodsid=" + newGoods.getId();
-        return "redirect:/se/goods/addstep/editimages?goodsid=" + goods.getId();
+        return "redirect:/se/goods/addstep/editimages?goodsid=" + goodsCommon.getId();
     }
 
     @RequestMapping(value = "/addstep/editimages")

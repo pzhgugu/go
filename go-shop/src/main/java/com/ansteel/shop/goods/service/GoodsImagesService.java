@@ -2,7 +2,7 @@ package com.ansteel.shop.goods.service;
 
 import java.util.List;
 
-import com.ansteel.shop.goods.domain.Goods;
+import com.ansteel.shop.goods.domain.GoodsCommon;
 import com.ansteel.shop.goods.domain.GoodsImages;
 
 public interface GoodsImagesService {
@@ -35,7 +35,7 @@ public interface GoodsImagesService {
 	 * @param goodsId
 	 * @return
 	 */
-	Goods saevDefaultImage(GoodsImages[] goodsImagesArray, String goodsId);
+	GoodsCommon saevDefaultImage(GoodsImages[] goodsImagesArray, String goodsId);
 
 	/**
 	 * 删除原有图片，保存新的图片列表

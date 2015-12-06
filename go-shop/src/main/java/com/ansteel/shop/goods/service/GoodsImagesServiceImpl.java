@@ -2,6 +2,7 @@ package com.ansteel.shop.goods.service;
 
 import java.util.List;
 
+import com.ansteel.shop.goods.domain.GoodsCommon;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -9,7 +10,6 @@ import org.springframework.util.Assert;
 
 import com.ansteel.core.exception.PageException;
 import com.ansteel.core.utils.StringUtils;
-import com.ansteel.shop.goods.domain.Goods;
 import com.ansteel.shop.goods.domain.GoodsImages;
 import com.ansteel.shop.goods.repository.GoodsImagesRepository;
 import com.ansteel.shop.store.domain.Store;
@@ -26,7 +26,7 @@ public class GoodsImagesServiceImpl implements GoodsImagesService {
     StoreService storeService;
 
     @Autowired
-    GoodsService goodsService;
+    GoodsCommonService goodsCommonService;
 
     @Override
     @Transactional
@@ -63,7 +63,7 @@ public class GoodsImagesServiceImpl implements GoodsImagesService {
 
     @Override
     @Transactional
-    public Goods saevDefaultImage(GoodsImages[] goodsImagesArray, String goodsId) {
+    public GoodsCommon saevDefaultImage(GoodsImages[] goodsImagesArray, String goodsId) {
         GoodsImages goodsImagesDefault = null;
         for (GoodsImages gi : goodsImagesArray) {
             if (gi.getIsDefault() != null && gi.getIsDefault() == 1 && gi.getGoodsImage() != null) {
@@ -71,10 +71,10 @@ public class GoodsImagesServiceImpl implements GoodsImagesService {
             }
         }
         Assert.notNull(goodsImagesDefault, "主图没有设置图片，请检查！");
-        Goods goods = goodsService.findOneByStoreIdAndId(goodsId);
+        GoodsCommon goods = goodsCommonService.findOneByStoreIdAndId(goodsId);
         if (!goods.getGoodsImage().equals(goodsImagesDefault.getGoodsImage())) {
             goods.setGoodsImage(goodsImagesDefault.getGoodsImage());
-            return goodsService.save(goods);
+            return goodsCommonService.save(goods);
         }
         return goods;
     }

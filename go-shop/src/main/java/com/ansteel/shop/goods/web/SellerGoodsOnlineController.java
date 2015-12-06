@@ -10,9 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.ansteel.core.utils.ResponseUtils;
 import com.ansteel.core.utils.StringUtils;
-import com.ansteel.shop.goods.domain.Goods;
-import com.ansteel.shop.goods.domain.JsonGoodsClass;
-import com.ansteel.shop.goods.service.GoodsService;
+import com.ansteel.shop.goods.domain.GoodsCommon;
+import com.ansteel.shop.goods.service.GoodsCommonService;
 import com.ansteel.shop.store.domain.StorePlate;
 import com.ansteel.shop.store.service.StorePlateService;
 import com.ansteel.shop.utils.JavaScriptUtils;
@@ -31,7 +30,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class SellerGoodsOnlineController {
 
     @Autowired
-    GoodsService goodsService;
+    GoodsCommonService goodsCommonService;
 
     public static int PAGE_SIZE=20;
 
@@ -50,7 +49,7 @@ public class SellerGoodsOnlineController {
                        HttpServletResponse response) {
 
         //查询出售中商品列表
-        Page<Goods> page=goodsService.findCurrentSaleAll(classId, sortType, curPage, PAGE_SIZE, name, value);
+        Page<GoodsCommon> page=goodsCommonService.findCurrentSaleAll(classId, sortType, curPage, PAGE_SIZE, name, value);
 
         model.addAttribute("P_PAGE_SHOW", page);
         model.addAttribute("P_GOODS_LIST", page.getContent());
@@ -76,7 +75,7 @@ public class SellerGoodsOnlineController {
 
         if(StringUtils.hasText(commonIds)){
             String[] goodsIdArray=commonIds.split(",");
-            goodsService.unShow(goodsIdArray);
+            goodsCommonService.unShow(goodsIdArray);
         }
 
         String url=request.getContextPath()+"/se/goodsonline/list";
@@ -105,7 +104,7 @@ public class SellerGoodsOnlineController {
 
         if(StringUtils.hasText(commonIds)){
             String[] goodsIdArray=commonIds.split(",");
-            goodsService.adEdit(goodsIdArray,adWord);
+            goodsCommonService.adEdit(goodsIdArray,adWord);
         }
 
         String url=request.getContextPath()+"/se/goodsonline/list";
@@ -137,7 +136,7 @@ public class SellerGoodsOnlineController {
 
         if(StringUtils.hasText(commonid)) {
             String[] ids=commonid.split(",");
-            goodsService.savePosition(ids, plateTop, plateBottom);
+            goodsCommonService.savePosition(ids, plateTop, plateBottom);
         }
 
         String url=request.getContextPath()+"/se/goodsonline/list";

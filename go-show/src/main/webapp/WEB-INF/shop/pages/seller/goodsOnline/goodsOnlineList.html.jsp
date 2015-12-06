@@ -99,6 +99,7 @@
                         操作
                     </th>
                 </tr>
+<c:if test="${fn:length(P_GOODS_LIST)>0}">
                 <tr>
                     <td class="tc">
                         <input type="checkbox" class="checkall" id="all">
@@ -258,6 +259,7 @@
                         </a>
                     </th>
                 </tr>
+
                 <tr>
                     <td colspan="20">
                         <fis:block url="shop:widget/tpl/pagination.html.jsp" >
@@ -269,10 +271,22 @@
                     </td>
                 </tr>
                 </tfoot>
+
+                </c:if>
+
             </table>
             <!--表格结束 -->
 
-
+            <c:if test="${fn:length(P_GOODS_LIST)==0}">
+                <div class="warning-option">
+                    <i class="icon-warning-sign">
+                        &nbsp;
+                    </i>
+        <span>
+          暂无符合条件的数据记录
+        </span>
+                </div>
+            </c:if>
         </div>
 
 
