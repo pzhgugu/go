@@ -14,6 +14,13 @@ public interface GoodsService {
 	Goods save(Goods goods);
 
 	/**
+	 * 计算商品总库存
+	 * @param id
+	 * @return
+	 */
+	Integer grossInventory(String id);
+
+	/**
 	 * 保存商品
 	 * @param goods
 	 * @return

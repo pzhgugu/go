@@ -12,6 +12,7 @@ import com.ansteel.core.utils.ResponseUtils;
 import com.ansteel.core.utils.StringUtils;
 import com.ansteel.shop.goods.domain.GoodsCommon;
 import com.ansteel.shop.goods.service.GoodsCommonService;
+import com.ansteel.shop.goods.service.GoodsService;
 import com.ansteel.shop.store.domain.StorePlate;
 import com.ansteel.shop.store.service.StorePlateService;
 import com.ansteel.shop.utils.JavaScriptUtils;
@@ -32,6 +33,9 @@ public class SellerGoodsOnlineController {
     @Autowired
     GoodsCommonService goodsCommonService;
 
+    @Autowired
+    GoodsService goodsService;
+
     public static int PAGE_SIZE=20;
 
     @Autowired
@@ -51,6 +55,11 @@ public class SellerGoodsOnlineController {
         //查询出售中商品列表
         Page<GoodsCommon> page=goodsCommonService.findCurrentSaleAll(classId, sortType, curPage, PAGE_SIZE, name, value);
 
+        List<GoodsCommon> goodsCommonList = page.getContent();
+        for(GoodsCommon gc:goodsCommonList){
+            Integer grossInventory=goodsService.grossInventory(gc.getId());
+            gc.setGoodsStorageAll(grossInventory);
+        }
         model.addAttribute("P_PAGE_SHOW", page);
         model.addAttribute("P_GOODS_LIST", page.getContent());
         model.addAttribute("P_CURRENT_OP", "Online");

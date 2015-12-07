@@ -1,8 +1,11 @@
 package com.ansteel.shop.goods.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.ansteel.shop.goods.domain.GoodsCommon;
+import com.ansteel.shop.goods.web.ColorImagesModel;
+import com.ansteel.shop.goods.web.GoodsImagesModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -90,6 +93,28 @@ public class GoodsImagesServiceImpl implements GoodsImagesService {
                 gi.setGoodsId(goodsId);
                 gi.setStoreId(store.getId());
                 goodsImagesRepository.save(gi);
+            }
+        }
+    }
+
+    @Override
+    @Transactional
+    public void save(ColorImagesModel colorImagesModel) {
+        String goodsId=colorImagesModel.getGoodsId();
+        Assert.hasText(goodsId,"商品ID不能为空！");
+        List<GoodsImagesModel> gimList = colorImagesModel.getGimList();
+        if(gimList!=null&&gimList.size()>0){
+            Store store = storeService.getCurrentStore();
+            for(GoodsImagesModel gim:gimList){
+                List<GoodsImages> goodsImagesModelList = gim.getImgList();
+                for(GoodsImages gi:goodsImagesModelList){
+                    if(StringUtils.hasText(gi.getGoodsImage())){
+                        gi.setColorId(gim.getColorId());
+                        gi.setStoreId(store.getId());
+                        gi.setGoodsId(goodsId);
+                        goodsImagesRepository.save(gi);
+                    }
+                }
             }
         }
     }

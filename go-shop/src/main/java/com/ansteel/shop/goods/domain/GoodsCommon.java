@@ -2,12 +2,10 @@ package com.ansteel.shop.goods.domain;
 
 import com.ansteel.core.constant.Constants;
 import com.ansteel.core.domain.BaseEntity;
+import org.hibernate.annotations.Formula;
 import org.hibernate.validator.constraints.NotEmpty;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Lob;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Pattern;
@@ -179,6 +177,19 @@ public class GoodsCommon extends BaseEntity {
      * 底部关联板式
      */
     private String plateidBottom;
+    /**
+     * 商品总库存
+     */
+    @Transient
+    private Integer goodsStorageAll;
+
+    public Integer getGoodsStorageAll() {
+        return goodsStorageAll;
+    }
+
+    public void setGoodsStorageAll(Integer goodsStorageAll) {
+        this.goodsStorageAll = goodsStorageAll;
+    }
 
     public String getName() {
         return name;

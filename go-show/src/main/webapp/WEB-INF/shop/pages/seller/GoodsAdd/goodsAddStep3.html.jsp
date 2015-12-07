@@ -12,96 +12,57 @@
 
 <form method="post" id="goods_image" action="${S_URL}/se/goods/addstep/saveimages">
   <input type="hidden" name="form_submit" value="ok">
-  <input type="hidden" name="goodsid" value="${S_PARAM.goodsid}">
+  <input type="hidden" name="goodsId" value="${S_PARAM.goodsid}">
   <input type="hidden" name="ref_url" value="${S_URL}/se/goods/addstep/one"/>
 
 
-
-
-
     <div class="ncsc-form-goods-pic">
- <c:forEach items="${P_COLOR_LIST}" var="color">
-      <div class="container">
-          <div class="ncsc-goodspic-list">
-            <div class="title">
-              <h3>
-                颜色：${color.name}
-              </h3>
-            </div>
-            
- <!--列表开始 -->           
-<ul nctype="ul0">
-<c:forEach begin="0" end="4" step="1" varStatus="i">
-  <li class="ncsc-goodspic-upload">
-    <div class="upload-thumb">
-      <img nctype="file_0${i.index}" src='<c:choose>
-<c:when test="${i.index==0}">${S_URL}/att/download/${P_GOODSCOMMON.goodsImage}' />
-      <input type="hidden" nctype="file_0${i.index}" value="${P_GOODSCOMMON.goodsImage}"
-      name="img[0][${i.index}][name]">
-</c:when>
-<c:otherwise>
-${S_URL}/res/img/default_goods_image_240.gif' />
-      <input type="hidden" nctype="file_0${i.index}" value=""
-      name="img[0][${i.index}][name]">
-</c:otherwise>
-</c:choose>
+        <c:if test="${!empty P_COLOR_LIST}">
+        <div class="container">
+            <c:forEach items="${P_COLOR_LIST}" var="color" varStatus="status">
+            <div class="ncsc-goodspic-list">
+                <div class="title">
+                    <h3>颜色：${color.name}</h3></div>
+                <input type="hidden" value="${color.id}" name="gimList[${status.index}].colorId" />
+                <ul nctype="ul${status.index}">
+                    <c:forEach begin="0" end="4" step="1" varStatus="i">
+                    <li class="ncsc-goodspic-upload">
+                        <div class="upload-thumb">
+                            <c:choose>
+                                <c:when test="${i.index==0}">
+                                    <img nctype="file_${status.index}${i.index}" src="${S_URL}/att/download/${P_GOODSCOMMON.goodsImage}" />
+                                    <input type="hidden" nctype="file_${status.index}${i.index}" value="${P_GOODSCOMMON.goodsImage}"
+                                           name="gimList[${status.index}].imgList[${i.index}].goodsImage">
+                                </c:when>
+                                <c:otherwise>
+                                    <img nctype="file_${status.index}${i.index}" src="${S_URL}/res/img/default_goods_image_240.gif" />
+                                    <input type="hidden" nctype="file_${status.index}${i.index}" value=""
+                                           name="gimList[${status.index}].imgList[${i.index}].goodsImage">
+                                </c:otherwise>
+                            </c:choose>
+                        </div>
+                        <div class='show-default <c:if test="${i.index==0}">selected</c:if>' nctype="file_${status.index}${i.index}">
+                            <p><i class="icon-ok-circle"></i>默认主图
+                                <input type="hidden" name="gimList[${status.index}].imgList[${i.index}].isDefault" value='<c:choose><c:when test="${i.index==0}">1</c:when><c:otherwise>0</c:otherwise></c:choose>'>
+                            </p><a href="javascript:void(0)" nctype="del" class="del" title="移除">X</a>
+                        </div>
+                        <div class="show-sort">排序：<input name="gimList[${status.index}].imgList[${i.index}].goodsImageSort" type="text" class="text" value="0" size="1" maxlength="1">
+                        </div>
+                        <div class="ncsc-upload-btn"><a href="javascript:void(0);"><span><input type="file" hidefocus="true" size="1" class="input-file" name="file_${status.index}${i.index}" id="file_${status.index}${i.index}"></span><p><i class="icon-upload-alt"></i>上传</p>
+                        </a></div>
 
-    </div>
-    <div nctype="file_0${i.index}" class="show-default <c:if test="${i.index==0}">selected</c:if>">
-      <p>
-        <i class="icon-ok-circle">
-        </i>
-        默认主图
-        <input type="hidden" value="<c:choose>
-<c:when test="${i.index==0}">1</c:when>
-<c:otherwise>0</c:otherwise></c:choose>" name="img[0][${i.index}][default]">
-      </p>
-      <a title="移除" class="del" nctype="del" href="javascript:void(0)">
-        X
-      </a>
-    </div>
-    <div class="show-sort">
-      排序：
-      <input type="text" maxlength="1" size="1" value="${i.index}" class="text" name="img[0][${i.index}][sort]">
-    </div>
-    <div class="ncsc-upload-btn">
-      <a href="javascript:void(0);">
-        <span>
-          <input type="file" id="file_0${i.index}" name="file" class="input-file" size="1"
-          hidefocus="true">
-        </span>
-        <p>
-          <i class="icon-upload-alt">
-          </i>
-          上传
-        </p>
-      </a>
-    </div>
-  </li>
-</c:forEach>  
-  
-</ul>            
- <!--列表结束 -->
-               
-            <div class="ncsc-select-album">
-              <a class="ncsc-btn" href="${S_URL}/se/goods/addstep/three/images"
-              nctype="select-0">
-                <i class="icon-picture">
-                </i>
-                从图片空间选择
-              </a>
-              <a href="javascript:void(0);" nctype="close_album" class="ncsc-btn ml5"
-              style="display: none;">
-                <i class=" icon-circle-arrow-up">
-                </i>
-                关闭相册
-              </a>
+                    </li>
+                    </c:forEach>
+                </ul>
+                <div class="ncsc-select-album">
+                    <a class="ncsc-btn" href="${S_URL}/se/goods/addstep/three/images?id=${status.index}" nctype="select-${status.index}"><i class="icon-picture"></i>从图片空间选择</a>
+                    <a href="javascript:void(0);" nctype="close_album" class="ncsc-btn ml5" style="display: none;"><i class=" icon-circle-arrow-up"></i>关闭相册</a>
+                </div>
+                <div nctype="album-${status.index}"></div>
             </div>
-            <div nctype="album-0">
-            </div>
-          </div>
-      </div>
- </c:forEach>
+            </c:forEach>
+            </c:if>
+        </div>
 
       <div class="sidebar">
         <div class="alert alert-info alert-block" id="uploadHelp">
@@ -154,36 +115,26 @@ ${S_URL}/res/img/default_goods_image_240.gif' />
 <fis:require id="common:widget/jquery/jquery.ajaxContent.pack.js" />
 <fis:require id="common:widget/fileupload/jquery.ui.widget.js" />
 <fis:require id="common:widget/fileupload/jquery.fileupload.js" />
+<fis:require id="common:widget/ajaxfileupload/ajaxfileupload.js" />
 <fis:require id="shop:scripts/store_goods_add.step3.js" />
 <fis:require id="shop:scripts/page.step3.js" />
 <script>
 var DEFAULT_GOODS_IMAGE = "${S_URL}/res/img/default_goods_image_240.gif";
+$(function(){
+    /* ajax打开图片空间 */
+    <c:forEach items="${P_COLOR_LIST}" var="color" varStatus="status">
+        $('a[nctype="select-${status.index}"]').ajaxContent({
+            event:'click', //mouseover
+            loaderType:"img",
+            loadingMsg:SITEURL + '/res/img/loading.gif',
+            target:'div[nctype="album-${status.index}"]'
+        }).click(function(){
+            $(this).hide();
+            $(this).next().show();
+        });
+    </c:forEach>
+});
 </script>
-<fis:script>
-<c:forEach begin="0" end="4" step="1" varStatus="i">
- $('#file_0${i.index}').fileupload({
-	        dataType: 'json',
-	        url: SITEURL + '/se/goods/image/upload',
-	        formData: {name:'file_0${i.index}'},
-	        add: function (e,data) {
-	        	$('img[nctype="file_0${i.index}"]').attr('src', SITEURL + '/res/img/loading.gif');
-	            data.submit();
-	        },
-	        done: function (e,data) {
-	            var param = data.result;
-	            if (typeof(param.error) != 'undefined') {
-	                alert(param.error);
-	                $('img[nctype="file_0${i.index}"]').attr('src',DEFAULT_GOODS_IMAGE);
-	            } else {
-	            	$('input[nctype="file_0${i.index}"]').val(param.name);
-                    $('img[nctype="file_0${i.index}"]').attr('src', param.thumb_name);
-                    selectDefaultImage($('div[nctype="file_0${i.index}"]'));    
-	            }
-	        }
-	    });
-
-</c:forEach>
-</fis:script>
 
 	</div>
   </div>

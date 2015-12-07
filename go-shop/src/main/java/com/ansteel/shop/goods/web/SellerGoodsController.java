@@ -36,6 +36,7 @@ import com.ansteel.shop.album.service.AlbumPicService;
 import com.ansteel.shop.constant.ShopConstant;
 import com.ansteel.shop.store.domain.Store;
 import com.ansteel.shop.store.service.StoreService;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 @Controller
 @RequestMapping(value = ShopConstant.SELLER + "/goods")
@@ -264,12 +265,15 @@ public class SellerGoodsController {
     public
     @ResponseBody
     Map imageUpload(@RequestParam(value = "category_id", required = false) String id,
-                    @RequestParam(value = "file") MultipartFile file,
+                    //@RequestParam(value = "file") MultipartFile file,
+                    @RequestParam(value = "name") String fileName,
                     HttpServletRequest request, HttpServletResponse response) {
         if (!StringUtils.hasText(id)) {
             AlbumClass albumClass = albumClassService.getCurrentDefalue();
             id = albumClass.getId();
         }
+        MultipartHttpServletRequest mhs = (MultipartHttpServletRequest) request;
+        MultipartFile file=mhs.getFile(fileName);
         AlbumPic album = albumPicService.saveAlbumPic(id, file);
         Map<String, String> map = new HashMap<>();
         map.put("thumb_name", request.getContextPath() + "/att/download/" + album.getApicCover());
@@ -354,16 +358,18 @@ public class SellerGoodsController {
 
     @RequestMapping("/addstep/saveimages")
     public String saveImages(Model model,
-                             @RequestParam(value = "goodsid") String goodsId,
+                             ColorImagesModel colorImagesModel,
                              HttpServletRequest request,
                              HttpServletResponse response) {
-        GoodsImages[] goodsImagesArray = this.getGoodsImagesArray(request);
-        goodsImagesService.saevDefaultImage(goodsImagesArray, goodsId);
-        goodsImagesService.save(goodsId, goodsImagesArray);
+        //GoodsImages[] goodsImagesArray = this.getGoodsImagesArray(request);
+        //goodsImagesService.saevDefaultImage(goodsImagesArray, goodsId);
+       // goodsImagesService.save(goodsId, goodsImagesArray);
+
+        goodsImagesService.save(colorImagesModel);
         return "redirect:/se/goods/addstep/four";
     }
 
-    private GoodsImages[] getGoodsImagesArray(HttpServletRequest request) {
+    /*private GoodsImages[] getGoodsImagesArray(HttpServletRequest request) {
         GoodsImages[] goodsImagesArray = new GoodsImages[5];
         for (int i = 0; i < 5; i++) {
             GoodsImages goodsImages = new GoodsImages();
@@ -391,7 +397,7 @@ public class SellerGoodsController {
             goodsImagesArray[i] = goodsImages;
         }
         return goodsImagesArray;
-    }
+    }*/
 
     @RequestMapping("/addstep/four")
     public String four(Model model,

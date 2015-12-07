@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.ansteel.shop.goods.domain.GoodsCommon;
 import com.ansteel.shop.goods.domain.GoodsImages;
+import com.ansteel.shop.goods.web.ColorImagesModel;
 
 public interface GoodsImagesService {
 
@@ -44,4 +45,5 @@ public interface GoodsImagesService {
 	 */
 	void save(String goodsId, GoodsImages[] goodsImagesArray);
 
+	void save(ColorImagesModel colorImagesModel);
 }

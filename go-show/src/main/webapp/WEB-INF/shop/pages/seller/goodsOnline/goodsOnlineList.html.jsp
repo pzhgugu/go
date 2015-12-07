@@ -3,7 +3,7 @@
 <%@ taglib prefix='c' uri='http://java.sun.com/jstl/core_rt' %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib uri="/fis" prefix="fis" %>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
 <div class="ncsc-layout wrapper">
     <fis:block url="shop:widget/tpl/seller/layoutLeftGoods.html.jsp"/>
@@ -185,11 +185,11 @@
                         </td>
                         <td>
         <span style="color:red;">
-      ${goods}件
+      ${goods.goodsStorageAll}件
         </span>
                         </td>
                         <td class="goods-time">
-                                ${goods.created}
+                            <fmt:formatDate value="${goods.created}" pattern="yyyy-MM-dd"/>
                         </td>
                         <td class="nscs-table-handle">
         <span>
