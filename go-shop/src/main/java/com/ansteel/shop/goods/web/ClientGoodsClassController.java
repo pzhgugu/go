@@ -7,8 +7,6 @@ import com.ansteel.shop.constant.ShopConstant;
 import com.ansteel.shop.goods.domain.GoodsClass;
 import com.ansteel.shop.goods.domain.JsonGoodsClass;
 import com.ansteel.shop.goods.service.GoodsClassService;
-import com.ansteel.shop.utils.JavaScriptUtils;
-import org.apache.poi.ss.formula.functions.T;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

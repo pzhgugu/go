@@ -21,6 +21,18 @@ public interface GoodsService {
 	Integer grossInventory(String id);
 
 	/**
+	 *
+	 * @param commonId
+	 * @return
+	 */
+	List<Goods> findByGoodsCommonId(String commonId);
+
+	void delect(List<Goods> goodsList);
+
+	void delect(Goods goods);
+
+
+	/**
 	 * 保存商品
 	 * @param goods
 	 * @return

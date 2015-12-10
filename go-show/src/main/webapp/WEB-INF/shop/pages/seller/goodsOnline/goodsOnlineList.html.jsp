@@ -193,7 +193,7 @@
                         </td>
                         <td class="nscs-table-handle">
         <span>
-          <a class="btn-blue" href="">
+          <a class="btn-blue" href="${S_URL}/se/goods/editgoods?commonid=${goods.id}">
               <i class="icon-edit">
               </i>
 

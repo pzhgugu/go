@@ -67,6 +67,9 @@ public class SellerGoodsController {
     StoreService storeService;
 
     @Autowired
+    GoodsService goodsService;
+
+    @Autowired
     GoodsSpecValueService goodsSpecValueService;
 
     @Autowired
@@ -206,6 +209,87 @@ public class SellerGoodsController {
         return FisUtils.page("shop:widget/tpl/seller/framework.html");
     }
 
+    @RequestMapping("/editgoods")
+    public String editGoods(Model model,
+                      @RequestParam("commonid") String commonId,
+                      HttpServletRequest request,
+                      HttpServletResponse response) {
+        GoodsCommon goodsCommon = goodsCommonService.findOneByStoreIdAndId(commonId);
+        Assert.notNull(goodsCommon,commonId+",没有这个商品！");
+        goodsCommon.setGoodsStorageAll(goodsService.grossInventory(goodsCommon.getId()));
+        GoodsClass goodsClass = goodsClassService.findOne(goodsCommon.getGcId());
+        //得到商品类型
+        Store store = storeService.getCurrentStore();
+        GoodsType goodsType = goodsClass.getGoodsType();
+        if (goodsType != null) {
+            //关联规格
+            Collection<GoodsSpec> goodsSpecs = goodsType.getGoodsSpecs();
+            model.addAttribute("P_GOODSSPECS", goodsSpecs);
+            if (goodsSpecs.size() > 0) {
+                List<GoodsSpecValue> goodsSpecValueList = goodsSpecValueService.findByStoreIdOrderByStoreIdAsc(store.getId());
+                model.addAttribute("P_GOODSSPECVALUE_LIST", goodsSpecValueList);
+            }
+            //关联品牌
+            Collection<GoodsBrand> goodsBrands = goodsType.getGoodsBrands();
+            model.addAttribute("P_GOODSBRADNS", goodsBrands);
+            //关联属性
+            Collection<GoodsAttribute> goodsAttributes = goodsType.getGoodsAttribute();
+            model.addAttribute("P_GOODSATTRIBUTE", goodsAttributes);
+        }
+        model.addAttribute("P_GOODSTYPE", goodsType);
+
+        //关联版式
+        List<StorePlate> storePlateList= storePlateService.findAllCurrentStore();
+        model.addAttribute("P_STOREPLATE_LIST", storePlateList);
+
+        //店铺分类
+        List<StoreGoodsClass> storeGoodsClassList=storeGoodsClassService.findCurrentByIsParentNull();
+        model.addAttribute("P_STOREGOODSCLASS_PARENT_LIST", storeGoodsClassList);
+        String goodsStcids=goodsCommon.getGoodsStcids();
+        if(StringUtils.hasText(goodsStcids)){
+            model.addAttribute("P_STC_IDS",goodsStcids.split(","));
+        }
+
+        //选中规格
+        String specName=goodsCommon.getSpecName();
+        List<GoodsSpecValueSelectListModel> gsvslList =JsonUtils.readValue(specName,GoodsSpecValueSelectListModel.class);
+        model.addAttribute("P_GOODSSPEC_SELECT",gsvslList);
+        //获取当前店铺、当前商品分类所有规格
+        List<GoodsSpecValue> goodsSpecValueList=goodsSpecValueService.findByCurrentStoreIdAndGcId(goodsCommon.getGcId());
+        Map<String,String> goodsSpecValueMap = new HashMap<>();
+        for(GoodsSpecValue goodsSpecValue:goodsSpecValueList){
+            goodsSpecValueMap.put(goodsSpecValue.getId(),goodsSpecValue.getName());
+        }
+        model.addAttribute("P_GOODSSPECVALUE_ALL",goodsSpecValueMap);
+
+
+        //选中规格值，表格选项
+        String specValue=goodsCommon.getSpecValue();
+        List<GoodsSpecValueStockModel> stockList = JsonUtils.readValue(specValue,GoodsSpecValueStockModel.class);
+        model.addAttribute("P_GOODSSPECVALUE_SELECT",stockList);
+
+
+        //选中属性
+        String goodsAttr=goodsCommon.getGoodsAttr();
+        List<GoodsAttrModel> attrList=JsonUtils.readValue(goodsAttr, GoodsAttrModel.class);
+        model.addAttribute("P_GOODSATTR_SELECT",attrList);
+
+        model.addAttribute("P_GOODSCLASS_LISTNAME", this.getGoodsClassListName(goodsClass));
+        model.addAttribute("P_GOODSCLASS", goodsClass);
+        model.addAttribute("P_GOODSCOMMON",goodsCommon);
+
+        Map<String, String> nav = new HashMap<>();
+        nav.put("n1", "商家管理中心");
+        nav.put("n2", "商品");
+        nav.put("n3", "出售中的商品");
+        model.addAttribute("P_NAV", nav);
+        model.addAttribute("P_STEP", 2);
+        model.addAttribute("P_CURRENT_OP", "Online");
+        model.addAttribute("P_CURRENT_TOP", "goods");
+        model.addAttribute("P_VIEW", "shop:pages/seller/GoodsAdd/goodsAddStep2.html.jsp");
+        return FisUtils.page("shop:widget/tpl/seller/framework.html");
+    }
+
     private String getGoodsClassListName(GoodsClass goodsClass) {
         String pattern = "{0}>{1}>{2}";
         GoodsClass p1 = goodsClass.getParent();
@@ -265,7 +349,6 @@ public class SellerGoodsController {
     public
     @ResponseBody
     Map imageUpload(@RequestParam(value = "category_id", required = false) String id,
-                    //@RequestParam(value = "file") MultipartFile file,
                     @RequestParam(value = "name") String fileName,
                     HttpServletRequest request, HttpServletResponse response) {
         if (!StringUtils.hasText(id)) {
@@ -361,43 +444,9 @@ public class SellerGoodsController {
                              ColorImagesModel colorImagesModel,
                              HttpServletRequest request,
                              HttpServletResponse response) {
-        //GoodsImages[] goodsImagesArray = this.getGoodsImagesArray(request);
-        //goodsImagesService.saevDefaultImage(goodsImagesArray, goodsId);
-       // goodsImagesService.save(goodsId, goodsImagesArray);
-
         goodsImagesService.save(colorImagesModel);
         return "redirect:/se/goods/addstep/four";
     }
-
-    /*private GoodsImages[] getGoodsImagesArray(HttpServletRequest request) {
-        GoodsImages[] goodsImagesArray = new GoodsImages[5];
-        for (int i = 0; i < 5; i++) {
-            GoodsImages goodsImages = new GoodsImages();
-            String name = "img[0][" + i + "][name]";
-            if (request.getParameterMap().containsKey(name)) {
-                String isDefault = "img[0][" + i + "][default]";
-                String sort = "img[0][" + i + "][sort]";
-                goodsImages.setGoodsImage(request.getParameter(name));
-                if (request.getParameterMap().containsKey(isDefault)) {
-                    String sd = request.getParameter(isDefault);
-                    if (StringUtils.replaceBlank(sd).equals("1")) {
-                        goodsImages.setIsDefault(1);
-                    }
-                }
-                if (request.getParameterMap().containsKey(sort)) {
-                    int iSort = 0;
-                    try {
-                        iSort = Integer.valueOf(request.getParameter(sort));
-                    } catch (Exception e) {
-                        // TODO: handle exception
-                    }
-                    goodsImages.setGoodsImageSort(iSort);
-                }
-            }
-            goodsImagesArray[i] = goodsImages;
-        }
-        return goodsImagesArray;
-    }*/
 
     @RequestMapping("/addstep/four")
     public String four(Model model,

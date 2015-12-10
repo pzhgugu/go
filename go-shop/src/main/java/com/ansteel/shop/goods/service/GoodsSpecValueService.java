@@ -24,4 +24,6 @@ public interface GoodsSpecValueService {
     GoodsSpecValue save(String gcId, String spId, String name);
 
     List<GoodsSpecValue> findById(String[] spvIdArray);
+
+    List<GoodsSpecValue> findByCurrentStoreIdAndGcId(String gcId);
 }

@@ -112,5 +112,11 @@ public class GoodsSpecValueServiceImpl implements GoodsSpecValueService {
         return list;
     }
 
+    @Override
+    public List<GoodsSpecValue> findByCurrentStoreIdAndGcId(String gcId) {
+        Store store = storeService.getCurrentStore();
+        return goodsSpecValueRepository.findByStoreIdAndGcId(store.getId(),gcId);
+    }
+
 
 }

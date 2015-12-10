@@ -2,12 +2,20 @@ package com.ansteel.core.utils;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URLEncoder;
 
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ansteel.core.exception.ErrorMessage;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
 
 /**
  * 创 建 人：gugu
@@ -97,5 +105,50 @@ public class ResponseUtils {
         sb.append("<![CDATA[").append(content).append("]]>");
         sb.append("</root>");
         print(response, sb.toString());
+	}
+
+	/**
+	 * 通过URL下载报表服务器生成的报表文件.
+	 * @param request
+	 * @param rsp
+	 * @param url
+	 * @param fileName
+	 * @throws IOException
+	 */
+	public static void downloadReport(HttpServletRequest request, HttpServletResponse rsp, String url, String fileName) throws IOException {
+		// 创建默认的httpClient实例.
+		CloseableHttpClient httpClient = HttpClients.createDefault();
+		try {
+
+			HttpGet httpget = new HttpGet(url.toString());
+
+			HttpResponse response = httpClient.execute(httpget);
+
+			HttpEntity entity = response.getEntity();
+			//设置MIME
+			String mimeType = entity.getContentType().getValue().toString();
+			//文件扩展名
+			if (mimeType == null) {
+				mimeType = "application/octet-stream";
+			} else if ("application/vnd.ms-excel".equals(mimeType)) {
+				fileName = fileName + ".xls";
+			} else if ("application/pdf".equals(mimeType)) {
+				fileName = fileName + ".pdf";
+			} else if ("text/html;charset=utf-8".equals(mimeType)) {
+				fileName = fileName + ".htm";
+			}
+			rsp.setContentType(mimeType);
+			// 中文文件名支持
+			String encodedfileName = URLEncoder.encode(fileName, "UTF-8");
+			System.out.println("encodedfileName---" + encodedfileName);
+			//rsp.setHeader(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + encodedfileName + "\"");
+//            response.setContentLength((int)file.length());
+
+			ServletOutputStream outputStream = rsp.getOutputStream();
+			//ByteStreams.copy(entity.getContent(), outputStream);
+			outputStream.close();
+		} finally {
+			httpClient.close();
+		}
 	}
 }

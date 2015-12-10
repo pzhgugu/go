@@ -14,4 +14,6 @@ public interface GoodsSpecValueRepository extends ProjectRepository<GoodsSpecVal
     List<GoodsSpecValue> findByStoreIdAndSpId(String storeId, String spId);
 
     List<GoodsSpecValue> findByStoreIdOrderByStoreIdAsc(String storeId);
+
+    List<GoodsSpecValue> findByStoreIdAndGcId(String id,String gcId);
 }

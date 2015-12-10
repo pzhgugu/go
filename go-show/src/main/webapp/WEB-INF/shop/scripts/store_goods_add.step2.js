@@ -123,9 +123,9 @@ $(function(){
     });
     
     // 商品所在地
-    var area_select = $("#province_id");
+    var area_select = $("#provinceId");
     areaInit(area_select,0);//初始化地区
-    $("#province_id").change(function (){
+    $("#provinceId").change(function (){
         // 删除后面的select
         $(this).nextAll("select").remove();
         if (this.value > 0){
@@ -140,7 +140,7 @@ $(function(){
             if (typeof(EP[area_id]) == 'undefined'){
                 option = "<option value='0'>"+text+"(*)</option>";
             }
-            $("<select name='cityId' id='city_id'>"+option+"</select>").insertAfter(this);
+            $("<select name='cityId' id='cityId'>"+option+"</select>").insertAfter(this);
                 for (var i = 0; i <areas.length; i++){
                     $(this).next("select").append("<option value='" + areas[i][0] + "'>" + areas[i][1] + "</option>");
                 }
@@ -289,6 +289,6 @@ function insert_editor(file_path) {
 }
 
 function setArea(area1, area2) {
-    $('#province_id').val(area1).change();
-    $('#city_id').val(area2);
+    $('#provinceId').val(area1).change();
+    $('#cityId').val(area2);
 }

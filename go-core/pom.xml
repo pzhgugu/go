@@ -25,6 +25,11 @@
 				<artifactId>jstl</artifactId>
 				<version>1.2</version>
 			</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+
 					
 			<dependency>
 				<groupId>javax.servlet</groupId>

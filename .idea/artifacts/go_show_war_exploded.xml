@@ -23,7 +23,6 @@
           <element id="library" level="project" name="Maven: stax:stax-api:1.0.1" />
           <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
           <element id="library" level="project" name="Maven: org.apache.poi:poi:3.10.1" />
-          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.5" />
           <element id="library" level="project" name="Maven: net.sf.jasperreports:jasperreports:6.0.3" />
           <element id="library" level="project" name="Maven: commons-digester:commons-digester:2.1" />
           <element id="library" level="project" name="Maven: com.itextpdf:itextpdf:5.5.0" />
@@ -127,6 +126,10 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-acl:3.2.5.RELEASE" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.0" />
           <element id="library" level="project" name="Maven: com.oracle:ojdbc6:11.2" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.3.4" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.3.2" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.6" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:17.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

@@ -7,6 +7,7 @@ import java.math.BigDecimal;
  */
 public class GoodsSpecValueStockModel {
 
+    private String goodsId;
     /**
      * 颜色id
      */
@@ -35,6 +36,14 @@ public class GoodsSpecValueStockModel {
      * 商家货号
      */
     private  String sku;
+
+    public String getGoodsId() {
+        return goodsId;
+    }
+
+    public void setGoodsId(String goodsId) {
+        this.goodsId = goodsId;
+    }
 
     public String[] getSpecName() {
         return specName;

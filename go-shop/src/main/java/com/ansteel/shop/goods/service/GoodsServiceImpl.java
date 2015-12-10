@@ -50,5 +50,22 @@ public class GoodsServiceImpl implements GoodsService {
         return gross;
     }
 
+    @Override
+    public List<Goods> findByGoodsCommonId(String commonId) {
+        return goodsRepository.findByGoodsCommonId(commonId);
+    }
+
+    @Override
+    @Transactional
+    public void delect(List<Goods> goodsList) {
+        goodsRepository.delete(goodsList);
+    }
+
+    @Override
+    @Transactional
+    public void delect(Goods goods) {
+        goodsRepository.delete(goods);
+    }
+
 
 }

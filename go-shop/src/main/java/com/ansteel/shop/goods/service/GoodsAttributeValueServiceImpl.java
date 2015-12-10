@@ -4,7 +4,6 @@ import com.ansteel.core.utils.StringUtils;
 import com.ansteel.shop.goods.domain.GoodsAttribute;
 import com.ansteel.shop.goods.domain.GoodsAttributeValue;
 import com.ansteel.shop.goods.repository.GoodsAttributeValueRepository;
-import groovy.transform.TailRecursive;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

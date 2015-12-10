@@ -27,45 +27,13 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: com.aspose:aspose-cells:8.5.0" level="project" />
-    <orderEntry type="library" name="Maven: com.aspose:aspose-words:jdk16:15.6.0" level="project" />
-    <orderEntry type="library" name="Maven: com.aspose:aspose-slides:jdk16:15.5.1" level="project" />
-    <orderEntry type="library" name="Maven: com.aspose:aspose-pdf:10.4.1" level="project" />
     <orderEntry type="library" name="Maven: com.ansteel.teplat3:teplat-fis:3.1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:18.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml:3.10.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml-schemas:3.10.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.poi:poi:3.10.1" level="project" />
-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.5" level="project" />
     <orderEntry type="library" name="Maven: org.artofsolving.jodconverter:jodconverter-core:3.0-beta-4" level="project" />
     <orderEntry type="library" name="Maven: org.openoffice:juh:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.openoffice:jurt:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.openoffice:ridl:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.openoffice:unoil:3.2.1" level="project" />
-    <orderEntry type="library" name="Maven: net.sf.jasperreports:jasperreports:6.0.3" level="project" />
-    <orderEntry type="library" name="Maven: commons-digester:commons-digester:2.1" level="project" />
-    <orderEntry type="library" name="Maven: com.itextpdf:itextpdf:5.5.0" level="project" />
-    <orderEntry type="library" name="Maven: com.itextpdf:itext-pdfa:5.5.0" level="project" />
-    <orderEntry type="library" name="Maven: jfree:jcommon:1.0.15" level="project" />
-    <orderEntry type="library" name="Maven: jfree:jfreechart:1.0.12" level="project" />
-    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.3.02" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jdt.core.compiler:ecj:4.3.1" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.castor:castor-xml:1.3.3" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.castor:castor-core:1.3.3" level="project" />
-    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
-    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" name="Maven: stax:stax:1.2.0" level="project" />
-    <orderEntry type="library" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-core:4.5.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-analyzers-common:4.5.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-queryparser:4.5.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-queries:4.5.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-sandbox:4.5.1" level="project" />
-    <orderEntry type="library" name="Maven: jakarta-regexp:jakarta-regexp:1.4" level="project" />
-    <orderEntry type="library" name="Maven: org.olap4j:olap4j:0.9.7.309-JS-3" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-all:2.4.3" level="project" />
-    <orderEntry type="library" name="Maven: com.itextpdf:itext-asian:5.2.0" level="project" />
-    <orderEntry type="library" name="Maven: com.microsoft.sqlserver:sqljdbc4:4.0" level="project" />
     <orderEntry type="module" module-name="go-core" />
     <orderEntry type="module" module-name="go-report" />
     <orderEntry type="library" name="Maven: com.aspose:aspose-cells:8.5.0" level="project" />
@@ -78,7 +46,6 @@
     <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: dom4j:dom4j:1.6.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi:3.10.1" level="project" />
-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.5" level="project" />
     <orderEntry type="library" name="Maven: net.sf.jasperreports:jasperreports:6.0.3" level="project" />
     <orderEntry type="library" name="Maven: commons-digester:commons-digester:2.1" level="project" />
     <orderEntry type="library" name="Maven: com.itextpdf:itextpdf:5.5.0" level="project" />
@@ -204,6 +171,10 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:7.0.47" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.tomcat.embed:tomcat-embed-logging-juli:7.0.47" level="project" />
     <orderEntry type="library" name="Maven: com.oracle:ojdbc6:11.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.3.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.3.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.6" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:17.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-library:1.3" level="project" />
   </component>

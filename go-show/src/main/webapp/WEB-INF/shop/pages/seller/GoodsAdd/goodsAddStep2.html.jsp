@@ -11,11 +11,18 @@
   <div class="ncsc-layout-right" id="layoutRight">
     <fis:block url="shop:widget/tpl/seller/nav.html.jsp" />
     <div id="mainContent" class="main-content">
+      <c:if test="${empty P_GOODSCOMMON}">
       <fis:block url="shop:pages/seller/GoodsAdd/setp.html.jsp" />
+      </c:if>
+      <c:if test="${!empty P_GOODSCOMMON}">
+        <div class="tabmenu">
+          <ul class="tab pngFix">
+            <li class="active"><a href="${S_URL}/se/goods/editgoods">编辑商品</a></li><li class="normal"><a href="${S_URL}/">编辑图片</a></li></ul>
+        </div>
+      </c:if>
       <div class="item-publish">
         <form action="${S_URL}/se/goods/addstep/savegoods" id="goods_form" method="post">
-          <input type="hidden" value="ok" name="form_submit">
-          <input type="hidden" value="0" name="type_id">
+          <input type="hidden" value="${P_GOODSCOMMON.id}" name="id">
           <input type="hidden" value="${S_URL}/se/goods/addstep/one" name="ref_url">
           <div class="ncsc-form-goods">
             <h3>
@@ -43,7 +50,7 @@
                 商品名称：
               </dt>
               <dd>
-                <input type="text" value="" class="text w400" name="name">
+                <input type="text" value="${P_GOODSCOMMON.name}" class="text w400" name="name">
                 <span>
                 </span>
                 <p class="hint">
@@ -56,7 +63,7 @@
                 广告词：
               </dt>
               <dd>
-                <input type="text" value="" class="text w400" name="adWord">
+                <input type="text" value="${P_GOODSCOMMON.adWord}" class="text w400" name="adWord">
                 <span>
                 </span>
                 <p class="hint">
@@ -72,7 +79,7 @@
                 商品价格：
               </dt>
               <dd nc_type="no_spec">
-                <input type="text" class="text w60" value="" name="goodsStorePrice">
+                <input type="text" class="text w60" value="${P_GOODSCOMMON.goodsStorePrice}" name="goodsStorePrice">
                 <em class="add-on">
                   <i class="icon-renminbi">
                   </i>
@@ -94,7 +101,7 @@
                 市场价：
               </dt>
               <dd>
-                <input type="text" class="text w60" value="" name="goodsMarketprice">
+                <input type="text" class="text w60" value="${P_GOODSCOMMON.goodsMarketprice}" name="goodsMarketprice">
                 <em class="add-on">
                   <i class="icon-renminbi">
                   </i>
@@ -111,7 +118,7 @@
                 成本价：
               </dt>
               <dd>
-                <input type="text" class="text w60" value="" name="goodsCostprice">
+                <input type="text" class="text w60" value="${P_GOODSCOMMON.goodsCostprice}" name="goodsCostprice">
                 <em class="add-on">
                   <i class="icon-renminbi">
                   </i>
@@ -129,7 +136,7 @@
               </dt>
               <dd>
                 <input type="text" style="background:#E7E7E7 none;" readonly="readonly"
-                class="text w60" value="" name="goodsDiscount">
+                class="text w60" value="${P_GOODSCOMMON.goodsDiscount}" name="goodsDiscount">
                 <em class="add-on">
                   %
                 </em>
@@ -150,17 +157,43 @@
                   </dt>
                   <dd nctype="sp_group_val">
                     <ul class="spec">
-                      <c:forEach items="${P_GOODSSPECVALUE_LIST}" var="goodsSpecValue" varStatus="vs">
-                      <c:if test="${goodsSpec.id==goodsSpecValue.spId}">
-                      <li><span nctype="input_checkbox">
+
+
+
+                      <c:if test="${empty P_GOODSSPEC_SELECT}" >
+                        <c:forEach items="${P_GOODSSPECVALUE_LIST}" var="goodsSpecValue" varStatus="vs">
+                          <c:if test="${goodsSpec.id==goodsSpecValue.spId}">
+                            <li><span nctype="input_checkbox">
               <input type="checkbox" name="gsvslList[${status.index}].spvId" class="sp_val"
                      nc_type="${goodsSpecValue.name}"
                      value="${goodsSpecValue.id}">
                      </span>
-                        <span nctype="pv_name">${goodsSpecValue.name}</span>
-                        </li>
-                        </c:if>
-                      </c:forEach>
+                              <span nctype="pv_name">${goodsSpecValue.name}</span>
+                            </li>
+                          </c:if>
+                        </c:forEach>
+                      </c:if>
+                      <!--修改时的代码 -->
+                      <c:if test="${!empty P_GOODSSPEC_SELECT}" >
+                        <c:forEach items="${P_GOODSSPECVALUE_LIST}" var="goodsSpecValue" varStatus="vs">
+                          <c:set var="currentSelect" value=""></c:set>
+                          <c:forEach items="${P_GOODSSPEC_SELECT}" var="specSelect">
+                            <c:if test="${goodsSpecValue.spId==specSelect.spId}">
+                              <c:set var="currentSelect" value="${specSelect.spvId}"></c:set>
+                            </c:if>
+                          </c:forEach>
+                          <c:if test="${goodsSpec.id==goodsSpecValue.spId}">
+                            <li><span nctype="input_checkbox">
+              <input type="checkbox" name="gsvslList[${status.index}].spvId" class="sp_val"    nc_type="${goodsSpecValue.name}" value="${goodsSpecValue.id}"
+                     <c:forEach items="${currentSelect}" var="select"><c:if test="${select==goodsSpecValue.id}">checked="checked"</c:if></c:forEach>  >
+                     </span>
+                              <span nctype="pv_name">${goodsSpecValue.name}</span>
+                            </li>
+                          </c:if>
+                        </c:forEach>
+                      </c:if>
+
+
                       <li data-param="{gc_id:'${P_GOODSCLASS.id}',sp_id:'${goodsSpec.id}',url:'${S_URL}/se/spec/addspec'}">
                         <div nctype="specAdd1"><a nctype="specAdd" class="ncsc-btn" href="javascript:void(0);"><i
                                 class="icon-plus"></i>添加${goodsSpec.spName}值</a></div>
@@ -218,7 +251,7 @@
                 商品库存：
               </dt>
               <dd nc_type="no_spec">
-                <input type="text" class="text w60" value="" name="goodsStorage">
+                <input type="text" class="text w60" value="${P_GOODSCOMMON.goodsStorageAll}" name="goodsStorage">
                 <span>
                 </span>
                 <p class="hint">
@@ -234,7 +267,7 @@
               </dt>
               <dd nc_type="no_spec">
                 <p>
-                  <input type="text" class="text" value="" name="goodsSerial">
+                  <input type="text" class="text" value="${P_GOODSCOMMON.goodsSerial}" name="goodsSerial">
                 </p>
                 <p class="hint">
                   商家货号是指商家管理商品的编号，买家不可见
@@ -254,7 +287,12 @@
                 <div class="ncsc-goods-default-pic">
                   <div class="goodspic-uplaod">
                     <div class="upload-thumb">
+                      <c:if test="${empty P_GOODSCOMMON}">
                       <img src="${S_URL}/res/img/default_goods_image_240.gif" nctype="goods_image">
+                      </c:if>
+                      <c:if test="${!empty P_GOODSCOMMON}">
+                        <img src="${S_URL}/att/download/${P_GOODSCOMMON.goodsImage}">
+                      </c:if>
                     </div>
                     <p class="hint">
                       上传商品默认主图，如多规格值时将默认使用该图或分规格上传各规格主图；支持jpg、gif、png格式上传或从图片空间中选择，建议使用
@@ -263,7 +301,7 @@
                       </font>
                       ，上传后的图片将会自动保存在图片空间的默认分类中。
                     </p>
-                    <input type="hidden" value="" nctype="goods_image" id="image_path" name="goodsImage">
+                    <input type="hidden" value="${P_GOODSCOMMON.goodsImage}" nctype="goods_image" id="image_path" name="goodsImage">
                     <span>
                     </span>
                     <div class="handle">
@@ -310,10 +348,10 @@
                 <select name="brandId">
                   <option value="">请选择...</option>
                   <c:forEach items="${P_GOODSBRADNS}" var="goodsBradns">
-                    <option value="${goodsBradns.id}">${goodsBradns.brandName}</option>
+                    <option value="${goodsBradns.id}" <c:if test="${P_GOODSCOMMON.brandId==goodsBradns.id}"> selected="selected"</c:if> >${goodsBradns.brandName}</option>
                   </c:forEach>
                 </select>
-                <input type="hidden" value="" name="brandName">
+                <input type="hidden" value="${P_GOODSCOMMON.brandName}" name="brandName">
               </dd>
             </dl>
             </c:if>
@@ -322,14 +360,18 @@
               <dl>
                 <dt>商品属性：</dt>
                 <dd>
+                  <c:set var="selectAttr" value=""></c:set>
                   <c:forEach items="${P_GOODSATTRIBUTE}" var="goodsAttribute" varStatus="status">
+                    <c:forEach items="${P_GOODSATTR_SELECT}" var="sAttr">
+                      <c:if test="${goodsAttribute.id==sAttr.id}"><c:set var="selectAttr" value="${sAttr.value}"></c:set></c:if>
+                    </c:forEach>
                     <span class="mr30">
           <label class="mr5">${goodsAttribute.attrName}</label>
           <input type="hidden" value="${goodsAttribute.id}" name="attrList[${status.index}].id">
                     <select nc_type="attr_select" name="attrList[${status.index}].value"  >
                       <option nc_type="0" value="">不限</option>
                       <c:forEach items="${goodsAttribute.goodsAttributeValueList}" var="v">
-                        <option value="${v.id}">${v.name}</option>
+                        <option value="${v.id}" <c:if test="${selectAttr==v.id}">selected="selected"</c:if> >${v.name}</option>
                       </c:forEach>
                     </select>
                     </span>
@@ -344,7 +386,7 @@
               </dt>
               <dd>
                 <textarea style="width: 100%; height: 480px; visibility: hidden; display: none;"
-                name="goodsBody" id="goodsBody">
+                name="goodsBody" id="goodsBody">${P_GOODSCOMMON.goodsBody}
                 </textarea>
                 <div class="hr8">
                   <div class="ncsc-upload-btn">
@@ -391,7 +433,7 @@
                     <option value="">请选择</option>
                     <c:forEach items="${P_STOREPLATE_LIST}" var="storePlate">
                       <c:if test="${storePlate.platePosition=='1'}">
-                        <option value="${storePlate.id}">${storePlate.plateName}</option>
+                        <option <c:if test="${P_GOODSCOMMON.plateidTop==storePlate.id}"> selected="selected"</c:if> value="${storePlate.id}">${storePlate.plateName}</option>
                       </c:if>
                     </c:forEach>
                   </select>
@@ -404,7 +446,7 @@
                     <option value="">请选择</option>
                     <c:forEach items="${P_STOREPLATE_LIST}" var="storePlate">
                       <c:if test="${storePlate.platePosition!='1'}">
-                        <option value="${storePlate.id}">${storePlate.plateName}</option>
+                        <option <c:if test="${P_GOODSCOMMON.plateidBottom==storePlate.id}"> selected="selected"</c:if> value="${storePlate.id}">${storePlate.plateName}</option>
                       </c:if>
                     </c:forEach>
                   </select>
@@ -433,7 +475,7 @@
               <dd>
                 <ul class="ncsc-form-radio-list">
                   <li>
-                    <input type="radio" value="0" checked="checked" class="radio" name="freight"
+                    <input type="radio" value="0" <c:if test="${empty P_GOODSCOMMON.transportId}"> checked="checked"</c:if> class="radio" name="goodsFreight"
                     nctype="freight" id="freight_0">
                     <label for="freight_0">
                       固定运费
@@ -448,7 +490,7 @@
                     </div>
                   </li>
                   <li>
-                    <input type="radio" value="1" class="radio" name="freight" nctype="freight"
+                    <input type="radio" value="1" <c:if test="${!empty P_GOODSCOMMON.transportId}"> checked="checked"</c:if> class="radio" name="freight" nctype="freight"
                     id="freight_1">
                     <label for="freight_1">
                       使用运费模板
@@ -458,7 +500,7 @@
                       <input type="hidden" name="transport_title" value="" id="transport_title">
                       <span class="transport-name" id="postageName">
                       </span>
-                      <a id="postageButton" class="ncsc-btn" onclick="window.open('index.php?act=store_transport&amp;type=select')"
+                      <a id="postageButton" class="ncsc-btn" onclick="window.open('url')"
                       href="JavaScript:void(0);">
                         <i class="icon-truck">
                         </i>
@@ -484,13 +526,13 @@
                 <ul class="ncsc-form-radio-list">
                   <li>
                     <label>
-                      <input type="radio" value="1" name="goodsVat">
+                      <input type="radio" <c:if test="${P_GOODSCOMMON.goodsVat!=0}"> checked="checked"</c:if> value="1" name="goodsVat">
                       是
                     </label>
                   </li>
                   <li>
                     <label>
-                      <input type="radio" checked="checked" value="0" name="goodsVat">
+                      <input type="radio" <c:if test="${P_GOODSCOMMON.goodsVat==0}"> checked="checked"</c:if> value="0" name="goodsVat">
                       否
                     </label>
                   </li>
@@ -512,6 +554,8 @@
                     新增分类
                   </a>
                 </span>
+
+                <c:if test="${empty P_STC_IDS}">
                 <select class="sgcategory" name="sgcateIdList">
                   <option value="0">请选择...</option>
                   <c:forEach items="${P_STOREGOODSCLASS_PARENT_LIST}" var="storeGoodsClass">
@@ -519,12 +563,31 @@
                       <option value="${storeGoodsClass.id}">${storeGoodsClass.name}</option>
                       <c:forEach items="${storeGoodsClass.children}" var="children">
                         <c:if test="${children.stcState=='1'}">
-                        <option value="${children.id}">&nbsp;&nbsp;${children.name}</option>
+                        <option value="${children.id}" >&nbsp;&nbsp;${children.name}</option>
                         </c:if>
                       </c:forEach>
                     </c:if>
                   </c:forEach>
                 </select>
+                </c:if>
+
+                <c:if test="${!empty P_STC_IDS}">
+                  <c:forEach items="${P_STC_IDS}" var="sId">
+                    <select class="sgcategory" name="sgcateIdList">
+                      <option value="0">请选择...</option>
+                      <c:forEach items="${P_STOREGOODSCLASS_PARENT_LIST}" var="storeGoodsClass">
+                        <c:if test="${storeGoodsClass.stcState=='1'}">
+                          <option value="${storeGoodsClass.id}" <c:if test="${storeGoodsClass.id==sId}">selected="selected"</c:if>>${storeGoodsClass.name}</option>
+                          <c:forEach items="${storeGoodsClass.children}" var="children">
+                            <c:if test="${children.stcState=='1'}">
+                              <option value="${children.id}" <c:if test="${children.id==sId}">selected="selected"</c:if>>&nbsp;&nbsp;${children.name}</option>
+                            </c:if>
+                          </c:forEach>
+                        </c:if>
+                      </c:forEach>
+                    </select>
+                  </c:forEach>
+                </c:if>
                 <p class="hint">
                   商品可以从属于店铺的多个分类之下,
                   <br>
@@ -540,13 +603,13 @@
                 <ul class="ncsc-form-radio-list">
                   <li>
                     <label>
-                      <input type="radio" checked="checked" value="1" name="goodsState">
+                      <input type="radio" <c:if test="${P_GOODSCOMMON.goodsState!=0}"> checked="checked"</c:if> value="1" name="goodsState">
                       立即发布
                     </label>
                   </li>
                   <li>
                     <label>
-                      <input type="radio" nctype="auto" value="0" name="goodsState">
+                      <input type="radio" nctype="auto"   value="0" name="goodsState">
                       发布时间
                     </label>
                     <input type="text" value='<fmt:formatDate value="<%=new Date() %>" pattern="yyyy-MM-dd"/>' id="starttime" style="background:#E7E7E7 none;"
@@ -667,7 +730,7 @@
                   </li>
                   <li>
                     <label>
-                      <input type="radio" value="0" name="goodsState">
+                      <input type="radio" <c:if test="${P_GOODSCOMMON.goodsState==0}"> checked="checked"</c:if>  value="0" name="goodsState">
                       放入仓库
                     </label>
                   </li>
@@ -682,13 +745,13 @@
                 <ul class="ncsc-form-radio-list">
                   <li>
                     <label>
-                      <input type="radio" checked="checked" value="1" name="goodsCommend">
+                      <input type="radio" <c:if test="${P_GOODSCOMMON.goodsCommend!=0}"> checked="checked"</c:if>  value="1" name="goodsCommend">
                       是
                     </label>
                   </li>
                   <li>
                     <label>
-                      <input type="radio" value="0" name="goodsCommend">
+                      <input type="radio" <c:if test="${P_GOODSCOMMON.goodsCommend==0}"> checked="checked"</c:if>  value="0" name="goodsCommend">
                       否
                     </label>
                   </li>
@@ -728,6 +791,9 @@
   var str = '';
   var V = new Array();
 
+  var E_SPV = new Array();
+
+
   <c:forEach items="${P_GOODSSPECS}" var="goodsSpec" varStatus="status">
   var spec_group_checked_${status.index} = new Array();
   </c:forEach>
@@ -755,7 +821,9 @@
         $('dl[nc_type="spec_dl"]').find('input').attr('disabled', 'disabled');
       }
     });
-
+    <c:if test="${!empty P_GOODSCOMMON}">
+    setTimeout("setArea(${P_GOODSCOMMON.provinceId}, ${P_GOODSCOMMON.cityId})", 1000);
+</c:if>
   });
 
   // 将选中的规格放入数组
@@ -792,14 +860,14 @@
       <c:if test="${status.last}" >
       var tmp_spec_td = new Array();
       <c:forEach items="${P_GOODSSPECS}" var="gs" varStatus="vs">
-      tmp_spec_td[${vs.index}] = td_${vs.index+1}[1];
+      tmp_spec_td[${vs.index}] = td_${vs.index+1}[0];
       </c:forEach>
       tmp_spec_td.sort(function (a, b) {
         return a - b
       });
       var spec_bunch = 'i_';
       <c:forEach items="${P_GOODSSPECS}" var="gs" varStatus="vs">
-      spec_bunch += tmp_spec_td[${vs.index}];
+      spec_bunch += td_${vs.index+1}[0];;
       </c:forEach>
 
       //str += '<input type="hidden" name="spec[' + spec_bunch + '][goods_id]" nc_type="' + spec_bunch + '|id" value="" />';
@@ -807,6 +875,9 @@
       if (td_${vs.index+1}[2] != null) {
         str += "<input type='hidden' name='stockList["+spvIndex+"].colorId' value='" + td_${vs.index+1}[0] + "' />";
       }
+      <c:if test="${!empty P_GOODSCOMMON}">
+      str += "<input type='hidden' name='stockList["+spvIndex+"].goodsId' value='" + E_SPV[spec_bunch+'|goodsId'] + "' />";
+      </c:if>
       str += "<input type='hidden' name='stockList["+spvIndex+"].specName' value='" + td_${vs.index+1}[1] + "' />";
       str += "<td><input type='hidden' name='stockList["+spvIndex+"].specId' value='" + td_${vs.index+1}[0] + "' />" + td_${vs.index+1}[1] + "</td>";
       </c:forEach>
@@ -856,5 +927,92 @@
               });
     }
   }
+
+  <c:if test="${!empty P_GOODSCOMMON}">
+ //  编辑商品时处理JS
+    $(function(){
+      var E_SP = new Array();
+<c:forEach items="${P_GOODSSPEC_SELECT}" var="goodsSpecSelect">
+      <c:forEach items="${goodsSpecSelect.spvId}" var="gss">
+      E_SP['${gss}'] = '${P_GOODSSPECVALUE_ALL[gss]}';
+      </c:forEach>
+</c:forEach>
+
+<c:forEach items="${P_GOODSSPECVALUE_SELECT}" var="goodsSpecValueSelect">
+      <c:set var="ids" value=""></c:set>
+      <c:forEach items="${goodsSpecValueSelect.specId}" var="id">
+      <c:set var="ids" value="${ids}${id}"></c:set>
+      </c:forEach>
+
+      E_SPV['i_${ids}|price'] = ${goodsSpecValueSelect.price};
+      E_SPV['i_${ids}|stock'] = ${goodsSpecValueSelect.stock};
+      E_SPV['i_${ids}|sku'] = '${goodsSpecValueSelect.sku}';
+      E_SPV['i_${ids}|goodsId'] = '${goodsSpecValueSelect.goodsId}';
+</c:forEach>
+
+      V = E_SPV;
+      $('dl[nc_type="spec_dl"]').show();
+
+      into_array();	// 将选中的规格放入数组
+      str = '<tr>';
+      var spvIndex=0;
+      <c:forEach items="${P_GOODSSPECS}" var="goodsSpec" varStatus="status">
+      for (var i_${status.index} = 0; i_${status.index} < spec_group_checked[${status.index}].length; i_${status.index}++) {
+        td_${status.index+1} = spec_group_checked[${status.index}][i_${status.index}];
+        <c:if test="${status.last}" >
+        var tmp_spec_td = new Array();
+        <c:forEach items="${P_GOODSSPECS}" var="gs" varStatus="vs">
+        tmp_spec_td[${vs.index}] = td_${vs.index+1}[0];
+        </c:forEach>
+        tmp_spec_td.sort(function (a, b) {
+          return a - b
+        });
+        var spec_bunch = 'i_';
+        <c:forEach items="${P_GOODSSPECS}" var="gs" varStatus="vs">
+        spec_bunch += td_${vs.index+1}[0];
+        </c:forEach>
+
+        <c:forEach items="${P_GOODSSPECS}" var="gs" varStatus="vs">
+        if (td_${vs.index+1}[2] != null) {
+          str += "<input type='hidden' name='stockList["+spvIndex+"].colorId' value='" + td_${vs.index+1}[0] + "' />";
+        }
+        str += "<input type='hidden' name='stockList["+spvIndex+"].goodsId' value='" + E_SPV[spec_bunch+'|goodsId'] + "' />";
+        str += "<input type='hidden' name='stockList["+spvIndex+"].specName' value='" + td_${vs.index+1}[1] + "' />";
+        str += "<td><input type='hidden' name='stockList["+spvIndex+"].specId' value='" + td_${vs.index+1}[0] + "' />" + td_${vs.index+1}[1] + "</td>";
+        </c:forEach>
+
+        str += "<td><input class='text price' type='text' name='stockList["+spvIndex+"].price' data_type='price' nc_type='" + spec_bunch + "|price' value='' /><em class='add-on'><i class='icon-renminbi'></i></em></td><td><input class='text stock' type='text' name='stockList["+spvIndex+"].stock' data_type='stock' nc_type='" + spec_bunch + "|stock' value='' /></td><td><input class='text sku' type='text' name='stockList["+spvIndex+"].sku' nc_type='" + spec_bunch + "|sku' value='' /></td></tr>";
+
+
+        </c:if>
+        </c:forEach>
+        spvIndex++;
+        <c:forEach items="${P_GOODSSPECS}" var="goodsSpec" varStatus="status">
+      }
+      </c:forEach>
+      if(str == '<tr>'){
+        $('dl[nc_type="spec_dl"]').hide();
+        $('input[name="goodsStorePrice"]').removeAttr('readonly').css('background','');
+        $('input[name="goodsStorage"]').removeAttr('readonly').css('background','');
+      }else{
+        $('tbody[nc_type="spec_table"]').empty().html(str)
+                .find('input[nc_type]').each(function(){
+                  s = $(this).attr('nc_type');
+                  try{$(this).val(E_SPV[s]);}catch(ex){$(this).val('');};
+                }).end()
+                .find('input[data_type="stock"]').change(function(){
+                  computeStock();    // 库存计算
+                }).end()
+                .find('input[data_type="price"]').change(function(){
+                  computePrice();     // 价格计算
+                }).end()
+                .find('input[type="text"]').change(function(){
+                  s = $(this).attr('nc_type');
+                  V[s] = $(this).val();
+                });
+      }
+
+    });
+</c:if>
 
 </script>
