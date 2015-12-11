@@ -184,8 +184,8 @@
         </span>
                         </td>
                         <td>
-        <span style="color:red;">
-      ${goods.goodsStorageAll}件
+        <span <c:if test="${goods.goodsStorage<P_STOREWARNING_VALUE}"> style="color:red;"</c:if>>
+      ${goods.goodsStorage}件
         </span>
                         </td>
                         <td class="goods-time">

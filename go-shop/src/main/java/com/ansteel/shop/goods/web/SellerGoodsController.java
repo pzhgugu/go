@@ -216,7 +216,7 @@ public class SellerGoodsController {
                       HttpServletResponse response) {
         GoodsCommon goodsCommon = goodsCommonService.findOneByStoreIdAndId(commonId);
         Assert.notNull(goodsCommon,commonId+",没有这个商品！");
-        goodsCommon.setGoodsStorageAll(goodsService.grossInventory(goodsCommon.getId()));
+        goodsCommon.setGoodsStorage(goodsService.grossInventory(goodsCommon.getId()));
         GoodsClass goodsClass = goodsClassService.findOne(goodsCommon.getGcId());
         //得到商品类型
         Store store = storeService.getCurrentStore();
@@ -265,8 +265,10 @@ public class SellerGoodsController {
 
         //选中规格值，表格选项
         String specValue=goodsCommon.getSpecValue();
-        List<GoodsSpecValueStockModel> stockList = JsonUtils.readValue(specValue,GoodsSpecValueStockModel.class);
-        model.addAttribute("P_GOODSSPECVALUE_SELECT",stockList);
+        if(StringUtils.hasText(specValue)) {
+            List<GoodsSpecValueStockModel> stockList = JsonUtils.readValue(specValue, GoodsSpecValueStockModel.class);
+            model.addAttribute("P_GOODSSPECVALUE_SELECT", stockList);
+        }
 
 
         //选中属性
@@ -372,13 +374,18 @@ public class SellerGoodsController {
         if (result.hasErrors()) {
             ExceprionUtils.BindingResultError(result);
         }
+        String commonId=goodsCommon.getId();
         GoodsCommon newGoods = goodsCommonService.saveGoodsCommonAndGodds(goodsCommon,goodsModel);
+        if(StringUtils.hasText(commonId)){
+            return "redirect:/se/goodsonline/list";
+        }
         return "redirect:/se/goods/addstep/editimages?goodsid=" + newGoods.getId();
     }
 
     @RequestMapping(value = "/addstep/editimages")
     public String editImages(Model model,
                              @RequestParam(value = "goodsid") String goodsId,
+                             @RequestParam(value = "edit",required = false) Integer edit,
                              HttpServletRequest request,
                              HttpServletResponse response) {
         //获取颜色id
@@ -387,6 +394,7 @@ public class SellerGoodsController {
         Assert.notNull(goodsCommon,goodsId+"，无效商品id！");
         String specName=goodsCommon.getSpecName();
         List<GoodsSpecValueSelectListModel> gsvslList = JsonUtils.readValue(specName, GoodsSpecValueSelectListModel.class);
+        //颜色规格
         String[] spvIdArray=null;
         for(GoodsSpecValueSelectListModel gsvslm:gsvslList){
             if(gsvslm.getSpId().equals(colorId)){
@@ -394,23 +402,50 @@ public class SellerGoodsController {
             }
         }
         if(spvIdArray==null||spvIdArray.length<1){
+            if(edit!=null&&edit==1){
+                return "redirect:/se/goodsonline/list";
+            }
             return "redirect:/se/goods//addstep/four";
         }
-
+        //颜色规格
         List<GoodsSpecValue> goodsSpecValueList=goodsSpecValueService.findById(spvIdArray);
 
-        //List<GoodsImages> goodsImagesList = goodsImagesService.findByGoodsIdAndStoreId(goodsId);
+        List<GoodsImages> goodsImagesList = goodsImagesService.findByGoodsIdAndStoreId(goodsId);
+        Map<String,GoodsImages[]> imagesMap = new HashMap<>();
+        for(GoodsSpecValue goodsSpecValue:goodsSpecValueList){
+            String goodsColorId=goodsSpecValue.getId();
+            GoodsImages[] GoodsImagesArray = new GoodsImages[5];
+            int i=0;
+            for(GoodsImages g:goodsImagesList){
+                if(g.getColorId().equals(goodsColorId)){
+                    GoodsImagesArray[i]=g;
+                    i++;
+                }
+            }
+            imagesMap.put(goodsColorId,GoodsImagesArray);
+        }
+        model.addAttribute("P_IMAGES_MAP", imagesMap);
+
+
         model.addAttribute("P_COLOR_LIST", goodsSpecValueList);
         model.addAttribute("P_GOODSCOMMON", goodsCommon);
 
-        model.addAttribute("P_CURRENT_OP", "GoodsAdd");
+
         Map<String, String> nav = new HashMap<>();
         nav.put("n1", "商家管理中心");
         nav.put("n2", "商品");
-        nav.put("n3", "商品发布");
-        model.addAttribute("P_STEP", 3);
-        model.addAttribute("P_NAV", nav);
+        if(edit!=null&&edit==1){
+            nav.put("n3", "出售中的商品");
+            model.addAttribute("P_CURRENT_OP", "Online");
+        }else {
+            nav.put("n3", "商品发布");
+            model.addAttribute("P_STEP", 3);
+            model.addAttribute("P_CURRENT_OP", "GoodsAdd");
+        }
+
         model.addAttribute("P_CURRENT_TOP", "goods");
+        model.addAttribute("P_NAV", nav);
+        model.addAttribute("P_EDIT", edit);
         model.addAttribute("P_VIEW", "shop:pages/seller/GoodsAdd/goodsAddStep3.html.jsp");
         return FisUtils.page("shop:widget/tpl/seller/framework.html");
     }
@@ -441,10 +476,14 @@ public class SellerGoodsController {
 
     @RequestMapping("/addstep/saveimages")
     public String saveImages(Model model,
+    @RequestParam(value = "edit", required = false) Integer edit,
                              ColorImagesModel colorImagesModel,
                              HttpServletRequest request,
                              HttpServletResponse response) {
         goodsImagesService.save(colorImagesModel);
+        if(edit!=null&&edit==1){
+            return "redirect:/se/goodsonline/list";
+        }
         return "redirect:/se/goods/addstep/four";
     }
 

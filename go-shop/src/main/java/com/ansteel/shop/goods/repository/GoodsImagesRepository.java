@@ -3,6 +3,7 @@ package com.ansteel.shop.goods.repository;
 
 import java.util.List;
 
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
 import com.ansteel.core.repository.ProjectRepository;
@@ -13,4 +14,7 @@ public interface GoodsImagesRepository extends ProjectRepository<GoodsImages,Str
 	@Query("select m from GoodsImages m where m.storeId=?1 and m.goodsId=?2 order by isDefault DESC,goodsImageSort")
 	List<GoodsImages> findByStoreIdAndGoodsId(String storeId,String goodsId);
 
+	@Modifying
+	@Query("delete GoodsImages g where g.goodsId = ?1")
+	void delectGoodsId(String goodsId);
 }

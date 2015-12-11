@@ -17,7 +17,7 @@
       <c:if test="${!empty P_GOODSCOMMON}">
         <div class="tabmenu">
           <ul class="tab pngFix">
-            <li class="active"><a href="${S_URL}/se/goods/editgoods">编辑商品</a></li><li class="normal"><a href="${S_URL}/">编辑图片</a></li></ul>
+            <li class="active"><a href="${S_URL}/se/goods/editgoods?commonid=${P_GOODSCOMMON.id}">编辑商品</a></li><li class="normal"><a href="${S_URL}/se/goods/addstep/editimages?goodsid=${P_GOODSCOMMON.id}&edit=1">编辑图片</a></li></ul>
         </div>
       </c:if>
       <div class="item-publish">
@@ -251,7 +251,7 @@
                 商品库存：
               </dt>
               <dd nc_type="no_spec">
-                <input type="text" class="text w60" value="${P_GOODSCOMMON.goodsStorageAll}" name="goodsStorage">
+                <input type="text" class="text w60" value="${P_GOODSCOMMON.goodsStorage}" name="goodsStorage">
                 <span>
                 </span>
                 <p class="hint">
@@ -793,7 +793,6 @@
 
   var E_SPV = new Array();
 
-
   <c:forEach items="${P_GOODSSPECS}" var="goodsSpec" varStatus="status">
   var spec_group_checked_${status.index} = new Array();
   </c:forEach>
@@ -873,11 +872,9 @@
       //str += '<input type="hidden" name="spec[' + spec_bunch + '][goods_id]" nc_type="' + spec_bunch + '|id" value="" />';
       <c:forEach items="${P_GOODSSPECS}" var="gs" varStatus="vs">
       if (td_${vs.index+1}[2] != null) {
-        str += "<input type='hidden' name='stockList["+spvIndex+"].colorId' value='" + td_${vs.index+1}[0] + "' />";
+        str += "<input type='hidden' name='stockList["+spvIndex+"].colorId' value='" + td_${vs.index+1}[0] + "' />"
+        str += "<input type='hidden' name='stockList["+spvIndex+"].goodsId' value='" + E_SPV[spec_bunch+'|goodsId'] + "' />";
       }
-      <c:if test="${!empty P_GOODSCOMMON}">
-      str += "<input type='hidden' name='stockList["+spvIndex+"].goodsId' value='" + E_SPV[spec_bunch+'|goodsId'] + "' />";
-      </c:if>
       str += "<input type='hidden' name='stockList["+spvIndex+"].specName' value='" + td_${vs.index+1}[1] + "' />";
       str += "<td><input type='hidden' name='stockList["+spvIndex+"].specId' value='" + td_${vs.index+1}[0] + "' />" + td_${vs.index+1}[1] + "</td>";
       </c:forEach>
@@ -932,6 +929,7 @@
  //  编辑商品时处理JS
     $(function(){
       var E_SP = new Array();
+
 <c:forEach items="${P_GOODSSPEC_SELECT}" var="goodsSpecSelect">
       <c:forEach items="${goodsSpecSelect.spvId}" var="gss">
       E_SP['${gss}'] = '${P_GOODSSPECVALUE_ALL[gss]}';
@@ -975,8 +973,8 @@
         <c:forEach items="${P_GOODSSPECS}" var="gs" varStatus="vs">
         if (td_${vs.index+1}[2] != null) {
           str += "<input type='hidden' name='stockList["+spvIndex+"].colorId' value='" + td_${vs.index+1}[0] + "' />";
+          str += "<input type='hidden' name='stockList["+spvIndex+"].goodsId' value='" + E_SPV[spec_bunch+'|goodsId'] + "' />";
         }
-        str += "<input type='hidden' name='stockList["+spvIndex+"].goodsId' value='" + E_SPV[spec_bunch+'|goodsId'] + "' />";
         str += "<input type='hidden' name='stockList["+spvIndex+"].specName' value='" + td_${vs.index+1}[1] + "' />";
         str += "<td><input type='hidden' name='stockList["+spvIndex+"].specId' value='" + td_${vs.index+1}[0] + "' />" + td_${vs.index+1}[1] + "</td>";
         </c:forEach>

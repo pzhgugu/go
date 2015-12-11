@@ -29,8 +29,8 @@
                         仓库中的商品
                     </a>
                 </li>
-                <li class="">
-                    <a href="#">
+                <li <c:if test='${P_CURRENT_OP=="storeWarning"}'>class="current"</c:if>>
+                    <a href="${S_URL}/se/warning/edit">
                         库存警报
                     </a>
                 </li>

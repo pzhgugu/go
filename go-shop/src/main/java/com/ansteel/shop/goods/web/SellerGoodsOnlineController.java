@@ -14,7 +14,9 @@ import com.ansteel.shop.goods.domain.GoodsCommon;
 import com.ansteel.shop.goods.service.GoodsCommonService;
 import com.ansteel.shop.goods.service.GoodsService;
 import com.ansteel.shop.store.domain.StorePlate;
+import com.ansteel.shop.store.domain.StoreWarning;
 import com.ansteel.shop.store.service.StorePlateService;
+import com.ansteel.shop.store.service.StoreWarningService;
 import com.ansteel.shop.utils.JavaScriptUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -41,6 +43,9 @@ public class SellerGoodsOnlineController {
     @Autowired
     StorePlateService storePlateService;
 
+    @Autowired
+    StoreWarningService storeWarningService;
+
 
     @RequestMapping("/list")
     public String list(Model model,
@@ -58,8 +63,11 @@ public class SellerGoodsOnlineController {
         List<GoodsCommon> goodsCommonList = page.getContent();
         for(GoodsCommon gc:goodsCommonList){
             Integer grossInventory=goodsService.grossInventory(gc.getId());
-            gc.setGoodsStorageAll(grossInventory);
+            gc.setGoodsStorage(grossInventory);
         }
+
+        StoreWarning storeWarning = storeWarningService.findCurrentStore();
+        model.addAttribute("P_STOREWARNING_VALUE", storeWarning.getWarningValue());
         model.addAttribute("P_PAGE_SHOW", page);
         model.addAttribute("P_GOODS_LIST", page.getContent());
         model.addAttribute("P_CURRENT_OP", "Online");

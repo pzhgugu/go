@@ -195,6 +195,7 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
             dataBaseGoodsCommon = goodsCommonRepository.save(dataBaseGoodsCommon);
         }else{
             dataBaseGoodsCommon = goodsCommonRepository.save(dataBaseGoodsCommon);
+            dataBaseGoodsCommon.setGoodsStorage(goodsCommon.getGoodsStorage());
             this.updateGoods(dataBaseGoodsCommon);
         }
         return dataBaseGoodsCommon;
@@ -260,6 +261,7 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
             dataBaseGoodsCommon = goodsCommonRepository.save(dataBaseGoodsCommon);
         }else{
             dataBaseGoodsCommon = goodsCommonRepository.save(goodsCommon);
+            dataBaseGoodsCommon.setGoodsStorage(goodsCommon.getGoodsStorage());
             this.saveGoods(dataBaseGoodsCommon);
         }
         return dataBaseGoodsCommon;
@@ -323,6 +325,7 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
             e.printStackTrace();
         }
         goods.setId(null);
+        goods.setGoodsCommonId(goodsCommon.getId());
         return goods;
     }
 

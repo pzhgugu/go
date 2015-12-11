@@ -8,9 +8,19 @@
   <div class="ncsc-layout-right" id="layoutRight">
     <fis:block url="shop:widget/tpl/seller/nav.html.jsp" />
     <div id="mainContent" class="main-content">
-      <fis:block url="shop:pages/seller/GoodsAdd/setp.html.jsp" />
 
-<form method="post" id="goods_image" action="${S_URL}/se/goods/addstep/saveimages">
+
+        <c:if test="${P_EDIT!=1}">
+            <fis:block url="shop:pages/seller/GoodsAdd/setp.html.jsp" />
+        </c:if>
+        <c:if test="${P_EDIT==1}">
+            <div class="tabmenu">
+                <ul class="tab pngFix">
+                    <li class="normal"><a href="${S_URL}/se/goods/editgoods?commonid=${S_PARAM.goodsid}">编辑商品</a></li><li class="active"><a href="${S_URL}/se/goods/addstep/editimages?goodsid=${S_PARAM.goodsid}&edit=1">编辑图片</a></li></ul>
+            </div>
+        </c:if>
+
+<form method="post" id="goods_image" action="${S_URL}/se/goods/addstep/saveimages<c:if test="${P_EDIT==1}">?edit=1</c:if>">
   <input type="hidden" name="form_submit" value="ok">
   <input type="hidden" name="goodsId" value="${S_PARAM.goodsid}">
   <input type="hidden" name="ref_url" value="${S_URL}/se/goods/addstep/one"/>
@@ -24,20 +34,36 @@
                 <div class="title">
                     <h3>颜色：${color.name}</h3></div>
                 <input type="hidden" value="${color.id}" name="gimList[${status.index}].colorId" />
+                <c:set var="image" value="${P_IMAGES_MAP[color.id]}"></c:set>
                 <ul nctype="ul${status.index}">
                     <c:forEach begin="0" end="4" step="1" varStatus="i">
                     <li class="ncsc-goodspic-upload">
                         <div class="upload-thumb">
                             <c:choose>
                                 <c:when test="${i.index==0}">
+                                    <c:if test="${!empty image[0]}">
+                                        <img nctype="file_${status.index}${i.index}" src="${S_URL}/att/download/${image[0].goodsImage}" />
+                                        <input type="hidden" nctype="file_${status.index}${i.index}" value="${image[0].goodsImage}"
+                                               name="gimList[${status.index}].imgList[${i.index}].goodsImage">
+                                    </c:if>
+                                    <c:if test="${empty image[0]}">
                                     <img nctype="file_${status.index}${i.index}" src="${S_URL}/att/download/${P_GOODSCOMMON.goodsImage}" />
                                     <input type="hidden" nctype="file_${status.index}${i.index}" value="${P_GOODSCOMMON.goodsImage}"
                                            name="gimList[${status.index}].imgList[${i.index}].goodsImage">
+                                    </c:if>
                                 </c:when>
                                 <c:otherwise>
-                                    <img nctype="file_${status.index}${i.index}" src="${S_URL}/res/img/default_goods_image_240.gif" />
-                                    <input type="hidden" nctype="file_${status.index}${i.index}" value=""
-                                           name="gimList[${status.index}].imgList[${i.index}].goodsImage">
+                                    <c:if test="${!empty image[i.index]}">
+                                        <img nctype="file_${status.index}${i.index}" src="${S_URL}/att/download/${image[i.index].goodsImage}" />
+                                        <input type="hidden" nctype="file_${status.index}${i.index}" value="${image[i.index].goodsImage}"
+                                               name="gimList[${status.index}].imgList[${i.index}].goodsImage">
+                                    </c:if>
+                                    <c:if test="${empty image[i.index]}">
+                                        <img nctype="file_${status.index}${i.index}" src="${S_URL}/res/img/default_goods_image_240.gif" />
+                                        <input type="hidden" nctype="file_${status.index}${i.index}" value=""
+                                               name="gimList[${status.index}].imgList[${i.index}].goodsImage">
+                                    </c:if>
+
                                 </c:otherwise>
                             </c:choose>
                         </div>

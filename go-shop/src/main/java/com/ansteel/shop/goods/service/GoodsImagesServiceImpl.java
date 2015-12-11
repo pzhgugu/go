@@ -102,6 +102,7 @@ public class GoodsImagesServiceImpl implements GoodsImagesService {
     public void save(ColorImagesModel colorImagesModel) {
         String goodsId=colorImagesModel.getGoodsId();
         Assert.hasText(goodsId,"商品ID不能为空！");
+        goodsImagesRepository.delectGoodsId(goodsId);
         List<GoodsImagesModel> gimList = colorImagesModel.getGimList();
         if(gimList!=null&&gimList.size()>0){
             Store store = storeService.getCurrentStore();

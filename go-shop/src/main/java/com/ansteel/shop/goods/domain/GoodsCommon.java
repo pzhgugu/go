@@ -181,14 +181,14 @@ public class GoodsCommon extends BaseEntity {
      * 商品总库存
      */
     @Transient
-    private Integer goodsStorageAll;
+    private Integer goodsStorage;
 
-    public Integer getGoodsStorageAll() {
-        return goodsStorageAll;
+    public Integer getGoodsStorage() {
+        return goodsStorage;
     }
 
-    public void setGoodsStorageAll(Integer goodsStorageAll) {
-        this.goodsStorageAll = goodsStorageAll;
+    public void setGoodsStorage(Integer goodsStorage) {
+        this.goodsStorage = goodsStorage;
     }
 
     public String getName() {

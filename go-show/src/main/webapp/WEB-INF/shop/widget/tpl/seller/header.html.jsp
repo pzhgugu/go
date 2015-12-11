@@ -217,7 +217,7 @@
                         <li><a href="${S_URL}/se/goods/addstep/one"> 商品发布 </a></li>
                         <li><a href="${S_URL}/se/goodsonline/list"> 出售中的商品 </a></li>
                         <li><a href="#"> 仓库中的商品 </a></li>
-                        <li><a href="#"> 库存警报 </a></li>
+                        <li><a href="${S_URL}/se/warning/edit"> 库存警报 </a></li>
                         <li><a href="${S_URL}/se/plate/list"> 关联板式 </a></li>
                         <li><a href="${S_URL}/se/spec/list"> 商品规格 </a></li>
                         <li><a href="${S_URL}/se/album/cate"> 图片空间 </a></li>
