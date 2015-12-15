@@ -24,27 +24,29 @@ public interface GoodsCommonService {
     GoodsCommon findOneByStoreIdAndId(String goodsId);
 
     /**
-     * 查询当前店铺的所有出售商品
-     * @param classId
-     * @param sortType
-     * @param curPage
-     * @param pageSize
-     * @param name
-     * @param value
+     * 查询当前店铺的商品
+     * @param classId 店铺分类
+     * @param sortType 排序类型
+     * @param curPage 当前页
+     * @param pageSize 分页大小
+     * @param name 查询字段名称
+     * @param value 查询值
+     * @param goodsState 商品状态
+     * @param goodsVerify 商品审核
      * @return
      */
-    Page<GoodsCommon> findCurrentSaleAll(String classId, String sortType, Integer curPage, int pageSize, String name, String value);
+    Page<GoodsCommon> query(String classId, String sortType, Integer curPage, int pageSize, String name, String value,Integer goodsState,Integer goodsVerify);
 
     /**
      * 商品下架
      * @param goodsIdArray
      */
-    void unShow(String[] goodsIdArray);
+    void isShow(String[] goodsIdArray,Integer status);
     /**
      * 商品下架
      * @param goodsId
      */
-    void unShow(String goodsId);
+    void isShow(String goodsId,Integer status);
 
     /**
      * 设置广告词
@@ -65,4 +67,7 @@ public interface GoodsCommonService {
     void savePosition(String[] ids, String plateTop, String plateBottom);
 
     GoodsCommon saveGoodsCommonAndGodds(GoodsCommon goodsCommon, GoodsModel goodsModel);
+
+    void delect(String[] goodsCommonIds);
+
 }

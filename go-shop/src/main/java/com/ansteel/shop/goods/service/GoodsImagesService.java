@@ -46,4 +46,6 @@ public interface GoodsImagesService {
 	void save(String goodsId, GoodsImages[] goodsImagesArray);
 
 	void save(ColorImagesModel colorImagesModel);
+
+	void delectByCommonId(String commonId,String storeId);
 }

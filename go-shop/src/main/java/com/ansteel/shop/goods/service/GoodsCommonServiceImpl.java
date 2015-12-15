@@ -4,6 +4,7 @@ import com.ansteel.core.exception.PageException;
 import com.ansteel.core.utils.BeanUtils;
 import com.ansteel.core.utils.JsonUtils;
 import com.ansteel.core.utils.StringUtils;
+import com.ansteel.shop.core.service.SettingGoodsVerifyService;
 import com.ansteel.shop.goods.domain.Goods;
 import com.ansteel.shop.goods.domain.GoodsCommon;
 import com.ansteel.shop.goods.repository.GoodsCommonRepository;
@@ -43,6 +44,8 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
     GoodsImagesService goodsImagesService;
     @Autowired
     GoodsService goodsService;
+    @Autowired
+    SettingGoodsVerifyService settingGoodsVerifyService;
 
     @Override
     @Transactional
@@ -62,7 +65,7 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
     }
 
     @Override
-    public Page<GoodsCommon> findCurrentSaleAll(final String classId, final String sortType, Integer curPage, int pageSize, final String name, final String value) {
+    public Page<GoodsCommon> query(final String classId, final String sortType, Integer curPage, int pageSize, final String name, final String value, final Integer goodsState, final Integer goodsVerify) {
         if (curPage == null) {
             curPage = 0;
         } else if (curPage > 0) {
@@ -82,12 +85,19 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
                 List<Predicate> predicate = new ArrayList<>();
 
                 predicate.add(cb.equal(root.get("storeId"), storeId));
-                predicate.add(cb.equal(root.get("goodsState"), 1));
+                if(goodsState!=null) {
+                    predicate.add(cb.equal(root.get("goodsState"), goodsState));
+                }
+                if(goodsVerify!=null&&goodsVerify==11) {
+                    predicate.add(cb.or(cb.equal(root.get("goodsVerify"), 10), cb.equal(root.get("goodsVerify"), 0)));
+                }else{
+                    predicate.add(cb.equal(root.get("goodsVerify"), goodsVerify));
+                }
                 if (StringUtils.hasText(classId)) {
-                    predicate.add(cb.equal(root.get("gcId"), classId));
+                    predicate.add(cb.like(root.<String>get("goodsStcids"),"%"+classId+"%"));
                 }
                 if (StringUtils.hasText(value)) {
-                    predicate.add(cb.equal(root.get(name), value));
+                    predicate.add(cb.like(root.<String>get(name), "%"+value+"%"));
                 }
                 Predicate[] pre = new Predicate[predicate.size()];
                 return query.where(predicate.toArray(pre)).getRestriction();
@@ -99,16 +109,16 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
 
     @Override
     @Transactional
-    public void unShow(String[] goodsIdArray) {
+    public void isShow(String[] goodsIdArray,Integer status) {
         for (String goodsId : goodsIdArray) {
-            this.unShow(goodsId);
+            this.isShow(goodsId,status);
         }
     }
 
     @Override
     @Transactional
-    public void unShow(String goodsId) {
-        goodsCommonRepository.updateGoodsState(goodsId, 0);
+    public void isShow(String goodsId,Integer status) {
+        goodsCommonRepository.updateGoodsState(goodsId, status);
     }
 
     @Override
@@ -145,6 +155,9 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
         goodsCommon.setStoreId(store.getId());
         goodsCommon.setStoreName(store.getName());
 
+        //设置是否审核
+        goodsCommon.setGoodsVerify(settingGoodsVerifyService.findByGoodsVerify());
+
         //设置属性列表
         List<GoodsAttrModel> attrList=goodsModel.getAttrList();
         if(attrList!=null&&attrList.size()>0) {
@@ -173,6 +186,31 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
         }else {
             return this.save(goodsCommon, goodsModel);
         }
+
+    }
+
+    @Override
+    @Transactional
+    public void delect(String[] goodsCommonIds) {
+        Store store = storeService.getCurrentStore();
+        //判断此商品是否可以删除
+        this.checkIsDelect(goodsCommonIds);
+        for(String commonId:goodsCommonIds) {
+            //删除GoodsImages表
+            goodsImagesService.delectByCommonId(commonId,store.getId());
+            //删除Goods表
+            goodsService.delectByCommonId(commonId,store.getId());
+            //删除goodsCommon
+            goodsCommonRepository.delete(commonId);
+        }
+    }
+
+    /**
+     * 判断此商品是否可以删除
+     * @param goodsCommonIds
+     * @return
+     */
+    private void checkIsDelect(String[] goodsCommonIds) {
 
     }
 

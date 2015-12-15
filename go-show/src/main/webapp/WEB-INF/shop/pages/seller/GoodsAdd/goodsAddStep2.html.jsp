@@ -557,7 +557,7 @@
 
                 <c:if test="${empty P_STC_IDS}">
                 <select class="sgcategory" name="sgcateIdList">
-                  <option value="0">请选择...</option>
+                  <option value="">请选择...</option>
                   <c:forEach items="${P_STOREGOODSCLASS_PARENT_LIST}" var="storeGoodsClass">
                     <c:if test="${storeGoodsClass.stcState=='1'}">
                       <option value="${storeGoodsClass.id}">${storeGoodsClass.name}</option>
@@ -574,7 +574,7 @@
                 <c:if test="${!empty P_STC_IDS}">
                   <c:forEach items="${P_STC_IDS}" var="sId">
                     <select class="sgcategory" name="sgcateIdList">
-                      <option value="0">请选择...</option>
+                      <option value="">请选择...</option>
                       <c:forEach items="${P_STOREGOODSCLASS_PARENT_LIST}" var="storeGoodsClass">
                         <c:if test="${storeGoodsClass.stcState=='1'}">
                           <option value="${storeGoodsClass.id}" <c:if test="${storeGoodsClass.id==sId}">selected="selected"</c:if>>${storeGoodsClass.name}</option>

@@ -13,8 +13,10 @@ import com.ansteel.core.utils.StringUtils;
 import com.ansteel.shop.goods.domain.GoodsCommon;
 import com.ansteel.shop.goods.service.GoodsCommonService;
 import com.ansteel.shop.goods.service.GoodsService;
+import com.ansteel.shop.store.domain.StoreGoodsClass;
 import com.ansteel.shop.store.domain.StorePlate;
 import com.ansteel.shop.store.domain.StoreWarning;
+import com.ansteel.shop.store.service.StoreGoodsClassService;
 import com.ansteel.shop.store.service.StorePlateService;
 import com.ansteel.shop.store.service.StoreWarningService;
 import com.ansteel.shop.utils.JavaScriptUtils;
@@ -46,19 +48,26 @@ public class SellerGoodsOnlineController {
     @Autowired
     StoreWarningService storeWarningService;
 
+    @Autowired
+    StoreGoodsClassService storeGoodsClassService;
 
-    @RequestMapping("/list")
-    public String list(Model model,
+
+    @RequestMapping("/outline")
+    public String outLine(Model model,
                        @RequestParam(value = "sort", required = false) String sortType,
                        @RequestParam(value = "curpage", required = false) Integer curPage,
-                       @RequestParam(value = "class_id", required = false) String classId,
-                       @RequestParam(value = "name", required = false) String name,
-                       @RequestParam(value = "value", required = false) String value,
+                       @RequestParam(value = "stc_id", required = false) String classId,
+                       @RequestParam(value = "search_type", required = false) String name,
+                       @RequestParam(value = "keyword", required = false) String value,
                        HttpServletRequest request,
                        HttpServletResponse response) {
 
-        //查询出售中商品列表
-        Page<GoodsCommon> page=goodsCommonService.findCurrentSaleAll(classId, sortType, curPage, PAGE_SIZE, name, value);
+        //店铺分类
+        List<StoreGoodsClass> storeGoodsClassList=storeGoodsClassService.findCurrentByIsParentNull();
+        model.addAttribute("P_STOREGOODSCLASS_PARENT_LIST", storeGoodsClassList);
+
+        //查询违规商品列表
+        Page<GoodsCommon> page=goodsCommonService.query(classId, sortType, curPage, PAGE_SIZE, name, value,10,1);
 
         List<GoodsCommon> goodsCommonList = page.getContent();
         for(GoodsCommon gc:goodsCommonList){
@@ -70,14 +79,103 @@ public class SellerGoodsOnlineController {
         model.addAttribute("P_STOREWARNING_VALUE", storeWarning.getWarningValue());
         model.addAttribute("P_PAGE_SHOW", page);
         model.addAttribute("P_GOODS_LIST", page.getContent());
-        model.addAttribute("P_CURRENT_OP", "Online");
         model.addAttribute("P_CURRENT_TOP", "goods");
         Map<String, String> nav = new HashMap<>();
         nav.put("n1", "商家管理中心");
         nav.put("n2", "商品");
-        nav.put("n3", "出售中的商品");
+        nav.put("n3", "仓库中的商品");
+        model.addAttribute("P_VIEW", "shop:pages/seller/goodsOnline/goodsOutlineList.html.jsp");
+        model.addAttribute("P_CURRENT_OP", "Offline");
         model.addAttribute("P_NAV", nav);
-        model.addAttribute("P_VIEW", "shop:pages/seller/goodsOnline/goodsOnlineList.html.jsp");
+        return FisUtils.page("shop:widget/tpl/seller/framework.html");
+    }
+
+    @RequestMapping("/verify")
+    public String verify(Model model,
+                          @RequestParam(value = "sort", required = false) String sortType,
+                          @RequestParam(value = "curpage", required = false) Integer curPage,
+                          @RequestParam(value = "stc_id", required = false) String classId,
+                          @RequestParam(value = "search_type", required = false) String name,
+                          @RequestParam(value = "keyword", required = false) String value,
+                          HttpServletRequest request,
+                          HttpServletResponse response) {
+
+        //店铺分类
+        List<StoreGoodsClass> storeGoodsClassList=storeGoodsClassService.findCurrentByIsParentNull();
+        model.addAttribute("P_STOREGOODSCLASS_PARENT_LIST", storeGoodsClassList);
+
+        //查询审核商品列表
+        Page<GoodsCommon> page=goodsCommonService.query(classId, sortType, curPage, PAGE_SIZE, name, value,null,11);
+
+        List<GoodsCommon> goodsCommonList = page.getContent();
+        for(GoodsCommon gc:goodsCommonList){
+            Integer grossInventory=goodsService.grossInventory(gc.getId());
+            gc.setGoodsStorage(grossInventory);
+        }
+
+        StoreWarning storeWarning = storeWarningService.findCurrentStore();
+        model.addAttribute("P_STOREWARNING_VALUE", storeWarning.getWarningValue());
+        model.addAttribute("P_PAGE_SHOW", page);
+        model.addAttribute("P_GOODS_LIST", page.getContent());
+        model.addAttribute("P_CURRENT_TOP", "goods");
+        Map<String, String> nav = new HashMap<>();
+        nav.put("n1", "商家管理中心");
+        nav.put("n2", "商品");
+        nav.put("n3", "仓库中的商品");
+        model.addAttribute("P_VIEW", "shop:pages/seller/goodsOnline/goodsVerifyList.html.jsp");
+        model.addAttribute("P_CURRENT_OP", "Offline");
+        model.addAttribute("P_NAV", nav);
+        return FisUtils.page("shop:widget/tpl/seller/framework.html");
+    }
+
+
+    @RequestMapping("/list")
+    public String list(Model model,
+                       @RequestParam(value = "sort", required = false) String sortType,
+                       @RequestParam(value = "curpage", required = false) Integer curPage,
+                       @RequestParam(value = "stc_id", required = false) String classId,
+                       @RequestParam(value = "search_type", required = false) String name,
+                       @RequestParam(value = "keyword", required = false) String value,
+                       @RequestParam(value="goodsState",required = false) Integer goodsState,
+                       HttpServletRequest request,
+                       HttpServletResponse response) {
+
+        //店铺分类
+        List<StoreGoodsClass> storeGoodsClassList=storeGoodsClassService.findCurrentByIsParentNull();
+        model.addAttribute("P_STOREGOODSCLASS_PARENT_LIST", storeGoodsClassList);
+
+        if(goodsState==null){
+            goodsState=1;
+        }
+
+        //查询出售中商品列表
+        Page<GoodsCommon> page=goodsCommonService.query(classId, sortType, curPage, PAGE_SIZE, name, value, goodsState,1);
+
+        List<GoodsCommon> goodsCommonList = page.getContent();
+        for(GoodsCommon gc:goodsCommonList){
+            Integer grossInventory=goodsService.grossInventory(gc.getId());
+            gc.setGoodsStorage(grossInventory);
+        }
+
+        StoreWarning storeWarning = storeWarningService.findCurrentStore();
+        model.addAttribute("P_STOREWARNING_VALUE", storeWarning.getWarningValue());
+        model.addAttribute("P_PAGE_SHOW", page);
+        model.addAttribute("P_GOODS_LIST", page.getContent());
+        model.addAttribute("P_CURRENT_TOP", "goods");
+        Map<String, String> nav = new HashMap<>();
+        nav.put("n1", "商家管理中心");
+        nav.put("n2", "商品");
+        if(goodsState==0){
+            nav.put("n3", "仓库中的商品");
+            model.addAttribute("P_VIEW", "shop:pages/seller/goodsOnline/goodsOfflineList.html.jsp");
+            model.addAttribute("P_CURRENT_OP", "Offline");
+        }else {
+            nav.put("n3", "出售中的商品");
+            model.addAttribute("P_VIEW", "shop:pages/seller/goodsOnline/goodsOnlineList.html.jsp");
+            model.addAttribute("P_CURRENT_OP", "Online");
+        }
+
+        model.addAttribute("P_NAV", nav);
         return FisUtils.page("shop:widget/tpl/seller/framework.html");
     }
 
@@ -92,11 +190,29 @@ public class SellerGoodsOnlineController {
 
         if(StringUtils.hasText(commonIds)){
             String[] goodsIdArray=commonIds.split(",");
-            goodsCommonService.unShow(goodsIdArray);
+            goodsCommonService.isShow(goodsIdArray,0);
         }
 
         String url=request.getContextPath()+"/se/goodsonline/list";
         String name="商品下架成功";
+        ResponseUtils.xmlCDataOut(response, JavaScriptUtils.returnShowDialog(name, url));
+    }
+
+    @RequestMapping("/show")
+    public
+    @ResponseBody
+    void show(
+            @RequestParam("commonid") String commonIds,
+            HttpServletRequest request,
+            HttpServletResponse response) {
+
+        if(StringUtils.hasText(commonIds)){
+            String[] goodsIdArray=commonIds.split(",");
+            goodsCommonService.isShow(goodsIdArray, 1);
+        }
+
+        String url=request.getContextPath()+"/se/goodsonline/list?goodsState=0";
+        String name="商品上架成功";
         ResponseUtils.xmlCDataOut(response, JavaScriptUtils.returnShowDialog(name, url));
     }
 
@@ -158,6 +274,27 @@ public class SellerGoodsOnlineController {
 
         String url=request.getContextPath()+"/se/goodsonline/list";
         String name="操作成功";
+        ResponseUtils.xmlCDataOut(response, JavaScriptUtils.returnShowDialog(name, url));
+    }
+
+
+    @RequestMapping("/del")
+    public
+    @ResponseBody
+    void delect(
+            @RequestParam("commonid") String commonIds,
+            @RequestParam("goodsState") Integer goodsState,
+            HttpServletRequest request,
+            HttpServletResponse response) {
+        String[] goodsCommonIds=commonIds.split(",");
+
+        String name="删除成功";
+        try {
+            goodsCommonService.delect(goodsCommonIds);
+        }catch (Exception e){
+            name="删除失败："+e.getMessage();
+        }
+        String url=request.getContextPath()+"/se/goodsonline/list?goodsState="+goodsState;
         ResponseUtils.xmlCDataOut(response, JavaScriptUtils.returnShowDialog(name, url));
     }
 }

@@ -67,5 +67,11 @@ public class GoodsServiceImpl implements GoodsService {
         goodsRepository.delete(goods);
     }
 
+    @Override
+    @Transactional
+    public void delectByCommonId(String commonId,String storeId) {
+        goodsRepository.delectGoodsCommonId(commonId,storeId);
+    }
+
 
 }

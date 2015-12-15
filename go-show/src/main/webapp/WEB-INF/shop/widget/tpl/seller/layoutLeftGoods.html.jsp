@@ -24,8 +24,8 @@
                         出售中的商品
                     </a>
                 </li>
-                <li class="">
-                    <a href="#">
+                <li <c:if test='${P_CURRENT_OP=="Offline"}'>class="current"</c:if>>
+                    <a href="${S_URL}/se/goodsonline/list?goodsState=0">
                         仓库中的商品
                     </a>
                 </li>

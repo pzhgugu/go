@@ -14,15 +14,10 @@
 
             <div class="tabmenu">
                 <ul class="tab pngFix">
-                    <li class="active">
-                        <a href="#">
-                            出售中的商品
-                        </a>
-                    </li>
+                    <li class="normal"><a href="${S_URL}/se/goodsonline/list?goodsState=0">仓库中的商品</a></li>
+                    <li class="normal"><a href="${S_URL}/se/goodsonline/outline">违规的商品</a></li>
+                    <li class="active"><a href="${S_URL}/se/goodsonline/verify">等待审核的商品</a></li>
                 </ul>
-                <a title="发布新商品" class="ncsc-btn ncsc-btn-green" href="${S_URL}/se/goods/addstep/one">
-                    发布新商品
-                </a>
             </div>
 
             <!--搜索开始 -->
@@ -93,14 +88,14 @@
                     <th inputwidth="230px" checker="check_required" column="goods_name" coltype="editable">
                         商品名称
                     </th>
+                    <th class="w180">
+                        审核
+                    </th>
                     <th class="w100">
                         价格
                     </th>
                     <th class="w100">
                         库存
-                    </th>
-                    <th class="w100">
-                        发布时间
                     </th>
                     <th class="w100">
                         操作
@@ -116,29 +111,11 @@
                             全选
                         </label>
                         <a confirm="您确定要删除吗?" name="commonid"
-                           uri="se/goodsonline/del?goodsState=1"
+                           uri="se/goodsonline/del?goodsState=0"
                            nc_type="batchbutton" class="ncsc-btn-mini" href="javascript:void(0);">
                             <i class="icon-trash">
                             </i>
                             删除
-                        </a>
-                        <a name="commonid" uri="se/goodsonline/unshow?for=xml"
-                           nc_type="batchbutton" class="ncsc-btn-mini" href="javascript:void(0);">
-                            <i class="icon-level-down">
-                            </i>
-                            下架
-                        </a>
-                        <a data-param="{url:'${S_URL}/se/goodsonline/ad?for=tpl', sign:'jingle'}"
-                           nctype="batch" class="ncsc-btn-mini" href="javascript:void(0);">
-                            <i>
-                            </i>
-                            设置广告词
-                        </a>
-                        <a data-param="{url:'${S_URL}/se/goodsonline/edit/position?for=tpl', sign:'plate'}"
-                           nctype="batch" class="ncsc-btn-mini" href="javascript:void(0);">
-                            <i>
-                            </i>
-                            设置关联版式
                         </a>
                     </td>
                 </tr>
@@ -185,18 +162,19 @@
                                 </dd>
                             </dl>
                         </td>
-                        <td>
+
+       <td>
+               <c:if test="${goods.goodsVerify==10}">审核中</c:if><c:if test="${goods.goodsVerify==0}">未通过</c:if>
+       </td>
+       <td>
         <span>
           ¥ ${goods.goodsStorePrice}
         </span>
-                        </td>
+        </td>
                         <td>
         <span <c:if test="${goods.goodsStorage<P_STOREWARNING_VALUE}"> style="color:red;"</c:if>>
       ${goods.goodsStorage}件
         </span>
-                        </td>
-                        <td class="goods-time">
-                            <fmt:formatDate value="${goods.created}" pattern="yyyy-MM-dd"/>
                         </td>
                         <td class="nscs-table-handle">
         <span>
@@ -210,7 +188,7 @@
           </a>
         </span>
         <span>
-          <a class="btn-red" onclick="ajax_get_confirm('您确定要删除吗?', 'se/goodsonline/del?goodsState=1&commonid=${goods.id}');"
+          <a class="btn-red" onclick="ajax_get_confirm('您确定要删除吗?', 'se/goodsonline/del?goodsState=0&commonid=${goods.id}');"
              href="javascript:void(0);">
               <i class="icon-trash">
               </i>
@@ -240,29 +218,11 @@
                             全选
                         </label>
                         <a class="ncsc-btn-mini" confirm="您确定要删除吗?" name="commonid"
-                           uri="se/goodsonline/del?goodsState=1"
+                           uri="se/goodsonline/del?goodsState=0"
                            nc_type="batchbutton" href="javascript:void(0);">
                             <i class="icon-trash">
                             </i>
                             删除
-                        </a>
-                        <a class="ncsc-btn-mini" name="commonid" uri="se/goodsonline/unshow?for=xml"
-                           nc_type="batchbutton" href="javascript:void(0);">
-                            <i class="icon-level-down">
-                            </i>
-                            下架
-                        </a>
-                        <a data-param="{url:'${S_URL}/se/goodsonline/ad?for=tpl', sign:'jingle'}"
-                           nctype="batch" class="ncsc-btn-mini" href="javascript:void(0);">
-                            <i>
-                            </i>
-                            设置广告词
-                        </a>
-                        <a data-param="{url:'${S_URL}/se/goodsonline/edit/position?for=tpl', sign:'plate'}"
-                           nctype="batch" class="ncsc-btn-mini" href="javascript:void(0);">
-                            <i>
-                            </i>
-                            设置关联版式
                         </a>
                     </th>
                 </tr>
@@ -273,7 +233,7 @@
                             <fis:param name="page" value="P_PAGE_SHOW"/>
                             <fis:param name="paginationSize" value="9"/>
                             <fis:param name="reqName" value="curpage"/>
-                            <fis:param name="url" value="${S_URL}/se/goodsonline/list"/>
+                            <fis:param name="url" value="${S_URL}/se/goodsonline/outline"/>
                         </fis:block>
                     </td>
                 </tr>
@@ -318,11 +278,6 @@
     var data_str = '';
     eval('data_str = ' + $(this).attr('data-param'));
 
-    if (data_str.sign == 'jingle') {
-    ajax_form('ajax_jingle', '设置广告词', data_str.url + '&commonid=' + _items + '&inajax=1', '480');
-    } else if (data_str.sign == 'plate') {
-    ajax_form('ajax_plate', '设置关联版式', data_str.url + '&commonid=' + _items + '&inajax=1', '480');
-    }
     });
     });
 </fis:script>

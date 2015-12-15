@@ -31,6 +31,8 @@ public interface GoodsService {
 
 	void delect(Goods goods);
 
+	void delectByCommonId(String commonId,String storeId);
+
 
 	/**
 	 * 保存商品
