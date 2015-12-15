@@ -5,6 +5,7 @@ import java.util.Collection;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.ansteel.core.constant.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -30,7 +31,7 @@ import com.ansteel.report.chart.service.ChartService;
  * 描   述：图表控制器。 
  */
 @Controller
-@RequestMapping(value = "/chart")
+@RequestMapping(value = Public.ADMIN+"/chart")
 public class ChartController extends BaseController  implements SaveBefore{
 	
 	@Autowired

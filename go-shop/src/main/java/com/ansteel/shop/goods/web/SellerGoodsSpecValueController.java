@@ -1,8 +1,8 @@
 package com.ansteel.shop.goods.web;
 
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.FisUtils;
 import com.ansteel.core.utils.ResponseUtils;
-import com.ansteel.shop.constant.ShopConstant;
 import com.ansteel.shop.goods.domain.*;
 import com.ansteel.shop.goods.service.GoodsClassService;
 import com.ansteel.shop.goods.service.GoodsSpecService;
@@ -25,7 +25,7 @@ import java.util.*;
  * Created by Administrator on 2015/11/24.
  */
 @Controller
-@RequestMapping(ShopConstant.SELLER + "/spec")
+@RequestMapping(Public.SELLER + "/spec")
 public class SellerGoodsSpecValueController {
 
     @Autowired

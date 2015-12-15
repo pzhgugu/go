@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import com.ansteel.core.constant.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -43,7 +44,7 @@ import com.ansteel.common.viewelement.service.ViewElement;
 import com.ansteel.common.viewelement.service.ViewElementService;
 
 @Controller
-@RequestMapping(value = "/resource")
+@RequestMapping(value = Public.ADMIN+ "/resource")
 public class ResourceController extends BaseController {
 
 	@Autowired

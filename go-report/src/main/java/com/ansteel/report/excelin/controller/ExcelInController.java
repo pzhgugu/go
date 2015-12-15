@@ -2,6 +2,8 @@ package com.ansteel.report.excelin.controller;
 
 import java.util.ArrayList;
 import java.util.Collection;
+
+import com.ansteel.core.constant.Public;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -17,7 +19,7 @@ import com.ansteel.report.excelin.domain.ExcelIn;
  * 描   述：Excel导入控制器。
  */
 @Controller
-@RequestMapping(value = "/excelin")
+@RequestMapping(value = Public.ADMIN+ "/excelin")
 public class ExcelInController extends BaseController{
 	
 	@Override

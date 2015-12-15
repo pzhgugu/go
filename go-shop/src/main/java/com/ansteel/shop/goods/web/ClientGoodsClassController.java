@@ -1,9 +1,9 @@
 package com.ansteel.shop.goods.web;
 
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.JsonUtils;
 import com.ansteel.core.utils.ResponseUtils;
 import com.ansteel.core.utils.StringUtils;
-import com.ansteel.shop.constant.ShopConstant;
 import com.ansteel.shop.goods.domain.GoodsClass;
 import com.ansteel.shop.goods.domain.JsonGoodsClass;
 import com.ansteel.shop.goods.service.GoodsClassService;
@@ -23,7 +23,7 @@ import java.util.List;
  * Created by Administrator on 2015/10/29.
  */
 @Controller
-@RequestMapping(value = ShopConstant.CLIENT + "/goodsclass")
+@RequestMapping(value = Public.CLIENT + "/goodsclass")
 public class ClientGoodsClassController {
 
     @Autowired

@@ -90,7 +90,7 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
                 }
                 if(goodsVerify!=null&&goodsVerify==11) {
                     predicate.add(cb.or(cb.equal(root.get("goodsVerify"), 10), cb.equal(root.get("goodsVerify"), 0)));
-                }else{
+                }else if(goodsVerify!=null){
                     predicate.add(cb.equal(root.get("goodsVerify"), goodsVerify));
                 }
                 if (StringUtils.hasText(classId)) {

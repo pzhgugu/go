@@ -3,6 +3,7 @@ package com.ansteel.common.menu.controller;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import com.ansteel.core.constant.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
@@ -25,7 +26,7 @@ import com.ansteel.common.security.service.ResourcesService;
  * 描   述：菜单控制器。  
  */
 @Controller
-@RequestMapping(value = "/menu")
+@RequestMapping(value = Public.ADMIN+"/menu")
 public class MenuController  extends BaseController implements SaveBefore{
 	
 	@Autowired

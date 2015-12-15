@@ -3,11 +3,11 @@ package com.ansteel.shop.store.web;
 
 import com.ansteel.common.attachment.domain.Attachment;
 import com.ansteel.common.attachment.service.AttachmentService;
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.ExceprionUtils;
 import com.ansteel.core.utils.FisUtils;
 import com.ansteel.core.utils.JsonUtils;
 import com.ansteel.core.utils.ResponseUtils;
-import com.ansteel.shop.constant.ShopConstant;
 import com.ansteel.shop.goods.domain.JsonManagement;
 import com.ansteel.shop.store.domain.*;
 import com.ansteel.shop.store.service.StoreGradeService;
@@ -36,7 +36,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping(ShopConstant.SELLER + "/store")
+@RequestMapping(Public.SELLER + "/store")
 public class SellerStoreController {
 
     @Autowired

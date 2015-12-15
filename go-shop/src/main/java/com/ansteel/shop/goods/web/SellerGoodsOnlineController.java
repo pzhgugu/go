@@ -8,6 +8,7 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.ResponseUtils;
 import com.ansteel.core.utils.StringUtils;
 import com.ansteel.shop.goods.domain.GoodsCommon;
@@ -26,12 +27,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.ansteel.core.utils.FisUtils;
-import com.ansteel.shop.constant.ShopConstant;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping(value = ShopConstant.SELLER + "/goodsonline")
+@RequestMapping(value = Public.SELLER + "/goodsonline")
 public class SellerGoodsOnlineController {
 
     @Autowired

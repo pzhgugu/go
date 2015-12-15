@@ -6,6 +6,7 @@ import java.util.Collection;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ansteel.core.constant.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -46,7 +47,7 @@ import com.ansteel.common.viewelement.service.ViewElementService;
  * 描   述：实体模型控制器。  
  */
 @Controller
-@RequestMapping(value = "/model")
+@RequestMapping(value = Public.ADMIN+"/model")
 public class ModelController  extends BaseController implements SaveBefore{
 	
 	@Autowired

@@ -5,6 +5,7 @@ import java.util.Collection;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.ansteel.core.constant.Public;
 import com.ansteel.report.sqlmodel.domain.*;
 import com.ansteel.report.sqlmodel.service.SqlModelsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,7 @@ import com.ansteel.core.service.CheckService;
  * 描   述：sql模型控制器。
  */
 @Controller
-@RequestMapping(value = "/sqlmodel")
+@RequestMapping(value = Public.ADMIN+ "/sqlmodel")
 public class SqlModelsController extends BaseController implements SaveBefore {
 
     @Autowired

@@ -12,8 +12,8 @@ $(window).resize(function() {
 
 var GPC = {
 		url:{
-			findOneUrl:GLOBAL.S.URL +"/news/find/",
-			saveUrl:GLOBAL.S.URL +"/news"
+			findOneUrl:GLOBAL.S.URL +"/admin/news/find/",
+			saveUrl:GLOBAL.S.URL +"/admin/news"
 		}
 	}
 

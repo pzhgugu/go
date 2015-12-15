@@ -12,7 +12,7 @@
                 <dd class="admin-name">shopnc_seller</dd>
             </dl>
             <div class="ncsc-admin-function">
-                <a title="前往店铺" target="_blank" href="#"><i class="icon-home"></i></a>
+                <a title="前往店铺" target="_blank" href="${S_URL}/store/home?store_id=${G_STORE.id}"><i class="icon-home"></i></a>
                 <a target="_blank" class="pr" title="站内消息" href="#">
                     <i class="icon-envelope-alt"></i><em>0</em></a>
                 <a target="_blank" title="修改密码" href="#">

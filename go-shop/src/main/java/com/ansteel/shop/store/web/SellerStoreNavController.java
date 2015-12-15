@@ -1,10 +1,10 @@
 package com.ansteel.shop.store.web;
 
 
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.ExceprionUtils;
 import com.ansteel.core.utils.FisUtils;
 import com.ansteel.core.utils.ResponseUtils;
-import com.ansteel.shop.constant.ShopConstant;
 import com.ansteel.shop.store.domain.StoreNavigation;
 import com.ansteel.shop.store.service.StoreNavigationService;
 import com.ansteel.shop.utils.JavaScriptUtils;
@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping(ShopConstant.SELLER + "/storenav")
+@RequestMapping(Public.SELLER + "/storenav")
 public class SellerStoreNavController {
 
     @Autowired

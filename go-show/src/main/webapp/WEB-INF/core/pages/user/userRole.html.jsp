@@ -16,7 +16,7 @@
 
 <script type="text/javascript" language="javascript">
 
-GLOBAL.P.MODULES="/user";
+GLOBAL.P.MODULES="/admin/user";
 GLOBAL.P.CLASSNAME="Users";
 GLOBAL.P.key="${S_PARAM._key}";
 GLOBAL.P.value="${S_PARAM._value}";

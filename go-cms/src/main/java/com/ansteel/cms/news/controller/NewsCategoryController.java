@@ -8,6 +8,7 @@ import java.util.Collection;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ansteel.core.constant.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,7 +26,7 @@ import com.ansteel.dhtmlx.jsonclass.UDataSet;
 
 
 @Controller
-@RequestMapping(value = "/newscategory")
+@RequestMapping(value = Public.ADMIN+"/newscategory")
 public class NewsCategoryController  extends BaseController{
 	
 	@Autowired

@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import com.ansteel.core.constant.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -37,10 +38,6 @@ import com.ansteel.common.tpl.domain.Tpl;
 import com.ansteel.common.tpl.service.TplService;
 import com.ansteel.core.annotation.PathClass;
 import com.ansteel.core.annotation.QueryJson;
-import com.ansteel.core.constant.DHtmlxConstants;
-import com.ansteel.core.constant.ServiceConstants;
-import com.ansteel.core.constant.TplViewConstant;
-import com.ansteel.core.constant.ViewModelConstant;
 import com.ansteel.core.context.ContextHolder;
 import com.ansteel.core.controller.SimpleController;
 import com.ansteel.core.domain.EntityInfo;
@@ -57,7 +54,7 @@ import com.ansteel.common.viewelement.service.ViewElement;
 import com.ansteel.common.viewelement.service.ViewElementService;
 
 @Controller
-@RequestMapping(value = "/news")
+@RequestMapping(value = Public.ADMIN+"/news")
 public class NewsController extends SimpleController {
 
 	@Autowired
@@ -151,7 +148,7 @@ public class NewsController extends SimpleController {
 
 		model.addAttribute(ViewModelConstant.P_TREE_CLASS,
 				NewsCategory.class.getSimpleName());
-		model.addAttribute(TplViewConstant.P_TPL_MODULES, "/news");
+		model.addAttribute(TplViewConstant.P_TPL_MODULES, "/admin/news");
 
 		return FisUtils.page("cms:pages/news/news.html");
 	}

@@ -13,6 +13,10 @@
 			<mvc:mapping path="/**" />
 			<bean class="com.ansteel.core.context.SiteInterceptor"></bean>
 		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/se/**" />
+			<bean class="com.ansteel.shop.core.context.ShopSellerInterceptor"></bean>
+		</mvc:interceptor>
 	</mvc:interceptors>
 
 

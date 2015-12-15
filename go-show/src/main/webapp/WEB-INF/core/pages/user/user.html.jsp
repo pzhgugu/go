@@ -16,7 +16,7 @@
 
 <script type="text/javascript" language="javascript">
 
-GLOBAL.P.MODULES="/user";
+GLOBAL.P.MODULES="/admin/user";
 GLOBAL.P.CLASSNAME="Users";
 
 GLOBAL.P.TOP_P_GRID_HEADER="${TOP_P_GRID_HEADER}";

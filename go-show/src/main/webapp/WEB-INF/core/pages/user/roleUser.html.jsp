@@ -15,7 +15,7 @@
 
 
 <script type="text/javascript" language="javascript">
-GLOBAL.P.MODULES="/role";
+GLOBAL.P.MODULES="/admin/role";
 GLOBAL.P.CLASSNAME="Roles";
 GLOBAL.P.key="${S_PARAM._key}";
 GLOBAL.P.value="${S_PARAM._value}";

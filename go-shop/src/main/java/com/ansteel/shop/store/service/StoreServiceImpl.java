@@ -75,6 +75,11 @@ public class StoreServiceImpl implements StoreService {
     }
 
     @Override
+    public Store findOne(String id) {
+        return storeRepository.findOne(id);
+    }
+
+    @Override
     @Transactional
     public Store update(Store store, MultipartFile storeLabel, MultipartFile storeBanner) {
         try {

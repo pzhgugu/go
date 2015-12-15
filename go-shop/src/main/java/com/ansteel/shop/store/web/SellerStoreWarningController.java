@@ -1,8 +1,8 @@
 package com.ansteel.shop.store.web;
 
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.FisUtils;
 import com.ansteel.core.utils.ResponseUtils;
-import com.ansteel.shop.constant.ShopConstant;
 import com.ansteel.shop.store.domain.Store;
 import com.ansteel.shop.store.domain.StoreWarning;
 import com.ansteel.shop.store.service.StoreService;
@@ -23,7 +23,7 @@ import java.util.Map;
  * Created by Administrator on 2015/12/11.
  */
 @Controller
-@RequestMapping(ShopConstant.SELLER + "/warning")
+@RequestMapping(Public.SELLER + "/warning")
 public class SellerStoreWarningController {
 
 

@@ -7,6 +7,7 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ansteel.core.constant.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -24,12 +25,11 @@ import com.ansteel.shop.album.domain.AlbumClass;
 import com.ansteel.shop.album.domain.AlbumPic;
 import com.ansteel.shop.album.service.AlbumClassService;
 import com.ansteel.shop.album.service.AlbumPicService;
-import com.ansteel.shop.constant.ShopConstant;
 import com.ansteel.shop.utils.JavaScriptUtils;
 import com.ansteel.shop.utils.JsonImage;
 
 @Controller
-@RequestMapping(value = ShopConstant.SELLER + "/albumpic")
+@RequestMapping(value = Public.SELLER + "/albumpic")
 public class AlbumPicController {
 	
 	@Autowired

@@ -13,7 +13,7 @@
 <fis:require id="core:scripts/resourceRole.js" />
 <fis:styles/>
 <script type="text/javascript" language="javascript">
-GLOBAL.P.MODULES="/resource";
+GLOBAL.P.MODULES="/admin/resource";
 GLOBAL.P.CLASSNAME="Resources";
 GLOBAL.P.key="${S_PARAM._key}";
 GLOBAL.P.value="${S_PARAM._value}";

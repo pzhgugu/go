@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import com.ansteel.core.constant.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
@@ -38,7 +39,7 @@ import com.ansteel.report.jasperReports.service.JasperReportsService;
  * 描   述：Jasper报表控制器。
  */
 @Controller
-@RequestMapping(value = "/jasper")
+@RequestMapping(value = Public.ADMIN+"/jasper")
 public class JasperReportsController  extends BaseController {
 	
 	@Autowired

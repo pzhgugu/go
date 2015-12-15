@@ -3,6 +3,7 @@ package com.ansteel.common.tpl.controller;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import com.ansteel.core.constant.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
@@ -29,7 +30,7 @@ import com.ansteel.core.service.CheckService;
  * 描   述：模板控制器。
  */
 @Controller
-@RequestMapping(value = "/tpl")
+@RequestMapping(value = Public.ADMIN+"/tpl")
 public class TplController  extends BaseController implements SaveBefore{
 
 	@Override

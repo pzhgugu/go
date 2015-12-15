@@ -1,5 +1,6 @@
 package com.ansteel.shop.store.web;
 
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.ExceprionUtils;
 import com.ansteel.core.utils.FisUtils;
 import com.ansteel.core.utils.JsonUtils;
@@ -37,7 +38,7 @@ import java.util.List;
  * Created by Administrator on 2015/10/27.
  */
 @Controller
-@RequestMapping(value = "/storejoinin")
+@RequestMapping(value = Public.CLIENT+"/storejoinin")
 public class StoreJoininController {
 
     @Autowired

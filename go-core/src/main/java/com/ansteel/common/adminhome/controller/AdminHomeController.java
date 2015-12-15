@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.ansteel.core.constant.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,7 +24,7 @@ import com.ansteel.common.security.service.UserService;
  * 描   述：后台管理控制器。  
  */
 @Controller
-@RequestMapping(value = "/admin")
+@RequestMapping(value = Public.ADMIN)
 public class AdminHomeController {
 
 	private static final String P_MENUS = "P_MENUS";

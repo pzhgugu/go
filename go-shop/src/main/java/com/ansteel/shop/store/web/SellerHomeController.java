@@ -1,7 +1,7 @@
 package com.ansteel.shop.store.web;
 
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.FisUtils;
-import com.ansteel.shop.constant.ShopConstant;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +17,7 @@ import java.util.Map;
  */
 
 @Controller
-@RequestMapping(ShopConstant.SELLER)
+@RequestMapping(Public.SELLER)
 public class SellerHomeController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)

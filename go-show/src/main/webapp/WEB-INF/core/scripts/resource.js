@@ -4,7 +4,7 @@
  * @require common:widget/dhtmlxSuite/dhtmlxEx.js
  */
 
-GLOBAL.P.MODULES="/resource";
+GLOBAL.P.MODULES="/admin/resource";
 GLOBAL.P.CLASSNAME="Resources";
 
 

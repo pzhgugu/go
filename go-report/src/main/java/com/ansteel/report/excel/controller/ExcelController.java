@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.controller.SaveBefore;
 import com.ansteel.core.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +46,7 @@ import com.ansteel.report.excel.service.ExcelService;
  * 描   述：Excel报表控制器。
  */
 @Controller
-@RequestMapping(value = "/excel")
+@RequestMapping(value = Public.ADMIN+ "/excel")
 public class ExcelController extends BaseController  implements SaveBefore  {
 	
 	@Autowired

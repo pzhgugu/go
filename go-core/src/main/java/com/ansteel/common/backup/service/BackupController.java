@@ -21,7 +21,7 @@ import com.ansteel.core.utils.DownloadUtils;
  * 描   述：自动备份控制器。  
  */
 @Controller
-@RequestMapping(value = "/backup")
+@RequestMapping(value = Public.ADMIN+"/backup")
 public class BackupController {
 	
 	

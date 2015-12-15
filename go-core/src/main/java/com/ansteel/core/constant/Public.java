@@ -163,6 +163,7 @@ public class Public {
 	 * 动态模型表前缀
 	 */
 	public static final String TABLE_PREFIX = "GOSHOW_";
+
 	/**
 	 * 客户端标示
 	 */

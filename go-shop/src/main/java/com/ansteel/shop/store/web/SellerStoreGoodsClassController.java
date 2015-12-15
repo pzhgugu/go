@@ -1,10 +1,10 @@
 package com.ansteel.shop.store.web;
 
 
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.BeanUtils;
 import com.ansteel.core.utils.FisUtils;
 import com.ansteel.core.utils.ResponseUtils;
-import com.ansteel.shop.constant.ShopConstant;
 import com.ansteel.shop.store.domain.StoreGoodsClass;
 import com.ansteel.shop.store.service.StoreGoodsClassService;
 import com.ansteel.shop.utils.JavaScriptUtils;
@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping(ShopConstant.SELLER + "/storegoodsclass")
+@RequestMapping(Public.SELLER + "/storegoodsclass")
 public class SellerStoreGoodsClassController {
 
 

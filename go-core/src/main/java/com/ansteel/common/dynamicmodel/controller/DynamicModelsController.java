@@ -42,7 +42,7 @@ import com.ansteel.core.utils.StringUtils;
  * 描   述：动态建模控制器。  
  */
 @Controller
-@RequestMapping(value = "/dymodel")
+@RequestMapping(value = Public.ADMIN+"/dymodel")
 public class DynamicModelsController extends BaseController implements SaveBefore{
 	
 	private static final int DYNAMIC_TYPE = 1;

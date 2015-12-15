@@ -15,7 +15,7 @@
 
 
 <script type="text/javascript" language="javascript">
-GLOBAL.P.MODULES="/role";
+GLOBAL.P.MODULES="/admin/role";
 GLOBAL.P.CLASSNAME="Roles";
 
 GLOBAL.P.TOP_P_GRID_HEADER="${TOP_P_GRID_HEADER}";

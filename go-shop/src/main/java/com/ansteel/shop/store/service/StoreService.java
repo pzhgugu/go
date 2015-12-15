@@ -44,4 +44,6 @@ public interface StoreService {
 	Store update(Store store, MultipartFile storeLabel, MultipartFile storeBanner);
 
 	Store update(Store store);
+
+	Store findOne(String id);
 }

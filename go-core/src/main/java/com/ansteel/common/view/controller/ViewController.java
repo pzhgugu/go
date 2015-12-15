@@ -3,6 +3,7 @@ package com.ansteel.common.view.controller;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import com.ansteel.core.constant.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
@@ -34,7 +35,7 @@ import com.ansteel.core.service.CheckService;
  * 描   述：视图控制器。
  */
 @Controller
-@RequestMapping(value = "/view")
+@RequestMapping(value = Public.ADMIN+"/view")
 public class ViewController  extends BaseController implements SaveBefore{
 
 	@Override

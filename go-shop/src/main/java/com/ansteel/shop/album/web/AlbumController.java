@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import com.ansteel.core.constant.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,12 +24,11 @@ import com.ansteel.core.utils.FisUtils;
 import com.ansteel.core.utils.ResponseUtils;
 import com.ansteel.shop.album.domain.AlbumClass;
 import com.ansteel.shop.album.service.AlbumClassService;
-import com.ansteel.shop.constant.ShopConstant;
 import com.ansteel.shop.store.domain.Store;
 import com.ansteel.shop.utils.JavaScriptUtils;
 
 @Controller
-@RequestMapping(value = ShopConstant.SELLER + "/album")
+@RequestMapping(value = Public.SELLER + "/album")
 public class AlbumController {
 
 	@Autowired

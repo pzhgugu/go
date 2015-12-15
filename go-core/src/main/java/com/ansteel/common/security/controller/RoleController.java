@@ -7,6 +7,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ansteel.core.constant.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -44,7 +45,7 @@ import com.ansteel.common.viewelement.service.ViewElementService;
  * 描   述：角色控制器。  
  */
 @Controller
-@RequestMapping(value = "/role")
+@RequestMapping(value = Public.ADMIN+ "/role")
 public class RoleController extends BaseController {
 
 	@Autowired

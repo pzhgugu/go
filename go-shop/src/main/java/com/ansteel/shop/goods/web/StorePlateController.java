@@ -1,7 +1,7 @@
 package com.ansteel.shop.goods.web;
 
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.*;
-import com.ansteel.shop.constant.ShopConstant;
 import com.ansteel.shop.store.domain.StorePlate;
 import com.ansteel.shop.store.service.StorePlateService;
 import com.ansteel.shop.utils.JavaScriptUtils;
@@ -28,7 +28,7 @@ import java.util.Map;
  * Created by Administrator on 2015/8/25.
  */
 @Controller
-@RequestMapping(value = ShopConstant.SELLER + "/plate")
+@RequestMapping(value = Public.SELLER + "/plate")
 public class StorePlateController {
 
     @Autowired

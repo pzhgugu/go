@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.JsonUtils;
 import com.ansteel.shop.goods.domain.*;
 import com.ansteel.shop.goods.service.*;
@@ -33,13 +34,12 @@ import com.ansteel.shop.album.domain.AlbumClass;
 import com.ansteel.shop.album.domain.AlbumPic;
 import com.ansteel.shop.album.service.AlbumClassService;
 import com.ansteel.shop.album.service.AlbumPicService;
-import com.ansteel.shop.constant.ShopConstant;
 import com.ansteel.shop.store.domain.Store;
 import com.ansteel.shop.store.service.StoreService;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 @Controller
-@RequestMapping(value = ShopConstant.SELLER + "/goods")
+@RequestMapping(value = Public.SELLER + "/goods")
 public class SellerGoodsController {
 
     @Autowired

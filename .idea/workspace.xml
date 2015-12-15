@@ -293,14 +293,13 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/update.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/upload_loading.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/warning_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/controller/AttController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/ChartPageController.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/utils/IE6_MAXMIX.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/utils/IE6_PNG.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/report/widget/OnlineBrowsen/OnlineBrowsen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/domain/Setting.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/controller/SettingController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/service/SettingGoodsVerifyService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/service/SettingGoodsVerifyServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/repository/SettingRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/context/ShopSellerInterceptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/storehome/web/StoreHomeContoller.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/ajaxfileupload/ajaxfileupload.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/album.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/anchor/anchor.js" />
@@ -352,10 +351,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/core/scripts/framework.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/admin/goodsAttribute.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/admin/goodsBrand.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsOfflineList.html.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsOutlineList.html.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/admin/goodsType.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsVerifyList.html.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/home.html.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/cms/styles/home_header.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/utils/html5shiv.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery.nyroModal/ie6.min.js" />
@@ -455,6 +452,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/poshytip/tip-violet/tip-violet.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/poshytip/tip-yellow/tip-yellow.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/poshytip/tip-yellowsimple/tip-yellowsimple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/top.html.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/core/widget/tpl/TreeFrom/treefrom.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/core/widget/tpl/TreeGrid/treegrid.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/core/widget/tpl/TreeOneToMany/treeonetomany.js" />
@@ -466,19 +464,57 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/wordpaste/wordpaste.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery-ui/i18n/zh-CN.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery-ui/i18n/zh-TW.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonService.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonService.java" />
+      <change type="DELETED" beforePath="D:\git\go\go-core\src\main\java\com\ansteel\common\admin\controller\AdminController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\constant\ShopConstant.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/test/java/com/ansteel/spring/test/AdminControllerTest.java" afterPath="$PROJECT_DIR$/go-core/src/test/java/com/ansteel/spring/test/AdminControllerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/adminhome/controller/AdminHomeController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/adminhome/controller/AdminHomeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/album/web/AlbumController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/album/web/AlbumController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/album/web/AlbumPicController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/album/web/AlbumPicController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/controller/AttachmentController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/controller/AttachmentController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/resources/publish/AutoPublish.xml" afterPath="$PROJECT_DIR$/go-show/src/main/resources/publish/AutoPublish.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/backup/service/BackupController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/backup/service/BackupController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/ChartController.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/ChartController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ClientGoodsClassController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ClientGoodsClassController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/controller/DynamicModelsController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/controller/DynamicModelsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/controller/ExcelController.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/controller/ExcelController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excelin/controller/ExcelInController.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excelin/controller/ExcelInController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonServiceImpl.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsImagesRepository.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsImagesRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsImagesService.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsImagesService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsImagesServiceImpl.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsImagesServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsRepository.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsService.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsServiceImpl.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/jasperReports/controller/JasperReportsController.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/jasperReports/controller/JasperReportsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/LittleChartController.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/LittleChartController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/menu/controller/MenuController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/menu/controller/MenuController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/model/controller/ModelController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/model/controller/ModelController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/controller/NewsCategoryController.java" afterPath="$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/controller/NewsCategoryController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/controller/NewsController.java" afterPath="$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/controller/NewsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/controller/NewsPageController.java" afterPath="$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/controller/NewsPageController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/constant/Public.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/constant/Public.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/controller/ResourceController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/controller/ResourceController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/controller/RoleController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/controller/RoleController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerBrandApplyController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerBrandApplyController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsOnlineController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsOnlineController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/GoodsAdd/goodsAddStep2.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/GoodsAdd/goodsAddStep2.html.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsOnlineList.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsOnlineList.html.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsSpecValueController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsSpecValueController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerHomeController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerHomeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreGoodsClassController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreGoodsClassController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreNavController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreNavController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreWarningController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreWarningController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/controller/SqlModelsController.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/controller/SqlModelsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/StoreJoininController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/StoreJoininController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/StorePlateController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/StorePlateController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StoreService.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StoreService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StoreServiceImpl.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StoreServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/tpl/controller/TplController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/tpl/controller/TplController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/controller/UserController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/view/controller/ViewController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/view/controller/ViewController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/widget/tpl/seller/header.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/widget/tpl/seller/header.html.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/widget/tpl/seller/layoutLeftGoods.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/widget/tpl/seller/layoutLeftGoods.html.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/cms/scripts/publishInfo.js" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/cms/scripts/publishInfo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/scripts/resource.js" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/scripts/resource.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/resource/resourceRole.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/resource/resourceRole.html.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/role.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/role.html.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/roleUser.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/roleUser.html.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/go-show/src/main/resources/spring-mvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/user.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/user.html.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/userRole.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/userRole.html.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="go.iws" />
@@ -560,118 +596,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SellerGoodsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsController.java">
+      <file leaf-file-name="ChartController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/ChartController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="377" column="61" selection-start-line="377" selection-start-column="61" selection-end-line="377" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoodsCommonServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78249335">
-              <caret line="90" column="53" selection-start-line="90" selection-start-column="53" selection-end-line="90" selection-end-column="53" />
-              <folding>
-                <element signature="e#3063#4527#0" expanded="true" />
-                <element signature="e#4526#4527#0" expanded="true" />
-                <element signature="e#4892#4893#0" expanded="true" />
-                <element signature="e#4963#4964#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoodsCommonService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+              <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoodsCommon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsCommon.java">
+      <file leaf-file-name="ChartPageController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/ChartPageController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="97" column="17" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="20" />
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SellerGoodsOnlineController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsOnlineController.java">
+      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/spring-mvc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="107" column="114" selection-start-line="107" selection-start-column="114" selection-end-line="107" selection-end-column="114" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goodsVerifyList.html.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsVerifyList.html.jsp">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.666667">
-              <caret line="166" column="96" selection-start-line="166" selection-start-column="96" selection-end-line="166" selection-end-column="96" />
+            <state vertical-scroll-proportion="-0.027272727">
+              <caret line="103" column="71" selection-start-line="103" selection-start-column="53" selection-end-line="103" selection-end-column="71" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingGoodsVerifyServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/service/SettingGoodsVerifyServiceImpl.java">
+      <file leaf-file-name="LittleChartController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/LittleChartController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="67" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingGoodsVerifyService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/service/SettingGoodsVerifyService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoodsModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsModel.java">
+      <file leaf-file-name="JasperReportsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/jasperReports/controller/JasperReportsController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-              <folding>
-                <element signature="e#466#467#0" expanded="false" />
-                <element signature="e#501#502#0" expanded="false" />
-                <element signature="e#557#558#0" expanded="false" />
-                <element signature="e#605#606#0" expanded="false" />
-                <element signature="e#654#655#0" expanded="false" />
-                <element signature="e#685#686#0" expanded="false" />
-                <element signature="e#747#748#0" expanded="false" />
-                <element signature="e#787#788#0" expanded="false" />
-                <element signature="e#847#848#0" expanded="false" />
-                <element signature="e#879#880#0" expanded="false" />
-                <element signature="e#953#954#0" expanded="false" />
-                <element signature="e#995#996#0" expanded="false" />
-                <element signature="e#1060#1061#0" expanded="false" />
-                <element signature="e#1092#1093#0" expanded="false" />
-                <element signature="e#1171#1172#0" expanded="false" />
-                <element signature="e#1213#1214#0" expanded="false" />
-              </folding>
+              <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MakeReportController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/controller/MakeReportController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SqlModelsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/controller/SqlModelsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DynamicModelsTplController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/controller/DynamicModelsTplController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SqlModelsTplController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/controller/SqlModelsTplController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -683,8 +703,8 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -710,57 +730,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsSpecValueSelectListModel.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/Goods.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/scripts/page.step2.js" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsSpecService.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsSpecServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/GoodsAdd/goodsAddStep3ImageList.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/scripts/store_goods_add.step3.js" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsImagesModel.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ColorImagesModel.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsAttributeValueServiceImpl.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/top.html.jsp" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/constant/Public.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/constant/ShopConstant.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsSpecValueController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/StorePlateController.java" />
         <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ClientGoodsClassController.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/ResponseUtils.java" />
-        <option value="$PROJECT_DIR$/go-core/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/go-core/src/test/java/com/ansteel/spring/test/ResponseUtilsTest.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/DownloadUtils.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/scripts/store_goods_add.step2.js" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsSpecValueService.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsSpecValueServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsSpecValueRepository.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsSpecValueStockModel.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsCommon.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/GoodsAdd/goodsAddStep3.html.jsp" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsController.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/domain/StoreWarning.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/repository/StoreWarningRepository.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerBrandApplyController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerHomeController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreGoodsClassController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreNavController.java" />
         <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreWarningController.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/GoodsAdd/storeWarning.html.jsp" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StoreWarningService.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StoreWarningServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/GoodsAdd/goodsAddStep2.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/widget/tpl/seller/header.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/widget/tpl/seller/layoutLeftGoods.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsOnlineList.html.jsp" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsImagesService.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsImagesRepository.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsService.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsImagesServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsRepository.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsOutlineList.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsOfflineList.html.jsp" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/domain/Setting.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/controller/SettingController.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/repository/SettingRepository.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/service/SettingGoodsVerifyService.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/service/SettingGoodsVerifyServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonService.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsVerifyList.html.jsp" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonServiceImpl.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/StoreJoininController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/storehome/web/StoreHomeContoller.java" />
+        <option value="$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/controller/NewsPageController.java" />
+        <option value="$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/controller/NewsCategoryController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/album/web/AlbumPicController.java" />
         <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsOnlineController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/album/web/AlbumController.java" />
+        <option value="$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/controller/NewsController.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/cms/scripts/publishInfo.js" />
+        <option value="$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/web/NewShowController.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/controller/AttachmentController.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/controller/DynamicModelsController.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/model/controller/ModelController.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/controller/ResourceController.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/controller/RoleController.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/tpl/controller/TplController.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/view/controller/ViewController.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/controller/AttController.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/adminhome/controller/AdminHomeController.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/admin/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/go-core/src/test/java/com/ansteel/spring/test/AdminControllerTest.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/backup/service/BackupController.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/role.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/roleUser.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/user.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/userRole.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/resource/resourceRole.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/scripts/resource.js" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/menu/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/ChartController.java" />
+        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/LittleChartController.java" />
+        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/controller/ExcelController.java" />
+        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excelin/controller/ExcelInController.java" />
+        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/jasperReports/controller/JasperReportsController.java" />
+        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/controller/SqlModelsController.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/controller/DynamicModelsTplController.java" />
+        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/ChartPageController.java" />
       </list>
     </option>
   </component>
@@ -927,6 +947,8 @@
       <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\plate" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default" />
+      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome" />
       <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\goodsOnline" />
       <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\plate" />
       <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF" />
@@ -938,6 +960,7 @@
       <recent name="com.ansteel.common.sql.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ansteel.report.chart.controller" />
       <recent name="com.ansteel.shop.goods.domain" />
     </key>
   </component>
@@ -1338,7 +1361,7 @@
       <workItem from="1449898862980" duration="1335000" />
       <workItem from="1450005879983" duration="5952000" />
       <workItem from="1450056570079" duration="17430000" />
-      <workItem from="1450139531572" duration="3978000" />
+      <workItem from="1450139531572" duration="17584000" />
     </task>
     <task id="LOCAL-00001" summary="测试一下">
       <created>1440299520520</created>
@@ -1490,11 +1513,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449824127212</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="开发(电商商品发布)">
+      <created>1450143607805</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1450143607805</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="412323000" />
+    <option name="totallyTimeSpent" value="425929000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1527,7 +1556,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24924012" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30716723" sideWeight="0.56231004" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33959043" sideWeight="0.56231004" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1537,35 +1566,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3993174" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.4969605" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2691622" sideWeight="0.43768996" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.4969605" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13905776" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0843465" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3532423" sideWeight="0.56231004" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2320819" sideWeight="0.81762916" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28327644" sideWeight="0.41793314" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3993174" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.4969605" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31610942" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.4969605" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1579,6 +1579,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <MESSAGE value="测试一下" />
     <MESSAGE value="删除myeclipse配置" />
     <MESSAGE value="开发" />
@@ -1680,7 +1681,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="380" />
+      <option name="time" value="383" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1689,462 +1690,420 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerHomeController.java">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/controller/BaseController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="70" selection-start-line="27" selection-start-column="0" selection-end-line="34" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/widget/tpl/seller/framework.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="88.703705">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/GoodsAdd/goodsAddStep1.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="9" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/GoodsAdd/setp.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreNavController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="5" selection-start-line="95" selection-start-column="2" selection-end-line="105" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/GoodsAdd/storeWarning.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StoreWarningServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreWarningController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/domain/StoreWarning.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48294434">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StoreWarningService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="30" selection-start-line="44" selection-start-column="2" selection-end-line="45" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/widget/tpl/seller/header.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0">
-          <caret line="218" column="78" selection-start-line="218" selection-start-column="78" selection-end-line="218" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/widget/tpl/seller/layoutLeftGoods.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8490566">
-          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/scripts/store_goods_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.7.0.M1/spring-data-commons-1.7.0.M1-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33213645">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/domain/OperEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/domain/TreeEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17714286">
-          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4857143">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsImages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5371429">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsImagesService.java">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/kindeditor/controller/KindEditorController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="56" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="56" />
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsImagesRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5885714">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsService.java">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/controller/AttachmentController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <caret line="124" column="5" selection-start-line="109" selection-start-column="4" selection-end-line="124" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/controller/AttController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
-            <element signature="e#2111#2112#0" expanded="false" />
-            <element signature="e#2156#2157#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/Goods.java">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomAccessDeniedHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.297143">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomAccessDecisionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomAuthenticationSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomConcurrentSessionFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomFilterInvocationSecurityMetadataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomFilterSecurityInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomLoginUrlAuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomTokenBasedRememberMeServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsOnlineList.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6666665">
-          <caret line="212" column="120" selection-start-line="212" selection-start-column="68" selection-end-line="212" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsImagesServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5942857">
-          <caret line="105" column="37" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsRepository.java">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomUsernamePasswordAuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/GoodsAdd/goodsAddStep2.html.jsp">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/EntityUserDetailsManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.333333">
-          <caret line="170" column="51" selection-start-line="170" selection-start-column="44" selection-end-line="170" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsOutlineList.html.jsp">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/TePlatSingleSignOn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.074074">
-          <caret line="235" column="88" selection-start-line="235" selection-start-column="88" selection-end-line="235" selection-end-column="88" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsOfflineList.html.jsp">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/SsoPasswordEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="15.703704">
-          <caret line="247" column="98" selection-start-line="247" selection-start-column="98" selection-end-line="247" selection-end-column="98" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/domain/BaseEntity.java">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/SingleSignOn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33142856">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/SecurityUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/SecurityMetadata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/spring-sec.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="42.42857">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/test/java/com/ansteel/spring/test/AdminControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/adminhome/controller/AdminHomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/backup/service/BackupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/role.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.5925927">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/roleUser.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3333335">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/user.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.9259257">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/user/userRole.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7407408">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/resource/resource.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/changePassword/changePassword.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/framework/framework.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="48.25926">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/home/mainPage.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/pages/resource/resourceRole.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/scripts/attachment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/scripts/changePassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/scripts/resourceRole.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1449301941014" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/scripts/resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <marker date="1450160258653" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/menu/controller/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/controller/ExcelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excelin/controller/ExcelInController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/jasperReports/controller/JasperReportsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/controller/MakeReportController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/album/domain/AlbumClass.java">
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/controller/SqlModelsTplController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="42" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/controller/GoodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="27" selection-start-line="18" selection-start-column="8" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/controller/SettingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/domain/Setting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#469#470#0" expanded="false" />
-            <element signature="e#496#497#0" expanded="false" />
-            <element signature="e#536#537#0" expanded="false" />
-            <element signature="e#568#569#0" expanded="false" />
-            <element signature="e#600#601#0" expanded="false" />
-            <element signature="e#628#629#0" expanded="false" />
-            <element signature="e#670#671#0" expanded="false" />
-            <element signature="e#704#705#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsSpecValueModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsSpecValueStockModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#564#565#0" expanded="false" />
-            <element signature="e#594#595#0" expanded="false" />
-            <element signature="e#640#641#0" expanded="false" />
-            <element signature="e#678#679#0" expanded="false" />
-            <element signature="e#715#716#0" expanded="false" />
-            <element signature="e#746#747#0" expanded="false" />
-            <element signature="e#796#797#0" expanded="false" />
-            <element signature="e#836#837#0" expanded="false" />
-            <element signature="e#871#872#0" expanded="false" />
-            <element signature="e#900#901#0" expanded="false" />
-            <element signature="e#946#947#0" expanded="false" />
-            <element signature="e#982#983#0" expanded="false" />
-            <element signature="e#1018#1019#0" expanded="false" />
-            <element signature="e#1046#1047#0" expanded="false" />
-            <element signature="e#1092#1093#0" expanded="false" />
-            <element signature="e#1126#1127#0" expanded="false" />
-            <element signature="e#1159#1160#0" expanded="false" />
-            <element signature="e#1187#1188#0" expanded="false" />
-            <element signature="e#1230#1231#0" expanded="false" />
-            <element signature="e#1264#1265#0" expanded="false" />
-            <element signature="e#1294#1295#0" expanded="false" />
-            <element signature="e#1320#1321#0" expanded="false" />
-            <element signature="e#1358#1359#0" expanded="false" />
-            <element signature="e#1388#1389#0" expanded="false" />
-            <element signature="e#1422#1423#0" expanded="false" />
-            <element signature="e#1452#1453#0" expanded="false" />
-            <element signature="e#1498#1499#0" expanded="false" />
-            <element signature="e#1536#1537#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#466#467#0" expanded="false" />
-            <element signature="e#501#502#0" expanded="false" />
-            <element signature="e#557#558#0" expanded="false" />
-            <element signature="e#605#606#0" expanded="false" />
-            <element signature="e#654#655#0" expanded="false" />
-            <element signature="e#685#686#0" expanded="false" />
-            <element signature="e#747#748#0" expanded="false" />
-            <element signature="e#787#788#0" expanded="false" />
-            <element signature="e#847#848#0" expanded="false" />
-            <element signature="e#879#880#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
-            <element signature="e#995#996#0" expanded="false" />
-            <element signature="e#1060#1061#0" expanded="false" />
-            <element signature="e#1092#1093#0" expanded="false" />
-            <element signature="e#1171#1172#0" expanded="false" />
-            <element signature="e#1213#1214#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/JsonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9028571">
-          <caret line="44" column="24" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="24" />
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsAttributeRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36">
-          <caret line="8" column="68" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/service/SettingGoodsVerifyService.java">
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/controller/SqlModelsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsController.java">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/controller/DynamicModelsTplController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="377" column="61" selection-start-line="377" selection-start-column="61" selection-end-line="377" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/service/SettingGoodsVerifyServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/LittleChartController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="67" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/repository/SettingRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5657143">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsCommon.java">
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/ChartController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="17" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="20" />
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/goodsOnline/goodsVerifyList.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.666667">
-          <caret line="166" column="96" selection-start-line="166" selection-start-column="96" selection-end-line="166" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonService.java">
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/chart/controller/ChartPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsSpec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.38189846">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsSpecValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09492274">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsOnlineController.java">
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/spring-mvc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="114" selection-start-line="107" selection-start-column="114" selection-end-line="107" selection-end-column="114" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78249335">
-          <caret line="90" column="53" selection-start-line="90" selection-start-column="53" selection-end-line="90" selection-end-column="53" />
-          <folding>
-            <element signature="e#3063#4527#0" expanded="true" />
-            <element signature="e#4526#4527#0" expanded="true" />
-            <element signature="e#4892#4893#0" expanded="true" />
-            <element signature="e#4963#4964#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-0.027272727">
+          <caret line="103" column="71" selection-start-line="103" selection-start-column="53" selection-end-line="103" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2237,4 +2196,20 @@
           </splitter-proportions>
         </settings>
       </state>
-      <state key="S
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
+  </component>
+</project>

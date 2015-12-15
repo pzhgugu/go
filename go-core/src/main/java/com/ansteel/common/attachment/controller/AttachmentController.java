@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import com.ansteel.core.constant.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -39,7 +40,7 @@ import com.ansteel.dhtmlx.jsonclass.UDataSet;
  * 描   述：附件树管理控制器。  
  */
 @Controller
-@RequestMapping(value = "/att")
+@RequestMapping(value = Public.ADMIN+"/att")
 public class AttachmentController extends BaseController {
 
 	@Autowired
