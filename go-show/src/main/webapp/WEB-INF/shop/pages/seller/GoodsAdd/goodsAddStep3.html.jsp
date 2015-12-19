@@ -88,6 +88,68 @@
             </div>
             </c:forEach>
             </c:if>
+
+            <c:if test="${empty P_COLOR_LIST}">
+            <div class="container">
+                <div class="ncsc-goodspic-list">
+                    <div class="title">
+                        <h3>无颜色</h3></div>
+                    <c:set var="image" value="${P_IMAGES_MAP['NULL']}"></c:set>
+                    <input type="hidden" value="" name="gimList[0].colorId" />
+                    <ul nctype="ul0">
+                        <c:forEach begin="0" end="4" step="1" varStatus="i">
+                            <li class="ncsc-goodspic-upload">
+                                <div class="upload-thumb">
+                                    <c:choose>
+                                        <c:when test="${i.index==0}">
+                                            <c:if test="${!empty image[0]}">
+                                                <img nctype="file_0${i.index}" src="${S_URL}/att/download/${image[0].goodsImage}" />
+                                                <input type="hidden" nctype="file_0${i.index}" value="${image[0].goodsImage}"
+                                                       name="gimList[0].imgList[${i.index}].goodsImage">
+                                            </c:if>
+                                            <c:if test="${empty image[0]}">
+                                                <img nctype="file_0${i.index}" src="${S_URL}/att/download/${P_GOODSCOMMON.goodsImage}" />
+                                                <input type="hidden" nctype="file_0${i.index}" value="${P_GOODSCOMMON.goodsImage}"
+                                                       name="gimList[0].imgList[${i.index}].goodsImage">
+                                            </c:if>
+                                        </c:when>
+                                        <c:otherwise>
+                                            <c:if test="${!empty image[i.index]}">
+                                                <img nctype="file_0${i.index}" src="${S_URL}/att/download/${image[i.index].goodsImage}" />
+                                                <input type="hidden" nctype="file_0${i.index}" value="${image[i.index].goodsImage}"
+                                                       name="gimList[0].imgList[${i.index}].goodsImage">
+                                            </c:if>
+                                            <c:if test="${empty image[i.index]}">
+                                                <img nctype="file_0${i.index}" src="${S_URL}/res/img/default_goods_image_240.gif" />
+                                                <input type="hidden" nctype="file_0${i.index}" value=""
+                                                       name="gimList[0].imgList[${i.index}].goodsImage">
+                                            </c:if>
+
+                                        </c:otherwise>
+                                    </c:choose>
+                                </div>
+                                <div class='show-default <c:if test="${i.index==0}">selected</c:if>' nctype="file_0${i.index}">
+                                    <p><i class="icon-ok-circle"></i>默认主图
+                                        <input type="hidden" name="gimList[0].imgList[${i.index}].isDefault" value='<c:choose><c:when test="${i.index==0}">1</c:when><c:otherwise>0</c:otherwise></c:choose>'>
+                                    </p><a href="javascript:void(0)" nctype="del" class="del" title="移除">X</a>
+                                </div>
+                                <div class="show-sort">排序：<input name="gimList[0].imgList[${i.index}].goodsImageSort" type="text" class="text" value="0" size="1" maxlength="1">
+                                </div>
+                                <div class="ncsc-upload-btn"><a href="javascript:void(0);"><span><input type="file" hidefocus="true" size="1" class="input-file" name="file_0${i.index}" id="file_0${i.index}"></span><p><i class="icon-upload-alt"></i>上传</p>
+                                </a></div>
+
+                            </li>
+                        </c:forEach>
+                    </ul>
+                    <div class="ncsc-select-album">
+                        <a class="ncsc-btn" href="${S_URL}/se/goods/addstep/three/images?id=0" nctype="select-0"><i class="icon-picture"></i>从图片空间选择</a>
+                        <a href="javascript:void(0);" nctype="close_album" class="ncsc-btn ml5" style="display: none;"><i class=" icon-circle-arrow-up"></i>关闭相册</a>
+                    </div>
+                    <div nctype="album-0"></div>
+            </div>
+            </c:if>
+
+
         </div>
 
       <div class="sidebar">

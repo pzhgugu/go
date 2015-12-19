@@ -1,5 +1,9 @@
 {
     "res": {
+        "shop:pages/client/storehome/default/style.css": {
+            "uri": "/show/static/shop/pages/client/storehome/default/style.css",
+            "type": "css"
+        },
         "shop:scripts/admin/appleStoreJoinin.js": {
             "uri": "/show/static/shop/scripts/admin/appleStoreJoinin.js",
             "type": "js"
@@ -81,6 +85,10 @@
             "uri": "/show/static/shop/scripts/seller.js",
             "type": "js"
         },
+        "shop:scripts/shop.js": {
+            "uri": "/show/static/shop/scripts/shop.js",
+            "type": "js"
+        },
         "shop:scripts/store_goods_add.step1.js": {
             "uri": "/show/static/shop/scripts/store_goods_add.step1.js",
             "type": "js"
@@ -107,6 +115,10 @@
         },
         "shop:styles/seller_center.css": {
             "uri": "/show/static/shop/styles/seller_center.css",
+            "type": "css"
+        },
+        "shop:styles/shop.css": {
+            "uri": "/show/static/shop/styles/shop.css",
             "type": "css"
         },
         "shop:styles/skin_0.css": {

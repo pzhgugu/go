@@ -19,12 +19,13 @@
 	<security:http pattern="/error" security="none" />
 	<!--<security:http pattern="/makeReport/**" security="none"/>-->
 	<security:http pattern="/browsen**" security="none"/>
+	<security:http pattern="/att/**" security="none"/>
 	<security:http  auto-config="true" entry-point-ref="smartLoginUrlAuthenticationEntryPoint">
 	<!--  表达式模式
 	<security:http auto-config="true" use-expressions="true">-->
 		<!--  游客
-		<security:intercept-url pattern="/" access="IS_AUTHENTICATED_ANONYMOUSLY" />
 		<security:intercept-url pattern="/admin/home" access="ROLE_ANONYMOUS" />-->
+		<security:intercept-url pattern="/cl/**" access="IS_AUTHENTICATED_ANONYMOUSLY" />
 		
 		<security:access-denied-handler ref="accessDeniedHandler"/>  
 		

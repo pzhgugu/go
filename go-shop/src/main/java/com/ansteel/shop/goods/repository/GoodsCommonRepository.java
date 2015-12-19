@@ -5,6 +5,8 @@ import com.ansteel.shop.goods.domain.GoodsCommon;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
+import java.util.List;
+
 /**
  * Created by Administrator on 2015/12/6.
  */
@@ -29,4 +31,5 @@ public interface GoodsCommonRepository extends ProjectRepository<GoodsCommon,Str
     @Modifying
     @Query("update GoodsCommon g set g.adWord = ?2 where g.id = ?1")
     void updateAdWord(String goodsId, String adWord);
+
 }

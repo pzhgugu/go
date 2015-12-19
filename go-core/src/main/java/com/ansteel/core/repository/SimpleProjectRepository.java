@@ -136,6 +136,18 @@ public class SimpleProjectRepository<T, ID extends Serializable> extends
 	}
 
 	@Override
+	public List find(Specification<T> spec,Integer firstResult,Integer maxResults) {
+		CriteriaBuilder builder = em.getCriteriaBuilder();
+		CriteriaQuery<T> query = builder.createQuery(getDomainClass());
+		Root<T> root = applySpecificationToCriteria(spec, query);
+		query.select(root);
+		TypedQuery<T> tq = em.createQuery(query);
+		tq.setFirstResult(firstResult);
+		tq.setMaxResults(maxResults);
+		return tq.getResultList();
+	}
+
+	@Override
 	public Page<T> find(Specification<T> spec, Pageable pageable) {
 		return this.findAll(spec, pageable);
 	}

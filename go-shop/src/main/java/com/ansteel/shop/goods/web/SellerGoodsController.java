@@ -401,33 +401,46 @@ public class SellerGoodsController {
                 spvIdArray=gsvslm.getSpvId();
             }
         }
-        if(spvIdArray==null||spvIdArray.length<1){
+        /*if(spvIdArray==null||spvIdArray.length<1){
             if(edit!=null&&edit==1){
                 return "redirect:/se/goodsonline/list";
             }
             return "redirect:/se/goods//addstep/four";
-        }
-        //颜色规格
-        List<GoodsSpecValue> goodsSpecValueList=goodsSpecValueService.findById(spvIdArray);
-
+        }*/
         List<GoodsImages> goodsImagesList = goodsImagesService.findByGoodsIdAndStoreId(goodsId);
-        Map<String,GoodsImages[]> imagesMap = new HashMap<>();
-        for(GoodsSpecValue goodsSpecValue:goodsSpecValueList){
-            String goodsColorId=goodsSpecValue.getId();
+        Map<String, GoodsImages[]> imagesMap = new HashMap<>();
+        if(spvIdArray!=null&&spvIdArray.length>0) {
+            //颜色规格
+            List<GoodsSpecValue> goodsSpecValueList = goodsSpecValueService.findById(spvIdArray);
+            for (GoodsSpecValue goodsSpecValue : goodsSpecValueList) {
+                String goodsColorId = goodsSpecValue.getId();
+                GoodsImages[] GoodsImagesArray = new GoodsImages[5];
+                int i = 0;
+                for (GoodsImages g : goodsImagesList) {
+                    if (g.getColorId().equals(goodsColorId)) {
+                        GoodsImagesArray[i] = g;
+                        i++;
+                    }
+                }
+                imagesMap.put(goodsColorId, GoodsImagesArray);
+            }
+            model.addAttribute("P_IMAGES_MAP", imagesMap);
+            model.addAttribute("P_COLOR_LIST", goodsSpecValueList);
+        }else{
+            model.addAttribute("P_COLOR_LIST", null);
             GoodsImages[] GoodsImagesArray = new GoodsImages[5];
-            int i=0;
-            for(GoodsImages g:goodsImagesList){
-                if(g.getColorId().equals(goodsColorId)){
-                    GoodsImagesArray[i]=g;
-                    i++;
+            int i = 0;
+            for (GoodsImages g : goodsImagesList) {
+                GoodsImagesArray[i] = g;
+                i++;
+                if(i==5){
+                    break;
                 }
             }
-            imagesMap.put(goodsColorId,GoodsImagesArray);
+            imagesMap.put("NULL", GoodsImagesArray);
+            model.addAttribute("P_IMAGES_MAP", imagesMap);
         }
-        model.addAttribute("P_IMAGES_MAP", imagesMap);
 
-
-        model.addAttribute("P_COLOR_LIST", goodsSpecValueList);
         model.addAttribute("P_GOODSCOMMON", goodsCommon);
 
 

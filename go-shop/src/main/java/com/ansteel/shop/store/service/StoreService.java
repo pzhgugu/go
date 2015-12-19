@@ -46,4 +46,6 @@ public interface StoreService {
 	Store update(Store store);
 
 	Store findOne(String id);
+
+	MultipleScoreModle getMultipleScore(String storeScId);
 }

@@ -205,6 +205,52 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
         }
     }
 
+    @Override
+    public List<GoodsCommon> findTop20ByGoodsCommend(final String storeId) {
+        Specification<GoodsCommon> specification = new Specification<GoodsCommon>() {
+            public Predicate toPredicate(Root<GoodsCommon> root,
+                                         CriteriaQuery<?> query, CriteriaBuilder cb) {
+                //更新时间排序
+                query.orderBy(cb.desc(root.get("updated")));
+                List<Predicate> predicate = new ArrayList<>();
+
+                predicate.add(cb.equal(root.get("storeId"), storeId));
+                //上架商品
+                predicate.add(cb.equal(root.get("goodsState"), 1));
+                //审核商品
+                predicate.add(cb.equal(root.get("goodsVerify"), 1));
+                //推荐商品
+                predicate.add(cb.equal(root.get("goodsCommend"), 1));
+
+                Predicate[] pre = new Predicate[predicate.size()];
+                return query.where(predicate.toArray(pre)).getRestriction();
+            }
+        };
+        return goodsCommonRepository.find(specification,0,20);
+    }
+
+    @Override
+    public List<GoodsCommon> findTop20ByNew(final String storeId) {
+        Specification<GoodsCommon> specification = new Specification<GoodsCommon>() {
+            public Predicate toPredicate(Root<GoodsCommon> root,
+                                         CriteriaQuery<?> query, CriteriaBuilder cb) {
+                //更新时间排序
+                query.orderBy(cb.desc(root.get("updated")));
+                List<Predicate> predicate = new ArrayList<>();
+
+                predicate.add(cb.equal(root.get("storeId"), storeId));
+                //上架商品
+                predicate.add(cb.equal(root.get("goodsState"), 1));
+                //审核商品
+                predicate.add(cb.equal(root.get("goodsVerify"), 1));
+
+                Predicate[] pre = new Predicate[predicate.size()];
+                return query.where(predicate.toArray(pre)).getRestriction();
+            }
+        };
+        return goodsCommonRepository.find(specification,0,20);
+    }
+
     /**
      * 判断此商品是否可以删除
      * @param goodsCommonIds

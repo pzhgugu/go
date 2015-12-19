@@ -6,11 +6,8 @@ import com.ansteel.core.exception.PageException;
 import com.ansteel.core.utils.BeanUtils;
 import com.ansteel.core.utils.UserUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
-import com.ansteel.common.springsecurity.service.UserInfo;
 import com.ansteel.shop.store.domain.Store;
 import com.ansteel.shop.store.repository.StoreRepository;
 import org.springframework.transaction.annotation.Transactional;
@@ -77,6 +74,11 @@ public class StoreServiceImpl implements StoreService {
     @Override
     public Store findOne(String id) {
         return storeRepository.findOne(id);
+    }
+
+    @Override
+    public MultipleScoreModle getMultipleScore(String storeScId) {
+       return storeRepository.getMultipleScore(storeScId);
     }
 
     @Override

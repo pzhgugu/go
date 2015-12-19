@@ -56,6 +56,14 @@ public interface ProjectRepository <T, ID extends Serializable> extends JpaRepos
 	 */
 	List find(Specification<T> spec);
 	/**
+	 * 查询Specification方式
+	 * @param spec
+	 * @param firstResult
+	 * @param maxResults
+	 * @return
+	 */
+	List find(Specification<T> spec,Integer firstResult,Integer maxResults);
+	/**
 	 * 查询
 	 * @param props 查询条件
 	 * @return

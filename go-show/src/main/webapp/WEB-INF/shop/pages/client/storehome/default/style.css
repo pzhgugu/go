@@ -1,0 +1,94 @@
+/* ============== */
+/* 店铺模板默认风格 */
+/* @kivenhan      */
+/* www.shopnc.net */
+/* Apr-14-2012    */
+/* ============== */
+
+/* (nc-s-c-s) full name -> ShopNC Store Container Style */
+.nc-s-c-s1 {}
+.nc-s-c-s1 .title {background-image: url(background.gif); background-repeat: repeat-x; background-position: left -361px; height: 30px; border: solid #FF6E00; border-width: 1px; border-radius: 4px 4px 0 0;}
+.nc-s-c-s1 .title h4 { color:#FFF; line-height: 24px; margin: 4px 0 4px 16px; display: inline-block; text-shadow: 0 1px 1px rgba(0,0,0,.2); }
+.nc-s-c-s1 .title h4 {*display: inline;}
+.nc-s-c-s1 .title span { }
+.nc-s-c-s1 .content { border: solid 1px #E7E7E7; background:#FFF; border-radius: 0 0 5px 5px; *padding-bottom:10px;}
+
+.nc-s-c-s2 {}
+.nc-s-c-s2 .title {height: 32px; border : solid #FF6E00; border-width: 0 0 2px 0;}
+.nc-s-c-s2 .title h4 { color:#FF6E00; line-height: 24px; margin: 4px 0 4px 16px; display: inline-block; text-shadow: 0 0 0 rgba(0,0,0,0); }
+.nc-s-c-s2 .title h4 { *display: inline;}
+.nc-s-c-s2 .title span {}
+.nc-s-c-s2 .content { border: solid 1px #E7E7E7; background:#FFF; border-radius: 0 0 5px 5px; box-shadow: 1px 1px 0 #FFF inset;}
+
+.nc-s-c-s3 {}
+.nc-s-c-s3 .title {background-image: url(background.gif); background-repeat: repeat-x; background-position: left -361px; height: 30px; border: solid #FF6E00; border-width: 1px; border-radius: 4px 4px 0 0;}
+.nc-s-c-s3 .title h4 { color:#FFF; line-height: 24px; margin: 4px 0 4px 16px; display: inline-block; text-shadow: 0 1px 1px rgba(0,0,0,.2); }
+.nc-s-c-s3 .title h4 { *display: inline;}
+.nc-s-c-s3 .title span { float:right; margin: 4px 12px 0 0; line-height: 24px;}
+.nc-s-c-s3 .title span a { color: #FFF;}
+.nc-s-c-s3 .content { background:#FFF; }
+
+.nc-s-c-s4 {}
+.nc-s-c-s4 .title {background-image: url(background.gif); background-repeat: repeat-x; background-position: left -361px; height: 30px; border: solid #FF6E00; border-width: 1px; border-radius: 4px 4px 0 0;}
+.nc-s-c-s4 .title h4 { color:#FFF; line-height: 24px; margin: 4px 0 4px 16px; display: inline-block; text-shadow: 0 1px 1px rgba(0,0,0,.2); }
+.nc-s-c-s4 .title h4 { *display: inline;}
+.nc-s-c-s4 .title span { float:right; margin: 4px 12px 0 0; line-height: 24px;}
+.nc-s-c-s4 .title span a { color: #FFF;}
+.nc-s-c-s4 .content { background:#FFF; }
+
+
+
+
+
+
+/* =====================
+ * 独立类样式
+ * ===================== */
+ 
+/* 列表翻页 */
+.pagination{ padding: 6px 2px; margin-right: wpx;}
+.pagination ul li span{ line-height: 20px; color: #999; padding: 2px 7px; margin: 0px 2px; border: 1px solid #CCC;}
+.pagination ul li a span , .pagination li a:visited span{ color: #6C92AD; border-color: #AEB9B9;}
+.pagination ul li a:hover span, .pagination li a:active span{ color: #DB7C1E; background-color: #FFEFCE; border-color: #DB7C1E;}
+.pagination ul li span.currentpage{ color:#FFF; font-weight: bold; background-color: #FEA900; border-color: #F57202;}
+
+
+/* ============================== */
+/* 头部店铺介绍与搜索 -> header.php */
+/* ============================== */
+/* 导航区域布局控制 */
+.ncsl-nav { width: 1000px; margin: 0 auto; } 
+/* 导航上部图片控制 */
+.ncsl-nav .banner a.img { width: 1000px; }
+.ncs-default-banner { background: url(images/header.jpg) no-repeat 0 0; display: block; width: 1000px; height: 240px;}
+/* 店铺导航 */
+#nav { background: url(background.gif) repeat-x 0 0; width: 998px; height: 38px; padding: 1px; overflow: hidden;}
+#nav ul { background: url(background.gif) repeat-x 0 -40px; white-space: nowrap; display: block; width: 999px; height: 38px; margin-left: -1px;  overflow: hidden;}
+#nav li { float: left; }
+#nav li a { background: url(background.gif) no-repeat; height: 38px; float: left;}
+#nav li a span { font-size: 14px; font-weight: 600; line-height: 20px; text-overflow: ellipsis; white-space: nowrap; max-width:160px; color: #FFF; background: url(background.gif) repeat-x; float: left; height: 20px; padding: 9px 15px; margin-left: 4px; overflow:hidden; cursor:pointer;}
+#nav li.normal a { background-position: 0px -80px;}
+#nav li.normal a span { background-position: right -120px; }
+#nav li.normal a:hover { background-position: left -160px;}
+#nav li.normal a:hover span { background-position: right -200px;}
+#nav li.active a, #nav li.active a:hover { background-position: 0px -240px; }
+#nav li.active a span, #nav li.active a:hover span { background-position: right -280px; text-shadow: 0 1px 1px rgba(0,0,0,.2)}
+
+
+
+/* 侧边栏店铺分类控制标签 */
+.ico-none, .ico-block, .ico-sub { color:#FFF; background-color: #FFD379; border: solid 1px #FFB417; box-shadow: 1px 1px 1px 0 rgba(0,0,0,.1);}
+
+/* ========================================= */
+/* 商品列表类页面 -> index.php, goods_list.php */
+/* ========================================= */
+
+/* 列表排序 */
+.ncs-goodslist-bar { background: #F7F7F7; border-right: solid 1px #FFF;  border-left: solide 1px #FFF; padding:6px 0;}
+/* 商品列表 */
+.ncg-list .content { width: 790px; overflow:hidden;  padding-top:10px; padding-bottom:10px; clear:both;}
+
+
+/*商品属性值*/
+.nc-goods-sort, .nc-g-r, .ncg-salelog .bd .note { border-width: 1px; }
+

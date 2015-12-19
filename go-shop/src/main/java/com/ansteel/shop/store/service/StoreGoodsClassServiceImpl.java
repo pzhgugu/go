@@ -110,6 +110,11 @@ public class StoreGoodsClassServiceImpl implements StoreGoodsClassService {
         return this.save(storeGoodsClass);
     }
 
+    @Override
+    public List<StoreGoodsClass> findByIsParentNull(String storeId) {
+        return storeGoodsClassRepository.findByParentIsNullAndStoreId(storeId);
+    }
+
     private StoreGoodsClass findOneByName(String name) {
         List<StoreGoodsClass> list = storeGoodsClassRepository.findByName(name);
         if (list.size() > 0) {

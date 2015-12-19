@@ -38,7 +38,7 @@ import java.util.List;
  * Created by Administrator on 2015/10/27.
  */
 @Controller
-@RequestMapping(value = Public.CLIENT+"/storejoinin")
+@RequestMapping(value = "/storejoinin")
 public class StoreJoininController {
 
     @Autowired

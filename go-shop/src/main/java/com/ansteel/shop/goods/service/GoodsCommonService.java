@@ -5,6 +5,8 @@ import com.ansteel.shop.goods.domain.GoodsCommon;
 import com.ansteel.shop.goods.web.GoodsModel;
 import org.springframework.data.domain.Page;
 
+import java.util.List;
+
 /**
  * Created by Administrator on 2015/12/6.
  */
@@ -70,4 +72,12 @@ public interface GoodsCommonService {
 
     void delect(String[] goodsCommonIds);
 
+    /**
+     * 店铺推荐商品
+     * @param storeId
+     * @return
+     */
+    List<GoodsCommon> findTop20ByGoodsCommend(String storeId);
+
+    List<GoodsCommon> findTop20ByNew(String storeId);
 }

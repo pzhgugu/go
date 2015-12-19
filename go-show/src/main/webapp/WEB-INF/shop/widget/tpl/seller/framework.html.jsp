@@ -27,6 +27,7 @@
 <fis:require id="shop:scripts/member.js"/>
 <fis:require id="shop:scripts/common.js"/>
 <fis:require id="shop:scripts/seller.js"/>
+<fis:require id="shop:scripts/dialog/dialog.js"/>
 
     <fis:scripts/>
 <script>

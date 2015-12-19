@@ -466,6 +466,17 @@
             "uri": "/show/static/common/widget/poshytip/tip-yellowsimple/tip-yellowsimple.css",
             "type": "css"
         },
+        "common:widget/qtip/jquery.qtip.min.css": {
+            "uri": "/show/static/common/widget/qtip/jquery.qtip.min.css",
+            "type": "css"
+        },
+        "common:widget/qtip/jquery.qtip.min.js": {
+            "uri": "/show/static/common/widget/qtip/jquery.qtip.min.js",
+            "type": "js",
+            "deps": [
+                "common:widget/qtip/jquery.qtip.min.css"
+            ]
+        },
         "common:widget/utils/html5shiv.js": {
             "uri": "/show/static/common/widget/utils/html5shiv.js",
             "type": "js"

@@ -1,5 +1,6 @@
 package com.ansteel.shop.store.domain;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -53,7 +54,7 @@ public class Store extends BaseEntity{
 	 */
 	private String gradeId;
 	/**
-	 * 店铺名称
+	 * 店铺等级名称
 	 */
 	private String gradeName;
 	/**
@@ -113,10 +114,6 @@ public class Store extends BaseEntity{
 	 */
 	private String storeLabel;
 	/**
-	 * 店铺logo
-	 */
-	private String storeLogo;
-	/**
 	 * 店铺横幅
 	 */
 	private String storeBanner;
@@ -172,19 +169,19 @@ public class Store extends BaseEntity{
 	/**
 	 * 店铺好评率
 	 */
-	private Float praiseRate;
+	private BigDecimal praiseRate;
 	/**
 	 * 描述相符度分数
 	 */
-	private Float storeDesccredit;
+	private Integer storeDesccredit;
 	/**
 	 * 服务态度分数
 	 */
-	private Float storeServicecredit;
+	private Integer storeServicecredit;
 	/**
 	 * 发货速度分数
 	 */
-	private Float storeDeliverycredit;
+	private Integer storeDeliverycredit;
 	/**
 	 * 店铺二维码
 	 */
@@ -343,12 +340,6 @@ public class Store extends BaseEntity{
 	public void setStoreLabel(String storeLabel) {
 		this.storeLabel = storeLabel;
 	}
-	public String getStoreLogo() {
-		return storeLogo;
-	}
-	public void setStoreLogo(String storeLogo) {
-		this.storeLogo = storeLogo;
-	}
 	public String getStoreBanner() {
 		return storeBanner;
 	}
@@ -427,28 +418,28 @@ public class Store extends BaseEntity{
 	public void setStoreCredit(Integer storeCredit) {
 		this.storeCredit = storeCredit;
 	}
-	public Float getPraiseRate() {
+	public BigDecimal getPraiseRate() {
 		return praiseRate;
 	}
-	public void setPraiseRate(Float praiseRate) {
+	public void setPraiseRate(BigDecimal praiseRate) {
 		this.praiseRate = praiseRate;
 	}
-	public Float getStoreDesccredit() {
+	public Integer getStoreDesccredit() {
 		return storeDesccredit;
 	}
-	public void setStoreDesccredit(Float storeDesccredit) {
+	public void setStoreDesccredit(Integer storeDesccredit) {
 		this.storeDesccredit = storeDesccredit;
 	}
-	public Float getStoreServicecredit() {
+	public Integer getStoreServicecredit() {
 		return storeServicecredit;
 	}
-	public void setStoreServicecredit(Float storeServicecredit) {
+	public void setStoreServicecredit(Integer storeServicecredit) {
 		this.storeServicecredit = storeServicecredit;
 	}
-	public Float getStoreDeliverycredit() {
+	public Integer getStoreDeliverycredit() {
 		return storeDeliverycredit;
 	}
-	public void setStoreDeliverycredit(Float storeDeliverycredit) {
+	public void setStoreDeliverycredit(Integer storeDeliverycredit) {
 		this.storeDeliverycredit = storeDeliverycredit;
 	}
 	public String getStoreCode() {

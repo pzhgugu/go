@@ -28,6 +28,7 @@ public class SiteInterceptor extends HandlerInterceptorAdapter {
 	public boolean preHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler) throws Exception {
 		// 2、设置全局页面参数
+		response.addHeader("P3P", "CP=CAO PSA OUR");
 		pageGlobalAttribute.set(request);
 		return true;
 	}
@@ -49,5 +50,6 @@ public class SiteInterceptor extends HandlerInterceptorAdapter {
 			}
 			
 		}*/
+		response.addHeader("P3P", "CP=CAO PSA OUR");
 	}
 }
