@@ -24,4 +24,6 @@ public interface StoreGoodsClassService {
     StoreGoodsClass saveCurrent(StoreGoodsClass storeGoodsClass, String parentId);
 
     List<StoreGoodsClass> findByIsParentNull(String storeId);
+
+    StoreGoodsClass findOne(String id);
 }

@@ -80,4 +80,24 @@ public interface GoodsCommonService {
     List<GoodsCommon> findTop20ByGoodsCommend(String storeId);
 
     List<GoodsCommon> findTop20ByNew(String storeId);
+
+    /**
+     * 热销商品
+     * @param storeId
+     * @return
+     */
+    List<GoodsCommon> findTop5ByHot(String storeId);
+
+    List<GoodsCommon> findTop5ByHotCollect(String storeId);
+    /**
+     * 查询店铺商品
+     * @param storeId
+     * @param key
+     * @param keyword
+     * @param stcId
+     * @param order
+     * @param curPage
+     * @return
+     */
+    Page<GoodsCommon> queryStoreGoods(String storeId, String key, String keyword, String stcId, String order, Integer curPage, int pageSize);
 }

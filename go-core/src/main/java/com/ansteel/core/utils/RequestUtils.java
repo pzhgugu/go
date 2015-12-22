@@ -52,6 +52,12 @@ public class RequestUtils {
 			}
 			try {
                 //if("GET".equalsIgnoreCase(request.getMethod())){
+                //System.out.print(new String(value.getBytes("iso8859-1"), "UTF-8"));
+                //System.out.print(new String(value.getBytes("UTF-8"), "iso8859-1"));
+                //System.out.print(new String(value.getBytes("GBK"), "UTF-8"));
+                //System.out.print(new String(value.getBytes("UTF-8"), "GBK"));
+                //System.out.print(new String(value.getBytes("GBK"), "iso8859-1"));
+                ///System.out.print(new String(value.getBytes("iso8859-1"), "GBK"));
 					returnMap.put(name, new String(value.getBytes("iso8859-1"), "UTF-8"));
 				//}else{
 				//	returnMap.put(name, value);

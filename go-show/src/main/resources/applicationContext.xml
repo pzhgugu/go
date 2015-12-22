@@ -182,8 +182,8 @@
                 <prop key="hibernate.show_sql">false</prop>  
                 <!-- 显示SQL是否格式化 -->  
                 <prop key="hibernate.format_sql">false</prop>  
-                <!-- 关闭二级缓存 -->  
-                <prop key="hibernate.cache.provider_class">org.hibernate.cache.NoCacheProvider</prop>  
+                <!-- 关闭二级缓存 -->
+                <prop key="hibernate.cache.provider_class">org.hibernate.cache.NoCacheProvider</prop>
                 <!-- 关闭实体字段映射校验 -->  
                 <prop key="javax.persistence.validation.mode">none</prop>  
             </props>  

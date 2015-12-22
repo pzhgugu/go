@@ -8,3 +8,5 @@
 <fis:block url="shop:pages/client/storehome/storeinfo.html.jsp"></fis:block>
 <!--店铺商品分类-->
 <fis:block url="shop:pages/client/storehome/${P_STYLE}/goodclass.html.jsp"></fis:block>
+<!--店铺排行-->
+<fis:block url="shop:pages/client/storehome/${P_STYLE}/among.html.jsp"></fis:block>

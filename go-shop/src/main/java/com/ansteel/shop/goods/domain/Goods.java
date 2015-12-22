@@ -3,6 +3,7 @@ package com.ansteel.shop.goods.domain;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Lob;
 import javax.persistence.Table;
@@ -88,10 +89,12 @@ public class Goods extends BaseEntity {
 	/**
 	 * 售出数量
 	 */
+	@Column(nullable=false,columnDefinition="INT default 0")
 	private Integer goodsSaleNum;
 	/**
 	 * 商品收藏数量
 	 */
+	@Column(nullable=false,columnDefinition="INT default 0")
 	private Integer goodsCollect;
 	/**
 	 * 商品规格序列化

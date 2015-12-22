@@ -180,8 +180,51 @@ public class GoodsCommon extends BaseEntity {
     /**
      * 商品总库存
      */
-    @Transient
+    //@Transient
+    @Formula("(select sum(g.goodsStorage-g.goodsSaleNum) from "+Constants.G_TABLE_PREFIX +"goods g where g.goodsCommonId =ID)")
     private Integer goodsStorage;
+
+    /**
+     * 销售数量
+     */
+    @Formula("(select sum(g.goodsSaleNum) from "+Constants.G_TABLE_PREFIX +"goods g where g.goodsCommonId =ID)")
+    private Integer goodsSalenum;
+
+    /**
+     * 收藏数量
+     */
+    @Formula("(select sum(g.goodsCollect) from "+Constants.G_TABLE_PREFIX +"goods g where g.goodsCommonId =ID)")
+    private Integer goodsCollect;
+
+    /**
+     * 人气
+     */
+    @Formula("(select sum(g.goodsClick) from "+Constants.G_TABLE_PREFIX +"goods g where g.goodsCommonId =ID)")
+    private Integer goodsClick;
+
+    public Integer getGoodsClick() {
+        return goodsClick;
+    }
+
+    public void setGoodsClick(Integer goodsClick) {
+        this.goodsClick = goodsClick;
+    }
+
+    public Integer getGoodsCollect() {
+        return goodsCollect;
+    }
+
+    public void setGoodsCollect(Integer goodsCollect) {
+        this.goodsCollect = goodsCollect;
+    }
+
+    public Integer getGoodsSalenum() {
+        return goodsSalenum;
+    }
+
+    public void setGoodsSalenum(Integer goodsSalenum) {
+        this.goodsSalenum = goodsSalenum;
+    }
 
     public Integer getGoodsStorage() {
         return goodsStorage;

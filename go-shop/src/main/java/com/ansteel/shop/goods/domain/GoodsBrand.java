@@ -39,7 +39,7 @@ public class GoodsBrand extends BaseEntity{
 	/**
 	 * 类别名称
 	 */
-	@Formula("(select s.name from go_goods_class s where s.ID =CLASSID)")
+	@Formula("(select s.name from "+Constants.G_TABLE_PREFIX +"goods_class s where s.ID =CLASSID)")
 	private String className;
 	/**
 	 * logo

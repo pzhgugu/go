@@ -115,6 +115,11 @@ public class StoreGoodsClassServiceImpl implements StoreGoodsClassService {
         return storeGoodsClassRepository.findByParentIsNullAndStoreId(storeId);
     }
 
+    @Override
+    public StoreGoodsClass findOne(String id) {
+        return storeGoodsClassRepository.findOne(id);
+    }
+
     private StoreGoodsClass findOneByName(String name) {
         List<StoreGoodsClass> list = storeGoodsClassRepository.findByName(name);
         if (list.size() > 0) {

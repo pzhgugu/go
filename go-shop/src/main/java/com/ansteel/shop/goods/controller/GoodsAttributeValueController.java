@@ -11,7 +11,6 @@ import com.ansteel.core.query.PageUtils;
 import com.ansteel.dhtmlx.jsonclass.UDataSet;
 import com.ansteel.dhtmlx.xml.Data;
 import com.ansteel.dhtmlx.xml.GridXml;
-import com.ansteel.shop.constant.ShopConstant;
 import com.ansteel.shop.goods.domain.GoodsAttributeValue;
 import com.ansteel.shop.goods.domain.GoodsBrand;
 import com.ansteel.shop.goods.service.GoodsAttributeValueService;

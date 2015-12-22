@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Root VERSION="25f78a54-a64f-4bc3-9c2d-3255b9a8da3b">
+<Root VERSION="47ed6746-b358-4ac8-99d7-e21eeeb0146c">
   <Message Class="com.ansteel.common.menu.domain.Menu" Execute="com.ansteel.common.backup.fun.MenuExecute">
     <DataRow>
       <url></url>
@@ -100483,9 +100483,9 @@
   </Message>
   <Message Class="com.ansteel.common.view.domain.View" Execute="com.ansteel.common.backup.fun.ViewExecute">
     <DataRow>
-      <urlPath>/att/tpl/TreeGrid/Attachment/d</urlPath>
-      <urlMapped>/att/tpl/TreeGrid/Attachment/d</urlMapped>
-      <isClose></isClose>
+      <urlPath>/admin/att/tpl/TreeGrid/Attachment/d</urlPath>
+      <urlMapped>/admin/att/tpl/TreeGrid/Attachment/d</urlMapped>
+      <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
       <isTableEditor></isTableEditor>
@@ -100506,15 +100506,15 @@
       <alias>附件管理</alias>
       <displayOrder>0</displayOrder>
       <id>402897814ec9c34e014ec9c461580ddb</id>
-      <version>8</version>
+      <version>9</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:21:53.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/excel/tpl/TreeOneToMany/ExcelReport/d</urlPath>
-      <urlMapped>/excel/tpl/TreeOneToMany/ExcelReport/d</urlMapped>
+      <urlPath>/admin/excel/tpl/TreeOneToMany/ExcelReport/d</urlPath>
+      <urlMapped>/admin/excel/tpl/TreeOneToMany/ExcelReport/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100536,15 +100536,15 @@
       <alias>Excel报表</alias>
       <displayOrder>1</displayOrder>
       <id>402897814ec9c34e014ec9c4615c0ddc</id>
-      <version>8</version>
+      <version>9</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:22:53.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/menu/tpl/TreeFrom/Menu/d</urlPath>
-      <urlMapped>/menu/tpl/TreeFrom/Menu/d</urlMapped>
+      <urlPath>/admin/menu/tpl/TreeFrom/Menu/d</urlPath>
+      <urlMapped>/admin/menu/tpl/TreeFrom/Menu/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100566,15 +100566,15 @@
       <alias>菜单管理</alias>
       <displayOrder></displayOrder>
       <id>402897814ec9c34e014ec9c461600ddd</id>
-      <version>13</version>
+      <version>14</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:22:36.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/dymodel/tpl/TreeTwoOneToMany/DynamicFieldsCategory/d</urlPath>
-      <urlMapped>/dymodel/tpl/TreeTwoOneToMany/DynamicFieldsCategory/d</urlMapped>
+      <urlPath>/admin/dymodel/tpl/TreeTwoOneToMany/DynamicFieldsCategory/d</urlPath>
+      <urlMapped>/admin/dymodel/tpl/TreeTwoOneToMany/DynamicFieldsCategory/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100596,15 +100596,15 @@
       <alias>动态模型</alias>
       <displayOrder>1</displayOrder>
       <id>402897814ec9c34e014ec9c461630dde</id>
-      <version>8</version>
+      <version>9</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:22:03.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/sqlmodel/tpl/TreeTwoOneToMany/SqlFieldsCategory/d</urlPath>
-      <urlMapped>/sqlmodel/tpl/TreeTwoOneToMany/SqlFieldsCategory/d</urlMapped>
+      <urlPath>/admin/sqlmodel/tpl/TreeTwoOneToMany/SqlFieldsCategory/d</urlPath>
+      <urlMapped>/admin/sqlmodel/tpl/TreeTwoOneToMany/SqlFieldsCategory/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100626,15 +100626,15 @@
       <alias>SQL模型</alias>
       <displayOrder>3</displayOrder>
       <id>402897814ec9c34e014ec9c461670ddf</id>
-      <version>8</version>
+      <version>9</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:22:19.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/sqltpl/tpl/ReportQuery/test/d</urlPath>
-      <urlMapped>/sqltpl/tpl/ReportQuery/test/d</urlMapped>
+      <urlPath>/admin/sqltpl/tpl/ReportQuery/test/d</urlPath>
+      <urlMapped>/admin/sqltpl/tpl/ReportQuery/test/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100656,15 +100656,15 @@
       <alias>测试SQL报表</alias>
       <displayOrder>1</displayOrder>
       <id>402897814ec9c34e014ec9c4616a0de0</id>
-      <version>9</version>
+      <version>10</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:23:32.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/dmtpl/tpl/SingleGridQuery/testTel/d</urlPath>
-      <urlMapped>/dmtpl/tpl/SingleGridQuery/testTel/d</urlMapped>
+      <urlPath>/admin/dmtpl/tpl/SingleGridQuery/testTel/d</urlPath>
+      <urlMapped>/admin/dmtpl/tpl/SingleGridQuery/testTel/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100686,15 +100686,15 @@
       <alias>通讯录测试</alias>
       <displayOrder>1</displayOrder>
       <id>402897814ec9c34e014ec9c4616d0de1</id>
-      <version>8</version>
+      <version>9</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:24:09.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/excel/tpl/SingleGrid/ExcelReportSQL/d</urlPath>
-      <urlMapped>/excel/tpl/SingleGrid/ExcelReportSQL/d</urlMapped>
+      <urlPath>/admin/excel/tpl/SingleGrid/ExcelReportSQL/d</urlPath>
+      <urlMapped>/admin/excel/tpl/SingleGrid/ExcelReportSQL/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100716,15 +100716,15 @@
       <alias>excel报表SQL子页面</alias>
       <displayOrder>2</displayOrder>
       <id>402897814ec9c34e014ec9c461700de2</id>
-      <version>9</version>
+      <version>10</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:22:59.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/excelin/tpl/SingleGridQuery/ExcelIn/d</urlPath>
-      <urlMapped>/excelin/tpl/SingleGridQuery/ExcelIn/d</urlMapped>
+      <urlPath>/admin/excelin/tpl/SingleGridQuery/ExcelIn/d</urlPath>
+      <urlMapped>/admin/excelin/tpl/SingleGridQuery/ExcelIn/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100746,15 +100746,15 @@
       <alias>Excel导入配置</alias>
       <displayOrder>4</displayOrder>
       <id>402897814ec9c34e014ec9c461730de3</id>
-      <version>8</version>
+      <version>9</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:23:07.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/chart/tpl/SingleGridQuery/Chart/d</urlPath>
-      <urlMapped>/chart/tpl/SingleGridQuery/Chart/d</urlMapped>
+      <urlPath>/admin/chart/tpl/SingleGridQuery/Chart/d</urlPath>
+      <urlMapped>/admin/chart/tpl/SingleGridQuery/Chart/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100776,15 +100776,15 @@
       <alias>图表管理</alias>
       <displayOrder>5</displayOrder>
       <id>402897814ec9c34e014ec9c461760de4</id>
-      <version>9</version>
+      <version>10</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:23:15.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/model/tpl/TreeTwoOneToMany/EntityFieldsCategory/d</urlPath>
-      <urlMapped>/model/tpl/TreeTwoOneToMany/EntityFieldsCategory/d</urlMapped>
+      <urlPath>/admin/model/tpl/TreeTwoOneToMany/EntityFieldsCategory/d</urlPath>
+      <urlMapped>/admin/model/tpl/TreeTwoOneToMany/EntityFieldsCategory/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100806,15 +100806,15 @@
       <alias>实体模型</alias>
       <displayOrder>2</displayOrder>
       <id>402897814ec9c34e014ec9c4624a0de5</id>
-      <version>8</version>
+      <version>9</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:22:11.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/jasper/tpl/SingleGridQuery/JasperReport/d</urlPath>
-      <urlMapped>/jasper/tpl/SingleGridQuery/JasperReport/d</urlMapped>
+      <urlPath>/admin/jasper/tpl/SingleGridQuery/JasperReport/d</urlPath>
+      <urlMapped>/admin/jasper/tpl/SingleGridQuery/JasperReport/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100836,15 +100836,15 @@
       <alias>JasperReport</alias>
       <displayOrder>6</displayOrder>
       <id>402897814ec9c34e014ec9c4624e0de6</id>
-      <version>6</version>
+      <version>7</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:23:24.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/newscategory/tpl/TreeFrom/NewsCategory/d</urlPath>
-      <urlMapped>/newscategory/tpl/TreeFrom/NewsCategory/d</urlMapped>
+      <urlPath>/admin/newscategory/tpl/TreeFrom/NewsCategory/d</urlPath>
+      <urlMapped>/admin/newscategory/tpl/TreeFrom/NewsCategory/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100866,11 +100866,11 @@
       <alias>资讯分类</alias>
       <displayOrder>0</displayOrder>
       <id>402897814ec9c34e014ec9c462510de7</id>
-      <version>6</version>
+      <version>7</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:24:16.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
       <urlPath>/report/list/Field</urlPath>
@@ -100903,8 +100903,8 @@
       <lastUpdater></lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/model/tpl/SingleGrid/EntityFieldsGrid/d</urlPath>
-      <urlMapped>/model/tpl/SingleGrid/EntityFieldsGrid/d</urlMapped>
+      <urlPath>/admin/model/tpl/SingleGrid/EntityFieldsGrid/d</urlPath>
+      <urlMapped>/admin/model/tpl/SingleGrid/EntityFieldsGrid/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100926,15 +100926,15 @@
       <alias>实体表格字段</alias>
       <displayOrder>5</displayOrder>
       <id>402897814ec9c34e014ec9c4625b0de9</id>
-      <version>6</version>
+      <version>7</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:22:26.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/sqltpl/tpl/ReportQuery/test2/d</urlPath>
-      <urlMapped>/sqltpl/tpl/ReportQuery/test2/d</urlMapped>
+      <urlPath>/admin/sqltpl/tpl/ReportQuery/test2/d</urlPath>
+      <urlMapped>/admin/sqltpl/tpl/ReportQuery/test2/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100956,15 +100956,15 @@
       <alias>测试SQL模型2</alias>
       <displayOrder>2</displayOrder>
       <id>402897814ec9c34e014ec9c4626a0dea</id>
-      <version>3</version>
+      <version>4</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:23:39.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/resource/tpl/SingleGrid/PermissionURL/d</urlPath>
-      <urlMapped>/resource/tpl/SingleGrid/PermissionURL/d</urlMapped>
+      <urlPath>/admin/resource/tpl/SingleGrid/PermissionURL/d</urlPath>
+      <urlMapped>/admin/resource/tpl/SingleGrid/PermissionURL/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -100986,14 +100986,14 @@
       <alias>认证url</alias>
       <displayOrder>1</displayOrder>
       <id>402897814ec9c34e014ec9c4626d0deb</id>
-      <version>4</version>
+      <version>5</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:22:44.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/news/tpl/SingleGrid/News/d</urlPath>
+      <urlPath>/admin/news/tpl/SingleGrid/News/d</urlPath>
       <urlMapped></urlMapped>
       <isClose>0</isClose>
       <scription></scription>
@@ -101016,15 +101016,15 @@
       <alias>资讯</alias>
       <displayOrder>1</displayOrder>
       <id>402897814ec9c34e014ec9c462700dec</id>
-      <version>3</version>
+      <version>4</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:24:22.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/sqlmodel/tpl/SingleGrid/SqlFieldsGrid/d</urlPath>
-      <urlMapped>/sqlmodel/tpl/SingleGrid/SqlFieldsGrid/d</urlMapped>
+      <urlPath>/admin/sqlmodel/tpl/SingleGrid/SqlFieldsGrid/d</urlPath>
+      <urlMapped>/admin/sqlmodel/tpl/SingleGrid/SqlFieldsGrid/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -101046,15 +101046,15 @@
       <alias>SQL模型字段样式从表</alias>
       <displayOrder>3</displayOrder>
       <id>402897814ec9c34e014ec9c462730ded</id>
-      <version>2</version>
+      <version>3</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:23:46.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/sqlmodel/tpl/SingleGrid/SqlFieldsForm/d</urlPath>
-      <urlMapped>/sqlmodel/tpl/SingleGrid/SqlFieldsForm/d</urlMapped>
+      <urlPath>/admin/sqlmodel/tpl/SingleGrid/SqlFieldsForm/d</urlPath>
+      <urlMapped>/admin/sqlmodel/tpl/SingleGrid/SqlFieldsForm/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -101076,15 +101076,15 @@
       <alias>表单按钮授权</alias>
       <displayOrder>4</displayOrder>
       <id>402897814ec9c34e014ec9c462760dee</id>
-      <version>1</version>
+      <version>2</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:23:53.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/sqlmodel/tpl/SingleGrid/SqlFieldsQuery/d</urlPath>
-      <urlMapped>/sqlmodel/tpl/SingleGrid/SqlFieldsQuery/d</urlMapped>
+      <urlPath>/admin/sqlmodel/tpl/SingleGrid/SqlFieldsQuery/d</urlPath>
+      <urlMapped>/admin/sqlmodel/tpl/SingleGrid/SqlFieldsQuery/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -101106,11 +101106,11 @@
       <alias>查询选项卡授权</alias>
       <displayOrder>5</displayOrder>
       <id>402897814ec9c34e014ec9c462790def</id>
-      <version>1</version>
+      <version>2</version>
       <created>2015-07-26 17:49:27.0</created>
-      <updated>2015-07-26 17:49:27.0</updated>
+      <updated>2015-12-20 16:24:01.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
       <urlPath>/admin/storegrade/tpl/SingleGridQuery/StoreGrade/d</urlPath>

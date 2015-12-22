@@ -9,30 +9,28 @@
     <h4>商品分类</h4>
   </div>
   <div class="content">
-    <p><span><a href="http://localhost/shopnc/shop/index.php?act=show_store&amp;op=goods_all&amp;store_id=1&amp;key=1&amp;order=2">按新品</a></span><span><a href="http://localhost/shopnc/shop/index.php?act=show_store&amp;op=goods_all&amp;store_id=1&amp;key=2&amp;order=2">按价格</a></span><span><a href="http://localhost/shopnc/shop/index.php?act=show_store&amp;op=goods_all&amp;store_id=1&amp;key=3&amp;order=2">按销量</a></span><span><a href="http://localhost/shopnc/shop/index.php?act=show_store&amp;op=goods_all&amp;store_id=1&amp;key=5&amp;order=2">按人气</a></span></p>
+    <p><span><a href="${S_URL}/cl/store/query?store_id=${P_STORE.id}&key=1&order=2">按新品</a></span><span><a href="${S_URL}/cl/store/query?store_id=${P_STORE.id}&key=2&order=2">按价格</a></span><span><a href="${S_URL}/cl/store/query?store_id=${P_STORE.id}&key=3&order=2">按销量</a></span><span><a href="${S_URL}/cl/store/query?store_id=${P_STORE.id}&key=4&order=2">按人气</a></span></p>
     <div class="ncs-search">
-      <form action="index.php" method="get" name="searchShop" id="">
-        <input type="hidden" value="show_store" name="act">
-        <input type="hidden" value="goods_all" name="op">
-        <input type="hidden" value="1" name="store_id">
+      <form action="${S_URL}/cl/store/query" method="get" name="searchShop" id="">
+        <input type="hidden" value="${P_STORE.id}" name="store_id">
         <input type="text" placeholder="搜索店内商品" name="keyword" class="text w120">
         <a class="ncs-btn" href="javascript:document.searchShop.submit();">搜索</a>
       </form>
     </div>
     <ul class="ncs-submenu">
-      <li><span class="ico-none"><em>-</em></span><a href="#">全部商品</a></li>
+      <li><span class="ico-none"><em>-</em></span><a href="${S_URL}/cl/store/query?store_id=${P_STORE.id}">全部商品</a></li>
       <c:forEach items="${P_STOREGOODSCLASS_PARENT_LIST}" var="storeGoodsClass">
         <c:if test="${storeGoodsClass.stcState=='1'}">
           <li>
-          <span style="cursor: pointer;" span_id="${storeGoodsClass.id}" onclick="class_list(this);" class="ico-none"><em>-</em></span>
-          <a href="#">${storeGoodsClass.name}</a>
+            <span style="cursor: pointer;" span_id="${storeGoodsClass.id}" onclick="class_list(this);" class="ico-none"><em>-</em></span>
+            <a href="${S_URL}/cl/store/query?store_id=${P_STORE.id}&stc_id=${storeGoodsClass.id}">${storeGoodsClass.name}</a>
             <ul id="stc_${storeGoodsClass.id}">
-          <c:forEach items="${storeGoodsClass.children}" var="children">
-            <c:if test="${children.stcState=='1'}">
-                <li><span class="ico-sub">&nbsp;</span>
-                  <a href="${children.id}">${children.name}</a></li>
-            </c:if>
-          </c:forEach>
+              <c:forEach items="${storeGoodsClass.children}" var="children">
+                <c:if test="${children.stcState=='1'}">
+                  <li><span class="ico-sub">&nbsp;</span>
+                    <a href="${S_URL}/cl/store/query?store_id=${P_STORE.id}&stc_id=${children.id}">${children.name}</a></li>
+                </c:if>
+              </c:forEach>
             </ul>
           </li>
         </c:if>
@@ -58,22 +56,3 @@
     }
   }
 </script>
-<fis:script>
-  $(document).ready(function(){
-    //热销排行切换
-    $('#hot_sales_tab').on('mouseenter', function() {
-      $(this).addClass('current');
-      $('#hot_collect_tab').removeClass('current');
-      $('#hot_sales_list').removeClass('hide');
-      $('#hot_collect_list').addClass('hide');
-    });
-    $('#hot_collect_tab').on('mouseenter', function() {
-      $(this).addClass('current');
-      $('#hot_sales_tab').removeClass('current');
-      $('#hot_sales_list').addClass('hide');
-      $('#hot_collect_list').removeClass('hide');
-    });
-  });
-
-
-</fis:script>

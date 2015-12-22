@@ -8,6 +8,7 @@ import com.ansteel.shop.core.service.SettingGoodsVerifyService;
 import com.ansteel.shop.goods.domain.Goods;
 import com.ansteel.shop.goods.domain.GoodsCommon;
 import com.ansteel.shop.goods.repository.GoodsCommonRepository;
+import com.ansteel.shop.goods.repository.GoodsDao;
 import com.ansteel.shop.goods.web.GoodsAttrModel;
 import com.ansteel.shop.goods.web.GoodsModel;
 import com.ansteel.shop.goods.web.GoodsSpecValueSelectListModel;
@@ -46,6 +47,8 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
     GoodsService goodsService;
     @Autowired
     SettingGoodsVerifyService settingGoodsVerifyService;
+    @Autowired
+    GoodsDao goodsDao;
 
     @Override
     @Transactional
@@ -248,7 +251,78 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
                 return query.where(predicate.toArray(pre)).getRestriction();
             }
         };
-        return goodsCommonRepository.find(specification,0,20);
+        return goodsCommonRepository.find(specification, 0, 20);
+    }
+
+    @Override
+    public List<GoodsCommon> findTop5ByHot(final String storeId) {
+        //return goodsDao.findTopByHot(storeId,5);
+        return goodsCommonRepository.findTop5ByStoreIdAndGoodsVerifyAndGoodsStateOrderByGoodsStorageDesc(storeId, 1, 1);
+    }
+
+    @Override
+    public List<GoodsCommon> findTop5ByHotCollect(String storeId) {
+        //return goodsDao.findTopByHotCollect(storeId,5);
+        return goodsCommonRepository.findTop5ByStoreIdAndGoodsVerifyAndGoodsStateOrderByGoodsCollectDesc(storeId, 1, 1);
+    }
+
+    @Override
+    public Page<GoodsCommon> queryStoreGoods(final String storeId, final String key, final String keyword, final String stcId, final String order, Integer curPage, int pageSize) {
+        if (curPage == null) {
+            curPage = 0;
+        } else if (curPage > 0) {
+            curPage = curPage - 1;
+        }
+        final Pageable pageable = new PageRequest(curPage, pageSize);
+        final Specification<GoodsCommon> specification = new Specification<GoodsCommon>() {
+            public Predicate toPredicate(Root<GoodsCommon> root,
+                                         CriteriaQuery<?> query, CriteriaBuilder cb) {
+                if (StringUtils.hasText(key)) {
+                    if(key.equals("2")){
+                        if(StringUtils.hasText(order)&&order.equals("2")){
+                            query.orderBy(cb.desc(root.get("goodsStorePrice")));
+                        }else {
+                            query.orderBy(cb.asc(root.get("goodsStorePrice")));
+                        }
+                    }else if(key.equals("3")){
+                        if(StringUtils.hasText(order)&&order.equals("2")) {
+                            query.orderBy(cb.desc(root.get("goodsSalenum")));
+                        }else{
+                            query.orderBy(cb.asc(root.get("goodsSalenum")));
+                        }
+                    }else if(key.equals("4")){
+                        if(StringUtils.hasText(order)&&order.equals("2")) {
+                            query.orderBy(cb.desc(root.get("goodsClick")));
+                        }else{
+                            query.orderBy(cb.asc(root.get("goodsClick")));
+                        }
+                    }else {
+                        if(StringUtils.hasText(order)&&order.equals("2")) {
+                            query.orderBy(cb.desc(root.get("created")));
+                        }else{
+                            query.orderBy(cb.asc(root.get("created")));
+                        }
+                    }
+                } else {
+                    query.orderBy(cb.asc(root.get("created")));
+                }
+                List<Predicate> predicate = new ArrayList<>();
+
+                predicate.add(cb.equal(root.get("storeId"), storeId));
+                predicate.add(cb.equal(root.get("goodsState"), 1));
+                predicate.add(cb.equal(root.get("goodsVerify"), 1));
+                if (StringUtils.hasText(stcId)) {
+                    predicate.add(cb.like(root.<String>get("goodsStcids"),"%"+stcId+"%"));
+                }
+                if (StringUtils.hasText(keyword)) {
+                    predicate.add(cb.like(root.<String>get("name"), "%"+keyword+"%"));
+                }
+                Predicate[] pre = new Predicate[predicate.size()];
+                return query.where(predicate.toArray(pre)).getRestriction();
+            }
+        };
+
+        return goodsCommonRepository.find(specification, pageable);
     }
 
     /**

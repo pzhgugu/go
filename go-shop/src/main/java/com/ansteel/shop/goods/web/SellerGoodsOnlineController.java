@@ -69,11 +69,11 @@ public class SellerGoodsOnlineController {
         //查询违规商品列表
         Page<GoodsCommon> page=goodsCommonService.query(classId, sortType, curPage, PAGE_SIZE, name, value,10,1);
 
-        List<GoodsCommon> goodsCommonList = page.getContent();
+       /* List<GoodsCommon> goodsCommonList = page.getContent();
         for(GoodsCommon gc:goodsCommonList){
             Integer grossInventory=goodsService.grossInventory(gc.getId());
             gc.setGoodsStorage(grossInventory);
-        }
+        }*/
 
         StoreWarning storeWarning = storeWarningService.findCurrentStore();
         model.addAttribute("P_STOREWARNING_VALUE", storeWarning.getWarningValue());

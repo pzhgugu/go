@@ -32,4 +32,21 @@ public interface GoodsCommonRepository extends ProjectRepository<GoodsCommon,Str
     @Query("update GoodsCommon g set g.adWord = ?2 where g.id = ?1")
     void updateAdWord(String goodsId, String adWord);
 
+    /**
+     * 热销商品
+     * @param storeId
+     * @param goodsVerify
+     * @param goodsState
+     * @return
+     */
+    List<GoodsCommon> findTop5ByStoreIdAndGoodsVerifyAndGoodsStateOrderByGoodsStorageDesc(String storeId, Integer goodsVerify, Integer goodsState);
+
+    /**
+     * 点击商品
+     * @param storeId
+     * @param goodsVerify
+     * @param goodsState
+     * @return
+     */
+    List<GoodsCommon> findTop5ByStoreIdAndGoodsVerifyAndGoodsStateOrderByGoodsCollectDesc(String storeId, Integer goodsVerify, Integer goodsState);
 }
