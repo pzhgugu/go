@@ -7,6 +7,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import javax.persistence.Entity;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 
 /**
@@ -29,6 +30,7 @@ public class StoreNavigation extends BaseEntity {
     /**
      * 导航内容
      */
+    @Lob
     private String snContent;
 
     /**

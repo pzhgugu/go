@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -147,4 +148,51 @@ public class StoreHomeContoller {
         return FisUtils.page("shop:pages/client/storehome/"+style+"/queryHome.html");
     }
 
+    @RequestMapping(value = "/article", method = RequestMethod.GET)
+    public String showArticle(Model model,
+                       @RequestParam(value = "store_id") String storeId,
+                       @RequestParam(value = "sn_id") String snId,
+                       HttpServletRequest request,
+                       HttpServletResponse response) {
+        Store store=storeService.findOne(storeId);
+        List<StoreNavigation> storeNavigation = storeNavigationService.findByStoreId(storeId);
+        Assert.hasText(snId,"异常链接！");
+        StoreNavigation currentNav=null;
+        for(StoreNavigation sn:storeNavigation){
+            if(sn.getId().equals(snId)){
+                currentNav=sn;
+                model.addAttribute("P_STROT_CURRENTNAV", currentNav);
+            }
+        }
+        Assert.notNull(currentNav,"没有找到此导航！");
+
+        List<SlideImage> slideImageList = null;
+        String storeSlideJson = store.getStoreSlide();
+        if (StringUtils.hasText(storeSlideJson)) {
+            slideImageList = JsonUtils.readValue(storeSlideJson, SlideImage.class);
+        }
+
+        //店铺评分
+        StoreScoreModle storeScoreModle=storeScoreService.getStoreScore(store);
+        model.addAttribute("P_STORE_SCORE", storeScoreModle);
+
+        //店铺分类
+        List<StoreGoodsClass> storeGoodsClassList=storeGoodsClassService.findByIsParentNull(storeId);
+        model.addAttribute("P_STOREGOODSCLASS_PARENT_LIST", storeGoodsClassList);
+
+        //热销商品
+        List<GoodsCommon> hotList=goodsCommonService.findTop5ByHot(storeId);
+        //热门收藏
+        List<GoodsCommon> collectList=goodsCommonService.findTop5ByHotCollect(storeId);
+        model.addAttribute("P_GOODS_HOT",hotList);
+        model.addAttribute("P_GOODS_COLLECT",collectList);
+
+
+        String style=this.getCurrentStyle(storeId);
+        model.addAttribute("P_STYLE",style);
+        model.addAttribute("P_STORE",store);
+        model.addAttribute("P_STORE_NAV",storeNavigation);
+        model.addAttribute("P_SLIDEIMAGE_LIST", slideImageList);
+        return FisUtils.page("shop:pages/client/storehome/"+style+"/articleHome.html");
+    }
 }

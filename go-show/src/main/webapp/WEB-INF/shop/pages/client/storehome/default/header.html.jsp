@@ -12,9 +12,9 @@
     <div id="jsddm" class="shop-head-info">
 
       <div id="shop-info" class="search">
-        <form id="formSearch" name="formSearch" action="XXXX" method="get">
+        <form id="formSearch" name="formSearch" action="" method="get">
           <input type="hidden" value="search" id="search_act" name="act">
-          <input type="text" lang="zh-CN" placeholder="想找什么商品？" x-webkit-grammar="builtin:search" onwebkitspeechchange="foo()" x-webkit-speech="" value="" class="ncs-search-input-text" id="keyword" name="keyword" style="color: rgb(153, 153, 153);">
+          <input type="text" lang="zh-CN" placeholder="想找什么商品？" x-webkit-grammar="builtin:search" onwebkitspeechchange="foo()" x-webkit-speech="" value="${param.keyword}" class="ncs-search-input-text" id="keyword" name="keyword" style="color: rgb(153, 153, 153);">
           <a nctype="search_in_shop" class="ncs-search-btn-mall" href="javascript:void(0)"><span>全站搜</span></a>
           <a nctype="search_in_store" class="ncs-search-btn-shop" href="javascript:void(0)"><span>店内搜</span></a>
         </form>
@@ -54,8 +54,9 @@
   return false;
   }
   $('#search_act').val('show_store');
-  $('<input type="hidden" value="1" name="store_id" /> <input type="hidden" name="op" value="goods_all" />').appendTo("#formSearch");
-  $('#formSearch').submit();
+  $('<input type="hidden" value="${P_STORE.id}" name="store_id" />').appendTo("#formSearch");
+  var path="${S_URL}/cl/store/query";
+  $('#formSearch').attr("action", path).submit();
   });
   $('a[nctype="search_in_shop"]').click(function(){
   if ($('#keyword').val() == '') {

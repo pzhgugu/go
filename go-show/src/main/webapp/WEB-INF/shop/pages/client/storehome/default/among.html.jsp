@@ -56,7 +56,7 @@
 </c:forEach>
       </ol>
     </div>
-    <p><a href="#">查看本店其他商品</a></p>
+    <p><a href="${S_URL}/cl/store/query?store_id=${P_STORE.id}">查看本店其他商品</a></p>
   </div>
 </div>
 <fis:script>

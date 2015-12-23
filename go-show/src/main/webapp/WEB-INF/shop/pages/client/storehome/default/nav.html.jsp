@@ -19,7 +19,7 @@
       <li class="active"><a href="${S_URL}/cl/store/home?store_id=${P_STORE.id}"><span>店铺首页<i></i></span></a></li>
       <c:forEach items="${P_STORE_NAV}" var="nav">
         <c:if test="${nav.snIfShow==1}">
-      <li class="normal"><a <c:if test="${nav.snNewOpen==1}">target="_blank" </c:if> href="${nav.snUrl}"><span>${nav.snTitle}<i></i></span></a></li>
+      <li class="normal"><a <c:if test="${nav.snNewOpen==1}">target="_blank" </c:if> <c:if test="${!empty nav.snUrl}" > href="${nav.snUrl}"</c:if><c:if test="${empty nav.snUrl}" > href="${S_URL}/cl/store/article?store_id=${P_STORE.id}&sn_id=${nav.id}"</c:if>><span>${nav.snTitle}<i></i></span></a></li>
         </c:if>
       </c:forEach>
     </ul>
