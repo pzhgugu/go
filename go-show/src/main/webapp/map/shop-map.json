@@ -1,5 +1,13 @@
 {
     "res": {
+        "shop:pages/client/goods/default/styles/home_goods.css": {
+            "uri": "/show/static/shop/pages/client/goods/default/styles/home_goods.css",
+            "type": "css"
+        },
+        "shop:pages/client/goods/default/styles/home_header.css": {
+            "uri": "/show/static/shop/pages/client/goods/default/styles/home_header.css",
+            "type": "css"
+        },
         "shop:pages/client/storehome/default/style.css": {
             "uri": "/show/static/shop/pages/client/storehome/default/style.css",
             "type": "css"

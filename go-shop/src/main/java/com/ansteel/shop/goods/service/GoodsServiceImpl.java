@@ -73,5 +73,10 @@ public class GoodsServiceImpl implements GoodsService {
         goodsRepository.delectGoodsCommonId(commonId,storeId);
     }
 
+    @Override
+    public Goods findOne(String id) {
+        return goodsRepository.findOne(id);
+    }
+
 
 }

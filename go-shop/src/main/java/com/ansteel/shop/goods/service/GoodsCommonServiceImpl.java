@@ -325,6 +325,11 @@ public class GoodsCommonServiceImpl implements GoodsCommonService {
         return goodsCommonRepository.find(specification, pageable);
     }
 
+    @Override
+    public GoodsCommon findOne(String id) {
+        return goodsCommonRepository.findOne(id);
+    }
+
     /**
      * 判断此商品是否可以删除
      * @param goodsCommonIds

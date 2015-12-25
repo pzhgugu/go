@@ -126,5 +126,15 @@ public class GoodsImagesServiceImpl implements GoodsImagesService {
         goodsImagesRepository.delectGoodsId(commonId,storeId);
     }
 
+    @Override
+    public List<GoodsImages> findByGoodsId(String goodsCommonId) {
+        return goodsImagesRepository.findByGoodsId(goodsCommonId);
+    }
+
+    @Override
+    public List<GoodsImages> findByGoodsIdAndColorId(String goodsCommonId, String colorId) {
+        return goodsImagesRepository.findByGoodsIdAndColorId(goodsCommonId,colorId);
+    }
+
 
 }

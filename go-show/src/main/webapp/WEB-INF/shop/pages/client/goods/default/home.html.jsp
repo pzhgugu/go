@@ -9,10 +9,10 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
-    <title>店铺搜索</title>
+    <title>商品名称</title>
     <fis:require id="shop:styles/base.css"/>
-    <fis:require id="shop:styles/shop.css"/>
-    <fis:require id="shop:pages/client/storehome/${P_STYLE}/style.css"/>
+    <fis:require id="shop:pages/client/goods/${P_STYLE}/styles/home_goods.css"/>
+    <fis:require id="shop:pages/client/goods/${P_STYLE}/styles/home_header.css"/>
     <fis:styles/>
     <fis:out id="common:widget/font-awesome/css/font-awesome.css"/>
     <!--[if IE 7]>
@@ -25,43 +25,20 @@
     <fis:require id="shop:scripts/member.js"/>
     <fis:require id="shop:scripts/common.js"/>
     <fis:require id="shop:scripts/shop.js"/>
-    <fis:require id="common:widget/qtip/jquery.qtip.min.js"/>
+  <fis:require id="common:widget/qtip/jquery.qtip.min.js"/>
   </head>
-  <script>
-    SITEURL='${S_URL}';
-  </script>
+<script>
+  SITEURL='${S_URL}';
+</script>
 
   <body>
   <fis:block url="shop:pages/client/top.html.jsp"></fis:block>
-  <fis:block url="shop:pages/client/storehome/${P_STYLE}/header.html.jsp"></fis:block>
+  <fis:block url="shop:pages/client/goods/${P_STYLE}/header.html.jsp" />
+  <fis:block url="shop:pages/client/goods/${P_STYLE}/nav.html.jsp" />
 
-  <div class="background clearfix">
-    <fis:block url="shop:pages/client/storehome/${P_STYLE}/nav.html.jsp"></fis:block>
+  <fis:block url="shop:pages/client/goods/${P_STYLE}/main.html.jsp" />
 
-
-    <article id="content">
-      <section class="layout expanded mt10">
-        <article class="nc-goods-main">
-          <!--右边-->
-          <fis:block url="shop:pages/client/storehome/${P_STYLE}/query.html.jsp"></fis:block>
-        </article>
-        <aside class="nc-sidebar">
-          <!--左边-->
-          <fis:block url="shop:pages/client/storehome/${P_STYLE}/sidebar.html.jsp"></fis:block>
-        </aside>
-      </section>
-    </article>
-
-
-
-  </div>
-
-  <div id="faq">
-    <div class="wrapper">
-    </div>
-  </div>
-
-  <fis:block url="shop:pages/client/storehome/footer.html.jsp"></fis:block>
+  <fis:block url="shop:pages/client/goods/${P_STYLE}/footer.html.jsp" />
   <fis:scripts/>
   </body>
 

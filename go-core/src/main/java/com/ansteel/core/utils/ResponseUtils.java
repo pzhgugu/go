@@ -1,6 +1,8 @@
 package com.ansteel.core.utils;
 
+import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintWriter;
 import java.net.URLEncoder;
 
@@ -11,11 +13,13 @@ import javax.servlet.http.HttpServletResponse;
 import com.ansteel.core.exception.ErrorMessage;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
+import org.springframework.http.HttpHeaders;
 
 /**
  * 创 建 人：gugu
@@ -126,27 +130,63 @@ public class ResponseUtils {
 
 			HttpEntity entity = response.getEntity();
 			//设置MIME
-			String mimeType = entity.getContentType().getValue().toString();
-			//文件扩展名
-			if (mimeType == null) {
-				mimeType = "application/octet-stream";
-			} else if ("application/vnd.ms-excel".equals(mimeType)) {
-				fileName = fileName + ".xls";
-			} else if ("application/pdf".equals(mimeType)) {
-				fileName = fileName + ".pdf";
-			} else if ("text/html;charset=utf-8".equals(mimeType)) {
-				fileName = fileName + ".htm";
+			Header contentType = entity.getContentType();
+			String mimeType=null;
+			if(contentType!=null){
+				mimeType=contentType.getValue().toString();
 			}
-			rsp.setContentType(mimeType);
-			// 中文文件名支持
-			String encodedfileName = URLEncoder.encode(fileName, "UTF-8");
-			System.out.println("encodedfileName---" + encodedfileName);
-			//rsp.setHeader(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + encodedfileName + "\"");
-//            response.setContentLength((int)file.length());
+			//文件扩展名
+			if (mimeType != null) {
+				rsp.setContentType(mimeType);
+			}
 
-			ServletOutputStream outputStream = rsp.getOutputStream();
-			//ByteStreams.copy(entity.getContent(), outputStream);
-			outputStream.close();
+			// 中文文件名支持
+			if(StringUtils.hasText(fileName)) {
+				String encodedfileName ="";
+				if(fileName.indexOf(".")>-1){
+					encodedfileName = URLEncoder.encode(fileName, "UTF-8");
+				}else{
+					String fileType=null;
+					try {
+						Header head = response.getFirstHeader(HttpHeaders.CONTENT_DISPOSITION);
+						String headValue = head.getValue();
+						if (StringUtils.hasText(headValue)) {
+							String[] hArray = headValue.split(";");
+							for (String s : hArray) {
+								if (s.indexOf("filename=") > -1) {
+									String[] fArray = s.split("=");
+									String name = fArray[1];
+									String[] nArray = name.split("\\.");
+									fileType = nArray[1];
+								}
+							}
+						}
+					}catch (Exception e){
+
+					}
+					if(fileType==null){
+						fileType="xls";
+					}
+					encodedfileName = URLEncoder.encode(fileName + "." + fileType, "UTF-8");
+				}
+				rsp.setHeader(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + encodedfileName + "\"");
+
+			}
+			InputStream in = entity.getContent();
+			try {
+				ServletOutputStream fout = rsp.getOutputStream();
+				int l = -1;
+				byte[] tmp = new byte[1024];
+				while ((l = in.read(tmp)) != -1) {
+					fout.write(tmp, 0, l);
+					// 注意这里如果用OutputStream.write(buff)的话，图片会失真，大家可以试试
+				}
+				fout.flush();
+				fout.close();
+			} finally {
+				// 关闭低层流。
+				in.close();
+			}
 		} finally {
 			httpClient.close();
 		}

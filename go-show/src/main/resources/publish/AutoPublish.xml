@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Root VERSION="47ed6746-b358-4ac8-99d7-e21eeeb0146c">
+<Root VERSION="7c6bb158-b4fa-4395-9f3b-e5faaa50b971">
   <Message Class="com.ansteel.common.menu.domain.Menu" Execute="com.ansteel.common.backup.fun.MenuExecute">
     <DataRow>
       <url></url>
@@ -486,6 +486,27 @@
       <lastUpdater></lastUpdater>
     </DataRow>
     <DataRow>
+      <url>${S_URL}/report/list/20150826_1</url>
+      <isPopup>0</isPopup>
+      <image></image>
+      <scription></scription>
+      <isCatalogue>3</isCatalogue>
+      <isStop>0</isStop>
+      <resourcesName></resourcesName>
+      <versionPublish></versionPublish>
+      <parent>402897814ec9c34e014ec9c3c886001a</parent>
+      <layer>1</layer>
+      <name>scbbtest</name>
+      <alias>生产报表测试</alias>
+      <displayOrder>1</displayOrder>
+      <id>4028978151cde6c00151ce0b2d530001</id>
+      <version>1</version>
+      <created>2015-12-23 16:53:37.0</created>
+      <updated>2015-12-23 16:53:43.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
       <url></url>
       <isPopup>0</isPopup>
       <image></image>
@@ -568,6 +589,27 @@
       <updated>2015-12-15 14:22:31.0</updated>
       <creator></creator>
       <lastUpdater></lastUpdater>
+    </DataRow>
+    <DataRow>
+      <url>${S_URL}/sqltpl/tpl/ReportShowQuery/test/d</url>
+      <isPopup>0</isPopup>
+      <image>database.gif</image>
+      <scription></scription>
+      <isCatalogue>3</isCatalogue>
+      <isStop>0</isStop>
+      <resourcesName></resourcesName>
+      <versionPublish>6</versionPublish>
+      <parent>402897814ec9c34e014ec9c3c8820018</parent>
+      <layer>1</layer>
+      <name>testSQLMedelManage</name>
+      <alias>测试SQL报表</alias>
+      <displayOrder>1</displayOrder>
+      <id>4028978151cde6c00151ce06f7d90000</id>
+      <version>9</version>
+      <created>2015-12-23 16:49:01.0</created>
+      <updated>2015-12-23 16:49:06.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
       <url></url>
@@ -102449,6 +102491,25 @@
   <Message Class="com.ansteel.report.excel.domain.ExcelReport" Execute="com.ansteel.report.backup.fun.ExcelReportExecute">
     <DataRow>
       <isStart>1</isStart>
+      <attachmentId>4028978151cc888c0151cd6ae3bd0003</attachmentId>
+      <attachmentPath>/ExcelTpl/69dd642c714a4eacb74a209de43b0f03.xlsx</attachmentPath>
+      <attPath></attPath>
+      <type>day</type>
+      <typePath></typePath>
+      <versionPublish></versionPublish>
+      <excelReportTree>402897814f69dd23014f69f6f88c0006</excelReportTree>
+      <name>20151223_1357</name>
+      <alias>字符串截取</alias>
+      <displayOrder>11</displayOrder>
+      <id>4028978151cc888c0151cd6a10d20002</id>
+      <version>1</version>
+      <created>2015-12-23 13:57:39.0</created>
+      <updated>2015-12-23 13:58:33.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <isStart>1</isStart>
       <attachmentId>402897814f69dd23014f69f852a30007</attachmentId>
       <attachmentPath>/ExcelTpl/4adc33e339f1456d97f8586e78114c44.xlsx</attachmentPath>
       <attPath></attPath>
@@ -102639,6 +102700,49 @@
     </DataRow>
   </Message>
   <Message Class="com.ansteel.report.excel.domain.ExcelReportSQL" Execute="com.ansteel.report.backup.fun.ExcelReportSQLExecute">
+    <DataRow>
+      <sqlContent>&lt;%
+var inStr= "";
+if(!isEmpty(name)){
+var nameArray=strutil.split(name,",");
+for(var i=0;i&lt;nameArray.~size;i++){
+  inStr= inStr+"'"+nameArray[i]+"',";
+}
+if(strutil. length(inStr)&gt;0){
+  inStr=strutil.subStringTo(inStr,0,strutil.length(inStr)-1);
+}
+}
+%&gt;
+select id as id,name as name,alias as alias,password as password from go_users
+where name in(${inStr})
+
+${inStr}---
+</sqlContent>      <isLoop>1</isLoop>
+      <loopMaxNumber>10</loopMaxNumber>
+      <recode>ID=A3;NAME=B3;ALIAS=C3;PASSWORD=D3;</recode>
+      <fixedRecode></fixedRecode>
+      <sheetName>Sheet1</sheetName>
+      <cellEnd></cellEnd>
+      <cellStart></cellStart>
+      <headerRecode></headerRecode>
+      <footerRecode></footerRecode>
+      <isSeries>0</isSeries>
+      <seriesSheetRecode></seriesSheetRecode>
+      <mergerRegionRecode></mergerRegionRecode>
+      <mergerRegionFixed></mergerRegionFixed>
+      <mergerRegionFollow></mergerRegionFollow>
+      <versionPublish></versionPublish>
+      <excelReport>4028978151cc888c0151cd6a10d20002</excelReport>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder>1</displayOrder>
+      <id>4028978151cc888c0151cd6bf6510004</id>
+      <version>15</version>
+      <created>2015-12-23 13:59:43.0</created>
+      <updated>2015-12-23 15:25:42.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
     <DataRow>
       <sqlContent>select id as id,name as name,alias as alias,password as password from go_users</sqlContent>
       <isLoop>1</isLoop>
@@ -103019,9 +103123,26 @@ LIMIT 0,50
   </Message>
   <Message Class="com.ansteel.report.excel.domain.ExcelReportTest" Execute="com.ansteel.report.backup.fun.ExcelReportTestExecute">
     <DataRow>
-      <testParam></testParam>
+      <testParam>name=1,3,5,7</testParam>
       <testLink></testLink>
       <type>1</type>
+      <openType>1</openType>
+      <versionPublish></versionPublish>
+      <excelReport>4028978151cc888c0151cd6a10d20002</excelReport>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder></displayOrder>
+      <id>4028978151cc888c0151cd6c79b60005</id>
+      <version>3</version>
+      <created>2015-12-23 14:00:17.0</created>
+      <updated>2015-12-23 15:26:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <testParam></testParam>
+      <testLink></testLink>
+      <type>3</type>
       <openType>2</openType>
       <versionPublish>11</versionPublish>
       <excelReport>402897814f69dd23014f69f852aa0008</excelReport>
@@ -103029,11 +103150,11 @@ LIMIT 0,50
       <alias>1</alias>
       <displayOrder>1</displayOrder>
       <id>402897814f69dd23014f69fbe11c000a</id>
-      <version>12</version>
+      <version>13</version>
       <created>2015-08-26 20:29:19.0</created>
-      <updated>2015-12-15 14:23:03.0</updated>
+      <updated>2015-12-20 16:29:10.0</updated>
       <creator>administrator</creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
       <testParam></testParam>
@@ -103123,7 +103244,7 @@ LIMIT 0,50
     <DataRow>
       <testParam>user=admin&amp;user1=中国</testParam>
       <testLink></testLink>
-      <type>1</type>
+      <type>4</type>
       <openType>1</openType>
       <versionPublish>4</versionPublish>
       <excelReport>402897814f72ccd8014f72f76e4f0001</excelReport>
@@ -103131,11 +103252,11 @@ LIMIT 0,50
       <alias>1</alias>
       <displayOrder></displayOrder>
       <id>402897814f72ccd8014f72f91e7c0003</id>
-      <version>5</version>
+      <version>7</version>
       <created>2015-08-28 14:22:53.0</created>
-      <updated>2015-12-15 14:23:03.0</updated>
+      <updated>2015-12-22 09:50:46.0</updated>
       <creator>administrator</creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
       <testParam>name=administrator</testParam>

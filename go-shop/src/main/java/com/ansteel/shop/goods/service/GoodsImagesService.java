@@ -48,4 +48,8 @@ public interface GoodsImagesService {
 	void save(ColorImagesModel colorImagesModel);
 
 	void delectByCommonId(String commonId,String storeId);
+
+	List<GoodsImages> findByGoodsId(String goodsCommonId);
+
+	List<GoodsImages> findByGoodsIdAndColorId(String goodsCommonId, String colorId);
 }

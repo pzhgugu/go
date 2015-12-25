@@ -100,4 +100,6 @@ public interface GoodsCommonService {
      * @return
      */
     Page<GoodsCommon> queryStoreGoods(String storeId, String key, String keyword, String stcId, String order, Integer curPage, int pageSize);
+
+    GoodsCommon findOne(String id);
 }

@@ -32,7 +32,7 @@
 </script>
 
   <body>
-  <fis:block url="shop:pages/client/storehome/${P_STYLE}/top.html.jsp"></fis:block>
+  <fis:block url="shop:pages/client/top.html.jsp"></fis:block>
   <fis:block url="shop:pages/client/storehome/${P_STYLE}/header.html.jsp"></fis:block>
 
   <div class="background clearfix">
