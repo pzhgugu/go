@@ -42,7 +42,7 @@ public class SwfShow implements IExcelShow {
 	
 	@Override
 	public String show(Excel excel, String rType, String inline, String outPath,
-			HttpServletResponse response) {
+			HttpServletResponse response,String fileName) {
 		String uuid = StringUtils.getUuid();
 		if(!StringUtils.hasText(outPath)){
 			outPath=attTempPath+"/";

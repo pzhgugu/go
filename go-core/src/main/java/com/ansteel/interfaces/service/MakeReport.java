@@ -19,10 +19,10 @@ public interface MakeReport {
 
 	String show(List listMap, Map<String, String> hashMap,  String rType,
 			String inline, HttpServletRequest request,
-			HttpServletResponse response);
+			HttpServletResponse response,String fileName);
 
 	String show(String modelName, List listMap, String type, Object inline,
-			HttpServletRequest request, HttpServletResponse response);
+			HttpServletRequest request, HttpServletResponse response,String fileName);
 
 	List inExcel(String modelName, String inName, MultipartFile file);
 

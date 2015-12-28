@@ -23,5 +23,5 @@ public interface IExcelShowFactory {
 	 * @return
 	 */
 	String show(Excel excel, String rType, String inline,
-			String outPath,HttpServletResponse response);
+			String outPath,HttpServletResponse response,String fileName);
 }

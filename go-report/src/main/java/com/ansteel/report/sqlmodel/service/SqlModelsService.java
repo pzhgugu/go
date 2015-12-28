@@ -38,5 +38,5 @@ public interface SqlModelsService {
 
     String findByNameToSql(String modelName);
 
-    String showReport(String reportName, SqlModels sqlModels, Map<String, Object> operMap, String type, HttpServletRequest request, HttpServletResponse response);
+    String showReport(String reportName, SqlModels sqlModels, Map<String, Object> operMap, String type, HttpServletRequest request, HttpServletResponse response,String fileName);
 }

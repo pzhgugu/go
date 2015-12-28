@@ -143,7 +143,7 @@ public class DynamicModelsTplController {
 		List listMap = dynamicModelsService.find(modelName, order, queryList);
 		Assert.isTrue(listMap.size()>0, "数据为空，不能导出！");
 		if(StringUtils.hasText(reportName)){
-			makeReport.show(reportName,listMap, type, null, request, response);
+			makeReport.show(reportName,listMap, type, null, request, response,null);
 		}else{
 			Map<String,String> nameMap = new HashMap<String,String>();
 			DynamicModels model=dynamicModelsService.getDynamicModels(modelName);
@@ -151,7 +151,7 @@ public class DynamicModelsTplController {
 				nameMap.put(field.getName(), field.getAlias());
 			}
 			makeReport.show(listMap, nameMap, type,
-					null, request,response);
+					null, request,response,null);
 		}
 		
 		

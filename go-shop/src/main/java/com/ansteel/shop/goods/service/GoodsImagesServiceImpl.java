@@ -128,12 +128,12 @@ public class GoodsImagesServiceImpl implements GoodsImagesService {
 
     @Override
     public List<GoodsImages> findByGoodsId(String goodsCommonId) {
-        return goodsImagesRepository.findByGoodsId(goodsCommonId);
+        return goodsImagesRepository.findByGoodsIdOrderByIsDefaultDesc(goodsCommonId);
     }
 
     @Override
     public List<GoodsImages> findByGoodsIdAndColorId(String goodsCommonId, String colorId) {
-        return goodsImagesRepository.findByGoodsIdAndColorId(goodsCommonId,colorId);
+        return goodsImagesRepository.findByGoodsIdAndColorIdOrderByIsDefaultDesc(goodsCommonId,colorId);
     }
 
 

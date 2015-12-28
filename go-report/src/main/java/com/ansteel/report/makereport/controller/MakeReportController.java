@@ -39,11 +39,12 @@ public class MakeReportController {
 	public String excel(@PathVariable String name,
 			@RequestParam(value="rType",required = false) String rType,
 			@RequestParam(value="inline",required = false) String inline,
+			@RequestParam(value="filename",required = false) String fileName,
 			Model model,
 			HttpServletRequest request,
 			HttpServletResponse response){
 		
-		String path=makeReportService.show(name,rType,inline,null,request,response);		
+		String path=makeReportService.show(name,rType,inline,null,request,response,fileName);
 		
 		if(rType.equals("SWF")){
 			return "redirect:/browsen?url="+path;

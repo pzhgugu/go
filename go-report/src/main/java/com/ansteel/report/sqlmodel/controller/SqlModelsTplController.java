@@ -127,7 +127,7 @@ public class SqlModelsTplController {
         Assert.notNull(sqlModels, modelName + ",SQL模型中没有找到，请检查！");
 
 
-        String path = sqlModelsService.showReport(reportName, sqlModels, operMap, type, request, response);
+        String path = sqlModelsService.showReport(reportName, sqlModels, operMap, type, request, response,null);
         return path;
 
     }

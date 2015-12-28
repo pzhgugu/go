@@ -1,5 +1,13 @@
 {
     "res": {
+        "shop:pages/client/goods/default/scripts/ImageZoom.js": {
+            "uri": "/show/static/shop/pages/client/goods/default/scripts/ImageZoom.js",
+            "type": "js"
+        },
+        "shop:pages/client/goods/default/scripts/iZoomPath.js": {
+            "uri": "/show/static/shop/pages/client/goods/default/scripts/iZoomPath.js",
+            "type": "js"
+        },
         "shop:pages/client/goods/default/styles/home_goods.css": {
             "uri": "/show/static/shop/pages/client/goods/default/styles/home_goods.css",
             "type": "css"

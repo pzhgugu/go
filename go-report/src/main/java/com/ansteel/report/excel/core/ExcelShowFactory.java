@@ -33,7 +33,7 @@ public class ExcelShowFactory implements IExcelShowFactory{
 	 * @param response
 	 */
 	public String show(Excel excel, String rType, String inline,
-			String outPath,HttpServletResponse response) {
+			String outPath,HttpServletResponse response,String fileName) {
 		IExcelShow excelShow = null;
 		switch (rType) {
 			case PDF:
@@ -49,7 +49,7 @@ public class ExcelShowFactory implements IExcelShowFactory{
 				excelShow = ContextHolder.getSpringBean("excelShow");
 				break;
 			}
-		return excelShow.show(excel,rType,inline,outPath,response);
+		return excelShow.show(excel,rType,inline,outPath,response,fileName);
 	}
 
 }

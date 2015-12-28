@@ -24,7 +24,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Administrator on 2015/12/23.
@@ -62,10 +65,10 @@ public class ClientGoodsController {
             goodsCommon=goodsCommonService.findOne(goods.getGoodsCommonId());
         }else if(StringUtils.hasText(commonId)){
             goodsCommon=goodsCommonService.findOne(commonId);
-            model.addAttribute("P_GOODSCOMMON",goodsCommon);
         }else{
             throw new PageException("错误链接！");
         }
+        model.addAttribute("P_GOODSCOMMON",goodsCommon);
 
         Store store=storeService.findOne(goodsCommon.getStoreId());
         //店铺评分
@@ -74,9 +77,16 @@ public class ClientGoodsController {
         model.addAttribute("P_STORE",store);
 
         //获取商品图片
-        List<GoodsImages> goodsImagesList=null;
+        List<GoodsImages> goodsImagesList=new ArrayList<>();
+        Map<String ,GoodsImages> defalutImageMap = new HashMap<>();
         if(goods==null) {
-            goodsImagesList = goodsImagesService.findByGoodsId(goodsCommon.getId());
+            List<GoodsImages> goodsImagesAll = goodsImagesService.findByGoodsId(goodsCommon.getId());
+            for(GoodsImages gi:goodsImagesAll){
+                if(!defalutImageMap.containsKey(gi.getColorId())){
+                    defalutImageMap.put(gi.getColorId(),gi);
+                    goodsImagesList.add(gi);
+                }
+            }
         }else{
             goodsImagesList = goodsImagesService.findByGoodsIdAndColorId(goodsCommon.getId(), goods.getColorId());
         }

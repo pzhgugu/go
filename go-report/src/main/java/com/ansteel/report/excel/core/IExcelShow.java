@@ -23,6 +23,6 @@ public interface IExcelShow {
 	 * @return
 	 */
 	String show(Excel excel, String rType, String inline, String outPath,
-			HttpServletResponse response);
+			HttpServletResponse response,String fileName);
 
 }

@@ -20,11 +20,16 @@ public class ExcelShow implements IExcelShow{
 
 	@Override
 	public String show(Excel excel, String rType, String inline, String outPath,
-			HttpServletResponse response) {
+			HttpServletResponse response,String fileName) {
 		if(StringUtils.hasText(outPath)){
 			
 		}else{
-			EexcelDownloadUtils.download(response, excel.getWorkbook(), DownloadUtils.getContentType(excel.getType()), StringUtils.getUuid()+"."+excel.getType(),inline);
+			if(!StringUtils.hasText(fileName)){
+				fileName=StringUtils.getUuid()+"."+excel.getType();
+			}else{
+				fileName=fileName+"."+excel.getType();
+			}
+			EexcelDownloadUtils.download(response, excel.getWorkbook(), DownloadUtils.getContentType(excel.getType()), fileName,inline);
 		}
 		return outPath;
 	}

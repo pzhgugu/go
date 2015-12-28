@@ -35,7 +35,7 @@ public class PdfShow implements IExcelShow {
 
 	@Override
 	public String show(Excel excel, String rType, String inline,
-			String outPath, HttpServletResponse response) {
+			String outPath, HttpServletResponse response,String fileName) {
 		String uuid = StringUtils.getUuid();
 		if(!StringUtils.hasText(outPath)){
 			outPath=attTempPath+"/";
@@ -57,7 +57,7 @@ public class PdfShow implements IExcelShow {
 				throw new PageException("pdf文档转换失败！");
 			}
 
-			DownloadUtils.download(response, pdfFile, inline);
+			DownloadUtils.download(response, pdfFile, inline,fileName);
 		}
 		return pdfPath;
 	}

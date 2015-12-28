@@ -36,11 +36,13 @@
         </div>
         <div class="close_wrap"><a class="close" href="javascript:;" style="display: none;">×</a></div>
     </div>
+    <fis:require id="shop:pages/client/goods/${P_STYLE}/scripts/iZoomPath.js"/>
     <fis:script>
+
         /** 辅助浏览 **/
         jQuery(function($){
         //产品图片
-        $.getScript('http://localhost/shopnc/shop/resource/js/ImageZoom.js', function(){
+        $.getScript(iZoomPath, function(){
         var
         zoomController,
         zoomControllerUl,
@@ -105,26 +107,14 @@
         shell.find('a.close').css('display', [level>1 ? 'block' : 'none']);
         },
         items: [
+        <c:forEach items="${P_GOODS_IMAGES}" var="images" varStatus="status" >
         { title : '',
-        levelA : 'http://localhost/shopnc/data/upload/shop/store/goods/1/1_04418211211965600_60.jpg',
-        levelB : 'http://localhost/shopnc/data/upload/shop/store/goods/1/1_04418211211965600_360.jpg',
-        levelC : 'http://localhost/shopnc/data/upload/shop/store/goods/1/1_04418211211965600_360.jpg',
-        levelD : 'http://localhost/shopnc/data/upload/shop/common/default_goods_image_1280.gif'},
-        { title : '',
-        levelA : 'http://localhost/shopnc/data/upload/shop/store/goods/1/1_04418211725315624_60.jpg',
-        levelB : 'http://localhost/shopnc/data/upload/shop/common/default_goods_image_360.gif',
-        levelC : 'http://localhost/shopnc/data/upload/shop/common/default_goods_image_360.gif',
-        levelD : 'http://localhost/shopnc/data/upload/shop/common/default_goods_image_1280.gif'},
-        { title : '',
-        levelA : 'http://localhost/shopnc/data/upload/shop/store/goods/1/1_04418211757384304_60.jpg',
-        levelB : 'http://localhost/shopnc/data/upload/shop/common/default_goods_image_360.gif',
-        levelC : 'http://localhost/shopnc/data/upload/shop/common/default_goods_image_360.gif',
-        levelD : 'http://localhost/shopnc/data/upload/shop/common/default_goods_image_1280.gif'},
-        { title : '',
-        levelA : 'http://localhost/shopnc/data/upload/shop/store/goods/1/1_04418211785719847_60.jpg',
-        levelB : 'http://localhost/shopnc/data/upload/shop/common/default_goods_image_360.gif',
-        levelC : 'http://localhost/shopnc/data/upload/shop/common/default_goods_image_360.gif',
-        levelD : 'http://localhost/shopnc/data/upload/shop/common/default_goods_image_1280.gif'}	                					]
+        levelA : '${S_URL}/att/download/${images.goodsImage}',
+        levelB : '${S_URL}/att/download/${images.goodsImage}',
+        levelC : '${S_URL}/att/download/${images.goodsImage}',
+        levelD : '${S_URL}/att/download/${images.goodsImage}'}<c:if test="${!status.last}">,</c:if>
+        </c:forEach>
+        ]
         });
         shell.data('imageZoom', imageZoom);
 
@@ -135,23 +125,22 @@
 
     </fis:script>
 
-
     <!-- S 商品基本信息 -->
     <div class="ncs-goods-summary">
         <div class="name">
-            <h1>正品 2014春装新款 女 绣花针织衫 开衫外套浮桑初 绿色</h1>
+            <h1>${P_GOODSCOMMON.name}</h1>
             <strong></strong></div>
         <div class="ncs-meta">
             <!-- S 商品参考价格 -->
             <dl>
                 <dt>市&nbsp;场&nbsp;价：</dt>
-                <dd class="cost-price"><strong>¥702.00</strong></dd>
+                <dd class="cost-price"><strong>¥${P_GOODSCOMMON.goodsMarketprice}</strong></dd>
             </dl>
             <!-- S 商品发布价格 -->
             <dl>
                 <dt>商&nbsp;城&nbsp;价：</dt>
                 <dd class="price">
-                    <strong>¥189.00</strong>
+                    <strong>¥${P_GOODSCOMMON.goodsStorePrice}</strong>
                 </dd>
             </dl>
             <!-- E 商品发布价格 -->
@@ -164,15 +153,15 @@
                 <dt>商品评价：</dt>
                 <dd>
                     <div data-score="5" class="raty" title="很满意" style="width: 100px;"><img
-                            src="http://localhost/shopnc/data/resource/js/jquery.raty/img/star-on.png" alt="1"
+                            src="${S_URL}/res/img/star-on.png" alt="1"
                             title="很满意">&nbsp;<img
-                            src="http://localhost/shopnc/data/resource/js/jquery.raty/img/star-on.png" alt="2"
+                            src="${S_URL}/res/img/star-on.png" alt="2"
                             title="很满意">&nbsp;<img
-                            src="http://localhost/shopnc/data/resource/js/jquery.raty/img/star-on.png" alt="3"
+                            src="${S_URL}/res/img/star-on.png" alt="3"
                             title="很满意">&nbsp;<img
-                            src="http://localhost/shopnc/data/resource/js/jquery.raty/img/star-on.png" alt="4"
+                            src="${S_URL}/res/img/star-on.png" alt="4"
                             title="很满意">&nbsp;<img
-                            src="http://localhost/shopnc/data/resource/js/jquery.raty/img/star-on.png" alt="5"
+                            src="${S_URL}/res/img/star-on.png" alt="5"
                             title="很满意"><input type="hidden" name="score" value="5" readonly="readonly"></div>
                     <a href="#ncGoodsRate">(0条评论)</a></dd>
             </dl>
@@ -193,7 +182,7 @@
             <!-- S 累计售出数量 -->
             <dl>
                 <dt>累计售出：</dt>
-                <dd><strong><a href="#ncGoodsTraded">0</a></strong>&nbsp;件</dd>
+                <dd><strong><a href="#ncGoodsTraded">${P_GOODSCOMMON.goodsSalenum}</a></strong>&nbsp;件</dd>
             </dl>
             <!-- E 累计售出数量 -->
 
@@ -235,7 +224,7 @@
                     <input type="text" class="text w30" maxlength="6" size="3" value="1" id="quantity" name="">
                     <a class="increase" href="javascript:void(0)">+</a><a class="decrease"
                                                                           href="javascript:void(0)">-</a>
-                    <em>(当前库存<strong nctype="goods_stock">56</strong>件)</em></dd>
+                    <em>(当前库存<strong nctype="goods_stock">${P_GOODSCOMMON.goodsStorage}</strong>件)</em></dd>
             </dl>
             <!-- E 购买数量及库存 -->
 

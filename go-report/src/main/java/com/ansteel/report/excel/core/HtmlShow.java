@@ -22,7 +22,7 @@ public class HtmlShow implements IExcelShow {
 
 	@Override
 	public String show(Excel excel, String rType, String inline, String outPath,
-			HttpServletResponse response) {
+			HttpServletResponse response,String fileName) {
 		response.setCharacterEncoding("utf8");
 	    PrintWriter out=null;
 		try {

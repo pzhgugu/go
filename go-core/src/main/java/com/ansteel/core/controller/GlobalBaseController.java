@@ -192,7 +192,7 @@ public class GlobalBaseController extends TreeController {
 		List listMap =baseService.findMap(clazz,null,null,order,queryList);
 		String path="";
 		if(StringUtils.hasText(reportName)){
-			path=makeReport.show(reportName,listMap, type, null, request, response);
+			path=makeReport.show(reportName,listMap, type, null, request, response,null);
 		}else{
 			Map<String,String> nameMap = new HashMap<String,String>();
 			Models model=modelService.findOneByClazz(clazz.getName());
@@ -200,7 +200,7 @@ public class GlobalBaseController extends TreeController {
 				nameMap.put(field.getName(), field.getAlias());
 			}
 			path=makeReport.show(listMap, nameMap, type,
-					null, request,response);
+					null, request,response,null);
 		}
 		return path;
 	}

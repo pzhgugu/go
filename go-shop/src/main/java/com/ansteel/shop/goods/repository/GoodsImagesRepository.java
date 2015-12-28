@@ -18,7 +18,7 @@ public interface GoodsImagesRepository extends ProjectRepository<GoodsImages,Str
 	@Query("delete GoodsImages g where g.goodsId = ?1 and g.storeId = ?2")
 	void delectGoodsId(String goodsId,String storeId);
 
-	List<GoodsImages> findByGoodsId(String goodsCommonId);
+	List<GoodsImages> findByGoodsIdOrderByIsDefaultDesc(String goodsCommonId);
 
-	List<GoodsImages> findByGoodsIdAndColorId(String goodsCommonId, String colorId);
+	List<GoodsImages> findByGoodsIdAndColorIdOrderByIsDefaultDesc(String goodsCommonId, String colorId);
 }

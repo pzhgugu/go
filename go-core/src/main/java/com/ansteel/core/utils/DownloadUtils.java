@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -25,7 +26,7 @@ public class DownloadUtils {
 
     //private static Map<String,String> contentTypeMap = null;
 
-    public static void download(HttpServletResponse response, File file, String inline) {
+    public static void download(HttpServletResponse response, File file, String inline,String fileName) {
         BufferedInputStream br = null;
         try {
             br = new BufferedInputStream(new FileInputStream(file));
@@ -40,11 +41,25 @@ public class DownloadUtils {
             inline = "attachment";
         }
         response.setContentType(getContentType(file.getPath()));
+        if(!StringUtils.hasText(fileName)){
+            fileName=file.getName();
+        }else{
+            String s=file.getPath();
+            String s1=s.substring(s.indexOf(".") + 1, s.length());
+            if(StringUtils.hasText(s1)){
+                fileName=fileName+"."+s1;
+            }
+        }
+        try {
+            fileName = URLEncoder.encode(fileName, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
         if (inline.equals("1")) { // 在线打开方式
-            response.setHeader("Content-Disposition", "inline; filename=" + file.getName() + ";");
+            response.setHeader("Content-Disposition", "inline; filename=" + fileName + ";");
             // 文件名应该编码成UTF-8
         } else { // 纯下载方式
-            response.setHeader("Content-Disposition", "attachment; filename=" + file.getName() + ";");
+            response.setHeader("Content-Disposition", "attachment; filename=" + fileName + ";");
         }
         OutputStream out = null;
         try {
@@ -70,22 +85,22 @@ public class DownloadUtils {
         return contentType;
     }
 
-    public static void download(HttpServletResponse response, String filePath, String inline) {
+    public static void download(HttpServletResponse response, String filePath, String inline,String fileName) {
         File file = new File(filePath);
         //如果dir对应的文件不存在，或者不是一个目录
         if (!file.exists()) {
             throw new PageException("文件不存在，请检查！");
         }
-        download(response, file, inline);
+        download(response, file, inline,fileName);
     }
 
-    public static void download(HttpServletResponse response, String filePath) {
+    public static void download(HttpServletResponse response, String filePath,String fileName) {
         File file = new File(filePath);
         //如果dir对应的文件不存在，或者不是一个目录
         if (!file.exists()) {
             throw new PageException("文件不存在，请检查！");
         }
-        download(response, file, "0");
+        download(response, file, "0",fileName);
     }
    
     

@@ -103,7 +103,7 @@ public class SqlModelsServiceBean implements SqlModelsService {
     }
 
     @Override
-    public String showReport(String reportName, SqlModels sqlModels, Map<String, Object> operMap, String type, HttpServletRequest request, HttpServletResponse response) {
+    public String showReport(String reportName, SqlModels sqlModels, Map<String, Object> operMap, String type, HttpServletRequest request, HttpServletResponse response,String fileName) {
         String path = "";
         if (sqlModels.getSqlMode() != null && sqlModels.getSqlMode() == 1) {
             String reportContent = sqlModels.getSqlContent();
@@ -111,20 +111,20 @@ public class SqlModelsServiceBean implements SqlModelsService {
             String[] reportParameterArray = reportContent.split(Public.SPLIT_POINT);
             Assert.isTrue(reportParameterArray.length == 2, reportContent + "，报表模式SQL的格式为：报表编码.SQL编码");
 
-            path = makeReportService.show(reportParameterArray[0], type, null, null, operMap, request, response);
+            path = makeReportService.show(reportParameterArray[0], type, null, null, operMap, request, response,fileName);
         } else {
             String sqlContent = sqlModels.getSqlContent();
             List listMap = sqlService.querySql(sqlContent, request, operMap);
 
             if (StringUtils.hasText(reportName)) {
-                path = makeReportService.show(reportName, listMap, type, null, request, response);
+                path = makeReportService.show(reportName, listMap, type, null, request, response,fileName);
             } else {
                 Map<String, String> nameMap = new HashMap<String, String>();
                 for (SqlFields field : sqlModels.getFields()) {
                     nameMap.put(field.getName(), field.getAlias());
                 }
                 path = makeReportService.show(listMap, nameMap, type,
-                        null, request, response);
+                        null, request, response,fileName);
             }
         }
         return path;

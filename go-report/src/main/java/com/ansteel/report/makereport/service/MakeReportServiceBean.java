@@ -140,23 +140,23 @@ public class MakeReportServiceBean implements MakeReportService {
 	public String show(List<Map> list,Map<String,String> nameMap,
 			String rType,String inline,
 			HttpServletRequest request,
-			HttpServletResponse response) {
+			HttpServletResponse response,String fileName) {
 		Excel excel = this.getExcel(list, nameMap);
-		return excelShowFactory.show(excel,rType,inline,null,response);
+		return excelShowFactory.show(excel,rType,inline,null,response,fileName);
 	}
 
 	@Override
 	public String show(String name, String rType, String inline,
 			String outPath, HttpServletRequest request,
-			HttpServletResponse response) {
+			HttpServletResponse response,String fileName) {
 		Excel excel = this.getExcel(name, request, null);
-		return excelShowFactory.show(excel,rType,inline,null,response);
+		return excelShowFactory.show(excel,rType,inline,null,response,fileName);
 	}
 
 	@Override
-	public String show(String name, String rType, String inline, String outPath, Map<String, Object> parameterMap, HttpServletRequest request, HttpServletResponse response) {
+	public String show(String name, String rType, String inline, String outPath, Map<String, Object> parameterMap, HttpServletRequest request, HttpServletResponse response,String fileName) {
 		Excel excel = this.getExcel(name, request, parameterMap);
-		return excelShowFactory.show(excel, rType, inline, null, response);
+		return excelShowFactory.show(excel, rType, inline, null, response,fileName);
 	}
 
 	@Override
@@ -304,9 +304,9 @@ public class MakeReportServiceBean implements MakeReportService {
 	@Override
 	public String show(String modelName, List listMap, String type,
 			String inline, HttpServletRequest request,
-			HttpServletResponse response) { 
+			HttpServletResponse response,String fileName) {
 			Excel excel = this.getExcel(listMap, modelName);
-			return excelShowFactory.show(excel,type,inline,null,response);
+			return excelShowFactory.show(excel,type,inline,null,response,fileName);
 	}
 
 	@Override

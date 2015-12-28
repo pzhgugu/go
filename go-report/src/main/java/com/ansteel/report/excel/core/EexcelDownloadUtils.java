@@ -1,6 +1,8 @@
 package com.ansteel.report.excel.core;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
@@ -21,6 +23,11 @@ public class EexcelDownloadUtils {
 	 public static void download(HttpServletResponse response, Workbook wb,String contentType, String fileName, String type) {
 		 response.reset(); // 非常重要
 		 response.setContentType(contentType);
+		 try {
+			 fileName=URLEncoder.encode(fileName, "UTF-8");
+		 } catch (UnsupportedEncodingException e) {
+			 e.printStackTrace();
+		 }
 		 if("1".equals(type)){
 			 response.setHeader("Content-Disposition", "inline; filename=" + fileName+";");
 		 }else{

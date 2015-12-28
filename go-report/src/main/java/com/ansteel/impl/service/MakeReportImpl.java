@@ -45,8 +45,8 @@ public class MakeReportImpl implements MakeReport {
 	@Override
 	public String show(List listMap, Map<String, String> hashMap,
 			String rType, String inline, HttpServletRequest request,
-			HttpServletResponse response) {
-		return makeReportService.show(listMap, hashMap, rType, inline, request, response);
+			HttpServletResponse response,String fileName) {
+		return makeReportService.show(listMap, hashMap, rType, inline, request, response,fileName);
 	}
 
 	/**
@@ -55,8 +55,8 @@ public class MakeReportImpl implements MakeReport {
 	@Override
 	public String show(String modelName, List listMap, String type,
 			Object inline, HttpServletRequest request,
-			HttpServletResponse response) {
-		return makeReportService.show(modelName,listMap, type, null, request, response);
+			HttpServletResponse response,String fileName) {
+		return makeReportService.show(modelName,listMap, type, null, request, response,fileName);
 	}
 
 	/**

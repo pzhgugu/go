@@ -18,6 +18,9 @@
 
 	<context:property-placeholder
 		ignore-resource-not-found="true" location="classpath*:/go.properties" />
+    <!--<context:property-placeholder
+		ignore-resource-not-found="true" location="classpath*:/go.properties,
+                                  file:d:/go.properties" />-->
 
 
 	<bean id="validator"

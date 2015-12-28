@@ -46,7 +46,7 @@ public interface MakeReportService {
 	 * @return
 	 */
 	String show(String name, String rType, String inline, String outPath,
-			HttpServletRequest request, HttpServletResponse response);
+			HttpServletRequest request, HttpServletResponse response,String fileName);
 
 	/**
 	 * 报表展示
@@ -60,7 +60,7 @@ public interface MakeReportService {
 	 * @return
 	 */
 	String show(String name, String rType, String inline, String outPath, Map<String, Object> parameterMap,
-				HttpServletRequest request, HttpServletResponse response);
+				HttpServletRequest request, HttpServletResponse response,String fileName);
 
 	/**
 	 * 保存报表
@@ -83,7 +83,7 @@ public interface MakeReportService {
 	 */
 	String show(List<Map> list, Map<String, String> nameMap, String rType,
 			String inline, HttpServletRequest request,
-			HttpServletResponse response);
+			HttpServletResponse response,String fileName);
 
 	/**
 	 * 获取Excel
@@ -104,7 +104,7 @@ public interface MakeReportService {
 	 * @return
 	 */
 	String show(String modelName, List listMap, String type, String inline,
-			HttpServletRequest request, HttpServletResponse response);
+			HttpServletRequest request, HttpServletResponse response,String fileName);
 
 	/**
 	 * 生成报表
