@@ -11,8 +11,9 @@
     <meta charset="utf-8">
     <title>商品名称</title>
     <fis:require id="shop:styles/base.css"/>
-    <fis:require id="shop:pages/client/goods/${P_STYLE}/styles/home_goods.css"/>
-    <fis:require id="shop:pages/client/goods/${P_STYLE}/styles/home_header.css"/>
+    <fis:require id="shop:styles/home_login.css"/>
+    <fis:require id="shop:pages/client/buy/${P_STYLE}/styles/home_goods.css"/>
+    <fis:require id="shop:pages/client/buy/${P_STYLE}/styles/home_header.css"/>
     <fis:styles/>
     <fis:out id="common:widget/font-awesome/css/font-awesome.css"/>
     <!--[if IE 7]>
@@ -20,8 +21,10 @@
     <![endif]-->
 
     <fis:require id="common:widget/jquery/jquery.js"/>
+    <fis:require id="common:widget/jquery/waypoints.js"/>
     <fis:require id="common:widget/jquery-ui/jquery.ui.js"/>
     <fis:require id="common:widget/jquery/jquery.validation.js"/>
+    <fis:require id="common:widget/jquery/jquery.masonry.js"/>
     <fis:require id="shop:scripts/member.js"/>
     <fis:require id="shop:scripts/common.js"/>
     <fis:require id="shop:scripts/shop.js"/>
@@ -33,13 +36,14 @@
 
   <body>
   <fis:block url="shop:pages/client/top.html.jsp"></fis:block>
-  <fis:block url="shop:pages/client/goods/${P_STYLE}/header.html.jsp" />
-  <fis:block url="shop:pages/client/goods/${P_STYLE}/nav.html.jsp" />
+  <fis:block url="shop:pages/client/buy/${P_STYLE}/header.html.jsp" />
+  <fis:block url="shop:pages/client/buy/${P_STYLE}/nav.html.jsp" />
 
-  <fis:block url="shop:pages/client/goods/${P_STYLE}/main.html.jsp" />
-
-  <fis:block url="shop:pages/client/goods/${P_STYLE}/footer.html.jsp" />
+  <fis:block url="shop:pages/client/buy/${P_STYLE}/goodsdetail/content.html.jsp" />
+  <fis:block url="shop:pages/client/buy/${P_STYLE}/button.html.jsp" />
+  <fis:block url="shop:pages/client/buy/${P_STYLE}/footer.html.jsp" />
   <fis:scripts/>
+  <fis:out id="shop:scripts/dialog/dialog.js" iid="dialog_js"/>
   </body>
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->

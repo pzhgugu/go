@@ -1,19 +1,19 @@
 {
     "res": {
-        "shop:pages/client/goods/default/scripts/ImageZoom.js": {
-            "uri": "/show/static/shop/pages/client/goods/default/scripts/ImageZoom.js",
+        "shop:pages/client/buy/default/scripts/ImageZoom.js": {
+            "uri": "/show/static/shop/pages/client/buy/default/scripts/ImageZoom.js",
             "type": "js"
         },
-        "shop:pages/client/goods/default/scripts/iZoomPath.js": {
-            "uri": "/show/static/shop/pages/client/goods/default/scripts/iZoomPath.js",
+        "shop:pages/client/buy/default/scripts/iZoomPath.js": {
+            "uri": "/show/static/shop/pages/client/buy/default/scripts/iZoomPath.js",
             "type": "js"
         },
-        "shop:pages/client/goods/default/styles/home_goods.css": {
-            "uri": "/show/static/shop/pages/client/goods/default/styles/home_goods.css",
+        "shop:pages/client/buy/default/styles/home_goods.css": {
+            "uri": "/show/static/shop/pages/client/buy/default/styles/home_goods.css",
             "type": "css"
         },
-        "shop:pages/client/goods/default/styles/home_header.css": {
-            "uri": "/show/static/shop/pages/client/goods/default/styles/home_header.css",
+        "shop:pages/client/buy/default/styles/home_header.css": {
+            "uri": "/show/static/shop/pages/client/buy/default/styles/home_header.css",
             "type": "css"
         },
         "shop:pages/client/storehome/default/style.css": {
@@ -127,6 +127,10 @@
         },
         "shop:styles/base.css": {
             "uri": "/show/static/shop/styles/base.css",
+            "type": "css"
+        },
+        "shop:styles/home_login.css": {
+            "uri": "/show/static/shop/styles/home_login.css",
             "type": "css"
         },
         "shop:styles/seller_center.css": {

@@ -162,14 +162,14 @@ public class SellerGoodsSpecValueController {
 
     @RequestMapping("/addspec")
     @ResponseBody
-    public JsonAddspec addspec(Model model,
+    public JsonDone addspec(Model model,
                                @RequestParam("gc_id") String gcId,
                                @RequestParam("sp_id") String spId,
                                @RequestParam("name") String name,
                                HttpServletRequest request,
                                HttpServletResponse response) {
         GoodsSpecValue goodsSpecValue = goodsSpecValueService.save(gcId, spId, name);
-        JsonAddspec jsonAddspec = new JsonAddspec();
+        JsonDone jsonAddspec = new JsonDone();
         jsonAddspec.setDone(true);
         jsonAddspec.setValue_id(goodsSpecValue.getId());
         return jsonAddspec;

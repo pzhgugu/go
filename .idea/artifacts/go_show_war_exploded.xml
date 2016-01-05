@@ -128,6 +128,11 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-acl:3.2.5.RELEASE" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.0" />
           <element id="library" level="project" name="Maven: com.oracle:ojdbc6:11.2" />
+          <element id="library" level="project" name="Maven: com.github.bingoohuang:patchca:0.0.1" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:17.0" />
+          <element id="library" level="project" name="Maven: com.google.zxing:core:3.2.1" />
+          <element id="library" level="project" name="Maven: com.google.zxing:javase:3.2.1" />
+          <element id="library" level="project" name="Maven: com.beust:jcommander:1.48" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.3.4" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.3.2" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.6" />

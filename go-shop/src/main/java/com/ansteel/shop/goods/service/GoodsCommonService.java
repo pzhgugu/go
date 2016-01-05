@@ -72,6 +72,13 @@ public interface GoodsCommonService {
 
     void delect(String[] goodsCommonIds);
 
+
+    /**
+     * 店铺推荐商品
+     * @param storeId
+     * @return
+     */
+    List<GoodsCommon> findTopByGoodsCommend(String storeId,Integer top);
     /**
      * 店铺推荐商品
      * @param storeId

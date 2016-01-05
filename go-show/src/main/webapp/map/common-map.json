@@ -240,6 +240,10 @@
             "uri": "/show/static/common/widget/jquery/jquery.js",
             "type": "js"
         },
+        "common:widget/jquery/jquery.masonry.js": {
+            "uri": "/show/static/common/widget/jquery/jquery.masonry.js",
+            "type": "js"
+        },
         "common:widget/jquery/jquery.mousewheel.js": {
             "uri": "/show/static/common/widget/jquery/jquery.mousewheel.js",
             "type": "js",

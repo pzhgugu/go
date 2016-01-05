@@ -78,5 +78,10 @@ public class GoodsServiceImpl implements GoodsService {
         return goodsRepository.findOne(id);
     }
 
+    @Override
+    public List<Goods> findByGoodsCommonIdOrderByGoodsStorePriceAsc(String commonId) {
+        return goodsRepository.findByGoodsCommonIdOrderByGoodsStorePriceAsc(commonId);
+    }
+
 
 }

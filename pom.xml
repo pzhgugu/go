@@ -39,6 +39,7 @@
         <hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
         <spring-security.version>3.2.5.RELEASE</spring-security.version>
         <go.version>0.0.1-SNAPSHOT</go.version>
+        <patchca.version>0.0.1</patchca.version>
     </properties>
 
 
@@ -210,6 +211,24 @@
             <version>11.2</version>
         </dependency>
 
+        <!--验证码-->
+        <dependency>
+            <groupId>com.github.bingoohuang</groupId>
+            <artifactId>patchca</artifactId>
+            <version>${patchca.version}</version>
+        </dependency>
+
+        <!--二维码-->
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>3.2.1</version>
+        </dependency>
 
         <!-- j2ee controller spec -->
         <!-- update to servlet 3.0 for spring 4.0 MockHttpServletRequest -->

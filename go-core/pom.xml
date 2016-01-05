@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <project
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+		xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.ansteel.go</groupId>
@@ -11,38 +11,52 @@
 
 	<artifactId>go-core</artifactId>
 	<packaging>jar</packaging>
-	<dependencies>			
+	<dependencies>
+		<!--验证码-->
+		<dependency>
+			<groupId>com.github.bingoohuang</groupId>
+			<artifactId>patchca</artifactId>
+		</dependency>
+		<!--二维码-->
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>javase</artifactId>
+		</dependency>
 		<!-- j2ee controller spec -->
 			<!-- update to servlet 3.0 for spring 4.0 MockHttpServletRequest -->
-			<dependency>
-				<groupId>javax.servlet</groupId>
-				<artifactId>javax.servlet-api</artifactId>
-				<version>3.0.1</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>javax.servlet</groupId>
-				<artifactId>jstl</artifactId>
-				<version>1.2</version>
-			</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
 		</dependency>
 
 					
-			<dependency>
-				<groupId>javax.servlet</groupId>
-				<artifactId>jsp-api</artifactId>
-				<version>2.0</version>
-				<scope>provided</scope>
-				<exclusions>
-					<exclusion>
-						<groupId>javax.servlet</groupId>
-						<artifactId>servlet-api</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 
 	</dependencies>
 

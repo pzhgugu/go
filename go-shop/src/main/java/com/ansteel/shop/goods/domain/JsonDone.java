@@ -1,13 +1,26 @@
 package com.ansteel.shop.goods.domain;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 /**
  * Created by Administrator on 2015/12/1.
  */
-public class JsonAddspec {
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
+public class JsonDone {
 
     private boolean done;
 
     private String value_id;
+
+    private String message;
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
 
     public boolean isDone() {
         return done;

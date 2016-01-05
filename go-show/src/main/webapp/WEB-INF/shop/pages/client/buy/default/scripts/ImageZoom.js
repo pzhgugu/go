@@ -4,27 +4,6 @@
 * create: 2012.02.03
 * update: 2013.05.23
 * admin@laoshu133.com
-
--- 参数说明 --
-	@options {Object}
-		- {
-			tmpl: '<div class="gallery_wrap">{gallery}</div><div class="controller_wrap"><div class="controller">{controllers}</div><a href="javascript:;" class="prev"><span>&#171;</span></a><a href="javascript:;" class="next"><span>&#187;</span></a></div><div class="close_wrap">{closeButton}</div>',
-			items: [],
-			shell: null,
-			basePath: 'images/',
-			levelASize: [60, 60],
-			levelBSize: [240, 240],
-			levelCSize: [450, 450],
-			levelDSize: [1200, 1200],
-			gallerySize: [600, 400],
-			effectDuration: 400,
-			limitDrag: true,
-			drag: true,
-			esc: true,
-			onZoom: noop,
-			onBeforeZoom: noop
-		}
--- 参数说明 end --
 */
 (function(global, document, $, undefined){
 	var 

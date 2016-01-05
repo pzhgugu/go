@@ -54,7 +54,7 @@
         关于我们      </dt>
                   <dd><i></i><a title="联系我们" href="#"> 联系我们 </a></dd>
             <dd><i></i><a title="合作及洽谈" href="#"> 合作及洽谈 </a></dd>
-            <dd><i></i><a title="关于ShopNC" href="#"> 关于ShopNC </a></dd>
+            <dd><i></i><a title="关于ShopNC" href="#"> 关于我们 </a></dd>
             <dd><i></i><a title="招聘英才" href="#"> 招聘英才 </a></dd>
                 </dl></li>
         </ul>

@@ -34,4 +34,6 @@ public interface GoodsService {
 	void delectByCommonId(String commonId,String storeId);
 
 	Goods findOne(String id);
+
+	List<Goods> findByGoodsCommonIdOrderByGoodsStorePriceAsc(String commonId);
 }

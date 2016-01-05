@@ -59,8 +59,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/emoticons/images/19.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/emoticons/images/2.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/emoticons/images/20.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/images/shop/2014_ncs_public_img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/images/2014grate.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/2014grate.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/emoticons/images/21.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/emoticons/images/22.gif" />
@@ -164,7 +162,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/store_joinin/body_bg.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/btn.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/cms/images/btnImage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/images/shop/bundling.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/bundling_goods_thumb.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/sky/button_bg.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/sky/button_bg.png" />
@@ -190,7 +187,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/filemanager/images/folder-64.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/filemanager/images/go-up.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/gray_th.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/images/shop/hand.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/ico.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/multiimage/images/image.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/store_joinin/img_bg.png" />
@@ -225,9 +221,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/open.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery.nyroModal/img/prev.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/sky/prompt.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/images/shop/public.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/image/images/refresh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/images/shop/repeat_x.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/repeat_x.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/right.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/dialog/images/right.gif" />
@@ -250,10 +244,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/sort_desc.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/ssns_bg.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/ssns_pics.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/res/img/star-on.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/emoticons/images/static.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/success.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/images/shop/switch_bar.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/dialog/images/tab.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/poshytip/tip-darkgray/tip-darkgray.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/poshytip/tip-darkgray/tip-darkgray_arrows.png" />
@@ -270,6 +262,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/tip-yellowsimple_arrows.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/cms/images/top_bg.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/top_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/res/img/transparent.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery-ui/themes/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery-ui/themes/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery-ui/themes/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -300,16 +293,25 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/cms/images/update.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/update.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/upload_loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/images/shop/userinfo_bg.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/images/member/warning_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/images/shop/zoom.cur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/images/shop/zoom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ClientGoodsConsultController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsConsult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsConsultRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsConsultService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsConsultServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsQrcodeController.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/utils/IE6_MAXMIX.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/utils/IE6_PNG.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/scripts/ImageZoom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/login/web/LoginShopController.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/report/widget/OnlineBrowsen/OnlineBrowsen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/utils/PageStyle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/qrcode/controller/QrcodeController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/qrcode/service/QrcodeService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/qrcode/service/QrcodeServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/context/ValidationCodeServlet.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/ajaxfileupload/ajaxfileupload.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/album.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/among.html.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/anchor/anchor.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/admin/appleStoreJoinin.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/area_array.js" />
@@ -324,7 +326,9 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/code/code.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/common.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/common_select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/cosulting.html.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery.nyroModal/custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/detail.html.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/core/widget/tpl/DetailQuery/detailquery.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/dhtmlxSuite/ext/dhtmlXToolbar_selectEx.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/dhtmlxSuite/dhtmlx.css" />
@@ -357,12 +361,14 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/font-awesome/css/font-awesome.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/font-awesome/css/font-awesome.min.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/core/scripts/framework.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodclass.html.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/admin/goodsAttribute.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/admin/goodsBrand.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/admin/goodsType.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsqrcode.html.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/cms/styles/home_header.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/styles/home_login.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/utils/html5shiv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/scripts/iZoomPath.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery.nyroModal/ie6.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/image/image.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/insertfile/insertfile.js" />
@@ -379,6 +385,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery/jquery.form.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/fileupload/jquery.iframe-transport.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/common/widget/jquery/jquery.masonry.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery/jquery.mousewheel.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery/jquery.poshytip.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/poshytip/jquery.poshytip.js" />
@@ -399,13 +406,16 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/link/link.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/core/pak/login.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/core/styles/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/login/login.html.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/core/scripts/login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/main.html.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/core/styles/mainPage.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/core/scripts/mainPage.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/map/map.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/media/media.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/member.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/core/scripts/menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/message.html.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/scripts/mod.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/multiimage/multiimage.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/cms/scripts/news.js" />
@@ -447,7 +457,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/store_goods_add.step2.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/store_goods_add.step3.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/store_goods_list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/styles/store_joinin.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/shop/scripts/store_slide.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/core/styles/style.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/dhtmlxSuite/ext/swfobject.js" />
@@ -471,33 +480,64 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/kindeditor/plugins/wordpaste/wordpaste.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery-ui/i18n/zh-CN.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/static/common/widget/jquery-ui/i18n/zh-TW.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/backup/service/BackupController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/backup/service/BackupController.java" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\detail.html.jsp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ClientGoodsController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ClientGoodsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/DownloadUtils.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/DownloadUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/controller/DynamicModelsTplController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/controller/DynamicModelsTplController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/EexcelDownloadUtils.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/EexcelDownloadUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/ExcelShow.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/ExcelShow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/ExcelShowFactory.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/ExcelShowFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/controller/GlobalBaseController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/controller/GlobalBaseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsImagesRepository.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsImagesRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsImagesServiceImpl.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsImagesServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/HtmlShow.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/HtmlShow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/IExcelShow.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/IExcelShow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/IExcelShowFactory.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/IExcelShowFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/interfaces/service/MakeReport.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/interfaces/service/MakeReport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/controller/MakeReportController.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/controller/MakeReportController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/impl/service/MakeReportImpl.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/impl/service/MakeReportImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/service/MakeReportService.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/service/MakeReportService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/service/MakeReportServiceBean.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/service/MakeReportServiceBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/PdfShow.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/PdfShow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/service/SqlModelsService.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/service/SqlModelsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/service/SqlModelsServiceBean.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/service/SqlModelsServiceBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/controller/SqlModelsTplController.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/controller/SqlModelsTplController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/SwfShow.java" afterPath="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/SwfShow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonService.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonServiceImpl.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsRepository.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsService.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsServiceImpl.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsSpecValueController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsSpecValueController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/among.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/among.html.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/detail.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/detail.html.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/map/common-map.json" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/map/common-map.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-cms/go-cms.iml" afterPath="$PROJECT_DIR$/go-cms/go-cms.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/go-core.iml" afterPath="$PROJECT_DIR$/go-core/go-core.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-report/go-report.iml" afterPath="$PROJECT_DIR$/go-report/go-report.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/go-shop.iml" afterPath="$PROJECT_DIR$/go-shop/go-shop.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/go-show.iml" afterPath="$PROJECT_DIR$/go-show/go-show.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go.iml" afterPath="$PROJECT_DIR$/go.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/go_show_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/go_show_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/pom.xml" afterPath="$PROJECT_DIR$/go-core/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/pom.xml" afterPath="$PROJECT_DIR$/go-shop/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/pom.xml" afterPath="$PROJECT_DIR$/go-show/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/map/shop-map.json" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/map/shop-map.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/resources/spring-sec.xml" afterPath="$PROJECT_DIR$/go-show/src/main/resources/spring-sec.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\JsonAddspec.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/JsonDone.java" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\breadcrumb.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/breadcrumb.html.jsp" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\button.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/button.html.jsp" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\footer.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/footer.html.jsp" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\header.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/header.html.jsp" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\home.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/home.html.jsp" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\2014grate.png" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/2014grate.png" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\btnImage.png" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/btnImage.png" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\delect.ico" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/delect.ico" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\member-card\mail-send.png" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/member-card/mail-send.png" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\member-card\sex.png" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/member-card/sex.png" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\modify1.png" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/modify1.png" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\no.png" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/no.png" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\sex.png" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/sex.png" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\shop\2014_ncs_public_img.png" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/shop/2014_ncs_public_img.png" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\shop\bundling.gif" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/shop/bundling.gif" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\shop\hand.png" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/shop/hand.png" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\shop\public.png" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/shop/public.png" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\shop\repeat_x.png" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/shop/repeat_x.png" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\shop\switch_bar.png" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/shop/switch_bar.png" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\shop\userinfo_bg.gif" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/shop/userinfo_bg.gif" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\shop\zoom.cur" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/shop/zoom.cur" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\shop\zoom.png" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/shop/zoom.png" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\tip-yellowsimple_arrows.gif" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/tip-yellowsimple_arrows.gif" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\top_bg.png" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/top_bg.png" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images\update.gif" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/images/update.gif" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\main.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/content.html.jsp" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\nav.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/nav.html.jsp" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\scripts\ImageZoom.js" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/scripts/ImageZoom.js" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\scripts\iZoomPath.js" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/scripts/iZoomPath.js" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\styles\home_goods.css" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/styles/home_goods.css" />
+      <change type="MOVED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\styles\home_header.css" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/styles/home_header.css" />
     </list>
     <ignored path="go.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -578,31 +618,109 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ClientGoodsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ClientGoodsController.java">
+      <file leaf-file-name="detail.html.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/detail.html.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.6744186">
+              <caret line="359" column="26" selection-start-line="359" selection-start-column="13" selection-end-line="359" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/home.html.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6255924">
+              <caret line="45" column="63" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
+              <folding>
+                <marker date="1451982907719" expanded="true" signature="2313:2357" placeholder="..." />
+                <marker date="1451982907719" expanded="true" signature="2368:2374" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.masonry.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/common/widget/jquery/jquery.masonry.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goodsAddStep2.html.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/GoodsAdd/goodsAddStep2.html.jsp">
+      <file leaf-file-name="framework.html.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/widget/tpl/seller/framework.html.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0">
-              <caret line="147" column="45" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="45" />
+            <state vertical-scroll-proportion="-7.3333335">
+              <caret line="29" column="39" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="47" />
+              <folding>
+                <marker date="1450234696448" expanded="true" signature="2854:2894" placeholder="..." />
+                <marker date="1450234696448" expanded="true" signature="2903:2907" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="storespecadd.html.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/spec/storespecadd.html.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.296296">
+              <caret line="134" column="8" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SellerGoodsController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsController.java">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/scripts/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38837922">
-              <caret line="159" column="65" selection-start-line="159" selection-start-column="58" selection-end-line="159" selection-end-column="65" />
+            <state vertical-scroll-proportion="-2.0508475">
+              <caret line="206" column="23" selection-start-line="206" selection-start-column="9" selection-end-line="206" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/login/web/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="5" selection-start-line="29" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginShopController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/login/web/LoginShopController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/login/login.html.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.781818">
+              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/header.html.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -614,10 +732,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
+        <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Class" />
         <option value="Jsp File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -642,57 +760,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/goodclass.html.jsp" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StoreGoodsClassService.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StoreGoodsClassServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/among.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/header.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/nav.html.jsp" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/domain/StoreNavigation.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/atricle.html.jsp" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/storehome/web/StoreHomeContoller.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/report/scripts/excelReport.js" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/widget/tpl/seller/header.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/home.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/articleHome.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/queryHome.html.jsp" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsRepository.java" />
         <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsService.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/detail.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/home.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/detail.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/main.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/goodslayout.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/content.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/message.html.jsp" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/qrcode/service/QrcodeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/qrcode/service/QrcodeService.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/qrcode/controller/QrcodeController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/StoreQrcodeController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/GoodsQrcodeController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/StorePlateController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsQrcodeController.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsqrcode.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/among.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/among.html.jsp" />
         <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonService.java" />
         <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/breadcrumb.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/main.html.jsp" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsImagesService.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/home.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/resources/spring-sec.xml" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/ResponseUtils.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/scripts/iZoomPath.js" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsConsultController.java" />
+        <option value="$PROJECT_DIR$/go-shop/pom.xml" />
+        <option value="$PROJECT_DIR$/go-show/pom.xml" />
         <option value="$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/go-show/src/main/resources/go.properties" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/detail.html.jsp" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsImagesRepository.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsImagesServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/backup/service/BackupController.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/IExcelShow.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/PdfShow.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/ExcelShowFactory.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/IExcelShowFactory.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/service/MakeReportServiceBean.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/service/MakeReportService.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/service/SqlModelsServiceBean.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/service/SqlModelsService.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/SwfShow.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/HtmlShow.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/impl/service/MakeReportImpl.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/interfaces/service/MakeReport.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/controller/DynamicModelsTplController.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/controller/GlobalBaseController.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/controller/SqlModelsTplController.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/controller/MakeReportController.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/EexcelDownloadUtils.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/ExcelShow.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/DownloadUtils.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/resources/applicationContext-captcha.xml" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/jcaptcha/controller/JcaptchaImageController.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/go-show/src/main/resources/spring-sec.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/go-core/pom.xml" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/context/ValidationCodeServlet.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/JsonAddspec.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsConsult.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsConsultService.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsConsultServiceImpl.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsConsultRepository.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/JsonDone.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ClientGoodsConsultController.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/cosulting.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/button.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/main.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/scripts/ImageZoom.js" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/detail.html.jsp" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/utils/PageStyle.java" />
         <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ClientGoodsController.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/login/login.html.jsp" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/login/web/LoginController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/login/web/LoginShopController.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/home.html.jsp" />
       </list>
     </option>
   </component>
@@ -720,6 +838,20 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="go-core" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -761,15 +893,21 @@
             <id />
           </State>
           <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
             <id>JPA issues</id>
           </State>
           <State>
             <id>JSP Inspections</id>
           </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>JpaQlInspection</id>
+            <id>JSDuplicatedDeclaration</id>
           </State>
         </selected-state>
       </profile-state>
@@ -801,6 +939,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -819,11 +958,872 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dialog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goodsdetail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-show" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -846,7 +1846,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
@@ -865,18 +1865,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\common\widget\jquery" />
+      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default" />
       <recent name="D:\git\go\go-show\src\main\webapp\res\img" />
-      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\scripts" />
-      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts" />
-      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\images" />
-      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\styles" />
+      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\styles" />
+      <recent name="D:\git\go\go-show\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\goodsdetail" />
       <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\css" />
       <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client" />
       <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome" />
       <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default" />
-      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\goodsOnline" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -1302,7 +2302,15 @@
       <workItem from="1450917473861" duration="14597000" />
       <workItem from="1451005090975" duration="8503000" />
       <workItem from="1451096134481" duration="5386000" />
-      <workItem from="1451263718384" duration="15463000" />
+      <workItem from="1451263718384" duration="16144000" />
+      <workItem from="1451349461507" duration="17977000" />
+      <workItem from="1451436290638" duration="11407000" />
+      <workItem from="1451522635900" duration="18328000" />
+      <workItem from="1451788486115" duration="5984000" />
+      <workItem from="1451868076974" duration="13320000" />
+      <workItem from="1451890137997" duration="3787000" />
+      <workItem from="1451894037385" duration="4055000" />
+      <workItem from="1451954661468" duration="24203000" />
     </task>
     <task id="LOCAL-00001" summary="测试一下">
       <created>1440299520520</created>
@@ -1490,11 +2498,23 @@
       <option name="project" value="LOCAL" />
       <updated>1451013626306</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="开发(电商修改)">
+      <created>1451292367011</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1451292367011</updated>
+    </task>
+    <task id="LOCAL-00033" summary="开发(电商修改)">
+      <created>1451292755854</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1451292755854</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="599595000" />
+    <option name="totallyTimeSpent" value="699337000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1513,21 +2533,22 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23037542" sideWeight="0.41793314" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2691622" sideWeight="0.43768996" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4010239" sideWeight="0.27355623" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.4969605" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17477204" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.137538" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.4969605" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28723404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32826748" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20896657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35494882" sideWeight="0.4969605" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24924012" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29180887" sideWeight="0.56231004" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49658704" sideWeight="0.72644377" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1535,7 +2556,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3993174" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.4969605" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1584,7 +2604,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonServiceImpl.java</url>
-          <line>368</line>
+          <line>392</line>
           <properties />
           <option name="timeStamp" value="365" />
         </line-breakpoint>
@@ -1598,7 +2618,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="441" />
+      <option name="time" value="465" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1607,414 +2627,426 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/styles/home_goods.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/main.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.22727273">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/atricle.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54545456">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/sidebar.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27272728">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/storehome/default/home.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.045454547">
-          <caret line="35" column="63" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsImagesRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59574467">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/core/context/ShopSellerInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3652174">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/storehome/web/StoreHomeContoller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="44" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="130" column="26" selection-start-line="130" selection-start-column="11" selection-end-line="130" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/spring-sec.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.56658596">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/ResponseUtils.java">
+    <entry file="file://$PROJECT_DIR$/go-show/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5891089">
-          <caret line="181" column="58" selection-start-line="181" selection-start-column="58" selection-end-line="181" selection-end-column="58" />
+        <state vertical-scroll-proportion="1.7270789">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/scripts/ImageZoom.js">
+    <entry file="file://$MAVEN_REPOSITORY$/com/github/bingoohuang/patchca/0.0.1/patchca-0.0.1.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.23027718">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4421365">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.44383562">
+          <caret line="220" column="18" selection-start-line="220" selection-start-column="18" selection-end-line="220" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="123" column="24" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/context/ValidationCodeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="82" selection-start-line="105" selection-start-column="68" selection-end-line="105" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.6.RELEASE/spring-web-4.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36094674">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/styles/home_login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.1338797">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/scripts/iZoomPath.js">
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/JsonGoodsClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/main.html.jsp">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/UserUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/home.html.jsp">
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsSpecValueServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="77" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="77" />
-          <folding>
-            <marker date="1450946521602" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1450946521602" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/swftools/service/SWFToolsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/text/MessageFormat.java">
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33168316">
-          <caret line="833" column="25" selection-start-line="833" selection-start-column="25" selection-end-line="833" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="219" column="64" selection-start-line="219" selection-start-column="64" selection-end-line="219" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/swftools/service/SWFToolsServiceBean.java">
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/album/service/AlbumPicService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/album/repository/AlbumPicRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49046323">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/album/service/AlbumPicServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="161" column="8" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsConsultRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsConsultServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/go.properties">
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsConsultService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.408">
-          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.63760215">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#7266#7291#0" expanded="true" />
-            <element signature="e#7359#7372#0" expanded="true" />
-            <element signature="e#7445#7463#0" expanded="true" />
-            <element signature="e#7534#7552#0" expanded="true" />
-            <element signature="e#7630#7654#0" expanded="true" />
-            <element signature="e#7728#7750#0" expanded="true" />
-            <element signature="e#7904#7926#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsCommon.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.7.0.M1/spring-data-commons-1.7.0.M1-sources.jar!/org/springframework/data/domain/Page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="184" column="32" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="32" />
+          <caret line="121" column="22" selection-start-line="121" selection-start-column="15" selection-end-line="121" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/goods/default/detail.html.jsp">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/domain/BaseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3488371">
-          <caret line="226" column="86" selection-start-line="226" selection-start-column="86" selection-end-line="226" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsImages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6881188">
-          <caret line="45" column="29" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsImagesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsImagesRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsImagesServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="80" selection-start-line="135" selection-start-column="80" selection-end-line="135" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/backup/service/BackupController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/service/SqlModelsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="176" selection-start-line="40" selection-start-column="176" selection-end-line="40" selection-end-column="176" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/service/SqlModelsServiceBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/SwfShow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="56" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/interfaces/service/MakeReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="84" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/impl/service/MakeReportImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/controller/DynamicModelsTplController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="153" column="47" selection-start-line="153" selection-start-column="47" selection-end-line="153" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/controller/GlobalBaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="202" column="47" selection-start-line="202" selection-start-column="47" selection-end-line="202" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/sqlmodel/controller/SqlModelsTplController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="129" column="110" selection-start-line="129" selection-start-column="110" selection-end-line="129" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/service/MakeReportService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/service/MakeReportServiceBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="152" column="34" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/IExcelShowFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/EexcelDownloadUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.25">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/PdfShow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/IExcelShow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/HtmlShow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/controller/MakeReportController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.25">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/ExcelShowFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/ExcelShow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.071429">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/DownloadUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="77" selection-start-line="96" selection-start-column="69" selection-end-line="96" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ClientGoodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/GoodsAdd/goodsAddStep2.html.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="147" column="45" selection-start-line="147" selection-start-column="33" selection-end-line="147" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.6074498">
+          <caret line="44" column="24" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/SellerGoodsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38837922">
-          <caret line="159" column="65" selection-start-line="159" selection-start-column="58" selection-end-line="159" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.25787964">
+          <caret line="329" column="32" selection-start-line="329" selection-start-column="32" selection-end-line="329" selection-end-column="99" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/Goods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/JsonDone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="e#360#361#0" expanded="false" />
+            <element signature="e#406#407#0" expanded="false" />
+            <element signature="e#444#445#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsConsult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/store/settledsteptwo.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.1443038">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/store/settledstepthree.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8202532">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/album/piclist.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.666667">
+          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="195" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/cms/widget/tpl/button.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/button.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.37037">
+          <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/content.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/cosulting.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4561404">
+          <caret line="157" column="12" selection-start-line="157" selection-start-column="11" selection-end-line="157" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/scripts/ImageZoom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46698114">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/main.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.72093">
+          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/scripts/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0508475">
+          <caret line="206" column="23" selection-start-line="206" selection-start-column="9" selection-end-line="206" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/login/web/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="5" selection-start-line="29" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/utils/PageStyle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ClientGoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5330189">
+          <caret line="175" column="8" selection-start-line="175" selection-start-column="8" selection-end-line="176" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ClientGoodsConsultController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2971698">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/header.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/login/login.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.781818">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/login/web/LoginShopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/detail.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6744186">
+          <caret line="359" column="26" selection-start-line="359" selection-start-column="13" selection-end-line="359" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/album/album.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.9187193">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/album/addPage.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2118227">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/home.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/scripts/dialog/dialog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/common/widget/jquery/jquery.masonry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/widget/tpl/seller/framework.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3333335">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="47" />
+          <folding>
+            <marker date="1450234696448" expanded="true" signature="2854:2894" placeholder="..." />
+            <marker date="1450234696448" expanded="true" signature="2903:2907" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/seller/spec/storespecadd.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.296296">
+          <caret line="134" column="8" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/home.html.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6255924">
+          <caret line="45" column="63" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
+          <folding>
+            <marker date="1451982907719" expanded="true" signature="2313:2357" placeholder="..." />
+            <marker date="1451982907719" expanded="true" signature="2368:2374" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

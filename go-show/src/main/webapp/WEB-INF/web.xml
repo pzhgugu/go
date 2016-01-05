@@ -115,4 +115,13 @@
         </taglib> 
     </jsp-config>
 
+	<servlet>
+		<servlet-name>validationCode</servlet-name>
+		<servlet-class>com.ansteel.core.context.ValidationCodeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>validationCode</servlet-name>
+		<url-pattern>/validationCodeServlet.png</url-pattern>
+	</servlet-mapping>
+
 </web-app>
