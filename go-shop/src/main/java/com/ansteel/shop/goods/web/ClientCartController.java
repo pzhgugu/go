@@ -83,6 +83,8 @@ public class ClientCartController {
 
         String userId = UserUtils.getUserId();
 
+        String url = request.getContextPath();
+
         if(cartList.size()>0){
             for(CartSessionModel csm:cartSessionModelList){
                 boolean isExist=false;
@@ -94,12 +96,12 @@ public class ClientCartController {
                     }
                 }
                 if(!isExist){
-                    this.addCartList(csm, cartList,userId);
+                    this.addCartList(csm, cartList,userId,url);
                 }
             }
         }else{
             for(CartSessionModel csm:cartSessionModelList){
-                this.addCartList(csm,cartList,userId);
+                this.addCartList(csm,cartList,userId,url);
             }
         }
 
@@ -108,7 +110,7 @@ public class ClientCartController {
         Integer cart_goods_num=0;
         List<CartObjectModel> list = new ArrayList<>();
         for(Cart cart:cartList){
-            CartObjectModel com =this.setCartObjectModel(cart);
+            CartObjectModel com =this.setCartObjectModel(cart,url);
             list.add(com);
             cart_all_price.add(com.getGoods_price());
             cart_goods_num+=com.getGoods_num();
@@ -119,7 +121,7 @@ public class ClientCartController {
         return JsonUtils.jsonCallback(callback, cartListModel);
     }
 
-    private void addCartList(CartSessionModel csm, List<Cart> cartList,String userId) {
+    private void addCartList(CartSessionModel csm, List<Cart> cartList,String userId,String url) {
         Goods goods=goodsService.findOne(csm.getGoodsId());
         Cart cart = new Cart();
         cart.setGoodsId(goods.getId());
@@ -137,15 +139,15 @@ public class ClientCartController {
     }
 
 
-    public CartObjectModel setCartObjectModel(Cart cart) {
+    public CartObjectModel setCartObjectModel(Cart cart,String url) {
         CartObjectModel com = new CartObjectModel();
         com.setCart_id(cart.getId());
         com.setGoods_id(cart.getGoodsId());
         com.setGoods_name(cart.getGoodsName());
-        com.setGoods_image(cart.getGoodsImage());
+        com.setGoods_image(url + "/att/download/" + cart.getGoodsImage());
         com.setGoods_num(cart.getGoodsNum());
         com.setGoods_price(cart.getGoodsPrice());
-        com.setGoods_url("/cl/goods/show?goods_id="+cart.getGoodsId());
+        com.setGoods_url(url+"/cl/goods/show?goods_id="+cart.getGoodsId());
         return  com;
     }
 }
