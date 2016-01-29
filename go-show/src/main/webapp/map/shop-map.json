@@ -69,6 +69,10 @@
                 "shop:scripts/dialog/dialog.css"
             ]
         },
+        "shop:scripts/goods_cart.js": {
+            "uri": "/show/static/shop/scripts/goods_cart.js",
+            "type": "js"
+        },
         "shop:scripts/jqtreetable.js": {
             "uri": "/show/static/shop/scripts/jqtreetable.js",
             "type": "js"
@@ -127,6 +131,10 @@
         },
         "shop:styles/base.css": {
             "uri": "/show/static/shop/styles/base.css",
+            "type": "css"
+        },
+        "shop:styles/home_cart.css": {
+            "uri": "/show/static/shop/styles/home_cart.css",
             "type": "css"
         },
         "shop:styles/home_login.css": {
