@@ -53,7 +53,7 @@
           <div class="incart-goods-box">
             <div class="incart-goods"><div class="no-order"><span>您的购物车中暂无商品，赶快选择心爱的商品吧！</span></div></div>
           </div>
-          <div class="checkout"> <span class="total-price"></span><a class="btn-cart" href="#">结算购物车中的商品</a> </div>
+          <div class="checkout"> <span class="total-price"></span><a class="btn-cart" href="${S_URL}/shop/cart">结算购物车中的商品</a> </div>
         </dd>
       </dl>
     </div>
