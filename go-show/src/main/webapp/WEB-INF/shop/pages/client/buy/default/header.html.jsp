@@ -98,18 +98,20 @@
             function() {
               $(this).removeClass("hover");
             });
-    $('.head-user-menu .my-mall').mouseover(function(){// 最近浏览的商品
+    $('.head-user-menu .my-mall').mouseenter(function(){// 最近浏览的商品
       load_history_information();
       $(this).unbind('mouseover');
     });
-    $('.head-user-menu .my-cart').mouseover(function(){// 运行加载购物车
+    $('.head-user-menu .my-cart').mouseenter(function(){// 运行加载购物车
       load_cart_information();
-      $(this).unbind('mouseover');
+      $(this).unbind('mouseenter');
     });
     $('#button').click(function(){
       if ($('#keyword').val() == '') {
         return false;
       }
     });
+
+  load_cart_information();
   });
 </fis:script>

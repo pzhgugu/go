@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.apache.poi.ss.usermodel.CreationHelper;
+import org.apache.poi.ss.usermodel.FormulaEvaluator;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -55,13 +57,31 @@ public class ExcelReportFactory {
 		}
 		
 		if(seriesExcel==null){
-			BaseExcelReport excelReport = new BaseExcelReport();		
-			return excelReport.getExcel(excel, mapExcel);
+			BaseExcelReport excelReport = new BaseExcelReport();
+			Excel exc = excelReport.getExcel(excel, mapExcel);
+			this.evaluateAll(exc);
+			return exc;
 		}else{			
 			SeriesExcelReport seriesExcelReport = new SeriesExcelReport();
-			return seriesExcelReport.getExcel(seriesExcel);
+			Excel exc =  seriesExcelReport.getExcel(seriesExcel);
+			this.evaluateAll(exc);
+			return exc;
 		}
 		
 		
+	}
+
+	/**
+	 * 执行公式
+	 * @param exc
+	 */
+	private void evaluateAll(Excel exc) {
+		try {
+			CreationHelper helper = exc.getWorkbook().getCreationHelper();
+			FormulaEvaluator evaluator = helper.createFormulaEvaluator();
+			evaluator.evaluateAll();
+		}catch (Exception e){
+
+		}
 	}
 }

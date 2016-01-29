@@ -10,4 +10,6 @@ import java.util.List;
  */
 public interface CartRepository extends ProjectRepository<Cart,String> {
     List<Cart> findByMemberId(String userId);
+
+    Cart findOneByMemberIdAndGoodsId(String memberId, String goodsId);
 }

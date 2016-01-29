@@ -314,7 +314,12 @@ public class Excel {
 			}
 		}
 		// 移动后位置
-		sheet.shiftRows(startRow, sheet.getLastRowNum(), rows, true, false);
+		int lastRow = sheet.getLastRowNum();
+		if(startRow<lastRow){
+			sheet.shiftRows(startRow, lastRow, rows, true, false);
+		}else {
+			sheet.shiftRows(startRow, startRow, rows, true, false);
+		}
 		//此处修改效率大幅提升，还解决了2003以前的bug（跨行不停增加，最后越界）
 		//此处不能放在循环体内
         boolean isFormula=checkIsFormula(sourceRow);
@@ -381,10 +386,10 @@ public class Excel {
 			}
 			String sourceCellValue = sourceCell.getStringCellValue();
 			if (sourceCellValue.indexOf("${ROW}") > -1) {
-				//sourceCell.setCellType(Cell.CELL_TYPE_FORMULA);
 				String formula = sourceCellValue.replaceAll("\\$\\{ROW\\}", String.valueOf(sourceCell.getRowIndex() + 1));
 				formula = formula.replace("=", "");
 				sourceCell.setCellFormula(formula);
+				sourceCell.setCellType(Cell.CELL_TYPE_FORMULA);
 			}
 		}
 	}

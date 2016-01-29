@@ -81,6 +81,14 @@ public class BaseExcelReport {
             Integer cellStatr = excelReportSQL.getCellStart() == null ? 0
                     : excelReportSQL.getCellStart();
             if (cellend > 0) {
+                if(cellend>cellStatr){
+                    Row sourceRow = sheet.getRow(cellend-1);
+                    boolean isFormula=Excel.checkIsFormula(sourceRow);
+                    if(isFormula) {
+                        Excel.replaceFormula(sourceRow);
+                    }
+                }
+
                 Integer num = cellend - cellStatr + 1;
 
                 // excel模板的结束换到开始行之间插入行
