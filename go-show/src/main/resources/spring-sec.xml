@@ -27,20 +27,17 @@
 		<!--  游客
 		<security:intercept-url pattern="/admin/home" access="ROLE_ANONYMOUS" />-->
 		<security:intercept-url pattern="/cl/**" access="IS_AUTHENTICATED_ANONYMOUSLY" />
-		
-		<security:access-denied-handler ref="accessDeniedHandler"/>  
-		
 		<security:form-login login-page="/login" default-target-url="/admin/home" />
 		<security:logout logout-success-url="/login" />
 		<security:http-basic />
-		
+
 		<security:access-denied-handler ref="accessDeniedHandler" />
 		<security:remember-me />
 		<!-- 自定义自动登录 
 		<security:custom-filter ref="rememberMeFilter" position="REMEMBER_ME_FILTER"/>-->
-		
-		
-		<security:custom-filter position="CONCURRENT_SESSION_FILTER" ref="concurrentSessionFilter" /> 
+
+
+		<security:custom-filter position="CONCURRENT_SESSION_FILTER" ref="concurrentSessionFilter" />
 		
 		<!-- 最大用户数
 		<security:session-management >
@@ -49,13 +46,48 @@
 
 		<!-- 登出 
 		<custom-filter ref="logoutFilter" before="LOGOUT_FILTER" />-->
-		<!-- 登录验证器  
-		<custom-filter ref="loginFilter" before="FORM_LOGIN_FILTER" />  -->
+
+		<!-- ajax登录过滤器
+		<security:custom-filter ref="ajaxLoginFilter" before="FORM_LOGIN_FILTER" />-->
+		<!-- 登录过滤器-->
+		<security:custom-filter ref="loginFilter" before="FORM_LOGIN_FILTER" />
 		<!--权限过滤器-->
 		<security:custom-filter ref="customFilterSecurityInterceptor" before="FILTER_SECURITY_INTERCEPTOR" />
-		
+
 	</security:http>
-	
+
+	<!-- ajax登录过滤器
+	<bean id="ajaxLoginFilter"
+		  class="com.ansteel.common.springsecurity.service.CustomUsernamePasswordAuthenticationFilter">
+		<property name="authenticationSuccessHandler" ref="ajaxAuthenticationSuccessHandler" />
+		<property name="authenticationFailureHandler" ref="ajaxAuthenticationFailureHandler" />
+		<property name="authenticationManager" ref="authenticationManager" />
+		<property name="filterProcessesUrl" value="/ajaxLogin" />
+	</bean>
+
+	<bean id="ajaxAuthenticationSuccessHandler" class="com.ansteel.common.springsecurity.service.AjaxAuthenticationSuccessHandler">
+	</bean>
+
+	<bean id="ajaxAuthenticationFailureHandler" class="com.ansteel.common.springsecurity.service.AjaxAuthenticationFailureHandler">
+	</bean>-->
+
+
+	<!-- 登录验证器-->
+	<bean id="loginFilter"
+		  class="com.ansteel.common.springsecurity.service.CustomUsernamePasswordAuthenticationFilter">
+		<property name="authenticationSuccessHandler" ref="loginLogAuthenticationSuccessHandler" />
+		<property name="authenticationFailureHandler" ref="simpleUrlAuthenticationFailureHandler" />
+		<property name="authenticationManager" ref="authenticationManager" />
+	</bean>
+
+	<bean id="loginLogAuthenticationSuccessHandler" class="com.ansteel.common.springsecurity.service.AjaxAuthenticationSuccessHandler">
+		<property name="alwaysUseDefaultTargetUrl" value="false"/>
+		<property name="defaultTargetUrl" value="/"/>
+	</bean>
+	<bean id="simpleUrlAuthenticationFailureHandler"
+				class="com.ansteel.common.springsecurity.service.AjaxAuthenticationFailureHandler">
+		<property name="defaultFailureUrl" value="/login.jsp?login_error=1" />
+	</bean>
 	<!-- Remember-Me对应的Filter 
    <bean id="rememberMeFilter"
    class="org.springframework.security.controller.authentication.rememberme.RememberMeAuthenticationFilter">

@@ -91,10 +91,8 @@ public class GlobalBaseController extends TreeController {
 			@RequestParam(value="_order",required=false)String order,//排序字段名
 			HttpServletRequest request,
 			HttpServletResponse response){	
-		Pageable pageable=null;
-		if(StringUtils.hasText(posStart)){
-			pageable=new PageRequest(PageUtils.getTotalPages(posStart),PageUtils.getMaxResults());
-		}
+		Pageable pageable=new PageRequest(PageUtils.getTotalPages(posStart),PageUtils.getMaxResults());
+
 		Page page = baseService.find(clazz, key, value, order, pageable);
 		return new UDataSet(request,DHtmlxConstants.UI_ROWS,page);
 	}
@@ -115,10 +113,7 @@ public class GlobalBaseController extends TreeController {
 			@QueryJson List<QueryMapping> queryList,
 			HttpServletRequest request,
 			HttpServletResponse response){		
-		Pageable pageable=null;
-		if(StringUtils.hasText(posStart)){
-			pageable=new PageRequest(PageUtils.getTotalPages(posStart),PageUtils.getMaxResults());
-		}
+		Pageable pageable=new PageRequest(PageUtils.getTotalPages(posStart),PageUtils.getMaxResults());
 		Page page = baseService.find(clazz,key,value,order,queryList,pageable);
 		return new UDataSet(request,DHtmlxConstants.UI_ROWS,page);
 	}
@@ -139,10 +134,8 @@ public class GlobalBaseController extends TreeController {
 			@QueryJson List<QueryMapping> queryList,
 			HttpServletRequest request,
 			HttpServletResponse response){
-		Pageable pageable=null;
-		if(StringUtils.hasText(posStart)){
-			pageable=new PageRequest(PageUtils.getTotalPages(posStart),PageUtils.getMaxResults());
-		}
+		Pageable pageable=new PageRequest(PageUtils.getTotalPages(posStart),PageUtils.getMaxResults());
+
 		Page page = baseService.find(clazz,key,value,order,queryList,pageable);
 		return new UDataSet(request,DHtmlxConstants.UI_ROWS,page);
 	}

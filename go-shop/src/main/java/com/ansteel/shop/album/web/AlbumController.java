@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 import com.ansteel.core.constant.Public;
+import com.ansteel.core.utils.JavaScriptUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,13 +20,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.ansteel.core.utils.BeanUtils;
-import com.ansteel.core.utils.ExceprionUtils;
 import com.ansteel.core.utils.FisUtils;
 import com.ansteel.core.utils.ResponseUtils;
 import com.ansteel.shop.album.domain.AlbumClass;
 import com.ansteel.shop.album.service.AlbumClassService;
-import com.ansteel.shop.store.domain.Store;
-import com.ansteel.shop.utils.JavaScriptUtils;
 
 @Controller
 @RequestMapping(value = Public.SELLER + "/album")
@@ -79,7 +77,7 @@ public class AlbumController {
 
 		String url=request.getContextPath()+"/se/album/cate";
 		if (result.hasErrors()) {
-			JavaScriptUtils.BindingResultError(result,url,response);
+			JavaScriptUtils.BindingResultError(result, url, response);
 			return ;
 		}
 		String name = "";

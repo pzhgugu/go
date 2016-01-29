@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ansteel.core.constant.Public;
+import com.ansteel.core.utils.JavaScriptUtils;
 import com.ansteel.core.utils.ResponseUtils;
 import com.ansteel.core.utils.StringUtils;
 import com.ansteel.shop.goods.domain.GoodsCommon;
@@ -20,7 +21,6 @@ import com.ansteel.shop.store.domain.StoreWarning;
 import com.ansteel.shop.store.service.StoreGoodsClassService;
 import com.ansteel.shop.store.service.StorePlateService;
 import com.ansteel.shop.store.service.StoreWarningService;
-import com.ansteel.shop.utils.JavaScriptUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;

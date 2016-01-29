@@ -70,6 +70,8 @@ public class ValidationCodeServlet extends HttpServlet {
 
     public static final String VALIDATION_CODE="validationCode";
 
+    public static final String VALIDATION_NAME="captcha";
+
     public ValidationCodeServlet() {
         super();
     }

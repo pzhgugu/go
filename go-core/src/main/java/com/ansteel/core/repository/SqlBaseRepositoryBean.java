@@ -24,7 +24,7 @@ public class SqlBaseRepositoryBean implements SqlBaseRepository{
 	@Override
 	public List findSqlMap(String queryString, Map<String, Object> whereMap, Pageable pageable) {
 		SQLQuery sqlQuery = this.getSQLQuery(queryString, whereMap);
-		return sqlQuery.setResultTransformer(Transformers.ALIAS_TO_ENTITY_MAP).setFirstResult(pageable.getPageNumber())
+		return sqlQuery.setResultTransformer(Transformers.ALIAS_TO_ENTITY_MAP).setFirstResult(pageable.getPageNumber()*pageable.getPageSize())
 				.setMaxResults(pageable.getPageSize()).list();
 	}
 

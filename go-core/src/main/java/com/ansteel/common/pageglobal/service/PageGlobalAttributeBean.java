@@ -1,9 +1,11 @@
 package com.ansteel.common.pageglobal.service;
 
 import java.util.Collection;
+import java.util.Properties;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.ansteel.core.context.PropertiesConfigurationLoader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.access.ConfigAttribute;
@@ -57,12 +59,12 @@ public class PageGlobalAttributeBean implements PageGlobalAttribute {
 		//附件物理路径
 		request.setAttribute(ViewModelConstant.S_ATT_PATH,attPath);
 		//附件Web路径
-		request.setAttribute(ViewModelConstant.S_ATT_WEB,serviceUrl+"/"+attWeb);
+		request.setAttribute(ViewModelConstant.S_ATT_WEB, serviceUrl + "/" + attWeb);
 		
-		String url = RequestUtils.getServletPath(request);
+		/*String url = RequestUtils.getServletPath(request);
 		
 		Collection<ConfigAttribute> configAttributeList = securityMetadata.getAttributes(url);
-		System.out.println(configAttributeList.size());
+		System.out.println(configAttributeList.size());*/
 	}
 
 }

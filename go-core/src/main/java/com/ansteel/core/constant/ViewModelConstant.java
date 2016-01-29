@@ -153,6 +153,6 @@ public class ViewModelConstant {
 	 * 模板、视图变量
 	 */
 	public static final String P_VARIABLE = "P_VARIABLE";
-	
 
+	public static final String IS_LOGIN_CAPTCHA = "IS_LOGIN_CAPTCHA";
 }

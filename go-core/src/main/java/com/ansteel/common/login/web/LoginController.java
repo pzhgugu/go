@@ -6,7 +6,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.ansteel.common.login.service.LoginService;
+import com.ansteel.core.constant.ViewModelConstant;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.InternalAuthenticationServiceException;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Controller;
@@ -27,6 +31,9 @@ public class LoginController {
 	
 	static Logger logger = Logger.getLogger(LoginController.class);
 
+	@Autowired
+	LoginService loginService;
+
 	@RequestMapping(method = RequestMethod.GET, value = "/login")
 	public String login(Model model,HttpServletRequest request,
 			HttpServletResponse response) {
@@ -42,6 +49,9 @@ public class LoginController {
 				model.addAttribute("errorMessage", e.getMessage());
 			}
 		}
+
+		//是否登录使用验证码
+		request.setAttribute(ViewModelConstant.IS_LOGIN_CAPTCHA, loginService.getIsLoginCaptcha());
 		return FisUtils.page("core:pages/login/login.html");
 	}
 }

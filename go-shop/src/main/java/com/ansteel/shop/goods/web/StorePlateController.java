@@ -4,7 +4,6 @@ import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.*;
 import com.ansteel.shop.store.domain.StorePlate;
 import com.ansteel.shop.store.service.StorePlateService;
-import com.ansteel.shop.utils.JavaScriptUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -18,9 +17,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 

@@ -28,8 +28,10 @@ public class CustomLoginUrlAuthenticationEntryPoint extends LoginUrlAuthenticati
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {
         HttpServletRequest httpRequest = (HttpServletRequest)request;
         if (RequestUtils.isAjaxRequest(request)){
-        	ResponseUtils.returnAjaxMessage(response, "与服务器的会话已经超时",-2); 
-        } else
+        	//ResponseUtils.returnAjaxMessage(response, "与服务器的会话已经超时",-2);
+            ResponseUtils.returnAjaxMessage(response,authException.getMessage(),-2);
+        } else {
             super.commence(request, response, authException);
+        }
     }
 }

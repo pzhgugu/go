@@ -2,13 +2,13 @@ package com.ansteel.shop.goods.web;
 
 import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.FisUtils;
+import com.ansteel.core.utils.JavaScriptUtils;
 import com.ansteel.core.utils.ResponseUtils;
 import com.ansteel.shop.goods.domain.*;
 import com.ansteel.shop.goods.service.GoodsClassService;
 import com.ansteel.shop.goods.service.GoodsSpecService;
 import com.ansteel.shop.goods.service.GoodsSpecValueService;
 import com.ansteel.shop.goods.service.GoodsTypeService;
-import com.ansteel.shop.utils.JavaScriptUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

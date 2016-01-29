@@ -211,6 +211,11 @@ public class RequestUtils {
      * @return
      */
     public static boolean isAjaxRequest(HttpServletRequest request) {
+        if(request.getParameterMap().containsKey("inajax")){
+            if(request.getParameter("inajax").equals("1")){
+                return true;
+            }
+        }
     	 return "XMLHttpRequest".equals(request.getHeader("X-Requested-With"));
     }
     /**
