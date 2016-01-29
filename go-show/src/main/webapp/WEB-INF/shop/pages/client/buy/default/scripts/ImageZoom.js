@@ -1,10 +1,3 @@
-/**
-* ImgZoom.js
-* 基于jQuery扩展插件 ImgZoom
-* create: 2012.02.03
-* update: 2013.05.23
-* admin@laoshu133.com
-*/
 (function(global, document, $, undefined){
 	var 
 	noop = $.noop,

@@ -39,6 +39,14 @@
 							tabindex="2"
 							style="width: 10em; border: 1px solid #CCC; padding: 4px 2px;">
 					</p>
+<c:if test="${IS_LOGIN_CAPTCHA=='1'}">
+					<p style="margin: 0.1em 0;">验证码： <input type="text" maxlength="4" autocomplete="off" size="4"  name="captcha" style=" border: 1px solid #CCC; padding: 4px 2px;">
+						<img border="0"
+							 onclick="this.src='${S_URL}/validationCodeServlet.png?t=' + Math.random()"
+							 id="codeimage" name="codeimage"
+							 src="${S_URL}/validationCodeServlet.png" style="height: 22px;"></p>
+</c:if>
+
 					<p style="margin: 0.5em 0;">
 						<input type="submit" class="button" tabindex="4" id="loginbtn" name="dologinbtn"
 							value="登录管理平台"

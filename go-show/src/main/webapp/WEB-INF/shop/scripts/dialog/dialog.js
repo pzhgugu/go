@@ -183,9 +183,9 @@ Dialog.prototype = {
 
         /* 锁定屏幕 */
         if (lock == 1) ScreenLocker.lock(999);
-		$(this.dom.wrapper).draggable({
-            'handle' : this.dom.head
-        });        
+		//$(this.dom.wrapper).draggable({
+        //    'handle' : this.dom.head
+        //});
 
         /* 显示对话框 */
         $(this.dom.wrapper).show();

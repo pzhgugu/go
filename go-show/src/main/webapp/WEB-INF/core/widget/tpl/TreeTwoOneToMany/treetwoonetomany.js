@@ -113,12 +113,19 @@ GPW.tree = {
 	onClick:function(){
 		this.mainTree.attachEvent("onClick",function(id){
 		    if(!this.hasChildren(id)){
-		    	var url=GPC.url.refreshTwoGridUrl+"&_value="+id;;
+		    	/*var url=GPC.url.refreshTwoGridUrl+"&_value="+id;;
 		    	GPW.grid.twoGrid.clearAll();
 		    	GPW.grid.twoGrid.load(url,function (){
 			    	var url=GPC.url.refreshGridUrl+"&_value="+id;
 			    	GPW.grid.refreshMainGrid(url);
-		    	},"js");
+		    	},"js");*/
+				var url=GPC.url.refreshGridUrl+"&_value="+id;
+				GPW.grid.mainGrid.clearAll();
+				GPW.grid.mainGrid.load(url,function (){
+					var urlTwo=GPC.url.refreshTwoGridUrl+"&_value="+id;
+					GPW.grid.twoGrid.clearAll();
+					GPW.grid.twoGrid.load(urlTwo,GPW.grid.doAfterRefresh,"js");
+				},"js");
 		    }
 		    return true;
 		});

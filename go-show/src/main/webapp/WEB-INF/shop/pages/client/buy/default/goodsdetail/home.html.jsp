@@ -25,6 +25,8 @@
     <fis:require id="common:widget/jquery-ui/jquery.ui.js"/>
     <fis:require id="common:widget/jquery/jquery.validation.js"/>
     <fis:require id="common:widget/jquery/jquery.masonry.js"/>
+    <fis:require id="common:widget/jquery/perfect-scrollbar.js"/>
+    <fis:require id="common:widget/jquery/jquery.mousewheel.js" />
     <fis:require id="shop:scripts/member.js"/>
     <fis:require id="shop:scripts/common.js"/>
     <fis:require id="shop:scripts/shop.js"/>
@@ -35,6 +37,8 @@
 </script>
 
   <body>
+  <div id="append_parent"></div>
+  <div id="ajaxwaitid"></div>
   <fis:block url="shop:pages/client/top.html.jsp"></fis:block>
   <fis:block url="shop:pages/client/buy/${P_STYLE}/header.html.jsp" />
   <fis:block url="shop:pages/client/buy/${P_STYLE}/nav.html.jsp" />

@@ -1,7 +1,10 @@
 <%@page language="Java" contentType="text/html; charset=UTF-8"
         pageEncoding="UTF-8" %>
 <%@ taglib prefix='c' uri='http://java.sun.com/jstl/core_rt' %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ taglib uri="/fis" prefix="fis" %>
+
+
 
 <div class="ncs-detail" style="display: block;"><!-- S 商品举报 -->
     <div class="ncs-inform"><span>举报中心<i></i></span>
@@ -124,6 +127,11 @@
         });
 
     </fis:script>
+
+
+    <form action="${S_URL}/shop/buy" method="post" id="buynow_form">
+        <input type="hidden" name="cart_id" id="cart_id">
+    </form>
 
     <!-- S 商品基本信息 -->
     <div class="ncs-goods-summary">
@@ -248,7 +256,7 @@
                     <dl>
                         <dt>成功添加到购物车<a onclick="$('.ncs-cart-popup').css({'display':'none'});" title="关闭">X</a></dt>
                         <dd>购物车共有 <strong id="bold_num"></strong> 种商品 总金额为：<em class="saleP" id="bold_mly"></em></dd>
-                        <dd class="btns"><a onclick="location.href='#'"
+                        <dd class="btns"><a onclick="location.href='${S_URL}/shop/cart'"
                                             class="ncs-btn-mini ncs-btn-green" href="javascript:void(0);">查看购物车</a> <a
                                 onclick="$('.ncs-cart-popup').css({'display':'none'});" value="" class="ncs-btn-mini"
                                 href="javascript:void(0);">继续购物</a></dd>
@@ -293,11 +301,11 @@
     $(function(){
         // 加入购物车
         $('a[nctype="addcart_submit"]').click(function(){
-            addcart(256, checkQuantity());
+            addcart('${P_GOODS.id}', checkQuantity());
         });
         // 立即购买
         $('a[nctype="buynow_submit"]').click(function(){
-            buynow(256,checkQuantity());
+            buynow('${P_GOODS.id}',checkQuantity());
         });
 
         //浮动导航  waypoints.js
@@ -377,7 +385,14 @@
 
     // 立即购买js
     function buynow(goods_id,quantity){
-        login_dialog();
+      <sec:authorize ifNotGranted="ROLE_ANONYMOUS">
+          if (!quantity) {
+          return;
+          }
+          $("#cart_id").val(goods_id+'|'+quantity);
+          $("#buynow_form").submit();
+      </sec:authorize>
+      <sec:authorize ifAnyGranted="ROLE_ANONYMOUS">login_dialog();</sec:authorize>
     }
     $(function(){
         //选择地区查看运费
@@ -511,7 +526,7 @@
     function addcart(goods_id, quantity)
     {
         if (!quantity) return false;
-        var url = 'wwww';
+        var url = '${S_URL}/cl/cart/add';
         $.getJSON(url, {'goods_id':goods_id, 'quantity':quantity}, function(data){
             if(data != null){
                 if (data.state)
