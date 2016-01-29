@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ansteel.core.constant.Public;
+import com.ansteel.core.utils.JavaScriptUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -20,12 +21,10 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.ansteel.core.utils.FisUtils;
 import com.ansteel.core.utils.ResponseUtils;
-import com.ansteel.core.utils.StringUtils;
 import com.ansteel.shop.album.domain.AlbumClass;
 import com.ansteel.shop.album.domain.AlbumPic;
 import com.ansteel.shop.album.service.AlbumClassService;
 import com.ansteel.shop.album.service.AlbumPicService;
-import com.ansteel.shop.utils.JavaScriptUtils;
 import com.ansteel.shop.utils.JsonImage;
 
 @Controller
@@ -93,7 +92,7 @@ public class AlbumPicController {
 		albumPicService.delete(id);
 		String url=request.getContextPath()+"/se/albumpic/piclist?category_id="+categoryId;
 		String name="图片删除成功";	
-		ResponseUtils.xmlCDataOut(response,JavaScriptUtils.returnShowDialog(name,url));
+		ResponseUtils.xmlCDataOut(response, JavaScriptUtils.returnShowDialog(name, url));
 	}
 
 	@RequestMapping("/image/moves")
