@@ -47,11 +47,12 @@ public class OrderSerialNumberServiceImpl implements OrderSerialNumberService {
                 documentNumberTree=documentNumberTreeServicer.save(documentNumberTree);
             }
             documentNumber=new DocumentNumber();
-            documentNumber.setType(ORDER_SERIAL_NAME);
+            documentNumber.setName(ORDER_SERIAL_NAME);
+            documentNumber.setZero(3);
             documentNumber.setIsYear(1);
             documentNumber.setIsDay(1);
             documentNumber.setIsMonth(1);
-            documentNumber.setDigitCapacity(3);
+            documentNumber.setDigitCapacity(4);
             documentNumber.setDocumentNumberTree(documentNumberTree);
             documentNumber=documentNumberService.save(documentNumber);
         }

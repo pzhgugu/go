@@ -10,34 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23d20e94-640b-4f14-9abe-d205c42b79fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/domain/DocumentNumber.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/controller/DocumentNumberController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/repository/DocumentNumberRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/service/DocumentNumberService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/service/DocumentNumberServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/domain/DocumentNumberTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/repository/DocumentNumberTreeRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/service/DocumentNumberTreeServicer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/service/DocumentNumberTreeServicerImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/domain/DocumentSerial.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/repository/DocumentSerialRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/service/DocumentSerialService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/service/DocumentSerialServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsOrder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsOrderController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/repository/GoodsOrderRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsOrderService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsOrderServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/OrderSerialNumberService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/OrderSerialNumberServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/service/ScopeFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/service/SerialNumberCreateService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/service/SerialNumberCreateServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/SystemDateUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/shopbuy/buy_step2.html.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ShopBuyController.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/ShopBuyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/shopbuy/cart.html.jsp" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/shopbuy/cart.html.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/scripts/goods_cart.js" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/scripts/goods_cart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/OrderSerialNumberServiceImpl.java" afterPath="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/OrderSerialNumberServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="go.iws" />
@@ -135,17 +108,20 @@
         <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/domain/DocumentNumber.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-              <folding />
+              <caret line="57" column="20" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="20" />
+              <folding>
+                <element signature="e#3417#3418#0" expanded="true" />
+                <element signature="e#3467#3468#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderSerialNumberServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OrderSerialNumberServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/OrderSerialNumberServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="70" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="70" />
+            <state vertical-scroll-proportion="1.8453039">
+              <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,11 +149,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoodsOrderController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GoodsOrderController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsOrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5524862">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -275,9 +251,9 @@
         <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/service/DocumentNumberService.java" />
         <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/service/DocumentNumberServiceImpl.java" />
         <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/repository/DocumentNumberRepository.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/OrderSerialNumberServiceImpl.java" />
         <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/service/SerialNumberCreateServiceImpl.java" />
         <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/domain/DocumentNumber.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/OrderSerialNumberServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -943,7 +919,7 @@
       <workItem from="1453941780526" duration="22347000" />
       <workItem from="1454028040751" duration="19602000" />
       <workItem from="1454286417274" duration="1481000" />
-      <workItem from="1454288904581" duration="13497000" />
+      <workItem from="1454288904581" duration="14204000" />
     </task>
     <task id="LOCAL-00001" summary="测试一下">
       <created>1440299520520</created>
@@ -1227,11 +1203,17 @@
       <option name="project" value="LOCAL" />
       <updated>1454035939181</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="开发(电商修改)">
+      <created>1454315042426</created>
+      <option name="number" value="00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1454315042426</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="983959000" />
+    <option name="totallyTimeSpent" value="984666000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1622,7 +1604,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="27" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1640,7 +1622,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="41" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1658,7 +1640,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="56" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1716,7 +1698,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1753,14 +1735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/OrderSerialNumberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/service/SerialNumberCreateService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1782,9 +1756,9 @@
         <state vertical-scroll-proportion="0.33333334">
           <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#835#836#0" expanded="false" />
+            <element signature="e#903#904#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1794,16 +1768,6 @@
         <state vertical-scroll-proportion="0.44444445">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/OrderSerialNumberServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="70" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1817,19 +1781,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/domain/DocumentNumber.java">
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+          <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsOrderController.java">
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/OrderSerialNumberService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5524862">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/documentnumber/domain/DocumentNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="20" />
+          <folding>
+            <element signature="e#3417#3418#0" expanded="true" />
+            <element signature="e#3467#3468#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/OrderSerialNumberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.8453039">
+          <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
