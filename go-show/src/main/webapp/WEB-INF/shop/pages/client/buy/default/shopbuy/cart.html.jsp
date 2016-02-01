@@ -75,7 +75,7 @@
         <h3>我的购物车</h3>
         <h5>查看购物车商品清单，增加减少商品数量，并勾选想要的商品进入下一步操作。</h5>
       </div>
-      <form name="form_buy" id="form_buy" method="POST" action="http://localhost/shopnc/shop/index.php?act=buy&amp;op=buy_step1">
+      <form name="form_buy" id="form_buy" method="POST" action="${S_URL}/shop/buy">
         <input type="hidden" name="ifcart" value="1">
         <table nc_type="table_cart" class="ncc-table-style">
           <thead>
@@ -100,11 +100,11 @@
 
             <c:forEach items="${cartMap.value}" var="cart">
           <!-- S one store list -->
-          <tr class="shop-list " nc_group="${cart.goodsId}" id="cart_item_1">
-            <td><input type="checkbox" name="cart_id[]" id="cart_id${cart.goodsId}" value="1|1" nc_type="eachGoodsCheckBox" checked=""></td>
-            <td class="w60"><a class="ncc-goods-thumb" target="_blank" href="${S_URL}/cl/goods/show?common_id=${cart.goodsId}"><img alt="${cart.goodsName}" src="${S_URL}/att/download/${cart.goodsImage}"></a></td>
+          <tr class="shop-list " nc_group="${cart.goodsId}" id="cart_item_${cart.goodsId}">
+            <td><input type="checkbox" name="cart_id" id="cart_id${cart.goodsId}" value="${cart.goodsId}|${cart.goodsNum}" nc_type="eachGoodsCheckBox" checked=""></td>
+            <td class="w60"><a class="ncc-goods-thumb" target="_blank" href="${S_URL}/cl/goods/show?goods_id=${cart.goodsId}"><img alt="${cart.goodsName}" src="${S_URL}/att/download/${cart.goodsImage}"></a></td>
             <td class="tl"><dl class="ncc-goods-info">
-              <dt><a target="_blank" href="${S_URL}/cl/goods/show?common_id=${cart.goodsId}">${cart.goodsName}</a></dt>
+              <dt><a target="_blank" href="${S_URL}/cl/goods/show?goods_id=${cart.goodsId}">${cart.goodsName}</a></dt>
               <dd>
               </dd>
             </dl></td>
@@ -126,14 +126,14 @@
             <td colspan="20" class="tr"><div class="ncc-store-account">
               <dl>
                 <dt>店铺合计：</dt>
-                <dd>￥<em nc_type="eachStoreTotal">1049.00</em></dd>
+                <dd>￥<em nc_type="eachStoreTotal"></em></dd>
               </dl>
             </div></td>
           </tr>
           </tbody>
           <tfoot>
           <tr>
-            <td colspan="20"><div class="ncc-all-account">商品总价（不含运费）￥<em id="cartTotal">1049.00</em>元</div></td>
+            <td colspan="20"><div class="ncc-all-account">商品总价（不含运费）￥<em id="cartTotal"></em>元</div></td>
           </tr>
           </tfoot>
         </table>

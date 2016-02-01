@@ -104,8 +104,8 @@ function calc_cart_price() {
         //购物车每个店铺已选择商品的总价格
         var eachTotal = 0;
         $(this).find('em[nc_type="eachGoodsTotal"]').each(function(){
-            if ($(this).parent().parent().find('input[type="checkbox"]').eq(0).prop('checked') != 'checked') return;
-            eachTotal = eachTotal + parseFloat($(this).html());  
+            if ($(this).parent().parent().find('input[type="checkbox"]').prop('checked') != true) return;
+            eachTotal = eachTotal + parseFloat($(this).html());
         });
         allTotal += eachTotal;
         $(this).children('tr').last().find('em[nc_type="eachStoreTotal"]').eq(0).html(number_format(eachTotal,2));

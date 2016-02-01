@@ -162,4 +162,15 @@ public class ShopBuyController {
         model.addAttribute("P_STEP","step2");
         return FisUtils.page("shop:pages/client/buy/" + style + "/shopbuy/buy_step1.html");
     }
+
+    @RequestMapping("/order")
+    public String index(Model model,
+                        HttpServletRequest request,
+                        HttpServletResponse response) {
+
+        String style = PageStyle.getStyle();
+        model.addAttribute("P_STYLE",style);
+        model.addAttribute("P_STEP","step3");
+        return FisUtils.page("shop:pages/client/buy/" + style + "/shopbuy/buy_step2.html");
+    }
 }
