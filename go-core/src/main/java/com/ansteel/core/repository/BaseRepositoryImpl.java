@@ -21,11 +21,7 @@ import javax.persistence.LockModeType;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Tuple;
 import javax.persistence.TypedQuery;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Path;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
+import javax.persistence.criteria.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -164,7 +160,9 @@ public class BaseRepositoryImpl<T, ID extends Serializable> implements BaseRepos
 		CriteriaQuery<Long> query = builder.createQuery(Long.class);
 
 		Root<T> root = applySpecificationToCriteria(spec, query);
-
+		//解决sqlservice查询报错
+		List<Order> o =new ArrayList<>();
+		query.orderBy(o);
 		if (query.isDistinct()) {
 			query.select(builder.countDistinct(root));
 		} else {

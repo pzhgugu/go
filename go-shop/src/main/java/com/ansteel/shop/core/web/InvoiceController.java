@@ -3,7 +3,6 @@ package com.ansteel.shop.core.web;
 import com.ansteel.core.utils.ExceprionUtils;
 import com.ansteel.core.utils.FisUtils;
 import com.ansteel.core.utils.StringUtils;
-import com.ansteel.shop.core.domain.Address;
 import com.ansteel.shop.core.domain.Invoice;
 import com.ansteel.shop.core.service.InvoiceService;
 import com.ansteel.shop.utils.PageStyle;
@@ -55,7 +54,7 @@ public class InvoiceController {
         }
         Invoice inv = invoiceService.save(invoice);
 
-        InvoiceModes invoiceModes = new InvoiceModes();
+        InvoiceModel invoiceModes = new InvoiceModel();
         invoiceModes.setState("success");
         invoiceModes.setId(inv.getId());
         return  invoiceModes;

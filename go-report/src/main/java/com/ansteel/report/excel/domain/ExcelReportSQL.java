@@ -46,12 +46,12 @@ public class ExcelReportSQL extends OperEntity {
 	/**
 	 * Excle编码
 	 */
-	@Column(length = 4000)
+	@Lob
 	private String recode;
 	/**
 	 * 不循环编码
 	 */
-	@Column(length = 4000)
+	@Lob
 	private String fixedRecode;
 	/**
 	 * sheet名称

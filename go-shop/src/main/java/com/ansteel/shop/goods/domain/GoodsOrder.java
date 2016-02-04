@@ -8,6 +8,9 @@ import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * 订单表
+ */
 @Entity
 @Table(name = Constants.G_TABLE_PREFIX + "goods_order")
 public class GoodsOrder extends BaseEntity {

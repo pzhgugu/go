@@ -29,7 +29,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach items="${P_BUYGOODS_STORE}" var="storeBuyGoods">
+                <c:forEach items="${P_BUYGOODS_STORE}" var="storeBuyGoods" varStatus="statusStore">
                         <c:set var="amount" value="0" />
                         <c:set var="store" value="${storeBuyGoods.value[0].store}"></c:set>
                 <tr>
@@ -37,13 +37,16 @@
                         <i class="icon-home"></i>
                         <a href="${S_URL}/cl/store/home?store_id=${store.id}" target="_blank">${store.name}</a>
                         <div class="store-sale">&emsp;</div>
+                       <input type="hidden" name="storeList[${statusStore.index}].storeId" value="${store.id}">
+                       <input type="hidden" name="storeList[${statusStore.index}].storeName" value="${store.name}">
                    </th>
                 </tr>
                         <c:set var="price" value="0" />
-               <c:forEach items="${storeBuyGoods.value}" var="buyGoods">
+               <c:forEach items="${storeBuyGoods.value}" var="buyGoods" varStatus="statusGoods">
                 <tr class="shop-list " id="cart_item_${buyGoods.goods.id}">
                         <td>
-                            <input type="hidden" name="cart_id[]" value="${buyGoods.cartId}">
+                            <input type="hidden" name="storeList[${statusStore.index}].cartList[${statusGoods.index}].number" value="${buyGoods.number}">
+                            <input type="hidden" name="storeList[${statusStore.index}].cartList[${statusGoods.index}].goodsId" value="${buyGoods.goods.id}">
                         </td>
                         <td class="w60">
                                 <a class="ncc-goods-thumb" target="_blank" href="${S_URL}/cl/goods/show?goods_id=${buyGoods.goods.id}"><img alt="${buyGoods.goods.name}" src="${S_URL}/att/download/${buyGoods.goods.goodsImage}"></a></td>
@@ -62,7 +65,7 @@
                 <tr>
                         <td class="w10"></td>
                         <td colspan="2" class="tl">买家留言：
-                                <input type="text" maxlength="150" name="pay_message[1]" class="text w340" value="">
+                                <input type="text" maxlength="150" name="storeList[${statusStore.index}].message" class="text w340" value="">
                                 &nbsp;</td>
                         <td colspan="10" class="tl"><div class="ncc-form-default"> </div></td>
                 </tr>
@@ -77,7 +80,9 @@
                                         <dt>商品金额：</dt>
                                         <dd>￥<em id="eachStoreGoodsTotal_1">${price}</em></dd>
                                 </dl>
-
+                            <input type="hidden" name="storeList[${statusStore.index}].freight" value="${freight}">
+                            <input type="hidden" name="storeList[${statusStore.index}].storeGoodsPrice" value="${price}">
+                            <input type="hidden" name="storeList[${statusStore.index}].storePrice" value="${freight+price}">
                                 <!-- S voucher list -->
 
 
@@ -97,7 +102,8 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                        <td colspan="20"><div class="ncc-all-account">订单总金额：￥<em id="orderTotal">${amount}</em>元</div></td>
+                    <input type="hidden" name="amount" value="${amount}">
+                    <td colspan="20"><div class="ncc-all-account">订单总金额：￥<em id="orderTotal">${amount}</em>元</div></td>
                 </tr>
                 </tfoot>
         </table>

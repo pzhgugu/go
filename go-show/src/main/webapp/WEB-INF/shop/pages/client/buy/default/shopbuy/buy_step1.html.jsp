@@ -103,10 +103,15 @@
         $('#edit_payment').click();
       }
 
+      var storeIdArray = new Array();
+      <c:forEach items="${P_BUYGOODS_STORE}" var="storeBuyGoods" varStatus="statusStore">
+      storeIdArray.push('${storeBuyGoods.key}');
+      </c:forEach>
+
       //异步显示每个店铺运费 city_id计算运费area_id计算是否支持货到付款
       function showShippingPrice(city_id,area_id) {
-        /*$('#buy_city_id').val('');
-         $.post(SITEURL + '/index.php?act=buy&op=change_addr', {'freight_hash':'php',city_id:city_id,'area_id':area_id}, function(data){
+        $('#buy_city_id').val('');
+         $.post(SITEURL + '/address/freight', {'store_ids':storeIdArray,city_id:city_id,'area_id':area_id}, function(data){
          if(data.state == 'success') {
          $('#buy_city_id').val(city_id);
          $('#allow_offpay').val(data.allow_offpay);
@@ -120,8 +125,28 @@
          calcOrder();
          }
 
-         },'json');*/
+         },'json');
       }
+
+      function submitNext(){
+        if ($('#address_id').val() == ''){
+          showDialog('请先设置收货地址', 'error','','','','','','','','',2);
+          return;
+        }
+        if ($('#buy_city_id').val() == '') {
+          showDialog('正在计算运费,请稍后', 'error','','','','','','','','',2);
+          return;
+        }
+        if ($('input[name="pd_pay"]').attr('checked') && $('#password_callback').val() != '1') {
+          showDialog('使用预存款支付，需输入登录密码并使用  ', 'error','','','','','','','','',2);
+          return;
+        }
+        $('#order_form').submit();
+      }
+      $(function(){
+        $('#submitOrder').on('click',function(){submitNext()});
+        calcOrder();
+      });
     </script>
     <fis:out id="shop:scripts/dialog/dialog.js" iid="dialog_js"/>
   </head>
@@ -146,11 +171,39 @@
       <fis:block url="shop:pages/client/buy/${P_STYLE}/shopbuy/payment.html.jsp"></fis:block>
       <!--发票 -->
       <fis:block url="shop:pages/client/buy/${P_STYLE}/shopbuy/invoice.html.jsp"></fis:block>
+
+      <form id="order_form" action="${S_URL}/shop/order" name="order_form" method="post">
       <!--购买商品列表 -->
       <fis:block url="shop:pages/client/buy/${P_STYLE}/shopbuy/goods_list.html.jsp"></fis:block>
 
       <div class="ncc-bottom"> <a class="ncc-btn ncc-btn-acidblue fr" id="submitOrder" href="javascript:void(0)">提交订单</a> </div>
 
+
+
+        <!-- 来源于购物车标志 -->
+        <input value="1" type="hidden" name="ifcart">
+
+        <!-- offline/online -->
+        <input value="online" name="pay_name" id="pay_name" type="hidden">
+
+        <!-- 是否保存增值税发票判断标志 -->
+        <input value="GJ8cD6o1MyKQbjKizY5sAvpPB_vDdhURSg-" name="vat_hash" type="hidden">
+
+        <!-- 收货地址ID -->
+        <input value="5" name="address_id" id="address_id" type="hidden">
+
+        <!-- 城市ID(运费) -->
+        <input value="" name="buy_city_id" id="buy_city_id" type="hidden">
+
+        <!-- 记录所选地区是否支持货到付款 第一个前端JS判断 第二个后端PHP判断 -->
+        <input value="" id="allow_offpay" name="allow_offpay" type="hidden">
+        <input value="" id="offpay_hash" name="offpay_hash" type="hidden">
+
+        <!-- 默认使用的发票 -->
+        <input value="1" name="invoice_id" id="invoice_id" type="hidden">
+
+        <input value="#" name="ref_url" type="hidden">
+      </form>
     </div>
   </div>
 

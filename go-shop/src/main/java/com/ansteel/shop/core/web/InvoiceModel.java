@@ -4,7 +4,7 @@ package com.ansteel.shop.core.web;
  * 发票返回数据模型
  */
 
-public class InvoiceModes {
+public class InvoiceModel {
 
     private String state;
 

@@ -8,6 +8,7 @@ import com.ansteel.shop.core.service.AddressService;
 import com.ansteel.shop.goods.domain.Cart;
 import com.ansteel.shop.goods.domain.Goods;
 import com.ansteel.shop.goods.service.CartService;
+import com.ansteel.shop.goods.service.GoodsOrderService;
 import com.ansteel.shop.goods.service.GoodsService;
 import com.ansteel.shop.store.domain.Store;
 import com.ansteel.shop.store.service.StoreService;
@@ -43,6 +44,9 @@ public class ShopBuyController {
 
     @Autowired
     CartService cartService;
+
+    @Autowired
+    GoodsOrderService goodsOrderService;
 
     @RequestMapping("/cart")
     public String list(Model model,
@@ -165,9 +169,11 @@ public class ShopBuyController {
 
     @RequestMapping("/order")
     public String index(Model model,
+                        ShopOrderModel shopOrderModel,
                         HttpServletRequest request,
                         HttpServletResponse response) {
 
+        goodsOrderService.createOrder(shopOrderModel);
         String style = PageStyle.getStyle();
         model.addAttribute("P_STYLE",style);
         model.addAttribute("P_STEP","step3");

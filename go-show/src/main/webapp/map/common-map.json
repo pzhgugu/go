@@ -16,6 +16,10 @@
             "uri": "/show/static/common/widget/ajaxfileupload/ajaxfileupload.js",
             "type": "js"
         },
+        "common:widget/charts/echarts.min.js": {
+            "uri": "/show/static/common/widget/charts/echarts.min.js",
+            "type": "js"
+        },
         "common:widget/colorpicker/evol.colorpicker.css": {
             "uri": "/show/static/common/widget/colorpicker/evol.colorpicker.css",
             "type": "css"

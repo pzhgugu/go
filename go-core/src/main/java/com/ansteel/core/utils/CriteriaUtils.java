@@ -182,7 +182,7 @@ public class CriteriaUtils {
 
     public static <T extends BaseEntity> Predicate getPredicate(Root<T> root,
                                                                 CriteriaQuery<?> query, CriteriaBuilder cb, Class clazz, String key, String value, String order) {
-        if (StringUtils.hasText(order)) {
+       if (StringUtils.hasText(order)) {
             query.orderBy(cb.asc(root.get(order)));
         } else {
             Field field = ReflectionUtils.findField(clazz, Public.DISPLAY_ORDER);
