@@ -38,6 +38,11 @@ public class InvoiceServiceImpl implements InvoiceService {
         invoiceRepository.delete(id);
     }
 
+    @Override
+    public Invoice findOne(String id) {
+        return invoiceRepository.findOne(id);
+    }
+
     public String getUserId() {
         String userId=UserUtils.getUserId();
         Assert.hasText(userId, "请登陆系统");

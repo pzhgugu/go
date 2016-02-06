@@ -181,7 +181,7 @@
 
 
         <!-- 来源于购物车标志 -->
-        <input value="1" type="hidden" name="ifcart">
+        <input value="${P_IFCART}" type="hidden" name="ifcart">
 
         <!-- offline/online -->
         <input value="online" name="pay_name" id="pay_name" type="hidden">
@@ -190,19 +190,19 @@
         <input value="GJ8cD6o1MyKQbjKizY5sAvpPB_vDdhURSg-" name="vat_hash" type="hidden">
 
         <!-- 收货地址ID -->
-        <input value="5" name="address_id" id="address_id" type="hidden">
+        <input value="${P_ADDRESS_ISDEFAULT.id}" name="address_id" id="address_id" type="hidden">
 
         <!-- 城市ID(运费) -->
         <input value="" name="buy_city_id" id="buy_city_id" type="hidden">
 
-        <!-- 记录所选地区是否支持货到付款 第一个前端JS判断 第二个后端PHP判断 -->
+        <!-- 记录所选地区是否支持货到付款 第一个前端JS判断 第二个后端判断 -->
         <input value="" id="allow_offpay" name="allow_offpay" type="hidden">
         <input value="" id="offpay_hash" name="offpay_hash" type="hidden">
 
         <!-- 默认使用的发票 -->
-        <input value="1" name="invoice_id" id="invoice_id" type="hidden">
+        <input value="" name="invoice_id" id="invoice_id" type="hidden">
 
-        <input value="#" name="ref_url" type="hidden">
+        <input value="${S_URL}/shop/cart" name="ref_url" type="hidden">
       </form>
     </div>
   </div>

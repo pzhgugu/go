@@ -7,6 +7,7 @@ import com.ansteel.common.documentnumber.service.DocumentNumberTreeServicer;
 import com.ansteel.common.documentnumber.service.SerialNumberCreateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created by Administrator on 2016/2/1.

@@ -29,5 +29,5 @@ public interface CartService {
 
     Cart update(String goodsId, Integer quantity);
 
-    void delete(String goodsId);
+    void delete(String userId, String goodsId);
 }

@@ -5,6 +5,7 @@ import com.ansteel.core.domain.BaseEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -77,6 +78,7 @@ public class GoodsOrderCommon  extends BaseEntity {
     /**
      * 收货人其它信息
      */
+    @Column(length = 4000)
     private String reciverInfo;
     /**
      * 收货人省级ID
@@ -85,6 +87,7 @@ public class GoodsOrderCommon  extends BaseEntity {
     /**
      * 发票信息
      */
+    @Column(length = 4000)
     private String invoiceInfo;
     /**
      * 促销信息备注

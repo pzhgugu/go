@@ -28,12 +28,9 @@ public class SerialNumberCreateServiceImpl implements SerialNumberCreateService 
     @Autowired
     DocumentSerialRepository documentSerialRepository;
 
-    DocumentSerial currentSerialNumber=null;
-
     public static int INIT_NUM=1;
 
     @Override
-    @Transactional(propagation= Propagation.NOT_SUPPORTED)
     public String getSerialNumber(String name) {
         DocumentNumber documentNo=null;
         try {
@@ -50,7 +47,6 @@ public class SerialNumberCreateServiceImpl implements SerialNumberCreateService 
     }
 
     @Override
-    @Transactional(propagation= Propagation.NOT_SUPPORTED)
     public String getSerialNumber(DocumentNumber documentNumber) {
         if(documentNumber.getIsStop()==1){
             throw new PageException("此单据号类型已经被停用！");
@@ -104,9 +100,9 @@ public class SerialNumberCreateServiceImpl implements SerialNumberCreateService 
     }
 
     private synchronized String getDigitCapacity(DocumentNumber documentNo) {
-        currentSerialNumber=this.getCurrentSerialNumber(documentNo);
+        DocumentSerial currentSerialNumber=this.getCurrentSerialNumber(documentNo);
 
-        boolean isZero=this.isZero(documentNo);
+        boolean isZero=this.isZero(documentNo,currentSerialNumber);
         String initDC=this.initDigitCapacity(documentNo);
         DecimalFormat df = new DecimalFormat(initDC);
         if(currentSerialNumber.getSerialNumber()==ScopeFactory.DEFAULE_NUM){
@@ -115,24 +111,24 @@ public class SerialNumberCreateServiceImpl implements SerialNumberCreateService 
             return df.format(INIT_NUM);
         }
         if(isZero){
-            this.updateSerialNumber(INIT_NUM);
+            this.updateSerialNumber(INIT_NUM,currentSerialNumber);
             return df.format(INIT_NUM);
         }
         int digitCapacity = documentNo.getDigitCapacity();
         int number=currentSerialNumber.getSerialNumber()+1;
         double n = Math.pow(10, digitCapacity);
         if(number<n){
-            this.updateSerialNumber(number);
+            this.updateSerialNumber(number,currentSerialNumber);
             return df.format(number);
         }else{
             throw new PageException("单据号已超出最大位数！");
         }
     }
 
-    private void updateSerialNumber(int number) {
+    private void updateSerialNumber(int number,DocumentSerial currentSerialNumber) {
         currentSerialNumber.setSerialNumber(number);
         currentSerialNumber.setNumberDate(new Date());
-        documentSerialRepository.save(currentSerialNumber);
+        documentSerialRepository.saveAndFlush(currentSerialNumber);
     }
 
     private String initDigitCapacity(DocumentNumber entity){
@@ -147,7 +143,7 @@ public class SerialNumberCreateServiceImpl implements SerialNumberCreateService 
         return sb.toString();
     }
 
-    private boolean isZero(DocumentNumber entity) {
+    private boolean isZero(DocumentNumber entity,DocumentSerial currentSerialNumber) {
         Date oldDate = currentSerialNumber.getNumberDate();
         Date currentDate=new Date();
         if(oldDate==null){

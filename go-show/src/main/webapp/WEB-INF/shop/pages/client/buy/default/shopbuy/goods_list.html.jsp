@@ -74,11 +74,11 @@
                                 <dl class="freight">
                                         <dt>运费：</dt>
                                         <c:set var="freight" value="8.00" />
-                                        <dd>￥<em id="eachStoreFreight_1">${freight}</em></dd>
+                                        <dd>￥<em id="eachStoreFreight_${store.id}">${freight}</em></dd>
                                 </dl>
                                 <dl>
                                         <dt>商品金额：</dt>
-                                        <dd>￥<em id="eachStoreGoodsTotal_1">${price}</em></dd>
+                                        <dd>￥<em id="eachStoreGoodsTotal_${store.id}">${price}</em></dd>
                                 </dl>
                             <input type="hidden" name="storeList[${statusStore.index}].freight" value="${freight}">
                             <input type="hidden" name="storeList[${statusStore.index}].storeGoodsPrice" value="${price}">
@@ -90,7 +90,7 @@
 
                                 <dl class="total">
                                         <dt>本店合计：</dt>
-                                        <dd>￥<em nc_type="eachStoreTotal" store_id="1">${freight+price}</em></dd>
+                                        <dd>￥<em nc_type="eachStoreTotal" store_id="${store.id}">${freight+price}</em></dd>
                                 </dl>
                         </div></td>
                 </tr>

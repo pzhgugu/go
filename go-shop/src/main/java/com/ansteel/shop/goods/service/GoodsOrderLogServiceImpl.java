@@ -1,5 +1,6 @@
 package com.ansteel.shop.goods.service;
 
+import com.ansteel.shop.goods.domain.GoodsOrderLog;
 import com.ansteel.shop.goods.repository.GoodsOrderLogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,4 +12,9 @@ public class GoodsOrderLogServiceImpl implements  GoodsOrderLogService {
 
     @Autowired
     private GoodsOrderLogRepository goodsOrderLogRepository;
+
+    @Override
+    public GoodsOrderLog save(GoodsOrderLog goodsOrderLog) {
+        return goodsOrderLogRepository.save(goodsOrderLog);
+    }
 }

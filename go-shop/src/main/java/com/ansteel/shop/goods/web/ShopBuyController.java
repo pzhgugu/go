@@ -3,6 +3,7 @@ package com.ansteel.shop.goods.web;
 import com.ansteel.core.constant.Public;
 import com.ansteel.core.exception.PageException;
 import com.ansteel.core.utils.FisUtils;
+import com.ansteel.core.utils.UserUtils;
 import com.ansteel.shop.core.domain.Address;
 import com.ansteel.shop.core.service.AddressService;
 import com.ansteel.shop.goods.domain.Cart;
@@ -16,6 +17,7 @@ import com.ansteel.shop.utils.PageStyle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -78,7 +80,7 @@ public class ShopBuyController {
                          @RequestParam(value = "goods_id") String goodsId,
                          HttpServletRequest request,
                          HttpServletResponse response){
-        cartService.delete(goodsId);
+        cartService.delete(UserUtils.getUserId(),goodsId);
         List<Cart> cartList=cartService.findByMemberId();
         CartModel cartModel = new CartModel();
         cartModel.setState(true);
@@ -120,6 +122,7 @@ public class ShopBuyController {
     @RequestMapping("/buy")
     public String index(Model model,
                         @RequestParam(value = "cart_id") String[] cartIds,
+                        @RequestParam(value = "ifcart" ,required = false) Integer ifcart,
                         HttpServletRequest request,
                         HttpServletResponse response) {
 
@@ -164,6 +167,10 @@ public class ShopBuyController {
         String style = PageStyle.getStyle();
         model.addAttribute("P_STYLE",style);
         model.addAttribute("P_STEP","step2");
+        if(ifcart==null){
+            ifcart=0;
+        }
+        model.addAttribute("P_IFCART",ifcart);
         return FisUtils.page("shop:pages/client/buy/" + style + "/shopbuy/buy_step1.html");
     }
 

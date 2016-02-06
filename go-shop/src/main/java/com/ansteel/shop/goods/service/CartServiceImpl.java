@@ -128,7 +128,7 @@ public class CartServiceImpl implements CartService {
     @Override
     @Transactional
     public Cart update(String goodsId, Integer quantity) {
-        Cart cart=cartRepository.findOneByMemberIdAndGoodsId(UserUtils.getUserId(),goodsId);
+        Cart cart=cartRepository.findOneByMemberIdAndGoodsId(UserUtils.getUserId(), goodsId);
         if(cart==null){
             return null;
         }
@@ -138,9 +138,11 @@ public class CartServiceImpl implements CartService {
 
     @Override
     @Transactional
-    public void delete(String goodsId) {
-        Cart cart=cartRepository.findOneByMemberIdAndGoodsId(UserUtils.getUserId(),goodsId);
-        this.delete(cart);
+    public void delete(String userId,String goodsId) {
+        Cart cart=cartRepository.findOneByMemberIdAndGoodsId(userId,goodsId);
+        if(cart!=null) {
+            this.delete(cart);
+        }
     }
 
 }

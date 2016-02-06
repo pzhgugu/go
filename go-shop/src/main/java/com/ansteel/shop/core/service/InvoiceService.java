@@ -13,4 +13,6 @@ public interface InvoiceService {
     List<Invoice> findByMemberId();
 
     void delete(String id);
+
+    Invoice findOne(String id);
 }

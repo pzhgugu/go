@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
  * Created by Administrator on 2016/2/1.
  */
 @Service
-@Transactional(readOnly=true)
 public class DocumentNumberTreeServicerImpl implements DocumentNumberTreeServicer {
 
     @Autowired
@@ -22,7 +21,6 @@ public class DocumentNumberTreeServicerImpl implements DocumentNumberTreeService
     }
 
     @Override
-    @Transactional
     public DocumentNumberTree save(DocumentNumberTree documentNumberTree) {
         return documentNumberTreeRepository.save(documentNumberTree);
     }
