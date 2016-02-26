@@ -2,6 +2,7 @@ package com.ansteel.core.controller;
 
 import com.ansteel.common.attachment.domain.Attachment;
 import com.ansteel.common.attachment.service.AttachmentService;
+import com.ansteel.common.attachment.service.FileAttachmentService;
 import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.DownloadUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,14 +22,14 @@ import javax.servlet.http.HttpServletResponse;
 public class AttController {
 
     @Autowired
-    AttachmentService attachmentService;
+    FileAttachmentService fileAttachmentService;
 
     @RequestMapping("/download/{id}")
     public void download(@PathVariable("id") String id,
                          @RequestParam(value = "_inline", required = false) String inline,
                          HttpServletRequest request, HttpServletResponse response)
             throws Exception {
-        Attachment attachment = attachmentService.getAttachmentByIdToPath(id);
+        Attachment attachment = fileAttachmentService.findOne(id);
         DownloadUtils.download(response, attachment.getPath(), inline);
     }
 

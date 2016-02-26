@@ -15,7 +15,9 @@ import java.util.Map.Entry;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ansteel.common.attachment.service.FileAttachmentService;
 import com.ansteel.report.aspose.service.AsposeExcelToPdfService;
+import com.ansteel.report.excel.service.ReportAttachmentTreeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -59,7 +61,7 @@ public class MakeReportServiceBean implements MakeReportService {
 	IExcelShowFactory excelShowFactory;
 	
 	@Autowired
-	AttachmentService attachmentService;
+	FileAttachmentService fileAttachmentService;
 
 	@Autowired
 	AsposeExcelToPdfService asposeExcelToPdfService;
@@ -75,6 +77,9 @@ public class MakeReportServiceBean implements MakeReportService {
 	
 	@Value("${go_pro.attTempWeb}")
 	private String attTempWeb;
+
+	@Autowired
+	ReportAttachmentTreeService reportAttachmentTreeService;
 	
 	@Override
 	public Excel getExcel(String name, HttpServletRequest request, Map<String, Object> parameterMap) {
@@ -162,13 +167,9 @@ public class MakeReportServiceBean implements MakeReportService {
 	@Override
 	@Transactional(readOnly=false)
 	public String saveReport(String type,String rType, HttpServletRequest request) {
-		AttachmentTree attachmentTree = attachmentService
-				.getAttachmentTreeByName(AttachmentConstant.REPORT_FILE_NAME);
-		if (attachmentTree == null) {
-			attachmentTree=attachmentService.saveAttachmentTree(AttachmentConstant.getReportFileAttachmentTree());
-		}
+		AttachmentTree attachmentTree = reportAttachmentTreeService.get();
 		Excel excel = this.getExcel(type, request, null);
-		String catalogue=attachmentService.getAttachmentCatalogue(attachmentTree,rType);
+		String catalogue=reportAttachmentTreeService.getCatalogue(attachmentTree, rType);
 		String uuid = StringUtils.getUuid();
 		String path="";
 		if(rType==null){
@@ -193,7 +194,7 @@ public class MakeReportServiceBean implements MakeReportService {
 		attachment.setName(uuid);
 		attachment.setAttachmentTree(attachmentTree);
 		attachment.setPath(path);
-		attachment=attachmentService.saveAttachment(attachment);
+		attachment=fileAttachmentService.save(attachment);
 		return attachment.getId();
 	}
 
@@ -314,7 +315,8 @@ public class MakeReportServiceBean implements MakeReportService {
 			Map parameters, HttpServletResponse response) {
 		response.setCharacterEncoding("utf8");
 		String attId = reportMapped.getAttPath();
-		String path = attachmentService.getFilePathById(attId);
+		Attachment att = fileAttachmentService.findOne(attId);
+		String path =att.getPath();
 		String outPath="";
 		switch (type) {
 		case ReportConstant.PDF:	

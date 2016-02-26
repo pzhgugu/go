@@ -3,6 +3,7 @@ package com.ansteel.shop.goods.service;
 import com.ansteel.common.attachment.domain.Attachment;
 import com.ansteel.common.attachment.domain.AttachmentTree;
 import com.ansteel.common.attachment.service.AttachmentService;
+import com.ansteel.common.attachment.service.FileAttachmentService;
 import com.ansteel.core.utils.*;
 import com.ansteel.shop.goods.domain.GoodsBrand;
 import com.ansteel.shop.goods.domain.GoodsType;
@@ -35,7 +36,7 @@ import java.util.List;
 public class GoodsBrandServiceImpl implements GoodsBrandService {
 
     @Autowired
-    AttachmentService attachmentService;
+    FileAttachmentService fileAttachmentService;
 
     @Autowired
     GoodsTypeService goodsTypeService;
@@ -53,15 +54,15 @@ public class GoodsBrandServiceImpl implements GoodsBrandService {
         if (StringUtils.hasText(goodsBrand.getId())) {
             String aId = goodsBrand.getLogoImage();
             if (StringUtils.hasText(aId)) {
-                attachment = attachmentService.getAttachmentById(aId);
+                attachment = fileAttachmentService.findOne(aId);
             }
         }
 
         if (attachment == null) {
             // 获取exclTpl附件目录
-            attachment = attachmentService.saveAttachment(file);
+            attachment = fileAttachmentService.save(file);
         } else {
-            attachment = attachmentService.saveAttachment(attachment, file);
+            attachment = fileAttachmentService.save(attachment, file);
         }
         goodsBrand.setLogoImage(attachment.getId());
         return attachment.getId();

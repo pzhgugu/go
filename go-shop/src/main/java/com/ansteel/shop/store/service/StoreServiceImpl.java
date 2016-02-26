@@ -2,6 +2,7 @@ package com.ansteel.shop.store.service;
 
 import com.ansteel.common.attachment.domain.Attachment;
 import com.ansteel.common.attachment.service.AttachmentService;
+import com.ansteel.common.attachment.service.FileAttachmentService;
 import com.ansteel.core.exception.PageException;
 import com.ansteel.core.utils.BeanUtils;
 import com.ansteel.core.utils.UserUtils;
@@ -24,7 +25,7 @@ public class StoreServiceImpl implements StoreService {
     StoreRepository storeRepository;
 
     @Autowired
-    AttachmentService attachmentService;
+    FileAttachmentService fileAttachmentService;
 
     @Override
     public Store getCurrentStore() {
@@ -86,11 +87,11 @@ public class StoreServiceImpl implements StoreService {
     public Store update(Store store, MultipartFile storeLabel, MultipartFile storeBanner) {
         try {
             if (storeLabel.getSize() > 0) {
-                Attachment logo = attachmentService.saveAttachment(storeLabel);
+                Attachment logo = fileAttachmentService.save(storeLabel);
                 store.setStoreLabel(logo.getId());
             }
             if (storeBanner.getSize() > 0) {
-                Attachment banner = attachmentService.saveAttachment(storeBanner);
+                Attachment banner = fileAttachmentService.save(storeBanner);
                 store.setStoreBanner(banner.getId());
             }
         } catch (Exception e) {

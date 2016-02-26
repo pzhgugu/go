@@ -3,6 +3,7 @@ package com.ansteel.shop.store.web;
 
 import com.ansteel.common.attachment.domain.Attachment;
 import com.ansteel.common.attachment.service.AttachmentService;
+import com.ansteel.common.attachment.service.FileAttachmentService;
 import com.ansteel.core.constant.Public;
 import com.ansteel.core.exception.PageException;
 import com.ansteel.core.utils.ExceprionUtils;
@@ -34,14 +35,15 @@ import java.util.Map;
 @Controller
 @RequestMapping(Public.SELLER + "/brandApply")
 public class SellerBrandApplyController {
+
     @Autowired
     GoodsBrandService goodsBrandService;
+
     @Autowired
     GoodsClassService goodsClassService;
 
-
     @Autowired
-    AttachmentService attachmentService;
+    FileAttachmentService fileAttachmentService;
 
     @RequestMapping("/list")
     public String listInfo(Model model, @RequestParam(value = "brandName", required = false) String brandName,
@@ -90,7 +92,7 @@ public class SellerBrandApplyController {
         }
         if (file != null && file.getSize() > 0) {
             try {
-                Attachment attachment = attachmentService.saveAttachment(file);
+                Attachment attachment = fileAttachmentService.save(file);
                 goodsBrand.setLogoImage(attachment.getId());
             } catch (Exception e) {
                 throw new PageException(e.getMessage());

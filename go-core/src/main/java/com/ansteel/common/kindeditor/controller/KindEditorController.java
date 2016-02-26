@@ -3,6 +3,7 @@ package com.ansteel.common.kindeditor.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ansteel.common.attachment.service.FileAttachmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +21,7 @@ import com.ansteel.core.utils.RequestUtils;
 public class KindEditorController {
 	
 	@Autowired
-	AttachmentService attachmentService;
+	FileAttachmentService fileAttachmentService;
 
 	@RequestMapping("/upload")
 	@ResponseBody
@@ -31,7 +32,7 @@ public class KindEditorController {
 		KindEditorMessage message = new KindEditorMessage();
 		for(MultipartFile file:files){
 			try {
-				Attachment att = attachmentService.saveAttachment(file);
+				Attachment att = fileAttachmentService.save(file);
 				message.setError(0);
 				message.setUrl(RequestUtils.getSiteURL(request)+"/att/download/"+att.getId());
 			} catch (Exception e) {

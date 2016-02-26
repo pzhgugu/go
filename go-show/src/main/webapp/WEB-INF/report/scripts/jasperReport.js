@@ -5,11 +5,15 @@
  * @require common:widget/jquery/jquery.form.js
  */
 GPC.url.saveUrl = GLOBAL.S.URL + GLOBAL.P.MODULES + "/a/saveFile/" + GLOBAL.P.CLASSNAME + "?_key=" + GLOBAL.P.TREEONENAME + ".id";
-
+function processJson(response) {
+	GPW.window.handle.unload();
+	GLOBAL.errorMessage(response);
+	GPW.grid.refreshMainGrid();
+}
 GPW.form.init = function(window, type) {
 	var form=$("<div id='fileDiv'><form id='realForm' method='POST' enctype='multipart/form-data'><div id='dhxForm'></div></form></div>");
     $(document.body.firstChild).before(form);
-	
+
 	this.mainForm = new dhtmlXForm("dhxForm", this.getMainFormData());		
 	window.attachObject("fileDiv");
 	if (type == GPC.constant.edit)
@@ -39,11 +43,6 @@ GPW.form.init = function(window, type) {
 				},
 				success : processJson
 			});
-			function processJson(response) {
-				GPW.window.handle.unload();
-				GLOBAL.errorMessage(response);
-				GPW.grid.refreshMainGrid();
-			}
 			$("#realForm").submit();
 		}
 	});

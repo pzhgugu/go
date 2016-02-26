@@ -56,7 +56,7 @@
         <input type="hidden" value="product_buy" name="order_type">
         <div class="ncc-receipt-info">
           <div class="ncc-receipt-info-title">
-            <h3>请您及时付款，以便订单尽快处理！                    在线支付金额：<strong>￥899.00</strong>
+            <h3>请您及时付款，以便订单尽快处理！                    在线支付金额：<strong>￥${P_AMOUNT}</strong>
             </h3>
           </div>
           <table class="ncc-table-style">
@@ -71,11 +71,13 @@
             </thead>
             <tbody>
             <tr>
+              <c:forEach items="${P_GOODSORDER_LIST}" var="goodsOrder">
               <td></td>
-              <td class="tl">8000000000000201</td>
+              <td class="tl">${goodsOrder.orderSn}</td>
               <td class="tl">在线支付</td>
-              <td>￥899.00</td>
+              <td>￥${goodsOrder.orderAmount}</td>
               <td>快递</td>
+              </c:forEach>
             </tr>
             </tbody>
           </table>

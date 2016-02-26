@@ -8,6 +8,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
+import com.ansteel.common.attachment.service.FileAttachmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -43,7 +44,7 @@ public class ReportMappedServiceBean implements ReportMappedService {
 	ReportMappedRepository reportMappedRepository;
 	
 	@Autowired
-	AttachmentService attachmentService;
+	FileAttachmentService fileAttachmentService;
 
 	@Override
 	@Transactional(readOnly=false)
@@ -69,7 +70,7 @@ public class ReportMappedServiceBean implements ReportMappedService {
 	public void delect(ReportMapped reportMapped) {
 		String path = reportMapped.getAttPath();
 		if(StringUtils.hasText(path)){
-			attachmentService.delect(path);
+			fileAttachmentService.delete(path);
 		}
 		reportMappedRepository.delete(reportMapped);
 	}

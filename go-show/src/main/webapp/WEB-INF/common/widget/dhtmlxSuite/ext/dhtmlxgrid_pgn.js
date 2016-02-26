@@ -345,7 +345,7 @@ dhtmlXGridObject.prototype._pgn_bricks = function(page, start, end){
 
 
 /**
-*  @desc: controller toolbar skin for paging
+*  @desc: web toolbar skin for paging
 */
 dhtmlXGridObject.prototype._pgn_toolbar = function(page, start, end){
 	if (!this.aToolBar) this.aToolBar = this._pgn_createToolBar();

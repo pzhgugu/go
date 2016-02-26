@@ -51,6 +51,11 @@ public class UserServiceBean implements UserService {
 	public Users findOneByName(String name) {
 		return usersRepository.findOneByName(name);
 	}
+
+	@Override
+	public boolean isPasswordValid(String encPass, String rawPass){
+		return passwordEncoder.isPasswordValid(encPass, rawPass, null);
+	}
 	
 	@Transactional
 	public String changePassword(String oldPwd,String newPwd,String newPwdConfirm,String name )
@@ -60,7 +65,7 @@ public class UserServiceBean implements UserService {
 		Assert.isTrue(!(oldPwd.equals(newPwdConfirm)||oldPwd.equals(newPwd)),"新密码与原密码相同，请重新输入！");		
 
 		Users user = this.findOneByName(name);
-		boolean isVal = passwordEncoder.isPasswordValid(user.getPassword(), oldPwd, null);
+		boolean isVal = this.isPasswordValid(user.getPassword(), oldPwd);
 		Assert.isTrue(isVal, "原密码输入错误，请重新输入！");
 		newPwdConfirm= this.getPasswordEncoder(newPwdConfirm,null);
 		user.setPassword(newPwdConfirm);

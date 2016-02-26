@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
+import com.ansteel.common.attachment.service.FileAttachmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -31,7 +32,7 @@ import com.ansteel.shop.utils.JsonImage;
 public class AlbumPicServiceImpl implements AlbumPicService {
 	
 	@Autowired
-	AttachmentService attachmentService;
+	FileAttachmentService fileAttachmentService;
 	
 	@Autowired
 	AlbumClassService albumClassService;
@@ -84,7 +85,7 @@ public class AlbumPicServiceImpl implements AlbumPicService {
 
 	private Attachment saveAttachment(MultipartFile file) {
 		Assert.isTrue(file.getSize()<1000000, "文件超过了1M，请编辑后重新上传！");
-		return attachmentService.saveAttachment(file);
+		return fileAttachmentService.save(file);
 	}
 
 	@Override
@@ -118,7 +119,7 @@ public class AlbumPicServiceImpl implements AlbumPicService {
 	@Transactional
 	public void delete(String id) {
 		AlbumPic albumPic = albumPicRepository.findOne(id);
-		attachmentService.delect(albumPic.getApicCover());
+		fileAttachmentService.delete(albumPic.getApicCover());
 		albumPicRepository.delete(id);
 	}
 
@@ -134,7 +135,7 @@ public class AlbumPicServiceImpl implements AlbumPicService {
 	@Transactional
 	public AlbumPic update(String id, MultipartFile file) {
 		AlbumPic albumPic = albumPicRepository.findOne(id);
-		attachmentService.delect(albumPic.getApicCover());
+		fileAttachmentService.delete(albumPic.getApicCover());
 		Attachment attachment = this.saveAttachment(file);
 		this.setImageInfo(albumPic, attachment, file);
 		return albumPicRepository.save(albumPic);

@@ -13,6 +13,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.ansteel.common.attachment.service.FileAttachmentService;
 import org.easymock.EasyMock;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -32,7 +33,7 @@ public class MakeReportControllerTest  extends SpringBaseTest{
 	@Autowired
 	ExcelService excelService;
 	@Autowired
-	AttachmentService attachmentService;
+	FileAttachmentService fileAttachmentService;
 	
 	private final Map<String, Object> attributes = new LinkedHashMap<String, Object>();
 
@@ -59,8 +60,8 @@ public class MakeReportControllerTest  extends SpringBaseTest{
         System.out.println(mapExcel.size());
 		//2、得到数据
 		//3、生成excel
-		
-		String tplPath = attachmentService.getFilePathById(excelReport.getAttachmentId());
+
+		String tplPath = fileAttachmentService.findOne(excelReport.getAttachmentId()).getPath();
 		ExcelReportFactory excelFactory=new ExcelReportFactory();
 		Excel excel = excelFactory.getExcel(tplPath, mapExcel);
 		 

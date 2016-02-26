@@ -18,6 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -56,7 +57,7 @@ public class GoodsOrderServiceImpl implements   GoodsOrderService {
 
     @Override
     @Transactional
-    public void createOrder(ShopOrderModel shopOrderModel) {
+    public List<GoodsOrder> createOrder(ShopOrderModel shopOrderModel) {
 
         List<ShopOrderStoreModel> storeList = shopOrderModel.getStoreList();
 
@@ -72,6 +73,7 @@ public class GoodsOrderServiceImpl implements   GoodsOrderService {
         }
 
 
+        List<GoodsOrder> goodsOrderList = new ArrayList<>();
         for(ShopOrderStoreModel sotreModel:storeList){
             String serialNumber=orderSerialNumberService.getOrderSerialNumber();
             GoodsOrder goodsOrder = new GoodsOrder();
@@ -88,6 +90,7 @@ public class GoodsOrderServiceImpl implements   GoodsOrderService {
             goodsOrder.setShippingFee(sotreModel.getFreight());
             goodsOrder.setOrderState(10);
             goodsOrder=goodsOrderRepository.save(goodsOrder);
+            goodsOrderList.add(goodsOrder);
 
             //订单扩展类
             GoodsOrderCommon goodsOrderCommon = new GoodsOrderCommon();
@@ -136,6 +139,6 @@ public class GoodsOrderServiceImpl implements   GoodsOrderService {
             goodsOrderLog=goodsOrderLogService.save(goodsOrderLog);
         }
 
-
+        return  goodsOrderList;
     }
 }

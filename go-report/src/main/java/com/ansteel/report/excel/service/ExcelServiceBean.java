@@ -4,6 +4,7 @@ import java.util.*;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.ansteel.common.attachment.service.FileAttachmentService;
 import com.ansteel.core.utils.DateTimeUtils;
 import com.ansteel.report.excel.repository.ExcelReportSQLRepository;
 import org.apache.log4j.Logger;
@@ -47,14 +48,17 @@ public class ExcelServiceBean implements ExcelService{
 	Logger logger=Logger.getLogger(ExcelServiceBean.class);
 	
 	@Autowired
-	AttachmentService attachmentService;
+	FileAttachmentService fileAttachmentService;
 	
 	@Autowired
 	ExcelReportRepository excelReportRepository;
 
 	@Autowired
 	ExcelReportSQLRepository excelReportSQLRepository;
-	
+
+	@Autowired
+	ExcelAttachmentTreeService excelAttachmentTreeService;
+
 	@Autowired
 	SqlService sqlService;
 	
@@ -67,7 +71,7 @@ public class ExcelServiceBean implements ExcelService{
 		if(StringUtils.hasText(excelReport.getId())){
 			String aId = excelReport.getAttachmentId();
 			if(StringUtils.hasText(aId)){
-				attachment = attachmentService.getAttachmentById(excelReport.getAttachmentId());
+				attachment = fileAttachmentService.findOne(excelReport.getAttachmentId());
 			}
 		}
 		
@@ -75,8 +79,8 @@ public class ExcelServiceBean implements ExcelService{
 		if(fileType.equals("xls")||fileType.equals("xlsx")){
 			if(attachment==null){
 				//获取exclTpl附件目录
-				AttachmentTree attachmentTree = this.getAttachmentTree();
-				attachment = attachmentService.saveAttachment(attachmentTree, file,excelReport.getName(),excelReport.getAlias());
+				AttachmentTree attachmentTree = excelAttachmentTreeService.get();
+				attachment = fileAttachmentService.save(attachmentTree, file);
 			}else{
                 String fileName=attachment.getFileName();
                 if(StringUtils.hasText(fileName)){
@@ -84,10 +88,10 @@ public class ExcelServiceBean implements ExcelService{
                     String type=FileUtils.getFileType(file.getOriginalFilename()).toLowerCase();
                     String newFileName=nameArray[0]+"."+type;
                     attachment.setFileName(newFileName);
-                    newFileName=attachmentService.getPath(attachment.getAttachmentTree(),newFileName,type);
+                    newFileName=excelAttachmentTreeService.getPath(attachment.getAttachmentTree(),newFileName,type);
                     attachment.setPath(newFileName);
                 }
-				attachment = attachmentService.saveAttachment(attachment, file);
+				attachment = fileAttachmentService.save(attachment, file);
 			}
 			excelReport.setAttachmentId(attachment.getId());
 			return attachment.getPath();
@@ -96,21 +100,13 @@ public class ExcelServiceBean implements ExcelService{
 		}
 	}
 
-	private AttachmentTree getAttachmentTree() {
-		AttachmentTree attachmentTree = attachmentService.getAttachmentTreeByName(AttachmentConstant.EXCEL_TPL_NAME);
-		if(attachmentTree==null){
-			attachmentTree=attachmentService.saveAttachmentTree(AttachmentConstant.getExcelTplAttachmentTree());
-		}
-		return attachmentTree;
-	}
-
 	@Override
 	@Transactional
 	public void delectExcelReport(String id) {
 		ExcelReport excelReport=excelReportRepository.findOne(id);
 		String attId = excelReport.getAttachmentId();
 		if(StringUtils.hasText(attId)){
-			attachmentService.delect(attId);
+			fileAttachmentService.delete(attId);
 		}
 		excelReportRepository.delete(excelReport);	
 	}
@@ -237,7 +233,8 @@ public class ExcelServiceBean implements ExcelService{
 
 	@Override
 	public String getFilePathById(String attachmentId) {
-		return attachmentService.getFilePathById(attachmentId);
+		Attachment attachment=fileAttachmentService.findOne(attachmentId);
+		return attachment.getPath();
 	}
 
 	@Override

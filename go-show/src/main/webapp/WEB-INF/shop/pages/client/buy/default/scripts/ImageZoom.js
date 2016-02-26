@@ -53,7 +53,7 @@
 			});
 			gallery.css('position', 'absolute').css('overflow', 'hidden').css('opacity', 0);
 			this.fakeGallery = gallery.clone().hide().addClass('gallery_mask');
-			this.controllers = shell.find('.controller a');
+			this.controllers = shell.find('.web a');
 			this.fakeImage = this.fakeGallery.find('img');
 			this.image = gallery.find('img');
 			this.galleryPanel.append(this.fakeGallery);
@@ -63,7 +63,7 @@
 				clearTimeout(timer);
 				self.zoomTo.apply(self, arguments);
 			};
-			this.shell.delegate('.controller a', 'mouseenter', function(){
+			this.shell.delegate('.web a', 'mouseenter', function(){
 				if(self.level < 3){
 					var trigger = this;
 					clearTimeout(timer);
@@ -72,10 +72,10 @@
 					}, 240);
 				}
 			})
-			.delegate('.controller a', 'mouseleave', function(){
+			.delegate('.web a', 'mouseleave', function(){
 				clearTimeout(timer);
 			})
-			.delegate('.controller a', 'click', function(e){
+			.delegate('.web a', 'click', function(e){
 				e.preventDefault();
 				zoomTo(~~this.getAttribute('data-index'), 2);
 			})
@@ -251,7 +251,7 @@
 		}
 	};
 	ImageZoom.defaultOptions = {
-		tmpl: '<div class="gallery_wrap">{gallery}</div><div class="controller_wrap"><div class="controller">{controllers}</div><a href="javascript:;" class="prev"><span>&#171;</span></a><a href="javascript:;" class="next"><span>&#187;</span></a></div><div class="close_wrap">{closeButton}</div>',
+		tmpl: '<div class="gallery_wrap">{gallery}</div><div class="controller_wrap"><div class="web">{controllers}</div><a href="javascript:;" class="prev"><span>&#171;</span></a><a href="javascript:;" class="next"><span>&#187;</span></a></div><div class="close_wrap">{closeButton}</div>',
 		items: [],
 		shell: null,
 		basePath: 'images/',

@@ -90,7 +90,7 @@
 	</bean>
 	<!-- Remember-Me对应的Filter 
    <bean id="rememberMeFilter"
-   class="org.springframework.security.controller.authentication.rememberme.RememberMeAuthenticationFilter">
+   class="org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter">
       <property name="rememberMeServices" ref="rememberMeServices" />
       <property name="authenticationManager" ref="authenticationManager" />
    </bean>

@@ -2,6 +2,7 @@ package com.ansteel.shop.store.service;
 
 import com.ansteel.common.attachment.domain.Attachment;
 import com.ansteel.common.attachment.service.AttachmentService;
+import com.ansteel.common.attachment.service.FileAttachmentService;
 import com.ansteel.common.springsecurity.service.UserInfo;
 import com.ansteel.core.exception.PageException;
 import com.ansteel.core.utils.BeanUtils;
@@ -45,7 +46,7 @@ public class StoreJoininServiceImpl implements StoreJoininService {
     private static String JOININ_STATIC_YES = "40";
 
     @Autowired
-    AttachmentService attachmentService;
+    FileAttachmentService fileAttachmentService;
 
     @Autowired
     StoreJoininRepository storeJoininRepository;
@@ -66,9 +67,9 @@ public class StoreJoininServiceImpl implements StoreJoininService {
         Assert.isTrue(generalTaxpayerFile.getSize() < 1000000, "一般纳税人证明文件超过了1M，请编辑后重新上传！");
 
         try {
-            Attachment bnfAtt = attachmentService.saveAttachment(businessLicenceNumberFile);
-            Attachment ocfAtt = attachmentService.saveAttachment(organizationCodeFile);
-            Attachment gtfAtt = attachmentService.saveAttachment(generalTaxpayerFile);
+            Attachment bnfAtt = fileAttachmentService.save(businessLicenceNumberFile);
+            Attachment ocfAtt = fileAttachmentService.save(organizationCodeFile);
+            Attachment gtfAtt = fileAttachmentService.save(generalTaxpayerFile);
 
             storeJoinint.setBusinessLicenceNumberElectronic(bnfAtt.getId());
             storeJoinint.setOrganizationCodeElectronic(ocfAtt.getId());
@@ -109,8 +110,8 @@ public class StoreJoininServiceImpl implements StoreJoininService {
         Assert.isTrue(taxRegistrationCertificateElectronicFile.getSize() < 1000000, "税务登记证号电子版文件超过了1M，请编辑后重新上传！");
 
         try {
-            Attachment bleAtt = attachmentService.saveAttachment(bankLicenceElectronicFile);
-            Attachment trceAtt = attachmentService.saveAttachment(taxRegistrationCertificateElectronicFile);
+            Attachment bleAtt = fileAttachmentService.save(bankLicenceElectronicFile);
+            Attachment trceAtt = fileAttachmentService.save(taxRegistrationCertificateElectronicFile);
 
             storeJoinint.setBankLicenceElectronic(bleAtt.getId());
             storeJoinint.setTaxRegistrationCertificateElectronic(trceAtt.getId());
@@ -290,7 +291,7 @@ public class StoreJoininServiceImpl implements StoreJoininService {
         Assert.isTrue(certificate.getSize() < 1000000, "付款凭证文件超过了1M，请编辑后重新上传！");
 
         try {
-            Attachment bleAtt = attachmentService.saveAttachment(certificate);
+            Attachment bleAtt = fileAttachmentService.save(certificate);
             storeJoinin.setPayingMoneyCertificate(bleAtt.getId());
         } catch (Exception e) {
             throw new PageException("文件保存错误" + e.getMessage());

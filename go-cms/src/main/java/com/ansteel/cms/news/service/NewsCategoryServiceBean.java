@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
+import com.ansteel.common.attachment.service.FileAttachmentService;
+import com.ansteel.common.attachment.service.ImageAttachmentTreeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Sort;
@@ -24,31 +26,26 @@ import com.ansteel.common.attachment.service.AttachmentService;
 public class NewsCategoryServiceBean implements NewsCategoryService{
 	
 	@Autowired
-	AttachmentService attachmentService;
+	FileAttachmentService fileAttachmentService;
+
+	@Autowired
+	ImageAttachmentTreeService imageAttachmentTreeService;
 	
 	@Autowired
 	NewsCategoryRepository newsCategoryRepository;
 	
 	@Value("${go_pro.attPath}")
 	private String attPath;
-	
-	private AttachmentTree getAttachmentTree() {
-		AttachmentTree attachmentTree = attachmentService.getAttachmentTreeByName(ImageUtils.IMAGE_FILE_NAME);
-		if(attachmentTree==null){
-			attachmentTree=attachmentService.saveAttachmentTree(ImageUtils.getImageAttachmentTree());
-		}
-		return attachmentTree;
-	}
+
 
 	@Override
 	@Transactional
 	public String saveImage(InputStream inputStream, int x, int y, int width,
 			int height, int size) {
-		AttachmentTree attachmentTree = getAttachmentTree();
-		String outPath=attPath+attachmentService.getAttachmentCatalogue(attachmentTree, null);
-		outPath+=StringUtils.getUuid()+".jpg";
+		AttachmentTree attachmentTree = imageAttachmentTreeService.get();
+		String outPath=imageAttachmentTreeService.getPath(attachmentTree,StringUtils.getUuid()+".jpg");
 		ImageUtils.abscut(inputStream,x, y, width, height,size, outPath);		
-		Attachment attachment=attachmentService.saveAttachment(outPath, getAttachmentTree());
+		Attachment attachment= fileAttachmentService.save(outPath, attachmentTree);
 		return attachment.getId();		
 	}
 

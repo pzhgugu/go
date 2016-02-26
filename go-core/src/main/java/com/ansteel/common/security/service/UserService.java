@@ -19,7 +19,9 @@ public interface UserService {
 	Users findOne(String id);
 
 	Users findOneByName(String name);
-	
+
+	boolean isPasswordValid(String encPass, String rawPass);
+
 	/**修改密码
 	 * @param  oldPwd 原密码
 	 * @param  newPwd 新密码

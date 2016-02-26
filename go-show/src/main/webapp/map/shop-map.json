@@ -16,6 +16,10 @@
             "uri": "/show/static/shop/pages/client/buy/default/styles/home_header.css",
             "type": "css"
         },
+        "shop:pages/client/member/default/styles/member.css": {
+            "uri": "/show/static/shop/pages/client/member/default/styles/member.css",
+            "type": "css"
+        },
         "shop:pages/client/storehome/default/style.css": {
             "uri": "/show/static/shop/pages/client/storehome/default/style.css",
             "type": "css"

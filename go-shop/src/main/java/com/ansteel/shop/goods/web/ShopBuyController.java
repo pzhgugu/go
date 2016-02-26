@@ -8,6 +8,7 @@ import com.ansteel.shop.core.domain.Address;
 import com.ansteel.shop.core.service.AddressService;
 import com.ansteel.shop.goods.domain.Cart;
 import com.ansteel.shop.goods.domain.Goods;
+import com.ansteel.shop.goods.domain.GoodsOrder;
 import com.ansteel.shop.goods.service.CartService;
 import com.ansteel.shop.goods.service.GoodsOrderService;
 import com.ansteel.shop.goods.service.GoodsService;
@@ -180,7 +181,10 @@ public class ShopBuyController {
                         HttpServletRequest request,
                         HttpServletResponse response) {
 
-        goodsOrderService.createOrder(shopOrderModel);
+        List<GoodsOrder> goodsOrderList = goodsOrderService.createOrder(shopOrderModel);
+        model.addAttribute("P_AMOUNT", shopOrderModel.getAmount());
+        model.addAttribute("P_GOODSORDER_LIST",goodsOrderList);
+
         String style = PageStyle.getStyle();
         model.addAttribute("P_STYLE",style);
         model.addAttribute("P_STEP","step3");

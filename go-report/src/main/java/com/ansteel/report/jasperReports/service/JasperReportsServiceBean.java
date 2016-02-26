@@ -11,6 +11,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ansteel.common.attachment.service.FileAttachmentService;
 import org.hibernate.internal.SessionFactoryImpl;
 import org.hibernate.jpa.HibernateEntityManagerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,7 +49,10 @@ public class JasperReportsServiceBean implements JasperReportsService {
 	JasperReportRepository jasperReportRepository;
 
 	@Autowired
-	AttachmentService attachmentService;
+	FileAttachmentService fileAttachmentService;
+
+	@Autowired
+	JasperAttachmentTreeService jasperAttachmentTreeService;
 
 	@Value("${go_pro.attPath}")
 	private String attPath;
@@ -66,33 +70,24 @@ public class JasperReportsServiceBean implements JasperReportsService {
 		if (StringUtils.hasText(report.getId())) {
 			String aId = report.getAttachmentId();
 			if (StringUtils.hasText(aId)) {
-				attachment = attachmentService.getAttachmentById(aId);
+				attachment = fileAttachmentService.findOne(aId);
 			}
 		}
 		String fileType = FileUtils.getFileType(file.getOriginalFilename());
 		if (fileType.equals("jasper")) {
 			if (attachment == null) {
 				// 获取exclTpl附件目录
-				AttachmentTree attachmentTree = this.getAttachmentTree();
-				attachment = attachmentService.saveAttachment(attachmentTree,
-						file, report.getName(), report.getAlias());
+				AttachmentTree attachmentTree = jasperAttachmentTreeService.get();
+				attachment = fileAttachmentService.save(attachmentTree,
+						file);
 			} else {
-				attachment = attachmentService.saveAttachment(attachment, file);
+				attachment = fileAttachmentService.save(attachment, file);
 			}
 			report.setAttachmentId(attachment.getId());
 			return attachment.getPath();
 		} else {
 			throw new PageException("请上传.jasper文件！");
 		}
-	}
-
-	private AttachmentTree getAttachmentTree() {
-		AttachmentTree attachmentTree = attachmentService
-				.getAttachmentTreeByName(AttachmentConstant.JASPER_TPL_NAME);
-		if (attachmentTree == null) {
-			attachmentTree=attachmentService.saveAttachmentTree(AttachmentConstant.getJasperTplAttachmentTree());
-		}
-		return attachmentTree;
 	}
 
 	@Override
@@ -230,13 +225,9 @@ public class JasperReportsServiceBean implements JasperReportsService {
 	@Transactional(readOnly=false)
 	public String saveReport(JasperReport jasperReport, String rType,
 			Map<String, Object> parameters) {
-		AttachmentTree attachmentTree = attachmentService
-				.getAttachmentTreeByName(AttachmentConstant.REPORT_FILE_NAME);
-		if (attachmentTree == null) {
-			attachmentTree=attachmentService.saveAttachmentTree(AttachmentConstant.getReportFileAttachmentTree());
-		}
+		AttachmentTree attachmentTree = jasperAttachmentTreeService.get();
 		String tplPath = attPath+"/"+jasperReport.getAttachmentPath();
-		String outPath=attPath+"/"+attachmentService.getPath(attachmentTree, StringUtils.getUuid(), null)+".pdf";
+		String outPath=attPath+"/"+jasperAttachmentTreeService.getPath(attachmentTree, StringUtils.getUuid()+".pdf");
 		try {
 			FileUtils.createNewFile(outPath);
 		} catch (IOException e1) {
@@ -249,7 +240,7 @@ public class JasperReportsServiceBean implements JasperReportsService {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Attachment att=attachmentService.saveAttachment(outPath,attachmentTree);
+		Attachment att=fileAttachmentService.save(outPath, attachmentTree);
 		return att.getId();
 	}
 

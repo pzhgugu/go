@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import com.ansteel.common.attachment.service.AttService;
+import com.ansteel.common.attachment.service.FileAttachmentService;
 import com.ansteel.core.constant.Public;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -44,7 +46,10 @@ import com.ansteel.dhtmlx.jsonclass.UDataSet;
 public class AttachmentController extends BaseController {
 
 	@Autowired
-	AttachmentService attachmentService;
+	FileAttachmentService fileAttachmentService;
+
+	@Autowired
+	AttService attService;
 
 	@Override
 	public Collection<EntityInfo> getEntityInfos() {
@@ -79,7 +84,7 @@ public class AttachmentController extends BaseController {
 			HttpServletRequest request, 
 			HttpServletResponse response ){
 		if (entity.getClass() == Attachment.class) {
-			Attachment attachment = attachmentService.saveAttachment(file,
+			Attachment attachment = attService.saveAttachment(file,
 					value, (Attachment) entity);
 			super.saveAjax(attachment, result, key, value, request,response);
 			ResponseUtils.setContentType(response);
@@ -102,7 +107,7 @@ public class AttachmentController extends BaseController {
 				count, order, request, response);
 
 		if (clazz == Attachment.class) {
-			return attachmentService.setAttachmentToPath(dataSet,request);
+			return attService.setAttachmentToPath(dataSet,request);
 		}
 		return dataSet;
 	}
@@ -112,7 +117,7 @@ public class AttachmentController extends BaseController {
 			@RequestParam(value = "_inline", required = false) String inline,
 			HttpServletRequest request, HttpServletResponse response)
 			throws Exception {
-		Attachment attachment = attachmentService.getAttachmentByIdToPath(id);
+		Attachment attachment = fileAttachmentService.findOne(id);
 		DownloadUtils.download(response, attachment.getPath(), inline);
 	}
 	
@@ -135,7 +140,7 @@ public class AttachmentController extends BaseController {
 			HttpServletResponse response){
 		UDataSet dataSet = super.queryDetailPageAjax(clazz, key, value, posStart, count, order, queryList, request, response);
 		if(clazz==Attachment.class) {
-			return attachmentService.setAttachmentToPath(dataSet,request);
+			return attService.setAttachmentToPath(dataSet,request);
 		}
 		return dataSet;
 	}
@@ -153,7 +158,7 @@ public class AttachmentController extends BaseController {
 		
 		UDataSet dataSet = super.queryPageAjax(clazz, key, value, posStart, count, order, queryList, request, response);
 		if(clazz==Attachment.class) {
-			return attachmentService.setAttachmentToPath(dataSet,request);
+			return attService.setAttachmentToPath(dataSet,request);
 		}
 		return dataSet;
 	}

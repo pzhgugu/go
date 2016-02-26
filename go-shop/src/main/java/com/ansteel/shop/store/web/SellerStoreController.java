@@ -3,6 +3,7 @@ package com.ansteel.shop.store.web;
 
 import com.ansteel.common.attachment.domain.Attachment;
 import com.ansteel.common.attachment.service.AttachmentService;
+import com.ansteel.common.attachment.service.FileAttachmentService;
 import com.ansteel.core.constant.Public;
 import com.ansteel.core.utils.*;
 import com.ansteel.shop.goods.domain.JsonManagement;
@@ -44,7 +45,7 @@ public class SellerStoreController {
     StoreGradeService storeGradeService;
 
     @Autowired
-    AttachmentService attachmentService;
+    FileAttachmentService fileAttachmentService;
 
     @RequestMapping("/info")
     public String info(Model model,
@@ -153,7 +154,7 @@ public class SellerStoreController {
         SlideImageJson slideImageJson = new SlideImageJson();
 
         try {
-            Attachment att = attachmentService.saveAttachment(multipartFile);
+            Attachment att = fileAttachmentService.save(multipartFile);
             slideImageJson.setFile_name(att.getId());
             slideImageJson.setFile_id(att.getId());
         } catch (Exception e) {

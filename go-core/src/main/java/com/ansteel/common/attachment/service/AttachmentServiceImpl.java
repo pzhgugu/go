@@ -38,16 +38,15 @@ import com.ansteel.dhtmlx.jsonclass.UDataSet;
  */
 @Service
 @Transactional(readOnly=true)
-public class AttachmentServiceBean implements AttachmentService {
-	
+public class AttachmentServiceImpl implements AttachmentService {
+/*
+
 	@Value("${go_pro.attPath}")
 	private String attPath;
 	
 	@Value("${go_pro.attWeb}")
 	private String attWeb;
-	
-	@Value("${go_pro.attTempPath}")
-	private String attTempPath;
+
 	
 	@Autowired
 	AttachmentRepository attachmentRepository;
@@ -109,10 +108,11 @@ public class AttachmentServiceBean implements AttachmentService {
 		}
 	}
 
-    @Override
+	@Override
 	public String getPath(String path) {
 		return  attPath+path;
 	}
+
 
 	@Override
 	public String getPath(AttachmentTree attachmentTree, String fileName,String type) {
@@ -137,7 +137,7 @@ public class AttachmentServiceBean implements AttachmentService {
 	private String getLocalPath(String type) {
 		StringBuffer sb = new  StringBuffer();
 		sb.append("/");
-		sb.append(DateTimeUtils.format(new Date(),"yyyyMMdd"));
+		sb.append(DateTimeUtils.format(new Date(), "yyyyMMdd"));
 		sb.append("/");
 		if(StringUtils.hasText(type)){
 			sb.append(type);
@@ -193,6 +193,7 @@ public class AttachmentServiceBean implements AttachmentService {
 		return attachment;
 	}
 
+
 	@Override
 	@Transactional(propagation=Propagation.REQUIRES_NEW,readOnly=true)
 	public String getWebPathById(HttpServletRequest request,String id) {
@@ -222,7 +223,8 @@ public class AttachmentServiceBean implements AttachmentService {
 		return attachmentTreeRepository.findOneByName(nameValue);
 	}
 
-	/*@Override
+	*/
+/*@Override
 	@Transactional(readOnly=false)
 	public AttachmentTree getAttachmentTreeByAdd(String name,String alias,int isDate) {
 		AttachmentTree attachmentTree =  getAttachmentTreeByName(name);
@@ -235,7 +237,8 @@ public class AttachmentServiceBean implements AttachmentService {
 			attachmentTree=attachmentTreeRepository.save(attachmentTree);
 		}
 		return attachmentTree;
-	}*/
+	}*//*
+
 	
 	
 	@Override
@@ -253,14 +256,14 @@ public class AttachmentServiceBean implements AttachmentService {
 		attachment.setName(name);
 		attachment.setAlias(alias);
 		
-		return this.saveAttachment(attachment,file);
+		return this.saveAttachment(attachment, file);
 	}
 
 	@Override
 	@Transactional(readOnly=false)
 	public Attachment saveAttachment(Attachment attachment, MultipartFile file) {
 		this.setFileInfo(file,attachment);
-		this.saveFile(file,attachment,attachment.getAttachmentTree());			
+		this.saveFile(file,attachment,attachment.getAttachmentTree());
 		return attachmentRepository.save(attachment);
 	}
 
@@ -279,10 +282,6 @@ public class AttachmentServiceBean implements AttachmentService {
 			attachmentRepository.delete(attachment);
 		}
 		
-	}
-	
-	public String getAttTempPath(){
-		return attTempPath;
 	}
 
 	@Override
@@ -365,4 +364,6 @@ public class AttachmentServiceBean implements AttachmentService {
 		AttachmentTree attachmentTree=this.getOtherAttachmentTree();
 		return this.saveAttachment(attachmentTree, file, file.getOriginalFilename(), file.getOriginalFilename());
 	}
+*/
+
 }

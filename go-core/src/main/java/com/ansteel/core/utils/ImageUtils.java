@@ -1,19 +1,21 @@
 package com.ansteel.core.utils;
 
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.Toolkit;
-import java.awt.image.BufferedImage;
-import java.awt.image.CropImageFilter;
-import java.awt.image.FilteredImageSource;
-import java.awt.image.ImageFilter;
+import java.awt.*;
+import java.awt.image.*;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 
 import javax.imageio.ImageIO;
+import javax.swing.*;
 
 import com.ansteel.common.attachment.domain.AttachmentTree;
 import com.ansteel.core.exception.PageException;
+import com.sun.image.codec.jpeg.JPEGCodec;
+import com.sun.image.codec.jpeg.JPEGEncodeParam;
+import com.sun.image.codec.jpeg.JPEGImageEncoder;
+
 /**
  * 创 建 人：gugu
  * 创建日期：2015-05-25
@@ -42,7 +44,7 @@ public class ImageUtils {
 	}
 
 	/**
-	 * @param srcImageFile
+	 * @param inputStream
 	 *            源图像地址
 	 * @param x
 	 *            目标切片起点x坐标
@@ -106,4 +108,130 @@ public class ImageUtils {
 		}
 	}
 
+	public static void abscut(InputStream inputStream, int x, int y,  int width, int height,String destImagePath) {
+		try {
+			Image img;
+			ImageFilter cropFilter;
+			// 读取源图像
+			BufferedImage bi = ImageIO.read(inputStream);
+			int srcWidth = bi.getWidth(); // 源图宽度
+			int srcHeight = bi.getHeight(); // 源图高度
+			//if (srcWidth >= destWidth && srcHeight >= destHeight) {
+			Image image = bi.getScaledInstance(srcWidth, srcHeight,
+					Image.SCALE_DEFAULT);
+			// 四个参数分别为图像起点坐标和宽高
+			// 即: CropImageFilter(int x,int y,int width,int height)
+			cropFilter = new CropImageFilter(x, y, width, height);
+			img = Toolkit.getDefaultToolkit().createImage(
+					new FilteredImageSource(image.getSource(), cropFilter));
+			BufferedImage tag = new BufferedImage(width, height,
+					BufferedImage.TYPE_INT_RGB);
+			Graphics g = tag.getGraphics();
+			g.drawImage(img, 0, 0, null); // 绘制缩小后的图
+			g.dispose();
+			// 输出为文件
+			File file = new File(destImagePath);
+			// 判断目录或文件是否存在 ,不存在创建文件夹
+			if(!file.getParentFile().exists()){
+				file.getParentFile().mkdirs();
+			}
+			ImageIO.write(tag, "JPEG",file);
+			//}
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new PageException("图片剪切错误："+e.getMessage());
+		}
+	}
+
+	/**
+	 * 图片缩放
+	 * @param originalFile
+	 * @param resizedFile
+	 * @param newWidth
+	 * @param quality
+	 * @throws IOException
+	 */
+	public static void resize(File originalFile, File resizedFile,
+							  int newWidth, float quality) throws IOException {
+
+		if (quality > 1) {
+			throw new IllegalArgumentException(
+					"Quality has to be between 0 and 1");
+		}
+
+		ImageIcon ii = new ImageIcon(originalFile.getCanonicalPath());
+		resize(ii, resizedFile,newWidth,quality);
+	} // Example usage
+
+	public static void resize(Image image, File resizedFile,
+							  int newWidth, float quality) throws IOException {
+
+		if (quality > 1) {
+			throw new IllegalArgumentException(
+					"Quality has to be between 0 and 1");
+		}
+
+		ImageIcon ii = new ImageIcon(image);
+		resize(ii, resizedFile,newWidth,quality);
+	} // Example usage
+
+	public static void resize(ImageIcon ii, File resizedFile,
+							  int newWidth, float quality) throws IOException {
+
+		if (quality > 1) {
+			throw new IllegalArgumentException(
+					"Quality has to be between 0 and 1");
+		}
+		Image i = ii.getImage();
+		Image resizedImage = null;
+
+		int iWidth = i.getWidth(null);
+		int iHeight = i.getHeight(null);
+
+		if (iWidth > iHeight) {
+			resizedImage = i.getScaledInstance(newWidth, (newWidth * iHeight)
+					/ iWidth, Image.SCALE_SMOOTH);
+		} else {
+			resizedImage = i.getScaledInstance((newWidth * iWidth) / iHeight,
+					newWidth, Image.SCALE_SMOOTH);
+		}
+
+		// This code ensures that all the pixels in the image are loaded.
+		Image temp = new ImageIcon(resizedImage).getImage();
+
+		// Create the buffered image.
+		BufferedImage bufferedImage = new BufferedImage(temp.getWidth(null),
+				temp.getHeight(null), BufferedImage.TYPE_INT_RGB);
+
+		// Copy image to buffered image.
+		Graphics g = bufferedImage.createGraphics();
+
+		// Clear background and paint the image.
+		g.setColor(Color.white);
+		g.fillRect(0, 0, temp.getWidth(null), temp.getHeight(null));
+		g.drawImage(temp, 0, 0, null);
+		g.dispose();
+
+		// Soften.
+		float softenFactor = 0.05f;
+		float[] softenArray = { 0, softenFactor, 0, softenFactor,
+				1 - (softenFactor * 4), softenFactor, 0, softenFactor, 0 };
+		Kernel kernel = new Kernel(3, 3, softenArray);
+		ConvolveOp cOp = new ConvolveOp(kernel, ConvolveOp.EDGE_NO_OP, null);
+		bufferedImage = cOp.filter(bufferedImage, null);
+
+		// Write the jpeg to a file.
+		FileOutputStream out = new FileOutputStream(resizedFile);
+
+		// Encodes image as a JPEG data stream
+		JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(out);
+
+		JPEGEncodeParam param = encoder
+				.getDefaultJPEGEncodeParam(bufferedImage);
+
+		param.setQuality(quality, true);
+
+		encoder.setJPEGEncodeParam(param);
+		encoder.encode(bufferedImage);
+	} // Example usage
 }
