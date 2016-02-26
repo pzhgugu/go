@@ -44,7 +44,7 @@ public class NewsCategoryServiceBean implements NewsCategoryService{
 			int height, int size) {
 		AttachmentTree attachmentTree = imageAttachmentTreeService.get();
 		String outPath=imageAttachmentTreeService.getPath(attachmentTree,StringUtils.getUuid()+".jpg");
-		ImageUtils.abscut(inputStream,x, y, width, height,size, outPath);		
+		ImageUtils.abscut(inputStream,x, y, width, height,size, attPath+outPath);
 		Attachment attachment= fileAttachmentService.save(outPath, attachmentTree);
 		return attachment.getId();		
 	}
