@@ -10,7 +10,16 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="D:/goshop/goshop-parent/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/go-shop/pom.xml" />
+        <option value="$PROJECT_DIR$/go-wechat/pom.xml" />
+        <option value="D:/goshop/goshop-parent/goshop-common/pom.xml" />
+        <option value="D:/goshop/goshop-parent/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">

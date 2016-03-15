@@ -67,13 +67,9 @@ public class DefaultEditors {
 			}
 			PropertyEditor editor = null;
 			Object o= null;
-			try {
-				editor = defaultEditors.get(fieldType);
-				editor.setAsText(value);
-				o=editor.getValue();	
-			} catch (Exception e) {
-				// TODO: handle exception
-			}				
+			editor = defaultEditors.get(fieldType);
+			editor.setAsText(value);
+			o=editor.getValue();
 			return o;
 		}else{
 			return value;

@@ -12,7 +12,7 @@
         <module>go-show</module>
         <module>go-report</module>
         <module>go-cms</module>
-        <module>go-shop</module>
+        <module>go-solr</module>
     </modules>
 
     <parent>
@@ -24,11 +24,11 @@
 
     <properties>
         <spring.version>4.1.6.RELEASE</spring.version>
+        <java.version>1.7</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-data-jpa.version>1.5.0.M1</spring-data-jpa.version>
         <hibernate-entitymanager.version>4.3.10.Final</hibernate-entitymanager.version>
         <mysql-version>5.1.25</mysql-version>
-        <java.version>1.7</java.version>
         <httpclient.version>4.3.4</httpclient.version>
         <jackson.version>2.4.0</jackson.version>
         <fileupload-version>1.3.1</fileupload-version>
@@ -40,6 +40,8 @@
         <spring-security.version>3.2.5.RELEASE</spring-security.version>
         <go.version>0.0.1-SNAPSHOT</go.version>
         <patchca.version>0.0.1</patchca.version>
+        <slf4j-log4j12.version>1.6.6</slf4j-log4j12.version>
+        <solr-solrj.version>5.3.0</solr-solrj.version>
     </properties>
 
 

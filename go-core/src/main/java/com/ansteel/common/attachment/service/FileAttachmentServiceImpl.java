@@ -89,6 +89,7 @@ public class FileAttachmentServiceImpl implements FileAttachmentService {
         }
     }
 
+    @Override
     public String getPath(String path) {
         return  attPath+path;
     }
@@ -115,7 +116,7 @@ public class FileAttachmentServiceImpl implements FileAttachmentService {
     public Attachment save(String id, MultipartFile file) {
         Attachment attachment=attachmentRepository.findOne(id);
         Assert.notNull(attachment, id + ",不存在！");
-        return this.save(attachment,file);
+        return this.save(attachment, file);
     }
 
     @Override
@@ -130,7 +131,7 @@ public class FileAttachmentServiceImpl implements FileAttachmentService {
     @Override
     @Transactional
     public Attachment save(String outPath, AttachmentTree attachmentTree) {
-        return attService.saveAttachment(outPath,attachmentTree);
+        return attService.saveAttachment(outPath, attachmentTree);
     }
 
     @Override
@@ -158,5 +159,20 @@ public class FileAttachmentServiceImpl implements FileAttachmentService {
         return attachmentRepository.save(attachment);
     }
 
+    @Override
+    @Transactional
+    public Attachment save(MultipartFile file, String treeId, Attachment attachment) {
+        if(!(StringUtils.hasText(attachment.getId())&&file==null)){
+            Assert.notNull(file, "文件不能为空！");
+            AttachmentTree attachmentTree = attachment.getAttachmentTree();
+            Assert.hasText(treeId, "树id不能为空！");
+            if(attachmentTree==null||!attachmentTree.getId().equals(treeId)){
+                attachmentTree = attachmentTreeRepository.findOne(treeId);
+                attachment.setAttachmentTree(attachmentTree);
+            }
+            attachment = this.save(attachment, file);
+        }
 
+        return attachment;
+    }
 }

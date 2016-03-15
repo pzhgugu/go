@@ -282,8 +282,8 @@ public class DynamicModelsServiceBean implements DynamicModelsService {
 	@Override
 	public void createTable(String id) {
 		DynamicModels dynamicModels = getDynamicModelsById(id,DYNAMIC_TYPE);
-		Assert.notNull(dynamicModels, id+",模型没有找到,请检查模型类型是否为动态模型！");
-		tableSchema.updateTable(dynamicModels.getName(),dynamicModels.getFields());
+		Assert.notNull(dynamicModels, id + ",模型没有找到,请检查模型类型是否为动态模型！");
+		tableSchema.updateTable(dynamicModels.getName(), dynamicModels.getFields());
 	}
 
 	@Override
@@ -317,7 +317,7 @@ public class DynamicModelsServiceBean implements DynamicModelsService {
 				
 			}
 		}
-		tableSchema.save(model.getName(),list,valueMap);
+		tableSchema.save(model.getName(), list, valueMap);
 		return true;
 	}
 
@@ -337,11 +337,19 @@ public class DynamicModelsServiceBean implements DynamicModelsService {
 			if(requestMap.containsKey(name)){
 				String value = requestMap.get(name);
 				if(StringUtils.hasText(value)){
-					Object v = new DefaultEditors().getValue(getTypeClass(field.getFieldType()),value);
-					if(v==null){
-						return false;
+					try {
+						Object v = new DefaultEditors().getValue(getTypeClass(field.getFieldType()), value);
+						if (v == null) {
+							return false;
+						}
+						valueMap.put(name, v);
+					}catch (Exception e){
+						for(DynamicFields d:list){
+							if(d.getName().equals(name)){
+								throw new PageException("["+d.getAlias()+"]输入类型错误，请重新输入！");
+							}
+						}
 					}
-					valueMap.put(name, v);	
 				}
 				
 			}
@@ -354,7 +362,7 @@ public class DynamicModelsServiceBean implements DynamicModelsService {
 	public void delect(String modelName, String id) {
 		DynamicModels model=dynamicModelsRepository.findOneByName(modelName);
 		Assert.notNull(model, modelName+",模型没有找到,请检查！");
-		tableSchema.delect(model.getName(),model.getFields(),id);
+		tableSchema.delect(model.getName(), model.getFields(), id);
 	}
 
 	@Override

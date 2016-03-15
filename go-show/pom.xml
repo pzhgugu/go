@@ -32,9 +32,10 @@
 			<version>${go.version}</version>
 		</dependency>
 
+
 		<dependency>
 			<groupId>com.ansteel.go</groupId>
-			<artifactId>go-shop</artifactId>
+			<artifactId>go-solr</artifactId>
 			<version>${go.version}</version>
 		</dependency>
 

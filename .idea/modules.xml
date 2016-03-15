@@ -6,9 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/go-cms/go-cms.iml" filepath="$PROJECT_DIR$/go-cms/go-cms.iml" />
       <module fileurl="file://$PROJECT_DIR$/go-core/go-core.iml" filepath="$PROJECT_DIR$/go-core/go-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/go-report/go-report.iml" filepath="$PROJECT_DIR$/go-report/go-report.iml" />
-      <module fileurl="file://$PROJECT_DIR$/go-shop/go-shop.iml" filepath="$PROJECT_DIR$/go-shop/go-shop.iml" />
       <module fileurl="file://$PROJECT_DIR$/go-show/go-show.iml" filepath="$PROJECT_DIR$/go-show/go-show.iml" />
+      <module fileurl="file://$PROJECT_DIR$/go-solr/go-solr.iml" filepath="$PROJECT_DIR$/go-solr/go-solr.iml" />
     </modules>
   </component>
 </project>
-

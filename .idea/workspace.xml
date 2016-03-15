@@ -5,13 +5,594 @@
   </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="go-show:war" />
+      <artifact name="go-show:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23d20e94-640b-4f14-9abe-d205c42b79fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/service/NewsCategoryServiceBean.java" afterPath="$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/service/NewsCategoryServiceBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/test/domain/GoodsClassModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/core/service/SolrService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/core/service/SolrServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/test/controller/SolrTestController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/go-solr/pom.xml" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\go-shop.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\album\domain\AlbumClass.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\album\domain\AlbumPic.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\album\repository\AlbumClassRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\album\repository\AlbumPicRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\album\service\AlbumClassService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\album\service\AlbumClassServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\album\service\AlbumPicService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\album\service\AlbumPicServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\album\web\AlbumController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\album\web\AlbumPicController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\context\ShopSellerInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\controller\SettingController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\domain\Address.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\domain\Invoice.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\domain\Setting.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\repository\AddressRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\repository\InvoiceRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\repository\SettingRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\service\AddressService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\service\AddressServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\service\InvoiceService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\service\InvoiceServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\service\SettingGoodsVerifyService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\service\SettingGoodsVerifyServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\web\AddressController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\web\AddressFreightModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\web\AddressModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\web\InvoiceController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\core\web\InvoiceModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\controller\GoodsAttributeController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\controller\GoodsAttributeValueController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\controller\GoodsBrandController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\controller\GoodsClassController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\controller\GoodsController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\controller\GoodsSpecController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\controller\GoodsTypeController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\Cart.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\Goods.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsAttribute.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsAttributeValue.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsBrand.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsClass.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsClassStaple.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsCommon.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsConsult.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsImages.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsOrder.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsOrderBill.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsOrderCommon.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsOrderGoods.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsOrderLog.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsOrderPay.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsSpec.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsSpecValue.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\GoodsType.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\JsonDone.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\JsonGoodsClass.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\JsonGoodsClassData.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\JsonGoodsSpec.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\JsonManagement.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\domain\JsonManagementClass.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\CartRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsAttributeRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsAttributeValueRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsBrandRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsClassRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsClassStapleRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsCommonRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsConsultRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsDao.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsImagesRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsOrderBillRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsOrderCommonRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsOrderGoodsRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsOrderLogRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsOrderPayRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsOrderRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsSpecRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsSpecValueRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\repository\GoodsTypeRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\CartService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\CartServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsAttributeService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsAttributeServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsAttributeValueService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsAttributeValueServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsBrandService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsBrandServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsClassService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsClassServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsClassStapleService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsClassStapleServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsCommonService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsCommonServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsConsultService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsConsultServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsImagesService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsImagesServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsOrderBillService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsOrderBillServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsOrderCommonService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsOrderCommonServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsOrderGoodsService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsOrderGoodsServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsOrderLogService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsOrderLogServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsOrderPayService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsOrderPayServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsOrderService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsOrderServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsSpecService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsSpecServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsSpecValueService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsSpecValueServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsTypeService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\GoodsTypeServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\OrderSerialNumberService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\service\OrderSerialNumberServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\BuyGoodsModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\CartListModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\CartModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\CartObjectModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\CartSessionModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\CartUpdateModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\ClientCartController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\ClientGoodsClassController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\ClientGoodsConsultController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\ClientGoodsController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\ColorImagesModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\GoodsAttrModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\GoodsImagesModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\GoodsModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\GoodsOrderController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\GoodsQrcodeController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\GoodsSpecValueModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\GoodsSpecValueSelectListModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\GoodsSpecValueStockModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\SellerGoodsController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\SellerGoodsOnlineController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\SellerGoodsSpecValueController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\ShopBuyController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\ShopOrderCartModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\ShopOrderModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\ShopOrderStoreModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\goods\web\StorePlateController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\login\web\LoginShopController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\member\domain\ShopMember.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\member\repository\ShopMemberRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\member\service\ShopMemberService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\member\service\ShopMemberServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\member\web\MemberController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\member\web\MemberModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\member\web\MemberShopOrderController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\member\web\PrivacyModel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\controller\StoreClassController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\controller\StoreController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\controller\StoreGradeController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\controller\StoreJoininAdminController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\controller\StoreManageController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\domain\SlideImage.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\domain\SlideImageJson.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\domain\Store.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\domain\StoreClass.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\domain\StoreGoodsClass.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\domain\StoreGrade.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\domain\StoreJoinin.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\domain\StoreNavigation.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\domain\StorePlate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\domain\StoreWarning.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\repository\StoreClassRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\repository\StoreGoodsClassRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\repository\StoreGradeRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\repository\StoreJoininRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\repository\StoreNavigationRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\repository\StorePlateRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\repository\StoreRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\repository\StoreWarningRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\MultipleScoreModle.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreClassService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreClassServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreGoodsClassService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreGoodsClassServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreGradeService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreGradeServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreJoininService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreJoininServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreNavigationService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreNavigationServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StorePlateService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StorePlateServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreScoreModle.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreScoreService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreScoreServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreWarningService.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\service\StoreWarningServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\web\SellerBrandApplyController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\web\SellerHomeController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\web\SellerStoreController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\web\SellerStoreGoodsClassController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\web\SellerStoreNavController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\web\SellerStoreWarningController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\store\web\StoreJoininController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\storehome\web\StoreHomeContoller.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\utils\JsonImage.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\main\java\com\ansteel\shop\utils\PageStyle.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\test\java\com\ansteel\core\utils\OnSessionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\test\java\com\ansteel\core\utils\SpringBaseTest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\test\java\com\ansteel\core\utils\SpringControllerTest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\test\java\com\ansteel\core\utils\SpringDbunitTest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\test\java\com\ansteel\shop\goods\repository\GoodsClassRepositoryTest.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\test\java\com\ansteel\shop\goodsshow\service\GoodsShowController.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\test\resources\applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\test\resources\fis-block.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\test\resources\go.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-shop\src\test\resources\spring-mvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\fis-conf.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\2014grate.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\2014shop_background_img.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\CP.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\btn.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\buy\buy_step.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\buy\cart.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\buy\gift.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\buy\pay-use.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\checking.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\default_admin_avatar.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\delect.ico" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\gift.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\group_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\home_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\ico.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\login.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\login\login.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\login\login_bg_01.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\login\login_bg_01_pic.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\login\login_bg_02.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\login\login_bg_02_pic.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\login\login_code.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\login_qq.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\login_weibo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member-card\mail-send.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member-card\sex.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\ad_next.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\ad_prev.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\ad_scroll.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\ajax-edit.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\album_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\bg_repeat_x.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\btn.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\bundling_goods_thumb.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\buyer_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\buyer_header.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\close.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\cut_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\default_image.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\del.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\gray_th.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\ico.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\menu_dotted.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\modify.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\modify1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\mubg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\ncus_body.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\ncus_public.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\ncus_repeat_x.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\oldbtn.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\opa75.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\open.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\repeat_x.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\right.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\search.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\search1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\shareicon\shareicon_qqweibo.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\shareicon\shareicon_qqzone.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\shareicon\shareicon_renren.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\shareicon\shareicon_sinaweibo.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\shareicon\shareicons.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\sns_bg_repeat_x.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\sort_asc.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\sort_desc.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\ssns_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\ssns_pics.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\success.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\upload_loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\member\warning_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\mjs-pic.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\nc_arrows.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\nc_sortbar.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\ncsc_bg_img.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\no_pic.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\nothing.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\qq_bind_small.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\right.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\right1.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\rmb.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\rmb_b.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\rmb_s.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\sale_price.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\sex.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\shop\2014_ncs_public_img.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\shop\bundling.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\shop\hand.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\shop\public.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\shop\repeat_x.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\shop\switch_bar.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\shop\userinfo_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\shop\zoom.cur" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\shop\zoom.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\sina_bind_small.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\sky\bg_position.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\sky\body_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\sky\button_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\sky\button_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\sky\fixed_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\sky\left.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\sky\prompt.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\sky\shopnc_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\store_joinin\body_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\store_joinin\img_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\tip-yellowsimple_arrows.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\top_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\transparent.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\images\update.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\admin\goods\attribute.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\admin\goods\brand.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\admin\store\closeVerify.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\admin\store\storeManage.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\admin\store\storeVerify.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\among.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\breadcrumb.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\button.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\footer.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\goodclass.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\goodsdetail\content.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\goodsdetail\cosulting.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\goodsdetail\detail.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\goodsdetail\home.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\goodsdetail\main.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\goodsqrcode.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\header.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\2014grate.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\btnImage.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\delect.ico" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\member-card\mail-send.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\member-card\sex.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\modify1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\no.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\sex.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\shop\2014_ncs_public_img.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\shop\bundling.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\shop\hand.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\shop\public.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\shop\repeat_x.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\shop\switch_bar.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\shop\userinfo_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\shop\zoom.cur" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\shop\zoom.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\tip-yellowsimple_arrows.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\top_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\images\update.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\login\login.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\message.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\nav.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\scripts\ImageZoom.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\scripts\iZoomPath.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\shopbuy\add_address.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\shopbuy\address.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\shopbuy\buy_step1.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\shopbuy\buy_step2.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\shopbuy\buyflowimage.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\shopbuy\cart.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\shopbuy\goods_list.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\shopbuy\invoice.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\shopbuy\loadInv.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\shopbuy\load_address.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\shopbuy\payment.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\styles\home_goods.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\styles\home_header.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\footer.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\avatar.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\email.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\framework.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\header.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\ad_next.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\ad_prev.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\ad_scroll.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\ajax-edit.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\album_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\bg_repeat_x.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\btn.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\bundling_goods_thumb.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\buyer_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\buyer_header.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\close.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\cut_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\default_image.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\del.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\gray_th.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\ico.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\menu_dotted.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\mubg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\ncus_body.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\ncus_public.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\ncus_repeat_x.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\oldbtn.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\opa75.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\open.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\repeat_x.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\right.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\shareicon\shareicon_qqweibo.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\shareicon\shareicon_qqzone.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\shareicon\shareicon_renren.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\shareicon\shareicon_sinaweibo.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\shareicon\shareicons.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\sns_bg_repeat_x.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\sort_asc.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\sort_desc.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\ssns_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\ssns_pics.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\success.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\upload_loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\images\warning_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\index.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\new_order_list.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\passwd.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\set.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\set_sidebar.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\sidebar.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\styles\member.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\tabmenu.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\upload.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\store\header.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\store\settledpay.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\store\settledstepfour.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\store\settledstepone.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\store\settledstepthree.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\store\settledsteptwo.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\store\sidebar.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\store\storeagreement.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\among.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\articleHome.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\atricle.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\background.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\goodclass.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\header.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\home.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\images\header.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\images\preview.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\main.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\nav.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\query.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\queryHome.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\sidebar.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default\style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\flexslider.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\footer.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\storeinfo.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\top.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\GoodsAdd\goodsAddStep1.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\GoodsAdd\goodsAddStep2.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\GoodsAdd\goodsAddStep2ImageDescList.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\GoodsAdd\goodsAddStep2ImageList.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\GoodsAdd\goodsAddStep3.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\GoodsAdd\goodsAddStep3ImageList.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\GoodsAdd\goodsAddStep4.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\GoodsAdd\setp.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\GoodsAdd\storeWarning.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\album\addPage.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\album\album.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\album\movePage.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\album\piclist.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\album\updatePage.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\goodsOnline\ad.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\goodsOnline\goodsOfflineList.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\goodsOnline\goodsOnlineList.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\goodsOnline\goodsOutlineList.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\goodsOnline\goodsVerifyList.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\goodsOnline\plateEditPosition.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\home.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\plate\plateAdd.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\plate\plateList.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\spec\storespecadd.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\spec\storespeclist.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\store\addBrandApply.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\store\addGoodsClass.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\store\addnav.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\store\brandApply.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\store\editorBrandApply.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\store\setlist.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\store\setslide.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\store\storegoodsclass.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\store\storeinfo.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\seller\store\storenav.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\admin\appleStoreJoinin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\admin\goodsAttribute.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\admin\goodsBrand.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\admin\goodsType.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\album.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\area_array.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\common.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\common_select.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\dialog\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\dialog\dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\dialog\dialog.js12819.merged" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\dialog\images\error.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\dialog\images\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\dialog\images\info.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\dialog\images\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\dialog\images\right.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\dialog\images\tab.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\dialog\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\goods_cart.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\jqtreetable.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\member.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\page.step2.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\page.step3.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\perfect-scrollbar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\piclist.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\plateAdd.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\seller.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\shop.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\store_goods_add.step1.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\store_goods_add.step2.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\store_goods_add.step3.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\store_goods_list.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\scripts\store_slide.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\shop-map.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\styles\base.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\styles\home_cart.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\styles\home_login.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\styles\seller_center.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\styles\shop.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\styles\skin_0.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\styles\store_joinin.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\widget\tpl\pagination.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\widget\tpl\seller\footer.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\widget\tpl\seller\framework.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\widget\tpl\seller\header.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\widget\tpl\seller\layoutHome.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\widget\tpl\seller\layoutLeftGoods.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\widget\tpl\seller\layoutLeftStore.html.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\widget\tpl\seller\nav.html.jsp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttService.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttServiceImpl.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/controller/AttachmentController.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/controller/AttachmentController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/resources/publish/AutoPublish.xml" afterPath="$PROJECT_DIR$/go-show/src/main/resources/publish/AutoPublish.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/context/DefaultEditors.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/context/DefaultEditors.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/service/DynamicModelsServiceBean.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/service/DynamicModelsServiceBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/FileAttachmentService.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/FileAttachmentService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/FileAttachmentServiceImpl.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/FileAttachmentServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/tag/HtmlTag.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/tag/HtmlTag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/fis.tld" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/fis.tld" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/go-show.iml" afterPath="$PROJECT_DIR$/go-show/go-show.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/resources/go.properties" afterPath="$PROJECT_DIR$/go-show/src/main/resources/go.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/go_show_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/go_show_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/pom.xml" afterPath="$PROJECT_DIR$/go-show/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/go-show/src/main/resources/spring-mvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/resources/spring-sec.xml" afterPath="$PROJECT_DIR$/go-show/src/main/resources/spring-sec.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\git\go\go-shop\src\test\resources\spring-sec.xml" afterPath="$PROJECT_DIR$/go-solr/src/main/resources/solr.xml" />
     </list>
     <ignored path="go.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,6 +610,10 @@
     <ignored path="$PROJECT_DIR$/go-show/target/" />
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path=".idea/" />
+    <ignored path="$PROJECT_DIR$/go-wechat/target/" />
+    <ignored path="$PROJECT_DIR$/go-solr/target/" />
+    <ignored path="D:/goshop/goshop-parent/target/" />
+    <ignored path="D:/goshop/goshop-parent/goshop-common/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,66 +677,145 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FileAttachmentService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/FileAttachmentService.java">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+              <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DynamicModelsServiceBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/service/DynamicModelsServiceBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="357" column="20" selection-start-line="357" selection-start-column="20" selection-end-line="357" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#3833#3849#0" expanded="false" />
+                <element signature="e#4123#4124#0" expanded="false" />
+                <element signature="e#4180#4181#0" expanded="false" />
+                <element signature="e#6864#7610#0" expanded="false" />
+                <element signature="e#7609#7610#0" expanded="false" />
+                <element signature="e#19033#19034#0" expanded="false" />
+                <element signature="e#19076#19077#0" expanded="false" />
+                <element signature="e#19131#19132#0" expanded="false" />
+                <element signature="e#19180#19181#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileAttachmentServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/FileAttachmentServiceImpl.java">
+      <file leaf-file-name="AjaxAuthenticationFailureHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/AjaxAuthenticationFailureHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="131" column="22" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExcelServiceBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ExcelServiceBean.java">
+      <file leaf-file-name="CustomAccessDecisionManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomAccessDecisionManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="145" column="60" selection-start-line="145" selection-start-column="60" selection-end-line="145" selection-end-column="60" />
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsCategoryController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/controller/NewsCategoryController.java">
+      <file leaf-file-name="AbstractSecurityInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/3.2.5.RELEASE/spring-security-core-3.2.5.RELEASE-sources.jar!/org/springframework/security/access/intercept/AbstractSecurityInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
-              <folding />
+              <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#21676#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#8501#8518#0" expanded="false" />
+                <element signature="e#17065#17066#0" expanded="false" />
+                <element signature="e#17109#17110#0" expanded="false" />
+                <element signature="e#17174#17175#0" expanded="false" />
+                <element signature="e#17219#17220#0" expanded="false" />
+                <element signature="e#17282#17283#0" expanded="false" />
+                <element signature="e#17331#17332#0" expanded="false" />
+                <element signature="e#17376#17377#0" expanded="false" />
+                <element signature="e#17411#17412#0" expanded="false" />
+                <element signature="e#17880#17881#0" expanded="false" />
+                <element signature="e#17923#17924#0" expanded="false" />
+                <element signature="e#17973#17974#0" expanded="false" />
+                <element signature="e#18019#18020#0" expanded="false" />
+                <element signature="e#18070#18071#0" expanded="false" />
+                <element signature="e#18117#18118#0" expanded="false" />
+                <element signature="e#19553#19554#0" expanded="false" />
+                <element signature="e#19608#19609#0" expanded="false" />
+                <element signature="e#21302#21303#0" expanded="false" />
+                <element signature="e#21350#21351#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsCategoryService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/service/NewsCategoryService.java">
+      <file leaf-file-name="ResourcesServiceBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/service/ResourcesServiceBean.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-              <folding />
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#1008#1009#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsCategoryServiceBean.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/service/NewsCategoryServiceBean.java">
+      <file leaf-file-name="CustomAccessDeniedHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomAccessDeniedHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8116711">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomAuthenticationSuccessHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomAuthenticationSuccessHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomConcurrentSessionFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomConcurrentSessionFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1882#1883#0" expanded="false" />
+                <element signature="e#1945#1946#0" expanded="false" />
+                <element signature="e#2275#2276#0" expanded="false" />
+                <element signature="e#2309#2310#0" expanded="false" />
+                <element signature="e#4690#4691#0" expanded="false" />
+                <element signature="e#4725#4726#0" expanded="false" />
+                <element signature="e#4866#4867#0" expanded="false" />
+                <element signature="e#4911#4912#0" expanded="false" />
+                <element signature="e#5101#5102#0" expanded="false" />
+                <element signature="e#5148#5149#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,10 +826,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
-        <option value="JavaScript File" />
         <option value="Jsp File" />
-        <option value="Interface" />
+        <option value="JavaScript File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -190,57 +854,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/member/default/set.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/member/default/header.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/member/default/tabmenu.html.jsp" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/service/UserServiceBean.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/service/UserService.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/member/default/sidebar.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/member/default/email.html.jsp" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/member/default/avatar.html.jsp" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttachmentServiceBean.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttachmentTempService.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/member/default/upload.html.jsp" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/ImageUtils.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/member/service/ShopMemberService.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/member/web/MemberController.java" />
         <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/controller/AttachmentController.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/kindeditor/controller/KindEditorController.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/controller/AttController.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/album/service/AlbumPicServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/ImageAttachmentTreeService.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttachmentTreeService.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttachmentTreeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/ImageAttachmentTreeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/DefaultAttachmentTreeService.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/DefaultAttachmentTreeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttachmentTempServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerBrandApplyController.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StoreServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreController.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StoreJoininServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsBrandServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/jasperReports/service/ImageAttachmentTreeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/jasperReports/service/JasperAttachmentTreeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttService.java" />
-        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/member/service/ShopMemberServiceImpl.java" />
         <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/FileAttachmentService.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/jasperReports/service/JasperReportsServiceBean.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/report/scripts/jasperReport.js" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/FileAttachmentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttachmentService.java" />
-        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttachmentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ImageAttachmentTreeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ExcelAttachmentTreeService.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ExcelAttachmentTreeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ExcelServiceBean.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ReportAttachmentTreeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ReportAttachmentTreeService.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/service/MakeReportServiceBean.java" />
-        <option value="$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/reportlist/service/ReportMappedServiceBean.java" />
-        <option value="$PROJECT_DIR$/go-report/src/test/java/com/ansteel/modules/makereport/service/MakeReportControllerTest.java" />
-        <option value="$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/service/NewsCategoryServiceBean.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttService.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttServiceImpl.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/member/default/email.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/member/default/framework.html.jsp" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsOrderGoodsService.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsOrderGoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsOrderGoods.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsOrderService.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/member/web/MemberShopOrderController.java" />
+        <option value="$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/domain/GoodsOrder.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/member/default/new_order_list.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/home.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/cosulting.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/scripts/ImageZoom.js" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/shop/pages/client/buy/default/goodsdetail/detail.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/wechat/fis-conf.js" />
+        <option value="$PROJECT_DIR$/go-wechat/pom.xml" />
+        <option value="$PROJECT_DIR$/go-wechat/src/main/java/com/ansteel/dss/service/StartupListener.java" />
+        <option value="$PROJECT_DIR$/go-wechat/src/main/java/com/ansteel/wechat/inoic/web/IonicTestController.java" />
+        <option value="$PROJECT_DIR$/go-wechat/src/main/java/com/ansteel/wechat/inoic/web/IonicDomeController.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/wechat/pages/dome/index.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/wechat/scripts/demo/ionic.bundle.min.js" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/fis.tld" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/tag/HtmlTag.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/wechat/pages/demo/index.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/wechat/pages/demo/1.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/wechat/pages/demo/2.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/wechat/pages/demo/3.html.jsp" />
+        <option value="$PROJECT_DIR$/go-wechat/src/main/java/com/ansteel/wechat/inoic/web/IonicDemoController.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/wechat/pages/demo/4.html.jsp" />
+        <option value="$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/core/service/SolrServce.java" />
+        <option value="$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/core/service/SolrServceImpl.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/java/com/ansteel/show/core/controller/ShowTestController.java" />
+        <option value="$PROJECT_DIR$/go-solr/src/main/resources/solr.xml" />
+        <option value="$PROJECT_DIR$/go-solr/pom.xml" />
+        <option value="$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/test/domain/GoodsClassModel.java" />
+        <option value="$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/core/domain/Page.java" />
+        <option value="$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/core/service/SolrService.java" />
+        <option value="$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/test/controller/SolrTestController.java" />
+        <option value="$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/core/service/SolrServiceImpl.java" />
+        <option value="$PROJECT_DIR$/go-show/src/main/resources/go.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/go-show/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/go-show/src/main/resources/spring-sec.xml" />
+        <option value="$PROJECT_DIR$/go-show/pom.xml" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/context/DefaultEditors.java" />
+        <option value="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/service/DynamicModelsServiceBean.java" />
       </list>
     </option>
   </component>
@@ -276,7 +940,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="go-core" />
+          <option name="myItemId" value="go-solr" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -290,17 +954,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="go-core" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="go" />
+          <option name="myItemId" value="go-solr" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -377,6 +1031,7 @@
     <panes>
       <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -395,207 +1050,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go-report" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go-report" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go-report" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go-report" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go-report" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -610,7 +1066,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="last_opened_file_path" value="D:/goshop/goshop-parent" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -618,7 +1074,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
@@ -637,20 +1093,23 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\git\go\go-report\src\main\java\com\ansteel\report\excel\service" />
-      <recent name="D:\git\go\go-report\src\main\java\com\ansteel\report\jasperReports\service" />
-      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default" />
-      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\member\default\css" />
-      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client" />
+      <recent name="D:\git\go\go-solr\src\main\resources" />
+      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\wechat\pages\demo" />
+      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\wechat\styles\demo" />
+      <recent name="D:\git\go\go-wechat\src\main" />
+      <recent name="D:\git\go\go-wechat" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\wechat\scripts\demo" />
+      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\wechat\widget" />
+      <recent name="D:\git\go\go-wechat\src" />
+      <recent name="D:\git\go\go-wechat\main" />
       <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\buy\default\goodsdetail" />
-      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\goods\default\css" />
-      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client" />
-      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome" />
-      <recent name="D:\git\go\go-show\src\main\webapp\WEB-INF\shop\pages\client\storehome\default" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -833,13 +1292,13 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
+        <value defaultName="singleModule" />
       </option>
       <envs />
       <patterns />
@@ -992,12 +1451,6 @@
       <item index="1" class="java.lang.String" itemvalue="JUnit.SqlServiceBeanTest" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.SqlServiceBeanTest.asToUpperCaseTest" />
     </list>
-    <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SqlServiceBeanTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SqlServiceBeanTest.asToUpperCaseTest" />
-      </list>
-    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -1121,13 +1574,33 @@
       <workItem from="1456189268478" duration="22718000" />
       <workItem from="1456274377611" duration="24482000" />
       <workItem from="1456360553260" duration="24497000" />
-      <workItem from="1456451452373" duration="21024000" />
-    </task>
-    <task id="LOCAL-00005" summary="开发">
-      <created>1440464941465</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1440464941465</updated>
+      <workItem from="1456451452373" duration="21461000" />
+      <workItem from="1456497024396" duration="9000" />
+      <workItem from="1456497046061" duration="4059000" />
+      <workItem from="1456535231469" duration="12323000" />
+      <workItem from="1456629586933" duration="16214000" />
+      <workItem from="1456706703191" duration="13849000" />
+      <workItem from="1456802537657" duration="817000" />
+      <workItem from="1456904169303" duration="1127000" />
+      <workItem from="1456965723367" duration="188000" />
+      <workItem from="1456983877465" duration="11502000" />
+      <workItem from="1457050062431" duration="793000" />
+      <workItem from="1457051129724" duration="9118000" />
+      <workItem from="1457313583113" duration="2335000" />
+      <workItem from="1457427064472" duration="391000" />
+      <workItem from="1457484582958" duration="565000" />
+      <workItem from="1457657578035" duration="7656000" />
+      <workItem from="1457670937850" duration="6867000" />
+      <workItem from="1457698842490" duration="2305000" />
+      <workItem from="1457705532366" duration="3151000" />
+      <workItem from="1457724399704" duration="1696000" />
+      <workItem from="1457775735247" duration="3284000" />
+      <workItem from="1457829618367" duration="1667000" />
+      <workItem from="1457959750167" duration="2770000" />
+      <workItem from="1457966971975" duration="1753000" />
+      <workItem from="1457999433613" duration="765000" />
+      <workItem from="1458011325781" duration="153000" />
+      <workItem from="1458022079167" duration="400000" />
     </task>
     <task id="LOCAL-00006" summary="开发">
       <created>1440471411279</created>
@@ -1417,11 +1890,17 @@
       <option name="project" value="LOCAL" />
       <updated>1456474817465</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="开发(电商修改)">
+      <created>1456476377321</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1456476377321</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1181256000" />
+    <option name="totallyTimeSpent" value="1287450000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1437,32 +1916,32 @@
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2320819" sideWeight="0.81762916" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15870307" sideWeight="0.5448328" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.334471" sideWeight="0.33282673" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.4969605" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1231003" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18693009" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.4969605" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34270516" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31610942" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20896657" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31911263" sideWeight="0.49088147" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24924012" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25938568" sideWeight="0.66717327" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22525597" sideWeight="0.66717327" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29692832" sideWeight="0.5448328" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3993174" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51706487" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16382253" sideWeight="0.49088147" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1491,71 +1970,137 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/controller/GoodsTypeController.java</url>
           <line>47</line>
           <properties />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/ExcelMakeUtils.java</url>
           <line>453</line>
           <properties />
           <option name="timeStamp" value="285" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/ExcelMakeUtils.java</url>
           <line>458</line>
           <properties />
           <option name="timeStamp" value="291" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsCommonServiceImpl.java</url>
           <line>392</line>
           <properties />
           <option name="timeStamp" value="365" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/RequestUtils.java</url>
           <line>60</line>
           <properties />
           <option name="timeStamp" value="416" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/controller/GlobalBaseController.java</url>
           <line>115</line>
           <properties />
           <option name="timeStamp" value="500" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/BaseExcelReport.java</url>
           <line>84</line>
           <properties />
           <option name="timeStamp" value="599" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/web/GoodsOrderController.java</url>
           <line>32</line>
           <properties />
           <option name="timeStamp" value="613" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/controller/ExcelController.java</url>
           <line>200</line>
           <properties />
           <option name="timeStamp" value="622" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttachmentTempServiceImpl.java</url>
-          <line>78</line>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/solr/solr-solrj/5.3.0/solr-solrj-5.3.0.jar!/org/apache/solr/client/solrj/beans/DocumentObjectBinder.class</url>
+          <line>136</line>
           <properties />
-          <option name="timeStamp" value="674" />
+          <option name="timeStamp" value="710" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/solr/solr-solrj/5.3.0/solr-solrj-5.3.0.jar!/org/apache/solr/client/solrj/beans/DocumentObjectBinder.class</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="711" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/solr/solr-solrj/5.3.0/solr-solrj-5.3.0.jar!/org/apache/solr/client/solrj/beans/DocumentObjectBinder.class</url>
+          <line>150</line>
+          <properties />
+          <option name="timeStamp" value="712" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/solr/solr-solrj/5.3.0/solr-solrj-5.3.0.jar!/org/apache/solr/client/solrj/beans/DocumentObjectBinder.class</url>
+          <line>147</line>
+          <properties />
+          <option name="timeStamp" value="713" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/solr/solr-solrj/5.3.0/solr-solrj-5.3.0.jar!/org/apache/solr/client/solrj/beans/DocumentObjectBinder.class</url>
+          <line>176</line>
+          <properties />
+          <option name="timeStamp" value="714" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/test/controller/SolrTestController.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="715" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/core/service/SolrServiceImpl.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="716" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/core/service/SolrServiceImpl.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="717" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/go-solr/src/main/java/com/ansteel/solr/test/controller/SolrTestController.java</url>
+          <line>130</line>
+          <properties />
+          <option name="timeStamp" value="718" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/core/TableSchema.java</url>
+          <line>127</line>
+          <properties />
+          <option name="timeStamp" value="719" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomAccessDecisionManager.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="725" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/service/ResourcesServiceBean.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="726" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="684" />
+      <option name="time" value="727" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1564,194 +2109,66 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/controller/AttController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.9/druid-1.0.9-sources.jar!/com/alibaba/druid/pool/DruidDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33142856">
+          <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/report/scripts/excelReport.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/album/service/AlbumPicServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="137" column="37" selection-start-line="137" selection-start-column="37" selection-end-line="137" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/controller/AttachmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="162" column="23" selection-start-line="162" selection-start-column="23" selection-end-line="162" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/DefaultAttachmentTreeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttachmentTempService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.6.RELEASE/spring-web-4.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73731345">
-          <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/ImageUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="165" column="23" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttachmentTempServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/service/BaseServiceBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding>
-            <element signature="e#2999#3000#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerBrandApplyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="66" selection-start-line="94" selection-start-column="66" selection-end-line="94" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StoreServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="62" selection-start-line="93" selection-start-column="62" selection-end-line="93" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/web/SellerStoreController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="156" column="55" selection-start-line="156" selection-start-column="55" selection-end-line="156" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/store/service/StoreJoininServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="53" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/goods/service/GoodsBrandServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="51" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/jasperReports/service/JasperAttachmentTreeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="84" selection-start-line="40" selection-start-column="84" selection-end-line="40" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/member/service/ShopMemberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/member/service/ShopMemberServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="189" column="29" selection-start-line="189" selection-start-column="29" selection-end-line="189" selection-end-column="29" />
-          <folding>
-            <element signature="e#5264#5265#0" expanded="true" />
-            <element signature="e#5332#5333#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/jasperReports/service/JasperAttachmentTreeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51724136">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-shop/src/main/java/com/ansteel/shop/member/web/MemberController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="203" column="45" selection-start-line="203" selection-start-column="45" selection-end-line="203" selection-end-column="45" />
-          <folding />
+          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/report/scripts/jasperReport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.928572">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/cms/scripts/newsCategory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="113" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/core/scripts/attachment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3728814">
+          <caret line="54" column="36" selection-start-line="42" selection-start-column="8" selection-end-line="54" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excelin/controller/ExcelInController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/poi/utils/PoiUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/poi/utils/Excel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/jasperReports/controller/JasperReportsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="63" selection-start-line="75" selection-start-column="63" selection-end-line="75" selection-end-column="63" />
-          <folding />
+          <caret line="75" column="62" selection-start-line="75" selection-start-column="62" selection-end-line="75" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -1759,230 +2176,361 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/utils/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33159268">
-          <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.1.6.RELEASE/spring-aop-4.1.6.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36901408">
-          <caret line="176" column="0" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.7.0.M1/spring-data-commons-1.7.0.M1-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33159268">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/jasperReports/service/JasperReportsServiceBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.0">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ExcelAttachmentTreeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5862069">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ExcelAttachmentTreeService.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="12" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ExcelAttachmentTreeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="5" selection-start-line="14" selection-start-column="3" selection-end-line="46" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/core/constant/AttachmentConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="34" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/DefaultAttachmentTreeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="72" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ReportAttachmentTreeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="73" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ReportAttachmentTreeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/makereport/service/MakeReportServiceBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="77.85714">
-          <caret line="196" column="45" selection-start-line="196" selection-start-column="45" selection-end-line="196" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/reportlist/service/ReportMappedServiceBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/test/java/com/ansteel/modules/makereport/service/MakeReportControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="46" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/core/BaseExcelReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttachmentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="33" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttachmentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="305" column="29" selection-start-line="288" selection-start-column="8" selection-end-line="305" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ExcelServiceBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="145" column="60" selection-start-line="145" selection-start-column="60" selection-end-line="145" selection-end-column="60" />
-          <folding />
+          <caret line="80" column="53" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/FileAttachmentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/FileAttachmentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="131" column="22" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
+          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ExcelServiceBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/service/ExcelService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/controller/ExcelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/main/java/com/ansteel/report/excel/domain/ExcelReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="150" column="21" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.1.6.RELEASE/spring-test-4.1.6.RELEASE.jar!/org/springframework/test/context/junit4/AbstractTransactionalJUnit4SpringContextTests.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/test/java/com/ansteel/core/utils/SpringBaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.1.6.RELEASE/spring-test-4.1.6.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.1.6.RELEASE/spring-test-4.1.6.RELEASE.jar!/org/springframework/test/context/junit4/AbstractJUnit4SpringContextTests.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30623817">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/src/test/java/com/ansteel/core/utils/OnSessionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="51" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/domain/Roles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/domain/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/domain/Resources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/domain/Groups.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/domain/Permission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/domain/PermissionURL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/editTest.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="49.57143">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/go.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/spring-sec.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-report/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="139" column="3" selection-start-line="139" selection-start-column="3" selection-end-line="139" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/core/ITableSchema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/core/TableSchema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="131" column="35" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/service/DynamicModelsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/controller/DynamicModelsTplController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/core/context/DefaultEditors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/dynamicmodel/service/DynamicModelsServiceBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="357" column="20" selection-start-line="357" selection-start-column="20" selection-end-line="357" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3833#3849#0" expanded="false" />
+            <element signature="e#4123#4124#0" expanded="false" />
+            <element signature="e#4180#4181#0" expanded="false" />
+            <element signature="e#6864#7610#0" expanded="false" />
+            <element signature="e#7609#7610#0" expanded="false" />
+            <element signature="e#19033#19034#0" expanded="false" />
+            <element signature="e#19076#19077#0" expanded="false" />
+            <element signature="e#19131#19132#0" expanded="false" />
+            <element signature="e#19180#19181#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/controller/NewsCategoryController.java">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/AjaxAuthenticationFailureHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/service/NewsCategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttachmentTreeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4666667">
-          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/AttachmentTreeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64444447">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/ImageAttachmentTreeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8">
-          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/attachment/service/ImageAttachmentTreeService.java">
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomAccessDeniedHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44444445">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomAuthenticationSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomConcurrentSessionFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1882#1883#0" expanded="false" />
+            <element signature="e#1945#1946#0" expanded="false" />
+            <element signature="e#2275#2276#0" expanded="false" />
+            <element signature="e#2309#2310#0" expanded="false" />
+            <element signature="e#4690#4691#0" expanded="false" />
+            <element signature="e#4725#4726#0" expanded="false" />
+            <element signature="e#4866#4867#0" expanded="false" />
+            <element signature="e#4911#4912#0" expanded="false" />
+            <element signature="e#5101#5102#0" expanded="false" />
+            <element signature="e#5148#5149#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/3.2.5.RELEASE/spring-security-core-3.2.5.RELEASE-sources.jar!/org/springframework/security/access/intercept/AbstractSecurityInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21676#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#8501#8518#0" expanded="false" />
+            <element signature="e#17065#17066#0" expanded="false" />
+            <element signature="e#17109#17110#0" expanded="false" />
+            <element signature="e#17174#17175#0" expanded="false" />
+            <element signature="e#17219#17220#0" expanded="false" />
+            <element signature="e#17282#17283#0" expanded="false" />
+            <element signature="e#17331#17332#0" expanded="false" />
+            <element signature="e#17376#17377#0" expanded="false" />
+            <element signature="e#17411#17412#0" expanded="false" />
+            <element signature="e#17880#17881#0" expanded="false" />
+            <element signature="e#17923#17924#0" expanded="false" />
+            <element signature="e#17973#17974#0" expanded="false" />
+            <element signature="e#18019#18020#0" expanded="false" />
+            <element signature="e#18070#18071#0" expanded="false" />
+            <element signature="e#18117#18118#0" expanded="false" />
+            <element signature="e#19553#19554#0" expanded="false" />
+            <element signature="e#19608#19609#0" expanded="false" />
+            <element signature="e#21302#21303#0" expanded="false" />
+            <element signature="e#21350#21351#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/security/service/ResourcesServiceBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#1008#1009#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/springsecurity/service/CustomAccessDecisionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-cms/src/main/java/com/ansteel/cms/news/service/NewsCategoryServiceBean.java">
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8116711">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state vertical-scroll-proportion="3.2962298">
+          <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -43,37 +43,6 @@ public class AttServiceImpl implements AttService {
     }
 
     @Override
-    public UDataSet setAttachmentToPath(UDataSet dataSet, HttpServletRequest request) {
-        List<Attachment> result = (List<Attachment>) ((Page) dataSet.getResult()).getContent();
-        String url = (String) request
-                .getAttribute(ViewModelConstant.S_URL);
-        for(Attachment att:result){
-            String path = att.getPath();
-            att.setPath(this.getPath(path));
-            String web=url+"/att/download/"+att.getId();
-            att.setWebPath(web+"^"+web);
-        }
-        return dataSet;
-    }
-
-    @Override
-    @Transactional
-    public Attachment saveAttachment(MultipartFile file, String treeId, Attachment attachment) {
-        if(!(StringUtils.hasText(attachment.getId())&&file==null)){
-            Assert.notNull(file, "文件不能为空！");
-            AttachmentTree attachmentTree = attachment.getAttachmentTree();
-            Assert.hasText(treeId, "树id不能为空！");
-            if(attachmentTree==null||!attachmentTree.getId().equals(treeId)){
-                attachmentTree = attachmentTreeService.findOne(treeId);
-                attachment.setAttachmentTree(attachmentTree);
-            }
-            attachment = fileAttachmentService.save(attachment, file);
-        }
-
-        return attachment;
-    }
-
-    @Override
     @Transactional
     public Attachment saveAttachment(String outPath, AttachmentTree attachmentTree) {
         if(attachmentTree==null){

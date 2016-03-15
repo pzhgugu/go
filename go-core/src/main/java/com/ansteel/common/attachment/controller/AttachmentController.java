@@ -11,7 +11,9 @@ import javax.validation.Valid;
 import com.ansteel.common.attachment.service.AttService;
 import com.ansteel.common.attachment.service.FileAttachmentService;
 import com.ansteel.core.constant.Public;
+import com.ansteel.core.constant.ViewModelConstant;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -48,9 +50,6 @@ public class AttachmentController extends BaseController {
 	@Autowired
 	FileAttachmentService fileAttachmentService;
 
-	@Autowired
-	AttService attService;
-
 	@Override
 	public Collection<EntityInfo> getEntityInfos() {
 		// 树设置
@@ -84,7 +83,7 @@ public class AttachmentController extends BaseController {
 			HttpServletRequest request, 
 			HttpServletResponse response ){
 		if (entity.getClass() == Attachment.class) {
-			Attachment attachment = attService.saveAttachment(file,
+			Attachment attachment = fileAttachmentService.save(file,
 					value, (Attachment) entity);
 			super.saveAjax(attachment, result, key, value, request,response);
 			ResponseUtils.setContentType(response);
@@ -107,7 +106,7 @@ public class AttachmentController extends BaseController {
 				count, order, request, response);
 
 		if (clazz == Attachment.class) {
-			return attService.setAttachmentToPath(dataSet,request);
+			return this.setAttachmentToPath(dataSet,request);
 		}
 		return dataSet;
 	}
@@ -140,7 +139,7 @@ public class AttachmentController extends BaseController {
 			HttpServletResponse response){
 		UDataSet dataSet = super.queryDetailPageAjax(clazz, key, value, posStart, count, order, queryList, request, response);
 		if(clazz==Attachment.class) {
-			return attService.setAttachmentToPath(dataSet,request);
+			return this.setAttachmentToPath(dataSet,request);
 		}
 		return dataSet;
 	}
@@ -158,7 +157,20 @@ public class AttachmentController extends BaseController {
 		
 		UDataSet dataSet = super.queryPageAjax(clazz, key, value, posStart, count, order, queryList, request, response);
 		if(clazz==Attachment.class) {
-			return attService.setAttachmentToPath(dataSet,request);
+			return this.setAttachmentToPath(dataSet,request);
+		}
+		return dataSet;
+	}
+
+	public UDataSet setAttachmentToPath(UDataSet dataSet, HttpServletRequest request) {
+		List<Attachment> result = (List<Attachment>) ((Page) dataSet.getResult()).getContent();
+		String url = (String) request
+				.getAttribute(ViewModelConstant.S_URL);
+		for(Attachment att:result){
+			String path = att.getPath();
+			att.setPath(fileAttachmentService.getPath(path));
+			String web=url+"/att/download/"+att.getId();
+			att.setWebPath(web+"^"+web);
 		}
 		return dataSet;
 	}

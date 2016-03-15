@@ -12,6 +12,7 @@ public class HtmlTag extends BodyTagSupport {
 	
 	private String mapDir = "/";
 	private Resource resource;
+	private String ngApp="";
 
 	/**
 	 * 
@@ -21,7 +22,11 @@ public class HtmlTag extends BodyTagSupport {
 	public int doStartTag() throws JspException{
 		JspWriter out = pageContext.getOut();
 		try {
-			out.append("<html>");
+			if (ngApp!=null&&!ngApp.equals("")){
+				out.append("<html ng-app='" +ngApp+"'>" );
+			}else {
+				out.append("<html>");
+			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -55,4 +60,11 @@ public class HtmlTag extends BodyTagSupport {
 		this.mapDir = mapDir;
 	}
 
+	public String getNgApp() {
+		return ngApp;
+	}
+
+	public void setNgApp(String ngApp) {
+		this.ngApp = ngApp;
+	}
 }

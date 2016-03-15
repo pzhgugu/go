@@ -20,6 +20,7 @@
 	<security:http pattern="/makeReport/**" security="none"/>
 	<security:http pattern="/browsen**" security="none"/>
 	<security:http pattern="/att/**" security="none"/>
+	<security:http pattern="/wechat/demo/**" security="none"/>
 	<security:http pattern="/validationCodeServlet.png" security="none"/>
 	<security:http  auto-config="true" entry-point-ref="smartLoginUrlAuthenticationEntryPoint">
 	<!--  表达式模式

@@ -42,6 +42,7 @@
             classpath*:/applicationContext.xml,
 			classpath*:/spring-sec.xml,
 			classpath*:/fis-block.xml
+			classpath*:/solr.xml
         </param-value>
 	</context-param>
 

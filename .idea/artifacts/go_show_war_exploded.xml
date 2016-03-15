@@ -49,9 +49,15 @@
           <element id="archive" name="go-cms-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="go-cms" />
           </element>
-          <element id="archive" name="go-shop-0.0.1-SNAPSHOT.jar">
-            <element id="module-output" name="go-shop" />
+          <element id="archive" name="go-solr-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="go-solr" />
           </element>
+          <element id="library" level="project" name="Maven: org.apache.solr:solr-solrj:5.3.0" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpmime:4.4.1" />
+          <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.4.6" />
+          <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" />
+          <element id="library" level="project" name="Maven: org.codehaus.woodstox:woodstox-core-asl:4.4.1" />
+          <element id="library" level="project" name="Maven: org.noggit:noggit:0.6" />
           <element id="library" level="project" name="Maven: com.microsoft.sqlserver:sqljdbc4:4.0" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-data-jpa:1.0.0.RC1" />
