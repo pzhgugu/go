@@ -34,4 +34,4 @@ GoReport报表工具升级了以下功能：
 23、添加按钮授权功能，让页面具有按钮权限，简单配置、效率高。
 24、去除电商功能，将重新开发电商云平台。
 
-培训视频：链接：http://pan.baidu.com/s/1o70O0tG 密码：0wjo
+培训视频：链接：http://pan.baidu.com/s/1jGY7IYy
