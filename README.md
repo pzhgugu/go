@@ -35,3 +35,4 @@ GoReport报表工具升级了以下功能：
 24、去除电商功能，将重新开发电商云平台。
 
 培训视频：链接：http://pan.baidu.com/s/1kTXP8FH 密码：y4yd
+欢迎交流：pzh_gugu@126.com
