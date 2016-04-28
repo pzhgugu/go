@@ -67,6 +67,13 @@ public class SolrServiceImpl implements SolrService {
     }
 
     @Override
+    public QueryResponse query(String core, SolrQuery query) throws IOException, SolrServerException{
+        HttpSolrClient client =this.getHttpSolrClient(core);
+        QueryResponse response = client.query(query);
+        return response;
+    }
+
+    @Override
     public <T> Page query(String core, Class<T> clazz, SolrQuery query,Pageable pageable) throws IOException, SolrServerException {
         HttpSolrClient client =this.getHttpSolrClient(core);
         if(pageable!=null){

@@ -6,7 +6,6 @@
     <artifactId>go</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-
     <modules>
         <module>go-core</module>
         <module>go-show</module>
@@ -43,33 +42,7 @@
         <slf4j-log4j12.version>1.6.6</slf4j-log4j12.version>
         <solr-solrj.version>5.3.0</solr-solrj.version>
     </properties>
-
-
-    <repositories>
-        <repository>
-            <id>spring-milestones</id>
-            <url>http://repo.spring.io/libs-milestone</url>
-        </repository>
-        <repository>
-            <id>nexus</id>
-            <url>http://192.2.71.97:8081/nexus/content/groups/public</url>
-        </repository>
-        <repository>
-            <id>AsposeJavaAPI</id>
-            <url>http://192.2.71.97:8081/nexus/content/repositories/AsposeJavaAPI/</url>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>nexus</id>
-            <url>http://192.2.71.97:8081/nexus/content/groups/public</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
-
+    
 
     <dependencies>
 

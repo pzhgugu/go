@@ -137,8 +137,9 @@ public class FileAttachmentServiceImpl implements FileAttachmentService {
     @Override
     public Attachment findOne(String id) {
         Attachment attachment=attachmentRepository.findOne(id);
-        Assert.notNull(attachment, id + ",不存在！");
-        attachment.setPath(this.getPath(attachment.getPath()));
+        if(attachment!=null) {
+            attachment.setPath(this.getPath(attachment.getPath()));
+        }
         return attachment;
     }
 

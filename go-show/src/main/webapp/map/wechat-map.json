@@ -1,0 +1,617 @@
+{
+    "res": {
+        "wechat:scripts/demo/ionic.bundle.min.js": {
+            "uri": "/show/static/wechat/scripts/demo/ionic.bundle.min.js",
+            "type": "js"
+        },
+        "wechat:scripts/demo/script.js": {
+            "uri": "/show/static/wechat/scripts/demo/script.js",
+            "type": "js"
+        },
+        "wechat:styles/demo/style.css": {
+            "uri": "/show/static/wechat/styles/demo/style.css",
+            "type": "css"
+        },
+        "wechat:widget/ionic/css/ionic.css": {
+            "uri": "/show/static/wechat/widget/ionic/css/ionic.css",
+            "type": "css"
+        },
+        "wechat:widget/ionic/css/ionic.min.css": {
+            "uri": "/show/static/wechat/widget/ionic/css/ionic.min.css",
+            "type": "css"
+        },
+        "wechat:widget/ionic/js/angular/controller/headerBarController.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/controller/headerBarController.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/controller/infiniteScrollController.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/controller/infiniteScrollController.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/controller/listController.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/controller/listController.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/controller/navBarController.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/controller/navBarController.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/controller/navViewController.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/controller/navViewController.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/controller/refresherController.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/controller/refresherController.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/controller/scrollController.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/controller/scrollController.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/controller/sideMenuController.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/controller/sideMenuController.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/controller/spinnerController.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/controller/spinnerController.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/controller/tabController.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/controller/tabController.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/controller/tabsController.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/controller/tabsController.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/controller/viewController.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/controller/viewController.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/actionSheet.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/actionSheet.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/checkbox.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/checkbox.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/collectionRepeat.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/collectionRepeat.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/content.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/content.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/exposeAsideWhen.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/exposeAsideWhen.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/gesture.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/gesture.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/headerFooterBar.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/headerFooterBar.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/infiniteScroll.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/infiniteScroll.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/input.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/input.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/item.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/item.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/itemDeleteButton.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/itemDeleteButton.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/itemFloatingLabel.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/itemFloatingLabel.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/itemOptionButton.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/itemOptionButton.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/itemReorderButton.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/itemReorderButton.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/keyboardAttach.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/keyboardAttach.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/list.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/list.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/menuClose.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/menuClose.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/menuToggle.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/menuToggle.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/modal.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/modal.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/modalView.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/modalView.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/navBackButton.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/navBackButton.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/navBar.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/navBar.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/navButtons.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/navButtons.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/navDirection.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/navDirection.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/navTitle.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/navTitle.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/navTransition.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/navTransition.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/navView.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/navView.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/ngClick.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/ngClick.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/pane.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/pane.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/popover.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/popover.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/popoverView.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/popoverView.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/radio.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/radio.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/refresher.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/refresher.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/scroll.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/scroll.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/sideMenu.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/sideMenu.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/sideMenuContent.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/sideMenuContent.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/sideMenus.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/sideMenus.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/slideBox.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/slideBox.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/slides.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/slides.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/spinner.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/spinner.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/tab.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/tab.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/tabNav.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/tabNav.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/tabs.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/tabs.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/title.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/title.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/toggle.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/toggle.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/directive/view.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/directive/view.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/main.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/main.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/actionSheet.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/actionSheet.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/angularOverrides.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/angularOverrides.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/backdrop.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/backdrop.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/bind.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/bind.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/body.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/body.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/clickBlock.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/clickBlock.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/decorators/angular-ios9-uiwebview.patch.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/decorators/angular-ios9-uiwebview.patch.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/decorators/compile.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/decorators/compile.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/decorators/location.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/decorators/location.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/gesture.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/gesture.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/history.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/history.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/ionicConfig.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/ionicConfig.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/loading.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/loading.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/modal.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/modal.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/navBarDelegate.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/navBarDelegate.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/navViewDelegate.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/navViewDelegate.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/platform.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/platform.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/popover.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/popover.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/popup.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/popup.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/position.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/position.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/scrollDelegate.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/scrollDelegate.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/sideMenuDelegate.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/sideMenuDelegate.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/slideBoxDelegate.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/slideBoxDelegate.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/tabsDelegate.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/tabsDelegate.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/templateCache.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/templateCache.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/templateLoader.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/templateLoader.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/viewService.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/viewService.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/angular/service/viewSwitcher.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/angular/service/viewSwitcher.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/ionic.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/ionic.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/utils/activator.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/utils/activator.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/utils/delegateService.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/utils/delegateService.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/utils/dom.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/utils/dom.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/utils/events.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/utils/events.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/utils/gestures.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/utils/gestures.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/utils/keyboard.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/utils/keyboard.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/utils/platform.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/utils/platform.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/utils/poly.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/utils/poly.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/utils/tap.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/utils/tap.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/utils/utils.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/utils/utils.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/utils/viewport.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/utils/viewport.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/views/listView.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/views/listView.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/views/modalView.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/views/modalView.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/views/scrollView.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/views/scrollView.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/views/scrollViewNative.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/views/scrollViewNative.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/views/sideMenuView.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/views/sideMenuView.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/views/sliderView.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/views/sliderView.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/views/slidesView.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/views/slidesView.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/views/toggleView.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/views/toggleView.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/js/views/view.js": {
+            "uri": "/show/static/wechat/widget/ionic/js/views/view.js",
+            "type": "js"
+        },
+        "wechat:widget/ionic/scss/_action-sheet.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_action-sheet.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_animations.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_animations.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_backdrop.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_backdrop.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_badge.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_badge.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_bar.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_bar.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_button-bar.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_button-bar.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_button.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_button.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_checkbox.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_checkbox.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_form.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_form.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_grid.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_grid.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_items.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_items.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_list.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_list.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_loading.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_loading.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_menu.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_menu.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_mixins.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_mixins.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_modal.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_modal.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_platform.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_platform.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_popover.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_popover.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_popup.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_popup.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_progress.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_progress.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_radio.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_radio.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_range.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_range.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_refresher.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_refresher.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_reset.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_reset.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_scaffolding.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_scaffolding.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_select.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_select.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_slide-box.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_slide-box.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_slides.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_slides.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_spinner.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_spinner.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_tabs.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_tabs.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_toggle.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_toggle.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_transitions.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_transitions.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_type.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_type.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_util.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_util.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/_variables.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/_variables.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/ionic.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/ionic.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/ionicons/_ionicons-font.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/ionicons/_ionicons-font.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/ionicons/_ionicons-icons.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/ionicons/_ionicons-icons.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/ionicons/_ionicons-variables.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/ionicons/_ionicons-variables.scss",
+            "type": "scss"
+        },
+        "wechat:widget/ionic/scss/ionicons/ionicons.scss": {
+            "uri": "/show/static/wechat/widget/ionic/scss/ionicons/ionicons.scss",
+            "type": "scss"
+        }
+    },
+    "pkg": {}
+}

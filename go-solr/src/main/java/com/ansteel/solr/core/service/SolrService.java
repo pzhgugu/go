@@ -4,6 +4,7 @@ import com.ansteel.solr.test.domain.GoodsClassModel;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
+import org.apache.solr.client.solrj.response.QueryResponse;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -52,5 +53,8 @@ public interface SolrService {
      */
     <T>List<T> query(String core,Class<T> clazz, SolrQuery query) throws IOException, SolrServerException;
 
+    QueryResponse query(String core, SolrQuery query) throws IOException, SolrServerException;
+
     <T>Page query(String core,Class<T> clazz, SolrQuery query,Pageable pageable) throws IOException, SolrServerException;
+
 }
