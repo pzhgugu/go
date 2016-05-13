@@ -260,8 +260,14 @@
                         <target>${java.version}</target>
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <showWarnings>true</showWarnings>
+                        <compilerArguments>
+                            <verbose />
+                            <bootclasspath>${java.home}/lib/rt.jar;${java.home}/lib/jce.jar</bootclasspath>
+                        </compilerArguments>
                     </configuration>
                 </plugin>
+
+                <!-- 编译插件 -->
 
                 <!-- test插件, 仅测试名称为*Test的类, 使用支持分组测试的surefire-junit47 driver -->
                 <plugin>

@@ -5,6 +5,7 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/go-show" />
+    <file type="web" url="file://D:/goshop/goshop-parent/goshop-common-web" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -17,7 +18,11 @@
       <set>
         <option value="$PROJECT_DIR$/go-shop/pom.xml" />
         <option value="$PROJECT_DIR$/go-wechat/pom.xml" />
+        <option value="D:/goshop/goshop-parent/goshop-common-context/pom.xml" />
+        <option value="D:/goshop/goshop-parent/goshop-common-solr/pom.xml" />
+        <option value="D:/goshop/goshop-parent/goshop-common-web/pom.xml" />
         <option value="D:/goshop/goshop-parent/goshop-common/pom.xml" />
+        <option value="D:/goshop/goshop-parent/goshop-redis/pom.xml" />
         <option value="D:/goshop/goshop-parent/pom.xml" />
       </set>
     </option>

@@ -15,15 +15,18 @@
 		<dependency>
 			<groupId>com.github.bingoohuang</groupId>
 			<artifactId>patchca</artifactId>
+			<version>0.0.1</version>
 		</dependency>
 		<!--二维码-->
 		<dependency>
 			<groupId>com.google.zxing</groupId>
 			<artifactId>core</artifactId>
+			<version>3.2.1</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.zxing</groupId>
 			<artifactId>javase</artifactId>
+			<version>3.2.1</version>
 		</dependency>
 		<!-- j2ee web spec -->
 			<!-- update to servlet 3.0 for spring 4.0 MockHttpServletRequest -->

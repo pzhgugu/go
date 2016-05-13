@@ -64,6 +64,24 @@
         <processorPath useClasspath="true" />
         <module name="go-show" />
       </profile>
+      <profile default="false" name="Annotation profile for goshop-redis" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for goshop-common-context" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for goshop-common-solr" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="go" target="1.5" />
@@ -75,7 +93,11 @@
       <module name="go-solr" target="1.7" />
       <module name="go-wechat" target="1.5" />
       <module name="goshop-common" target="1.7" />
+      <module name="goshop-common-context" target="1.7" />
+      <module name="goshop-common-solr" target="1.7" />
+      <module name="goshop-common-web" target="1.5" />
       <module name="goshop-parent" target="1.5" />
+      <module name="goshop-redis" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

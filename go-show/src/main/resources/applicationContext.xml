@@ -16,11 +16,8 @@
 	<bean class="com.ansteel.core.context.ContextHolder" />-->
 	<bean class="com.ansteel.core.context.InstantiationTracingBeanPostProcessor" />
 
-	<context:property-placeholder
-		ignore-resource-not-found="true" location="classpath*:/go.properties" />
-    <!--<context:property-placeholder
-		ignore-resource-not-found="true" location="classpath*:/go.properties,
-                                  file:d:/go.properties" />-->
+    <context:property-placeholder  ignore-resource-not-found="true" location="classpath*:/go.properties,
+                                  file:/report/web_home/go.properties" />
 
 
 	<bean id="validator"
