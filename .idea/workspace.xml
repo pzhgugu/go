@@ -11,11 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="23d20e94-640b-4f14-9abe-d205c42b79fd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/beetl/service/BeetlServiceBean.java" afterPath="$PROJECT_DIR$/go-core/src/main/java/com/ansteel/common/beetl/service/BeetlServiceBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-core/src/test/java/com/ansteel/core/service/BaseServiceTest.java" afterPath="$PROJECT_DIR$/go-core/src/test/java/com/ansteel/core/service/BaseServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/pom.xml" afterPath="$PROJECT_DIR$/go-show/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go-show/src/main/resources/go.properties" afterPath="$PROJECT_DIR$/go-show/src/main/resources/go.properties" />
     </list>
     <ignored path="go.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,7 +100,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="go.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="go.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/go.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-671">
@@ -114,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="178" column="65" selection-start-line="178" selection-start-column="65" selection-end-line="178" selection-end-column="65" />
+            <state relative-caret-position="154">
+              <caret line="179" column="67" selection-start-line="179" selection-start-column="64" selection-end-line="179" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -212,8 +208,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/go-show/pom.xml" />
         <option value="$PROJECT_DIR$/go-core/src/test/java/com/ansteel/core/service/BaseServiceTest.java" />
-        <option value="$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/go-show/src/main/resources/go.properties" />
+        <option value="$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml" />
       </list>
     </option>
   </component>
@@ -1169,14 +1165,7 @@
       <workItem from="1463832402772" duration="12000" />
       <workItem from="1464014868449" duration="860000" />
       <workItem from="1464317104954" duration="833000" />
-      <workItem from="1465263969506" duration="9818000" />
-    </task>
-    <task id="LOCAL-00011" summary="开发(电商修改)">
-      <created>1440998598728</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1440998598728</updated>
+      <workItem from="1465263969506" duration="9942000" />
     </task>
     <task id="LOCAL-00012" summary="开发(电商修改)">
       <created>1449305628568</created>
@@ -1514,11 +1503,18 @@
       <option name="project" value="LOCAL" />
       <updated>1463149066433</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="开发">
+      <created>1465275341249</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1465275341280</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1384574000" />
+    <option name="totallyTimeSpent" value="1384698000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2111,18 +2107,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="178" column="65" selection-start-line="178" selection-start-column="65" selection-end-line="178" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/go.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-671">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go-show/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="179" column="67" selection-start-line="179" selection-start-column="64" selection-end-line="179" selection-end-column="67" />
           <folding />
         </state>
       </provider>
