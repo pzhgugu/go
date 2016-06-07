@@ -60,7 +60,7 @@ public class BeetlServiceBean implements BeetlService {
 	 * @return
 	 */
 	private Map<String, Object> getRequestMap(HttpServletRequest request) {
-		Map<String, Object> rMap = RequestUtils.getRequestMap(request);
+		Map<String, Object> rMap = RequestUtils.getRequestMapUnicode(request);
 		for (Entry<String, Object> entry : rMap.entrySet()) {
 			rMap.put(entry.getKey(), SqlUtils.sqlValidate((String)entry.getValue()));
 		}

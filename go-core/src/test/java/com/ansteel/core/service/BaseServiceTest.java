@@ -2,6 +2,7 @@ package com.ansteel.core.service;
 
 import static org.junit.Assert.*;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -18,6 +19,7 @@ public class BaseServiceTest extends SpringBaseTest{
 	BaseService baseService;
 
 	@Test
+	@Ignore
 	public void testfindByClassKeyValueOrderPageable() {
 		Pageable pageable=new PageRequest(0,10);
 		
@@ -31,6 +33,7 @@ public class BaseServiceTest extends SpringBaseTest{
 	}
 	
 	@Test
+	@Ignore
 	public void testfindByClassKeyValueOrderPageableQueryMapping() {
 		Pageable pageable=new PageRequest(0,10);
 		

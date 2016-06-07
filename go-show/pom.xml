@@ -47,6 +47,7 @@
 		<dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc6</artifactId>
+			<version>11.2</version>
 		</dependency>
 		<!-- j2ee web spec -->
 		<!-- update to servlet 3.0 for spring 4.0 MockHttpServletRequest -->
