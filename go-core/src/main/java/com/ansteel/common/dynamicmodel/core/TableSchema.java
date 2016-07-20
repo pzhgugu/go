@@ -162,12 +162,34 @@ public class TableSchema implements ITableSchema {
         Transaction tx = session.beginTransaction();
         Map data = (Map) session.load(name, id);  
         try {
-        	session.delete(name, data); 
+        	session.delete(name, data);
+			tx.commit();
 		} catch (Exception e) {
 			throw new PageException(id+"不存在，请检查！"+e.getMessage());
-		}	
-        tx.commit();
-        session.close();
+		}finally {
+			session.close();
+		}
+	}
+
+	@Override
+	public int clean(String name, Collection<DynamicFields> fields){
+		int result = 0 ;
+		String xml=this.getXML(name, fields);
+		name = this.getTableName(name);
+		SessionFactory  factory =this.getSessionFactory(xml);
+		Session session = factory.openSession();
+		Transaction tx = session.beginTransaction();
+		try {
+			StringBuffer cleanSql = new StringBuffer("delete from ");
+			cleanSql.append(name);
+			result=session.createSQLQuery(cleanSql.toString()).executeUpdate();
+			tx.commit();
+		} catch (Exception e) {
+			throw new PageException("清除表失败："+e.getMessage());
+		}finally {
+			session.close();
+		}
+		return result;
 	}
 
 }

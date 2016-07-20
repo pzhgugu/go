@@ -547,4 +547,11 @@ public class DynamicModelsServiceBean implements DynamicModelsService {
 		return dynamicFieldsQueryRepository.find(map);
 	}
 
+	@Override
+	public void clean(String modelName) {
+		DynamicModels model=dynamicModelsRepository.findOneByName(modelName);
+		Assert.notNull(model, modelName+",模型没有找到,请检查！");
+		tableSchema.clean(model.getName(), model.getFields());
+	}
+
 }

@@ -2,6 +2,7 @@ package com.ansteel.core.repository;
 
 import java.io.Serializable;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -88,13 +89,25 @@ public class SimpleProjectRepository<T, ID extends Serializable> extends
 		TypedQuery<Tuple> query = this.getTupleQuery(spec);		
 		return pageable == null ? new PageImpl<Tuple>(query.getResultList()) : readPageTuple(query, pageable, spec);
 	}
+	private static Long executeCountQuery(TypedQuery<Long> query) {
+		Assert.notNull(query);
+		List totals = query.getResultList();
+		Long total = Long.valueOf(0L);
+
+		Long element;
+		for(Iterator var3 = totals.iterator(); var3.hasNext(); total = Long.valueOf(total.longValue() + (element == null?0L:element.longValue()))) {
+			element = (Long)var3.next();
+		}
+
+		return total;
+	}
 
 	private PageImpl<Tuple> readPageTuple(TypedQuery<Tuple> query,
 			Pageable pageable, Specification spec) {
 		query.setFirstResult(pageable.getOffset());
 		query.setMaxResults(pageable.getPageSize());
 
-		Long total = QueryUtils.executeCountQuery(getCountQuery(spec));
+		Long total = executeCountQuery(this.getCountQuery(spec));
 		List<Tuple> content = total > pageable.getOffset() ? query.getResultList() : Collections.<Tuple> emptyList();
 
 		return new PageImpl<Tuple>(content, pageable, total);

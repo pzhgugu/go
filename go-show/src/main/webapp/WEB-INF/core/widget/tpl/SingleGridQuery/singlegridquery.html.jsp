@@ -2,6 +2,8 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix='c' uri='http://java.sun.com/jstl/core_rt'%>
 <%@ taglib uri="/fis" prefix="fis"%>
+
+<fis:require id="common:widget/jquery/jquery.form.js" />
 <fis:require id="core:widget/tpl/SingleGridQuery/singlegridquery.js" />  
 <div id="layoutObj"></div>
 <script type="text/javascript">

@@ -74,4 +74,5 @@ public interface DynamicModelsService {
 	Collection<DynamicFieldsQuery> findDynamicFieldsQuery(
 			Map<String, Object> map);
 
+	void clean(String modelName);
 }

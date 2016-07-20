@@ -1,0 +1,1 @@
+GPW.toolbar.init=function(){};

@@ -22,7 +22,7 @@ public class ProjectRepositoryFactory extends JpaRepositoryFactory {
     public ProjectRepositoryFactory(EntityManager entityManager) {   
         super(entityManager);   
     }   
-    @Override  
+
     @SuppressWarnings("unchecked")   
     protected JpaRepository<?, ?> getTargetRepository(RepositoryMetadata metadata, EntityManager em) {   
   

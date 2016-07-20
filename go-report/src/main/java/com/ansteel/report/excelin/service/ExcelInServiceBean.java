@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DateUtil;
@@ -120,7 +121,7 @@ public class ExcelInServiceBean implements ExcelInService {
 	}
 	
 	private String getCellValue(Cell cell) {
-		Object value=null;
+		/*Object value=null;
 		switch (cell.getCellType()) {
 	        case Cell.CELL_TYPE_STRING:
 	        	value=cell.getRichStringCellValue().getString();
@@ -142,7 +143,9 @@ public class ExcelInServiceBean implements ExcelInService {
 	            System.out.println();
 		}
 
-		return value+"";
+		return value+"";*/
+		cell.setCellType(HSSFCell.CELL_TYPE_STRING);
+		return cell.getRichStringCellValue().getString();
 	}
 
 }

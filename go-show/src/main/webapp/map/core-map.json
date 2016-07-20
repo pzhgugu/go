@@ -237,6 +237,14 @@
                 "common:widget/dhtmlxSuite/dhtmlxEx.js"
             ]
         },
+        "core:widget/tpl/toolbarHide.js": {
+            "uri": "/show/static/core/widget/tpl/toolbarHide.js",
+            "type": "js"
+        },
+        "core:widget/tpl/toolbarCleanData.js": {
+            "uri": "/show/static/core/widget/tpl/toolbarCleanData.js",
+            "type": "js"
+        },
         "core:widget/tpl/TreeTwoOneToMany/treetwoonetomany.js": {
             "uri": "/show/static/core/widget/tpl/TreeTwoOneToMany/treetwoonetomany.js",
             "type": "js",

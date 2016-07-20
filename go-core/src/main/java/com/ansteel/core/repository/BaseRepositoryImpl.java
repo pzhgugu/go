@@ -49,45 +49,45 @@ import com.ansteel.core.domain.TreeUI;
 @Repository
 @Transactional(readOnly = true)
 public class BaseRepositoryImpl<T, ID extends Serializable> implements BaseRepository<T, ID> {
-	
+
 	private static final String CountQueryPlaceholder ="x";
 
 	@PersistenceContext
 	private EntityManager em;
-	
+
 	private LockMetadataProvider lockMetadataProvider;
 
 	@Autowired
 	EntityManagerFactory entityManagerFactory;
-	
+
 	private JpaEntityInformation<T, ?> entityInformation;
-	
+
 	private PersistenceProvider provider;
-	
+
 	private static Map<Class,JpaEntityInformation> entityMetadataMap  = new HashMap<Class, JpaEntityInformation>();
-	
+
 	@Override
 	public void init(Class<T> clazz){
 		if(entityMetadataMap.containsKey(clazz)){
 			entityInformation= entityMetadataMap.get(clazz);
 		}else{
-			JpaEntityInformation<T, ?> entityMetadata = mock(JpaEntityInformation.class);   
-	        when(entityMetadata.getJavaType()).thenReturn(clazz);  
-	        when(entityMetadata.getEntityName()).thenReturn(clazz.getName()); 
-	        entityInformation= entityMetadata;
-	        entityMetadataMap.put(clazz, entityMetadata);
+			JpaEntityInformation<T, ?> entityMetadata = mock(JpaEntityInformation.class);
+			when(entityMetadata.getJavaType()).thenReturn(clazz);
+			when(entityMetadata.getEntityName()).thenReturn(clazz.getName());
+			entityInformation= entityMetadata;
+			entityMetadataMap.put(clazz, entityMetadata);
 		}
 		this.provider = PersistenceProvider.fromEntityManager(em);
 	}
-	
+
 	protected Class<T> getDomainClass() {
 		return entityInformation.getJavaType();
 	}
-	
+
 	public void setLockMetadataProvider(LockMetadataProvider lockMetadataProvider) {
 		this.lockMetadataProvider = lockMetadataProvider;
 	}
-	
+
 	private <S> Root<T> applySpecificationToCriteria(Specification<T> spec, CriteriaQuery<S> query) {
 
 		Assert.notNull(query);
@@ -111,7 +111,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> implements BaseRepos
 		LockModeType type = lockMetadataProvider == null ? null : lockMetadataProvider.getLockModeType();
 		return type == null ? query : query.setLockMode(type);
 	}
-	
+
 	protected TypedQuery<T> getQuery(Specification<T> spec, Sort sort) {
 
 		CriteriaBuilder builder = em.getCriteriaBuilder();
@@ -126,23 +126,23 @@ public class BaseRepositoryImpl<T, ID extends Serializable> implements BaseRepos
 
 		return applyLockMode(em.createQuery(query));
 	}
-	
+
 	private String getDeleteAllQueryString() {
 		return getQueryString(DELETE_ALL_QUERY_STRING, entityInformation.getEntityName());
 	}
-	
+
 	public Page<T> findAll(Specification<T> spec, Pageable pageable) {
 
 		TypedQuery<T> query = getQuery(spec, pageable);
 		return pageable == null ? new PageImpl<T>(query.getResultList()) : readPage(query, pageable, spec);
 	}
-	
+
 	protected TypedQuery<T> getQuery(Specification<T> spec, Pageable pageable) {
 
 		Sort sort = pageable == null ? null : pageable.getSort();
 		return getQuery(spec, sort);
 	}
-	
+
 	protected Page<T> readPage(TypedQuery<T> query, Pageable pageable, Specification<T> spec) {
 
 		query.setFirstResult(pageable.getOffset());
@@ -153,7 +153,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> implements BaseRepos
 
 		return new PageImpl<T>(content, pageable, total);
 	}
-	
+
 	protected TypedQuery<Long> getCountQuery(Specification<T> spec) {
 
 		CriteriaBuilder builder = em.getCriteriaBuilder();
@@ -178,7 +178,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> implements BaseRepos
 		return getQueryString(countQuery, entityInformation.getEntityName());
 	}
 
-	
+
 	@Override
 	public List<T> findAll() {
 		return getQuery(null, (Sort) null).getResultList();
@@ -309,7 +309,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> implements BaseRepos
 			delete(element);
 		}
 	}
-	
+
 
 	@Override
 	public List<T> findAll(Iterable<String> ids) {
@@ -369,21 +369,21 @@ public class BaseRepositoryImpl<T, ID extends Serializable> implements BaseRepos
 	public List<Tuple> tupleQuery(Specification<T> spec) {
 		TypedQuery<Tuple> typedQuery = this.getTupleQuery(spec);
 		return typedQuery.getResultList();
-		
+
 	}
-	
+
 	protected TypedQuery<Tuple> getTupleQuery(Specification<T> spec) {
 		CriteriaBuilder builder = em.getCriteriaBuilder();
 		CriteriaQuery<Tuple> query = builder.createTupleQuery();
 		Assert.notNull(query);
 		Root<T> root = query.from(getDomainClass());
 
-		if (spec != null) {			
-			Predicate predicate = spec.toPredicate(root, query, builder);	
+		if (spec != null) {
+			Predicate predicate = spec.toPredicate(root, query, builder);
 			if (predicate != null) {
 				query.where(predicate);
 			}
-		}		
+		}
 		return em.createQuery(query);
 	}
 
@@ -404,7 +404,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> implements BaseRepos
 		Root<T> root = applySpecificationToCriteria(spec, query);
 		query.select(root);
 		TypedQuery<T> tq = em.createQuery(query);
-		return tq.getResultList();  
+		return tq.getResultList();
 	}
 
 	@Override

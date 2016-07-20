@@ -19,7 +19,7 @@ var GPC = {
 		refreshGridUrl:GLOBAL.S.URL+GLOBAL.P.MODULES+"/a/loadPage/"+GLOBAL.P.CLASSNAME
 	},
 	constant:{add:"add",edit:"edit",delect:"delect",query:"query",
-				update:"update",detailQuery:"detailQuery",between:"between"}
+				update:"update",detailQuery:"detailQuery",between:"between",defaultPagingNumber:20}
 }
 
 var GPW = {
@@ -68,7 +68,7 @@ GPW.grid = {
 		var statusBar=GPW.layout.mainGridLayout.attachStatusBar({height: 28});
 		statusBar.setText(pagingContainer);
 		
-		this.mainGrid.enablePaging(true,20,5,"pagingArea",true,"recInfoArea");
+		this.mainGrid.enablePaging(true,GPC.constant.defaultPagingNumber,5,"pagingArea",true,"recInfoArea");
 		this.mainGrid.setPagingSkin("toolbar", "dhx_skyblue");
 		
 		//this.mainGrid.enableAutoWidth(true)

@@ -33,4 +33,5 @@ public interface ITableSchema {
 
 	String getTableName(String name);
 
+	int clean(String name, Collection<DynamicFields> fields);
 }

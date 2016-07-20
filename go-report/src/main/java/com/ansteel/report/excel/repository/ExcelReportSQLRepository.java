@@ -9,4 +9,4 @@ import com.ansteel.report.excel.domain.ExcelReportSQL;
  */
 public interface ExcelReportSQLRepository extends ProjectRepository<ExcelReportSQL, String> {
     ExcelReportSQL findOneByExcelReportAndName(ExcelReport excelReport, String sqlName);
-}
+        }

@@ -1,5 +1,8 @@
 package com.ansteel.core.controller;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.List;
@@ -8,7 +11,12 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
 
+import com.ansteel.dhtmlx.jsonclass.DhtmlxContext;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -161,7 +169,7 @@ public class GlobalBaseController extends TreeController {
 	}
 	
 	@RequestMapping("/inexcel/{modelName}/{inName}")
-	public  @ResponseBody UDataSet inExcel(@PathVariable("modelName")String modelName,
+	public  @ResponseBody void inExcel(@PathVariable("modelName")String modelName,
 			@PathVariable("inName")String inName,
 			@RequestParam(value = "file", required = false) MultipartFile file,
 			HttpServletRequest request,
@@ -171,7 +179,44 @@ public class GlobalBaseController extends TreeController {
 			Integer totalCount = resultList.size();
 			Pageable pageable=new PageRequest(0,totalCount);
 			Page page = new PageImpl(resultList, pageable, totalCount);
-			return new UDataSet(request,DHtmlxConstants.UI_ROWS,page);
+			//return new UDataSet(request,DHtmlxConstants.UI_ROWS,page);
+
+			//---------------------------------------------------------------
+			String result= null;
+			try {
+				Object dataSet=new DhtmlxContext().get(new UDataSet(request,DHtmlxConstants.UI_ROWS,page));
+
+				ObjectMapper objectMapper = new ObjectMapper();
+
+				try {
+					result = objectMapper.writeValueAsString(dataSet);
+				} catch (JsonProcessingException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+				response.reset();
+				response.setCharacterEncoding("UTF-8");
+				response.setContentType("text/plain;charset=UTF-8");
+
+				PrintWriter writer = null;
+				try {
+					writer = response.getWriter();
+					if(StringUtils.hasText(result)){
+						writer.print(result);
+					}else {
+						writer.print("{}");
+					}
+					writer.flush();
+				} catch (IOException e) {
+				} finally {
+					if (writer != null) {
+						writer.close();
+					}
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}else{
 			throw new PageException("请上传导入Excel文件！");
 		}
