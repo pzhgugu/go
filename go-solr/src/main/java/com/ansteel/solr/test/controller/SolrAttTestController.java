@@ -1,6 +1,7 @@
 package com.ansteel.solr.test.controller;
 
 import com.ansteel.solr.core.service.SolrService;
+import com.ansteel.solr.test.domain.AttModel;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
@@ -9,6 +10,9 @@ import org.apache.solr.client.solrj.response.GroupCommand;
 import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.common.params.GroupParams;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -56,6 +60,54 @@ public class SolrAttTestController {
                                HttpServletResponse response){
         SolrQuery query = new SolrQuery();
         query.setQuery("*:*");
+        //query.setFilterQueries("nameTypeCreator:" + fq);
+        query.setParam(GroupParams.GROUP_LIMIT, "10");
+
+
+        List<AttModel> cms = new ArrayList<AttModel>();
+        try {
+            cms=solrService.query("att_core",AttModel.class,query);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SolrServerException e) {
+            e.printStackTrace();
+        }
+
+        MappingJacksonValue mappingJacksonValue = new MappingJacksonValue(cms);
+        mappingJacksonValue.setJsonpFunction(callback);
+        return mappingJacksonValue;
+    }
+
+    @RequestMapping("/page")
+    @ResponseBody
+    public Object page(String fq,String callback,Model model, HttpServletRequest request,
+                               HttpServletResponse response){
+        SolrQuery query = new SolrQuery();
+        query.setQuery("*:*");
+        query.addSort(new SolrQuery.SortClause("id", SolrQuery.ORDER.desc));
+        Pageable pageable=new PageRequest(0,20);
+
+
+        Page page=null;
+        try {
+            page=solrService.query("att_core",AttModel.class,query,pageable);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SolrServerException e) {
+            e.printStackTrace();
+        }
+
+        MappingJacksonValue mappingJacksonValue = new MappingJacksonValue(page);
+        mappingJacksonValue.setJsonpFunction(callback);
+        return mappingJacksonValue;
+    }
+
+    @RequestMapping("/group")
+    @ResponseBody
+    public Object group(String fq,String callback,Model model, HttpServletRequest request,
+                               HttpServletResponse response){
+        SolrQuery query = new SolrQuery();
+        query.setQuery("*:*");
         query.setFilterQueries("nameTypeCreator:" + fq);
         query.setParam(GroupParams.GROUP, true);
         query.setParam(GroupParams.GROUP_FIELD, "loadFileName");
@@ -90,4 +142,6 @@ public class SolrAttTestController {
                                HttpServletResponse response){
         return "WEB-INF/report/page/solr_att.html";
     }
+
+
 }

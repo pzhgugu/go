@@ -23,7 +23,7 @@ public class CustomAuthenticationSuccessHandler implements AuthenticationSuccess
 			HttpServletResponse response, Authentication authentication)
 			throws IOException, ServletException {
 		// TODO Auto-generated method stub
-		
+		request.getRequestDispatcher("/admin/home").forward(request, response);
 	}
 
 }

@@ -17,6 +17,7 @@
 	<security:http pattern="/404.jsp" security="none" />
 	<security:http pattern="/accessDenied.jsp" security="none" />
 	<security:http pattern="/error" security="none" />
+	<!---->
 	<security:http pattern="/makeReport/**" security="none"/>
 	<security:http pattern="/browsen**" security="none"/>
 	<security:http pattern="/att/**" security="none"/>

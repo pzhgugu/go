@@ -30,7 +30,9 @@ public class AjaxAuthenticationSuccessHandler extends SavedRequestAwareAuthentic
                 }
             }
         }else{
-            super.onAuthenticationSuccess(request,response,authentication);
+            //super.onAuthenticationSuccess(request,response,authentication);
+            String cp = request.getContextPath();
+            response.sendRedirect(cp+"/admin/home");
         }
     }
 }

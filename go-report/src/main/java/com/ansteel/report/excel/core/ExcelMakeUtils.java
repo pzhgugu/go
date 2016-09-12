@@ -196,13 +196,17 @@ public class ExcelMakeUtils {
             }
             //fieldName=fieldNameAnalyze(fieldName,cell,i);
             if (StringUtils.hasText(fieldName)) {
-                if (!dataMap.containsKey(fieldName)) {
-                    System.out.println(1);
-                }
-                Assert.isTrue(dataMap.containsKey(fieldName), fieldName + "数据映射没有这个字段！");
-                Object vo = dataMap.get(fieldName);
-                if (vo != null) {
-                    setCellValue(cell, dataMap.get(fieldName) + "");
+                if (fieldName.equals("${NUMBER}")) {
+                    setCellValue(cell,i+1+"");
+                }else {
+                    if (!dataMap.containsKey(fieldName)) {
+                        System.out.println(1);
+                    }
+                    Assert.isTrue(dataMap.containsKey(fieldName), fieldName + "数据映射没有这个字段！");
+                    Object vo = dataMap.get(fieldName);
+                    if (vo != null) {
+                        setCellValue(cell, dataMap.get(fieldName) + "");
+                    }
                 }
             }
         }

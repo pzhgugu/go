@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Root VERSION="b0a0c428-4f15-428f-a447-e61a0d8bea34">
+<Root VERSION="779197c8-abce-416c-9396-b5caf576cac2">
   <Message Class="com.ansteel.common.menu.domain.Menu" Execute="com.ansteel.common.backup.fun.MenuExecute">
     <DataRow>
       <url></url>
@@ -513,7 +513,7 @@
       <scription></scription>
       <isCatalogue>1</isCatalogue>
       <isStop>0</isStop>
-      <resourcesName></resourcesName>
+      <resourcesName>ALL</resourcesName>
       <versionPublish>8</versionPublish>
       <parent></parent>
       <layer>0</layer>
@@ -521,11 +521,11 @@
       <alias>资讯管理</alias>
       <displayOrder>30</displayOrder>
       <id>8abf8ab65372ecc5015372ed0c0a0018</id>
-      <version>0</version>
-      <created>2016-03-14 10:20:51.0</created>
-      <updated>2016-03-14 10:20:51.0</updated>
+      <version>1</version>
+      <created>2016-03-14 00:00:00.0</created>
+      <updated>2016-03-14 23:13:05.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
       <url>${S_URL}/admin/newscategory/tpl/TreeFrom/NewsCategory/d</url>
@@ -673,6 +673,111 @@
       <updated>2016-03-14 10:20:51.0</updated>
       <creator></creator>
       <lastUpdater></lastUpdater>
+    </DataRow>
+    <DataRow>
+      <url>${S_URL}/dmtpl/tpl/SingleGrid/testTel/d</url>
+      <isPopup>0</isPopup>
+      <image></image>
+      <scription></scription>
+      <isCatalogue>3</isCatalogue>
+      <isStop>0</isStop>
+      <resourcesName></resourcesName>
+      <versionPublish>8</versionPublish>
+      <parent>8abf8ab65372ecc5015372ed0b4e0014</parent>
+      <layer>1</layer>
+      <name>testTel</name>
+      <alias>动态模型sql测试</alias>
+      <displayOrder>2</displayOrder>
+      <id>4028eb8153753b3001537543d0160000</id>
+      <version>1</version>
+      <created>2016-03-14 21:14:51.0</created>
+      <updated>2016-03-14 21:14:55.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <url>${S_URL}/dmtpl/tpl/SingleGrid/FCZJZJY/d</url>
+      <isPopup>0</isPopup>
+      <image>database.gif</image>
+      <scription></scription>
+      <isCatalogue>3</isCatalogue>
+      <isStop>0</isStop>
+      <resourcesName>FCZ;ALL</resourcesName>
+      <versionPublish>8</versionPublish>
+      <parent>8abf8ab65372ecc5015372ed0b4e0014</parent>
+      <layer>1</layer>
+      <name>FCZBKJZJY</name>
+      <alias>非财政拨款结转结余</alias>
+      <displayOrder>10</displayOrder>
+      <id>4028eb81537558570153756561d10013</id>
+      <version>6</version>
+      <created>2016-03-14 00:00:00.0</created>
+      <updated>2016-03-14 23:14:50.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <url>${S_URL}/dmtpl/tpl/SingleGrid/CZBKJZJY/d</url>
+      <isPopup>0</isPopup>
+      <image>database.gif</image>
+      <scription></scription>
+      <isCatalogue>3</isCatalogue>
+      <isStop>0</isStop>
+      <resourcesName>CZ;ALL</resourcesName>
+      <versionPublish>10</versionPublish>
+      <parent>8abf8ab65372ecc5015372ed0b4e0014</parent>
+      <layer>1</layer>
+      <name>CZBKJZJY</name>
+      <alias>财政拨款结转结余</alias>
+      <displayOrder>11</displayOrder>
+      <id>4028eb81537558570153757d6aa60048</id>
+      <version>4</version>
+      <created>2016-03-14 00:00:00.0</created>
+      <updated>2016-03-15 18:36:06.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <url>http://localhost:8080/show/makeReport/excel/CZ?rType=SWF&amp;inline=1</url>
+      <isPopup>0</isPopup>
+      <image></image>
+      <scription></scription>
+      <isCatalogue>3</isCatalogue>
+      <isStop>0</isStop>
+      <resourcesName></resourcesName>
+      <versionPublish></versionPublish>
+      <parent>8abf8ab65372ecc5015372ed0b4e0014</parent>
+      <layer>1</layer>
+      <name>czbb</name>
+      <alias>财政报表</alias>
+      <displayOrder>18</displayOrder>
+      <id>4028eb815379ce7e01537a15f398000b</id>
+      <version>1</version>
+      <created>2016-03-15 19:42:52.0</created>
+      <updated>2016-03-15 19:42:56.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <url>${S_URL}/dmtpl/tpl/SingleGridQuery/Salary/d</url>
+      <isPopup>0</isPopup>
+      <image></image>
+      <scription></scription>
+      <isCatalogue>3</isCatalogue>
+      <isStop>0</isStop>
+      <resourcesName></resourcesName>
+      <versionPublish>8</versionPublish>
+      <parent>8abf8ab65372ecc5015372ed0b4e0014</parent>
+      <layer>1</layer>
+      <name>gzb_111</name>
+      <alias>工资表</alias>
+      <displayOrder>100</displayOrder>
+      <id>4028b88155299050015529ab7f9b0004</id>
+      <version>3</version>
+      <created>2016-06-07 00:00:00.0</created>
+      <updated>2016-06-07 15:07:30.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
   </Message>
   <Message Class="com.ansteel.common.security.domain.Resources" Execute="com.ansteel.common.backup.fun.ResourcesExecute">
@@ -913,6 +1018,48 @@
       <updated>2016-03-14 10:20:52.0</updated>
       <creator></creator>
       <lastUpdater></lastUpdater>
+    </DataRow>
+    <DataRow>
+      <scription></scription>
+      <type>U</type>
+      <versionPublish></versionPublish>
+      <name>CZ</name>
+      <alias>财政</alias>
+      <displayOrder>100</displayOrder>
+      <id>4028eb81537558570153758b8d7c004f</id>
+      <version>0</version>
+      <created>2016-03-14 22:33:13.0</created>
+      <updated>2016-03-14 22:33:13.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <scription></scription>
+      <type>U</type>
+      <versionPublish></versionPublish>
+      <name>FCZ</name>
+      <alias>非财政</alias>
+      <displayOrder>101</displayOrder>
+      <id>4028eb81537558570153758e0a6c0052</id>
+      <version>0</version>
+      <created>2016-03-14 22:35:56.0</created>
+      <updated>2016-03-14 22:35:56.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <scription></scription>
+      <type>U</type>
+      <versionPublish></versionPublish>
+      <name>R_USER</name>
+      <alias>普遍用户资源</alias>
+      <displayOrder>99</displayOrder>
+      <id>4028eb8153755857015375943d310056</id>
+      <version>1</version>
+      <created>2016-03-14 22:42:42.0</created>
+      <updated>2016-03-14 23:02:23.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
   </Message>
   <Message Class="com.ansteel.common.security.domain.Permission" Execute="com.ansteel.common.backup.fun.PermissionExecute">
@@ -2585,6 +2732,102 @@
       <updated>2016-03-14 10:20:57.0</updated>
       <creator></creator>
       <lastUpdater></lastUpdater>
+    </DataRow>
+    <DataRow>
+      <path>/dmtpl/tpl/SingleGrid/CZBKJZJY/**</path>
+      <permissionBit>1</permissionBit>
+      <versionPublish></versionPublish>
+      <resources>4028eb81537558570153758b8d7c004f</resources>
+      <id>4028eb81537558570153758c8f290050</id>
+      <version>4</version>
+      <created>2016-03-14 22:34:19.0</created>
+      <updated>2016-03-14 23:04:44.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <path>/dmtpl/tpl/SingleGrid/FCZJZJY/**</path>
+      <permissionBit>1</permissionBit>
+      <versionPublish></versionPublish>
+      <resources>4028eb81537558570153758e0a6c0052</resources>
+      <id>4028eb81537558570153758e6a710053</id>
+      <version>1</version>
+      <created>2016-03-14 22:36:20.0</created>
+      <updated>2016-03-15 18:34:15.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <path>/index.jsp</path>
+      <permissionBit>1</permissionBit>
+      <versionPublish></versionPublish>
+      <resources>4028eb8153755857015375943d310056</resources>
+      <id>4028eb815375585701537594a68e0057</id>
+      <version>2</version>
+      <created>2016-03-14 22:43:09.0</created>
+      <updated>2016-03-14 22:55:39.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <path>/admin/main**</path>
+      <permissionBit>1</permissionBit>
+      <versionPublish></versionPublish>
+      <resources>4028eb8153755857015375943d310056</resources>
+      <id>4028eb8153759c77015375c249080001</id>
+      <version>1</version>
+      <created>2016-03-14 23:33:00.0</created>
+      <updated>2016-03-14 23:33:45.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <path>/dmtpl/a/loadPage/CZBKJZJY**</path>
+      <permissionBit>1</permissionBit>
+      <versionPublish></versionPublish>
+      <resources>4028eb81537558570153758b8d7c004f</resources>
+      <id>4028eb8153759c77015375a90f7c0000</id>
+      <version>2</version>
+      <created>2016-03-14 23:05:27.0</created>
+      <updated>2016-03-14 23:06:09.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <path>/dmtpl/a/loadPage/FCZJZJY**</path>
+      <permissionBit>1</permissionBit>
+      <versionPublish></versionPublish>
+      <resources>4028eb81537558570153758e0a6c0052</resources>
+      <id>4028eb815379ce7e015379d7aa810000</id>
+      <version>0</version>
+      <created>2016-03-15 18:34:50.0</created>
+      <updated>2016-03-15 18:34:50.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <path>/dmtpl/a/save/FCZJZJY**</path>
+      <permissionBit>2</permissionBit>
+      <versionPublish></versionPublish>
+      <resources>4028eb81537558570153758e0a6c0052</resources>
+      <id>4028eb815379ce7e015379d9e1680001</id>
+      <version>0</version>
+      <created>2016-03-15 18:37:15.0</created>
+      <updated>2016-03-15 18:37:15.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <path>/dmtpl/a/save/CZBKJZJY**</path>
+      <permissionBit>2</permissionBit>
+      <versionPublish></versionPublish>
+      <resources>4028eb81537558570153758b8d7c004f</resources>
+      <id>4028eb815379ce7e015379da68260002</id>
+      <version>0</version>
+      <created>2016-03-15 18:37:49.0</created>
+      <updated>2016-03-15 18:37:49.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
   </Message>
   <Message Class="com.ansteel.common.model.domain.Models" Execute="com.ansteel.common.backup.fun.ModelsExecute">
@@ -78643,6 +78886,54 @@
       <creator></creator>
       <lastUpdater></lastUpdater>
     </DataRow>
+    <DataRow>
+      <scription></scription>
+      <modelType>-1</modelType>
+      <versionPublish></versionPublish>
+      <parent></parent>
+      <layer>0</layer>
+      <name>CZCS</name>
+      <alias>财政测试</alias>
+      <displayOrder>2</displayOrder>
+      <id>4028eb81537558570153755e035e0000</id>
+      <version>0</version>
+      <created>2016-03-14 21:43:28.0</created>
+      <updated>2016-03-14 21:43:28.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <scription></scription>
+      <modelType>1</modelType>
+      <versionPublish></versionPublish>
+      <parent>4028eb81537558570153755e035e0000</parent>
+      <layer>1</layer>
+      <name>FCZJZJY</name>
+      <alias>非财政拨款结转结余</alias>
+      <displayOrder>1</displayOrder>
+      <id>4028eb81537558570153755e94ed0001</id>
+      <version>1</version>
+      <created>2016-03-14 21:44:06.0</created>
+      <updated>2016-03-14 21:44:09.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <scription></scription>
+      <modelType>1</modelType>
+      <versionPublish></versionPublish>
+      <parent>4028eb81537558570153755e035e0000</parent>
+      <layer>1</layer>
+      <name>CZBKJZJY</name>
+      <alias>财政拨款结转结余</alias>
+      <displayOrder>2</displayOrder>
+      <id>4028eb8153755857015375721e140016</id>
+      <version>2</version>
+      <created>2016-03-14 00:00:00.0</created>
+      <updated>2016-03-14 22:06:36.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
   </Message>
   <Message Class="com.ansteel.common.dynamicmodel.domain.DynamicFields" Execute="com.ansteel.common.backup.fun.DynamicFieldsExecute">
     <DataRow>
@@ -78869,6 +79160,482 @@
       <creator></creator>
       <lastUpdater></lastUpdater>
     </DataRow>
+    <DataRow>
+      <models>4028eb81537558570153755e94ed0001</models>
+      <scription></scription>
+      <fieldType>float</fieldType>
+      <fieldLength>10</fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_JYJG</name>
+      <alias>结余金额</alias>
+      <displayOrder>1</displayOrder>
+      <id>4028eb81537558570153755f81fd0006</id>
+      <version>0</version>
+      <created>2016-03-14 21:45:06.0</created>
+      <updated>2016-03-14 21:45:06.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb81537558570153755e94ed0001</models>
+      <scription></scription>
+      <fieldType>double</fieldType>
+      <fieldLength>10</fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_YFHED</name>
+      <alias>应返还额度</alias>
+      <displayOrder>2</displayOrder>
+      <id>4028eb815375585701537560004c000a</id>
+      <version>0</version>
+      <created>2016-03-14 21:45:39.0</created>
+      <updated>2016-03-14 21:45:39.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb81537558570153755e94ed0001</models>
+      <scription></scription>
+      <fieldType>double</fieldType>
+      <fieldLength>10</fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_SJZK</name>
+      <alias>上级专款</alias>
+      <displayOrder>3</displayOrder>
+      <id>4028eb81537558570153756067be000e</id>
+      <version>0</version>
+      <created>2016-03-14 21:46:05.0</created>
+      <updated>2016-03-14 21:46:05.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb81537558570153755e94ed0001</models>
+      <scription></scription>
+      <fieldType>double</fieldType>
+      <fieldLength>10</fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_JHCZJG</name>
+      <alias>缴回财政金额</alias>
+      <displayOrder>4</displayOrder>
+      <id>4028eb8153755857015375610eff0012</id>
+      <version>0</version>
+      <created>2016-03-14 21:46:48.0</created>
+      <updated>2016-03-14 21:46:48.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb8153755857015375721e140016</models>
+      <scription></scription>
+      <fieldType>double</fieldType>
+      <fieldLength>0</fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_JBZCJYJE</name>
+      <alias>基本支出结余金额</alias>
+      <displayOrder>1</displayOrder>
+      <id>4028eb8153755857015375739cda001b</id>
+      <version>0</version>
+      <created>2016-03-14 22:07:04.0</created>
+      <updated>2016-03-14 22:07:04.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb8153755857015375721e140016</models>
+      <scription></scription>
+      <fieldType>double</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_JBZCYFHED</name>
+      <alias>基本支出应返还额度</alias>
+      <displayOrder>2</displayOrder>
+      <id>4028eb815375585701537574eb12001f</id>
+      <version>0</version>
+      <created>2016-03-14 22:08:29.0</created>
+      <updated>2016-03-14 22:08:29.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb8153755857015375721e140016</models>
+      <scription></scription>
+      <fieldType>double</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_JBZCJYSJZK</name>
+      <alias>基本支出结余上级专款</alias>
+      <displayOrder>3</displayOrder>
+      <id>4028eb815375585701537575b8d60023</id>
+      <version>1</version>
+      <created>2016-03-14 22:09:22.0</created>
+      <updated>2016-03-14 22:09:27.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb8153755857015375721e140016</models>
+      <scription></scription>
+      <fieldType>double</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_JBZXJYJHCZJE</name>
+      <alias>基本支出结余缴回财政金额</alias>
+      <displayOrder>4</displayOrder>
+      <id>4028eb8153755857015375767c380027</id>
+      <version>1</version>
+      <created>2016-03-14 22:10:12.0</created>
+      <updated>2016-03-14 22:10:19.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb8153755857015375721e140016</models>
+      <scription></scription>
+      <fieldType>double</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_JBZCJYJXSYJE</name>
+      <alias>基本支出结余继续使用金额</alias>
+      <displayOrder>5</displayOrder>
+      <id>4028eb81537558570153757761b6002b</id>
+      <version>0</version>
+      <created>2016-03-14 22:11:11.0</created>
+      <updated>2016-03-14 22:11:11.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb8153755857015375721e140016</models>
+      <scription></scription>
+      <fieldType>clob</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_JBZCJYBZ</name>
+      <alias>基本支出结余备注</alias>
+      <displayOrder>6</displayOrder>
+      <id>4028eb81537558570153757830b8002f</id>
+      <version>1</version>
+      <created>2016-03-14 22:12:04.0</created>
+      <updated>2016-03-14 22:12:09.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb8153755857015375721e140016</models>
+      <scription></scription>
+      <fieldType>double</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_XMZCJYJE</name>
+      <alias>项目支出结余金额</alias>
+      <displayOrder>6</displayOrder>
+      <id>4028eb815375585701537578d2c70033</id>
+      <version>1</version>
+      <created>2016-03-14 22:12:45.0</created>
+      <updated>2016-03-14 22:12:50.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb8153755857015375721e140016</models>
+      <scription></scription>
+      <fieldType>double</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_XMZXYFHED</name>
+      <alias>项目支出应返还额度</alias>
+      <displayOrder>7</displayOrder>
+      <id>4028eb81537558570153757985520037</id>
+      <version>0</version>
+      <created>2016-03-14 22:13:31.0</created>
+      <updated>2016-03-14 22:13:31.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb8153755857015375721e140016</models>
+      <scription></scription>
+      <fieldType>double</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_XMZCSJZK</name>
+      <alias>项目支出上级专款</alias>
+      <displayOrder>8</displayOrder>
+      <id>4028eb81537558570153757a1f9a003b</id>
+      <version>0</version>
+      <created>2016-03-14 22:14:11.0</created>
+      <updated>2016-03-14 22:14:11.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb8153755857015375721e140016</models>
+      <scription></scription>
+      <fieldType>double</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_XMZCJHCZJE</name>
+      <alias>项目支出缴回财政金额</alias>
+      <displayOrder>9</displayOrder>
+      <id>4028eb81537558570153757accee003f</id>
+      <version>0</version>
+      <created>2016-03-14 22:14:55.0</created>
+      <updated>2016-03-14 22:14:55.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb8153755857015375721e140016</models>
+      <scription></scription>
+      <fieldType>double</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_XMZXJZSYJE</name>
+      <alias>项目支出继续使用金额</alias>
+      <displayOrder>11</displayOrder>
+      <id>4028eb81537558570153757b79a30043</id>
+      <version>0</version>
+      <created>2016-03-14 22:15:39.0</created>
+      <updated>2016-03-14 22:15:39.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb8153755857015375721e140016</models>
+      <scription></scription>
+      <fieldType>clob</fieldType>
+      <fieldLength></fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_XMZCBZ</name>
+      <alias>项目支出备注</alias>
+      <displayOrder>11</displayOrder>
+      <id>4028eb81537558570153757be5b50047</id>
+      <version>0</version>
+      <created>2016-03-14 22:16:07.0</created>
+      <updated>2016-03-14 22:16:07.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>8abf8ab65372ecc5015372ef1f650dc7</models>
+      <scription></scription>
+      <fieldType>string</fieldType>
+      <fieldLength>10</fieldLength>
+      <fieldPrecision></fieldPrecision>
+      <fieldScale></fieldScale>
+      <fieldUnique></fieldUnique>
+      <fieldDefault></fieldDefault>
+      <fieldNullable></fieldNullable>
+      <typeClass></typeClass>
+      <relation></relation>
+      <relationFetch></relationFetch>
+      <relationMappedBy></relationMappedBy>
+      <relationCascade></relationCascade>
+      <relationOrderBy></relationOrderBy>
+      <isInvented>0</isInvented>
+      <versionPublish></versionPublish>
+      <name>GO_SEX</name>
+      <alias>性别</alias>
+      <displayOrder>4</displayOrder>
+      <id>4028b88155299050015529a4ca770003</id>
+      <version>1</version>
+      <created>2016-06-07 14:55:13.0</created>
+      <updated>2016-06-07 14:55:21.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
   </Message>
   <Message Class="com.ansteel.common.dynamicmodel.domain.DynamicFieldsCategory" Execute="com.ansteel.common.backup.fun.DynamicFieldsCategoryExecute">
     <DataRow>
@@ -78896,6 +79663,32 @@
       <updated>2016-03-14 10:23:07.0</updated>
       <creator></creator>
       <lastUpdater></lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb81537558570153755e94ed0001</models>
+      <versionPublish></versionPublish>
+      <name>defaule</name>
+      <alias>defaule</alias>
+      <displayOrder></displayOrder>
+      <id>4028eb81537558570153755f81fb0002</id>
+      <version>0</version>
+      <created>2016-03-14 21:45:06.0</created>
+      <updated>2016-03-14 21:45:06.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <models>4028eb8153755857015375721e140016</models>
+      <versionPublish></versionPublish>
+      <name>defaule</name>
+      <alias>defaule</alias>
+      <displayOrder></displayOrder>
+      <id>4028eb8153755857015375739cd70017</id>
+      <version>0</version>
+      <created>2016-03-14 22:07:04.0</created>
+      <updated>2016-03-14 22:07:04.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
   </Message>
   <Message Class="com.ansteel.common.dynamicmodel.domain.DynamicFieldsForm" Execute="com.ansteel.common.backup.fun.DynamicFieldsFormExecute">
@@ -79151,6 +79944,482 @@
       <creator></creator>
       <lastUpdater></lastUpdater>
     </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb81537558570153755f81fb0002</fieldsCategory>
+      <name>GO_JYJG</name>
+      <displayOrder>1</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153755f81fc0003</id>
+      <version>0</version>
+      <created>2016-03-14 21:45:06.0</created>
+      <updated>2016-03-14 21:45:06.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb81537558570153755f81fb0002</fieldsCategory>
+      <name>GO_YFHED</name>
+      <displayOrder>2</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153756000480007</id>
+      <version>0</version>
+      <created>2016-03-14 21:45:39.0</created>
+      <updated>2016-03-14 21:45:39.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb81537558570153755f81fb0002</fieldsCategory>
+      <name>GO_SJZK</name>
+      <displayOrder>3</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153756067bb000b</id>
+      <version>0</version>
+      <created>2016-03-14 21:46:05.0</created>
+      <updated>2016-03-14 21:46:05.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb81537558570153755f81fb0002</fieldsCategory>
+      <name>GO_JHCZJG</name>
+      <displayOrder>4</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb8153755857015375610efd000f</id>
+      <version>0</version>
+      <created>2016-03-14 21:46:48.0</created>
+      <updated>2016-03-14 21:46:48.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <name>GO_JBZCJYJE</name>
+      <displayOrder>1</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb8153755857015375739cd80018</id>
+      <version>0</version>
+      <created>2016-03-14 22:07:04.0</created>
+      <updated>2016-03-14 22:07:04.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <name>GO_JBZCYFHED</name>
+      <displayOrder>2</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb815375585701537574eb0f001c</id>
+      <version>0</version>
+      <created>2016-03-14 22:08:29.0</created>
+      <updated>2016-03-14 22:08:29.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <name>GO_JBZCJYSJZK</name>
+      <displayOrder></displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb815375585701537575b8d50020</id>
+      <version>0</version>
+      <created>2016-03-14 22:09:22.0</created>
+      <updated>2016-03-14 22:09:22.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <name>GO_JBZXJYJHCZJE</name>
+      <displayOrder></displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb8153755857015375767c360024</id>
+      <version>0</version>
+      <created>2016-03-14 22:10:12.0</created>
+      <updated>2016-03-14 22:10:12.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <name>GO_JBZCJYJXSYJE</name>
+      <displayOrder>5</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757761b40028</id>
+      <version>0</version>
+      <created>2016-03-14 22:11:11.0</created>
+      <updated>2016-03-14 22:11:11.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <name>GO_JBZCJYBZ</name>
+      <displayOrder>20</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows>8</rows>
+      <columnForm>2</columnForm>
+      <inputWidth>495</inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757830b6002c</id>
+      <version>3</version>
+      <created>2016-03-14 22:12:04.0</created>
+      <updated>2016-03-14 22:21:29.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <name>GO_XMZCJYJE</name>
+      <displayOrder></displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb815375585701537578d2c30030</id>
+      <version>0</version>
+      <created>2016-03-14 22:12:45.0</created>
+      <updated>2016-03-14 22:12:45.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <name>GO_XMZXYFHED</name>
+      <displayOrder>7</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757985510034</id>
+      <version>0</version>
+      <created>2016-03-14 22:13:31.0</created>
+      <updated>2016-03-14 22:13:31.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <name>GO_XMZCSJZK</name>
+      <displayOrder>8</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757a1f970038</id>
+      <version>0</version>
+      <created>2016-03-14 22:14:11.0</created>
+      <updated>2016-03-14 22:14:11.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <name>GO_XMZCJHCZJE</name>
+      <displayOrder>9</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757accec003c</id>
+      <version>0</version>
+      <created>2016-03-14 22:14:55.0</created>
+      <updated>2016-03-14 22:14:55.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <name>GO_XMZXJZSYJE</name>
+      <displayOrder>11</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757b79a10040</id>
+      <version>0</version>
+      <created>2016-03-14 22:15:39.0</created>
+      <updated>2016-03-14 22:15:39.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <name>GO_XMZCBZ</name>
+      <displayOrder>21</displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows>8</rows>
+      <columnForm>2</columnForm>
+      <inputWidth>495</inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757be5b30044</id>
+      <version>1</version>
+      <created>2016-03-14 22:16:07.0</created>
+      <updated>2016-03-14 22:21:29.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>8abf8ab65372ecc5015372ef21920dd1</fieldsCategory>
+      <name>GO_SEX</name>
+      <displayOrder></displayOrder>
+      <isShow>1</isShow>
+      <type>input</type>
+      <optionType></optionType>
+      <optionValue></optionValue>
+      <rows></rows>
+      <columnForm></columnForm>
+      <inputWidth></inputWidth>
+      <inputLeft></inputLeft>
+      <offsetLeft></offsetLeft>
+      <inputHeight></inputHeight>
+      <userdata></userdata>
+      <validate></validate>
+      <required></required>
+      <info></info>
+      <tooltip></tooltip>
+      <note></note>
+      <versionPublish></versionPublish>
+      <id>4028b88155299050015529a4ca220000</id>
+      <version>0</version>
+      <created>2016-06-07 14:55:13.0</created>
+      <updated>2016-06-07 14:55:13.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
   </Message>
   <Message Class="com.ansteel.common.dynamicmodel.domain.DynamicFieldsGrid" Execute="com.ansteel.common.backup.fun.DynamicFieldsGridExecute">
     <DataRow>
@@ -79288,6 +80557,295 @@
       <updated>2016-03-14 10:23:08.0</updated>
       <creator></creator>
       <lastUpdater></lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb81537558570153755f81fb0002</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_JYJG</name>
+      <displayOrder>1</displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153755f81fc0004</id>
+      <version>0</version>
+      <created>2016-03-14 21:45:06.0</created>
+      <updated>2016-03-14 21:45:06.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb81537558570153755f81fb0002</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_YFHED</name>
+      <displayOrder>2</displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb815375585701537560004a0008</id>
+      <version>0</version>
+      <created>2016-03-14 21:45:39.0</created>
+      <updated>2016-03-14 21:45:39.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb81537558570153755f81fb0002</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_SJZK</name>
+      <displayOrder>3</displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153756067bd000c</id>
+      <version>0</version>
+      <created>2016-03-14 21:46:05.0</created>
+      <updated>2016-03-14 21:46:05.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb81537558570153755f81fb0002</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_JHCZJG</name>
+      <displayOrder>4</displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb8153755857015375610efe0010</id>
+      <version>0</version>
+      <created>2016-03-14 21:46:48.0</created>
+      <updated>2016-03-14 21:46:48.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_JBZCJYJE</name>
+      <displayOrder>1</displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb8153755857015375739cd80019</id>
+      <version>0</version>
+      <created>2016-03-14 22:07:04.0</created>
+      <updated>2016-03-14 22:07:04.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_JBZCYFHED</name>
+      <displayOrder>2</displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb815375585701537574eb11001d</id>
+      <version>0</version>
+      <created>2016-03-14 22:08:29.0</created>
+      <updated>2016-03-14 22:08:29.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_JBZCJYSJZK</name>
+      <displayOrder></displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb815375585701537575b8d50021</id>
+      <version>0</version>
+      <created>2016-03-14 22:09:22.0</created>
+      <updated>2016-03-14 22:09:22.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_JBZXJYJHCZJE</name>
+      <displayOrder></displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb8153755857015375767c370025</id>
+      <version>0</version>
+      <created>2016-03-14 22:10:12.0</created>
+      <updated>2016-03-14 22:10:12.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_JBZCJYJXSYJE</name>
+      <displayOrder>5</displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757761b50029</id>
+      <version>0</version>
+      <created>2016-03-14 22:11:11.0</created>
+      <updated>2016-03-14 22:11:11.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_JBZCJYBZ</name>
+      <displayOrder>20</displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757830b7002d</id>
+      <version>1</version>
+      <created>2016-03-14 22:12:04.0</created>
+      <updated>2016-03-14 22:23:27.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_XMZCJYJE</name>
+      <displayOrder></displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb815375585701537578d2c50031</id>
+      <version>0</version>
+      <created>2016-03-14 22:12:45.0</created>
+      <updated>2016-03-14 22:12:45.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_XMZXYFHED</name>
+      <displayOrder>7</displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757985510035</id>
+      <version>0</version>
+      <created>2016-03-14 22:13:31.0</created>
+      <updated>2016-03-14 22:13:31.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_XMZCSJZK</name>
+      <displayOrder>8</displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757a1f980039</id>
+      <version>0</version>
+      <created>2016-03-14 22:14:11.0</created>
+      <updated>2016-03-14 22:14:11.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_XMZCJHCZJE</name>
+      <displayOrder>9</displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757acced003d</id>
+      <version>0</version>
+      <created>2016-03-14 22:14:55.0</created>
+      <updated>2016-03-14 22:14:55.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_XMZXJZSYJE</name>
+      <displayOrder>11</displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757b79a20041</id>
+      <version>0</version>
+      <created>2016-03-14 22:15:39.0</created>
+      <updated>2016-03-14 22:15:39.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_XMZCBZ</name>
+      <displayOrder>21</displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757be5b40045</id>
+      <version>1</version>
+      <created>2016-03-14 22:16:07.0</created>
+      <updated>2016-03-14 22:23:27.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>8abf8ab65372ecc5015372ef21920dd1</fieldsCategory>
+      <initWidths>100</initWidths>
+      <colAlign>left</colAlign>
+      <colTypes>ro</colTypes>
+      <colSorting>str</colSorting>
+      <isShow>1</isShow>
+      <name>GO_SEX</name>
+      <displayOrder>4</displayOrder>
+      <versionPublish></versionPublish>
+      <id>4028b88155299050015529a4ca730001</id>
+      <version>1</version>
+      <created>2016-06-07 14:55:13.0</created>
+      <updated>2016-06-07 14:55:32.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
   </Message>
   <Message Class="com.ansteel.common.dynamicmodel.domain.DynamicFieldsQuery" Execute="com.ansteel.common.backup.fun.DynamicFieldsQueryExecute">
@@ -79442,6 +81000,329 @@
       <updated>2016-03-14 10:23:08.0</updated>
       <creator></creator>
       <lastUpdater></lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb81537558570153755f81fb0002</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_JYJG</name>
+      <displayOrder>1</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153755f81fd0005</id>
+      <version>0</version>
+      <created>2016-03-14 21:45:06.0</created>
+      <updated>2016-03-14 21:45:06.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb81537558570153755f81fb0002</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_YFHED</name>
+      <displayOrder>2</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb815375585701537560004b0009</id>
+      <version>0</version>
+      <created>2016-03-14 21:45:39.0</created>
+      <updated>2016-03-14 21:45:39.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb81537558570153755f81fb0002</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_SJZK</name>
+      <displayOrder>3</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153756067bd000d</id>
+      <version>0</version>
+      <created>2016-03-14 21:46:05.0</created>
+      <updated>2016-03-14 21:46:05.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb81537558570153755f81fb0002</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_JHCZJG</name>
+      <displayOrder>4</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb8153755857015375610eff0011</id>
+      <version>0</version>
+      <created>2016-03-14 21:46:48.0</created>
+      <updated>2016-03-14 21:46:48.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_JBZCJYJE</name>
+      <displayOrder>1</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb8153755857015375739cd9001a</id>
+      <version>0</version>
+      <created>2016-03-14 22:07:04.0</created>
+      <updated>2016-03-14 22:07:04.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_JBZCYFHED</name>
+      <displayOrder>2</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb815375585701537574eb12001e</id>
+      <version>0</version>
+      <created>2016-03-14 22:08:29.0</created>
+      <updated>2016-03-14 22:08:29.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_JBZCJYSJZK</name>
+      <displayOrder></displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb815375585701537575b8d60022</id>
+      <version>0</version>
+      <created>2016-03-14 22:09:22.0</created>
+      <updated>2016-03-14 22:09:22.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_JBZXJYJHCZJE</name>
+      <displayOrder></displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb8153755857015375767c380026</id>
+      <version>0</version>
+      <created>2016-03-14 22:10:12.0</created>
+      <updated>2016-03-14 22:10:12.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_JBZCJYJXSYJE</name>
+      <displayOrder>5</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757761b5002a</id>
+      <version>0</version>
+      <created>2016-03-14 22:11:11.0</created>
+      <updated>2016-03-14 22:11:11.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_JBZCJYBZ</name>
+      <displayOrder></displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757830b8002e</id>
+      <version>0</version>
+      <created>2016-03-14 22:12:04.0</created>
+      <updated>2016-03-14 22:12:04.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_XMZCJYJE</name>
+      <displayOrder></displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb815375585701537578d2c60032</id>
+      <version>0</version>
+      <created>2016-03-14 22:12:45.0</created>
+      <updated>2016-03-14 22:12:45.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_XMZXYFHED</name>
+      <displayOrder>7</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757985520036</id>
+      <version>0</version>
+      <created>2016-03-14 22:13:31.0</created>
+      <updated>2016-03-14 22:13:31.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_XMZCSJZK</name>
+      <displayOrder>8</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757a1f99003a</id>
+      <version>0</version>
+      <created>2016-03-14 22:14:11.0</created>
+      <updated>2016-03-14 22:14:11.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_XMZCJHCZJE</name>
+      <displayOrder>9</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757acced003e</id>
+      <version>0</version>
+      <created>2016-03-14 22:14:55.0</created>
+      <updated>2016-03-14 22:14:55.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_XMZXJZSYJE</name>
+      <displayOrder>11</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757b79a30042</id>
+      <version>0</version>
+      <created>2016-03-14 22:15:39.0</created>
+      <updated>2016-03-14 22:15:39.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>4028eb8153755857015375739cd70017</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_XMZCBZ</name>
+      <displayOrder>11</displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028eb81537558570153757be5b50046</id>
+      <version>0</version>
+      <created>2016-03-14 22:16:07.0</created>
+      <updated>2016-03-14 22:16:07.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <fieldsCategory>8abf8ab65372ecc5015372ef21920dd1</fieldsCategory>
+      <operatorCode></operatorCode>
+      <operatorName></operatorName>
+      <dataType></dataType>
+      <isShow>1</isShow>
+      <isLock>0</isLock>
+      <defalutValue></defalutValue>
+      <name>GO_SEX</name>
+      <displayOrder></displayOrder>
+      <isOften></isOften>
+      <versionPublish></versionPublish>
+      <id>4028b88155299050015529a4ca730002</id>
+      <version>0</version>
+      <created>2016-06-07 14:55:13.0</created>
+      <updated>2016-06-07 14:55:13.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
   </Message>
   <Message Class="com.ansteel.common.tpl.domain.Tpl" Execute="com.ansteel.common.backup.fun.TplExecute">
@@ -80070,8 +81951,8 @@
       <lastUpdater></lastUpdater>
     </DataRow>
     <DataRow>
-      <urlPath>/admin/dmtpl/tpl/SingleGridQuery/testTel/d</urlPath>
-      <urlMapped>/admin/dmtpl/tpl/SingleGridQuery/testTel/d</urlMapped>
+      <urlPath>/dmtpl/tpl/SingleGrid/testTel/d</urlPath>
+      <urlMapped>/dmtpl/tpl/SingleGrid/testTel/d</urlMapped>
       <isClose>0</isClose>
       <scription></scription>
       <columnNumber></columnNumber>
@@ -80093,11 +81974,11 @@
       <alias>通讯录测试</alias>
       <displayOrder>1</displayOrder>
       <id>8abf8ab65372ecc5015372ef2be20e09</id>
-      <version>9</version>
+      <version>10</version>
       <created>2016-03-14 10:23:10.0</created>
-      <updated>2016-03-14 10:23:10.0</updated>
+      <updated>2016-07-13 11:08:51.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
       <urlPath>/admin/excel/tpl/SingleGrid/ExcelReportSQL/d</urlPath>
@@ -80549,6 +82430,36 @@
       <creator></creator>
       <lastUpdater></lastUpdater>
     </DataRow>
+    <DataRow>
+      <urlPath>/dmtpl/tpl/SingleGridQuery/Salary/d</urlPath>
+      <urlMapped>/dmtpl/tpl/SingleGridQuery/Salary/d</urlMapped>
+      <isClose>0</isClose>
+      <scription></scription>
+      <columnNumber></columnNumber>
+      <isTableEditor></isTableEditor>
+      <blockOffset></blockOffset>
+      <inputHeight></inputHeight>
+      <inputWidth></inputWidth>
+      <labelAlign></labelAlign>
+      <labelHeight></labelHeight>
+      <labelWidth></labelWidth>
+      <noteWidth></noteWidth>
+      <offsetLeft></offsetLeft>
+      <offsetTop></offsetTop>
+      <position></position>
+      <blockWidth></blockWidth>
+      <versionPublish></versionPublish>
+      <viewTree>8abf8ab65372ecc5015372ef290a0dfc</viewTree>
+      <name>Salary</name>
+      <alias>工资表</alias>
+      <displayOrder>2</displayOrder>
+      <id>4028b881558f8d8701558fa06c430000</id>
+      <version>1</version>
+      <created>2016-06-27 10:11:43.0</created>
+      <updated>2016-06-27 10:15:55.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
   </Message>
   <Message Class="com.ansteel.common.tpl.domain.TplSecurity" Execute="com.ansteel.common.backup.fun.TplSecurityExecute">
     <DataRow>
@@ -80894,6 +82805,42 @@
       <updated>2016-03-14 10:23:12.0</updated>
       <creator></creator>
       <lastUpdater></lastUpdater>
+    </DataRow>
+    <DataRow>
+      <tpl></tpl>
+      <view>4028b881558f8d8701558fa06c430000</view>
+      <urlPath>core:widget/tpl/toolbarHide.js</urlPath>
+      <isStop>0</isStop>
+      <scription></scription>
+      <pagePlace>2</pagePlace>
+      <versionPublish></versionPublish>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder></displayOrder>
+      <id>4028b881558f8d8701558fa220d00001</id>
+      <version>1</version>
+      <created>2016-06-27 10:13:35.0</created>
+      <updated>2016-06-27 10:21:07.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
+    <DataRow>
+      <tpl></tpl>
+      <view>8abf8ab65372ecc5015372ef2be20e09</view>
+      <urlPath>core:widget/tpl/toolbarCleanData.js</urlPath>
+      <isStop>0</isStop>
+      <scription></scription>
+      <pagePlace>2</pagePlace>
+      <versionPublish></versionPublish>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder></displayOrder>
+      <id>4028b88155e224e20155e2385fcd0005</id>
+      <version>0</version>
+      <created>2016-07-13 11:06:33.0</created>
+      <updated>2016-07-13 11:06:33.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
   </Message>
   <Message Class="com.ansteel.common.tpl.domain.TplVariable" Execute="com.ansteel.common.backup.fun.TplVariableExecute">
@@ -81522,6 +83469,21 @@
       <creator></creator>
       <lastUpdater></lastUpdater>
     </DataRow>
+    <DataRow>
+      <scription></scription>
+      <versionPublish></versionPublish>
+      <parent></parent>
+      <layer>0</layer>
+      <name>CZ</name>
+      <alias>财政报表</alias>
+      <displayOrder>2</displayOrder>
+      <id>4028eb815379ce7e01537a05bf980005</id>
+      <version>0</version>
+      <created>2016-03-15 19:25:10.0</created>
+      <updated>2016-03-15 19:25:10.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
   </Message>
   <Message Class="com.ansteel.report.excel.domain.ExcelReport" Execute="com.ansteel.report.backup.fun.ExcelReportExecute">
     <DataRow>
@@ -81732,6 +83694,25 @@
       <updated>2016-03-14 10:23:14.0</updated>
       <creator></creator>
       <lastUpdater></lastUpdater>
+    </DataRow>
+    <DataRow>
+      <isStart>1</isStart>
+      <attachmentId>4028eb815379ce7e01537a06ec9a0007</attachmentId>
+      <attachmentPath>/ExcelTpl/20160315/155c9cfeb8bf475e8458f09e0922513e.xlsx</attachmentPath>
+      <attPath></attPath>
+      <type>day</type>
+      <typePath></typePath>
+      <versionPublish></versionPublish>
+      <excelReportTree>4028eb815379ce7e01537a05bf980005</excelReportTree>
+      <name>CZ</name>
+      <alias>财政</alias>
+      <displayOrder>1</displayOrder>
+      <id>4028eb815379ce7e01537a06ecac0008</id>
+      <version>0</version>
+      <created>2016-03-15 19:26:27.0</created>
+      <updated>2016-03-15 19:26:27.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
   </Message>
   <Message Class="com.ansteel.report.excel.domain.ExcelReportSQL" Execute="com.ansteel.report.backup.fun.ExcelReportSQLExecute">
@@ -82155,6 +84136,43 @@ LIMIT 0,50
       <creator></creator>
       <lastUpdater></lastUpdater>
     </DataRow>
+    <DataRow>
+      <sqlContent>SELECT
+	sum(g.GO_JBZCJYBZ) AS 基本支出结余金额,
+	sum(GO_JBZCYFHED) AS 基本支出应返还额度,
+sum(g.GO_JBZCJYSJZK) AS 基本支出结余上级专款,
+sum(g.GO_JBZXJYJHCZJE) AS 基本支出结余缴回财政金额,
+sum(g.GO_JBZCJYJXSYJE) AS 基本支出结余继续使用金额,
+sum(g.GO_XMZCJYJE) AS 项目支出结余金额,
+sum(g.GO_XMZXYFHED) AS 项目支出应返还额度
+FROM
+	goshow_czbkjzjy g</sqlContent>
+      <isLoop>0</isLoop>
+      <loopMaxNumber></loopMaxNumber>
+      <recode>基本支出结余金额=C8;基本支出应返还额度=D8; 基本支出结余上级专款=E8;基本支出结余缴回财政金额=G8; 基本支出结余继续使用金额=H8;项目支出结余金额=C9;项目支出应返还额度=D9</recode>
+      <fixedRecode></fixedRecode>
+      <sheetName>Sheet1</sheetName>
+      <cellEnd></cellEnd>
+      <cellStart></cellStart>
+      <headerRecode></headerRecode>
+      <footerRecode></footerRecode>
+      <isSeries>0</isSeries>
+      <seriesSheetRecode></seriesSheetRecode>
+      <mergerRegionRecode></mergerRegionRecode>
+      <mergerRegionFixed></mergerRegionFixed>
+      <mergerRegionFollow></mergerRegionFollow>
+      <versionPublish></versionPublish>
+      <excelReport>4028eb815379ce7e01537a06ecac0008</excelReport>
+      <name>goshow_czbkjzjy</name>
+      <alias>财政</alias>
+      <displayOrder>1</displayOrder>
+      <id>4028eb815379ce7e01537a0a02a50009</id>
+      <version>2</version>
+      <created>2016-03-15 19:29:49.0</created>
+      <updated>2016-03-15 19:38:45.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
+    </DataRow>
   </Message>
   <Message Class="com.ansteel.report.excel.domain.ExcelReportTest" Execute="com.ansteel.report.backup.fun.ExcelReportTestExecute">
     <DataRow>
@@ -82177,7 +84195,7 @@ LIMIT 0,50
     <DataRow>
       <testParam>filename=我的文件</testParam>
       <testLink></testLink>
-      <type>1</type>
+      <type>2</type>
       <openType>2</openType>
       <versionPublish>27</versionPublish>
       <excelReport>8abf8ab65372ecc5015372ef3b960e62</excelReport>
@@ -82185,11 +84203,11 @@ LIMIT 0,50
       <alias>1</alias>
       <displayOrder>1</displayOrder>
       <id>8abf8ab65372ecc5015372ef40a70e7b</id>
-      <version>27</version>
+      <version>28</version>
       <created>2016-03-14 10:23:15.0</created>
-      <updated>2016-03-14 10:23:15.0</updated>
+      <updated>2016-06-24 10:24:37.0</updated>
       <creator></creator>
-      <lastUpdater></lastUpdater>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
     <DataRow>
       <testParam></testParam>
@@ -82343,6 +84361,23 @@ LIMIT 0,50
       <updated>2016-03-14 10:23:15.0</updated>
       <creator></creator>
       <lastUpdater></lastUpdater>
+    </DataRow>
+    <DataRow>
+      <testParam></testParam>
+      <testLink></testLink>
+      <type>3</type>
+      <openType>1</openType>
+      <versionPublish></versionPublish>
+      <excelReport>4028eb815379ce7e01537a06ecac0008</excelReport>
+      <name>1</name>
+      <alias>1</alias>
+      <displayOrder>1</displayOrder>
+      <id>4028eb815379ce7e01537a0a3b8f000a</id>
+      <version>2</version>
+      <created>2016-03-15 19:30:04.0</created>
+      <updated>2016-03-15 19:40:22.0</updated>
+      <creator>administrator</creator>
+      <lastUpdater>administrator</lastUpdater>
     </DataRow>
   </Message>
   <Message Class="com.ansteel.report.excelin.domain.ExcelIn" Execute="com.ansteel.report.backup.fun.ExcelInExecute">
