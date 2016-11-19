@@ -10,7 +10,7 @@ public class Constants {
 	/**
 	 * 数据库表前缀
 	 */
-	public final static String G_TABLE_PREFIX="go_";	
+	public final static String G_TABLE_PREFIX="go_r_";
 	/**
 	 * 动态建表前缀
 	 */

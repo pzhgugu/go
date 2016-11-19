@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="Maven: com.aspose:aspose-slides:jdk16:15.5.1">
+  <library name="Maven: com.aspose:aspose-slides:15.5.1">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/aspose/aspose-slides/15.5.1/aspose-slides-15.5.1-jdk16.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/aspose/aspose-slides/15.5.1/aspose-slides-15.5.1.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/com/aspose/aspose-slides/15.5.1/aspose-slides-15.5.1-javadoc.jar!/" />

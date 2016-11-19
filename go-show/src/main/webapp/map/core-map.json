@@ -210,6 +210,14 @@
                 "common:widget/dhtmlxSuite/dhtmlxEx.js"
             ]
         },
+        "core:widget/tpl/toolbarCleanData.js": {
+            "uri": "/show/static/core/widget/tpl/toolbarCleanData.js",
+            "type": "js"
+        },
+        "core:widget/tpl/toolbarHide.js": {
+            "uri": "/show/static/core/widget/tpl/toolbarHide.js",
+            "type": "js"
+        },
         "core:widget/tpl/TreeFrom/treefrom.js": {
             "uri": "/show/static/core/widget/tpl/TreeFrom/treefrom.js",
             "type": "js",
@@ -237,14 +245,6 @@
                 "common:widget/dhtmlxSuite/dhtmlxEx.js"
             ]
         },
-        "core:widget/tpl/toolbarHide.js": {
-            "uri": "/show/static/core/widget/tpl/toolbarHide.js",
-            "type": "js"
-        },
-        "core:widget/tpl/toolbarCleanData.js": {
-            "uri": "/show/static/core/widget/tpl/toolbarCleanData.js",
-            "type": "js"
-        },
         "core:widget/tpl/TreeTwoOneToMany/treetwoonetomany.js": {
             "uri": "/show/static/core/widget/tpl/TreeTwoOneToMany/treetwoonetomany.js",
             "type": "js",
@@ -260,8 +260,8 @@
             "uri": "/show/static/core/pak/login.css",
             "type": "css",
             "has": [
-                "core:styles/style.css",
-                "core:styles/login.css"
+                "core:styles/login.css",
+                "core:styles/style.css"
             ]
         }
     }

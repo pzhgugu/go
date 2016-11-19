@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="Maven: com.aspose:aspose-words:jdk16:15.6.0">
+  <library name="Maven: com.aspose:aspose-words:15.6.0">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/aspose/aspose-words/15.6.0/aspose-words-15.6.0-jdk16.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/aspose/aspose-words/15.6.0/aspose-words-15.6.0.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/com/aspose/aspose-words/15.6.0/aspose-words-15.6.0-javadoc.jar!/" />

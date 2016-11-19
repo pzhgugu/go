@@ -36,3 +36,9 @@ GoReport报表工具升级了以下功能：
 
 培训视频：链接：http://pan.baidu.com/s/1kTXP8FH 密码：y4yd
 欢迎交流：pzh_gugu@126.com
+
+打包方式:
+fis3 release -r report
+fis3 release -r core
+fis3 release -r common
+fis3 release -r cms
