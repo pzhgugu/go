@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.ansteel.core.utils.SqlUtils;
 import org.hibernate.Query;
 import org.hibernate.transform.Transformers;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -72,16 +73,11 @@ public class SqlServiceBean implements SqlService {
 	}
 
 	public String getCountQuerySyntax(String sql) {
-		StringBuffer countHql = new StringBuffer("select count(*) ");
+		StringBuffer countHql = new StringBuffer("select count(*) from (  ");
 		sql = sql.trim();
-		
-		String sqlUpperCase=sql.toUpperCase();
-		int iFrom =sqlUpperCase.indexOf("FROM");
-		if(iFrom>-1){
-			countHql.append(sql.substring(iFrom, sql.length()));
-			return countHql.toString();
-		}
-		throw new PageException("没有找到关键字from，请检查sql语句！");
+		countHql.append(sql);
+		countHql.append(" )");
+		return countHql.toString();
 	}
 
 	@Override
@@ -98,6 +94,24 @@ public class SqlServiceBean implements SqlService {
 		Map<String,Object> operMap =RequestUtils.getRequestMap(request);
         sql=asToUpperCase(sql);
 		return sqlBaseService.findSql(sql, operMap);
+	}
+
+	@Override
+	public Map querySqlTotal(String sqlContent, HttpServletRequest request, Map<String, Object> operMap) {
+		String sql = beetlService.outContent(sqlContent, request);
+		sql=asToUpperCase(sql);
+		List list = sqlBaseService.findSqlMap(sql, operMap);
+		if(list.size()>0){
+			return (Map) list.get(0);
+		}
+		return new HashMap();
+	}
+
+	@Override
+	public void executeUpdate(String sqlContent, HttpServletRequest request, Map<String, Object> parameterMap) {
+		String sql = beetlService.outContent(sqlContent, request);
+		sql=asToUpperCase(sql);
+		sqlBaseService.executeUpdate(sql, parameterMap);
 	}
 
 	/**

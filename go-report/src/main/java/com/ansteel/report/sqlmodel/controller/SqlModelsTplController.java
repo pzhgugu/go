@@ -61,6 +61,8 @@ public class SqlModelsTplController {
     @Autowired
     TplService tplService;
 
+    private int maxRow = 10000;
+
     /**
      * ajax调用
      * 单条件查询、带分页
@@ -77,6 +79,18 @@ public class SqlModelsTplController {
                            HttpServletRequest request,
                            HttpServletResponse response) {
         Page result = this.getResult(modelName, posStart, count, queryList, request);
+        return new UDataSet(request, DHtmlxConstants.UI_ROWS, result);
+    }
+
+    @RequestMapping("/a/queryTotal/{modelName}")
+    public
+    @ResponseBody
+    UDataSet queryTotalAjax(@PathVariable("modelName") String modelName,
+                           @QueryJson List<QueryMapping> queryList,
+                           @RequestParam("sumArray[]")  String[] sumArray,
+                           HttpServletRequest request,
+                           HttpServletResponse response) {
+        Map result = this.getResult(modelName,queryList, request,sumArray);
         return new UDataSet(request, DHtmlxConstants.UI_ROWS, result);
     }
 
@@ -146,8 +160,34 @@ public class SqlModelsTplController {
                 operMap.put(qm.getName(), qm.getValue());
             }
         }
-        Pageable pageable = new PageRequest(PageUtils.getTotalPages(posStart), PageUtils.getMaxResults());
+        Pageable pageable = new PageRequest(PageUtils.getTotalPages(posStart,maxRow), maxRow);
         return sqlService.querySqlPage(sqlContent, request, operMap, pageable);
+    }
+
+    private Map getResult(String modelName,
+                           List<QueryMapping> queryList, HttpServletRequest request,String[] sumArray) {
+
+        String sqlContent = sqlModelsService.findByNameToSql(modelName);
+        Map<String, Object> operMap = new HashMap<String, Object>();
+        for (QueryMapping qm : queryList) {
+            if (Public.QUERY_BETWEEN.endsWith(qm.getOperator())) {
+                operMap.put("_BEGIN_" + qm.getName(), qm.getBegin());
+                operMap.put("_END_" + qm.getName(), qm.getEnd());
+            } else if (StringUtils.hasText(qm.getValue())) {
+                operMap.put(qm.getName(), qm.getValue());
+            }
+        }
+        if(sumArray.length>0) {
+            StringBuffer sumSB = new StringBuffer("select ");
+            for(String s:sumArray){
+                sumSB.append("sum("+s+") as "+ s+" ,");
+            }
+            String sumStr = sumSB.substring(0, sumSB.length()-1);
+            sumStr+=" from ("+sqlContent+")";
+            return sqlService.querySqlTotal(sumStr, request, operMap);
+        }else{
+            return new HashMap();
+        }
     }
 
     @RequestMapping("/tpl/{tplName}/{modelType}/{fieldsCategory}")

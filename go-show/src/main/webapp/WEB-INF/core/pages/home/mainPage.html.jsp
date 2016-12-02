@@ -19,7 +19,7 @@
 <div class="usersn"><p>&nbsp;&nbsp;用 户 名：${ALIAS}</p><p>&nbsp;&nbsp;用 户ID：<sec:authentication property='name' /></p><table><tr><td><a href="javascript:opentab('changePassword','修改密码','${S_URL}/admin/changePassword');" style="color:#00F">修改密码</a></td><td><a href="javascript:logout();" href="" style="color:#00F">注销</a></td></tr></table></div></div>
 <div class="lulu">
 		<div id="menuheader">常用功能</div>
-		<a href="javascript:opentab('ExcelManage','Excel报表','${S_URL}/admin/excel/tpl/TreeOneToMany/ExcelReport/d');">Excel报表</a>
+		<a href="javascript:opentab('ExcelManage','Excel报表',D${S_URL}ataCollection);">Excel报表</a>
 		<a href="javascript:opentab('chartTest','图表测试','${S_URL}/admin/chart/show/test');">图表测试</a>
 		<a href="javascript:opentab('ExcelIn','Excel导入','${S_URL}/admin/excelin/tpl/SingleGridQuery/ExcelIn/d');">Excel导入</a>
 		<a href="javascript:opentab('SqlModelManage','SQL模型','${S_URL}/admin/sqlmodel/tpl/TreeTwoOneToMany/SqlFieldsCategory/d?two=SqlFields');">SQL模型</a>

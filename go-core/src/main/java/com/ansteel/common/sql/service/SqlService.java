@@ -26,4 +26,7 @@ public interface SqlService {
 
 	List querySqlArray(String sqlContent, HttpServletRequest request);
 
+	Map querySqlTotal(String sqlContent, HttpServletRequest request, Map<String, Object> operMap);
+
+	void executeUpdate(String sqlContent, HttpServletRequest request, Map<String, Object> parameterMap);
 }

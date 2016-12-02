@@ -51,7 +51,16 @@ public class SqlBaseServiceBean implements SqlBaseService {
         }
 	}
 
-	@Override
+    @Override
+    public void executeUpdate(String queryString, Map<String, Object> whereMap) {
+        try {
+            sqlBaseRepository.executeUpdate(queryString,whereMap);
+        }catch (Exception e){
+            throw new PageException("sql语句错误："+queryString+",错误原因："+e.getMessage());
+        }
+    }
+
+    @Override
 	public List findSql(String queryString, Map<String, Object> whereMap) {
         try {
 		return sqlBaseRepository.findSql(queryString,whereMap);

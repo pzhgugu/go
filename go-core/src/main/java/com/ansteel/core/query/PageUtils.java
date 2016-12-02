@@ -28,9 +28,13 @@ public class PageUtils {
 	}
 
 	public static int getTotalPages(String posStart) {
+		return getTotalPages(posStart,Constants.DEFAULT_MAX_RESULTS);
+	}
+
+	public static int getTotalPages(String posStart,int maxResults) {
 		int totalPages=0;
 		if(StringUtils.hasText(posStart)){
-			totalPages = Integer.valueOf(posStart).intValue()/Constants.DEFAULT_MAX_RESULTS;
+			totalPages = Integer.valueOf(posStart).intValue()/maxResults;
 		}
 		return totalPages;
 	}

@@ -8,10 +8,12 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+import com.ansteel.core.utils.SqlUtils;
 import org.hibernate.SQLQuery;
 import org.hibernate.transform.Transformers;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
+import org.springframework.test.context.jdbc.Sql;
 import org.springframework.transaction.annotation.Transactional;
 
 @Repository
@@ -49,7 +51,9 @@ public class SqlBaseRepositoryBean implements SqlBaseRepository{
 		for (Entry<String, Object> entry : whereMap
 				.entrySet()) {
 			if(queryString.indexOf(":"+entry.getKey())>-1){
-				sqlQuery.setParameter(entry.getKey(), entry.getValue());
+				String p = (String) entry.getValue();
+				p=SqlUtils.sqlValidate(p);
+				sqlQuery.setParameter(entry.getKey(), p);
 			}
 		}
 		return sqlQuery;
@@ -60,5 +64,11 @@ public class SqlBaseRepositoryBean implements SqlBaseRepository{
 	public List findSql(String queryString, Map<String, Object> whereMap) {
 		SQLQuery sqlQuery = this.getSQLQuery(queryString, whereMap);
 		return sqlQuery.list();
+	}
+
+	@Override
+	public void executeUpdate(String queryString, Map<String, Object> whereMap) {
+		SQLQuery sqlQuery = this.getSQLQuery(queryString, whereMap);
+		sqlQuery.executeUpdate();
 	}
 }

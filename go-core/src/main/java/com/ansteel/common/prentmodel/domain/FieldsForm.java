@@ -106,7 +106,8 @@ public class FieldsForm extends BaseEntity{
 	private String tooltip;
 	
 	private String note;
-	
+
+
 	public String getTooltip() {
 		return tooltip;
 	}

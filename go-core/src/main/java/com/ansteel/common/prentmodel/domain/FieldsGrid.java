@@ -66,6 +66,37 @@ public class FieldsGrid extends BaseEntity{
 	
 	@Column(name = "VERSION_PUBLISH", columnDefinition="INT default 0")
 	private Long versionPublish;
+
+	//是否选计
+	private Boolean isSelectSum;
+	//是否合计
+	private Boolean isTotal;
+	//是否总计
+	private Boolean isGrandTotal;
+
+	public Boolean getIsSelectSum() {
+		return isSelectSum;
+	}
+
+	public void setIsSelectSum(Boolean selectSum) {
+		isSelectSum = selectSum;
+	}
+
+	public Boolean getIsTotal() {
+		return isTotal;
+	}
+
+	public void setIsTotal(Boolean total) {
+		isTotal = total;
+	}
+
+	public Boolean getIsGrandTotal() {
+		return isGrandTotal;
+	}
+
+	public void setIsGrandTotal(Boolean grandTotal) {
+		isGrandTotal = grandTotal;
+	}
 		
 	public Long getVersionPublish() {
 		return versionPublish;

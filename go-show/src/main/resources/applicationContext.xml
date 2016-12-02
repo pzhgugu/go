@@ -118,6 +118,10 @@
                 <value>com.ansteel.report.backup.fun.SqlFieldsFormExecute</value>
                 <value>com.ansteel.report.backup.fun.SqlFieldsGridExecute</value>
                 <value>com.ansteel.report.backup.fun.SqlFieldsQueryExecute</value>
+                <value>com.ansteel.report.backup.fun.DataCollectionTreeExecute</value>
+                <value>com.ansteel.report.backup.fun.DataCollectionExecute</value>
+                <value>com.ansteel.report.backup.fun.DataCollectionSQLExecute</value>
+                <value>com.ansteel.report.backup.fun.DataCollectionTestExecute</value>
             </list>
 		</property>
 	</bean>

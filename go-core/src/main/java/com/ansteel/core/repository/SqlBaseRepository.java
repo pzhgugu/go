@@ -45,4 +45,6 @@ public interface SqlBaseRepository {
 	 * @return
 	 */
 	List findSql(String queryString, Map<String, Object> whereMap);
+
+	void executeUpdate(String queryString, Map<String, Object> whereMap);
 }

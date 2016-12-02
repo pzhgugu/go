@@ -89,6 +89,22 @@ public class DhtmlxGrid implements IDhtmlxWidget{
 		StringBuffer colAlign =new StringBuffer();
 		StringBuffer colTypes =new StringBuffer();
 		StringBuffer colValidators =new StringBuffer();
+		//合计
+		StringBuffer totalFooter = new StringBuffer("合计,#cspan");
+		StringBuffer totalFooterArray = new StringBuffer();
+		//总计
+		StringBuffer grandTotalFooter = new StringBuffer("总计,#cspan");
+		StringBuffer grandTotalFooterArray = new StringBuffer();
+		//选计
+		StringBuffer selectSumFooter = new StringBuffer("选计,#cspan");
+		StringBuffer selectSumFooterArray = new StringBuffer();
+		//是否选计
+		Boolean isSelectSum=false;
+		//是否合计
+		Boolean isTotal=false;
+		//是否总计
+		Boolean isGrandTotal=false;
+
 		int size=grids.size();
 		
 		/*header.append(SELECT_HEADER+",");
@@ -146,6 +162,37 @@ public class DhtmlxGrid implements IDhtmlxWidget{
 				}else{
 					colValidators.append(Public.NULL);
 				}
+				//将Footer前两行不做计算
+				if(i>1){
+					if(o.getIsTotal()!=null&&o.getIsTotal()){
+						//便于理解写在一起
+						totalFooter.append(",<div id='"+o.getName()+"_total'>0<div>");
+						totalFooterArray.append("'"+o.getName()+"'");
+						isTotal=true;
+
+						totalFooterArray.append(",");
+					}else{
+						totalFooter.append(",-");
+					}
+					if(o.getIsGrandTotal()!=null&&o.getIsGrandTotal()){
+						//便于理解写在一起
+						grandTotalFooter.append(",<div id='"+o.getName()+"_grandtotal'>0<div>");
+						grandTotalFooterArray.append("'"+o.getName()+"'");
+						isGrandTotal=true;
+						grandTotalFooterArray.append(",");
+					}else{
+						grandTotalFooter.append(",-");
+					}
+					if(o.getIsSelectSum()!=null&&o.getIsSelectSum()){
+						//便于理解写在一起
+						selectSumFooter.append(",<div id='"+o.getName()+"_selectsum'>0<div>");
+						selectSumFooterArray.append("'"+o.getName()+"'");
+						isSelectSum=true;
+						selectSumFooterArray.append(",");
+					}else{
+						selectSumFooter.append(",-");
+					}
+				}
 				header.append(",");
 				columnIds.append(",");
 				initWidths.append(",");
@@ -175,6 +222,16 @@ public class DhtmlxGrid implements IDhtmlxWidget{
 		//viewModel.put(TplUtils.getName(ViewModelConstant.P_GRID_EDITABLE, prefix), viewElement.getFieldsCategory().getIsEditable());
 		//表格集合映射
 		viewModel.put(TplUtils.getName(ViewModelConstant.P_GRID_FORMGRIDASSEMBLE, prefix), formGridAssemble);
+
+		viewModel.put(TplUtils.getName(ViewModelConstant.P_GRID_FOOTER_TOTAL, prefix), totalFooter.toString());
+		viewModel.put(TplUtils.getName(ViewModelConstant.P_GRID_FOOTER_IS_TOTAL, prefix), isTotal);
+		viewModel.put(TplUtils.getName(ViewModelConstant.P_GRID_FOOTER_TOTAL_ARRAY, prefix), (totalFooterArray.length()>0)?"["+totalFooterArray.substring(0, totalFooterArray.length()-1)+"]":"[]");
+		viewModel.put(TplUtils.getName(ViewModelConstant.P_GRID_FOOTER_GRANDTOTAL, prefix), grandTotalFooter.toString());
+		viewModel.put(TplUtils.getName(ViewModelConstant.P_GRID_FOOTER_IS_GRANDTOTAL, prefix), isGrandTotal);
+		viewModel.put(TplUtils.getName(ViewModelConstant.P_GRID_FOOTER_GRANDTOTAL_ARRAY, prefix), (grandTotalFooterArray.length()>0)?"["+grandTotalFooterArray.substring(0, grandTotalFooterArray.length()-1)+"]":"[]");
+		viewModel.put(TplUtils.getName(ViewModelConstant.P_GRID_FOOTER_SELECTSUM, prefix), selectSumFooter.toString());
+		viewModel.put(TplUtils.getName(ViewModelConstant.P_GRID_FOOTER_IS_SELECTSUM, prefix), isSelectSum);
+		viewModel.put(TplUtils.getName(ViewModelConstant.P_GRID_FOOTER_SELECTSUM_ARRAY, prefix), (selectSumFooterArray.length()>0)?"["+selectSumFooterArray.substring(0, selectSumFooterArray.length()-1)+"]":"[]");
 		return viewModel;
 	}
 

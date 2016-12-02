@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="t-core">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/go-core/src/main/resources/lib/t-core.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

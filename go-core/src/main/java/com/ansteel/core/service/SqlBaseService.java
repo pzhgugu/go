@@ -24,4 +24,6 @@ public interface SqlBaseService {
 
 
 	List findSqlMap(String queryString, Map<String, Object> whereMap);
+
+	void executeUpdate(String queryString, Map<String, Object> whereMap);
 }

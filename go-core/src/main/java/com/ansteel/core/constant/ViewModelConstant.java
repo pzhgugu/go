@@ -155,4 +155,31 @@ public class ViewModelConstant {
 	public static final String P_VARIABLE = "P_VARIABLE";
 
 	public static final String IS_LOGIN_CAPTCHA = "IS_LOGIN_CAPTCHA";
+	/**
+	 * 是否选计
+	 */
+	public static final String P_GRID_FOOTER_IS_SELECTSUM ="P_GRID_FOOTER_IS_SELECTSUM";
+	/**
+	 * 选计字符
+	 */
+	public static final String P_GRID_FOOTER_SELECTSUM ="P_GRID_FOOTER_SELECTSUM";
+	public static final String P_GRID_FOOTER_SELECTSUM_ARRAY ="P_GRID_FOOTER_SELECTSUM_ARRAY";
+	/**
+	 * 总计
+	 */
+	public static final String P_GRID_FOOTER_IS_GRANDTOTAL ="P_GRID_FOOTER_IS_GRANDTOTAL";
+	/**
+	 * 总计
+	 */
+	public static final String P_GRID_FOOTER_GRANDTOTAL ="P_GRID_FOOTER_GRANDTOTAL";
+	public static final String P_GRID_FOOTER_TOTAL_ARRAY ="P_GRID_FOOTER_TOTAL_ARRAY";
+	/**
+	 * 合计
+	 */
+	public static final String P_GRID_FOOTER_IS_TOTAL ="P_GRID_FOOTER_IS_TOTAL";
+	/**
+	 * 合计
+	 */
+	public static final String P_GRID_FOOTER_TOTAL ="P_GRID_FOOTER_TOTAL";
+	public static final String P_GRID_FOOTER_GRANDTOTAL_ARRAY ="P_GRID_FOOTER_GRANDTOTAL_ARRAY";
 }

@@ -1,5 +1,9 @@
 {
     "res": {
+        "report:gjxt/JZH_CPCB_MX.js": {
+            "uri": "/show/static/report/gjxt/JZH_CPCB_MX.js",
+            "type": "js"
+        },
         "report:scripts/excelReport.js": {
             "uri": "/show/static/report/scripts/excelReport.js",
             "type": "js",

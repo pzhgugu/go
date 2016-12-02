@@ -51,13 +51,13 @@ public class ExcelMakeUtils {
         return beetlService;
     }
 
-	/*public Excel getExcel(String tplPath,Map<ExcelReportSQL,List> mapExcel){
+	/*public Excel getExcel(String tplPath,Map<DataCollectionSQL,List> mapExcel){
         Excel excel = this.getExcel(tplPath);
 		//先执行固定列数据填充
-		for(Entry<ExcelReportSQL,List> entry:mapExcel.entrySet()){	
+		for(Entry<DataCollectionSQL,List> entry:mapExcel.entrySet()){
 			List list = entry.getValue();
 			if(list.size()>0){
-				ExcelReportSQL excelReportSQL=entry.getKey();
+				DataCollectionSQL excelReportSQL=entry.getKey();
 				String sheetName = this.getSheetName(excelReportSQL.getSheetName());
 				Sheet sheet=excel.getSheet(sheetName);
 				this.setFixedSQLData(sheet,excelReportSQL,list);
@@ -65,10 +65,10 @@ public class ExcelMakeUtils {
 				this.setFooter(sheet,excelReportSQL,list);
 			}
 		}
-		for(Entry<ExcelReportSQL,List> entry:mapExcel.entrySet()){
+		for(Entry<DataCollectionSQL,List> entry:mapExcel.entrySet()){
 			List list = entry.getValue();
 			if(list.size()>0){
-				ExcelReportSQL excelReportSQL=entry.getKey();
+				DataCollectionSQL excelReportSQL=entry.getKey();
 				String sheetName = this.getSheetName(excelReportSQL.getSheetName());
 				Sheet sheet=excel.getSheet(sheetName);
 				this.setSQLData(sheet,excelReportSQL,list);
